@@ -1,19 +1,17 @@
-Empty IG
----
-This is an empty IG
-<br> </br>
-###
-### Publication
-This ImplementationGuide is published in the following locations:
+# HIV Case-Based Surveillance IG
 
-Continuous Build: __http://build.fhir.org/ig/openhie/fhir-ig-empty/branches/main/index.html__  
-Canonical / permanent URL: 
-<br> </br>
+A HIV reporting IG for the DISI architecture.
 
-### Issues
+## Publication 
+
+This Implementation Guide is published in the following locations:
+
+* Continuous Build: <http://build.fhir.org/ig/openhie/HIV-CBS/>
+* Canonical/permanent URL: <https://openhie.github.io/HIV-CBS/index.html>
+
+## Issues
+
 Issues and change requests are managed here:  
 
-Issues:  __https://github.com/openhie/fhir-ig-empty/issues__  
-Kanban board:  __https://github.com/openhie/fhir-ig-empty/projects/1__  
-
----
+* Issues:  <https://github.com/openhie/HIV-CBS/issues>  
+* Kanban board: 

@@ -7,16 +7,16 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 
 
-id: my-ig
-canonical: http://example.com/fhir/example
-url: http://example.com/fhir/example
-name: ExampleIG
+id: openhie.fhir.hiv.cbs
+canonical: http://openhie.org/fhir/hiv-cbs
+url: http://openhie.org/fhir/hiv-cbs
+name: HIVCBSIG
 title: "HL7 FHIR Implementation Guide: Example IG Release 1 - US Realm | STU1"
-description: Example IG exercises many of the fields in a SUSHI configuration.
+description: A FHIR Implementation Guide describing interoperability mechanisms for HIV Case-Based Surveillance.
 status: active
 license: CC0-1.0
-date: 2020-02-26
-version: 1.0.0
+date: 2022-01-31
+version: 0.2.0
 
 # Although fhirVersions is 0..* in the ImplementationGuide resource
 # it can be a single item OR and array here (but so far SUSHI only
@@ -37,16 +37,16 @@ releaseLabel: STU1
 # as IG.publisher.  The contact details and/or additional publishers
 # will be translated into IG.contact values.
 publisher:
-  name: My Organization 
-  url: http://example.com/committees
-  email: my-group@example.com
+  name: Jembi Health Systems 
+  url: https://www.jembi.org
+  email: info@jembi.org
 
 # ContactDetail is required by the template.
 contact:
-  - name: Bob Smith
+  - name: Richard Langford
     telecom:
       - system: email
-        value: bobsmith@example.com
+        value: richard.langford@jembi.org
         use: work
 
 # The jurisdiction can be a single item or a list. The FHIR Shorthand
@@ -180,7 +180,7 @@ jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"
 # The FSHOnly flag indicates if only FSH resources should be exported.
 # If set to true, no IG related content will be generated.
 # The default value for this property is false.
-FSHOnly: false
+FSHOnly: true
 
 # When set to true, the "short" and "definition" field on the root element of an Extension will
 # be set to the "Title" and "Description" of that Extension. Default is true.
