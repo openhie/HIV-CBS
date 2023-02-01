@@ -5,30 +5,34 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://xxsomewhere.org/fhir/myig/ImplementationGuide/xxexample.fhir.uv.myig> a fhir:ImplementationGuide;
+<http://openhie.org/fhir/hiv-cbs/ImplementationGuide/openhie.fhir.hiv.cbs> a fhir:ImplementationGuide;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "xxexample.fhir.uv.myig"]; # 
+  fhir:Resource.id [ fhir:value "openhie.fhir.hiv.cbs"]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>XXYourComputableMyIGNameHere</h2><p>The official URL for this implementation guide is: </p><pre>http://xxsomewhere.org/fhir/myig/ImplementationGuide/xxexample.fhir.uv.myig</pre><div><p>xxxA brief description of what this IG is about</p>\n</div></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>HIVCBS</h2><p>The official URL for this implementation guide is: </p><pre>http://openhie.org/fhir/hiv-cbs/ImplementationGuide/openhie.fhir.hiv.cbs</pre><div><p>HIV Case-Based Surveillance</p>\n</div></div>"
   ]; # 
-  fhir:ImplementationGuide.url [ fhir:value "http://xxsomewhere.org/fhir/myig/ImplementationGuide/xxexample.fhir.uv.myig"]; # 
+  fhir:ImplementationGuide.url [ fhir:value "http://openhie.org/fhir/hiv-cbs/ImplementationGuide/openhie.fhir.hiv.cbs"]; # 
   fhir:ImplementationGuide.version [ fhir:value "0.1.0-test"]; # 
-  fhir:ImplementationGuide.name [ fhir:value "XXYourComputableMyIGNameHere"]; # 
-  fhir:ImplementationGuide.title [ fhir:value "xxYour User Friendly Name for MyIG Here"]; # 
+  fhir:ImplementationGuide.name [ fhir:value "HIVCBS"]; # 
+  fhir:ImplementationGuide.title [ fhir:value "HIV Case-Based Surveillance"]; # 
   fhir:ImplementationGuide.status [ fhir:value "draft"]; # 
   fhir:ImplementationGuide.experimental [ fhir:value "false"^^xsd:boolean]; # 
-  fhir:ImplementationGuide.date [ fhir:value "2023-02-01T14:29:04+00:00"^^xsd:dateTime]; # 
-  fhir:ImplementationGuide.publisher [ fhir:value "xxxYour Work Group"]; # 
+  fhir:ImplementationGuide.date [ fhir:value "2023-02-01T14:37:07+00:00"^^xsd:dateTime]; # 
+  fhir:ImplementationGuide.publisher [ fhir:value "Jembi Health Systems"]; # 
   fhir:ImplementationGuide.contact [
      fhir:index 0;
      fhir:ContactDetail.telecom [
        fhir:index 0;
        fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "http://xxhl7.org/Special/committees/[something]" ]
+       fhir:ContactPoint.value [ fhir:value "https://www.jembi.org" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "info@jembi.org" ]
      ]
   ]; # 
-  fhir:ImplementationGuide.description [ fhir:value "xxxA brief description of what this IG is about "]; # 
+  fhir:ImplementationGuide.description [ fhir:value "HIV Case-Based Surveillance"]; # 
   fhir:ImplementationGuide.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [
@@ -37,7 +41,7 @@
        fhir:Coding.code [ fhir:value "001" ]
      ]
   ]; # 
-  fhir:ImplementationGuide.packageId [ fhir:value "xxexample.fhir.uv.myig"]; # 
+  fhir:ImplementationGuide.packageId [ fhir:value "openhie.fhir.hiv.cbs"]; # 
   fhir:ImplementationGuide.license [ fhir:value "CC0-1.0"]; # 
   fhir:ImplementationGuide.fhirVersion [
      fhir:value "4.0.1";
@@ -200,7 +204,7 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "value" ];
-         fhir:Extension.valueString [ fhir:value "http://xxsomewhere.org/fhir/myig/history.html" ]
+         fhir:Extension.valueString [ fhir:value "http://openhie.org/fhir/hiv-cbs/history.html" ]
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
@@ -512,7 +516,7 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "value" ];
-         fhir:Extension.valueString [ fhir:value "http://xxsomewhere.org/fhir/myig/history.html" ]
+         fhir:Extension.valueString [ fhir:value "http://openhie.org/fhir/hiv-cbs/history.html" ]
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
@@ -784,7 +788,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://xxsomewhere.org/fhir/myig/ImplementationGuide/xxexample.fhir.uv.myig.ttl> a owl:Ontology;
+<http://openhie.org/fhir/hiv-cbs/ImplementationGuide/openhie.fhir.hiv.cbs.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
