@@ -1,0 +1,48 @@
+@startjson lab-rejection-bundle
+{
+  "resourceType" : "Bundle",
+  "id" : "LabRejection",
+  "type" : "transaction",
+  "entry" : [{
+    "fullUrl" : "Task/Covid19LabOrderRejectionExample",
+    "resource" : {
+      "resourceType" : "Task",
+      "id" : "Covid19LabOrderRejectionExample",
+      "meta" : {
+        "profile" : ["http://openhie.org/fhir/covid19-casereporting/StructureDefinition/covid19-lab-task"]
+      },
+     
+      "identifier" : [{
+        "system" : "http://openhie.org/fhir/covid19-casereporting/lab-integration/test-order-number",
+        "value" : "ORDER12345"
+      }],
+      "basedOn" : [{
+        "reference" : "ServiceRequest/Covid19ServiceRequestExample"
+      }],
+      "status" : "rejected",
+      "statusReason" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "135839007"
+        }]
+      },
+      "intent" : "order",
+      "executionPeriod" : {
+        "end" : "2022-07-30"
+      },
+      "lastModified" : "2022-07-30",
+      "requester" : {
+        "reference" : "Organization/Covid19OrganizationExample"
+      },
+      "owner" : {
+        "reference" : "Organization/Covid19OrganizationExample"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Task/Covid19LabOrderRejectionExample"
+    }
+  }]
+}
+
+@endjson

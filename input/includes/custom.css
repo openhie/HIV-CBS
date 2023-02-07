@@ -1,0 +1,19 @@
+.heading {
+    display: block;
+    font-family: verdana;
+    line-height: 1.2em;
+    font-size: 1.2em;
+    margin: 0 0 3px 0;
+    margin-top: 10px;
+    color: #337AB7;
+    background-color: white !important;
+}
+
+.not-allowed {
+    cursor: not-allowed !important;
+    text-decoration: none !important;
+}
+
+.pointer {
+    cursor: pointer;
+}

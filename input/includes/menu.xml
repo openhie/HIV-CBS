@@ -1,30 +1,59 @@
-<ul
-	xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
-	<li>
-		<a href="index.html">IG Home</a>
-	</li>
-	<li>
-		<a href="toc.html">Table of Contents</a>
-	</li>
-<!--
-	<li class="dropdown">
-		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Background<b class="caret"></b>
-		</a>
+<style>
+    {% include mainMenu.css %}
 
-	</li>
-	<li class="dropdown">
-		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Functional Description<b class="caret"></b>
-		</a>
+	{% include custom.css %}
+</style>
 
-	</li>
--->
-	<li class="dropdown">
-		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Specifications<b class="caret"></b>
-		</a>
-		<ul class="dropdown-menu">
-			<li>
-				<a href="artifacts.html">Artifact Index</a>
+<ul id="mainMenuOptions" xmlns="http://www.w3.org/1999/xhtml" class="dropdown">
+	<li><a href="#" style="font-size: 12px; text-decoration: none;">Menu <b class="caret"></b></a>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="bussiness-description.html">Bussiness Description <b class="caret" style="transform:rotate(270deg);"></b></a>
+				<ul>
+					<li>
+						<a href="requirements.html">Functional Requirements <b class="caret" style="transform:rotate(270deg);"></b></a>
+						<ul>
+							<li>
+								<a href="use-cases.html">Use Cases</a>
+							</li>
+							<li>
+								<a href="vaccination_status.html">Vaccination Status</a>
+							</li>
+						</ul>
+					</li>
+					<li><a href="personas.html">Personas</a></li>
+					<li><a href="workflows.html">Usage Workflows</a></li>
+				</ul>
 			</li>
+			<li><a href="deployment.html">Deployment &amp; Use <b class="caret" style="transform:rotate(270deg);"></b></a>
+				<ul>
+					<li><a href="bundles.html">Message Bundles <b class="caret" style="transform:rotate(270deg);"></b></a>
+						<ul>
+							<li>
+								<a href="emr-bundle.html">EMR</a>
+							</li>
+							<li>
+								<a href="lab-order-bundle.html">Lab Order</a>
+							</li>
+							<li>
+								<a href="lab-result-bundle.html">Lab Result</a>
+							</li>
+							<li>
+								<a href="lab-rejection-bundle.html">Lab Rejection</a>
+							</li>
+							<li>
+								<a href="lab-cancellation-bundle.html">Lab Cancellation</a>
+							</li>
+						</ul>
+					</li>
+					<li><a href="security-privacy.html">Security &amp; Privacy</a></li>
+					<li><a href="testing.html">Testing</a></li>
+				</ul>
+			</li>
+			
+			<li><a href="referenced-sources.html">References</a></li>
+			<li><a href="artifacts.html">Artifacts</a></li>
+			<li><a href="toc.html">Table of Contents</a></li>
 		</ul>
-	</li>
-</ul>      
+    </li>
+</ul> 

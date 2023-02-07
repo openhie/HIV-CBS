@@ -1,0 +1,80 @@
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd" lang="en">
+  <style>
+    {% include custom.css %}
+  </style>
+  
+  <p>The following categories of vaccination statuses exist in order to measure an individual's progress towards being up-to-date vaccinated.</p>
+
+  <h3>Categories</h3> <a name="vaccine-status-categories"> </a>
+  
+ 
+  <p class="heading">Unvaccinated</p>
+
+  <p>If the individual has not had at least one vaccine administered.</p>
+  
+
+
+  <p class="heading">Partially Vaccinated</p>
+  
+  <p>If the individual has had at least one vaccine administered using any manufacturer based on their age and for the primary series.</p>
+  
+
+  
+  <p class="heading">Fully Vaccinated</p>
+
+  <p>If the individual has had all vaccines administered using the exact same manufacturer based on their age and for the primary series but the individual has not yet received the booster vaccine issued by the exact same manufacturer.</p>
+  
+
+  
+  <p class="heading" id="up-to-date-vaccinated">Up-to-Date Vaccinated</p>
+  
+  <p>The following algorithm is used when determining whether a patient is up-to-date vaccinated.</p>
+  
+  <p>
+    If the individual has received all primary series vaccinations based on their age
+    <br />
+    <br />
+    And
+    <br />
+    <br />
+    If the individual received the booster vaccine (if available by the vaccine manufacturer)
+    <br />
+    <br />
+    And
+    <br />
+    <br />
+    If the date &amp; time of reporting is >= (date when booster was administered + weeksWaitingInterval)
+  </p>
+
+  <blockquote class="stu-note">
+    <p>
+      The weeksWaitingInterval variable is used to indicate when a patient is considered to be up-to-date taking into account the following key vaccination information:
+    </p>
+    <ul>
+      <li>Manufacturer</li>
+      <li>Target age group</li>
+      <li><a href="#vaccine-series">Vaccine series</a></li>
+      <li>Maximum number of doses per Vaccine Series</li>
+    </ul>
+    <p>
+      <em><strong>Not all manufacturers have a waiting period defined in the primary series for up-to-date vaccinated</strong></em>.
+    </p>
+  </blockquote>
+    
+  
+  <h3 id="vaccine-series">Vaccine Series</h3> <a name="vaccine-series"> </a>
+
+  <p>
+    There are two categories of vaccines namely: <strong>Primary</strong> and <strong>Booster</strong>. The COVID19 booster shot is an additional dose or doses of a vaccine that is administered after the protection from the orginal shot(s) (a.k.a. primary vaccine) has begun to decrease <a href="#ref1">(COVID-19 Vaccination, 2020)</a>. 
+    Booster shots are used to enhance or restore protection against the disease.
+  </p>
+
+  <h3>References</h3> <a name="references"> </a>
+
+  <div>
+    <ol>
+      <li id="ref1">COVID-19 Vaccination. (2020, February 11). Centers for Disease Control and Prevention. https://www.cdc.gov/coronavirus/2019-ncov/vaccines/recommendations/immuno.html</li>
+    </ol>
+  </div>
+</div>  
+

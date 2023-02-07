@@ -1,0 +1,199 @@
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd" lang="en">
+    <style>
+    {% include custom.css %}
+  </style>
+
+    <h3>Overview</h3> <a name="usecase-description"> </a>
+
+    <p>
+        The following uses cases have been identified for this implementation guide.
+    </p>
+
+    <p class="heading" id="use-case-diagram">Use Case Diagram</p>
+    <p></p>
+    
+    <figure>
+        {% include UseCaseDiagram.svg %}
+        <figcaption>Use Case Diagram</figcaption>
+    </figure>
+
+   <p class="heading">Use Case Context</p>
+
+    <p>
+        This use case supports integration between the EMR and lab systems in order to effectively process lab requests and have the results returned to the EMR for diagnosis.
+        <br />
+        <br />
+        In addition, this use case illustrates the need for a Centralised Data Repository (DR) and a Client Registry (CR) to enable regional and/or national COVID19 case reporting. 
+        <br />
+        <br />
+        The <a href="index.html#technicalBackground">technical specificaton documentation</a> for the Data Integration Strategy &amp; Implementation reference platform identifies the following technologies for the two aforementioned centralised repositories.
+    </p>
+    <ol>
+        <li><strong>DR:</strong> <a href="https://hapifhir.io/hapi-fhir/docs/getting_started/introduction.html" target="_blank">HAPI FHIR</a></li>
+        <li><strong>CR:</strong> <a href="https://jembi.gitbook.io/jembi-platform/packages/client-registry-santempi" target="_blank">SanteMPI</a></li>
+    </ol>
+
+    <blockquote class="stu-note">
+        <ul>
+            <li>The <a href="#use-case-summary">use case summary</a> is limited to the <a href="bundles.html">specification</a> for this implementation guide and will not discuss the architectural components for the DR, CR and Data Mart.</li>
+            <li>For more information regarding the implementation of a the architectural components, please see the <a href="index.html#technicalBackground">technical specificaton documentation</a>.</li>
+        </ul>
+    </blockquote>
+
+    <h3 id="use-case-summary">Use Case Summary</h3> <a name="usecase-summary"> </a>
+    <p class="heading">Register Client</p>
+
+    <p>Before an individual can be screened and assessed (diagnosis) for COVID19, the individual must be registered into the EMR at the assessing facility/organisation.</p>
+
+    <p class="heading">Assess Client</p>
+    <p>
+        A nurse must be able to restrospectively capture existing screening and assessment data for individuals who 
+        are continuing with their <a href="vaccination_status.html#vaccine-series">vaccination series</a> at a different facility where it is a 
+        first-time visit or if the visited facility has older data in regards to the progression towards being <a href="vaccination_status.html#up-to-date-vaccinated">up-to-date vaccinated</a> for COVID19.
+        <br />
+        <br />
+        In addition, this use case enables the nurse to capture the following <u>key</u> data.
+    </p>
+
+    <ul>
+        <li>Metadata</li>
+        <li>Presentation information (Asymptomatic, Symptomatic)</li>
+        <li>Presenting symptoms and any pre-existing conditions and/or comorbidities</li>
+        <li>History of hospitalisation for COVID19</li>
+        <li>The COVID19 diagnosis taken from the most recent lab examination</li>
+        <li>Treatment needs</li>
+    </ul>
+
+    <p class="heading">Document Client Outcome</p>
+
+    <p>
+        An individual who has been diagnosed positive for COVID19, typically, has one of the following outcomes.
+    </p>
+
+    <ul>
+        <li>Metadata</li>
+        <li>Outcome code</li>
+            <ul>
+                <li><strong>Recovered (symptoms resolved):</strong> <a href="https://browser.ihtsdotools.org/?perspective=full%26conceptId1=370996005%26edition=MAIN/2023-01-31%26release=%26languages=en%26latestRedirect=false" target="_blank">370996005</a></li>
+                    <ul>
+                        <li>Those individuals who previosly suffered from the disease are no longer shpwing any symptoms.</li>
+                    </ul>
+                <li><strong>Long COVID / Post-COVID:</strong> <a href="https://browser.ihtsdotools.org/?perspective=full%26conceptId1=1119303003%26edition=MAIN/2022-12-31%26release=%26languages=en%26latestRedirect=false" target="_blank">1119303003</a></li>
+                    <ul>
+                        <li>Those individuals who suffer long-term affects which could range anywhere between a few weeks to even years <a href="#ref1">(Post-COVID Conditions, 2022)</a>.</li>
+                    </ul>
+                <li><strong>Death:</strong> <a href="https://browser.ihtsdotools.org/?perspective=full%26conceptId1=419099009%26edition=MAIN/2023-01-31%26release=%26languages=en%26latestRedirect=false" target="_blank">419099009</a></li>
+                    <ul>
+                        <li>Those individuals who have suffered death due to exposure to COVID19.</li>
+                    </ul>
+            </ul>
+    </ul>
+
+    <p class="heading">Submit lab order</p>
+
+    <p>
+        A nurse must be able to submit a request from the EMR for a sample to be collected and examined at the laboratory. 
+        <br />
+        <br />
+
+        A lab request, in the context of this implementation guide, will typically contain the following <u>key</u> data. 
+    </p>
+
+     <ul>
+        <li>Metadata</li>
+        <li>Order number</li>
+        <li>Test requested code</li>
+            <ul>
+                <li><strong>SARS-CoV-2 (COVID-19) Ag [Presence] in Respiratory specimen by Rapid immunoassay:</strong> <a href="https://loinc.org/94558-4/" target="_blank">94558-4</a></li>
+                <li><strong>SARS-CoV-2 (COVID-19) RNA [Cycle Threshold #] in Respiratory specimen by NAA with probe detection:</strong> <a href="https://loinc.org/94745-7/" target="_blank">94745-7</a></li>
+            </ul>
+        <li>Reason for the test</li>
+        <li>Specimen type</li>
+            <ul>
+                <li><strong>Nasopharyngeal:</strong> <a href="https://browser.ihtsdotools.org/?perspective=full%26conceptId1=258500001%26edition=MAIN/2023-01-31%26release=%26languages=en%26latestRedirect=false" target="_blank">258500001</a></li>
+                <li><strong>Oropharyngeal swab:</strong> <a href="https://browser.ihtsdotools.org/?perspective=full%26conceptId1=461911000124106%26edition=MAIN/2023-01-31%26release=%26languages=en%26latestRedirect=false" target="_blank">461911000124106</a></li>
+                <li><strong>Unknown:</strong> <a href="https://browser.ihtsdotools.org/?perspective=full%26conceptId1=119324002%26edition=MAIN/2023-01-31%26release=%26languages=en%26latestRedirect=false" target="_blank">119324002</a></li>
+            </ul>
+        <li>Specimen ID</li>
+    </ul>
+
+    <p class="heading">Sample Collection</p>
+
+    <p>
+        A lab assistant must be able to collect samples that have been submitted for testing from the EMR.
+        <br />
+        <br />
+
+        Sample collection in the context of this implementation guide, will typically contain the following <u>key</u> data. 
+    </p>
+
+    <ul>
+        <li>Metadata</li>
+        <li>Sample collection date &amp; time</li>
+        <li>Specimen type</li>
+            <ul>
+                <li>Same as the <u>submit lab order</u> use case</li>
+            </ul>
+        <li>Specimen ID</li>
+    </ul>
+
+    <p class="heading">Process Lab Request</p>
+
+    <p>
+        A lab assistant must be able to close the request for sample examination using one of the following three statuses.
+    </p>
+
+    <ol>
+        <li>The specimen was successfully examined and the result issued (<a href="lab-result-bundle.html">lab result</a>)</li>
+        <li>The request for sample examination was cancelled by the lab order requester (<a href="lab-cancellation-bundle.html">lab cancellation</a>)</li>
+        <li>The specimen examination was rejected by the lab performer without carrying out any part of the test (<a href="lab-rejection-bundle.html">lab rejection</a>)</li>
+    </ol>
+
+    <p>
+        Process lab request in the context of this implementation guide, will typically contain the following <u>key</u> data. 
+    </p>
+
+    <ul>
+        <li>Metadata</li>
+        <li>Order number</li>
+        <li>Reason for not performing test</li>
+            <ul>
+                <li>Only applicable for lab cancellations and lab rejections</li>
+            </ul>
+        <li>Output code</li>
+            <ul>
+                <li>Only applicable to lab orders that have been successfully examined and issued with a result</li>
+                <li>Currently, the code of <a href="ValueSet-vs-lab-task-output.html">Result</a> represents the successfull completion of a lab order</li>
+            </ul>
+        <li>Test requested code</li>
+            <ul>
+                <li>Same as the <u>submit lab order</u> use case</li>
+            </ul>
+        <li>Specimen ID</li>
+            <ul>
+                <li>Same as the <u>sample collection</u> use case</li>
+            </ul>
+        <li>Specimen type</li>
+            <ul>
+                <li>Same as the <u>submit lab order</u> use case</li>
+            </ul>
+        <li>Result code</li>
+            <ul>
+                <li>Only applicable to lab orders that have been successfully examined and issued with a result</li>
+                <li>Codes</li>
+                <ul>
+                    <li><strong>Positive:</strong> <a href="https://browser.ihtsdotools.org/?perspective=full%26conceptId1=10828004%26edition=MAIN/2023-01-31%26release=%26languages=en%26latestRedirect=false" target="_blank">10828004</a></li>
+                    <li><strong>Negative:</strong> <a href="https://browser.ihtsdotools.org/?perspective=full%26conceptId1=260385009%26edition=MAIN/2023-01-31%26release=%26languages=en%26latestRedirect=false" target="_blank">260385009</a></li>
+                    <li><strong>Inconclusive:</strong> <a href="https://browser.ihtsdotools.org/?perspective=full%26conceptId1=419984006%26edition=MAIN/2023-01-31%26release=%26languages=en%26latestRedirect=false" target="_blank">419984006</a></li>
+                </ul>
+            </ul>
+    </ul>
+
+    <h3>References</h3> <a name="references"> </a>
+
+    <div>
+        <ol>
+            <li id="ref1">Post-COVID Conditions. (2022, December 16). Centers for Disease Control and Prevention. https://www.cdc.gov/coronavirus/2019-ncov/long-term-effects/index.html</li>
+        </ol>
+    </div>
+</div>  

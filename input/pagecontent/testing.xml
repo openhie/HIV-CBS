@@ -1,0 +1,143 @@
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd" lang="en">
+    
+    <h3>Introduction</h3> <a name="intro"> </a>
+
+    <p>
+        Testing data for accuracy and correctness is essential for any bussiness who relies on quality data for the purpose of decision making.
+        This is even more critical in healhcare as data is very commonly used to monitor the health status of a client and used to make decisions in regards to diagnosis and treatment plans etc.
+        <br />
+        <br />
+        For this reason, using an established automated testing framework can be highly beneficial to ensure data quality.
+        <br />
+        <br />
+        In the context of <a href="index.html#technicalBackground">DISI's reference platform architecture</a>, a <strong>Central Data Repository (CDR) Testing Framework</strong> has been developed as the testing tool to support quality assurance, end-to-end.
+        The <a href="https://github.com/jembi/disi-on-platform/tree/Report-Testing-Framework/test" target="_blank">CDR testing framework</a> is a <strong>custom developed package</strong> developed by <a href="https://www.jembi.org/" target="_blank">Jembi Health Systems</a> that sits on top of <a href="https://www.spritecloud.com/guides/cucumber-gherkin/#:~:text=Cucumber%20is%20an%20open%2Dsource,will%20be%20explained%20later%20on." target="_blank">Cucumber and Gherkin's automation engine</a>.
+        <br />
+        <br />
+        For more information in regards to the setup, deployment &amp; use of the CDR testing framework, please consult the <a href="https://docs.google.com/document/d/1R5gv0rCefN26ZlCYUzmgMueXksErhDvRMIRQ3IewSOY" target="_blank">Developer &amp; Tester Guide</a>.
+        <br />
+        <br />
+        The following sections offer a brief overview and background into what an automated testing framework can look like to support data quality in health systems.
+    </p>
+
+    <h3>Testing Approach</h3> <a name="objectives"> </a>
+
+    <p>
+        Tests can be carried out in the following ways.
+    </p>
+
+    <ol>
+        <li><strong>Automation</strong></li>
+            <ul>
+                <li><em>End-to-end testing</em></li>
+                <ol>
+                    <li>
+                        To ensure that data is moving along the pipeline from the PoS system to the analytics platform in a timeous fashion and that both target systems (<a href="https://hapifhir.io/hapi-fhir/docs/getting_started/introduction.html" target="_blank">Central Data Repository</a> &amp; <a href="https://jembi.gitbook.io/jembi-platform/packages/client-registry-santempi" target="_blank">Client Registry</a>) represent data that is accurate and correct. 
+                        The key objective of this test is to ensure the availability of data and data quality.
+                    </li>
+                </ol>
+                <ol>
+                    <li>
+                        Methodology: 
+                        By using the CDR Automated Testing Framework in conjunction with the predefined input and expected outcome datasets, testers are able to prove that the system is processing data correctly, flattening data for analytical purposes and displaying information that is accurate and correct for each client and their encounters. 
+                        In particular, the testing framework will ensure that data displayed in each case report meets the needs documented in each report requirements specification.
+                        <br />
+                        <br />
+                        <blockquote class="stu-note">
+                            <ul>
+                                <li>The CDR testing framework operates on a transactional basis meaning that bulk submissions to the CDR are not possible.</li>
+                            </ul>
+                        </blockquote>
+                    </li>
+                </ol>
+            </ul>
+        <li><strong>Manual Testing</strong></li>
+        <ol>
+            <li>
+                Methodology: 
+                With the availability of the EMR and assuming that it is stable, the tester will be able to transact with the <a href="index.html#technicalBackground">DISI's reference platform architecture</a> and perform tests against each component to compare outcomes as per the specification documentation and further measure data quality. 
+                Should the EMR not be available or unstable, <a href="index.html#messaging-testing">Postman</a> will be used as the tool to support the overall testing process. 
+                This area of testing will require that the tester explores each architectural component directly to understand its core capabilities and limitations.
+            </li>
+        </ol>
+    </ol>
+
+    <h3>Overview</h3> <a name="overview"> </a>
+
+    <p>
+        The Central Data Repository (CDR) Testing Framework is an automation tool designed to assist with report data accuracy as well as test the data pipeline end-to-end. 
+        The CDR testing framework is built on top of Cucumber, which is a general automation testing framework but also comes packaged with more specific custom developed modules which are used to query input and expected outcome datasets to assist with the measurement of data quality in the analytics platform. 
+        The CDR testing framework implements a modular design which will enable analysts, testers and developers to quite easily build new report modules to efficiently execute on-demand and regression testing processes against the data pipeline.
+        <br />
+        <br />
+        The illustration depicted as a <a href="#cdr-testing-framework-high-level-architecture-image">High-level Design Architecture</a> offers an overview of what the CDR testing framework modules should look like. 
+        <br />
+        <br />
+        The illustration depicted as a <a href="#cdr-testing-framework-component-architecture-image">Component Architecture</a> is an <strong>example</strong> of what the type of components could look like to support end-to-end testing.
+    </p>
+
+    <figure id="cdr-testing-framework-high-level-architecture-image" style="width: 80%; height: 80%; display: block; margin-left: auto; margin-right: auto;">
+        <img src="cdr-testing-framework-high-level-architecture.png" alt="High-level Design Architecture" />
+        <figcaption>High-level Design Architecture</figcaption>
+    </figure>
+
+    <br />
+    <br />
+
+    <figure id="cdr-testing-framework-component-architecture-image" style="width: 50%; height: 50%; display: block; margin-left: auto; margin-right: auto;">
+        <img src="cdr-testing-framework-component-architecture.png" alt="Component Architecture" />
+        <figcaption>Component Architecture</figcaption>
+    </figure>
+
+    <h3>Input &amp; Expected Outcome Dataset</h3> <a name="datasets"> </a>
+
+    <p>
+        In order for the CDR Testing Framework to be considered successful in terms of end-to-end automation testing, the framework must be able to not only submit input test data to the CDR using <a href="index.html#messaging-testing">Postman</a> but also be able to query the analytics platform to verify whether the input data that was submitted was also successfully flattened and stored by the analytics platform.  
+        Furthermore, the framework must also be able to check each and every element of the patient record to ensure that the value that is stored matches the documented expected outcome data for the patient.
+        <br />
+        <br />
+        For the purpose of streamlined data management activities, the input and expected outcome datasets can be centrally hosted as Google Sheets. 
+        The CDR Testing Framework should then fetch data from both datasets and use it during data assertions.
+    </p>
+
+    <p class="heading">Input Data</p>
+
+    <p>
+        This is the set of data that will be submitted to the CDR to mimic events at a given facility. 
+        The input dataset must be defined using static data to ensure that the expected outcome data values marry up with what was submitted to the CDR. 
+    </p>
+
+    <p class="heading">Expected Outcome Data</p>
+
+    <p>
+        This is the set of data that will govern the quality and correctness of data at rest in the analytics platform. 
+        In other words, the expected outcome dataset only contains patient records that must be reported on and has data values specified that correspond with the data in the input dataset and any report specification conditional logic. 
+        The expected outcome dataset is a static and final outcome which the CDR testing framework will expect to see in the analytics platform. 
+        If the testing framework detects a value in the analytics platform that does not correspond with the value specified for the same data element in the expected outcome dataset, the testing framework must fail that test case and immediately halt any further testing.
+        <br />
+        <br />
+        An expected outcome dataset may have data defined for the following types of reports.
+    </p>
+
+    <ol>    
+        <li>Line Listing Tabular Reports</li>
+        <li>Aggregated Tabular Reports</li>
+        <li>Charts</li>
+    </ol>
+
+    <h3>Summary of Benefits</h3> <a name="benefits"> </a>
+
+    <ul>
+        <li>Able to run tests rapidly using accurate input data</li>  
+        <li>Able to update the input and expected outcome data in the test cases with a single click of a button - data managed solely in the input and expected outcome documents</li>
+        <li>Uses behavioral-driven development - non technical stakeholders can understand the test cases</li>
+        <li>Can be configured to use any middleware component or even transact directly with the analytics system (API)</li>
+        <li>Input and expected outcome datasets are Google Sheet documents in Google Drive - Implements a Google Service account</li>
+        <li>Able to see point of failures on a system level or patient record</li>
+        <li>Able to see point of failures per patient record resulting from incorrect field-level values</li>
+        <li>Supports a modular design approach - easily build custom reports using any preferred techniques and simply reference the automation framework engine to do all the work</li>
+        <li>Tests the pipeline end-to-end</li>
+        <li>Contributes to performance testing over the pipeline</li>
+        <li>Can be included into the project's continuous integration (CI) processes so that report data quality is ensured with each build before merging into master.</li>
+    </ul>
+</div>

@@ -1,0 +1,98 @@
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd" lang="en">
+     <h3>Introduction</h3> <a name="intro"> </a>
+
+    <p>
+        This implementation guide conforms with the following key reporting requirements as identified by the Center for Disease Control and Prevention (CDC) for COVID19 <a href="#ref1">(Labs, 2020)</a>.
+    </p>
+
+    <h3>How to Report</h3> <a name="how-to-report"> </a>
+
+    <p>Laboratory data elements must be reported in one or more of the following ways.</p>
+
+    <ol>
+        <li>
+            Lab data can be submitted directly to an EMR electronically provided the communication stream adheres to country laws in regards to privacy &amp; confidentiality.
+            Lab results must be shared with the requesting organisation/provider or individual as applicable.
+        </li>
+        <li>
+            Lab data can be submitted directly to a <a href="https://jembi.gitbook.io/cares-on-platform/" target="_blank">centralised data repository</a>, stripped of all personally identifiable information (<a href="https://piwik.pro/blog/what-is-pii-personal-data/" target="_blank">PII</a>) and later be routed to an analytics platform for reporting.
+        </li>
+        <li>
+            Lab data can be submitted to an EMR via a health information exchange (HIE). It will be the responsibility of the interoperability layer to facilitate the mediation of the message to the correct destination system. 
+        </li>
+    </ol>
+
+    <h3>What to Report</h3> <a name="what-to-report"> </a>
+
+    <p>
+        The following list of data elements should be provided for the purpose of COVID19 case reporting.
+    </p>
+
+    <blockquote class="stu-note">
+        <ul>
+            <li>
+                The data elements in scope for this implementation guide are defined by the <a href="https://www.notion.so/gicsandbox/09ee19ee4fd34649a8cc07e1c171a84e?v=85d824b3ef9943ba92cb4204f6532ccf" target="_blank">COVID19 Minimum Dataset</a>.
+            </li>
+        </ul>
+    </blockquote>
+
+    <p></p>
+
+    <ul>
+        <li><a href="ValueSet-vs-test-types.html">Test requested</a> (must use the LOINC code system for harmonization)</li>
+        <li>Device ID</li>
+        <li><a href="ValueSet-vs-covid19-test-result.html">Test result</a> (must use appropriate diagnoses codes issued by LOINC or SNOMED)</li>
+        <li>Specimen ID</li>
+        <li>Client age</li>
+            <ul>
+                <li>This is calculated using the client's date of birth.</li>
+            </ul>
+        <li>Client race</li>
+            <ul>
+                <li><strong>Currently not in scope</strong></li>
+            </ul>
+       <li>Client ethnicity</li>
+            <ul>
+                <li><strong>Currently not in scope</strong></li>
+            </ul>
+        <li>Client gender</li>
+        <li>Client residence zip code</li>
+             <ul>
+                <li><strong>Currently not in scope</strong></li>
+            </ul>
+        <li>Client residence country</li>
+        <li>Lab order requesting provider name</li>
+        <li>Lab order requesting provider zip code</li>
+             <ul>
+                <li><strong>Currently not in scope</strong></li>
+            </ul>
+        <li>Lab examination performing provider name</li>
+        <li>Lab examination performing provider zip code</li>
+             <ul>
+                <li><strong>Currently not in scope</strong></li>
+            </ul>
+        <li><a href="ValueSet-vs-covid19-specimen-type.html">Specimen type</a> (must use appropriate codes issued by LOINC or SNOMED)</li>
+        <li>Lab order date &amp; time</li>
+        <li>Sample collection date</li>
+        <li>Client name (Last name, First name, Middle Initial)</li>
+        <li>Client street address</li>
+        <li>Client contact details with area code</li>
+        <li>Client date of birth</li>
+        <li>Lab order requesting provider address</li>
+        <li>Lab order requesting provider contact details</li>
+    </ul>
+
+    <h3>Use Cases</h3> <a name="use-cases"> </a>
+
+    <p>
+        The <a href="use-cases.html#use-case-diagram">use case diagram</a> for this implementation guide identifies the key functions on offer in order to assist with the various immunisation tracking events associated with COVID19.
+    </p>
+
+    <h3>References</h3> <a name="references"> </a>
+
+    <div>
+        <ol>
+            <li id="ref1">Labs. (2020, February 11). Centers for Disease Control and Prevention. https://www.cdc.gov/coronavirus/2019-ncov/lab/reporting-lab-data.html</li>
+        </ol>
+    </div>
+</div>  
