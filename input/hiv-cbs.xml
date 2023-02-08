@@ -45,7 +45,7 @@
   <fhirVersion value="4.0.1"/>
 
  <dependsOn id="HIVProgramMonitoring">
-    <uri value="http://openhie.org/fhir/hiv-program-monitoring/ImplementationGuide/openhie.fhir.hiv.program-monitoring"/>
+    <uri value="http://openhie.org/fhir/hiv-program-monitoring"/>
     <packageId value="openhie.fhir.hiv.program-monitoring"/>
     <version value="current"/>
   </dependsOn>
