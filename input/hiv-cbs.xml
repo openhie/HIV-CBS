@@ -44,11 +44,11 @@
   <!-- This is whatever FHIR version(s) the IG artifacts are targeting (not the version of this file, which should always be 'current release') -->
   <fhirVersion value="4.0.1"/>
 
- <dependsOn id="HIVProgramMonitoring">
+ <!--<dependsOn id="HIVProgramMonitoring">
     <uri value="http://openhie.org/fhir/hiv-program-monitoring"/>
     <packageId value="openhie.fhir.hiv.program-monitoring"/>
     <version value="current"/>
-  </dependsOn>
+  </dependsOn> -->
 
   <definition>
     <!-- You don't need to define any groupings.  The IGPublisher will define them for you.  You only need to do so if your IG is 'special' and it's
@@ -75,20 +75,14 @@
           <title value="Functional Requirements"/>
           <generation value="html"/>
 
-           <!-- Vaccination Statuses page -->
+           <!-- use-cases Statuses page -->
           <page>
             <nameUrl value="use-cases.html"/>
             <title value="Use Cases"/>
             <generation value="html"/>
           </page>
 
-          <!-- Vaccination Statuses page -->
-          <page>
-            <nameUrl value="vaccination_status.html"/>
-            <title value="Vaccination Status"/>
-            <generation value="html"/>
-          </page>
-        </page>
+       
 
          <!-- Personas page -->
           <page>
