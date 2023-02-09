@@ -1,0 +1,88 @@
+@startuml UseCaseDiagram
+left to right direction
+actor "Nurse" as nurse
+rectangle EMR {
+  usecase "Register Client" as UC1
+  usecase "Assess Client" as UC2
+  usecase "Document Screening Information" as UC3
+  usecase "Document Symptoms" as UC4
+  usecase "Document Comorbidities" as UC5
+  usecase "Document Hospital Encounters" as UC6
+  usecase "Document Diagnosis" as UC8
+  usecase "Document Treatment Information" as UC9
+  usecase "Document Client Outcome" as UC10
+  usecase "Submit Lab Order" as UC11
+  usecase "Document Vaccination Events" as UC12
+  
+}
+
+nurse --> UC1
+nurse --> UC2
+nurse --> UC10
+nurse --> UC11
+nurse --> UC12
+
+(UC2) <.. (UC3) : "<<extends>>"
+(UC2) <.. (UC4) : "<<extends>>"
+(UC2) <.. (UC5) : "<<extends>>"
+(UC2) <.. (UC6) : "<<extends>>"
+(UC2) <.. (UC12) : "<<extends>>"
+(UC2) <.. (UC8) : "<<extends>>"
+(UC2) <.. (UC9) : "<<extends>>"
+
+actor "Lab Assistant" as labAssistant
+rectangle Laboratory {
+  usecase "Sample Collection" as UC14
+  usecase "Process Lab Request" as UC15
+  usecase "Document Lab Result" as UC16
+  usecase "Reject Lab Order" as UC17
+  usecase "Cancel Lab Order" as UC18
+  usecase "Document Reason For Not Performing Test" as UC19
+}
+
+labAssistant --> UC14
+labAssistant --> UC15
+
+
+(UC15) <.. (UC16) : "<<extends>>"
+(UC15) <.. (UC17) : "<<extends>>"
+(UC15) <.. (UC18) : "<<extends>>"
+
+(UC18) ..> (UC19) : "<<include>>"
+(UC17) ..> (UC19) : "<<include>>"
+
+(UC11) ..> Laboratory
+
+(UC16) ..> EMR : "Lab result"
+
+actor "Interoperability Layer" as iol
+rectangle "Centralised Data Repository" as cdr {
+  usecase "Manage Clinical Data" as UC20
+}
+
+iol <--> cdr : "HTTPS"
+
+EMR <..> iol : "EMR data"
+Laboratory <..> iol : "Lab data"
+
+
+actor "Matching Administrator" as macthingAdmin
+rectangle "Client Registry" as cr {
+  usecase "Manage Master Patient Index (MPI)" as UC21
+}
+
+macthingAdmin --> UC21
+
+iol <--> cr : "HTTPS"
+
+actor "Case Reporter" as caseReporter
+rectangle "Data Mart" as dm {
+  usecase "Generate Reports" as UC22
+}
+
+caseReporter --> UC22
+
+cdr --> dm : "Push Data"
+cr --> dm : "Push Data"
+
+@enduml

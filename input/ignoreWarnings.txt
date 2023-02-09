@@ -1,5 +1,3 @@
 == Suppressed Messages ==
-
-# Add warning and/or information messages here after you've confirmed that they aren't really a problem
-# (And include comments like this justifying why)
-# See https://github.com/FHIR/sample-ig/blob/master/input/ignoreWarnings.txt for examples
+# Not conerned about these warnings because we did not construct resources using xml becuase Sushi was used to generate the JSON FHIR resource examples
+%Unable to find ImplementationGuide.definition.resource.description for the resource%

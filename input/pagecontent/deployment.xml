@@ -1,0 +1,154 @@
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd" lang="en">
+    <style>
+        {% include custom.css %}
+    </style>
+   
+    <h3>Introduction</h3> <a name="intro"> </a>
+
+    <p>
+        This implementation guide provides a framework which can be adopted to ensure messaging standards and compliance among implementers. 
+        In other words, this is a governing framework that issues messaging requirements (allowed codes and code systems), 
+        specifies the minimum required data elements per FHIR resource and also has control over which data elements are mandatory.
+        <br />
+        <br />
+        Systems must be able to talk the same lanuguage otherwise important information will be lost...
+    </p>
+
+    <p class="heading">Prerequisites</p>
+
+    <p>
+        When preparing for the development of an implementation guide, the following key tasks will be essential.
+    </p>
+
+    <ol>
+        <li><strong>Define a minimum dataset (MDS)</strong>: Identifify the informational requirements for specific use cases. I.e., what data elements are needed by the EMR and lab systems to be interoperable with regards to data availability?</li>
+        <li><strong>Map the MDS fields to FHIR elements</strong>: Identify the appropriate FHIR resources and their data elements and establish a mapping with the MDS data elements.</li>
+    </ol>
+
+    <h3>Development Dependencies</h3> <a name="dependencies"> </a>
+
+    <p>
+        The following will need to be installed on your machine to support the development and testing of an implementation guide.
+    </p>
+
+    <ol>
+        <li><a href="https://desktop.github.com/" target="_blank">GitHub Desktop</a></li>
+        <li><a href="https://code.visualstudio.com/download" target="_blank">Visual Studio Code</a>: A code editor.</li>
+        <li><a href="https://nodejs.org/en/download/" target="_blank">NodeJS</a>: A Runtime enviornment.</li>
+        <li>
+            <a href="https://github.com/FHIR/sushi" target="_blank">Sushi</a>: Enables FHIR shorthand which greatly reduces the complexities associated with implementation guide development.
+            <br />
+            <br />
+
+            <blockquote class="stu-note">
+                <ul>
+                    <li><a href="https://fshschool.org/" target="_blank">Mitre</a> has created an <a href="https://fshschool.org/courses/fsh-seminar/04-deep-dive-with-fsh.html" target="_blank">excellent reference article</a> for the purpose of exploring and understanding Sushi. <strong>It is highly recommended that beginners carefully consult this great resource</strong> to assist with the development of an implementation guide.</li>
+                </ul>
+            </blockquote>
+        </li>
+        <li><a href="https://www.oracle.com/java/technologies/javase/jdk19-archive-downloads.html" target="_blank">Java</a>: A platform used for the development and running of Java applications.</li>
+        <li><a href="https://www.digitalocean.com/community/tutorial_collections/how-to-set-up-a-jekyll-development-site" target="_blank">Jekyll</a>: A static-site generator that allows for quick command line control over setup, deployment, and content management.</li>
+    </ol>
+
+    <h3>Getting Started</h3> <a name="getting-started"> </a>
+
+    <p>
+        You will need to create a new repository for the implementation guide project in the <a href="https://github.com/openhie" target="_blank">OpenHIE</a>.
+        <br />
+        <br />
+
+        <blockquote class="stu-note">
+            <ul>
+                <li>The OpenHIE Github space only permits authorised accounts to create new implementation guides.</li>
+                <li>Assistance may be required by the OpenHIE community to assist with the process of getting an implementation guide published.</li>
+            </ul>
+        </blockquote>
+    </p>
+
+    <p>
+        Follow these steps to create a new implementation guide repository in OpenHIE.
+    </p>
+
+    <ol>
+        <li>In the OpenHIE space in Github, click on the <a href="https://github.com/orgs/openhie/repositories" target="_blank">repositories tab</a>.</li>
+        <li>Click on the button "<strong>New repository</strong>".</li>
+        <li>
+            Select the custom template as shown below.
+            <br />
+            <br />
+            <figure style="width: 30%; height: 30%; display: block; margin-left: auto; margin-right: auto;">
+                <img src="github_template.png" alt="OpenHIE Implementation Guide Template" />
+                <figcaption>OpenHIE Implementation Guide Template</figcaption>
+            </figure>
+            <br />
+            <br />
+            If preferred, you can keep the repo private until the point of the implementation guide being stable and complete and then make it public.
+            <br />
+            <br />
+            <blockquote class="stu-note">
+                <ul>
+                    <li>The aforementioned template is already packaged with <a href="https://github.com/FHIR/sushi" target="_blank">Sushi</a>.</li>
+                    <li>Continous integration is already configured into the build and deployment process.</li>
+                </ul>
+            </blockquote>
+        </li>
+        <li>Using <a href="https://desktop.github.com/" target="_blank">GitHub Desktop</a>, clone the implementation guide repository.</li>
+        <li>
+            Create a new branch.
+            <br />
+            <br />
+            <blockquote class="stu-note">
+                <ul>
+                    <li>Never edit master directly as this will lead to merge conflicts...especially when there are multiple contributors.</li>
+                </ul>
+            </blockquote>
+        </li>
+        <li><a href="https://github.com/hapifhir/hapi-fhir-jpaserver-starter" target="_blank">Install HAPI FHIR</a></li>
+    </ol>
+
+    <h3>Testing &amp; Validation</h3> <a name="validation"> </a>
+
+    <p>
+        The following easy steps offer some guidance in regards to the deployment and testing of an implementation guide on your local machine.
+    </p>
+
+    <ol>
+        <li>
+             When executing the build and deployment of the implementation guide for the very first time, you will need to execute the following command.
+            <br />
+            <br />
+            <ul>
+                <li><em>./_updatePublisher.sh</em></li>
+            </ul>
+        </li>
+        <li>
+            Execute the following command to build and deploy the implementation guide.
+            <br />
+            <br />
+            <ul>
+                <li><em>./_genonce.sh</em></li>
+            </ul>
+        </li>
+    </ol>
+
+    <p>
+        The <em>./_genonce.sh</em> command creates a folder in the root of the project repository titled "<strong>output</strong>". This folder contains all artifacts for the implementation guide which also enables an implementer to view the HTML output locally before deploying to a public facing server.
+        <br />
+        <br />
+        When it comes to validating the implementation guide, simply launch the file "<strong>output\qa.html</strong>" and view its contents. It will inform you of any warnings and errors found in the implementation guide specification.
+        <br />
+        <br />
+        <blockquote class="stu-note">
+            <ul>
+                <li>The output\qa.html report is a critical tool to inform quality and correctness of an implementation guide!</li>
+                <li>The implementation guide must be free of all errors!</li>
+                <li>There may be a need to silence uneccessary warnings. Follow the instructions in the file "<strong>ignoreWarnings.txt</strong>".</li>
+            </ul>
+        </blockquote>
+    </p>
+
+    <p>
+        Please use <a href="https://www.postman.com/" target="_blank">Postman</a> to facilitate the process of submitting message requests to your local HAPI FHIR instance.
+        For more information around the benefits and use of the Postman tool, please visit the <a href="index.html#messaging-testing">messaging &amp; testing</a> section in the home page.
+    </p>
+</div>
