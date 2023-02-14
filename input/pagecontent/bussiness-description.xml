@@ -3,5 +3,100 @@
     {% include custom.css %}
   </style>
 
- 
+  <h3>Introduction</h3> <a name="intro"> </a>
+
+  <p>
+    This implementation guide supports the needs to effectively monitor the HIV key population &amp; and measure their progress towards being virally suppressed.
+    <strong>Key populations</strong> are defined groups who, due to specific higher-risk behaviors, are at increased risk of HIV, irrespective of the epidemic type or local context. Also, they often have legal and social issues related to their behaviors that increase their vulnerability to HIV <a href="#ref1">(Key Populations, n.d.)</a>.
+    Key populations also play a role with regards to the dynamics associated with the effective responsiveness towards the epidemic.
+    <br />
+    <br />
+    Currently, only the following key populations are supported by this implementation guide.
+    <ol>
+      <li>Female sex workers (FSW)</li>
+      <li>General population</li>
+      <li>Male sex workers (MSW)</li>
+      <li>Men who have sex with men (MSM)</li>
+      <li>People who inject drugs (PWID)</li>
+      <li>People who use drugs (PWUD)</li>
+      <li>Transgender people</li>
+    </ol>
+    <br />
+    <br />
+    This implementation guide was derived using a <a href="requirements.html">functional requirement specification</a> which was developed to support the following key HIV CBS sentinel events.
+  </p>
+
+  <ol>
+    <li>ART regimen switching
+      <br/>
+      <br/>
+      According to the <a href="#ref2">World Health Organization (2010)</a>, a regimen switch may occur when:
+      <ol>
+        <li>Where available, use viral load (VL) to confirm treatment failure.</li>
+        <li>Where routinely available, use VL every 6 months to detect viral replication.</li>
+        <li>A persistent VL of >5000 copies/ml confirms treatment failure.</li>
+        <li>The VL is not available, use immunological criteria to confirm clinical failure.</li>
+      </ol>
+    </li>
+    <li>
+      ART initiation
+      <br/>
+      <br/>
+      According to the <a href="#ref3">Initiation of Antiretroviral Therapy | NIH (2019)</a>, initiation into ART should happen as fast as possible after HIV diagnosis in order to increase the uptake of ART and linkage to care, decrease the time to viral suppression for individual patients, and improve the rate of virologic suppression among persons with HIV.
+      This essential to prevent HIV-associated morbidity and mortality.
+    </li>
+    <li>CD4 first/subsequent sampling</li>
+    <li>Death</li>
+    <li>Enrolled to care</li>
+    <li>HIV diagnosis</li>
+    <li>Viral suppression first/subsequent sampling</li>
+  </ol>
+
+  <h3>Reporting Objectives</h3> <a name="objectives"> </a>
+
+  <p>
+    This following key case reporting objectives have been identified for this implementation guide.
+  </p>
+
+  <p class="heading">Direct Support</p>
+
+  <p>
+    <strong>Direct support</strong> means that this implementation guide has been tailored to specifically support the following reporting needs.
+  </p>
+
+  <ul>
+    <li>To calculate the number of individuals who have been tested for COVID19 within the reporting period.</li>
+    <li>To calculate the number of individuals who have been diagnosed COVID19 positive within the reporting period.</li>
+    <li>To calculate the number of vaccinated individuals per <a href="vaccination_status.html">vacination status</a> within the reporting period.</li>
+  </ul>
+
+<p class="heading">Integrated Support</p>
+
+  <p>
+    <strong>Integrated support</strong> means that this implementation guide gets referenced together with other implementation guides based on the level of functionality and reporting needs offered by the system.
+    <br />
+    <br />
+    The following reporting objectives are achievable when this implementation guide is referenced by the same system concerned with <a href="https://github.com/openhie/HIV-CBS" target="_blank">HIV case reporting</a>.
+  </p>
+
+  <ul>
+    <li>To assist with the calculation in regards to the number of HIV+ individuals who have been tested for COVID19 within the reporting period.</li>
+    <li>To assist with the calculation in regards to the number of HIV+ individuals who are tested COVID19 positive within the reporting period.</li>
+    <li>
+        To assist with the calculation in regards to the number of vaccinated HIV+ individuals per <a href="vaccination_status.html">vacination status</a> within the reporting period.
+        <ul>
+            <li>Additionally, assist with the count of those individuals who have been confirmed to be COVID19 positive.</li>
+        </ul>
+    </li>
+  </ul>
+
+  <h3>References</h3> <a name="references"> </a>
+
+  <div>
+    <ol>
+      <li id="ref1">Key Populations. (n.d.). PAHO/WHO | Pan American Health Organization. https://www.paho.org/en/topics/key-populations</li>
+      <li id="ref2">World Health Organization. (2010). Antiretroviral therapy for HIV infection in adults and adolescents: recommendations for a public health approach - 2010 revision. https://apps.who.int/iris/handle/10665/44379</li>
+      <li id="ref3">Initiation of Antiretroviral Therapy | NIH. (2019, December 18). https://clinicalinfo.hiv.gov/en/guidelines/hiv-clinical-guidelines-adult-and-adolescent-arv/initiation-antiretroviral-therapy</li>
+    </ol>
+  </div>
 </div>
