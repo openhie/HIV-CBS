@@ -30,7 +30,7 @@
 
   <ol>
     <li>
-      <strong>ART regimen switching</strong>: According to the <a href="#ref2">World Health Organization (2010)</a>, a regimen switch may occur when:
+      <strong>Antiretroviral therapy (ART) regimen switching</strong>: According to the <a href="#ref2">World Health Organization (2010)</a>, a regimen switch may occur when:
       <ol>
         <li>Where available, use viral load (VL) to confirm treatment failure.</li>
         <li>Where routinely available, use VL every 6 months to detect viral replication.</li>
@@ -56,47 +56,38 @@
       <strong>HIV diagnosis</strong>: HIV can be diagnosed through blood or saliva. If an individual has been diagnosed with HIV, they should immediately be enrolled into care and start ART therapy, regardless of their stage of infection or complications.
     </li>
     <li>
-      <strong>Viral suppression first/subsequent sampling</strong>: Viral load tests are used to diagnose acute HIV infection, guide treatment choices, and monitor response to antiretroviral therapy (ART) <a href="#ref8">(Drain et al., 2019)</a>.
+      <strong>Viral suppression first/subsequent sampling</strong>: Viral load tests are used to diagnose acute HIV infection, guide treatment choices, and monitor response to ART <a href="#ref8">(Drain et al., 2019)</a>.
     </li>
   </ol>
 
   <h3>Reporting Objectives</h3> <a name="objectives"> </a>
 
-  <p>
-    This following key case reporting objectives have been identified for this implementation guide.
-  </p>
-
-  <p class="heading">Direct Support</p>
-
-  <p>
-    <strong>Direct support</strong> means that this implementation guide has been tailored to specifically support the following reporting needs.
-  </p>
-
-  <ul>
-    <li>To calculate the number of individuals who have been tested for COVID19 within the reporting period.</li>
-    <li>To calculate the number of individuals who have been diagnosed COVID19 positive within the reporting period.</li>
-    <li>To calculate the number of vaccinated individuals per <a href="vaccination_status.html">vacination status</a> within the reporting period.</li>
-  </ul>
-
-<p class="heading">Integrated Support</p>
+  <blockquote class="stu-note">
+    <ul>
+      <li>Even though this implementation guide is able to support some of the key <a href="https://www.state.gov/wp-content/uploads/2021/09/FY22-MER-2.6-Indicator-Reference-Guide.pdf" target="_blank">PEPFAR</a> HIV reporting indicators, not all disaggregation groups per indicator will be supported.</li>
+      <li>This implementation guide specification is currently limited to <a href="https://docs.google.com/spreadsheets/d/1vp54C2m-2xSGHKWstd4tSFsTuglz5k6jaCe30MTS_18/edit#gid=113954378" target="_blank">this minimum dataset</a>.</li>
+    </ul>
+  </blockquote>
 
   <p>
-    <strong>Integrated support</strong> means that this implementation guide gets referenced together with other implementation guides based on the level of functionality and reporting needs offered by the system.
-    <br />
-    <br />
-    The following reporting objectives are achievable when this implementation guide is referenced by the same system concerned with <a href="https://github.com/openhie/HIV-CBS" target="_blank">HIV case reporting</a>.
+    The following PEPFAR indicators can be implemented in order to support HIV case reporting.  
   </p>
 
   <ul>
-    <li>To assist with the calculation in regards to the number of HIV+ individuals who have been tested for COVID19 within the reporting period.</li>
-    <li>To assist with the calculation in regards to the number of HIV+ individuals who are tested COVID19 positive within the reporting period.</li>
-    <li>
-        To assist with the calculation in regards to the number of vaccinated HIV+ individuals per <a href="vaccination_status.html">vacination status</a> within the reporting period.
-        <ul>
-            <li>Additionally, assist with the count of those individuals who have been confirmed to be COVID19 positive.</li>
-        </ul>
-    </li>
+    <li><strong>(HTS_TST)</strong> Calculate the number of individuals who received HIV Testing Services (HTS) and received their test results.</li>
+    <li><strong>(HTS_TST_POS)</strong> Calculate the number of individuals who received HTS and were diagnosed with HIV.</li>
+    <li><strong>(TX_NEW)</strong> Calculate the Number of adults and children newly enrolled on ART.</li>
+    <li><strong>(TX_CURR)</strong> Calculate the number of adults and children currently receiving ART.</li>
+    <li><strong>(TX_ML)</strong> Calculate the number of ART patients (currently on ART or newly initiating ART) with no clinical contact or ARV pick-up for greater than 28 days since their last expected clinical contact or ARV pick-up.</li>
+    <li><strong>(TX_RTT)</strong> Calculate the number of ART patients who experienced interruption in treatment (IIT) during any previous reporting period, who successfully restarted ARVs within the reporting period and remained on treatment until the end of the reporting period.</li>
+    <li><strong>(TX_PVLS)</strong> Calculate the number of ART patients with suppressed VL results (&#60;1,000 copies/ml) documented in the medical or laboratory records/lab information system (LIS) within the past 12 months.</li>
   </ul>
+
+  <blockquote class="stu-note">
+    <ul>
+      <li>DISI's reference platform archiecture enables HIV case reporting at national and sub-national levels.</li>
+    </ul>
+  </blockquote>
 
   <h3>References</h3> <a name="references"> </a>
 
