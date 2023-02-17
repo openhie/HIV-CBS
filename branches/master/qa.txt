@@ -3,13 +3,11 @@
 
 err = 1, warn = 4, info = 0
 IG Publisher Version: 1.2.37
-Generated Fri Feb 17 14:43:56 UTC 2023. FHIR version 4.0.1 for openhie.fhir.hiv.cbs#0.2.0 (canonical = http://openhie.org/fhir/hiv-cbs)
- Build Errors : 2 / 4 / 0
+Generated Fri Feb 17 17:51:43 UTC 2023. FHIR version 4.0.1 for openhie.fhir.hiv.cbs#0.2.0 (canonical = http://openhie.org/fhir/hiv-cbs)
+ Build Errors : 0 / 4 / 0
  /github/workspace/input/hiv-cbs : 1 / 0 / 1
 </table>
 == n/a ==
-ERROR: /github/workspace/output/bussiness-description.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 369, column 64: The link 'vaccination_status.html' for "vacination status" cannot be resolved
-ERROR: /github/workspace/output/bussiness-description.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 385, column 101: The link 'vaccination_status.html' for "vacination status" cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
