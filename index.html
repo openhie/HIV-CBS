@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>OPENHIE.FHIR.HIV.CBS\HIV Case Reporting - FHIR v4.0.1</title>
+    <title>XXEXAMPLE.FHIR.UV.MYIG\MyIG Home Page - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -22,6 +22,8 @@
 <link href="assets/css/openhie.css" rel="stylesheet"/>
 <link href="assets/css/lforms.min.css" rel="stylesheet"/>
 
+<!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/colors.css" rel="stylesheet"/>
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 
@@ -70,9 +72,9 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">HIV Case-Based Surveillance</span>
+          <p><span style="font-size:12pt;font-weight:bold">xxYour User Friendly Name for MyIG Here</span>
             <br/>
-            <span style="display:inline-block;">0.2.0 - CI Build
+            <span style="display:inline-block;">0.1.0-test - CI Build
 
 
 
@@ -100,141 +102,36 @@
             </button>
             <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
-              <style>
-    *,
-*::before,
-*::after {
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-}
+              <ul
+	xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+	<li>
+		<a href="index.html">IG Home</a>
+	</li>
+	<li>
+		<a href="toc.html">Table of Contents</a>
+	</li>
+<!--
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Background<b class="caret"></b>
+		</a>
 
-.dropdown {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    width: 100px;
-}
+	</li>
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Functional Description<b class="caret"></b>
+		</a>
 
-.dropdown li {
-    position: relative;
-    z-index: 999;
-}
-
-.dropdown li a {
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    padding: 15px;
-}
-
-.dropdown li ul {
-    position: absolute;
-    top: 100%;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: none;
-    line-height: normal;
-    background-color: #DDFFEE;
-}
-
-.dropdown li ul li a {
-    text-align: left;
-    color: black;
-    font-size: 12px;
-    padding: 10px;
-    display: block;
-    white-space: nowrap;
-}
-
-.dropdown li ul li ul {
-    left: 100%;
-    top: 0;
-}
-
-#mainMenuOptions li:hover>a {
-    background-color: #43A682;
-    color: white;
-    text-decoration: underline;
-    font-size: 13px;
-}
-
-#mainMenuOptions li:hover>ul {
-    display: block;
-}
-
-	.heading {
-    display: block;
-    font-family: verdana;
-    line-height: 1.2em;
-    font-size: 1.2em;
-    margin: 0 0 3px 0;
-    margin-top: 10px;
-    color: #337AB7;
-    background-color: white !important;
-}
-
-.not-allowed {
-    cursor: not-allowed !important;
-    text-decoration: none !important;
-}
-
-.pointer {
-    cursor: pointer;
-}
-</style>
-
-<ul id="mainMenuOptions" xmlns="http://www.w3.org/1999/xhtml" class="dropdown">
-	<li><a href="#" style="font-size: 12px; text-decoration: none;">Menu <b class="caret"></b></a>
-		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="bussiness-description.html">Business Description <b class="caret" style="transform:rotate(270deg);"></b></a>
-				<ul>
-					<li>
-						<a href="requirements.html">Functional Requirements <b class="caret" style="transform:rotate(270deg);"></b></a>
-						<ul>
-							<li>
-								<a href="use-cases.html">Use Cases</a>
-							</li>
-						</ul>
-					</li>
-					<li><a href="personas.html">Personas</a></li>
-					<li><a href="workflows.html">Usage Workflows</a></li>
-				</ul>
+	</li>
+-->
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Specifications<b class="caret"></b>
+		</a>
+		<ul class="dropdown-menu">
+			<li>
+				<a href="artifacts.html">Artifact Index</a>
 			</li>
-			<li><a href="deployment.html">Deployment &amp; Use <b class="caret" style="transform:rotate(270deg);"></b></a>
-				<ul>
-					<li><a href="bundles.html">Message Bundles <b class="caret" style="transform:rotate(270deg);"></b></a>
-						<ul>
-							<li>
-								<a href="emr-bundle.html">EMR</a>
-							</li>
-							<li>
-								<a href="lab-order-bundle.html">Lab Order</a>
-							</li>
-							<li>
-								<a href="lab-result-bundle.html">Lab Result</a>
-							</li>
-							<li>
-								<a href="lab-rejection-bundle.html">Lab Rejection</a>
-							</li>
-							<li>
-								<a href="lab-cancellation-bundle.html">Lab Cancellation</a>
-							</li>
-						</ul>
-					</li>
-					<li><a href="security-privacy.html">Security &amp; Privacy</a></li>
-					<li><a href="testing.html">Testing</a></li>
-				</ul>
-			</li>
-			
-			<li><a href="referenced-sources.html">References</a></li>
-			<li><a href="artifacts.html">Artifacts</a></li>
-			<li><a href="toc.html">Table of Contents</a></li>
 		</ul>
-    </li>
-</ul> 
+	</li>
+</ul>      
             </div>  <!-- /.nav-collapse -->
           </div>  <!-- /.container -->
         </nav>  <!-- /.navbar -->
@@ -246,7 +143,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>HIV Case Reporting</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>MyIG Home Page</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -266,18 +163,18 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">HIV Case-Based Surveillance, published by Jembi Health Systems. This is not an authorized publication; it is the continuous build for version 0.2.0). This version is based on the current content of <a href="https://github.com/openhie/HIV-CBS">https://github.com/openhie/HIV-CBS</a> and changes regularly. See the <a href="http://openhie.org/fhir/hiv-cbs/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
-  <h2>HIV Case Reporting</h2>
+  <!--ReleaseHeader--><p id="publish-box">xxYour User Friendly Name for MyIG Here, published by xxxYour Work Group. This is not an authorized publication; it is the continuous build for version 0.1.0-test). This version is based on the current content of <a href="https://github.com/openhie/HIV-CBS">https://github.com/openhie/HIV-CBS</a> and changes regularly. See the <a href="http://xxsomewhere.org/fhir/myig/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>MyIG Home Page</h2>
   
   
 
   <table class="colsd">
 
     <tr>
-      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://openhie.org/fhir/hiv-cbs/ImplementationGuide/openhie.fhir.hiv.cbs<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://openhie.org/fhir/hiv-cbs/ImplementationGuide/openhie.fhir.hiv.cbs"/></span>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://xxsomewhere.org/fhir/myig/ImplementationGuide/xxexample.fhir.uv.myig<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://xxsomewhere.org/fhir/myig/ImplementationGuide/xxexample.fhir.uv.myig"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">0.2.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://openhie.org/fhir/hiv-cbs/ImplementationGuide/openhie.fhir.hiv.cbs|0.2.0"/></span>
+      <span class="copy-text">0.1.0-test<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://xxsomewhere.org/fhir/myig/ImplementationGuide/xxexample.fhir.uv.myig|0.1.0-test"/></span>
       </td>
     </tr>
 
@@ -293,14 +190,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         
           Draft
           
-            as of 2023-02-15
+            as of 2023-02-17
           
         
       </td>
 
 
 
-      <td><i>Computable Name</i>: <span style="font-family: monospace;">HIVCBS</span></td>
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">XXYourComputableMyIGNameHere</span></td>
     </tr>
 
 
@@ -310,173 +207,43 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   
   
   
-  <div xmlns="http://www.w3.org/1999/xhtml" lang="en"><div class="markdown-toc"><p>Contents:</p><ul><li><a href="#1">Introduction</a></li><li><a href="#2">Technical</a></li><li><a href="#3">Target audience for this Implementation Guide</a></li><li><a href="#4">Intellectual Property Considerations</a></li><li><a href="#5">Disclaimer</a></li><li><a href="#6">Credits and Acknowledgements</a></li><li><a href="#7">References</a></li></ul></div>
-  <style>
-    .heading {
-    display: block;
-    font-family: verdana;
-    line-height: 1.2em;
-    font-size: 1.2em;
-    margin: 0 0 3px 0;
-    margin-top: 10px;
-    color: #337AB7;
-    background-color: white !important;
-}
-
-.not-allowed {
-    cursor: not-allowed !important;
-    text-decoration: none !important;
-}
-
-.pointer {
-    cursor: pointer;
-}
-  </style>
-
+  <div xmlns="http://www.w3.org/1999/xhtml" lang="en"><div class="markdown-toc"><p>Contents:</p><ul><li><a href="#1">Content</a></li><li><a href="#ip">Intellectual Property Considerations</a></li><li><a href="#disclaimer">Disclaimer</a></li></ul></div>
   <a name="scope">   </a>
+	<p>
+    This is our FHIR Implementation Guide. It contains the specifications developed by our community. 
+   </p>
+	<blockquote class="stu-note">
+	<strong>This documentation and set of artefacts are still undergoing development.</strong>
+	This content is only for demonstrative purposes.
+	</blockquote>
+	<p> </p>
+  <a name="1"/><h3>Content</h3> <a name="content">  </a>
+	<p/>
 
-  <p>
-    This Implementation Guide contains the specifications for HIV Case Based Surveillence (CBS) reporting.
-  </p>
+<p>This publication contains the full set of specifications...</p>
+<p/>
+<p>There is also an overview of the projects and motivation for the specifications.</p>
+<p/>
 
-  <blockquote class="stu-note">
-    <ul>
-      <li><strong>This implementation guide and set of artifacts are still undergoing development.</strong> </li>
-      <li>This content is only for demonstration purposes only. </li>
-      <li>Providing Feedback: Please submit any issues via the Feedback link next to the appropriate section of the implementation guide </li>
-    </ul>
-  </blockquote>
-  <p> </p>
-  <a name="1"/><h3>Introduction</h3> <a name="intro">  </a>
-
-  <p>
-    There is a need for countries to centralize and report on data that is captured at the point of service systems to effectively measure and monitor the progression and outcome of HIV through CBS <a href="https://www.pepfarsolutions.org/resourcesandtools-2/2019/8/5/hiv-case-based-surveillance-system-with-biometric-code-and-patient-linkage-and-retention-tool" target="_blank">sentinel events</a>.
-    HIV case reporting refers to the ongoing, systematic collection, analysis, interpretation, dissemination and evaluation of the HIV population <a href="#ref1">(HIV Case Surveillance, 2021)</a>. 
-    Moreover, to effectively track index cases (HIV infected individuals), planning, monitoring and resource allocation should happen at a national level. Tracking index cases is commonly performed using HIV CBS which is a method used to routinely capture generated individual-level patient information <a href="#ref2">(Takarinda et al., 2021)</a>.
-    Index cases are reported using a single HIV case report form which only has information about that specific individual. CBS offers a patient record that is longitudinal thus allowing additional care and treatment outcomes over time. HIV CBS monitors the patient from the time of diagnosis to death using sentinel events.
-    <br/>
-    <br/>
-    A nationally implemented system to help understand the progress in the HIV program using real-time data analytics will improve the measure of CBS sentinel events and monitoring towards a virally suppressed population. Thus, a national central data repository (CDR), a component of the Data Integration Strategies &amp; Implementation (DISI) reference platform architecture, can be implemented to integrate data for longitudinal patient records, program management and monitoring.
-    Commonly, CBS reporting is done ad hoc per country. DISI refers to the practice of centralizing and integrating HIV case-based surveillance data in a central repository for further reporting, analysis, and visualization.
-    <br/>
-    <br/>
-    This is a content specific implementation guide that has been derived from the <a href="#" target="_blank">HIV CBS Minimum Dataset</a> in order to effectively report on HIV CBS in an integrated fashion.
-  </p>
-  <p>
-    The <a href="bussiness-description.html">Business Description</a> for this implementation guide offers more detail in regards to its purpose.
-  </p>
-
-  <a name="2"/><h3>Technical</h3> <a name="technical">  </a>
-  <p class="heading" id="technicalBackground">Background</p>
-
-  <p>
-    This implementation guide was developed as the messaging standards specification for one of the DISI Platform reference solutions. 
-    DISI proposes to create a standards-based architecture that would allow multiple countries to adopt a similar framework for generating reports that they require. Currently, there are two DISI Reference Implementations for data centralization and reporting, one for <a href="https://jembi.gitbook.io/disi-on-platform/" target="_blank">HIV</a> and another for <a href="https://jembi.gitbook.io/cares-on-platform/" target="_blank">COVID19</a>.
-    <br/>
-    <br/>
-    The DISI acrhitecture brings forth a <a href="https://jembi.gitbook.io/jembi-platform/packages" target="_blank">set of components</a> that are common among HIV and COVID19. The DISI architecture can be seen below.
-  </p>
-
-  <figure>
-    <img src="disi_architecture.png" alt="DISI Platform Architecture"/>
-    <figcaption>DISI Platform Architecture</figcaption>
-  </figure>
-
-  <p id="messaging-testing" class="heading">Messaging &amp; Testing</p>
-
-  <p>
-    This specification defines the <a href="bundles.html">key FHIR messaging bundles</a> needed to support HIV case reporting &amp; lab integration.
-  </p>
-
-  <p>
-    Using an application called <a href="https://www.postman.com/" target="_blank">Postman</a>, you will be able to submit requests (message bundles) to the DISI Platform for processing &amp; reporting.
-    <br/>
-    <br/>
-    There are two Postman Collections namely: 
-  </p>
-
-  <ol>
-    <li>HIV Case Reporting</li>
-    <li>HIV Lab Integration</li>
-  </ol>
-
-  <p>
-    Please see our <a href="https://jembi.gitbook.io/disi-on-platform/postman-collections" target="_blank">Postman Collections for HIV</a> as well as the descriptions for each of the message bundles that exist in each postman collection.
-    <br/>
-    <br/>
-    Each of the these postman collections have been tailored to support end-to-end testing between the EMR and lab systems. Moreover, each collection comes with a set of postman variables which have been designed to randomly populate data for all key fields in all resources. This is a great way to carry out exploratory testing.
-    <br/>
-    <br/>
-    The use of postman variables also allows you to statically initiate variables to actual values you need.
-    <br/>
-    <br/>
-    Another way is to <a href="testing.html">automate end-to-end testing</a> over the data pipeline till the point that case report data is available in the analytics platform.
-  </p>
-
-  <a name="3"/><h3>Target audience for this Implementation Guide</h3> <a name="audience">  </a>
-  <p>
-    This Implementation Guide is targeted at the following typical audiences:
-  </p>
-
-   <ul>
-      <li><b>SMEs, Health program managers and specialists, informaticists</b> who wish to consult the architecture for case reporting.</li>
-      <li><b>Healthcare IT analysts</b> who wish to design or integrate systems for case reporting, case surveillance.</li>
-      <li><b>Technical designers</b> who must implement such case surveillance and reporting systems and their interfaces.</li>
-    </ul>
-
-  <a name="4"/><h3>Intellectual Property Considerations</h3>  <a name="ip">  </a>
-  <p>
-    While this implementation guide and the underlying FHIR are licensed as public domain, this guide may include examples making use of terminologies such 
+<a name="navigation">  </a>
+<p>The top menu allows quick navigation to the different sections, and a <a href="toc.html">Table of Contents</a> is provided with the entire content of this Implementation Guide. (Be aware that some pages have multiple tabs).</p>
+<p/>
+	<a name="ip">  </a>
+	<h3>Intellectual Property Considerations</h3>
+	<p>
+    While this implementation guide and the underlying FHIR are licensed as public domain, this guide includes examples making use of terminologies such 
     as LOINC, SNOMED CT and others which have more restrictive licensing requirements. Implementers should make themselves familiar with licensing and 
     any other constraints of terminologies, questionnaires, and other components used as part of their implementation process. In some cases, 
     licensing requirements may limit the systems that data captured using certain questionnaires may be shared with.
   </p>
 
-  <a name="5"/><h3>Disclaimer</h3>  <a name="disclaimer">  </a>
-  <p>
-    This specification is provided without warranty of completeness or consistency, and the official publication supersedes this draft.
+	<a name="disclaimer">  </a>
+	<h3>Disclaimer</h3>
+	<p>
+    The specification herewith documented is a demo working specification, and may not be used for any implementation purposes. 
+    This draft is provided without warranty of completeness or consistency, and the official publication supersedes this draft.
     No liability can be inferred from the use or misuse of this specification, or its consequences.
   </p>
-
-  <a name="6"/><h3>Credits and Acknowledgements</h3>  <a name="credits">  </a>
-  <p>
-    This specification is based on FHIR and the FHIR tooling ecosystem and community processes. 
-    It has been defined with the support and participation of the following institutions.
-  </p>
-
-  <p class="heading">Institutions</p>
-
-  <ul>
-    <li>Centers for Disease Control and Prevention (<a href="https://www.cdc.gov/" target="_blank">CDC</a>)</li>
-    <li>Program for Appropriate Technology in Health (<a href="https://www.path.org/" target="_blank">PATH</a>)</li>
-    <li>Jembi Health Systems (<a href="https://www.jembi.org/" target="_blank">Jembi</a>)</li>
-  </ul>
-
-  <p class="heading">Contributors</p>
-
-  <ul>
-    <li>Jose Costa Teixeira (PATH) - Co-author</li>
-    <li>Chris Seebregts (Jembi) - Project Sponsor &amp; Co-author</li>
-    <li>Richard Langford (Jembi) - Author</li>
-    <li>Marius Naude (Jembi) - Co-author</li>
-    <li>Xhanti Mdyeshana (Jembi) - Co-author</li>
-  </ul>
-
-  <p class="heading">Viewers</p>
-
-  <ul>
-    <li>James Kariuki (CDC) - Project Lead</li>
-    <li>Kendi Mburu (PATH) - Project Manager</li>
-  </ul>
-
-  <a name="7"/><h3>References</h3> <a name="references">  </a>
-
-  <div>
-    <ol>
-      <li id="ref1">HIV Case Surveillance. (2021, December 1). Disease Prevention. https://www.vdh.virginia.gov/disease-prevention/disease-prevention/virginia_hiv_hepatitis_surveillance/hiv-case-surveillance/</li>
-      <li id="ref2">Takarinda, K. P., Nyadundu, S., Govha, E., Gombe, N. T., Juru, T., &amp; Mufuta, T. (2021). Evaluation of the HIV Case-Based Surveillance System: A Pilot of the Electronic Health Record System in Mutare District, Zimbabwe, 2021. Open Journal of Epidemiology, 11(04), 483–500. https://doi.org/10.4236/ojepi.2021.114039</li>
-    </ol>
-  </div>
 </div>
 </div>
         </div>  <!-- /inner-wrapper -->
@@ -501,13 +268,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
            
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2019+ <a style="color: #81BEF7" href="https://www.jembi.org">Jembi Health Systems</a>.  Package openhie.fhir.hiv.cbs#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Feb 15, 2023 12:35+0000">2023-02-15</span>
+          IG &#169; 2019+ <a style="color: #81BEF7" href="http://xxhl7.org/Special/committees/[something]">xxxYour Work Group</a>.  Package xxexample.fhir.uv.myig#0.1.0-test based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Feb 17, 2023 07:58+0000">2023-02-17</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
                  <a style="color: #81BEF7" href="qa.html">QA Report</a> |
                  
-                 <a style="color: #81BEF7" target="_blank" href="http://openhie.org/fhir/hiv-cbs/history.html">Version History</a> |
+                 <a style="color: #81BEF7" target="_blank" href="http://xxsomewhere.org/fhir/myig/history.html">Version History</a> |
                  <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC-BY" src="assets/images/cc-by.png" height="17"/></a> |
                  <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
 

@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>OPENHIE.FHIR.HIV.CBS\Artifacts Summary - FHIR v4.0.1</title>
+    <title>XXEXAMPLE.FHIR.UV.MYIG\Artifacts Summary - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -22,6 +22,8 @@
 <link href="assets/css/openhie.css" rel="stylesheet"/>
 <link href="assets/css/lforms.min.css" rel="stylesheet"/>
 
+<!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/colors.css" rel="stylesheet"/>
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 
@@ -42,8 +44,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"6"}
-    h3,h4,h5,h6{--heading-prefix:"6"}</style>
+    <style type="text/css">h2{--heading-prefix:"3"}
+    h3,h4,h5,h6{--heading-prefix:"3"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -70,9 +72,9 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">HIV Case-Based Surveillance</span>
+          <p><span style="font-size:12pt;font-weight:bold">xxYour User Friendly Name for MyIG Here</span>
             <br/>
-            <span style="display:inline-block;">0.2.0 - CI Build
+            <span style="display:inline-block;">0.1.0-test - CI Build
 
 
 
@@ -100,141 +102,36 @@
             </button>
             <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
-              <style>
-    *,
-*::before,
-*::after {
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-}
+              <ul
+	xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+	<li>
+		<a href="index.html">IG Home</a>
+	</li>
+	<li>
+		<a href="toc.html">Table of Contents</a>
+	</li>
+<!--
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Background<b class="caret"></b>
+		</a>
 
-.dropdown {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    width: 100px;
-}
+	</li>
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Functional Description<b class="caret"></b>
+		</a>
 
-.dropdown li {
-    position: relative;
-    z-index: 999;
-}
-
-.dropdown li a {
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    padding: 15px;
-}
-
-.dropdown li ul {
-    position: absolute;
-    top: 100%;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: none;
-    line-height: normal;
-    background-color: #DDFFEE;
-}
-
-.dropdown li ul li a {
-    text-align: left;
-    color: black;
-    font-size: 12px;
-    padding: 10px;
-    display: block;
-    white-space: nowrap;
-}
-
-.dropdown li ul li ul {
-    left: 100%;
-    top: 0;
-}
-
-#mainMenuOptions li:hover>a {
-    background-color: #43A682;
-    color: white;
-    text-decoration: underline;
-    font-size: 13px;
-}
-
-#mainMenuOptions li:hover>ul {
-    display: block;
-}
-
-	.heading {
-    display: block;
-    font-family: verdana;
-    line-height: 1.2em;
-    font-size: 1.2em;
-    margin: 0 0 3px 0;
-    margin-top: 10px;
-    color: #337AB7;
-    background-color: white !important;
-}
-
-.not-allowed {
-    cursor: not-allowed !important;
-    text-decoration: none !important;
-}
-
-.pointer {
-    cursor: pointer;
-}
-</style>
-
-<ul id="mainMenuOptions" xmlns="http://www.w3.org/1999/xhtml" class="dropdown">
-	<li><a href="#" style="font-size: 12px; text-decoration: none;">Menu <b class="caret"></b></a>
-		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="bussiness-description.html">Business Description <b class="caret" style="transform:rotate(270deg);"></b></a>
-				<ul>
-					<li>
-						<a href="requirements.html">Functional Requirements <b class="caret" style="transform:rotate(270deg);"></b></a>
-						<ul>
-							<li>
-								<a href="use-cases.html">Use Cases</a>
-							</li>
-						</ul>
-					</li>
-					<li><a href="personas.html">Personas</a></li>
-					<li><a href="workflows.html">Usage Workflows</a></li>
-				</ul>
+	</li>
+-->
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Specifications<b class="caret"></b>
+		</a>
+		<ul class="dropdown-menu">
+			<li>
+				<a href="artifacts.html">Artifact Index</a>
 			</li>
-			<li><a href="deployment.html">Deployment &amp; Use <b class="caret" style="transform:rotate(270deg);"></b></a>
-				<ul>
-					<li><a href="bundles.html">Message Bundles <b class="caret" style="transform:rotate(270deg);"></b></a>
-						<ul>
-							<li>
-								<a href="emr-bundle.html">EMR</a>
-							</li>
-							<li>
-								<a href="lab-order-bundle.html">Lab Order</a>
-							</li>
-							<li>
-								<a href="lab-result-bundle.html">Lab Result</a>
-							</li>
-							<li>
-								<a href="lab-rejection-bundle.html">Lab Rejection</a>
-							</li>
-							<li>
-								<a href="lab-cancellation-bundle.html">Lab Cancellation</a>
-							</li>
-						</ul>
-					</li>
-					<li><a href="security-privacy.html">Security &amp; Privacy</a></li>
-					<li><a href="testing.html">Testing</a></li>
-				</ul>
-			</li>
-			
-			<li><a href="referenced-sources.html">References</a></li>
-			<li><a href="artifacts.html">Artifacts</a></li>
-			<li><a href="toc.html">Table of Contents</a></li>
 		</ul>
-    </li>
-</ul> 
+	</li>
+</ul>      
             </div>  <!-- /.nav-collapse -->
           </div>  <!-- /.container -->
         </nav>  <!-- /.navbar -->
@@ -266,7 +163,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">HIV Case-Based Surveillance, published by Jembi Health Systems. This is not an authorized publication; it is the continuous build for version 0.2.0). This version is based on the current content of <a href="https://github.com/openhie/HIV-CBS">https://github.com/openhie/HIV-CBS</a> and changes regularly. See the <a href="http://openhie.org/fhir/hiv-cbs/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">xxYour User Friendly Name for MyIG Here, published by xxxYour Work Group. This is not an authorized publication; it is the continuous build for version 0.1.0-test). This version is based on the current content of <a href="https://github.com/openhie/HIV-CBS">https://github.com/openhie/HIV-CBS</a> and changes regularly. See the <a href="http://xxsomewhere.org/fhir/myig/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Artifacts Summary</h2>
   
   
@@ -307,13 +204,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
            
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2019+ <a style="color: #81BEF7" href="https://www.jembi.org">Jembi Health Systems</a>.  Package openhie.fhir.hiv.cbs#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Feb 15, 2023 12:35+0000">2023-02-15</span>
+          IG &#169; 2019+ <a style="color: #81BEF7" href="http://xxhl7.org/Special/committees/[something]">xxxYour Work Group</a>.  Package xxexample.fhir.uv.myig#0.1.0-test based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Feb 17, 2023 07:58+0000">2023-02-17</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
                  <a style="color: #81BEF7" href="qa.html">QA Report</a> |
                  
-                 <a style="color: #81BEF7" target="_blank" href="http://openhie.org/fhir/hiv-cbs/history.html">Version History</a> |
+                 <a style="color: #81BEF7" target="_blank" href="http://xxsomewhere.org/fhir/myig/history.html">Version History</a> |
                  <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC-BY" src="assets/images/cc-by.png" height="17"/></a> |
                  <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
 
