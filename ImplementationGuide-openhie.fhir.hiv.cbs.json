@@ -1,32 +1,36 @@
 {
   "resourceType" : "ImplementationGuide",
-  "id" : "xxexample.fhir.uv.myig",
+  "id" : "openhie.fhir.hiv.cbs",
   "text" : {
     "status" : "extensions",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>XXYourComputableMyIGNameHere</h2><p>The official URL for this implementation guide is: </p><pre>http://xxsomewhere.org/fhir/myig/ImplementationGuide/xxexample.fhir.uv.myig</pre><div><p>xxxA brief description of what this IG is about</p>\n</div></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>HIVCBS</h2><p>The official URL for this implementation guide is: </p><pre>http://openhie.org/fhir/hiv-cbs/ImplementationGuide/openhie.fhir.hiv.cbs</pre><div><p>HIV Case-Based Surveillance</p>\n</div></div>"
   },
-  "url" : "http://xxsomewhere.org/fhir/myig/ImplementationGuide/xxexample.fhir.uv.myig",
-  "version" : "0.1.0-test",
-  "name" : "XXYourComputableMyIGNameHere",
-  "title" : "xxYour User Friendly Name for MyIG Here",
+  "url" : "http://openhie.org/fhir/hiv-cbs/ImplementationGuide/openhie.fhir.hiv.cbs",
+  "version" : "0.2.0",
+  "name" : "HIVCBS",
+  "title" : "HIV Case-Based Surveillance",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2023-02-17T07:58:33+00:00",
-  "publisher" : "xxxYour Work Group",
+  "date" : "2023-02-17T14:42:46+00:00",
+  "publisher" : "Jembi Health Systems",
   "contact" : [{
     "telecom" : [{
       "system" : "url",
-      "value" : "http://xxhl7.org/Special/committees/[something]"
+      "value" : "https://www.jembi.org"
+    },
+    {
+      "system" : "email",
+      "value" : "info@jembi.org"
     }]
   }],
-  "description" : "xxxA brief description of what this IG is about ",
+  "description" : "HIV Case-Based Surveillance",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
       "code" : "001"
     }]
   }],
-  "packageId" : "xxexample.fhir.uv.myig",
+  "packageId" : "openhie.fhir.hiv.cbs",
   "license" : "CC0-1.0",
   "fhirVersion" : ["4.0.1"],
   "dependsOn" : [{
@@ -168,7 +172,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "http://xxsomewhere.org/fhir/myig/history.html"
+        "valueString" : "http://openhie.org/fhir/hiv-cbs/history.html"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -454,7 +458,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "http://xxsomewhere.org/fhir/myig/history.html"
+        "valueString" : "http://openhie.org/fhir/hiv-cbs/history.html"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -626,7 +630,142 @@
           "valueUrl" : "index.html"
         }],
         "nameUrl" : "index.html",
-        "title" : "MyIG Home Page",
+        "title" : "HIV Case Reporting",
+        "generation" : "html"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "bussiness-description.html"
+        }],
+        "nameUrl" : "bussiness-description.html",
+        "title" : "Business Description",
+        "generation" : "html",
+        "page" : [{
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "requirements.html"
+          }],
+          "nameUrl" : "requirements.html",
+          "title" : "Functional Requirements",
+          "generation" : "html",
+          "page" : [{
+            "extension" : [{
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "use-cases.html"
+            }],
+            "nameUrl" : "use-cases.html",
+            "title" : "Use Cases",
+            "generation" : "html"
+          }]
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "personas.html"
+          }],
+          "nameUrl" : "personas.html",
+          "title" : "Personas",
+          "generation" : "html"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "workflows.html"
+          }],
+          "nameUrl" : "workflows.html",
+          "title" : "Usage Workflows",
+          "generation" : "html"
+        }]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "deployment.html"
+        }],
+        "nameUrl" : "deployment.html",
+        "title" : "Deployment & Use",
+        "generation" : "html",
+        "page" : [{
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "bundles.html"
+          }],
+          "nameUrl" : "bundles.html",
+          "title" : "Message Bundles",
+          "generation" : "html",
+          "page" : [{
+            "extension" : [{
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "emr-bundle.html"
+            }],
+            "nameUrl" : "emr-bundle.html",
+            "title" : "EMR Bundle",
+            "generation" : "html"
+          },
+          {
+            "extension" : [{
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "lab-order-bundle.html"
+            }],
+            "nameUrl" : "lab-order-bundle.html",
+            "title" : "Lab Order Bundle",
+            "generation" : "html"
+          },
+          {
+            "extension" : [{
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "lab-result-bundle.html"
+            }],
+            "nameUrl" : "lab-result-bundle.html",
+            "title" : "Lab Result Bundle",
+            "generation" : "html"
+          },
+          {
+            "extension" : [{
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "lab-cancellation-bundle.html"
+            }],
+            "nameUrl" : "lab-cancellation-bundle.html",
+            "title" : "Lab Cancellation Bundle",
+            "generation" : "html"
+          },
+          {
+            "extension" : [{
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "lab-rejection-bundle.html"
+            }],
+            "nameUrl" : "lab-rejection-bundle.html",
+            "title" : "Lab Rejection Bundle",
+            "generation" : "html"
+          }]
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "security-privacy.html"
+          }],
+          "nameUrl" : "security-privacy.html",
+          "title" : "Security & Privacy",
+          "generation" : "html"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "testing.html"
+          }],
+          "nameUrl" : "testing.html",
+          "title" : "Testing",
+          "generation" : "html"
+        }]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "referenced-sources.html"
+        }],
+        "nameUrl" : "referenced-sources.html",
+        "title" : "References",
         "generation" : "html"
       },
       {
