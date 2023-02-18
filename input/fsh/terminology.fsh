@@ -93,7 +93,8 @@ Id: vs-specimen-type
 Title: "Specimen type used in Viral Load testing"
 Description:  "Specimen type used in Viral Load testing"
 * ^experimental = false
-* $SCT#395058002 "Procedure by intent (procedure)"
+* $SCT#119361006 "Plasma specimen (specimen)"
+* $SCT#440500007 "Dried blood spot specimen (specimen)"
 
 ValueSet: VSTestTypes
 Id: vs-test-types

@@ -177,7 +177,7 @@ Title: "Viral Load Specimen example"
 Description: "Viral Load Specimen example"
 * identifier.value = "abc123"
 * identifier.system = "http://openhie.org/fhir/hiv-cbs/identifier/specimen"
-* type = $SCT#395058002
+* type = $SCT#119361006
 * subject = Reference(HIVPatientExample)
 * collection.collectedDateTime = "2022-07-28"
 * note.authorReference = Reference(HIVOrganizationExample)
