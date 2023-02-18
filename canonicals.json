@@ -1,26 +1,5 @@
 [
   {
-    "id" : "cs-patient-enrollment-type",
-    "type" : "CodeSystem",
-    "url" : "http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-patient-enrollment-type",
-    "version" : "0.2.0",
-    "name" : "CSPatientEnrollmentType"
-  },
-  {
-    "id" : "cs-vl-result-code",
-    "type" : "CodeSystem",
-    "url" : "http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-vl-result-code",
-    "version" : "0.2.0",
-    "name" : "CSVLResultCode"
-  },
-  {
-    "id" : "cs-vl-suppression",
-    "type" : "CodeSystem",
-    "url" : "http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-vl-suppression",
-    "version" : "0.2.0",
-    "name" : "CSVLSuppression"
-  },
-  {
     "id" : "openhie.fhir.hiv.cbs",
     "type" : "ImplementationGuide",
     "url" : "http://openhie.org/fhir/hiv-cbs/ImplementationGuide/openhie.fhir.hiv.cbs",

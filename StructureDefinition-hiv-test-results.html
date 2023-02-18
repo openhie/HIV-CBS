@@ -465,8 +465,8 @@
           <h4>Terminology Bindings (Differential)</h4>
 <table class="list">
 <tr><td><b>Path</b></td><td><b>Conformance</b></td><td><b>ValueSet</b></td></tr>
-<tr><td>Observation.code</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td><a style="opacity: 1.0" href="ValueSet-vs-vl-result-code.html">VSVLResultCode</a> (a valid code from <a href="CodeSystem-cs-vl-result-code.html">Viral Load Result Code</a>)</td></tr>
-<tr><td>Observation.interpretation</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td><a style="opacity: 1.0" href="ValueSet-vs-vl-suppression.html">VSVLSuppression</a> (a valid code from <a href="CodeSystem-cs-vl-suppression.html">Viral load Suppressions Status</a>)</td></tr>
+<tr><td>Observation.code</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td><a style="opacity: 1.0" href="ValueSet-vs-vl-result-code.html">VSVLResultCode</a></td></tr>
+<tr><td>Observation.interpretation</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td><a style="opacity: 1.0" href="ValueSet-vs-vl-suppression.html">VSVLSuppression</a></td></tr>
 </table>
 
         
@@ -502,8 +502,8 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <table class="list">
 <tr><td><b>Path</b></td><td><b>Conformance</b></td><td><b>ValueSet / Code</b></td></tr>
 <tr><td>Observation.status</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="Codes providing the status of an observation.">Pattern: final</td></tr>
-<tr><td>Observation.code</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td><a style="opacity: 1.0" href="ValueSet-vs-vl-result-code.html">VSVLResultCode</a> (a valid code from <a href="CodeSystem-cs-vl-result-code.html">Viral Load Result Code</a>)</td></tr>
-<tr><td>Observation.interpretation</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td><a style="opacity: 1.0" href="ValueSet-vs-vl-suppression.html">VSVLSuppression</a> (a valid code from <a href="CodeSystem-cs-vl-suppression.html">Viral load Suppressions Status</a>)</td></tr>
+<tr><td>Observation.code</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td><a style="opacity: 1.0" href="ValueSet-vs-vl-result-code.html">VSVLResultCode</a></td></tr>
+<tr><td>Observation.interpretation</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td><a style="opacity: 1.0" href="ValueSet-vs-vl-suppression.html">VSVLSuppression</a></td></tr>
 </table>
 
         
@@ -627,9 +627,9 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 </td></tr>
 <tr><td>Observation.status</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="Codes providing the status of an observation.">Pattern: final</td></tr>
 <tr><td>Observation.category</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td title="Codes for high level observation categories."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-observation-category.html">ObservationCategoryCodes</a></td></tr>
-<tr><td>Observation.code</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td><a style="opacity: 1.0" href="ValueSet-vs-vl-result-code.html">VSVLResultCode</a> (a valid code from <a href="CodeSystem-cs-vl-result-code.html">Viral Load Result Code</a>)</td></tr>
+<tr><td>Observation.code</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td><a style="opacity: 1.0" href="ValueSet-vs-vl-result-code.html">VSVLResultCode</a></td></tr>
 <tr><td>Observation.dataAbsentReason</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td title="Codes specifying why the result (`Observation.value[x]`) is missing."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-data-absent-reason.html">DataAbsentReason</a></td></tr>
-<tr><td>Observation.interpretation</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td><a style="opacity: 1.0" href="ValueSet-vs-vl-suppression.html">VSVLSuppression</a> (a valid code from <a href="CodeSystem-cs-vl-suppression.html">Viral load Suppressions Status</a>)</td></tr>
+<tr><td>Observation.interpretation</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td><a style="opacity: 1.0" href="ValueSet-vs-vl-suppression.html">VSVLSuppression</a></td></tr>
 <tr><td>Observation.bodySite</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Codes describing anatomical locations. May include laterality."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-body-site.html">SNOMEDCTBodyStructures</a></td></tr>
 <tr><td>Observation.method</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Methods for simple observations."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-observation-methods.html">ObservationMethods</a></td></tr>
 <tr><td>Observation.referenceRange.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td title="Code for the meaning of a reference range."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-referencerange-meaning.html">ObservationReferenceRangeMeaningCodes</a></td></tr>
@@ -810,8 +810,8 @@ Summary
           <h4>Terminology Bindings (Differential)</h4>
 <table class="list">
 <tr><td><b>Path</b></td><td><b>Conformance</b></td><td><b>ValueSet</b></td></tr>
-<tr><td>Observation.code</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td><a style="opacity: 1.0" href="ValueSet-vs-vl-result-code.html">VSVLResultCode</a> (a valid code from <a href="CodeSystem-cs-vl-result-code.html">Viral Load Result Code</a>)</td></tr>
-<tr><td>Observation.interpretation</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td><a style="opacity: 1.0" href="ValueSet-vs-vl-suppression.html">VSVLSuppression</a> (a valid code from <a href="CodeSystem-cs-vl-suppression.html">Viral load Suppressions Status</a>)</td></tr>
+<tr><td>Observation.code</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td><a style="opacity: 1.0" href="ValueSet-vs-vl-result-code.html">VSVLResultCode</a></td></tr>
+<tr><td>Observation.interpretation</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td><a style="opacity: 1.0" href="ValueSet-vs-vl-suppression.html">VSVLSuppression</a></td></tr>
 </table>
 
         
@@ -847,8 +847,8 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <table class="list">
 <tr><td><b>Path</b></td><td><b>Conformance</b></td><td><b>ValueSet / Code</b></td></tr>
 <tr><td>Observation.status</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="Codes providing the status of an observation.">Pattern: final</td></tr>
-<tr><td>Observation.code</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td><a style="opacity: 1.0" href="ValueSet-vs-vl-result-code.html">VSVLResultCode</a> (a valid code from <a href="CodeSystem-cs-vl-result-code.html">Viral Load Result Code</a>)</td></tr>
-<tr><td>Observation.interpretation</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td><a style="opacity: 1.0" href="ValueSet-vs-vl-suppression.html">VSVLSuppression</a> (a valid code from <a href="CodeSystem-cs-vl-suppression.html">Viral load Suppressions Status</a>)</td></tr>
+<tr><td>Observation.code</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td><a style="opacity: 1.0" href="ValueSet-vs-vl-result-code.html">VSVLResultCode</a></td></tr>
+<tr><td>Observation.interpretation</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td><a style="opacity: 1.0" href="ValueSet-vs-vl-suppression.html">VSVLSuppression</a></td></tr>
 </table>
 
         
@@ -972,9 +972,9 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 </td></tr>
 <tr><td>Observation.status</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td title="Codes providing the status of an observation.">Pattern: final</td></tr>
 <tr><td>Observation.category</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td title="Codes for high level observation categories."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-observation-category.html">ObservationCategoryCodes</a></td></tr>
-<tr><td>Observation.code</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td><a style="opacity: 1.0" href="ValueSet-vs-vl-result-code.html">VSVLResultCode</a> (a valid code from <a href="CodeSystem-cs-vl-result-code.html">Viral Load Result Code</a>)</td></tr>
+<tr><td>Observation.code</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td><a style="opacity: 1.0" href="ValueSet-vs-vl-result-code.html">VSVLResultCode</a></td></tr>
 <tr><td>Observation.dataAbsentReason</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td title="Codes specifying why the result (`Observation.value[x]`) is missing."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-data-absent-reason.html">DataAbsentReason</a></td></tr>
-<tr><td>Observation.interpretation</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td><a style="opacity: 1.0" href="ValueSet-vs-vl-suppression.html">VSVLSuppression</a> (a valid code from <a href="CodeSystem-cs-vl-suppression.html">Viral load Suppressions Status</a>)</td></tr>
+<tr><td>Observation.interpretation</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#required">required</a></td><td><a style="opacity: 1.0" href="ValueSet-vs-vl-suppression.html">VSVLSuppression</a></td></tr>
 <tr><td>Observation.bodySite</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Codes describing anatomical locations. May include laterality."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-body-site.html">SNOMEDCTBodyStructures</a></td></tr>
 <tr><td>Observation.method</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="Methods for simple observations."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-observation-methods.html">ObservationMethods</a></td></tr>
 <tr><td>Observation.referenceRange.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td title="Code for the meaning of a reference range."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-referencerange-meaning.html">ObservationReferenceRangeMeaningCodes</a></td></tr>
@@ -1185,7 +1185,7 @@ Summary
            
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2019+ <a style="color: #81BEF7" href="https://www.jembi.org">Jembi Health Systems</a>.  Package openhie.fhir.hiv.cbs#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Feb 18, 2023 11:17+0000">2023-02-18</span>
+          IG &#169; 2019+ <a style="color: #81BEF7" href="https://www.jembi.org">Jembi Health Systems</a>.  Package openhie.fhir.hiv.cbs#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Feb 18, 2023 14:18+0000">2023-02-18</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

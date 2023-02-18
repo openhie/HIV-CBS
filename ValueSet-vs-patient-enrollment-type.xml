@@ -3,7 +3,7 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="vs-patient-enrollment-type"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/185387006">185387006</a></td><td>New patient consultation (procedure)</td></tr><tr><td><a href="http://snomed.info/id/309037001">309037001</a></td><td>Transfer status (finding)</td></tr></table></li><li>Include all codes defined in <a href="CodeSystem-cs-patient-enrollment-type.html"><code>http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-patient-enrollment-type</code></a></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/185387006">185387006</a></td><td>New patient consultation (procedure)</td></tr><tr><td><a href="http://snomed.info/id/309037001">309037001</a></td><td>Transfer status (finding)</td></tr><tr><td><a href="http://snomed.info/id/182837001">182837001</a></td><td>Restart of medication (procedure)</td></tr></table></li><li>Include these codes as defined in <a href="http://loinc.org"><code>http://loinc.org</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="https://loinc.org/LA6505-7/">LA6505-7</a></td><td>PMTCT</td></tr></table></li></ul></div>
   </text>
   <url value="http://openhie.org/fhir/hiv-cbs/ValueSet/vs-patient-enrollment-type"/>
   <version value="0.2.0"/>
@@ -11,7 +11,7 @@
   <title value="Patient Type at Enrolment"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2023-02-18T11:17:38+00:00"/>
+  <date value="2023-02-18T14:18:06+00:00"/>
   <publisher value="Jembi Health Systems"/>
   <contact>
     <telecom>
@@ -41,9 +41,17 @@
         <code value="309037001"/>
         <display value="Transfer status (finding)"/>
       </concept>
+      <concept>
+        <code value="182837001"/>
+        <display value="Restart of medication (procedure)"/>
+      </concept>
     </include>
     <include>
-      <system value="http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-patient-enrollment-type"/>
+      <system value="http://loinc.org"/>
+      <concept>
+        <code value="LA6505-7"/>
+        <display value="PMTCT"/>
+      </concept>
     </include>
   </compose>
 </ValueSet>

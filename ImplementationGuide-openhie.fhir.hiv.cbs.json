@@ -11,7 +11,7 @@
   "title" : "HIV Case-Based Surveillance",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2023-02-18T11:17:38+00:00",
+  "date" : "2023-02-18T14:18:06+00:00",
   "publisher" : "Jembi Health Systems",
   "contact" : [{
     "telecom" : [{
@@ -806,17 +806,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/cs-patient-enrollment-type"
-      },
-      "name" : "Patient Type at Enrolment",
-      "description" : "A list of Custom Patient Types at Enrolment"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -1004,17 +993,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/cs-vl-result-code"
-      },
-      "name" : "Viral Load Result Code",
-      "description" : "Viral Load Result Code"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Observation"
       }],
       "reference" : {
@@ -1187,17 +1165,6 @@
       },
       "name" : "Example ServiceRequest - HIVServiceRequestExample",
       "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/HIV-lab-order"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/cs-vl-suppression"
-      },
-      "name" : "Viral load Suppressions Status",
-      "description" : "A list of Viral load Statuses"
     },
     {
       "extension" : [{
