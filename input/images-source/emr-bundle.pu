@@ -4,20 +4,17 @@
   "id" : "EMR",
   "type" : "transaction",
   "entry" : [{
-    "fullUrl" : "Patient/Covid19PatientExample",
+    "fullUrl" : "Patient/HIVPatientExample",
     "resource" : {
       "resourceType" : "Patient",
-      "id" : "Covid19PatientExample",
+      "id" : "HIVPatientExample",
       "meta" : {
-        "profile" : ["http://openhie.org/fhir/covid19-casereporting/StructureDefinition/covid19-patient"]
+        "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-patient"]
       },
+    
       "identifier" : [{
-        "system" : "http://openhie.org/fhir/covid19-casereporting/identifier/passport",
-        "value" : "PASSPORT1234567"
-      },
-      {
-        "system" : "http://openhie.org/fhir/covid19-casereporting/identifier/nid",
-        "value" : "NAT1234567"
+        "system" : "http://openhie.org/fhir/hiv-cbs/identifier/nid",
+        "value" : "NID1234567"
       }],
       "active" : true,
       "name" : [{
@@ -28,165 +25,161 @@
       }],
       "telecom" : [{
         "system" : "phone",
-        "value" : "+27825556666"
+        "value" : "+27821234567"
       },
       {
         "system" : "email",
         "value" : "someone@example.com"
       }],
       "gender" : "female",
-      "birthDate" : "1986-06-04",
+      "birthDate" : "1990-12-12",
       "address" : [{
         "city" : "Cape Town",
         "district" : "City of Cape Town",
         "state" : "Western Province",
         "country" : "South Africa"
       }],
-      "contact" : [{
-        "relationship" : [{
-          "coding" : [{
-            "system" : "http://terminology.hl7.org/CodeSystem/v2-0131",
-            "code" : "N"
-          }]
-        }],
-        "name" : {
-          "family" : "Doe",
-          "given" : ["John"]
-        },
-        "telecom" : [{
-          "system" : "phone",
-          "value" : "+27829999999"
-        }]
-      }],
       "managingOrganization" : {
-        "reference" : "Organization/Covid19OrganizationExample"
+        "reference" : "Organization/HIVOrganizationExample"
       }
     },
     "request" : {
       "method" : "PUT",
-      "url" : "Patient/Covid19PatientExample"
+      "url" : "Patient/HIVPatientExample"
     }
   },
   {
-    "fullUrl" : "Encounter/Covid19AssessmentEncounterExample",
+    "fullUrl" : "Encounter/TargetFacilityEncounterExample",
     "resource" : {
       "resourceType" : "Encounter",
-      "id" : "Covid19AssessmentEncounterExample",
+      "id" : "TargetFacilityEncounterExample",
       "meta" : {
-        "profile" : ["http://openhie.org/fhir/covid19-casereporting/StructureDefinition/covid19-encounter"]
+        "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/target-facility-encounter"]
       },
+    
       "extension" : [{
-        "url" : "http://openhie.org/fhir/covid19-casereporting/StructureDefinition/covid19-next-vaccination",
-        "valueDateTime" : "2022-07-28"
-      },
-      {
-        "url" : "http://openhie.org/fhir/covid19-casereporting/StructureDefinition/covid19-ever-hospitalised",
-        "valueCodeableConcept" : {
-          "coding" : [{
-            "system" : "http://snomed.info/sct",
-            "code" : "373066001"
-          }]
-        }
-      },
-      {
-        "url" : "http://openhie.org/fhir/covid19-casereporting/StructureDefinition/covid19-date-last-hospitalised",
-        "valueDateTime" : "2022-07-28"
+        "url" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-care-next-visit",
+        "valueDateTime" : "2022-10-22"
       }],
       "status" : "finished",
       "class" : {
         "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-        "code" : "SS"
+        "code" : "AMB"
       },
       "subject" : {
-        "reference" : "Patient/Covid19PatientExample"
+        "reference" : "Patient/HIVPatientExample"
       },
+      "episodeOfCare" : [{
+        "reference" : "EpisodeOfCare/HIVEpisodeOfCareExample"
+      }],
       "period" : {
-        "start" : "2022-07-28",
-        "end" : "2022-08-15"
+        "start" : "2022-12-01",
+        "end" : "2023-01-20"
       },
-      "location" : [{
-        "location" : {
-          "reference" : "Location/Covid19AdmissionLocationExample"
-        },
-        "physicalType" : {
-          "coding" : [{
-            "system" : "http://snomed.info/sct",
-            "code" : "225746001"
-          }]
-        }
-      }]
-    },
-    "request" : {
-      "method" : "PUT",
-      "url" : "Encounter/Covid19AssessmentEncounterExample"
-    }
-  },
-  {
-    "fullUrl" : "Location/Covid19AdmissionLocationExample",
-    "resource" : {
-      "resourceType" : "Location",
-      "id" : "Covid19AdmissionLocationExample",
-      "meta" : {
-        "profile" : ["http://openhie.org/fhir/covid19-casereporting/StructureDefinition/covid19-admission-location"]
+      "serviceProvider" : {
+        "reference" : "Organization/HIVOrganizationExample"
       },
-      "name" : "Covid19 Location",
-      "address" : {
-        "city" : "Example city 1",
-        "district" : "Example district 1",
-        "state" : "Example state 1",
-        "country" : "Example country 1"
+      "partOf" : {
+        "reference" : "Encounter/TransferringFacilityEncounterExample"
       }
     },
     "request" : {
       "method" : "PUT",
-      "url" : "Location/Covid19AdmissionLocationExample"
+      "url" : "Encounter/TargetFacilityEncounterExample"
     }
   },
   {
-    "fullUrl" : "Observation/Covid19PresentingSymptomsExample",
+    "fullUrl" : "Encounter/TransferringFacilityEncounterExample",
+    "resource" : {
+      "resourceType" : "Encounter",
+      "id" : "TransferringFacilityEncounterExample",
+      "meta" : {
+        "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/transferring-facility-encounter"]
+      },
+    
+      "status" : "finished",
+      "class" : {
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code" : "AMB"
+      },
+      "period" : {
+        "start" : "2022-12-01",
+        "end" : "2023-01-20"
+      },
+      "serviceProvider" : {
+        "reference" : "Organization/HIVOrganizationExample"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Encounter/TransferringFacilityEncounterExample"
+    }
+  },
+  {
+    "fullUrl" : "Observation/HIVTestResultExample",
     "resource" : {
       "resourceType" : "Observation",
-      "id" : "Covid19PresentingSymptomsExample",
+      "id" : "HIVTestResultExample",
       "meta" : {
-        "profile" : ["http://openhie.org/fhir/covid19-casereporting/StructureDefinition/covid19-presenting-symptoms"]
+        "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-test-results"]
       },
+    
       "status" : "final",
       "code" : {
         "coding" : [{
-          "system" : "http://snomed.info/sct",
-          "code" : "21522001"
+          "system" : "http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-vl-result-code",
+          "code" : "VL-RESULT"
         }]
       },
       "subject" : {
-        "reference" : "Patient/Covid19PatientExample"
+        "reference" : "Patient/HIVPatientExample"
       },
       "encounter" : {
-        "reference" : "Encounter/Covid19AssessmentEncounterExample"
+        "reference" : "Encounter/TargetFacilityEncounterExample"
       },
-      "effectiveDateTime" : "2022-07-28",
+      "effectiveDateTime" : "2022-11-30",
       "performer" : [{
-        "reference" : "Organization/Covid19OrganizationExample"
+        "reference" : "Organization/HIVOrganizationExample"
+      }],
+      "valueInteger" : 1001,
+      "interpretation" : [{
+        "coding" : [{
+          "system" : "http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-vl-suppression",
+          "code" : "UNSUP",
+          "display" : "Unsuppressed"
+        }]
       }],
       "note" : [{
         "authorReference" : {
-          "reference" : "Organization/Covid19OrganizationExample"
+          "reference" : "Organization/HIVOrganizationExample"
         },
         "time" : "2015-02-07T13:28:17-05:00",
-        "text" : "Other symptoms here"
+        "text" : "Viral load not suppressed"
       }]
     },
     "request" : {
       "method" : "PUT",
-      "url" : "Observation/Covid19PresentingSymptomsExample"
+      "url" : "Observation/HIVTestResultExample"
     }
   },
   {
-    "fullUrl" : "Condition/Covid19DiagnosisExample",
+    "fullUrl" : "Condition/HIVDiagnosisExample",
     "resource" : {
       "resourceType" : "Condition",
-      "id" : "Covid19DiagnosisExample",
+      "id" : "HIVDiagnosisExample",
       "meta" : {
-        "profile" : ["http://openhie.org/fhir/covid19-casereporting/StructureDefinition/covid19-diagnosis"]
+        "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-diagnosis"]
+      },
+     
+      "identifier" : [{
+        "system" : "http://openhie.org/fhir/hiv-cbs/identifier/hiv-diagnosis",
+        "value" : "abc123"
+      }],
+      "clinicalStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code" : "active"
+        }]
       },
       "verificationStatus" : {
         "coding" : [{
@@ -194,287 +187,39 @@
           "code" : "confirmed"
         }]
       },
-      "subject" : {
-        "reference" : "Patient/Covid19PatientExample"
-      },
-      "encounter" : {
-        "reference" : "Encounter/Covid19AssessmentEncounterExample"
-      },
-      "onsetDateTime" : "2022-07-28",
-      "recordedDate" : "2022-07-28",
-      "evidence" : [{
-        "code" : [{
-          "coding" : [{
-            "system" : "http://snomed.info/sct",
-            "code" : "84387000"
-          }]
-        }]
-      }],
-      "note" : [{
-        "authorReference" : {
-          "reference" : "Organization/Covid19OrganizationExample"
-        },
-        "time" : "2015-02-07T13:28:17-05:00",
-        "text" : "additional notes here"
-      }]
-    },
-    "request" : {
-      "method" : "PUT",
-      "url" : "Condition/Covid19DiagnosisExample"
-    }
-  },
-  {
-    "fullUrl" : "Condition/Covid19ConditionsOrComorbidityExample",
-    "resource" : {
-      "resourceType" : "Condition",
-      "id" : "Covid19ConditionsOrComorbidityExample",
-      "meta" : {
-        "profile" : ["http://openhie.org/fhir/covid19-casereporting/StructureDefinition/covid19-conditions-or-comorbidities"]
-      },
-     
-      "extension" : [{
-        "url" : "http://openhie.org/fhir/covid19-casereporting/StructureDefinition/covid19-conditions-or-comorbidities-present",
-        "valueCodeableConcept" : {
-          "coding" : [{
-            "system" : "http://snomed.info/sct",
-            "code" : "373066001"
-          }]
-        }
-      }],
       "code" : {
         "coding" : [{
           "system" : "http://snomed.info/sct",
-          "code" : "49601007"
+          "code" : "86406008"
         }]
       },
       "subject" : {
-        "reference" : "Patient/Covid19PatientExample"
+        "reference" : "Patient/HIVPatientExample"
       },
       "encounter" : {
-        "reference" : "Encounter/Covid19AssessmentEncounterExample"
+        "reference" : "Encounter/TargetFacilityEncounterExample"
       },
+      "recordedDate" : "2021-05-18",
       "note" : [{
         "authorReference" : {
-          "reference" : "Organization/Covid19OrganizationExample"
+          "reference" : "Organization/HIVOrganizationExample"
         },
         "time" : "2015-02-07T13:28:17-05:00",
-        "text" : "Other conditionss or comorbidities here"
+        "text" : "Additional information regarding the HIV diagnosis"
       }]
     },
     "request" : {
       "method" : "PUT",
-      "url" : "Condition/Covid19ConditionsOrComorbidityExample"
+      "url" : "Condition/HIVDiagnosisExample"
     }
   },
   {
-    "fullUrl" : "Immunization/Covid19AssessmentVaccinationExample",
-    "resource" : {
-      "resourceType" : "Immunization",
-      "id" : "Covid19AssessmentVaccinationExample",
-      "meta" : {
-        "profile" : ["http://openhie.org/fhir/covid19-casereporting/StructureDefinition/covid19-assessment-vaccination"]
-      },
-    
-      "status" : "completed",
-      "vaccineCode" : {
-        "coding" : [{
-          "system" : "http://icd.who.int/icd11/mms",
-          "code" : "XM8NQ0"
-        }]
-      },
-      "patient" : {
-        "reference" : "Patient/Covid19PatientExample"
-      },
-      "encounter" : {
-        "reference" : "Encounter/Covid19AssessmentEncounterExample"
-      },
-      "occurrenceDateTime" : "2022-07-28",
-      "reportOrigin" : {
-        "coding" : [{
-          "system" : "http://openhie.org/fhir/covid19-casereporting/CodeSystem/cs-source-of-info",
-          "code" : "VaccineCard"
-        }]
-      },
-      "lotNumber" : "1",
-      "expirationDate" : "2022-12-28",
-      "note" : [{
-        "authorReference" : {
-          "reference" : "Organization/Covid19OrganizationExample"
-        },
-        "time" : "2015-02-07T13:28:17-05:00",
-        "text" : "Some other text..."
-      }],
-      "protocolApplied" : [{
-        "series" : "Primary",
-        "doseNumberPositiveInt" : 1
-      }]
-    },
-    "request" : {
-      "method" : "PUT",
-      "url" : "Immunization/Covid19AssessmentVaccinationExample"
-    }
-  },
-  {
-    "fullUrl" : "Immunization/Covid19VaccinationExample",
-    "resource" : {
-      "resourceType" : "Immunization",
-      "id" : "Covid19VaccinationExample",
-      "meta" : {
-        "profile" : ["http://openhie.org/fhir/covid19-casereporting/StructureDefinition/covid19-vaccination"]
-      },
-    
-      "status" : "completed",
-      "vaccineCode" : {
-        "coding" : [{
-          "system" : "http://icd.who.int/icd11/mms",
-          "code" : "XM4YL8"
-        }]
-      },
-      "patient" : {
-        "reference" : "Patient/Covid19PatientExample"
-      },
-      "encounter" : {
-        "reference" : "Encounter/Covid19AssessmentEncounterExample"
-      },
-      "occurrenceDateTime" : "2022-07-28",
-      "reportOrigin" : {
-        "coding" : [{
-          "system" : "http://openhie.org/fhir/covid19-casereporting/CodeSystem/cs-source-of-info",
-          "code" : "VaccineCard"
-        }]
-      },
-      "lotNumber" : "1",
-      "expirationDate" : "2022-12-28",
-      "note" : [{
-        "authorReference" : {
-          "reference" : "Organization/Covid19OrganizationExample"
-        },
-        "time" : "2015-02-07T13:28:17-05:00",
-        "text" : "Some other text..."
-      }],
-      "protocolApplied" : [{
-        "series" : "Booster",
-        "doseNumberPositiveInt" : 1
-      }]
-    },
-    "request" : {
-      "method" : "PUT",
-      "url" : "Immunization/Covid19VaccinationExample"
-    }
-  },
-  {
-    "fullUrl" : "MedicationRequest/Covid19MedicationRequestExample",
-    "resource" : {
-      "resourceType" : "MedicationRequest",
-      "id" : "Covid19MedicationRequestExample",
-      "meta" : {
-        "profile" : ["http://openhie.org/fhir/covid19-casereporting/StructureDefinition/covid19-medication-request"]
-      },
-     
-      "status" : "active",
-      "intent" : "order",
-      "medicationCodeableConcept" : {
-        "coding" : [{
-          "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code" : "2599543"
-        }]
-      },
-      "subject" : {
-        "reference" : "Patient/Covid19PatientExample"
-      },
-      "encounter" : {
-        "reference" : "Encounter/Covid19AssessmentEncounterExample"
-      },
-      "note" : [{
-        "authorReference" : {
-          "reference" : "Organization/Covid19OrganizationExample"
-        },
-        "time" : "2015-02-07T13:28:17-05:00",
-        "text" : "additional notes here"
-      }]
-    },
-    "request" : {
-      "method" : "PUT",
-      "url" : "MedicationRequest/Covid19MedicationRequestExample"
-    }
-  },
-  {
-    "fullUrl" : "Observation/Covid19VaccineDoseEverReceivedExample",
+    "fullUrl" : "Observation/DeathExample",
     "resource" : {
       "resourceType" : "Observation",
-      "id" : "Covid19VaccineDoseEverReceivedExample",
+      "id" : "DeathExample",
       "meta" : {
-        "profile" : ["http://openhie.org/fhir/covid19-casereporting/StructureDefinition/covid19-vaccine-dose-ever-received"]
-      },
-    
-      "status" : "final",
-      "code" : {
-        "coding" : [{
-          "system" : "http://snomed.info/sct",
-          "code" : "373066001"
-        }]
-      },
-      "subject" : {
-        "reference" : "Patient/Covid19PatientExample"
-      },
-      "encounter" : {
-        "reference" : "Encounter/Covid19AssessmentEncounterExample"
-      },
-      "performer" : [{
-        "reference" : "Organization/Covid19OrganizationExample"
-      }]
-    },
-    "request" : {
-      "method" : "PUT",
-      "url" : "Observation/Covid19VaccineDoseEverReceivedExample"
-    }
-  },
-  {
-    "fullUrl" : "Observation/Covid19RecoveredOrSymptomsResolvedExample",
-    "resource" : {
-      "resourceType" : "Observation",
-      "id" : "Covid19RecoveredOrSymptomsResolvedExample",
-      "meta" : {
-        "profile" : ["http://openhie.org/fhir/covid19-casereporting/StructureDefinition/covid19-recovered-or-symptoms-resolved"]
-      },
-     
-      "status" : "final",
-      "code" : {
-        "coding" : [{
-          "system" : "http://snomed.info/sct",
-          "code" : "370996005"
-        }]
-      },
-      "subject" : {
-        "reference" : "Patient/Covid19PatientExample"
-      },
-      "encounter" : {
-        "reference" : "Encounter/Covid19AssessmentEncounterExample"
-      },
-      "effectiveDateTime" : "2022-11-09",
-      "performer" : [{
-        "reference" : "Organization/Covid19OrganizationExample"
-      }],
-      "note" : [{
-        "authorReference" : {
-          "reference" : "Organization/Covid19OrganizationExample"
-        },
-        "time" : "2015-02-07T13:28:17-05:00",
-        "text" : "Some other text..."
-      }]
-    },
-    "request" : {
-      "method" : "PUT",
-      "url" : "Observation/Covid19RecoveredOrSymptomsResolvedExample"
-    }
-  },
-  {
-    "fullUrl" : "Observation/Covid19DeathExample",
-    "resource" : {
-      "resourceType" : "Observation",
-      "id" : "Covid19DeathExample",
-      "meta" : {
-        "profile" : ["http://openhie.org/fhir/covid19-casereporting/StructureDefinition/covid19-death"]
+        "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/death"]
       },
      
       "status" : "final",
@@ -485,65 +230,155 @@
         }]
       },
       "subject" : {
-        "reference" : "Patient/Covid19PatientExample"
+        "reference" : "Patient/HIVPatientExample"
       },
       "encounter" : {
-        "reference" : "Encounter/Covid19AssessmentEncounterExample"
+        "reference" : "Encounter/TargetFacilityEncounterExample"
       },
-      "effectiveDateTime" : "2022-11-09",
-      "performer" : [{
-        "reference" : "Organization/Covid19OrganizationExample"
-      }],
+      "effectiveDateTime" : "2023-02-05",
       "note" : [{
         "authorReference" : {
-          "reference" : "Organization/Covid19OrganizationExample"
+          "reference" : "Organization/HIVOrganizationExample"
         },
         "time" : "2015-02-07T13:28:17-05:00",
-        "text" : "Some other text..."
+        "text" : "Deatils regarding death"
       }]
     },
     "request" : {
       "method" : "PUT",
-      "url" : "Observation/Covid19DeathExample"
+      "url" : "Observation/DeathExample"
     }
   },
   {
-    "fullUrl" : "Observation/Covid19LongCovidPostCovidExample",
+    "fullUrl" : "Observation/DateHIVTestDoneExample",
     "resource" : {
       "resourceType" : "Observation",
-      "id" : "Covid19LongCovidPostCovidExample",
+      "id" : "DateHIVTestDoneExample",
       "meta" : {
-        "profile" : ["http://openhie.org/fhir/covid19-casereporting/StructureDefinition/covid19-long-covid-post-covid"]
+        "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/date-hiv-test-done"]
       },
-    
+     
       "status" : "final",
       "code" : {
         "coding" : [{
           "system" : "http://snomed.info/sct",
-          "code" : "1119303003"
+          "code" : "315124004"
         }]
       },
       "subject" : {
-        "reference" : "Patient/Covid19PatientExample"
+        "reference" : "Patient/HIVPatientExample"
       },
       "encounter" : {
-        "reference" : "Encounter/Covid19AssessmentEncounterExample"
+        "reference" : "Encounter/TargetFacilityEncounterExample"
       },
-      "effectiveDateTime" : "2022-11-09",
-      "performer" : [{
-        "reference" : "Organization/Covid19OrganizationExample"
-      }],
+      "effectiveDateTime" : "2022-12-10",
       "note" : [{
         "authorReference" : {
-          "reference" : "Organization/Covid19OrganizationExample"
+          "reference" : "Organization/HIVOrganizationExample"
         },
         "time" : "2015-02-07T13:28:17-05:00",
-        "text" : "Some other text..."
+        "text" : "Additional information regarding the HIV test"
       }]
     },
     "request" : {
       "method" : "PUT",
-      "url" : "Observation/Covid19LongCovidPostCovidExample"
+      "url" : "Observation/DateHIVTestDoneExample"
+    }
+  },
+  {
+    "fullUrl" : "CarePlan/ARVTreatmentExample",
+    "resource" : {
+      "resourceType" : "CarePlan",
+      "id" : "ARVTreatmentExample",
+      "meta" : {
+        "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-arv-treatment"]
+      },
+     
+      "status" : "active",
+      "intent" : "plan",
+      "subject" : {
+        "reference" : "Patient/HIVPatientExample"
+      },
+      "encounter" : {
+        "reference" : "Encounter/TargetFacilityEncounterExample"
+      },
+      "period" : {
+        "start" : "2022-12-01",
+        "end" : "2022-12-01"
+      },
+      "activity" : [{
+        "detail" : {
+          "extension" : [{
+            "url" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/art-regimen-line",
+            "valueCodeableConcept" : {
+              "coding" : [{
+                "system" : "http://snomed.info/sct",
+                "code" : "708255002"
+              }]
+            }
+          }],
+          "kind" : "MedicationRequest",
+          "code" : {
+            "coding" : [{
+              "system" : "http://loinc.org",
+              "code" : "45260-7"
+            }]
+          },
+          "status" : "in-progress",
+          "productCodeableConcept" : {
+            "text" : "TDF/3TC/DTG"
+          }
+        }
+      }],
+      "note" : [{
+        "authorReference" : {
+          "reference" : "Organization/HIVOrganizationExample"
+        },
+        "time" : "2015-02-07T13:28:17-05:00",
+        "text" : "Additional information regarding the ARV treatment prescribed"
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "CarePlan/ARVTreatmentExample"
+    }
+  },
+  {
+    "fullUrl" : "EpisodeOfCare/HIVEpisodeOfCareExample",
+    "resource" : {
+      "resourceType" : "EpisodeOfCare",
+      "id" : "HIVEpisodeOfCareExample",
+      "meta" : {
+        "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-episode-of-care"]
+      },
+     
+      "identifier" : [{
+        "system" : "http://openhie.org/fhir/hiv-cbs/identifier/enrollment-unique-id",
+        "value" : "abc123"
+      }],
+      "status" : "active",
+      "type" : [{
+        "coding" : [{
+          "system" : "http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-patient-enrollment-type",
+          "code" : "PMTCT"
+        }]
+      }],
+      "diagnosis" : [{
+        "condition" : {
+          "reference" : "Condition/HIVDiagnosisExample"
+        }
+      }],
+      "patient" : {
+        "reference" : "Patient/HIVPatientExample"
+      },
+      "period" : {
+        "start" : "2021-05-18",
+        "end" : "2021-05-18"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "EpisodeOfCare/HIVEpisodeOfCareExample"
     }
   }]
 }
