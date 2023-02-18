@@ -1,0 +1,48 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "cs-vl-suppression",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-vl-suppression</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">S<a name=\"cs-vl-suppression-S\"> </a></td><td>Suppressed</td></tr><tr><td style=\"white-space:nowrap\">UNSUP<a name=\"cs-vl-suppression-UNSUP\"> </a></td><td>Unsuppressed</td></tr><tr><td style=\"white-space:nowrap\">UNK<a name=\"cs-vl-suppression-UNK\"> </a></td><td>Unknown</td></tr></table></div>"
+  },
+  "url" : "http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-vl-suppression",
+  "version" : "0.2.0",
+  "name" : "CSVLSuppression",
+  "title" : "Viral load Suppressions Status",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2023-02-18T09:46:20+00:00",
+  "publisher" : "Jembi Health Systems",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.jembi.org"
+    },
+    {
+      "system" : "email",
+      "value" : "info@jembi.org"
+    }]
+  }],
+  "description" : "A list of Viral load Statuses",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 3,
+  "concept" : [{
+    "code" : "S",
+    "display" : "Suppressed"
+  },
+  {
+    "code" : "UNSUP",
+    "display" : "Unsuppressed"
+  },
+  {
+    "code" : "UNK",
+    "display" : "Unknown"
+  }]
+}
