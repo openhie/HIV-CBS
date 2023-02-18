@@ -4,20 +4,20 @@
   "id" : "LabResult",
   "type" : "transaction",
   "entry" : [{
-    "fullUrl" : "Task/LabResultTaskExample",
+    "fullUrl" : "Task/HIVLabResultTaskExample",
     "resource" : {
       "resourceType" : "Task",
-      "id" : "LabResultTaskExample",
+      "id" : "HIVLabResultTaskExample",
       "meta" : {
-        "profile" : ["http://openhie.org/fhir/covid19-casereporting/StructureDefinition/covid19-lab-task"]
+        "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-lab-task"]
       },
       
       "identifier" : [{
-        "system" : "http://openhie.org/fhir/covid19-casereporting/lab-integration/test-order-number",
+        "system" : "http://openhie.org/fhir/hiv-cbs/lab-integration/test-order-number",
         "value" : "ORDER12345"
       }],
       "basedOn" : [{
-        "reference" : "ServiceRequest/Covid19ServiceRequestExample"
+        "reference" : "ServiceRequest/HIVServiceRequestExample"
       }],
       "status" : "completed",
       "intent" : "order",
@@ -26,61 +26,71 @@
       },
       "lastModified" : "2022-07-30",
       "requester" : {
-        "reference" : "Organization/Covid19OrganizationExample"
+        "reference" : "Organization/HIVOrganizationExample"
       },
       "owner" : {
-        "reference" : "Organization/Covid19OrganizationExample"
+        "reference" : "Organization/HIVOrganizationExample"
       },
+      "note" : [{
+        "authorReference" : {
+          "reference" : "Organization/HIVOrganizationExample"
+        },
+        "time" : "2015-02-07T13:28:17-05:00",
+        "text" : "additional notes here"
+      }],
       "output" : [{
         "type" : {
           "coding" : [{
-            "system" : "http://openhie.org/fhir/covid19-casereporting/CodeSystem/cs-lab-task-output",
-            "code" : "Result"
+            "system" : "http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-vl-result-code",
+            "code" : "VL-RESULT"
           }]
         },
         "valueReference" : {
-          "reference" : "DiagnosticReport/Covid19LabResultsDiagnosticReportExample"
+          "reference" : "DiagnosticReport/HIVLabResultsDiagnosticReportExample"
         }
       }]
     },
     "request" : {
       "method" : "PUT",
-      "url" : "Task/LabResultTaskExample"
+      "url" : "Task/HIVLabResultTaskExample"
     }
   },
   {
-    "fullUrl" : "DiagnosticReport/Covid19LabResultsDiagnosticReportExample",
+    "fullUrl" : "DiagnosticReport/HIVLabResultsDiagnosticReportExample",
     "resource" : {
       "resourceType" : "DiagnosticReport",
-      "id" : "Covid19LabResultsDiagnosticReportExample",
+      "id" : "HIVLabResultsDiagnosticReportExample",
       "meta" : {
-        "profile" : ["http://openhie.org/fhir/covid19-casereporting/StructureDefinition/covid19-diagnostic-report"]
+        "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-diagnostic-report"]
       },
-      
+     
       "basedOn" : [{
-        "reference" : "ServiceRequest/Covid19ServiceRequestExample"
+        "reference" : "ServiceRequest/HIVServiceRequestExample"
       }],
       "status" : "final",
       "code" : {
         "coding" : [{
           "system" : "http://loinc.org",
-          "code" : "94558-4"
+          "code" : "25836-8"
         }]
       },
       "subject" : {
-        "reference" : "Patient/Covid19PatientExample"
+        "reference" : "Patient/HIVPatientExample"
+      },
+      "encounter" : {
+        "reference" : "Encounter/TargetFacilityEncounterExample"
       },
       "performer" : [{
         "reference" : "Practitioner/PractitionerExample"
       }],
       "result" : [{
-        "reference" : "Observation/Covid19TestResultExample"
+        "reference" : "Observation/HIVTestResultExample"
       }],
       "conclusion" : "Some conclusion text"
     },
     "request" : {
       "method" : "PUT",
-      "url" : "DiagnosticReport/Covid19LabResultsDiagnosticReportExample"
+      "url" : "DiagnosticReport/HIVLabResultsDiagnosticReportExample"
     }
   },
   {
@@ -89,7 +99,7 @@
       "resourceType" : "Practitioner",
       "id" : "PractitionerExample",
       "meta" : {
-        "profile" : ["http://openhie.org/fhir/covid19-casereporting/StructureDefinition/covid19-practitioner"]
+        "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-practitioner"]
       },
      
       "name" : [{
@@ -107,37 +117,33 @@
     }
   },
   {
-    "fullUrl" : "Specimen/Covid19SpecimenLabResultExample",
+    "fullUrl" : "Specimen/VLSpecimenExample",
     "resource" : {
       "resourceType" : "Specimen",
-      "id" : "Covid19SpecimenLabResultExample",
+      "id" : "VLSpecimenExample",
       "meta" : {
-        "profile" : ["http://openhie.org/fhir/covid19-casereporting/StructureDefinition/covid19-specimen"]
+        "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/viral-load-specimen"]
       },
      
       "identifier" : [{
-        "system" : "http://covid19laborder.org/specimen",
-        "value" : "SPECIMEN109191879"
+        "system" : "http://openhie.org/fhir/hiv-cbs/identifier/specimen",
+        "value" : "abc123"
       }],
       "type" : {
         "coding" : [{
           "system" : "http://snomed.info/sct",
-          "code" : "258500001"
+          "code" : "395058002"
         }]
       },
       "subject" : {
-        "reference" : "Patient/Covid19PatientExample"
+        "reference" : "Patient/HIVPatientExample"
       },
-      "receivedTime" : "2022-07-28T13:28:17-05:00",
       "collection" : {
         "collectedDateTime" : "2022-07-28"
       },
-      "processing" : [{
-        "timeDateTime" : "2022-07-28"
-      }],
       "note" : [{
         "authorReference" : {
-          "reference" : "Organization/Covid19OrganizationExample"
+          "reference" : "Organization/HIVOrganizationExample"
         },
         "time" : "2015-02-07T13:28:17-05:00",
         "text" : "additional notes here"
@@ -145,45 +151,54 @@
     },
     "request" : {
       "method" : "PUT",
-      "url" : "Specimen/Covid19SpecimenLabResultExample"
+      "url" : "Specimen/VLSpecimenExample"
     }
   },
   {
-    "fullUrl" : "Observation/Covid19TestResultExample",
+    "fullUrl" : "Observation/HIVTestResultExample",
     "resource" : {
       "resourceType" : "Observation",
-      "id" : "Covid19TestResultExample",
+      "id" : "HIVTestResultExample",
       "meta" : {
-        "profile" : ["http://openhie.org/fhir/covid19-casereporting/StructureDefinition/covid19-test-results"]
+        "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-test-results"]
       },
-    
+     
       "status" : "final",
       "code" : {
         "coding" : [{
-          "system" : "http://loinc.org",
-          "code" : "94558-4"
+          "system" : "http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-vl-result-code",
+          "code" : "VL-RESULT"
         }]
       },
       "subject" : {
-        "reference" : "Patient/Covid19PatientExample"
+        "reference" : "Patient/HIVPatientExample"
       },
       "encounter" : {
-        "reference" : "Encounter/Covid19AssessmentEncounterExample"
+        "reference" : "Encounter/TargetFacilityEncounterExample"
       },
-      "effectiveDateTime" : "2022-07-28",
+      "effectiveDateTime" : "2022-11-30",
       "performer" : [{
-        "reference" : "Organization/Covid19OrganizationExample"
+        "reference" : "Organization/HIVOrganizationExample"
       }],
-      "valueCodeableConcept" : {
+      "valueInteger" : 1001,
+      "interpretation" : [{
         "coding" : [{
-          "system" : "http://snomed.info/sct",
-          "code" : "10828004"
+          "system" : "http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-vl-suppression",
+          "code" : "UNSUP",
+          "display" : "Unsuppressed"
         }]
-      }
+      }],
+      "note" : [{
+        "authorReference" : {
+          "reference" : "Organization/HIVOrganizationExample"
+        },
+        "time" : "2015-02-07T13:28:17-05:00",
+        "text" : "Viral load not suppressed"
+      }]
     },
     "request" : {
       "method" : "PUT",
-      "url" : "Observation/Covid19TestResultExample"
+      "url" : "Observation/HIVTestResultExample"
     }
   }]
 }

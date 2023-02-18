@@ -4,20 +4,20 @@
   "id" : "LabCancellation",
   "type" : "transaction",
   "entry" : [{
-    "fullUrl" : "Task/Covid19LabOrderCancellationExample",
+    "fullUrl" : "Task/HIVLabOrderCancellationTaskExample",
     "resource" : {
       "resourceType" : "Task",
-      "id" : "Covid19LabOrderCancellationExample",
+      "id" : "HIVLabOrderCancellationTaskExample",
       "meta" : {
-        "profile" : ["http://openhie.org/fhir/covid19-casereporting/StructureDefinition/covid19-lab-task"]
+        "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-lab-task"]
       },
-     
+    
       "identifier" : [{
-        "system" : "http://openhie.org/fhir/covid19-casereporting/lab-integration/test-order-number",
+        "system" : "http://openhie.org/fhir/hiv-cbs/lab-integration/test-order-number",
         "value" : "ORDER12345"
       }],
       "basedOn" : [{
-        "reference" : "ServiceRequest/Covid19ServiceRequestExample"
+        "reference" : "ServiceRequest/HIVServiceRequestExample"
       }],
       "status" : "cancelled",
       "statusReason" : {
@@ -32,15 +32,22 @@
       },
       "lastModified" : "2022-07-30",
       "requester" : {
-        "reference" : "Organization/Covid19OrganizationExample"
+        "reference" : "Organization/HIVOrganizationExample"
       },
       "owner" : {
-        "reference" : "Organization/Covid19OrganizationExample"
-      }
+        "reference" : "Organization/HIVOrganizationExample"
+      },
+      "note" : [{
+        "authorReference" : {
+          "reference" : "Organization/HIVOrganizationExample"
+        },
+        "time" : "2015-02-07T13:28:17-05:00",
+        "text" : "additional notes here"
+      }]
     },
     "request" : {
       "method" : "PUT",
-      "url" : "Task/Covid19LabOrderCancellationExample"
+      "url" : "Task/HIVLabOrderCancellationTaskExample"
     }
   }]
 }

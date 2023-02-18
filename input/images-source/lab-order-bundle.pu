@@ -4,20 +4,20 @@
   "id" : "LabOrder",
   "type" : "transaction",
   "entry" : [{
-    "fullUrl" : "Task/LabOrderTaskExample",
+    "fullUrl" : "Task/HIVLabOrderTaskExample",
     "resource" : {
       "resourceType" : "Task",
-      "id" : "LabOrderTaskExample",
+      "id" : "HIVLabOrderTaskExample",
       "meta" : {
-        "profile" : ["http://openhie.org/fhir/covid19-casereporting/StructureDefinition/covid19-lab-task"]
+        "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-lab-task"]
       },
      
       "identifier" : [{
-        "system" : "http://openhie.org/fhir/covid19-casereporting/lab-integration/test-order-number",
+        "system" : "http://openhie.org/fhir/hiv-cbs/lab-integration/test-order-number",
         "value" : "ORDER12345"
       }],
       "basedOn" : [{
-        "reference" : "ServiceRequest/Covid19ServiceRequestExample"
+        "reference" : "ServiceRequest/HIVServiceRequestExample"
       }],
       "status" : "requested",
       "intent" : "order",
@@ -26,50 +26,57 @@
       },
       "lastModified" : "2022-07-28",
       "requester" : {
-        "reference" : "Organization/Covid19OrganizationExample"
+        "reference" : "Organization/HIVOrganizationExample"
       },
       "owner" : {
-        "reference" : "Organization/Covid19OrganizationExample"
-      }
+        "reference" : "Organization/HIVOrganizationExample"
+      },
+      "note" : [{
+        "authorReference" : {
+          "reference" : "Organization/HIVOrganizationExample"
+        },
+        "time" : "2015-02-07T13:28:17-05:00",
+        "text" : "additional notes here"
+      }]
     },
     "request" : {
       "method" : "PUT",
-      "url" : "Task/LabOrderTaskExample"
+      "url" : "Task/HIVLabOrderTaskExample"
     }
   },
   {
-    "fullUrl" : "Location/Covid19ServiceRequestLocationExample",
+    "fullUrl" : "Location/HIVServiceRequestLocationExample",
     "resource" : {
       "resourceType" : "Location",
-      "id" : "Covid19ServiceRequestLocationExample",
+      "id" : "HIVServiceRequestLocationExample",
       "meta" : {
-        "profile" : ["http://openhie.org/fhir/covid19-casereporting/StructureDefinition/covid19-service-request-location"]
+        "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-service-request-location"]
       },
     
-      "name" : "Covid19 Location",
+      "name" : "HIV Location",
       "address" : {
-        "city" : "Example city 1",
-        "district" : "Example district 1",
-        "state" : "Example state 1",
-        "country" : "Example country 1"
+        "city" : "DISI city",
+        "district" : "DISI district",
+        "state" : "DISI state",
+        "country" : "DISI country"
       }
     },
     "request" : {
       "method" : "PUT",
-      "url" : "Location/Covid19ServiceRequestLocationExample"
+      "url" : "Location/HIVServiceRequestLocationExample"
     }
   },
   {
-    "fullUrl" : "ServiceRequest/Covid19ServiceRequestExample",
+    "fullUrl" : "ServiceRequest/HIVServiceRequestExample",
     "resource" : {
       "resourceType" : "ServiceRequest",
-      "id" : "Covid19ServiceRequestExample",
+      "id" : "HIVServiceRequestExample",
       "meta" : {
-        "profile" : ["http://openhie.org/fhir/covid19-casereporting/StructureDefinition/covid19-lab-order"]
+        "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/HIV-lab-order"]
       },
-      
+     
       "identifier" : [{
-        "system" : "http://openhie.org/fhir/covid19-casereporting/identifier/lab-order-identifier",
+        "system" : "http://openhie.org/fhir/hiv-cbs/identifier/lab-order-identifier",
         "value" : "ORDER12345"
       }],
       "status" : "completed",
@@ -78,34 +85,34 @@
       "code" : {
         "coding" : [{
           "system" : "http://loinc.org",
-          "code" : "94558-4"
+          "code" : "25836-8"
         }]
       },
       "subject" : {
-        "reference" : "Patient/Covid19PatientExample"
+        "reference" : "Patient/HIVPatientExample"
       },
       "encounter" : {
-        "reference" : "Encounter/Covid19AssessmentEncounterExample"
+        "reference" : "Encounter/TargetFacilityEncounterExample"
       },
       "occurrenceDateTime" : "2012-01-05",
       "requester" : {
         "reference" : "Practitioner/PractitionerExample"
       },
       "locationReference" : [{
-        "reference" : "Location/Covid19ServiceRequestLocationExample"
+        "reference" : "Location/HIVServiceRequestLocationExample"
       }],
       "reasonCode" : [{
         "coding" : [{
           "system" : "http://snomed.info/sct",
-          "code" : "397933008"
+          "code" : "428450006"
         }]
       }],
       "specimen" : [{
-        "reference" : "Specimen/Covid19SpecimenExample"
+        "reference" : "Specimen/VLSpecimenExample"
       }],
       "note" : [{
         "authorReference" : {
-          "reference" : "Organization/Covid19OrganizationExample"
+          "reference" : "Organization/HIVOrganizationExample"
         },
         "time" : "2015-02-07T13:28:17-05:00",
         "text" : "additional notes here"
@@ -113,7 +120,7 @@
     },
     "request" : {
       "method" : "PUT",
-      "url" : "ServiceRequest/Covid19ServiceRequestExample"
+      "url" : "ServiceRequest/HIVServiceRequestExample"
     }
   },
   {
@@ -122,7 +129,7 @@
       "resourceType" : "Practitioner",
       "id" : "PractitionerExample",
       "meta" : {
-        "profile" : ["http://openhie.org/fhir/covid19-casereporting/StructureDefinition/covid19-practitioner"]
+        "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-practitioner"]
       },
     
       "name" : [{
@@ -140,33 +147,33 @@
     }
   },
   {
-    "fullUrl" : "Specimen/Covid19SpecimenExample",
+    "fullUrl" : "Specimen/VLSpecimenExample",
     "resource" : {
       "resourceType" : "Specimen",
-      "id" : "Covid19SpecimenExample",
+      "id" : "VLSpecimenExample",
       "meta" : {
-        "profile" : ["http://openhie.org/fhir/covid19-casereporting/StructureDefinition/covid19-specimen"]
+        "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/viral-load-specimen"]
       },
-    
+     
       "identifier" : [{
-        "system" : "http://covid19laborder.org/specimen",
-        "value" : "SPECIMEN109191879"
+        "system" : "http://openhie.org/fhir/hiv-cbs/identifier/specimen",
+        "value" : "abc123"
       }],
       "type" : {
         "coding" : [{
           "system" : "http://snomed.info/sct",
-          "code" : "258500001"
+          "code" : "395058002"
         }]
       },
       "subject" : {
-        "reference" : "Patient/Covid19PatientExample"
+        "reference" : "Patient/HIVPatientExample"
       },
       "collection" : {
         "collectedDateTime" : "2022-07-28"
       },
       "note" : [{
         "authorReference" : {
-          "reference" : "Organization/Covid19OrganizationExample"
+          "reference" : "Organization/HIVOrganizationExample"
         },
         "time" : "2015-02-07T13:28:17-05:00",
         "text" : "additional notes here"
@@ -174,7 +181,7 @@
     },
     "request" : {
       "method" : "PUT",
-      "url" : "Specimen/Covid19SpecimenExample"
+      "url" : "Specimen/VLSpecimenExample"
     }
   }]
 }

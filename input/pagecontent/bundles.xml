@@ -4,6 +4,31 @@
     {% include custom.css %}
   </style>
   
- 
-  
+  <h3>Overview</h3> <a name="overview"> </a>
+  <p>
+    The <a href="artifacts.html">artifacts page</a> provides examples of all the FHIR resources that have been built into this specification. Moreover, the following key example bundles exist.
+  </p>
+
+  <a href="emr-bundle.html"><p class="heading">EMR</p></a>
+
+  <p>
+    The <a href="emr-bundle.html">EMR</a> message <a href="Bundle-EMR.html">bundle</a> contains the FHIR resources neccessary to support case reporting.
+    This message bundle is typically executed from the EMR. 
+  </p>
+
+  <a href="lab-order-bundle.html"><p class="heading">Lab Order</p></a>
+
+  <p>The <a href="lab-order-bundle.html">lab order</a> message <a href="Bundle-LabOrder.html">bundle</a> contains the FHIR resources neccessary to support the initiation of the specimen examination which has been collected by the lab.</p>
+
+  <a href="lab-result-bundle.html"><p class="heading">Lab Result</p></a>
+
+  <p>The <a href="lab-result-bundle.html">lab result</a> message <a href="Bundle-LabResult.html">bundle</a> contains the FHIR resources neccessary to support the resulting of the specimen examination.</p>
+
+  <a href="lab-cancellation-bundle.html"><p class="heading">Lab Cancellation</p></a>
+
+  <p>The <a href="lab-cancellation-bundle.html">lab cancellation</a> message <a href="Bundle-LabCancellation.html">bundle</a> contains the FHIR resources neccessary to support the cancellation of an existing lab order request.</p>
+
+  <a href="lab-rejection-bundle.html"><p class="heading">Lab Rejection</p></a>
+
+  <p>The <a href="lab-rejection-bundle.html">lab rejection</a> message <a href="Bundle-LabRejection.html">bundle</a> contains the FHIR resources neccessary to support the rejection of an existing lab order request.</p>
 </div>  

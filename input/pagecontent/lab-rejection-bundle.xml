@@ -1,4 +1,15 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd" lang="en">
+   <h3>Introduction</h3> <a name="intro"> </a>
+  <p>
+    This UML diagram has been modelled from the <a href="Bundle-LabRejection.html">EMR message bundle</a> specification.
+  </p>
+
+  <h3>UML</h3> <a name="uml"> </a>
+  <p></p>
   
+  <figure>
+    {% include lab-rejection-bundle.svg %}
+    <figcaption>Lab Rejection Bundle - UML Diagram</figcaption>
+  </figure>
 </div>  
 
