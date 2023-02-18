@@ -1,0 +1,63 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://openhie.org/fhir/hiv-cbs/DiagnosticReport/HIVLabResultsDiagnosticReportExample> a fhir:DiagnosticReport;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "HIVLabResultsDiagnosticReportExample"]; # 
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-diagnostic-report";
+       fhir:index 0;
+       fhir:link <http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-diagnostic-report>
+     ]
+  ]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2><span title=\"Codes: {http://loinc.org 25836-8}\">HIV 1 RNA [#/volume] (viral load) in Specimen by NAA with probe detection</span> </h2><table class=\"grid\"><tr><td>Subject</td><td><b>Jane Maria Smith (OFFICIAL)</b> female, DoB: 1990-12-12 ( id: NID1234567)</td></tr></table><p><b>Report Details</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>Value</b></td><td><b>Flags</b></td><td><b>Note</b></td><td><b>When For</b></td></tr><tr><td><a href=\"Observation-HIVTestResultExample.html\"><span title=\"Codes: {http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-vl-result-code VL-RESULT}\">HIV VL Test Result</span></a></td><td>1001</td><td><span title=\"Codes: {http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-vl-suppression UNSUP}\">Unsuppressed</span></td><td>Viral load not suppressed (By Organization/HIVOrganizationExample @Feb 7, 2015, 6:28:17 PM)</td><td>2022-11-30</td></tr></table><p>Some conclusion text</p></div>"
+  ]; # 
+  fhir:DiagnosticReport.basedOn [
+     fhir:index 0;
+     fhir:link <http://openhie.org/fhir/hiv-cbs/ServiceRequest/HIVServiceRequestExample>;
+     fhir:Reference.reference [ fhir:value "ServiceRequest/HIVServiceRequestExample" ]
+  ]; # 
+  fhir:DiagnosticReport.status [ fhir:value "final"]; # 
+  fhir:DiagnosticReport.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:25836-8;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "25836-8" ]
+     ]
+  ]; # 
+  fhir:DiagnosticReport.subject [
+     fhir:link <http://openhie.org/fhir/hiv-cbs/Patient/HIVPatientExample>;
+     fhir:Reference.reference [ fhir:value "Patient/HIVPatientExample" ]
+  ]; # 
+  fhir:DiagnosticReport.encounter [
+     fhir:link <http://openhie.org/fhir/hiv-cbs/Encounter/TargetFacilityEncounterExample>;
+     fhir:Reference.reference [ fhir:value "Encounter/TargetFacilityEncounterExample" ]
+  ]; # 
+  fhir:DiagnosticReport.performer [
+     fhir:index 0;
+     fhir:link <http://openhie.org/fhir/hiv-cbs/Practitioner/PractitionerExample>;
+     fhir:Reference.reference [ fhir:value "Practitioner/PractitionerExample" ]
+  ]; # 
+  fhir:DiagnosticReport.result [
+     fhir:index 0;
+     fhir:link <http://openhie.org/fhir/hiv-cbs/Observation/HIVTestResultExample>;
+     fhir:Reference.reference [ fhir:value "Observation/HIVTestResultExample" ]
+  ]; # 
+  fhir:DiagnosticReport.conclusion [ fhir:value "Some conclusion text"] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<http://openhie.org/fhir/hiv-cbs/DiagnosticReport/HIVLabResultsDiagnosticReportExample.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
