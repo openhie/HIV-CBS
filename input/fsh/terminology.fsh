@@ -1,37 +1,21 @@
 Alias: $LNC = http://loinc.org
 Alias: $SCT = http://snomed.info/sct
 
-CodeSystem: CSVLResultCode
-Id: cs-vl-result-code
-Title: "Viral Load Result Code"
-Description: "Viral Load Result Code"
-* ^experimental = false
-* ^caseSensitive = true
-* #VL-RESULT "HIV VL Test Result"
-
 ValueSet: VSVLResultCode
 Id: vs-vl-result-code
 Title: "Viral Load Result Code"
 Description: "Viral Load Result Code"
 * ^experimental = false
-* include codes from system CSVLResultCode
-
-CodeSystem: CSVLSuppression
-Id: cs-vl-suppression
-Title: "Viral load Suppressions Status"
-Description: "A list of Viral load Statuses"
-* ^experimental = false
-* ^caseSensitive = true
-* #S "Suppressed"
-* #UNSUP "Unsuppressed"
-* #UNK "Unknown"
+* $SCT#398579006 "Human immunodeficiency virus-1 nucleic acid assay (procedure)"
 
 ValueSet: VSVLSuppression
 Id: vs-vl-suppression
 Title: "Viral load Suppressions Status"
 Description: "A list of Viral load Statuses"
 * ^experimental = false
-* include codes from system CSVLSuppression
+* $SCT#245780008 "Suppressed (qualifier value)"
+* $SCT#19032002 "Uncontrolled (qualifier value)" //Unsuppressed
+* $SCT#54690008 "Unknown (origin) (qualifier value)"
 
 ValueSet: VSHIVDiagnosis
 Id: vs-hiv-diagnosis
@@ -69,15 +53,6 @@ Title: "ARV Treatment Medication Request"
 Description: "ARV Treatment Medication Request"
 * ^experimental = false
 *  $LNC#45260-7 "HIV ART medication"
-
-CodeSystem: CSPatientEnrollmentType
-Id: cs-patient-enrollment-type
-Title: "Patient Type at Enrolment"
-Description:  "A list of Custom Patient Types at Enrolment"
-* ^experimental = false
-* ^caseSensitive = true
-* #PMTCT "Mother enrolled in PMTCT program"   
-* #Re-enroll "Re-enroll"
   
 ValueSet: VSPatientEnrollmentType
 Id: vs-patient-enrollment-type
@@ -86,7 +61,8 @@ Description:  "A list of Patient Types at Enrolment"
 * ^experimental = false
 * $SCT#185387006 "New patient consultation (procedure)"  
 * $SCT#309037001 "Transfer status (finding)" 
-* include codes from system CSPatientEnrollmentType
+* $SCT#182837001 "Restart of medication (procedure)" 
+* $LNC#LA6505-7 "PMTCT"
 
 ValueSet: VSSpecimenType
 Id: vs-specimen-type
@@ -95,6 +71,9 @@ Description:  "Specimen type used in Viral Load testing"
 * ^experimental = false
 * $SCT#119361006 "Plasma specimen (specimen)"
 * $SCT#440500007 "Dried blood spot specimen (specimen)"
+* $SCT#441620008 "Oral fluid specimen (specimen)"
+* $SCT#258580003 "Whole blood specimen (specimen)"
+* $SCT#119364003 "Serum specimen (specimen)"
 
 ValueSet: VSTestTypes
 Id: vs-test-types

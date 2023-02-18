@@ -74,15 +74,12 @@ Usage: #example
 Title: "Viral Load Suppression example" 
 Description: "Viral Load Suppression example"
 * status = #final
-* code.coding.system = "http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-vl-result-code"
-* code = #VL-RESULT
+* code = $SCT#398579006
 * subject = Reference(HIVPatientExample)
 * encounter = Reference(TargetFacilityEncounterExample)
 * effectiveDateTime = "2022-11-30"
 * valueInteger = 1001
-* interpretation = #UNSUP
-* interpretation.coding.system = "http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-vl-suppression"
-* interpretation.coding.display = "Unsuppressed"
+* interpretation = $SCT#19032002
 * note.text = "Viral load not suppressed"
 * note.authorReference = Reference(HIVOrganizationExample)
 * note.time = "2015-02-07T13:28:17-05:00"
@@ -163,8 +160,7 @@ Description: "This resource is used for Management of a Patient's HIV Programme.
 * identifier[HMPUI].value = "abc123"
 * identifier[HMPUI].system = "http://openhie.org/fhir/hiv-cbs/identifier/enrollment-unique-id" (exactly)
 * status = #active
-* type.coding.system = "http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-patient-enrollment-type"
-* type.coding.code = #PMTCT
+* type = $SCT#182837001
 * diagnosis.condition = Reference(HIVDiagnosisExample)
 * patient = Reference(HIVPatientExample)
 * period.start = "2021-05-18"
@@ -262,8 +258,7 @@ Description: "Lab Result Task example"
 * note.authorReference = Reference(HIVOrganizationExample)
 * note.text = "additional notes here"
 * note.time = "2015-02-07T13:28:17-05:00"
-* output.type.coding.system = "http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-vl-result-code"
-* output.type = #VL-RESULT
+* output.type = $SCT#398579006
 * output.valueReference = Reference(HIVLabResultsDiagnosticReportExample)
 
 Instance: HIVLabOrderCancellationTaskExample
