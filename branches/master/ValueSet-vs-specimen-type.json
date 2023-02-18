@@ -3,7 +3,7 @@
   "id" : "vs-specimen-type",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/395058002\">395058002</a></td><td>Procedure by intent (procedure)</td></tr></table></li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/119361006\">119361006</a></td><td>Plasma specimen (specimen)</td></tr><tr><td><a href=\"http://snomed.info/id/440500007\">440500007</a></td><td>Dried blood spot specimen (specimen)</td></tr></table></li></ul></div>"
   },
   "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-specimen-type",
   "version" : "0.2.0",
@@ -11,7 +11,7 @@
   "title" : "Specimen type used in Viral Load testing",
   "status" : "active",
   "experimental" : false,
-  "date" : "2023-02-18T09:46:20+00:00",
+  "date" : "2023-02-18T10:13:11+00:00",
   "publisher" : "Jembi Health Systems",
   "contact" : [{
     "telecom" : [{
@@ -34,8 +34,12 @@
     "include" : [{
       "system" : "http://snomed.info/sct",
       "concept" : [{
-        "code" : "395058002",
-        "display" : "Procedure by intent (procedure)"
+        "code" : "119361006",
+        "display" : "Plasma specimen (specimen)"
+      },
+      {
+        "code" : "440500007",
+        "display" : "Dried blood spot specimen (specimen)"
       }]
     }]
   }
