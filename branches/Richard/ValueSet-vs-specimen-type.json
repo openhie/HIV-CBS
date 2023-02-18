@@ -3,7 +3,7 @@
   "id" : "vs-specimen-type",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/119361006\">119361006</a></td><td>Plasma specimen (specimen)</td></tr><tr><td><a href=\"http://snomed.info/id/440500007\">440500007</a></td><td>Dried blood spot specimen (specimen)</td></tr></table></li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/119361006\">119361006</a></td><td>Plasma specimen (specimen)</td></tr><tr><td><a href=\"http://snomed.info/id/440500007\">440500007</a></td><td>Dried blood spot specimen (specimen)</td></tr><tr><td><a href=\"http://snomed.info/id/441620008\">441620008</a></td><td>Oral fluid specimen (specimen)</td></tr><tr><td><a href=\"http://snomed.info/id/258580003\">258580003</a></td><td>Whole blood specimen (specimen)</td></tr><tr><td><a href=\"http://snomed.info/id/119364003\">119364003</a></td><td>Serum specimen (specimen)</td></tr></table></li></ul></div>"
   },
   "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-specimen-type",
   "version" : "0.2.0",
@@ -11,7 +11,7 @@
   "title" : "Specimen type used in Viral Load testing",
   "status" : "active",
   "experimental" : false,
-  "date" : "2023-02-18T11:12:31+00:00",
+  "date" : "2023-02-18T14:18:06+00:00",
   "publisher" : "Jembi Health Systems",
   "contact" : [{
     "telecom" : [{
@@ -40,6 +40,18 @@
       {
         "code" : "440500007",
         "display" : "Dried blood spot specimen (specimen)"
+      },
+      {
+        "code" : "441620008",
+        "display" : "Oral fluid specimen (specimen)"
+      },
+      {
+        "code" : "258580003",
+        "display" : "Whole blood specimen (specimen)"
+      },
+      {
+        "code" : "119364003",
+        "display" : "Serum specimen (specimen)"
       }]
     }]
   }

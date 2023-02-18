@@ -12,7 +12,7 @@
   <title value="HIV Case-Based Surveillance"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2023-02-18T11:12:31+00:00"/>
+  <date value="2023-02-18T14:18:06+00:00"/>
   <publisher value="Jembi Health Systems"/>
   <contact>
     <telecom>
@@ -631,16 +631,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/cs-patient-enrollment-type"/>
-      </reference>
-      <name value="Patient Type at Enrolment"/>
-      <description value="A list of Custom Patient Types at Enrolment"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -811,16 +801,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/cs-vl-result-code"/>
-      </reference>
-      <name value="Viral Load Result Code"/>
-      <description value="Viral Load Result Code"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Observation"/>
       </extension>
       <reference>
@@ -978,16 +958,6 @@
       </reference>
       <name value="Example ServiceRequest - HIVServiceRequestExample"/>
       <exampleCanonical value="http://openhie.org/fhir/hiv-cbs/StructureDefinition/HIV-lab-order"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/cs-vl-suppression"/>
-      </reference>
-      <name value="Viral load Suppressions Status"/>
-      <description value="A list of Viral load Statuses"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

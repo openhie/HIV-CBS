@@ -3,7 +3,7 @@
 
 err = 0, warn = 4, info = 0
 IG Publisher Version: 1.2.37
-Generated Sat Feb 18 11:13:58 UTC 2023. FHIR version 4.0.1 for openhie.fhir.hiv.cbs#0.2.0 (canonical = http://openhie.org/fhir/hiv-cbs)
+Generated Sat Feb 18 14:19:29 UTC 2023. FHIR version 4.0.1 for openhie.fhir.hiv.cbs#0.2.0 (canonical = http://openhie.org/fhir/hiv-cbs)
  Build Errors : 0 / 4 / 0
  /github/workspace/fsh-generated/resources/Bundle-EMR : 0 / 0 / 19
  /github/workspace/fsh-generated/resources/Bundle-LabCancellation : 0 / 0 / 3
@@ -12,9 +12,6 @@ Generated Sat Feb 18 11:13:58 UTC 2023. FHIR version 4.0.1 for openhie.fhir.hiv.
  /github/workspace/fsh-generated/resources/Bundle-LabResult : 0 / 0 / 11
  /github/workspace/fsh-generated/resources/CarePlan-ARVTreatmentExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CarePlan-ARVTreatmentRefusedExample : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/CodeSystem-cs-patient-enrollment-type : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/CodeSystem-cs-vl-result-code : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/CodeSystem-cs-vl-suppression : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Condition-HIVDiagnosisExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/DiagnosticReport-HIVLabResultsDiagnosticReportExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Encounter-TargetFacilityEncounterExample : 0 / 0 / 1
@@ -77,9 +74,6 @@ WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in 
 == fsh-generated/resources/Bundle-LabResult.json ==
 == fsh-generated/resources/CarePlan-ARVTreatmentExample.json ==
 == fsh-generated/resources/CarePlan-ARVTreatmentRefusedExample.json ==
-== fsh-generated/resources/CodeSystem-cs-patient-enrollment-type.json ==
-== fsh-generated/resources/CodeSystem-cs-vl-result-code.json ==
-== fsh-generated/resources/CodeSystem-cs-vl-suppression.json ==
 == fsh-generated/resources/Condition-HIVDiagnosisExample.json ==
 == fsh-generated/resources/DiagnosticReport-HIVLabResultsDiagnosticReportExample.json ==
 == fsh-generated/resources/Encounter-TargetFacilityEncounterExample.json ==
