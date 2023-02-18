@@ -271,8 +271,141 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   
   
   
-  <div xmlns="http://www.w3.org/1999/xhtml" lang="en">
-     
+  <div xmlns="http://www.w3.org/1999/xhtml" lang="en"><div class="markdown-toc"><p>Contents:</p><ul><li><a href="#1">Introduction</a></li><li><a href="#2">How to Report</a></li><li><a href="#3">What to Report</a></li><li><a href="#4">Use Cases</a></li><li><a href="#5">References</a></li></ul></div>
+     <a name="1"/><h3>Introduction</h3> <a name="intro">  </a>
+
+    <p>
+        This implementation guide conforms with the following key reporting requirements as identified by the <a href="" target="_blank">Univeristy of Zambia</a> <a href="#ref1">(University of Zambia, Medical Library, 2017)</a>.
+    </p>
+
+    <a name="2"/><h3>How to Report</h3> <a name="how-to-report">  </a>
+
+    <p>
+        HIV CBS is routinely generated individual-level information tha must be captured using a single case report containing information pertaining only to that person which forms a longitudinal record of treatment and care outcomes.
+        DISI's reference platform architecture provides a <a href="https://jembi.gitbook.io/disi-on-platform/" target="_blank">centralised data repository</a> that will enable implementers to monitor and measure the full spectrum of the disease from diagnosis to death.
+    </p>
+    <br/>
+    <br/>
+    <p>Laboratory data elements must be reported in one or more of the following ways.</p>
+
+    <ol>
+        <li>
+            Lab data can be submitted directly to an EMR electronically provided the communication stream adheres to country laws in regards to privacy &amp; confidentiality.
+            Lab results must be shared with the requesting organisation/provider or individual as applicable.
+        </li>
+        <li>
+            Lab data can be submitted directly to a <a href="https://jembi.gitbook.io/disi-on-platform/" target="_blank">centralised data repository</a>, stripped of all personally identifiable information (<a href="https://piwik.pro/blog/what-is-pii-personal-data/" target="_blank">PII</a>) and later be routed to an analytics platform for reporting.
+        </li>
+        <li>
+            Lab data can be submitted to an EMR via a health information exchange (HIE). It will be the responsibility of the interoperability layer to facilitate the mediation of the message to the correct destination system. 
+        </li>
+    </ol>
+
+    <a name="3"/><h3>What to Report</h3> <a name="what-to-report">  </a>
+
+    <p>
+        The following list of data elements should be provided for the purpose of HIV case reporting.
+    </p>
+
+    <blockquote class="stu-note">
+        <ul>
+            <li>
+                The data elements in scope for this implementation guide are defined by the <a href="https://docs.google.com/spreadsheets/d/1vp54C2m-2xSGHKWstd4tSFsTuglz5k6jaCe30MTS_18/edit#gid=113954378" target="_blank">HIV CBS Minimum Dataset</a>.
+            </li>
+        </ul>
+    </blockquote>
+
+    <p/>
+
+    <ul>
+        <li><a href="ValueSet-vs-test-types.html">Test requested</a> (must use the LOINC code system for harmonization)</li>
+        <li>Device ID</li>
+        <li>Test result - measured as copies per millilitre of blood (copies/mL)</li>
+        <li>Specimen ID</li>
+        <li>Patient age</li>
+            <ul>
+                <li>This is calculated using the patient's date of birth.</li>
+            </ul>
+        <li>Patient gender</li>
+        <li>Patient residence country</li>
+        <li>Lab order requesting provider name</li>
+        <li>Lab order requesting provider zip code</li>
+            <ul>
+                <li><strong>Currently not in scope</strong></li>
+            </ul>
+        <li>Lab examination performing provider name</li>
+        <li>Lab examination performing provider zip code</li>
+             <ul>
+                <li><strong>Currently not in scope</strong></li>
+            </ul>
+        <li><a href="ValueSet-vs-specimen-type.html">Specimen type</a> (must use appropriate codes issued by LOINC or SNOMED)</li>
+        <li>Lab order date &amp; time</li>
+        <li>Sample collection date</li>
+        <li>Patient name (Last name, First name, Middle Initial)</li>
+        <li>Patient street address</li>
+        <li>Patient contact details with area code</li>
+        <li>Patient date of birth</li>
+        <li>Lab order requesting provider address</li>
+        <li>Lab order requesting provider contact details</li>
+        <li>Patient's family members' HIV status</li>
+            <ul>
+                <li><strong>Currently not in scope</strong></li>
+            </ul>
+        <li>Patient's date of enrolment in HIV care</li>
+        <li>Patient's date of starting ART</li>
+        <li>Patient's ARV regimen (including any regimen switches)</li>
+            <ul>
+                <li>Date prescribed</li>
+                <li>Date dispensed</li>
+                     <ul>
+                        <li><strong>Currently not in scope</strong></li>
+                    </ul>
+                <li>Dose quantity</li>
+                   <ul>
+                        <li><strong>Currently not in scope</strong></li>
+                    </ul>
+            </ul>
+        <li>Patient's TB status</li>
+            <ul>
+                <li><strong>Currently not in scope</strong></li>
+            </ul>
+        <li>Patient's transfer out date</li>
+            <ul>
+                <li>Receiving organisation</li>
+            </ul>
+        <li>Patient's date of death</li>
+        <li>Patient's interruption in treatment (IIT)</li>
+            <ul>
+                <li>Date</li>
+                <li>Reason</li>
+                    <ul>
+                        <li><strong>Currently, only lost to follow-up (LTFU) is supported.</strong></li>
+                    </ul>
+            </ul>
+        <li>Patient's pregnancy status</li>
+            <ul>
+                <li><strong>Currently not in scope</strong></li>
+            </ul>
+        <li>Patient visit dates</li>
+        <li>Reason for the patient visit</li>
+            <ul>
+                <li><strong>Currently not in scope</strong></li>
+            </ul>
+    </ul>
+
+    <a name="4"/><h3>Use Cases</h3> <a name="use-cases">  </a>
+
+    <p>
+        The <a href="use-cases.html#use-case-diagram">use case diagram</a> for this implementation guide identifies the key functions on offer in order to assist with the various CBS sentinel events associated with HIV.
+    </p>
+
+    <a name="5"/><h3>References</h3> <a name="references">  </a>
+
+    <div>
+        <ol>
+            <li id="ref1">University of Zambia, Medical Library. (2017, June 1). Health HIV Case Based Surveillance. http://dspace.unza.zm/handle/123456789/5207</li>
+        </ol>
+    </div>
 </div>
 </div>
         </div>  <!-- /inner-wrapper -->
@@ -297,7 +430,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
            
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2019+ <a style="color: #81BEF7" href="https://www.jembi.org">Jembi Health Systems</a>.  Package openhie.fhir.hiv.cbs#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Feb 18, 2023 06:38+0000">2023-02-18</span>
+          IG &#169; 2019+ <a style="color: #81BEF7" href="https://www.jembi.org">Jembi Health Systems</a>.  Package openhie.fhir.hiv.cbs#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Feb 18, 2023 09:35+0000">2023-02-18</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

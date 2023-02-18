@@ -1,0 +1,44 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "cs-patient-enrollment-type",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-patient-enrollment-type</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">PMTCT<a name=\"cs-patient-enrollment-type-PMTCT\"> </a></td><td>Mother enrolled in PMTCT program</td></tr><tr><td style=\"white-space:nowrap\">Re-enroll<a name=\"cs-patient-enrollment-type-Re-enroll\"> </a></td><td>Re-enroll</td></tr></table></div>"
+  },
+  "url" : "http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-patient-enrollment-type",
+  "version" : "0.2.0",
+  "name" : "CSPatientEnrollmentType",
+  "title" : "Patient Type at Enrolment",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2023-02-18T09:35:34+00:00",
+  "publisher" : "Jembi Health Systems",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.jembi.org"
+    },
+    {
+      "system" : "email",
+      "value" : "info@jembi.org"
+    }]
+  }],
+  "description" : "A list of Custom Patient Types at Enrolment",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 2,
+  "concept" : [{
+    "code" : "PMTCT",
+    "display" : "Mother enrolled in PMTCT program"
+  },
+  {
+    "code" : "Re-enroll",
+    "display" : "Re-enroll"
+  }]
+}

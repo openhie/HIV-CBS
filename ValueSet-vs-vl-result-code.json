@@ -1,0 +1,38 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "vs-vl-result-code",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-cs-vl-result-code.html\"><code>http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-vl-result-code</code></a></li></ul></div>"
+  },
+  "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-vl-result-code",
+  "version" : "0.2.0",
+  "name" : "VSVLResultCode",
+  "title" : "Viral Load Result Code",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2023-02-18T09:35:34+00:00",
+  "publisher" : "Jembi Health Systems",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.jembi.org"
+    },
+    {
+      "system" : "email",
+      "value" : "info@jembi.org"
+    }]
+  }],
+  "description" : "Viral Load Result Code",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-vl-result-code"
+    }]
+  }
+}
