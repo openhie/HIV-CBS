@@ -1,9 +1,254 @@
 [
   {
-    "id" : "xxexample.fhir.uv.myig",
+    "id" : "cs-key-population",
+    "type" : "CodeSystem",
+    "url" : "http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-key-population",
+    "version" : "0.2.0",
+    "name" : "CSKeyPopulation"
+  },
+  {
+    "id" : "openhie.fhir.hiv.cbs",
     "type" : "ImplementationGuide",
-    "url" : "http://xxsomewhere.org/fhir/myig/ImplementationGuide/xxexample.fhir.uv.myig",
-    "version" : "0.1.0-test",
-    "name" : "XXYourComputableMyIGNameHere"
+    "url" : "http://openhie.org/fhir/hiv-cbs/ImplementationGuide/openhie.fhir.hiv.cbs",
+    "version" : "0.2.0",
+    "name" : "HIVCBS"
+  },
+  {
+    "id" : "HIV-lab-order",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/HIV-lab-order",
+    "version" : "0.2.0",
+    "name" : "HIVServiceRequest"
+  },
+  {
+    "id" : "art-regimen-line",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/art-regimen-line",
+    "version" : "0.2.0",
+    "name" : "ARTRegimenLine"
+  },
+  {
+    "id" : "date-hiv-test-done",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/date-hiv-test-done",
+    "version" : "0.2.0",
+    "name" : "DateHIVTestDone"
+  },
+  {
+    "id" : "death",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/death",
+    "version" : "0.2.0",
+    "name" : "Death"
+  },
+  {
+    "id" : "hiv-arv-treatment",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-arv-treatment",
+    "version" : "0.2.0",
+    "name" : "ARVTreatment"
+  },
+  {
+    "id" : "hiv-care-next-visit",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-care-next-visit",
+    "version" : "0.2.0",
+    "name" : "HIVCareNextAppointment"
+  },
+  {
+    "id" : "hiv-diagnosis",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-diagnosis",
+    "version" : "0.2.0",
+    "name" : "HIVDiagnosis"
+  },
+  {
+    "id" : "hiv-diagnostic-report",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-diagnostic-report",
+    "version" : "0.2.0",
+    "name" : "HIVDiagnosticReport"
+  },
+  {
+    "id" : "hiv-episode-of-care",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-episode-of-care",
+    "version" : "0.2.0",
+    "name" : "HIVEpisodeOfCare"
+  },
+  {
+    "id" : "hiv-lab-task",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-lab-task",
+    "version" : "0.2.0",
+    "name" : "HIVLabTask"
+  },
+  {
+    "id" : "hiv-organization",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-organization",
+    "version" : "0.2.0",
+    "name" : "HIVOrganization"
+  },
+  {
+    "id" : "hiv-patient",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-patient",
+    "version" : "0.2.0",
+    "name" : "HIVPatient"
+  },
+  {
+    "id" : "hiv-practitioner",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-practitioner",
+    "version" : "0.2.0",
+    "name" : "HIVPractitioner"
+  },
+  {
+    "id" : "hiv-related-person",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-related-person",
+    "version" : "0.2.0",
+    "name" : "HIVRelatedPerson"
+  },
+  {
+    "id" : "hiv-service-request-location",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-service-request-location",
+    "version" : "0.2.0",
+    "name" : "HIVServiceRequestLocation"
+  },
+  {
+    "id" : "hiv-test-results",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-test-results",
+    "version" : "0.2.0",
+    "name" : "HIVTestResult"
+  },
+  {
+    "id" : "key-population",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/key-population",
+    "version" : "0.2.0",
+    "name" : "KeyPopulation"
+  },
+  {
+    "id" : "target-facility-encounter",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/target-facility-encounter",
+    "version" : "0.2.0",
+    "name" : "TargetFacilityEncounter"
+  },
+  {
+    "id" : "transferring-facility-encounter",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/transferring-facility-encounter",
+    "version" : "0.2.0",
+    "name" : "TransferringFacilityEncounter"
+  },
+  {
+    "id" : "viral-load-specimen",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/viral-load-specimen",
+    "version" : "0.2.0",
+    "name" : "VLSpecimen"
+  },
+  {
+    "id" : "vs-artregimen-lines",
+    "type" : "ValueSet",
+    "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-artregimen-lines",
+    "version" : "0.2.0",
+    "name" : "VSARTRegimenLines"
+  },
+  {
+    "id" : "vs-arvtreatment-activity-type",
+    "type" : "ValueSet",
+    "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-arvtreatment-activity-type",
+    "version" : "0.2.0",
+    "name" : "VSARVMedicationRequest"
+  },
+  {
+    "id" : "vs-careplan-outcome",
+    "type" : "ValueSet",
+    "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-careplan-outcome",
+    "version" : "0.2.0",
+    "name" : "VSCarePlanActivityOutcome"
+  },
+  {
+    "id" : "vs-hiv-death",
+    "type" : "ValueSet",
+    "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-hiv-death",
+    "version" : "0.2.0",
+    "name" : "VSHIVDeath"
+  },
+  {
+    "id" : "vs-hiv-diagnosis",
+    "type" : "ValueSet",
+    "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-hiv-diagnosis",
+    "version" : "0.2.0",
+    "name" : "VSHIVDiagnosis"
+  },
+  {
+    "id" : "vs-hiv-test-done",
+    "type" : "ValueSet",
+    "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-hiv-test-done",
+    "version" : "0.2.0",
+    "name" : "VSHIVTestDone"
+  },
+  {
+    "id" : "vs-key-population",
+    "type" : "ValueSet",
+    "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-key-population",
+    "version" : "0.2.0",
+    "name" : "VSKeyPopulation"
+  },
+  {
+    "id" : "vs-marital-status",
+    "type" : "ValueSet",
+    "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-marital-status",
+    "version" : "0.2.0",
+    "name" : "VSMaritalStatus"
+  },
+  {
+    "id" : "vs-patient-enrollment-type",
+    "type" : "ValueSet",
+    "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-patient-enrollment-type",
+    "version" : "0.2.0",
+    "name" : "VSPatientEnrollmentType"
+  },
+  {
+    "id" : "vs-reason-for-assessment-or-test-not-performed",
+    "type" : "ValueSet",
+    "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-reason-for-assessment-or-test-not-performed",
+    "version" : "0.2.0",
+    "name" : "VSReasonForAssessmentOrTestNotPerformed"
+  },
+  {
+    "id" : "vs-specimen-type",
+    "type" : "ValueSet",
+    "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-specimen-type",
+    "version" : "0.2.0",
+    "name" : "VSSpecimenType"
+  },
+  {
+    "id" : "vs-test-types",
+    "type" : "ValueSet",
+    "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-test-types",
+    "version" : "0.2.0",
+    "name" : "VSTestTypes"
+  },
+  {
+    "id" : "vs-vl-result-code",
+    "type" : "ValueSet",
+    "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-vl-result-code",
+    "version" : "0.2.0",
+    "name" : "VSVLResultCode"
+  },
+  {
+    "id" : "vs-vl-suppression",
+    "type" : "ValueSet",
+    "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-vl-suppression",
+    "version" : "0.2.0",
+    "name" : "VSVLSuppression"
   }
 ]
