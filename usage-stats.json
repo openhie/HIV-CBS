@@ -18,6 +18,14 @@
       "types": [
         "dateTime"
       ]
+    },
+    {
+      "url": "http://openhie.org/fhir/hiv-cbs/StructureDefinition/key-population",
+      "title": "Key population",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept"
+      ]
     }
   ],
   "profiles": {
@@ -79,6 +87,12 @@
       {
         "url": "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-practitioner",
         "title": "Practitioner"
+      }
+    ],
+    "RelatedPerson": [
+      {
+        "url": "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-related-person",
+        "title": "HIV Patient Related Person"
       }
     ],
     "Location": [
@@ -166,6 +180,10 @@
     "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-care-next-visit": [
       "Bundle.entry.resource",
       "Encounter"
+    ],
+    "http://openhie.org/fhir/hiv-cbs/StructureDefinition/key-population": [
+      "Bundle.entry.resource",
+      "Patient"
     ]
   }
 }
