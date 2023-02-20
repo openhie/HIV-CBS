@@ -38,7 +38,10 @@ Description: "A patient resource for an HIV Patient"
 * gender 1..1
 * birthDate 1..1
 * address 0..*
+* maritalStatus 1..1 
+* maritalStatus from VSMaritalStatus (required)
 * managingOrganization 1..1
+* extension contains KeyPopulation named keyPopulation 0..1 MS
 
 Profile: TargetFacilityEncounter
 Parent: Encounter
@@ -269,3 +272,18 @@ Description: "A report as a result of the lab task being completed"
 * performer 1..1
 * result 1..1
 * conclusion 0..1
+
+Profile: HIVRelatedPerson
+Parent: RelatedPerson
+Id: hiv-related-person
+Title: "HIV Patient Related Person"
+Description: "This profile is for recording the Patient's Guardian"
+* patient 1..1
+* name 1..* 
+
+Extension: KeyPopulation
+Id: key-population
+Title: "Key population"
+Description: "Key population"
+* value[x] only CodeableConcept
+* valueCodeableConcept from VSKeyPopulation (required)

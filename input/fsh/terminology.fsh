@@ -1,5 +1,6 @@
 Alias: $LNC = http://loinc.org
 Alias: $SCT = http://snomed.info/sct
+Alias: $MaritalStatus = http://terminology.hl7.org/CodeSystem/v3-MaritalStatus  
 
 ValueSet: VSVLResultCode
 Id: vs-vl-result-code
@@ -112,3 +113,35 @@ Title: "ARV treatment outcomes"
 Description: "ARV treatment plan outcomes"
 * ^experimental = false
 * $SCT#105480006 "Procedure declined by patient (situation)"
+
+CodeSystem: CSKeyPopulation
+Id: cs-key-population
+Title: "Key population"
+Description: "A list of key population types"
+* ^experimental = false
+* ^caseSensitive = true
+* #GENERAL-POPULATION "General Population"
+* #MSM "MSM"
+* #FSW "FSW"
+* #MSW "MSW"
+* #PWID "PWID"
+* #PWUD "PWUD"
+* #TRANSGENDER "Transgender"
+
+ValueSet: VSKeyPopulation
+Id: vs-key-population
+Title: "Key population"
+Description: "A list of key population types"
+* ^experimental = false
+* include codes from system CSKeyPopulation
+
+ValueSet: VSMaritalStatus
+Id: vs-marital-status
+Title: "Marital Status"
+Description:  "Valueset - marital statuses"
+* $MaritalStatus#S "Never Married"   //125725006 | Marital status: single, never married (finding) 
+* $MaritalStatus#M "Married"         //87915002 | Married (finding)
+* $MaritalStatus#P "Polygamous"      //22187004 | Polygamous (finding)
+* $MaritalStatus#T "Domestic partner" //38070000 | Cohabiting (finding) 
+* $MaritalStatus#D "Divorced"         //20295000 | Divorced (finding)
+* $MaritalStatus#UNK "Unknown"        //#160504008 "Marital state unknown (finding)"
