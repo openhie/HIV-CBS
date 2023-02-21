@@ -38,7 +38,11 @@ Description: "Patient example"
 * address.state = "Western Province"
 * address.district = "City of Cape Town"
 * address.city = "Cape Town"
+* maritalStatus = #M
+* maritalStatus.coding.system = "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"
 * managingOrganization = Reference(HIVOrganizationExample)
+* extension[KPS].valueCodeableConcept.coding.code = $SCT#417284009
+* extension[KPS].valueCodeableConcept.coding.system = "http://snomed.info/sct"
 
 Instance: TargetFacilityEncounterExample
 InstanceOf: TargetFacilityEncounter
@@ -335,3 +339,12 @@ Description: "ARVCarePlan Refused example"
 * note.text = "Patient stopped treatment"
 * note.authorReference = Reference(HIVOrganizationExample)
 * note.time = "2022-02-07T13:28:17-05:00"
+
+Instance: GuardianExample
+InstanceOf: HIVRelatedPerson
+Usage: #example
+Title: "Related Person example"
+Description: ""
+* name.given = "Peter"
+* name.family = "Loo"
+* patient = Reference(HIVPatientExample)

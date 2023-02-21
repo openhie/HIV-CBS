@@ -1,5 +1,5 @@
 Alias: $LNC = http://loinc.org
-Alias: $SCT = http://snomed.info/sct
+Alias: $SCT = http://snomed.info/sct 
 
 ValueSet: VSVLResultCode
 Id: vs-vl-result-code
@@ -112,3 +112,24 @@ Title: "ARV treatment outcomes"
 Description: "ARV treatment plan outcomes"
 * ^experimental = false
 * $SCT#105480006 "Procedure declined by patient (situation)"
+
+CodeSystem: CSKeyPopulationStatus
+Id: cs-key-population-status
+Title: "Key population"
+Description: "A list of key population types"
+* ^experimental = false
+* ^caseSensitive = true
+* #General-Population "General Population"
+
+ValueSet: VSKeyPopulationSatus
+Id: vs-key-population-status
+Title: "Key population"
+Description: "A list of key population types"
+* ^experimental = false
+* $SCT#472986005 "Sexually active with men (finding)"
+* $SCT#159799000 "Female prostitute (occupation)"
+* $SCT#159800001 "Male prostitute (occupation)"
+* $SCT#228388006 "Intravenous drug user (finding)"
+* $SCT#417284009 "Current drug user (finding)"
+* $SCT#407375002 "Surgically transgendered transsexual (finding)"
+* include codes from system CSKeyPopulationStatus
