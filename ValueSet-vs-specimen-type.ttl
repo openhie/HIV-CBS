@@ -15,10 +15,10 @@
   fhir:ValueSet.url [ fhir:value "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-specimen-type"]; # 
   fhir:ValueSet.version [ fhir:value "0.2.0"]; # 
   fhir:ValueSet.name [ fhir:value "VSSpecimenType"]; # 
-  fhir:ValueSet.title [ fhir:value "Specimen type used in Viral Load testing"]; # 
+  fhir:ValueSet.title [ fhir:value "Specimen Type Used In Viral Load testing"]; # 
   fhir:ValueSet.status [ fhir:value "active"]; # 
   fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean]; # 
-  fhir:ValueSet.date [ fhir:value "2023-02-21T14:16:30+00:00"^^xsd:dateTime]; # 
+  fhir:ValueSet.date [ fhir:value "2023-02-21T14:39:39+00:00"^^xsd:dateTime]; # 
   fhir:ValueSet.publisher [ fhir:value "Jembi Health Systems"]; # 
   fhir:ValueSet.contact [
      fhir:index 0;
@@ -32,7 +32,7 @@
        fhir:ContactPoint.value [ fhir:value "info@jembi.org" ]
      ]
   ]; # 
-  fhir:ValueSet.description [ fhir:value "Specimen type used in Viral Load testing"]; # 
+  fhir:ValueSet.description [ fhir:value "A list of specimen types."]; # 
   fhir:ValueSet.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [

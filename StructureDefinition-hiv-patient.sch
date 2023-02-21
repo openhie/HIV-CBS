@@ -12,8 +12,11 @@
   <sch:pattern>
     <sch:title>f:Patient</sch:title>
     <sch:rule context="f:Patient">
+      <sch:assert test="count(f:extension[@url = 'http://openhie.org/fhir/hiv-cbs/StructureDefinition/key-population-status']) &gt;= 1">extension with URL = 'http://openhie.org/fhir/hiv-cbs/StructureDefinition/key-population-status': minimum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://openhie.org/fhir/hiv-cbs/StructureDefinition/key-population-status']) &lt;= 1">extension with URL = 'http://openhie.org/fhir/hiv-cbs/StructureDefinition/key-population-status': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:gender) &gt;= 1">gender: minimum cardinality of 'gender' is 1</sch:assert>
       <sch:assert test="count(f:birthDate) &gt;= 1">birthDate: minimum cardinality of 'birthDate' is 1</sch:assert>
+      <sch:assert test="count(f:maritalStatus) &gt;= 1">maritalStatus: minimum cardinality of 'maritalStatus' is 1</sch:assert>
       <sch:assert test="count(f:managingOrganization) &gt;= 1">managingOrganization: minimum cardinality of 'managingOrganization' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>

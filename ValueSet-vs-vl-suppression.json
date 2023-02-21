@@ -8,10 +8,10 @@
   "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-vl-suppression",
   "version" : "0.2.0",
   "name" : "VSVLSuppression",
-  "title" : "Viral load Suppressions Status",
+  "title" : "Viral Load Suppressions Status",
   "status" : "active",
   "experimental" : false,
-  "date" : "2023-02-21T14:16:30+00:00",
+  "date" : "2023-02-21T14:39:39+00:00",
   "publisher" : "Jembi Health Systems",
   "contact" : [{
     "telecom" : [{
@@ -23,7 +23,7 @@
       "value" : "info@jembi.org"
     }]
   }],
-  "description" : "A list of Viral load Statuses",
+  "description" : "Describes a patient's current viral load status.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
