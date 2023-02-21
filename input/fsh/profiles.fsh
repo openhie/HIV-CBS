@@ -86,7 +86,7 @@ Description: "Confirmation of the diagnosis"
 * identifier[HPTUI].system = "http://openhie.org/fhir/hiv-cbs/identifier/hiv-diagnosis" (exactly)
 * clinicalStatus 1..1
 * verificationStatus 1..1
-* code from VSHIVDiagnosis (required)
+* code from VSCondition (required)
 * subject 1..1
 * encounter 1..1
 * recordedDate 1..1

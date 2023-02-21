@@ -4,23 +4,23 @@ Alias: $SCT = http://snomed.info/sct
 ValueSet: VSVLResultCode
 Id: vs-vl-result-code
 Title: "Viral Load Result Code"
-Description: "Viral Load Result Code"
+Description: "A code used to indicate the category for the lab result."
 * ^experimental = false
 * $SCT#398579006 "Human immunodeficiency virus-1 nucleic acid assay (procedure)"
 
 ValueSet: VSVLSuppression
 Id: vs-vl-suppression
-Title: "Viral load Suppressions Status"
-Description: "A list of Viral load Statuses"
+Title: "Viral Load Suppressions Status"
+Description: "Describes a patient's current viral load status."
 * ^experimental = false
 * $SCT#245780008 "Suppressed (qualifier value)"
 * $SCT#19032002 "Uncontrolled (qualifier value)" //Unsuppressed
 * $SCT#54690008 "Unknown (origin) (qualifier value)"
 
-ValueSet: VSHIVDiagnosis
-Id: vs-hiv-diagnosis
-Title: "HIV Diagnosis"
-Description:  "A list of possible HIV diagnoses"
+ValueSet: VSCondition
+Id: vs-condition
+Title: "Conditions"
+Description:  "A list of possible HIV conditions."
 * ^experimental = false
 * $SCT#86406008 "Human immunodeficiency virus infection (disorder)"
 
@@ -34,14 +34,14 @@ Description:  "A list of possible HIV deaths"
 ValueSet: VSHIVTestDone
 Id: vs-hiv-test-done
 Title: "HIV Test Done"
-Description:  "HIV Test Done"
+Description:  "Used by the observation to indicate that a HIV test was performed."
 * ^experimental = false
 * $SCT#315124004 "Human immunodeficiency virus viral load (procedure)"
 
 ValueSet: VSARTRegimenLines
 Id: vs-artregimen-lines
 Title: "ART Regimen Lines"
-Description: "A list of ART Regimen Lines"
+Description: "A list of ART regimen therapeutic lines."
 * ^experimental = false
 * $SCT#708255002 "First line treatment (procedure)"
 * $SCT#708256001 "Second line treatment (procedure)"
@@ -50,7 +50,7 @@ Description: "A list of ART Regimen Lines"
 ValueSet: VSARVMedicationRequest
 Id: vs-arvtreatment-activity-type
 Title: "ARV Treatment Medication Request"
-Description: "ARV Treatment Medication Request"
+Description: "Codes used to represent a medication request for ART."
 * ^experimental = false
 *  $LNC#45260-7 "HIV ART medication"
   
@@ -66,8 +66,8 @@ Description:  "A list of Patient Types at Enrolment"
 
 ValueSet: VSSpecimenType
 Id: vs-specimen-type
-Title: "Specimen type used in Viral Load testing"
-Description:  "Specimen type used in Viral Load testing"
+Title: "Specimen Type Used In Viral Load testing"
+Description:  "A list of specimen types."
 * ^experimental = false
 * $SCT#119361006 "Plasma specimen (specimen)"
 * $SCT#440500007 "Dried blood spot specimen (specimen)"
@@ -86,7 +86,7 @@ Description: "A list of HIV test types"
 ValueSet: VSReasonForAssessmentOrTestNotPerformed
 Id: vs-reason-for-assessment-or-test-not-performed
 Title: "Reason for Assessment or Test Not Performed"
-Description: "A list of reasons associated with the service request for the lab order"
+Description: "A list of reasons associated with the service request for the lab order."
 * ^experimental = false
 //Reasons for assessment
 * $SCT#77386006 "Currently pregnant"
@@ -109,13 +109,13 @@ Description: "A list of reasons associated with the service request for the lab 
 ValueSet: VSCarePlanActivityOutcome
 Id: vs-careplan-outcome
 Title: "ARV treatment outcomes"
-Description: "ARV treatment plan outcomes"
+Description: "A list of possible ARV treatment outcomes."
 * ^experimental = false
 * $SCT#105480006 "Procedure declined by patient (situation)"
 
 CodeSystem: CSKeyPopulationStatus
 Id: cs-key-population-status
-Title: "Key population"
+Title: "Key Population Status"
 Description: "A list of key population types"
 * ^experimental = false
 * ^caseSensitive = true
@@ -123,7 +123,7 @@ Description: "A list of key population types"
 
 ValueSet: VSKeyPopulationSatus
 Id: vs-key-population-status
-Title: "Key population"
+Title: "Key Population Status"
 Description: "A list of key population types"
 * ^experimental = false
 * $SCT#472986005 "Sexually active with men (finding)"
