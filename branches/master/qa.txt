@@ -3,7 +3,7 @@
 
 err = 0, warn = 4, info = 0
 IG Publisher Version: 1.2.37
-Generated Tue Feb 21 13:37:23 UTC 2023. FHIR version 4.0.1 for openhie.fhir.hiv.cbs#0.2.0 (canonical = http://openhie.org/fhir/hiv-cbs)
+Generated Tue Feb 21 14:11:46 UTC 2023. FHIR version 4.0.1 for openhie.fhir.hiv.cbs#0.2.0 (canonical = http://openhie.org/fhir/hiv-cbs)
  Build Errors : 0 / 4 / 0
  /github/workspace/fsh-generated/resources/Bundle-EMR : 0 / 0 / 19
  /github/workspace/fsh-generated/resources/Bundle-LabCancellation : 0 / 0 / 3
@@ -55,8 +55,8 @@ Generated Tue Feb 21 13:37:23 UTC 2023. FHIR version 4.0.1 for openhie.fhir.hiv.
  /github/workspace/fsh-generated/resources/ValueSet-vs-artregimen-lines : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-arvtreatment-activity-type : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-careplan-outcome : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-condition : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-hiv-death : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/ValueSet-vs-hiv-diagnosis : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-hiv-test-done : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-key-population-status : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-patient-enrollment-type : 0 / 0 / 1
@@ -122,8 +122,8 @@ WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in 
 == fsh-generated/resources/ValueSet-vs-artregimen-lines.json ==
 == fsh-generated/resources/ValueSet-vs-arvtreatment-activity-type.json ==
 == fsh-generated/resources/ValueSet-vs-careplan-outcome.json ==
+== fsh-generated/resources/ValueSet-vs-condition.json ==
 == fsh-generated/resources/ValueSet-vs-hiv-death.json ==
-== fsh-generated/resources/ValueSet-vs-hiv-diagnosis.json ==
 == fsh-generated/resources/ValueSet-vs-hiv-test-done.json ==
 == fsh-generated/resources/ValueSet-vs-key-population-status.json ==
 == fsh-generated/resources/ValueSet-vs-patient-enrollment-type.json ==

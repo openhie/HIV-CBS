@@ -1,0 +1,42 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "vs-condition",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/86406008\">86406008</a></td><td>Human immunodeficiency virus infection (disorder)</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-condition",
+  "version" : "0.2.0",
+  "name" : "VSCondition",
+  "title" : "Conditions",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2023-02-21T14:10:21+00:00",
+  "publisher" : "Jembi Health Systems",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.jembi.org"
+    },
+    {
+      "system" : "email",
+      "value" : "info@jembi.org"
+    }]
+  }],
+  "description" : "A list of possible HIV conditions.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "86406008",
+        "display" : "Human immunodeficiency virus infection (disorder)"
+      }]
+    }]
+  }
+}
