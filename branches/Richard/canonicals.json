@@ -1,5 +1,12 @@
 [
   {
+    "id" : "cs-key-population-status",
+    "type" : "CodeSystem",
+    "url" : "http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-key-population-status",
+    "version" : "0.2.0",
+    "name" : "CSKeyPopulationStatus"
+  },
+  {
     "id" : "openhie.fhir.hiv.cbs",
     "type" : "ImplementationGuide",
     "url" : "http://openhie.org/fhir/hiv-cbs/ImplementationGuide/openhie.fhir.hiv.cbs",
@@ -98,6 +105,13 @@
     "name" : "HIVPractitioner"
   },
   {
+    "id" : "hiv-related-person",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-related-person",
+    "version" : "0.2.0",
+    "name" : "HIVRelatedPerson"
+  },
+  {
     "id" : "hiv-service-request-location",
     "type" : "StructureDefinition",
     "url" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-service-request-location",
@@ -110,6 +124,13 @@
     "url" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-test-results",
     "version" : "0.2.0",
     "name" : "HIVTestResult"
+  },
+  {
+    "id" : "key-population-status",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/key-population-status",
+    "version" : "0.2.0",
+    "name" : "KeyPopulationStatus"
   },
   {
     "id" : "target-facility-encounter",
@@ -154,6 +175,13 @@
     "name" : "VSCarePlanActivityOutcome"
   },
   {
+    "id" : "vs-condition",
+    "type" : "ValueSet",
+    "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-condition",
+    "version" : "0.2.0",
+    "name" : "VSCondition"
+  },
+  {
     "id" : "vs-hiv-death",
     "type" : "ValueSet",
     "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-hiv-death",
@@ -161,18 +189,18 @@
     "name" : "VSHIVDeath"
   },
   {
-    "id" : "vs-hiv-diagnosis",
-    "type" : "ValueSet",
-    "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-hiv-diagnosis",
-    "version" : "0.2.0",
-    "name" : "VSHIVDiagnosis"
-  },
-  {
     "id" : "vs-hiv-test-done",
     "type" : "ValueSet",
     "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-hiv-test-done",
     "version" : "0.2.0",
     "name" : "VSHIVTestDone"
+  },
+  {
+    "id" : "vs-key-population-status",
+    "type" : "ValueSet",
+    "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-key-population-status",
+    "version" : "0.2.0",
+    "name" : "VSKeyPopulationSatus"
   },
   {
     "id" : "vs-patient-enrollment-type",

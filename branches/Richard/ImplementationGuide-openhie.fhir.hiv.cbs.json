@@ -11,7 +11,7 @@
   "title" : "HIV Case-Based Surveillance",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2023-02-21T11:53:49+00:00",
+  "date" : "2023-02-21T14:02:05+00:00",
   "publisher" : "Jembi Health Systems",
   "contact" : [{
     "telecom" : [{
@@ -724,7 +724,7 @@
         "reference" : "ValueSet/vs-hiv-test-done"
       },
       "name" : "HIV Test Done",
-      "description" : "HIV Test Done"
+      "description" : "Used by the observation to indicate that a HIV test was performed."
     },
     {
       "extension" : [{
@@ -747,6 +747,17 @@
       },
       "name" : "Example Patient - HIVPatientExample",
       "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/key-population-status"
+      },
+      "name" : "Key HIV Population",
+      "description" : "Populations who are at higher risk for HIV"
     },
     {
       "extension" : [{
@@ -778,8 +789,8 @@
       "reference" : {
         "reference" : "ValueSet/vs-vl-suppression"
       },
-      "name" : "Viral load Suppressions Status",
-      "description" : "A list of Viral load Statuses"
+      "name" : "Viral Load Suppressions Status",
+      "description" : "Describes a patient's current viral load status."
     },
     {
       "extension" : [{
@@ -802,6 +813,17 @@
       },
       "name" : "Example Bundle - EMR",
       "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-arv-treatment"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/hiv-related-person"
+      },
+      "name" : "HIV Patient Related Person",
+      "description" : "This profile is for recording the Patient's Guardian"
     },
     {
       "extension" : [{
@@ -905,13 +927,24 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/GuardianExample"
+      },
+      "name" : "Example RelatedPerson - GuardianExample",
+      "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-related-person"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
         "reference" : "ValueSet/vs-careplan-outcome"
       },
       "name" : "ARV treatment outcomes",
-      "description" : "ARV treatment plan outcomes"
+      "description" : "A list of possible ARV treatment outcomes."
     },
     {
       "extension" : [{
@@ -922,7 +955,7 @@
         "reference" : "ValueSet/vs-reason-for-assessment-or-test-not-performed"
       },
       "name" : "Reason for Assessment or Test Not Performed",
-      "description" : "A list of reasons associated with the service request for the lab order"
+      "description" : "A list of reasons associated with the service request for the lab order."
     },
     {
       "extension" : [{
@@ -956,6 +989,17 @@
       },
       "name" : "Example DiagnosticReport - HIVLabResultsDiagnosticReportExample",
       "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-diagnostic-report"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vs-condition"
+      },
+      "name" : "Conditions",
+      "description" : "A list of possible HIV conditions."
     },
     {
       "extension" : [{
@@ -1015,17 +1059,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/vs-hiv-diagnosis"
-      },
-      "name" : "HIV Diagnosis",
-      "description" : "A list of possible HIV diagnoses"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CarePlan"
       }],
       "reference" : {
@@ -1033,6 +1066,17 @@
       },
       "name" : "Example CarePlan - ARVTreatmentRefusedExample",
       "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-arv-treatment"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/cs-key-population-status"
+      },
+      "name" : "Key Population Status",
+      "description" : "A list of key population types"
     },
     {
       "extension" : [{
@@ -1098,7 +1142,7 @@
         "reference" : "ValueSet/vs-artregimen-lines"
       },
       "name" : "ART Regimen Lines",
-      "description" : "A list of ART Regimen Lines"
+      "description" : "A list of ART regimen therapeutic lines."
     },
     {
       "extension" : [{
@@ -1130,8 +1174,8 @@
       "reference" : {
         "reference" : "ValueSet/vs-specimen-type"
       },
-      "name" : "Specimen type used in Viral Load testing",
-      "description" : "Specimen type used in Viral Load testing"
+      "name" : "Specimen Type Used In Viral Load testing",
+      "description" : "A list of specimen types."
     },
     {
       "extension" : [{
@@ -1175,7 +1219,7 @@
         "reference" : "ValueSet/vs-vl-result-code"
       },
       "name" : "Viral Load Result Code",
-      "description" : "Viral Load Result Code"
+      "description" : "A code used to indicate the category for the lab result."
     },
     {
       "extension" : [{
@@ -1197,7 +1241,18 @@
         "reference" : "ValueSet/vs-arvtreatment-activity-type"
       },
       "name" : "ARV Treatment Medication Request",
-      "description" : "ARV Treatment Medication Request"
+      "description" : "Codes used to represent a medication request for ART."
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vs-key-population-status"
+      },
+      "name" : "Key Population Status",
+      "description" : "A list of key population types"
     },
     {
       "extension" : [{
