@@ -18,7 +18,7 @@
   fhir:ImplementationGuide.title [ fhir:value "HIV Case-Based Surveillance"]; # 
   fhir:ImplementationGuide.status [ fhir:value "draft"]; # 
   fhir:ImplementationGuide.experimental [ fhir:value "false"^^xsd:boolean]; # 
-  fhir:ImplementationGuide.date [ fhir:value "2023-02-21T13:35:57+00:00"^^xsd:dateTime]; # 
+  fhir:ImplementationGuide.date [ fhir:value "2023-02-21T14:02:05+00:00"^^xsd:dateTime]; # 
   fhir:ImplementationGuide.publisher [ fhir:value "Jembi Health Systems"]; # 
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -829,7 +829,7 @@
          fhir:Reference.reference [ fhir:value "ValueSet/vs-hiv-test-done" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "HIV Test Done" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "HIV Test Done" ]
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Used by the observation to indicate that a HIV test was performed." ]
      ], [
        fhir:index 10;
        fhir:Element.extension [
@@ -909,8 +909,8 @@
          fhir:link <http://openhie.org/fhir/hiv-cbs/ValueSet/vs-vl-suppression>;
          fhir:Reference.reference [ fhir:value "ValueSet/vs-vl-suppression" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Viral load Suppressions Status" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A list of Viral load Statuses" ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Viral Load Suppressions Status" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Describes a patient's current viral load status." ]
      ], [
        fhir:index 16;
        fhir:Element.extension [
@@ -1110,7 +1110,7 @@
          fhir:Reference.reference [ fhir:value "ValueSet/vs-careplan-outcome" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ARV treatment outcomes" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ARV treatment plan outcomes" ]
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A list of possible ARV treatment outcomes." ]
      ], [
        fhir:index 30;
        fhir:Element.extension [
@@ -1123,7 +1123,7 @@
          fhir:Reference.reference [ fhir:value "ValueSet/vs-reason-for-assessment-or-test-not-performed" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Reason for Assessment or Test Not Performed" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A list of reasons associated with the service request for the lab order" ]
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A list of reasons associated with the service request for the lab order." ]
      ], [
        fhir:index 31;
        fhir:Element.extension [
@@ -1174,6 +1174,19 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://openhie.org/fhir/hiv-cbs/ValueSet/vs-condition>;
+         fhir:Reference.reference [ fhir:value "ValueSet/vs-condition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Conditions" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A list of possible HIV conditions." ]
+     ], [
+       fhir:index 35;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
@@ -1183,7 +1196,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Practitioner" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The healthcare professional who has been assigned to a given lab task" ]
      ], [
-       fhir:index 35;
+       fhir:index 36;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1199,7 +1212,7 @@
          fhir:link <http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-diagnosis>
        ]
      ], [
-       fhir:index 36;
+       fhir:index 37;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1215,7 +1228,7 @@
          fhir:link <http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-lab-task>
        ]
      ], [
-       fhir:index 37;
+       fhir:index 38;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1231,7 +1244,7 @@
          fhir:link <http://openhie.org/fhir/hiv-cbs/StructureDefinition/death>
        ]
      ], [
-       fhir:index 38;
+       fhir:index 39;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1243,19 +1256,6 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Diagnosis" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Confirmation of the diagnosis" ]
-     ], [
-       fhir:index 39;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://openhie.org/fhir/hiv-cbs/ValueSet/vs-hiv-diagnosis>;
-         fhir:Reference.reference [ fhir:value "ValueSet/vs-hiv-diagnosis" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "HIV Diagnosis" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A list of possible HIV diagnoses" ]
      ], [
        fhir:index 40;
        fhir:Element.extension [
@@ -1283,7 +1283,7 @@
          fhir:link <http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-key-population-status>;
          fhir:Reference.reference [ fhir:value "CodeSystem/cs-key-population-status" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Key population" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Key Population Status" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A list of key population types" ]
      ], [
        fhir:index 42;
@@ -1368,7 +1368,7 @@
          fhir:Reference.reference [ fhir:value "ValueSet/vs-artregimen-lines" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ART Regimen Lines" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A list of ART Regimen Lines" ]
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A list of ART regimen therapeutic lines." ]
      ], [
        fhir:index 48;
        fhir:Element.extension [
@@ -1412,8 +1412,8 @@
          fhir:link <http://openhie.org/fhir/hiv-cbs/ValueSet/vs-specimen-type>;
          fhir:Reference.reference [ fhir:value "ValueSet/vs-specimen-type" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Specimen type used in Viral Load testing" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Specimen type used in Viral Load testing" ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Specimen Type Used In Viral Load testing" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A list of specimen types." ]
      ], [
        fhir:index 51;
        fhir:Element.extension [
@@ -1474,7 +1474,7 @@
          fhir:Reference.reference [ fhir:value "ValueSet/vs-vl-result-code" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Viral Load Result Code" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Viral Load Result Code" ]
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A code used to indicate the category for the lab result." ]
      ], [
        fhir:index 55;
        fhir:Element.extension [
@@ -1503,7 +1503,7 @@
          fhir:Reference.reference [ fhir:value "ValueSet/vs-arvtreatment-activity-type" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ARV Treatment Medication Request" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ARV Treatment Medication Request" ]
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes used to represent a medication request for ART." ]
      ], [
        fhir:index 57;
        fhir:Element.extension [
@@ -1515,7 +1515,7 @@
          fhir:link <http://openhie.org/fhir/hiv-cbs/ValueSet/vs-key-population-status>;
          fhir:Reference.reference [ fhir:value "ValueSet/vs-key-population-status" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Key population" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Key Population Status" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A list of key population types" ]
      ], [
        fhir:index 58;

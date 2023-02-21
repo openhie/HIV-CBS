@@ -8,10 +8,10 @@
   "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-specimen-type",
   "version" : "0.2.0",
   "name" : "VSSpecimenType",
-  "title" : "Specimen type used in Viral Load testing",
+  "title" : "Specimen Type Used In Viral Load testing",
   "status" : "active",
   "experimental" : false,
-  "date" : "2023-02-21T13:35:57+00:00",
+  "date" : "2023-02-21T14:02:05+00:00",
   "publisher" : "Jembi Health Systems",
   "contact" : [{
     "telecom" : [{
@@ -23,7 +23,7 @@
       "value" : "info@jembi.org"
     }]
   }],
-  "description" : "Specimen type used in Viral Load testing",
+  "description" : "A list of specimen types.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
