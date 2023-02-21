@@ -12,16 +12,8 @@
           <profile value="http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-patient"/>
         </meta>
         <text>
-          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Patient</b><a name="HIVPatientExample"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Patient &quot;HIVPatientExample&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-hiv-patient.html">Patient</a></p></div><p><b>Key population</b>: Transgender <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-cs-key-population.html">Key population</a>#TRANSGENDER)</span></p><p><b>identifier</b>: id: NID1234567</p><p><b>active</b>: true</p><p><b>name</b>: Jane Maria Smith (OFFICIAL)</p><p><b>telecom</b>: <a href="tel:+27821234567">+27821234567</a>, <a href="mailto:someone@example.com">someone@example.com</a></p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1990-12-12</p><p><b>address</b>: Cape Town Western Province South Africa </p><p><b>maritalStatus</b>: Married <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-MaritalStatus.html">MaritalStatus</a>#M)</span></p><p><b>managingOrganization</b>: <a href="Organization-HIVOrganizationExample.html">Organization/HIVOrganizationExample</a> &quot;HIV Test Services Health Facility&quot;</p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Patient</b><a name="HIVPatientExample"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Patient &quot;HIVPatientExample&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-hiv-patient.html">Patient</a></p></div><p><b>identifier</b>: id: NID1234567</p><p><b>active</b>: true</p><p><b>name</b>: Jane Maria Smith (OFFICIAL)</p><p><b>telecom</b>: <a href="tel:+27821234567">+27821234567</a>, <a href="mailto:someone@example.com">someone@example.com</a></p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1990-12-12</p><p><b>address</b>: Cape Town Western Province South Africa </p><p><b>managingOrganization</b>: <a href="Organization-HIVOrganizationExample.html">Organization/HIVOrganizationExample</a> &quot;HIV Test Services Health Facility&quot;</p></div>
         </text>
-        <extension url="http://openhie.org/fhir/hiv-cbs/StructureDefinition/key-population">
-          <valueCodeableConcept>
-            <coding>
-              <system value="http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-key-population"/>
-              <code value="TRANSGENDER"/>
-            </coding>
-          </valueCodeableConcept>
-        </extension>
         <identifier>
           <system value="http://openhie.org/fhir/hiv-cbs/identifier/nid"/>
           <value value="NID1234567"/>
@@ -49,12 +41,6 @@
           <state value="Western Province"/>
           <country value="South Africa"/>
         </address>
-        <maritalStatus>
-          <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"/>
-            <code value="M"/>
-          </coding>
-        </maritalStatus>
         <managingOrganization>
           <reference value="Organization/HIVOrganizationExample"/>
         </managingOrganization>
