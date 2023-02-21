@@ -1,0 +1,66 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://openhie.org/fhir/hiv-cbs/ValueSet/vs-test-types> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "vs-test-types"]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"https://loinc.org/25842-6/\">25842-6</a></td><td>HIV 2 proviral DNA [Presence] in Specimen by NAA with probe detection</td></tr><tr><td><a href=\"https://loinc.org/25836-8/\">25836-8</a></td><td>HIV 1 RNA [#/volume] (viral load) in Specimen by NAA with probe detection</td></tr></table></li></ul></div>"
+  ]; # 
+  fhir:ValueSet.url [ fhir:value "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-test-types"]; # 
+  fhir:ValueSet.version [ fhir:value "0.2.0"]; # 
+  fhir:ValueSet.name [ fhir:value "VSTestTypes"]; # 
+  fhir:ValueSet.title [ fhir:value "Test Types"]; # 
+  fhir:ValueSet.status [ fhir:value "active"]; # 
+  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean]; # 
+  fhir:ValueSet.date [ fhir:value "2023-02-21T06:57:07+00:00"^^xsd:dateTime]; # 
+  fhir:ValueSet.publisher [ fhir:value "Jembi Health Systems"]; # 
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://www.jembi.org" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "info@jembi.org" ]
+     ]
+  ]; # 
+  fhir:ValueSet.description [ fhir:value "A list of HIV test types"]; # 
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
+       fhir:Coding.code [ fhir:value "001" ]
+     ]
+  ]; # 
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://loinc.org" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "25842-6" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "HIV 2 proviral DNA [Presence] in Specimen by NAA with probe detection" ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "25836-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "HIV 1 RNA [#/volume] (viral load) in Specimen by NAA with probe detection" ]
+       ]
+     ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<http://openhie.org/fhir/hiv-cbs/ValueSet/vs-test-types.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
