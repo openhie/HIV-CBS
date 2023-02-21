@@ -12,7 +12,7 @@
   <title value="HIV Case-Based Surveillance"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2023-02-21T11:45:55+00:00"/>
+  <date value="2023-02-21T13:35:57+00:00"/>
   <publisher value="Jembi Health Systems"/>
   <contact>
     <telecom>
@@ -581,6 +581,16 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/key-population-status"/>
+      </reference>
+      <name value="Key HIV Population"/>
+      <description value="Populations who are at higher risk for HIV"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -628,6 +638,16 @@
       </reference>
       <name value="Example Bundle - EMR"/>
       <exampleCanonical value="http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-arv-treatment"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/hiv-related-person"/>
+      </reference>
+      <name value="HIV Patient Related Person"/>
+      <description value="This profile is for recording the Patient's Guardian"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -718,6 +738,16 @@
       </reference>
       <name value="Example Task - HIVLabOrderRejectionTaskExample"/>
       <exampleCanonical value="http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-lab-task"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RelatedPerson"/>
+      </extension>
+      <reference>
+        <reference value="RelatedPerson/GuardianExample"/>
+      </reference>
+      <name value="Example RelatedPerson - GuardianExample"/>
+      <exampleCanonical value="http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-related-person"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -838,6 +868,16 @@
       </reference>
       <name value="Example CarePlan - ARVTreatmentRefusedExample"/>
       <exampleCanonical value="http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-arv-treatment"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/cs-key-population-status"/>
+      </reference>
+      <name value="Key population"/>
+      <description value="A list of key population types"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -988,6 +1028,16 @@
       </reference>
       <name value="ARV Treatment Medication Request"/>
       <description value="ARV Treatment Medication Request"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-key-population-status"/>
+      </reference>
+      <name value="Key population"/>
+      <description value="A list of key population types"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

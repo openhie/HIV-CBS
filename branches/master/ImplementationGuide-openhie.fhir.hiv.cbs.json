@@ -11,7 +11,7 @@
   "title" : "HIV Case-Based Surveillance",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2023-02-21T11:45:55+00:00",
+  "date" : "2023-02-21T13:35:57+00:00",
   "publisher" : "Jembi Health Systems",
   "contact" : [{
     "telecom" : [{
@@ -751,6 +751,17 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/key-population-status"
+      },
+      "name" : "Key HIV Population",
+      "description" : "Populations who are at higher risk for HIV"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -802,6 +813,17 @@
       },
       "name" : "Example Bundle - EMR",
       "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-arv-treatment"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/hiv-related-person"
+      },
+      "name" : "HIV Patient Related Person",
+      "description" : "This profile is for recording the Patient's Guardian"
     },
     {
       "extension" : [{
@@ -901,6 +923,17 @@
       },
       "name" : "Example Task - HIVLabOrderRejectionTaskExample",
       "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-lab-task"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/GuardianExample"
+      },
+      "name" : "Example RelatedPerson - GuardianExample",
+      "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-related-person"
     },
     {
       "extension" : [{
@@ -1033,6 +1066,17 @@
       },
       "name" : "Example CarePlan - ARVTreatmentRefusedExample",
       "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-arv-treatment"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/cs-key-population-status"
+      },
+      "name" : "Key population",
+      "description" : "A list of key population types"
     },
     {
       "extension" : [{
@@ -1198,6 +1242,17 @@
       },
       "name" : "ARV Treatment Medication Request",
       "description" : "ARV Treatment Medication Request"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vs-key-population-status"
+      },
+      "name" : "Key population",
+      "description" : "A list of key population types"
     },
     {
       "extension" : [{
