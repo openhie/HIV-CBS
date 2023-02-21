@@ -41,8 +41,8 @@ Description: "Patient example"
 * maritalStatus = #M
 * maritalStatus.coding.system = "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"
 * managingOrganization = Reference(HIVOrganizationExample)
-* extension[keyPopulation].valueCodeableConcept.coding.code = #TRANSGENDER
-* extension[keyPopulation].valueCodeableConcept.coding.system = "http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-key-population"
+* extension[KPS].valueCodeableConcept.coding.code = $SCT#417284009
+* extension[KPS].valueCodeableConcept.coding.system = "http://snomed.info/sct"
 
 Instance: TargetFacilityEncounterExample
 InstanceOf: TargetFacilityEncounter

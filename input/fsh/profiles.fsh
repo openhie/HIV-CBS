@@ -39,9 +39,8 @@ Description: "A patient resource for an HIV Patient"
 * birthDate 1..1
 * address 0..*
 * maritalStatus 1..1 
-* maritalStatus from VSMaritalStatus (required)
 * managingOrganization 1..1
-* extension contains KeyPopulation named keyPopulation 0..1 MS
+* extension contains KeyPopulationStatus named KPS 1..1
 
 Profile: TargetFacilityEncounter
 Parent: Encounter
@@ -281,9 +280,9 @@ Description: "This profile is for recording the Patient's Guardian"
 * patient 1..1
 * name 1..* 
 
-Extension: KeyPopulation
-Id: key-population
-Title: "Key population"
-Description: "Key population"
+Extension: KeyPopulationStatus
+Id: key-population-status
+Title: "Key HIV Population"
+Description: "Populations who are at higher risk for HIV"
 * value[x] only CodeableConcept
-* valueCodeableConcept from VSKeyPopulation (required)
+* valueCodeableConcept from VSKeyPopulationSatus (required)
