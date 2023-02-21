@@ -20,8 +20,8 @@
       ]
     },
     {
-      "url": "http://openhie.org/fhir/hiv-cbs/StructureDefinition/key-population",
-      "title": "Key population",
+      "url": "http://openhie.org/fhir/hiv-cbs/StructureDefinition/key-population-status",
+      "title": "Key HIV Population",
       "types": [
         "CodeableConcept",
         "CodeableConcept"
@@ -181,7 +181,7 @@
       "Bundle.entry.resource",
       "Encounter"
     ],
-    "http://openhie.org/fhir/hiv-cbs/StructureDefinition/key-population": [
+    "http://openhie.org/fhir/hiv-cbs/StructureDefinition/key-population-status": [
       "Bundle.entry.resource",
       "Patient"
     ]

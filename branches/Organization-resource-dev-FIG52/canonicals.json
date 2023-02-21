@@ -1,10 +1,10 @@
 [
   {
-    "id" : "cs-key-population",
+    "id" : "cs-key-population-status",
     "type" : "CodeSystem",
-    "url" : "http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-key-population",
+    "url" : "http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-key-population-status",
     "version" : "0.2.0",
-    "name" : "CSKeyPopulation"
+    "name" : "CSKeyPopulationStatus"
   },
   {
     "id" : "openhie.fhir.hiv.cbs",
@@ -126,11 +126,11 @@
     "name" : "HIVTestResult"
   },
   {
-    "id" : "key-population",
+    "id" : "key-population-status",
     "type" : "StructureDefinition",
-    "url" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/key-population",
+    "url" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/key-population-status",
     "version" : "0.2.0",
-    "name" : "KeyPopulation"
+    "name" : "KeyPopulationStatus"
   },
   {
     "id" : "target-facility-encounter",
@@ -196,18 +196,11 @@
     "name" : "VSHIVTestDone"
   },
   {
-    "id" : "vs-key-population",
+    "id" : "vs-key-population-status",
     "type" : "ValueSet",
-    "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-key-population",
+    "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-key-population-status",
     "version" : "0.2.0",
-    "name" : "VSKeyPopulation"
-  },
-  {
-    "id" : "vs-marital-status",
-    "type" : "ValueSet",
-    "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-marital-status",
-    "version" : "0.2.0",
-    "name" : "VSMaritalStatus"
+    "name" : "VSKeyPopulationSatus"
   },
   {
     "id" : "vs-patient-enrollment-type",
