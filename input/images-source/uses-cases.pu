@@ -3,32 +3,33 @@ left to right direction
 actor "Nurse" as nurse
 rectangle EMR {
   usecase "Register Client" as UC1
-  usecase "Assess Client" as UC2
-  usecase "Document Screening Information" as UC3
-  usecase "Document Symptoms" as UC4
-  usecase "Document Comorbidities" as UC5
-  usecase "Document Hospital Encounters" as UC6
-  usecase "Document Diagnosis" as UC8
-  usecase "Document Treatment Information" as UC9
-  usecase "Document Client Outcome" as UC10
-  usecase "Submit Lab Order" as UC11
-  usecase "Document Vaccination Events" as UC12
-  
+  usecase "ART Regimen Switching" as UC2
+  usecase "ART Initiation" as UC3
+  usecase "CD4" as UC4
+  usecase "Death" as UC5
+  usecase "Enrolled to Care" as UC6
+  usecase "HIV Diagnosis" as UC7
+  usecase "Viral Suppression" as UC8
+  usecase "Subsequent Sampling" as UC9
+  usecase "Sumbit Lab Order" as UC10
+  usecase "HIV Recency Testing" as UC11
 }
 
 nurse --> UC1
 nurse --> UC2
+nurse --> UC3
+nurse --> UC4
+nurse --> UC5
+nurse --> UC6
+nurse --> UC7
+nurse --> UC8
 nurse --> UC10
 nurse --> UC11
-nurse --> UC12
 
-(UC2) <.. (UC3) : "<<extends>>"
-(UC2) <.. (UC4) : "<<extends>>"
-(UC2) <.. (UC5) : "<<extends>>"
-(UC2) <.. (UC6) : "<<extends>>"
-(UC2) <.. (UC12) : "<<extends>>"
-(UC2) <.. (UC8) : "<<extends>>"
-(UC2) <.. (UC9) : "<<extends>>"
+(UC4) <.. (UC9) : "<<extends>>"
+(UC8) <.. (UC9) : "<<extends>>"
+(UC8) <.. (UC11) : "<<extends>>"
+
 
 actor "Lab Assistant" as labAssistant
 rectangle Laboratory {
@@ -51,7 +52,7 @@ labAssistant --> UC15
 (UC18) ..> (UC19) : "<<include>>"
 (UC17) ..> (UC19) : "<<include>>"
 
-(UC11) ..> Laboratory
+(UC10) ..> Laboratory
 
 (UC16) ..> EMR : "Lab result"
 

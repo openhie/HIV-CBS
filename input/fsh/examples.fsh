@@ -38,6 +38,12 @@ Description: "Patient example"
 * address.state = "Western Province"
 * address.district = "City of Cape Town"
 * address.city = "Cape Town"
+* contact[0].relationship = #N
+* contact[0].relationship.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0131"
+* contact[0].name.given = "John" 
+* contact[0].name.family = "Doe"
+* contact[0].telecom.system = #phone
+* contact[0].telecom.value = "+27829999999"
 * maritalStatus = #M
 * maritalStatus.coding.system = "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"
 * managingOrganization = Reference(HIVOrganizationExample)
@@ -340,11 +346,18 @@ Description: "ARVCarePlan Refused example"
 * note.authorReference = Reference(HIVOrganizationExample)
 * note.time = "2022-02-07T13:28:17-05:00"
 
-Instance: GuardianExample
-InstanceOf: HIVRelatedPerson
+Instance: HIVRecencyTestExample
+InstanceOf: HIVRecencyTest
 Usage: #example
-Title: "Related Person example"
-Description: ""
-* name.given = "Peter"
-* name.family = "Loo"
-* patient = Reference(HIVPatientExample)
+Title: "HIV Recency Test Done example"
+Description: "HIV Recency Test example"
+* status = #final
+* code = $SCT#409788009
+* subject = Reference(HIVPatientExample)
+* encounter = Reference(TargetFacilityEncounterExample)
+* effectiveDateTime = "2022-12-10"
+* valueCodeableConcept = #Recent
+* valueCodeableConcept.coding.system = "http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-hiv-recency-status"
+* note.text = "Additional information regarding the HIV recency test"
+* note.authorReference = Reference(HIVOrganizationExample)
+* note.time = "2015-02-07T13:28:17-05:00"

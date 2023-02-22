@@ -133,3 +133,26 @@ Description: "A list of key population types"
 * $SCT#417284009 "Current drug user (finding)"
 * $SCT#407375002 "Surgically transgendered transsexual (finding)"
 * include codes from system CSKeyPopulationStatus
+
+ValueSet: VSHIVRecencyTest
+Id: vs-hiv-recency-test
+Title: "Recency HIV Test"
+Description:  "Used by the observation to indicate that a HIV recency test was performed."
+* ^experimental = false
+* $SCT#409788009 "Rapid human immunodeficiency virus type 1 antibody test (procedure)"
+
+CodeSystem: CSHIVRecencyStatus
+Id: cs-hiv-recency-status
+Title: "HIV Recency Testing Status"
+Description: "A list of HIV recency statuses"
+* ^experimental = false
+* ^caseSensitive = true
+* #Recent "Recent"
+* #Not-Recent "Not Recent"
+
+ValueSet: VSHIVRecencyStatus
+Id: vs-hiv-recency-status
+Title: "HIV Recency Testing Status"
+Description: "A list of HIV recency statuses"
+* ^experimental = false
+* include codes from system CSHIVRecencyStatus
