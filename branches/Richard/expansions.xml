@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="43fd42e4-71b8-4433-918d-f886800af6bc"/>
+  <id value="83402ef7-6ec5-46b7-aa80-bf105525f498"/>
   <meta>
-    <lastUpdated value="2023-02-21T14:39:39.891+00:00"/>
+    <lastUpdated value="2023-02-22T12:13:37.396+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -45,7 +45,7 @@
         <title value="HIV Test Done"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-02-21T14:39:39+00:00"/>
+        <date value="2023-02-22T12:13:37+00:00"/>
         <publisher value="Jembi Health Systems"/>
         <contact>
           <telecom>
@@ -65,8 +65,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:847f9305-2434-4e78-a07f-514b9f0bf3dc"/>
-          <timestamp value="2023-02-21T14:40:21+00:00"/>
+          <identifier value="urn:uuid:4ef997be-5774-47a4-bcb7-589527ee391f"/>
+          <timestamp value="2023-02-22T12:14:08+00:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
@@ -84,6 +84,100 @@
             <system value="http://snomed.info/sct"/>
             <code value="315124004"/>
             <display value="Human immunodeficiency virus viral load (procedure)"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://openhie.org/fhir/hiv-cbs/ValueSet/vs-hiv-recency-status"/>
+    <resource>
+      <ValueSet>
+        <id value="vs-hiv-recency-status"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 2 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-cs-hiv-recency-status.html">HIV Recency Testing Status v0.2.0 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-hiv-cbs-CodeSystem-cs-hiv-recency-status-Recent"> </a>  
+                  <a href="CodeSystem-cs-hiv-recency-status.html#cs-hiv-recency-status-Recent">Recent</a>
+                </td>
+                <td>http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-hiv-recency-status</td>
+                <td>Recent</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-hiv-cbs-CodeSystem-cs-hiv-recency-status-Not-Recent"> </a>  
+                  <a href="CodeSystem-cs-hiv-recency-status.html#cs-hiv-recency-status-Not-Recent">Not-Recent</a>
+                </td>
+                <td>http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-hiv-recency-status</td>
+                <td>Not Recent</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://openhie.org/fhir/hiv-cbs/ValueSet/vs-hiv-recency-status"/>
+        <version value="0.2.0"/>
+        <name value="VSHIVRecencyStatus"/>
+        <title value="HIV Recency Testing Status"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2023-02-22T12:13:37+00:00"/>
+        <publisher value="Jembi Health Systems"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="https://www.jembi.org"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+            <value value="info@jembi.org"/>
+          </telecom>
+        </contact>
+        <description value="A list of HIV recency statuses"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:f62994ed-5829-436d-ad60-df760100ba04"/>
+          <timestamp value="2023-02-22T12:14:10+00:00"/>
+          <total value="2"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-hiv-recency-status|0.2.0"/>
+          </parameter>
+          <contains>
+            <system value="http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-hiv-recency-status"/>
+            <code value="Recent"/>
+            <display value="Recent"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-hiv-recency-status"/>
+            <code value="Not-Recent"/>
+            <display value="Not Recent"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -158,7 +252,7 @@
         <title value="Patient Type at Enrolment"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-02-21T14:39:39+00:00"/>
+        <date value="2023-02-22T12:13:37+00:00"/>
         <publisher value="Jembi Health Systems"/>
         <contact>
           <telecom>
@@ -178,8 +272,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:9ac6c086-49ab-4e76-abe9-44c08064a076"/>
-          <timestamp value="2023-02-21T14:40:23+00:00"/>
+          <identifier value="urn:uuid:59e6233d-042b-4a27-93fa-9a80327ef04f"/>
+          <timestamp value="2023-02-22T12:14:10+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -280,7 +374,7 @@
         <title value="Viral Load Suppressions Status"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-02-21T14:39:39+00:00"/>
+        <date value="2023-02-22T12:13:37+00:00"/>
         <publisher value="Jembi Health Systems"/>
         <contact>
           <telecom>
@@ -300,8 +394,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:a1792f43-ed1a-450d-967f-e47e90bf1581"/>
-          <timestamp value="2023-02-21T14:40:23+00:00"/>
+          <identifier value="urn:uuid:94b6d4b3-d42b-4a9a-9bd4-947159e72712"/>
+          <timestamp value="2023-02-22T12:14:10+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -373,7 +467,7 @@
         <title value="ARV treatment outcomes"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-02-21T14:39:39+00:00"/>
+        <date value="2023-02-22T12:13:37+00:00"/>
         <publisher value="Jembi Health Systems"/>
         <contact>
           <telecom>
@@ -393,8 +487,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:bafc4ec6-f6b8-4f6c-bf06-caffed13d0be"/>
-          <timestamp value="2023-02-21T14:40:29+00:00"/>
+          <identifier value="urn:uuid:d00a3ac4-b6c7-4199-9821-1c50f76836ba"/>
+          <timestamp value="2023-02-22T12:14:16+00:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
@@ -568,7 +662,7 @@
         <title value="Reason for Assessment or Test Not Performed"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-02-21T14:39:39+00:00"/>
+        <date value="2023-02-22T12:13:37+00:00"/>
         <publisher value="Jembi Health Systems"/>
         <contact>
           <telecom>
@@ -588,8 +682,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:00227667-eb25-4718-bcc0-490a49f682ea"/>
-          <timestamp value="2023-02-21T14:40:30+00:00"/>
+          <identifier value="urn:uuid:38dfd6da-897b-4ddd-85bf-fdabeb78c298"/>
+          <timestamp value="2023-02-22T12:14:16+00:00"/>
           <total value="15"/>
           <parameter>
             <name value="excludeNested"/>
@@ -721,7 +815,7 @@
         <title value="Conditions"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-02-21T14:39:39+00:00"/>
+        <date value="2023-02-22T12:13:37+00:00"/>
         <publisher value="Jembi Health Systems"/>
         <contact>
           <telecom>
@@ -741,8 +835,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:df5a9062-a51b-4919-b405-6f4cc2b1392d"/>
-          <timestamp value="2023-02-21T14:40:31+00:00"/>
+          <identifier value="urn:uuid:a12d466d-16a3-420c-8ae1-086b1cce620d"/>
+          <timestamp value="2023-02-22T12:14:17+00:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
@@ -760,6 +854,89 @@
             <system value="http://snomed.info/sct"/>
             <code value="86406008"/>
             <display value="Human immunodeficiency virus infection (disorder)"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://openhie.org/fhir/hiv-cbs/ValueSet/vs-hiv-recency-test"/>
+    <resource>
+      <ValueSet>
+        <id value="vs-hiv-recency-test"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 1 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2022</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-409788009"> </a>  
+                  <a href="http://snomed.info/id/409788009">409788009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Rapid human immunodeficiency virus type 1 antibody test (procedure)</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://openhie.org/fhir/hiv-cbs/ValueSet/vs-hiv-recency-test"/>
+        <version value="0.2.0"/>
+        <name value="VSHIVRecencyTest"/>
+        <title value="Recency HIV Test"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2023-02-22T12:13:37+00:00"/>
+        <publisher value="Jembi Health Systems"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="https://www.jembi.org"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+            <value value="info@jembi.org"/>
+          </telecom>
+        </contact>
+        <description value="Used by the observation to indicate that a HIV recency test was performed."/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:80343178-2401-401b-833d-fdc42db24587"/>
+          <timestamp value="2023-02-22T12:14:19+00:00"/>
+          <total value="1"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220731"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="409788009"/>
+            <display value="Rapid human immunodeficiency virus type 1 antibody test (procedure)"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -804,7 +981,7 @@
         <title value="Death"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-02-21T14:39:39+00:00"/>
+        <date value="2023-02-22T12:13:37+00:00"/>
         <publisher value="Jembi Health Systems"/>
         <contact>
           <telecom>
@@ -824,8 +1001,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:88e7e15b-3f48-4436-bd48-514e6f9a4b36"/>
-          <timestamp value="2023-02-21T14:40:33+00:00"/>
+          <identifier value="urn:uuid:9e7cfb76-398d-4e7e-9098-9f5f2c0aad99"/>
+          <timestamp value="2023-02-22T12:14:19+00:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
@@ -895,7 +1072,7 @@
         <title value="Test Types"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-02-21T14:39:39+00:00"/>
+        <date value="2023-02-22T12:13:37+00:00"/>
         <publisher value="Jembi Health Systems"/>
         <contact>
           <telecom>
@@ -915,8 +1092,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:8acf0426-3c9f-412f-8955-e2ec1352fe69"/>
-          <timestamp value="2023-02-21T14:40:33+00:00"/>
+          <identifier value="urn:uuid:6ca8407e-27f2-4a70-b805-071f6607ed29"/>
+          <timestamp value="2023-02-22T12:14:19+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -999,7 +1176,7 @@
         <title value="ART Regimen Lines"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-02-21T14:39:39+00:00"/>
+        <date value="2023-02-22T12:13:37+00:00"/>
         <publisher value="Jembi Health Systems"/>
         <contact>
           <telecom>
@@ -1019,8 +1196,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:fce54b13-baea-4f8e-b38e-19046a96cb3b"/>
-          <timestamp value="2023-02-21T14:40:33+00:00"/>
+          <identifier value="urn:uuid:08107459-9e9d-47ac-9220-c39a289d41b9"/>
+          <timestamp value="2023-02-22T12:14:19+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1124,7 +1301,7 @@
         <title value="Specimen Type Used In Viral Load testing"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-02-21T14:39:39+00:00"/>
+        <date value="2023-02-22T12:13:37+00:00"/>
         <publisher value="Jembi Health Systems"/>
         <contact>
           <telecom>
@@ -1144,8 +1321,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:63fbc9e9-c450-45df-88b3-49b31c999243"/>
-          <timestamp value="2023-02-21T14:40:33+00:00"/>
+          <identifier value="urn:uuid:5db09c3e-3d1a-44ce-a16f-e5d24fa8b71a"/>
+          <timestamp value="2023-02-22T12:14:19+00:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1227,7 +1404,7 @@
         <title value="Viral Load Result Code"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-02-21T14:39:39+00:00"/>
+        <date value="2023-02-22T12:13:37+00:00"/>
         <publisher value="Jembi Health Systems"/>
         <contact>
           <telecom>
@@ -1247,8 +1424,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:2d6c626f-08d7-4d13-b737-646f28902d4e"/>
-          <timestamp value="2023-02-21T14:40:33+00:00"/>
+          <identifier value="urn:uuid:11d0fdec-8cfe-4c45-b2ed-fa9ae4d0f094"/>
+          <timestamp value="2023-02-22T12:14:19+00:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1310,7 +1487,7 @@
         <title value="ARV Treatment Medication Request"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-02-21T14:39:39+00:00"/>
+        <date value="2023-02-22T12:13:37+00:00"/>
         <publisher value="Jembi Health Systems"/>
         <contact>
           <telecom>
@@ -1330,8 +1507,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:74251392-e4b1-4c4a-87d4-e083b602c36f"/>
-          <timestamp value="2023-02-21T14:40:33+00:00"/>
+          <identifier value="urn:uuid:cbc96567-e19a-496a-a2db-960d826e7410"/>
+          <timestamp value="2023-02-22T12:14:20+00:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1449,7 +1626,7 @@
         <title value="Key Population Status"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-02-21T14:39:39+00:00"/>
+        <date value="2023-02-22T12:13:37+00:00"/>
         <publisher value="Jembi Health Systems"/>
         <contact>
           <telecom>
@@ -1469,8 +1646,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:fd3ac395-b45d-46c3-9f01-d8bf4da57287"/>
-          <timestamp value="2023-02-21T14:40:34+00:00"/>
+          <identifier value="urn:uuid:f1cb0069-df7f-449f-bbc0-35119a251736"/>
+          <timestamp value="2023-02-22T12:14:20+00:00"/>
           <total value="7"/>
           <parameter>
             <name value="excludeNested"/>
