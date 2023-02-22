@@ -1,5 +1,12 @@
 [
   {
+    "id" : "cs-hiv-recency-status",
+    "type" : "CodeSystem",
+    "url" : "http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-hiv-recency-status",
+    "version" : "0.2.0",
+    "name" : "CSHIVRecencyStatus"
+  },
+  {
     "id" : "cs-key-population-status",
     "type" : "CodeSystem",
     "url" : "http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-key-population-status",
@@ -105,11 +112,11 @@
     "name" : "HIVPractitioner"
   },
   {
-    "id" : "hiv-related-person",
+    "id" : "hiv-recency-test",
     "type" : "StructureDefinition",
-    "url" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-related-person",
+    "url" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-recency-test",
     "version" : "0.2.0",
-    "name" : "HIVRelatedPerson"
+    "name" : "HIVRecencyTest"
   },
   {
     "id" : "hiv-service-request-location",
@@ -187,6 +194,20 @@
     "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-hiv-death",
     "version" : "0.2.0",
     "name" : "VSHIVDeath"
+  },
+  {
+    "id" : "vs-hiv-recency-status",
+    "type" : "ValueSet",
+    "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-hiv-recency-status",
+    "version" : "0.2.0",
+    "name" : "VSHIVRecencyStatus"
+  },
+  {
+    "id" : "vs-hiv-recency-test",
+    "type" : "ValueSet",
+    "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-hiv-recency-test",
+    "version" : "0.2.0",
+    "name" : "VSHIVRecencyTest"
   },
   {
     "id" : "vs-hiv-test-done",
