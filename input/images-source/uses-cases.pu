@@ -1,7 +1,5 @@
 @startuml UseCaseDiagram
 left to right direction
-actor "Nurse" as nurse
-actor "Receptionist" as receptionist
 actor "Health Professional" as professional
 rectangle EMR {
   usecase "Register Client" as UC1
@@ -17,7 +15,7 @@ rectangle EMR {
   usecase "HIV Recency Testing" as UC11
 }
 
-receptionist --> UC1
+professional --> UC1
 professional --> UC2
 professional --> UC3
 professional --> UC4
@@ -25,7 +23,7 @@ professional --> UC5
 professional --> UC6
 professional --> UC7
 professional --> UC8
-nurse --> UC10
+professional --> UC10
 professional --> UC11
 
 (UC4) <.. (UC9) : "<<extends>>"
