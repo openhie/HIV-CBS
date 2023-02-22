@@ -1,30 +1,30 @@
 @startuml UseCaseDiagram
 left to right direction
-actor "Nurse" as nurse
+actor "Health Professional" as professional
 rectangle EMR {
   usecase "Register Client" as UC1
-  usecase "ART Regimen Switching" as UC2
-  usecase "ART Initiation" as UC3
-  usecase "CD4" as UC4
-  usecase "Death" as UC5
-  usecase "Enrolled to Care" as UC6
-  usecase "HIV Diagnosis" as UC7
-  usecase "Viral Suppression" as UC8
+  usecase "Document Changes to ART Regimen" as UC2
+  usecase "Document ART Initiation" as UC3
+  usecase "CD4 Results" as UC4
+  usecase "Document Patient Outcome" as UC5
+  usecase "Enrolled a patient into Care" as UC6
+  usecase "Document the HIV Diagnosis" as UC7
+  usecase "Viral Load Results" as UC8
   usecase "Subsequent Sampling" as UC9
-  usecase "Sumbit Lab Order" as UC10
+  usecase "Submit Lab Order" as UC10
   usecase "HIV Recency Testing" as UC11
 }
 
-nurse --> UC1
-nurse --> UC2
-nurse --> UC3
-nurse --> UC4
-nurse --> UC5
-nurse --> UC6
-nurse --> UC7
-nurse --> UC8
-nurse --> UC10
-nurse --> UC11
+professional --> UC1
+professional --> UC2
+professional --> UC3
+professional --> UC4
+professional --> UC5
+professional --> UC6
+professional --> UC7
+professional --> UC8
+professional --> UC10
+professional --> UC11
 
 (UC4) <.. (UC9) : "<<extends>>"
 (UC8) <.. (UC9) : "<<extends>>"

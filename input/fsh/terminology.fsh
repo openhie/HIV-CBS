@@ -15,7 +15,7 @@ Description: "Describes a patient's current viral load status."
 * ^experimental = false
 * $SCT#245780008 "Suppressed (qualifier value)"
 * $SCT#19032002 "Uncontrolled (qualifier value)" //Unsuppressed
-* $SCT#54690008 "Unknown (origin) (qualifier value)"
+* $SCT#261665006 "Unknown (qualifier value)"
 
 ValueSet: VSCondition
 Id: vs-condition
@@ -141,18 +141,26 @@ Description:  "Used by the observation to indicate that a HIV recency test was p
 * ^experimental = false
 * $SCT#409788009 "Rapid human immunodeficiency virus type 1 antibody test (procedure)"
 
-CodeSystem: CSHIVRecencyStatus
-Id: cs-hiv-recency-status
-Title: "HIV Recency Testing Status"
-Description: "A list of HIV recency statuses"
-* ^experimental = false
-* ^caseSensitive = true
-* #Recent "Recent"
-* #Not-Recent "Not Recent"
-
 ValueSet: VSHIVRecencyStatus
 Id: vs-hiv-recency-status
 Title: "HIV Recency Testing Status"
 Description: "A list of HIV recency statuses"
 * ^experimental = false
-* include codes from system CSHIVRecencyStatus
+* $SCT#6493001 "Recent (qualifier value)"
+* $SCT#307294006 "Personal history finding (finding)"
+
+ValueSet: VSHIVRecencyTestResult
+Id: vs-hiv-recency-test-result
+Title: "Recency HIV Test Result"
+Description:  "A list of HIV recency test result codes."
+* ^experimental = false
+* $SCT#118246004 "Laboratory test finding (navigational concept)"
+
+ValueSet: VSYesNoUnknown
+Id: vs-yes-no
+Title: "Yes No Unknown"
+Description:  "A list of options used to provide an answer"
+* ^experimental = false
+* $SCT#373066001 "Yes"
+* $SCT#373067005 "No"
+* $SCT#261665006 "Unknown"
