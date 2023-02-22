@@ -1,0 +1,40 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "cs-hiv-recency-result-code",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-hiv-recency-result-code</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">RecencyTest<a name=\"cs-hiv-recency-result-code-RecencyTest\"> </a></td><td>HIV Recency Assay</td></tr></table></div>"
+  },
+  "url" : "http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-hiv-recency-result-code",
+  "version" : "0.2.0",
+  "name" : "CSHIVRecencyResultCode",
+  "title" : "HIV Recency Test Result Code",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2023-02-22T11:00:24+00:00",
+  "publisher" : "Jembi Health Systems",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.jembi.org"
+    },
+    {
+      "system" : "email",
+      "value" : "info@jembi.org"
+    }]
+  }],
+  "description" : "A code used to indicate the category for the recency result.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 1,
+  "concept" : [{
+    "code" : "RecencyTest",
+    "display" : "HIV Recency Assay"
+  }]
+}

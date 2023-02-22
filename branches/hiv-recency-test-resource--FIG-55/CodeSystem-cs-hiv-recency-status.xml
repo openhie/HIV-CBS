@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="cs-hiv-recency-status"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-hiv-recency-status</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">recent<a name="cs-hiv-recency-status-recent"> </a></td><td>Recent HIV infection</td></tr><tr><td style="white-space:nowrap">long-term<a name="cs-hiv-recency-status-long-term"> </a></td><td>Not recent HIV infection</td></tr></table></div>
+  </text>
+  <url value="http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-hiv-recency-status"/>
+  <version value="0.2.0"/>
+  <name value="CSHIVRecencyStatus"/>
+  <title value="HIV Recency status"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-02-22T11:00:24+00:00"/>
+  <publisher value="Jembi Health Systems"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.jembi.org"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@jembi.org"/>
+    </telecom>
+  </contact>
+  <description value="A list of HIV Recency status"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="2"/>
+  <concept>
+    <code value="recent"/>
+    <display value="Recent HIV infection"/>
+  </concept>
+  <concept>
+    <code value="long-term"/>
+    <display value="Not recent HIV infection"/>
+  </concept>
+</CodeSystem>
