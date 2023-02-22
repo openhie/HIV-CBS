@@ -371,15 +371,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-hiv-related-person.html"
-                     title="StructureDefinition/hiv-related-person">HIV Patient Related Person</a>
-               </td>
-               <td>
-<p>This profile is for recording the Patient’s Guardian</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
                   <a href="StructureDefinition-hiv-patient.html"
                      title="StructureDefinition/hiv-patient">Patient</a>
                </td>
@@ -461,11 +452,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-hiv-recency-test-result.html"
-                     title="StructureDefinition/hiv-recency-test-result">HIV Recency Test Results</a>
+                  <a href="StructureDefinition-hiv-recency-test.html"
+                     title="StructureDefinition/hiv-recency-test">HIV Recency Test</a>
                </td>
                <td>
-<p>The results of the RTRI assay and opionally the VL result to confirm Recent/Long-term</p>
+<p>This profile is to record the HIV recency testing data for a patient.</p>
 </td>
             </tr>
          </tbody>
@@ -530,10 +521,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             <tr>
                <td style="column-width:30%">
                   <a href="ValueSet-vs-hiv-recency-status.html"
-                     title="ValueSet/vs-hiv-recency-status">HIV Recency status</a>
+                     title="ValueSet/vs-hiv-recency-status">HIV Recency Testing Status</a>
                </td>
                <td>
-<p>A list of HIV Recency status</p>
+<p>A list of HIV recency statuses</p>
 </td>
             </tr>
             <tr>
@@ -582,6 +573,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="ValueSet-vs-hiv-recency-test.html"
+                     title="ValueSet/vs-hiv-recency-test">Recency HIV Test</a>
+               </td>
+               <td>
+<p>Used by the observation to indicate that a HIV recency test was performed.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="ValueSet-vs-hiv-death.html" title="ValueSet/vs-hiv-death">Death</a>
                </td>
                <td>
@@ -611,15 +611,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </td>
                <td>
 <p>A list of specimen types.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ValueSet-vs-hiv-recency-result-code.html"
-                     title="ValueSet/vs-hiv-recency-result-code">HIV Recency Test Result Code</a>
-               </td>
-               <td>
-<p>A code used to indicate the category for the recency result.</p>
 </td>
             </tr>
             <tr>
@@ -663,15 +654,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="CodeSystem-cs-hiv-recency-result-code.html"
-                     title="CodeSystem/cs-hiv-recency-result-code">HIV Recency Test Result Code</a>
-               </td>
-               <td>
-<p>A code used to indicate the category for the recency result.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
                   <a href="CodeSystem-cs-key-population-status.html"
                      title="CodeSystem/cs-key-population-status">Key Population Status</a>
                </td>
@@ -682,10 +664,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             <tr>
                <td style="column-width:30%">
                   <a href="CodeSystem-cs-hiv-recency-status.html"
-                     title="CodeSystem/cs-hiv-recency-status">HIV Recency status</a>
+                     title="CodeSystem/cs-hiv-recency-status">HIV Recency Testing Status</a>
                </td>
                <td>
-<p>A list of HIV Recency status</p>
+<p>A list of HIV recency statuses</p>
 </td>
             </tr>
          </tbody>
@@ -708,13 +690,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Bundle-LabCancellation.html" title="Bundle/LabCancellation">Example Bundle - LabCancellation</a>
+                  <a href="Observation-HIVRecencyTestExample.html"
+                     title="Observation/HIVRecencyTestExample">Example Observation - HIVRecencyTestExample</a>
                </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Observation-HIVRecencyTestResultExample.html"
-                     title="Observation/HIVRecencyTestResultExample">Example Observation - HIVRecencyTestResultExample</a>
+                  <a href="Bundle-LabCancellation.html" title="Bundle/LabCancellation">Example Bundle - LabCancellation</a>
                </td>
             </tr>
             <tr>
@@ -760,12 +742,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                <td style="column-width:30%">
                   <a href="Task-HIVLabOrderRejectionTaskExample.html"
                      title="Task/HIVLabOrderRejectionTaskExample">Example Task - HIVLabOrderRejectionTaskExample</a>
-               </td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="RelatedPerson-GuardianExample.html"
-                     title="RelatedPerson/GuardianExample">Example RelatedPerson - GuardianExample</a>
                </td>
             </tr>
             <tr>
@@ -883,7 +859,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
            
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2019+ <a style="color: #81BEF7" href="https://www.jembi.org">Jembi Health Systems</a>.  Package openhie.fhir.hiv.cbs#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Feb 22, 2023 11:00+0000">2023-02-22</span>
+          IG &#169; 2019+ <a style="color: #81BEF7" href="https://www.jembi.org">Jembi Health Systems</a>.  Package openhie.fhir.hiv.cbs#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Feb 22, 2023 12:13+0000">2023-02-22</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

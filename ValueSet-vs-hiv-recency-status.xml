@@ -8,10 +8,10 @@
   <url value="http://openhie.org/fhir/hiv-cbs/ValueSet/vs-hiv-recency-status"/>
   <version value="0.2.0"/>
   <name value="VSHIVRecencyStatus"/>
-  <title value="HIV Recency status"/>
+  <title value="HIV Recency Testing Status"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2023-02-22T11:00:24+00:00"/>
+  <date value="2023-02-22T12:13:37+00:00"/>
   <publisher value="Jembi Health Systems"/>
   <contact>
     <telecom>
@@ -23,7 +23,7 @@
       <value value="info@jembi.org"/>
     </telecom>
   </contact>
-  <description value="A list of HIV Recency status"/>
+  <description value="A list of HIV recency statuses"/>
   <jurisdiction>
     <coding>
       <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>

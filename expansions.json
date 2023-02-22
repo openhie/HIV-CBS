@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "fb42e950-1538-4a53-ae03-a5b1bd488c1e",
+  "id" : "83402ef7-6ec5-46b7-aa80-bf105525f498",
   "meta" : {
-    "lastUpdated" : "2023-02-22T11:00:24.100+00:00"
+    "lastUpdated" : "2023-02-22T12:13:37.396+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -20,7 +20,7 @@
       "title" : "HIV Test Done",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-02-22T11:00:24+00:00",
+      "date" : "2023-02-22T12:13:37+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -40,8 +40,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:5fa4c9b6-6cf2-406e-9002-9884ea564a1b",
-        "timestamp" : "2023-02-22T11:00:59+00:00",
+        "identifier" : "urn:uuid:4ef997be-5774-47a4-bcb7-589527ee391f",
+        "timestamp" : "2023-02-22T12:14:08+00:00",
         "total" : 1,
         "parameter" : [{
           "name" : "excludeNested",
@@ -70,15 +70,15 @@
       "id" : "vs-hiv-recency-status",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-cs-hiv-recency-status.html\">HIV Recency status v0.2.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-cbs-CodeSystem-cs-hiv-recency-status-recent\"> </a>  <a href=\"CodeSystem-cs-hiv-recency-status.html#cs-hiv-recency-status-recent\">recent</a></td><td>http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-hiv-recency-status</td><td>Recent HIV infection</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-cbs-CodeSystem-cs-hiv-recency-status-long-term\"> </a>  <a href=\"CodeSystem-cs-hiv-recency-status.html#cs-hiv-recency-status-long-term\">long-term</a></td><td>http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-hiv-recency-status</td><td>Not recent HIV infection</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-cs-hiv-recency-status.html\">HIV Recency Testing Status v0.2.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-cbs-CodeSystem-cs-hiv-recency-status-Recent\"> </a>  <a href=\"CodeSystem-cs-hiv-recency-status.html#cs-hiv-recency-status-Recent\">Recent</a></td><td>http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-hiv-recency-status</td><td>Recent</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-cbs-CodeSystem-cs-hiv-recency-status-Not-Recent\"> </a>  <a href=\"CodeSystem-cs-hiv-recency-status.html#cs-hiv-recency-status-Not-Recent\">Not-Recent</a></td><td>http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-hiv-recency-status</td><td>Not Recent</td></tr></table></div>"
       },
       "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-hiv-recency-status",
       "version" : "0.2.0",
       "name" : "VSHIVRecencyStatus",
-      "title" : "HIV Recency status",
+      "title" : "HIV Recency Testing Status",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-02-22T11:00:24+00:00",
+      "date" : "2023-02-22T12:13:37+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -90,7 +90,7 @@
           "value" : "info@jembi.org"
         }]
       }],
-      "description" : "A list of HIV Recency status",
+      "description" : "A list of HIV recency statuses",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
@@ -98,8 +98,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:eb77bb4e-6ee0-41e2-ae4f-eb828cdf80d3",
-        "timestamp" : "2023-02-22T11:01:01+00:00",
+        "identifier" : "urn:uuid:f62994ed-5829-436d-ad60-df760100ba04",
+        "timestamp" : "2023-02-22T12:14:10+00:00",
         "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",
@@ -111,13 +111,13 @@
         }],
         "contains" : [{
           "system" : "http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-hiv-recency-status",
-          "code" : "recent",
-          "display" : "Recent HIV infection"
+          "code" : "Recent",
+          "display" : "Recent"
         },
         {
           "system" : "http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-hiv-recency-status",
-          "code" : "long-term",
-          "display" : "Not recent HIV infection"
+          "code" : "Not-Recent",
+          "display" : "Not Recent"
         }]
       }
     }
@@ -137,7 +137,7 @@
       "title" : "Patient Type at Enrolment",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-02-22T11:00:24+00:00",
+      "date" : "2023-02-22T12:13:37+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -157,8 +157,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:35a68514-b4fa-4cc2-9bd6-6d39b9315f68",
-        "timestamp" : "2023-02-22T11:01:01+00:00",
+        "identifier" : "urn:uuid:59e6233d-042b-4a27-93fa-9a80327ef04f",
+        "timestamp" : "2023-02-22T12:14:10+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -218,7 +218,7 @@
       "title" : "Viral Load Suppressions Status",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-02-22T11:00:24+00:00",
+      "date" : "2023-02-22T12:13:37+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -238,8 +238,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:73aff812-d572-41db-8c60-d6127566ae2c",
-        "timestamp" : "2023-02-22T11:01:01+00:00",
+        "identifier" : "urn:uuid:94b6d4b3-d42b-4a9a-9bd4-947159e72712",
+        "timestamp" : "2023-02-22T12:14:10+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -286,7 +286,7 @@
       "title" : "ARV treatment outcomes",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-02-22T11:00:24+00:00",
+      "date" : "2023-02-22T12:13:37+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -306,8 +306,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:8009e87c-c6cb-4979-b741-2c52198213fa",
-        "timestamp" : "2023-02-22T11:01:07+00:00",
+        "identifier" : "urn:uuid:d00a3ac4-b6c7-4199-9821-1c50f76836ba",
+        "timestamp" : "2023-02-22T12:14:16+00:00",
         "total" : 1,
         "parameter" : [{
           "name" : "excludeNested",
@@ -344,7 +344,7 @@
       "title" : "Reason for Assessment or Test Not Performed",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-02-22T11:00:24+00:00",
+      "date" : "2023-02-22T12:13:37+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -364,8 +364,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:c19e0de5-3e29-4191-926f-9d36dc46535b",
-        "timestamp" : "2023-02-22T11:01:08+00:00",
+        "identifier" : "urn:uuid:38dfd6da-897b-4ddd-85bf-fdabeb78c298",
+        "timestamp" : "2023-02-22T12:14:16+00:00",
         "total" : 15,
         "parameter" : [{
           "name" : "excludeNested",
@@ -472,7 +472,7 @@
       "title" : "Conditions",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-02-22T11:00:24+00:00",
+      "date" : "2023-02-22T12:13:37+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -492,8 +492,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:9820d10e-84cc-4b2f-8b39-d053f885afcb",
-        "timestamp" : "2023-02-22T11:01:09+00:00",
+        "identifier" : "urn:uuid:a12d466d-16a3-420c-8ae1-086b1cce620d",
+        "timestamp" : "2023-02-22T12:14:17+00:00",
         "total" : 1,
         "parameter" : [{
           "name" : "excludeNested",
@@ -516,6 +516,64 @@
     }
   },
   {
+    "fullUrl" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-hiv-recency-test",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "vs-hiv-recency-test",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2022</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-409788009\"> </a>  <a href=\"http://snomed.info/id/409788009\">409788009</a></td><td>http://snomed.info/sct</td><td>Rapid human immunodeficiency virus type 1 antibody test (procedure)</td></tr></table></div>"
+      },
+      "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-hiv-recency-test",
+      "version" : "0.2.0",
+      "name" : "VSHIVRecencyTest",
+      "title" : "Recency HIV Test",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2023-02-22T12:13:37+00:00",
+      "publisher" : "Jembi Health Systems",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.jembi.org"
+        },
+        {
+          "system" : "email",
+          "value" : "info@jembi.org"
+        }]
+      }],
+      "description" : "Used by the observation to indicate that a HIV recency test was performed.",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:80343178-2401-401b-833d-fdc42db24587",
+        "timestamp" : "2023-02-22T12:14:19+00:00",
+        "total" : 1,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220731"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "409788009",
+          "display" : "Rapid human immunodeficiency virus type 1 antibody test (procedure)"
+        }]
+      }
+    }
+  },
+  {
     "fullUrl" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-hiv-death",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -530,7 +588,7 @@
       "title" : "Death",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-02-22T11:00:24+00:00",
+      "date" : "2023-02-22T12:13:37+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -550,8 +608,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:9ccecd1a-9d89-44a9-b2b3-19d5f368996c",
-        "timestamp" : "2023-02-22T11:01:11+00:00",
+        "identifier" : "urn:uuid:9e7cfb76-398d-4e7e-9098-9f5f2c0aad99",
+        "timestamp" : "2023-02-22T12:14:19+00:00",
         "total" : 1,
         "parameter" : [{
           "name" : "excludeNested",
@@ -588,7 +646,7 @@
       "title" : "Test Types",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-02-22T11:00:24+00:00",
+      "date" : "2023-02-22T12:13:37+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -608,8 +666,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:6e72a4f2-f835-445d-8628-01d7ed64d31e",
-        "timestamp" : "2023-02-22T11:01:11+00:00",
+        "identifier" : "urn:uuid:6ca8407e-27f2-4a70-b805-071f6607ed29",
+        "timestamp" : "2023-02-22T12:14:19+00:00",
         "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",
@@ -651,7 +709,7 @@
       "title" : "ART Regimen Lines",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-02-22T11:00:24+00:00",
+      "date" : "2023-02-22T12:13:37+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -671,8 +729,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:ceb747a3-58f2-406d-958d-94b9e9878031",
-        "timestamp" : "2023-02-22T11:01:11+00:00",
+        "identifier" : "urn:uuid:08107459-9e9d-47ac-9220-c39a289d41b9",
+        "timestamp" : "2023-02-22T12:14:19+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -719,7 +777,7 @@
       "title" : "Specimen Type Used In Viral Load testing",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-02-22T11:00:24+00:00",
+      "date" : "2023-02-22T12:13:37+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -739,8 +797,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:0cc5335e-bf33-418d-a894-45c9d63c0d6f",
-        "timestamp" : "2023-02-22T11:01:11+00:00",
+        "identifier" : "urn:uuid:5db09c3e-3d1a-44ce-a16f-e5d24fa8b71a",
+        "timestamp" : "2023-02-22T12:14:19+00:00",
         "total" : 5,
         "parameter" : [{
           "name" : "excludeNested",
@@ -783,60 +841,6 @@
     }
   },
   {
-    "fullUrl" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-hiv-recency-result-code",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "vs-hiv-recency-result-code",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-cs-hiv-recency-result-code.html\">HIV Recency Test Result Code v0.2.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-cbs-CodeSystem-cs-hiv-recency-result-code-RecencyTest\"> </a>  <a href=\"CodeSystem-cs-hiv-recency-result-code.html#cs-hiv-recency-result-code-RecencyTest\">RecencyTest</a></td><td>http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-hiv-recency-result-code</td><td>HIV Recency Assay</td></tr></table></div>"
-      },
-      "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-hiv-recency-result-code",
-      "version" : "0.2.0",
-      "name" : "VSHIVRecencyResultCode",
-      "title" : "HIV Recency Test Result Code",
-      "status" : "active",
-      "experimental" : false,
-      "date" : "2023-02-22T11:00:24+00:00",
-      "publisher" : "Jembi Health Systems",
-      "contact" : [{
-        "telecom" : [{
-          "system" : "url",
-          "value" : "https://www.jembi.org"
-        },
-        {
-          "system" : "email",
-          "value" : "info@jembi.org"
-        }]
-      }],
-      "description" : "A code used to indicate the category for the recency result.",
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "code" : "001"
-        }]
-      }],
-      "expansion" : {
-        "identifier" : "urn:uuid:547c7522-737b-4baf-a073-a4920f79f271",
-        "timestamp" : "2023-02-22T11:01:11+00:00",
-        "total" : 1,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-hiv-recency-result-code|0.2.0"
-        }],
-        "contains" : [{
-          "system" : "http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-hiv-recency-result-code",
-          "code" : "RecencyTest",
-          "display" : "HIV Recency Assay"
-        }]
-      }
-    }
-  },
-  {
     "fullUrl" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-vl-result-code",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -851,7 +855,7 @@
       "title" : "Viral Load Result Code",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-02-22T11:00:24+00:00",
+      "date" : "2023-02-22T12:13:37+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -871,8 +875,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:fd954de8-645b-4709-af0d-521b2b568f44",
-        "timestamp" : "2023-02-22T11:01:11+00:00",
+        "identifier" : "urn:uuid:11d0fdec-8cfe-4c45-b2ed-fa9ae4d0f094",
+        "timestamp" : "2023-02-22T12:14:19+00:00",
         "total" : 1,
         "parameter" : [{
           "name" : "excludeNested",
@@ -909,7 +913,7 @@
       "title" : "ARV Treatment Medication Request",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-02-22T11:00:24+00:00",
+      "date" : "2023-02-22T12:13:37+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -929,8 +933,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:87314d7a-23da-483b-9eb1-05ec8810a85a",
-        "timestamp" : "2023-02-22T11:01:11+00:00",
+        "identifier" : "urn:uuid:cbc96567-e19a-496a-a2db-960d826e7410",
+        "timestamp" : "2023-02-22T12:14:20+00:00",
         "total" : 1,
         "parameter" : [{
           "name" : "excludeNested",
@@ -967,7 +971,7 @@
       "title" : "Key Population Status",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-02-22T11:00:24+00:00",
+      "date" : "2023-02-22T12:13:37+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -987,8 +991,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:08f392f0-6256-40ee-a58e-193f83d81e87",
-        "timestamp" : "2023-02-22T11:01:12+00:00",
+        "identifier" : "urn:uuid:f1cb0069-df7f-449f-bbc0-35119a251736",
+        "timestamp" : "2023-02-22T12:14:20+00:00",
         "total" : 7,
         "parameter" : [{
           "name" : "excludeNested",

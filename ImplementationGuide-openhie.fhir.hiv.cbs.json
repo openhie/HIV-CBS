@@ -11,7 +11,7 @@
   "title" : "HIV Case-Based Surveillance",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2023-02-22T11:00:24+00:00",
+  "date" : "2023-02-22T12:13:37+00:00",
   "publisher" : "Jembi Health Systems",
   "contact" : [{
     "telecom" : [{
@@ -641,6 +641,17 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/HIVRecencyTestExample"
+      },
+      "name" : "Example Observation - HIVRecencyTestExample",
+      "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-recency-test"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -659,17 +670,6 @@
       },
       "name" : "Example Bundle - LabCancellation",
       "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-lab-task"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/HIVRecencyTestResultExample"
-      },
-      "name" : "Example Observation - HIVRecencyTestResultExample",
-      "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-recency-test-result"
     },
     {
       "extension" : [{
@@ -789,8 +789,8 @@
       "reference" : {
         "reference" : "ValueSet/vs-hiv-recency-status"
       },
-      "name" : "HIV Recency status",
-      "description" : "A list of HIV Recency status"
+      "name" : "HIV Recency Testing Status",
+      "description" : "A list of HIV recency statuses"
     },
     {
       "extension" : [{
@@ -835,17 +835,6 @@
       },
       "name" : "Example Bundle - EMR",
       "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-arv-treatment"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/hiv-related-person"
-      },
-      "name" : "HIV Patient Related Person",
-      "description" : "This profile is for recording the Patient's Guardian"
     },
     {
       "extension" : [{
@@ -916,17 +905,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/cs-hiv-recency-result-code"
-      },
-      "name" : "HIV Recency Test Result Code",
-      "description" : "A code used to indicate the category for the recency result."
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -956,17 +934,6 @@
       },
       "name" : "Example Task - HIVLabOrderRejectionTaskExample",
       "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-lab-task"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "RelatedPerson"
-      }],
-      "reference" : {
-        "reference" : "RelatedPerson/GuardianExample"
-      },
-      "name" : "Example RelatedPerson - GuardianExample",
-      "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-related-person"
     },
     {
       "extension" : [{
@@ -1141,8 +1108,19 @@
       "reference" : {
         "reference" : "CodeSystem/cs-hiv-recency-status"
       },
-      "name" : "HIV Recency status",
-      "description" : "A list of HIV Recency status"
+      "name" : "HIV Recency Testing Status",
+      "description" : "A list of HIV recency statuses"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vs-hiv-recency-test"
+      },
+      "name" : "Recency HIV Test",
+      "description" : "Used by the observation to indicate that a HIV recency test was performed."
     },
     {
       "extension" : [{
@@ -1260,17 +1238,6 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/vs-hiv-recency-result-code"
-      },
-      "name" : "HIV Recency Test Result Code",
-      "description" : "A code used to indicate the category for the recency result."
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
         "reference" : "ValueSet/vs-vl-result-code"
       },
       "name" : "Viral Load Result Code",
@@ -1326,10 +1293,10 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/hiv-recency-test-result"
+        "reference" : "StructureDefinition/hiv-recency-test"
       },
-      "name" : "HIV Recency Test Results",
-      "description" : "The results of the RTRI assay and opionally the VL result to confirm Recent/Long-term"
+      "name" : "HIV Recency Test",
+      "description" : "This profile is to record the HIV recency testing data for a patient."
     },
     {
       "extension" : [{
