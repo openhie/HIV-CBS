@@ -12,7 +12,7 @@
   <title value="HIV Case-Based Surveillance"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2023-02-21T14:39:39+00:00"/>
+  <date value="2023-02-22T07:24:35+00:00"/>
   <publisher value="Jembi Health Systems"/>
   <contact>
     <telecom>
@@ -557,7 +557,7 @@
         <reference value="ValueSet/vs-hiv-test-done"/>
       </reference>
       <name value="HIV Test Done"/>
-      <description value="Used by the observation to indicate that a HIV test was performed."/>
+      <description value="HIV Test Done"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -578,16 +578,6 @@
       </reference>
       <name value="Example Patient - HIVPatientExample"/>
       <exampleCanonical value="http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-patient"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/key-population-status"/>
-      </reference>
-      <name value="Key HIV Population"/>
-      <description value="Populations who are at higher risk for HIV"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -616,8 +606,8 @@
       <reference>
         <reference value="ValueSet/vs-vl-suppression"/>
       </reference>
-      <name value="Viral Load Suppressions Status"/>
-      <description value="Describes a patient's current viral load status."/>
+      <name value="Viral load Suppressions Status"/>
+      <description value="A list of Viral load Statuses"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -638,16 +628,6 @@
       </reference>
       <name value="Example Bundle - EMR"/>
       <exampleCanonical value="http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-arv-treatment"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/hiv-related-person"/>
-      </reference>
-      <name value="HIV Patient Related Person"/>
-      <description value="This profile is for recording the Patient's Guardian"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -741,23 +721,13 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="RelatedPerson"/>
-      </extension>
-      <reference>
-        <reference value="RelatedPerson/GuardianExample"/>
-      </reference>
-      <name value="Example RelatedPerson - GuardianExample"/>
-      <exampleCanonical value="http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-related-person"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
         <reference value="ValueSet/vs-careplan-outcome"/>
       </reference>
       <name value="ARV treatment outcomes"/>
-      <description value="A list of possible ARV treatment outcomes."/>
+      <description value="ARV treatment plan outcomes"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -767,7 +737,7 @@
         <reference value="ValueSet/vs-reason-for-assessment-or-test-not-performed"/>
       </reference>
       <name value="Reason for Assessment or Test Not Performed"/>
-      <description value="A list of reasons associated with the service request for the lab order."/>
+      <description value="A list of reasons associated with the service request for the lab order"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -798,16 +768,6 @@
       </reference>
       <name value="Example DiagnosticReport - HIVLabResultsDiagnosticReportExample"/>
       <exampleCanonical value="http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-diagnostic-report"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/vs-condition"/>
-      </reference>
-      <name value="Conditions"/>
-      <description value="A list of possible HIV conditions."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -861,6 +821,16 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-hiv-diagnosis"/>
+      </reference>
+      <name value="HIV Diagnosis"/>
+      <description value="A list of possible HIV diagnoses"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CarePlan"/>
       </extension>
       <reference>
@@ -868,16 +838,6 @@
       </reference>
       <name value="Example CarePlan - ARVTreatmentRefusedExample"/>
       <exampleCanonical value="http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-arv-treatment"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/cs-key-population-status"/>
-      </reference>
-      <name value="Key Population Status"/>
-      <description value="A list of key population types"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -937,7 +897,7 @@
         <reference value="ValueSet/vs-artregimen-lines"/>
       </reference>
       <name value="ART Regimen Lines"/>
-      <description value="A list of ART regimen therapeutic lines."/>
+      <description value="A list of ART Regimen Lines"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -966,8 +926,8 @@
       <reference>
         <reference value="ValueSet/vs-specimen-type"/>
       </reference>
-      <name value="Specimen Type Used In Viral Load testing"/>
-      <description value="A list of specimen types."/>
+      <name value="Specimen type used in Viral Load testing"/>
+      <description value="Specimen type used in Viral Load testing"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1007,7 +967,7 @@
         <reference value="ValueSet/vs-vl-result-code"/>
       </reference>
       <name value="Viral Load Result Code"/>
-      <description value="A code used to indicate the category for the lab result."/>
+      <description value="Viral Load Result Code"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1027,17 +987,7 @@
         <reference value="ValueSet/vs-arvtreatment-activity-type"/>
       </reference>
       <name value="ARV Treatment Medication Request"/>
-      <description value="Codes used to represent a medication request for ART."/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/vs-key-population-status"/>
-      </reference>
-      <name value="Key Population Status"/>
-      <description value="A list of key population types"/>
+      <description value="ARV Treatment Medication Request"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
