@@ -12,7 +12,7 @@
   <title value="HIV Case-Based Surveillance"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2023-02-21T14:16:30+00:00"/>
+  <date value="2023-02-22T07:24:35+00:00"/>
   <publisher value="Jembi Health Systems"/>
   <contact>
     <telecom>
@@ -618,16 +618,6 @@
       </reference>
       <name value="Date HIV Test Done"/>
       <description value="This profile is to record the Date when HIV test was done for a patient"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/hiv-acutal-recency-test-result"/>
-      </reference>
-      <name value="HIV Actual Recency Test Result"/>
-      <description value="This profile is to determine the recent test result"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
