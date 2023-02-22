@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>OPENHIE.FHIR.HIV.CBS\Use Cases - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/openhie.css" rel="stylesheet"/>
+<link href="assets/css/lforms.min.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"2.1.1"}
+    h3,h4,h5,h6{--heading-prefix:"2.1.1"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+<!-- Left logo - typically the publisher's logo - project or affiliate -->
+        <div id="project-nav">
+          <a id="project-logo" no-external="true" href="http://hl7.eu">
+            <img height="71" alt="Project home" src="assets/images/home.png"/>
+          </a>
+        </div>
+
+<!-- Right logo - for example the FHIR logo -->
+<!-- Make sure you have authorization to use the FHIR logo -->
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="70" alt="FHIR website" src="assets/images/fire.png"/> </a>
+        </div>
+
+<!-- search icon - if you want -->
+<!--
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+-->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">HIV Case-Based Surveillance</span>
+            <br/>
+            <span style="display:inline-block;">0.2.0 - CI Build
+
+
+
+  <img alt="International flag" src="assets/images/001.svg" height="16" title="International"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <style>
+    *,
+*::before,
+*::after {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.dropdown {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 100px;
+}
+
+.dropdown li {
+    position: relative;
+    z-index: 999;
+}
+
+.dropdown li a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+}
+
+.dropdown li ul {
+    position: absolute;
+    top: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: none;
+    line-height: normal;
+    background-color: #DDFFEE;
+}
+
+.dropdown li ul li a {
+    text-align: left;
+    color: black;
+    font-size: 12px;
+    padding: 10px;
+    display: block;
+    white-space: nowrap;
+}
+
+.dropdown li ul li ul {
+    left: 100%;
+    top: 0;
+}
+
+#mainMenuOptions li:hover>a {
+    background-color: #43A682;
+    color: white;
+    text-decoration: underline;
+    font-size: 13px;
+}
+
+#mainMenuOptions li:hover>ul {
+    display: block;
+}
+
+	.heading {
+    display: block;
+    font-family: verdana;
+    line-height: 1.2em;
+    font-size: 1.2em;
+    margin: 0 0 3px 0;
+    margin-top: 10px;
+    color: #337AB7;
+    background-color: white !important;
+}
+
+.not-allowed {
+    cursor: not-allowed !important;
+    text-decoration: none !important;
+}
+
+.pointer {
+    cursor: pointer;
+}
+</style>
+
+<ul id="mainMenuOptions" xmlns="http://www.w3.org/1999/xhtml" class="dropdown">
+	<li><a href="#" style="font-size: 12px; text-decoration: none;">Menu <b class="caret"></b></a>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="bussiness-description.html">Business Description <b class="caret" style="transform:rotate(270deg);"></b></a>
+				<ul>
+					<li>
+						<a href="requirements.html">Functional Requirements <b class="caret" style="transform:rotate(270deg);"></b></a>
+						<ul>
+							<li>
+								<a href="use-cases.html">Use Cases</a>
+							</li>
+						</ul>
+					</li>
+					<li><a href="personas.html">Personas</a></li>
+					<li><a href="workflows.html">Usage Workflows</a></li>
+				</ul>
+			</li>
+			<li><a href="deployment.html">Deployment &amp; Use <b class="caret" style="transform:rotate(270deg);"></b></a>
+				<ul>
+					<li><a href="bundles.html">Message Bundles <b class="caret" style="transform:rotate(270deg);"></b></a>
+						<ul>
+							<li>
+								<a href="emr-bundle.html">EMR</a>
+							</li>
+							<li>
+								<a href="lab-order-bundle.html">Lab Order</a>
+							</li>
+							<li>
+								<a href="lab-result-bundle.html">Lab Result</a>
+							</li>
+							<li>
+								<a href="lab-rejection-bundle.html">Lab Rejection</a>
+							</li>
+							<li>
+								<a href="lab-cancellation-bundle.html">Lab Cancellation</a>
+							</li>
+						</ul>
+					</li>
+					<li><a href="security-privacy.html">Security &amp; Privacy</a></li>
+					<li><a href="testing.html">Testing</a></li>
+				</ul>
+			</li>
+			
+			<li><a href="referenced-sources.html">References</a></li>
+			<li><a href="artifacts.html">Artifacts</a></li>
+			<li><a href="toc.html">Table of Contents</a></li>
+		</ul>
+    </li>
+</ul> 
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='bussiness-description.html'><b>Business Description</b></a></li><li><a href='requirements.html'><b>Functional Requirements</b></a></li><li><b>Use Cases</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">HIV Case-Based Surveillance, published by Jembi Health Systems. This is not an authorized publication; it is the continuous build for version 0.2.0). This version is based on the current content of <a href="https://github.com/openhie/HIV-CBS">https://github.com/openhie/HIV-CBS</a> and changes regularly. See the <a href="http://openhie.org/fhir/hiv-cbs/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Use Cases</h2>
+  
+  
+  
+  <div xmlns="http://www.w3.org/1999/xhtml" lang="en"><div class="markdown-toc"><p>Contents:</p><ul><li><a href="#1">Overview</a></li><li><a href="#2">Use Case Summary</a></li><li><a href="#3">References</a></li></ul></div>
+    <style>
+    .heading {
+    display: block;
+    font-family: verdana;
+    line-height: 1.2em;
+    font-size: 1.2em;
+    margin: 0 0 3px 0;
+    margin-top: 10px;
+    color: #337AB7;
+    background-color: white !important;
+}
+
+.not-allowed {
+    cursor: not-allowed !important;
+    text-decoration: none !important;
+}
+
+.pointer {
+    cursor: pointer;
+}
+  </style>
+
+    <a name="1"/><h3>Overview</h3> <a name="usecase-description">  </a>
+
+    <p>
+        The following uses cases have been identified for this implementation guide.
+    </p>
+
+    <p class="heading" id="use-case-diagram">Use Case Diagram</p>
+    <p/>
+    
+    <figure>
+        <?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="1361px" preserveAspectRatio="none" style="width:1501px;height:1361px;background:#FFFFFF;" version="1.1" viewBox="0 0 1501 1361" width="1501px" zoomAndPan="magnify"><defs/><g><!--MD5=[2caf110011a8ade4bad137ae4abd946e]
+cluster EMR--><g id="cluster_EMR"><rect fill="none" height="682" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:1.0;" width="560" x="151" y="78.13"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="31" x="415.5" y="93.6652">EMR</text></g><!--MD5=[65c07aa696f0c0abf1b42f55bef1ceca]
+cluster Laboratory--><g id="cluster_Laboratory"><rect fill="none" height="260" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:1.0;" width="1011.5" x="161.5" y="995.13"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="77" x="628.75" y="1010.6652">Laboratory</text></g><!--MD5=[c4f146e7e0bb2ab052f683a5eaa91d46]
+cluster cdr--><g id="cluster_cdr"><rect fill="none" height="128" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:1.0;" width="230" x="873" y="643.13"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="203" x="886.5" y="658.6652">Centralised Data Repository</text></g><!--MD5=[406dfc753155caba3382a0c02f353a1f]
+cluster cr--><g id="cluster_cr"><rect fill="none" height="144" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:1.0;" width="315" x="830.5" y="811.13"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="108" x="934" y="826.6652">Client Registry</text></g><!--MD5=[6ddf9795535009af07f6e79791270a0d]
+cluster dm--><g id="cluster_dm"><rect fill="none" height="124" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:1.0;" width="209" x="1286" y="811.13"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="71" x="1355" y="826.6652">Data Mart</text></g><g id="elem_UC1"><ellipse cx="274.5403" cy="487.0381" fill="#F1F1F1" rx="72.5403" ry="16.9081" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="100" x="224.0432" y="490.4641">Register Client</text></g><g id="elem_UC2"><ellipse cx="274.2712" cy="561.8842" fill="#F1F1F1" rx="99.2712" ry="22.2542" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="162" x="193.2712" y="565.1753">ART Regimen Switching</text></g><g id="elem_UC3"><ellipse cx="274.3192" cy="635.9938" fill="#F1F1F1" rx="69.8192" ry="16.3638" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="93" x="225.9253" y="639.7673">ART Initiation</text></g><g id="elem_UC4"><ellipse cx="274.4914" cy="702.289" fill="#F1F1F1" rx="31.9914" ry="14.659" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="29" x="259.9914" y="705.58">CD4</text></g><g id="elem_UC5"><ellipse cx="274.2696" cy="136.289" fill="#F1F1F1" rx="39.7696" ry="14.659" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="40" x="254.2696" y="139.58">Death</text></g><g id="elem_UC6"><ellipse cx="274.5365" cy="203.9373" fill="#F1F1F1" rx="77.0365" ry="17.8073" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="111" x="219.0365" y="207.2283">Enrolled to Care</text></g><g id="elem_UC7"><ellipse cx="274.699" cy="274.0698" fill="#F1F1F1" rx="70.199" ry="16.4398" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="94" x="226.0115" y="277.7947">HIV Diagnosis</text></g><g id="elem_UC8"><ellipse cx="274.3148" cy="344.193" fill="#F1F1F1" rx="80.8148" ry="18.563" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="120" x="214.3148" y="347.484">Viral Suppression</text></g><g id="elem_UC9"><ellipse cx="593.44" cy="491.218" fill="#F1F1F1" rx="93.44" ry="21.088" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="149" x="518.94" y="494.509">Subsequent Sampling</text></g><g id="elem_UC10"><ellipse cx="274.3148" cy="416.193" fill="#F1F1F1" rx="80.8148" ry="18.563" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="120" x="214.3148" y="419.484">Sumbit Lab Order</text></g><g id="elem_UC11"><ellipse cx="593.6434" cy="192.1587" fill="#F1F1F1" rx="88.1434" ry="20.0287" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="137" x="525.1434" y="195.4497">HIV Recency Testing</text></g><g id="elem_UC14"><ellipse cx="274.5911" cy="1075.9482" fill="#F1F1F1" rx="82.0911" ry="18.8182" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="123" x="213.0911" y="1079.2392">Sample Collection</text></g><g id="elem_UC15"><ellipse cx="274.5197" cy="1150.3339" fill="#F1F1F1" rx="89.0197" ry="20.2039" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="139" x="205.0197" y="1153.625">Process Lab Request</text></g><g id="elem_UC16"><ellipse cx="593.7221" cy="1067.2744" fill="#F1F1F1" rx="91.2221" ry="20.6444" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="144" x="521.7221" y="1070.5654">Document Lab Result</text></g><g id="elem_UC17"><ellipse cx="593.3692" cy="1213.1038" fill="#F1F1F1" rx="77.8692" ry="17.9738" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="113" x="536.8692" y="1216.3949">Reject Lab Order</text></g><g id="elem_UC18"><ellipse cx="593.4685" cy="1141.0237" fill="#F1F1F1" rx="79.9685" ry="18.3937" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="118" x="534.4685" y="1144.3147">Cancel Lab Order</text></g><g id="elem_UC19"><ellipse cx="987.9728" cy="1168.2246" fill="#F1F1F1" rx="160.9728" ry="34.5946" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="293" x="841.4728" y="1171.5156">Document Reason For Not Performing Test</text></g><g id="elem_UC20"><ellipse cx="987.7804" cy="707.1861" fill="#F1F1F1" rx="90.7804" ry="20.5561" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="143" x="916.2804" y="710.4771">Manage Clinical Data</text></g><g id="elem_UC21"><ellipse cx="988.1719" cy="902.2644" fill="#F1F1F1" rx="133.6719" ry="29.1344" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="236" x="870.1719" y="905.5554">Manage Master Patient Index (MPI)</text></g><g id="elem_UC22"><ellipse cx="1390.3912" cy="892.1082" fill="#F1F1F1" rx="80.3912" ry="18.4782" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="119" x="1330.8912" y="895.3993">Generate Reports</text></g><!--MD5=[87d66015e0fe95d70bf3fa68103252e8]
+entity nurse--><g id="elem_nurse"><ellipse cx="51" cy="354.63" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><path d="M51,362.63 L51,389.63 M38,370.63 L64,370.63 M51,389.63 L38,404.63 M51,389.63 L64,404.63 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="40" x="31" y="419.6652">Nurse</text></g><!--MD5=[bed5f9a2aca8d4dfc4757558722d4a3e]
+entity labAssistant--><g id="elem_labAssistant"><ellipse cx="51" cy="1086.63" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><path d="M51,1094.63 L51,1121.63 M38,1102.63 L64,1102.63 M51,1121.63 L38,1136.63 M51,1121.63 L64,1136.63 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="90" x="6" y="1151.6652">Lab Assistant</text></g><!--MD5=[4806f71af226774e476198568b04cfbd]
+entity iol--><g id="elem_iol"><ellipse cx="593.5" cy="792.63" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><path d="M593.5,800.63 L593.5,827.63 M580.5,808.63 L606.5,808.63 M593.5,827.63 L580.5,842.63 M593.5,827.63 L606.5,842.63 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="145" x="521" y="857.6652">Interoperability Layer</text></g><!--MD5=[3bbd0f9bb50975ee3cb0a847e628e35f]
+entity macthingAdmin--><g id="elem_macthingAdmin"><ellipse cx="593.5" cy="903.63" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><path d="M593.5,911.63 L593.5,938.63 M580.5,919.63 L606.5,919.63 M593.5,938.63 L580.5,953.63 M593.5,938.63 L606.5,953.63 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="162" x="512.5" y="968.6652">Matching Administrator</text></g><!--MD5=[e4cba3338b0a4420f2b91f3e79e58e40]
+entity caseReporter--><g id="elem_caseReporter"><ellipse cx="988" cy="1287.63" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><path d="M988,1295.63 L988,1322.63 M975,1303.63 L1001,1303.63 M988,1322.63 L975,1337.63 M988,1322.63 L1001,1337.63 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="97" x="939.5" y="1352.6652">Case Reporter</text></g><!--MD5=[f17e6c89128ac7aec25bfd04da8c0308]
+link nurse to UC1--><g id="link_nurse_UC1"><path d="M71.35,404.22 C87.13,419.49 110.71,439.89 135,452.13 C157.16,463.3 183.15,471.09 206.6,476.43 " fill="none" id="nurse-to-UC1" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="211.34,477.47,203.4257,471.608,206.4597,476.3823,201.6854,479.4164,211.34,477.47" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[5826e13423bb2507f5811bd6926f5554]
+link nurse to UC2--><g id="link_nurse_UC2"><path d="M66.05,422.35 C79.3,453.28 102.08,495.74 135,521.13 C150.08,532.76 168.39,541.09 186.7,547.07 " fill="none" id="nurse-to-UC2" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="191.45,548.55,184.0461,542.0552,186.6761,547.0635,181.6677,549.6935,191.45,548.55" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[f3060895b115650f9d00d6e9af0da3ff]
+link nurse to UC3--><g id="link_nurse_UC3"><path d="M55.84,422.54 C62.83,471.52 82.2,555.46 135,602.13 C152.8,617.86 176.7,626.58 199.64,631.32 " fill="none" id="nurse-to-UC3" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="204.28,632.22,196.2107,626.5732,199.3722,631.2641,194.6813,634.4256,204.28,632.22" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[2e13f11524f46488bfe6ddb0138c4ecb]
+link nurse to UC4--><g id="link_nurse_UC4"><path d="M51.57,422.26 C53.05,483.66 65.33,604.22 135,670.13 C161.95,695.62 205,702.21 235.95,703.31 " fill="none" id="nurse-to-UC4" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="240.85,703.42,231.9438,699.2154,235.8513,703.3057,231.7609,707.2133,240.85,703.42" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[d68d844c84c5b9178d019b496cb916a6]
+link nurse to UC5--><g id="link_nurse_UC5"><path d="M55.85,345.96 C62.86,297.29 82.24,213.98 135,168.13 C160.48,145.99 198.26,138.37 227.94,136.08 " fill="none" id="nurse-to-UC5" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="232.63,135.77,223.3871,132.3688,227.6408,136.0979,223.9117,140.3515,232.63,135.77" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[0bd5187a991de09ca303be6f0594955f]
+link nurse to UC6--><g id="link_nurse_UC6"><path d="M64.44,345.95 C77.1,313.1 99.88,266.89 135,240.13 C152.88,226.5 175.43,218.01 197.11,212.73 " fill="none" id="nurse-to-UC6" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="201.72,211.66,192.0494,209.7945,196.849,212.7885,193.855,217.588,201.72,211.66" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[5f468418e2d96549bbc39db60ad4584f]
+link nurse to UC7--><g id="link_nurse_UC7"><path d="M71.19,361.19 C86.71,344.1 110.02,321.49 135,308.13 C156.95,296.39 183.01,288.63 206.58,283.53 " fill="none" id="nurse-to-UC7" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="211.35,282.54,201.7248,280.4529,206.4544,283.5563,203.351,288.2859,211.35,282.54" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[6ee096a9f7aadf14d5e1aae46ec92742]
+link nurse to UC8--><g id="link_nurse_UC8"><path d="M71.27,380.65 C100.58,375.36 157.84,365.02 203.97,356.69 " fill="none" id="nurse-to-UC8" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="208.62,355.85,199.0544,353.505,203.6988,356.7344,200.4694,361.3788,208.62,355.85" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[3a11357958aa0c02f2cc121c62d5f2e3]
+link nurse to UC10--><g id="link_nurse_UC10"><path d="M71.27,386.91 C99.52,390.99 153.72,398.82 198.9,405.35 " fill="none" id="nurse-to-UC10" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="203.71,406.05,195.3746,400.8039,198.7614,405.3349,194.2304,408.7217,203.71,406.05" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[ce4189e8b724cc8e8133b133b14fb0ff]
+link nurse to UC11--><g id="link_nurse_UC11"><path d="M57.66,345.84 C68.81,276.19 96,133.25 135,104.13 C266.44,6 476.73,118.57 558.46,169.59 " fill="none" id="nurse-to-UC11" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="562.38,172.06,556.8878,163.8847,558.1464,169.3997,552.6314,170.6584,562.38,172.06" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[f2ac441e7b3fd549a6c6801e088e4a59]
+reverse link UC4 to UC9--><g id="link_UC4_UC9"><path d="M309.96,694.31 C329.48,689.07 353.93,681.1 374,670.13 C455.54,625.56 536.09,548.89 572.43,512.07 " fill="none" id="UC4-backto-UC9" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="305.27,695.54,314.9863,697.1503,310.1096,694.2837,312.9762,689.407,305.27,695.54" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="64" x="405" y="601.6984">«extends»</text></g><!--MD5=[992c56ecf1ced6032554a8cf34d7aa5c]
+reverse link UC8 to UC9--><g id="link_UC8_UC9"><path d="M327.06,361.66 C342.32,367.2 358.97,373.59 374,380.13 C440.14,408.89 514.48,448.23 557.17,471.53 " fill="none" id="UC8-backto-UC9" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="322.48,360.01,329.6012,366.8136,327.1864,361.698,332.302,359.2833,322.48,360.01" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="64" x="405" y="390.6984">«extends»</text></g><!--MD5=[ccbc0ee5d0ca52f0af76c95b475b83e5]
+reverse link UC8 to UC11--><g id="link_UC8_UC11"><path d="M327.58,326.61 C342.72,321.11 359.17,314.74 374,308.13 C442.06,277.8 518.23,235.3 560.25,211.06 " fill="none" id="UC8-backto-UC11" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="323.05,328.24,332.872,328.9667,327.7564,326.552,330.1712,321.4364,323.05,328.24" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="64" x="405" y="260.6984">«extends»</text></g><!--MD5=[34d381eedb8ccadbc0a8444545915146]
+link labAssistant to UC14--><g id="link_labAssistant_UC14"><path d="M96.29,1108.13 C126.72,1102.64 167.78,1095.22 202.71,1088.91 " fill="none" id="labAssistant-to-UC14" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="207.22,1088.1,197.6532,1085.7598,202.2993,1088.9869,199.0722,1093.6329,207.22,1088.1" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[2310bbd90d52def0e36722a3f6e87ed6]
+link labAssistant to UC15--><g id="link_labAssistant_UC15"><path d="M96.29,1122.93 C124.22,1127.22 161.1,1132.88 193.98,1137.92 " fill="none" id="labAssistant-to-UC15" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="198.57,1138.63,190.2794,1133.3134,193.6276,1137.8729,189.0681,1141.2212,198.57,1138.63" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[53c18909305255e08ec985690ddfe6d6]
+reverse link UC15 to UC16--><g id="link_UC15_UC16"><path d="M339.71,1133.32 C396.19,1118.53 477.77,1097.17 532.84,1082.75 " fill="none" id="UC15-backto-UC16" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="335.11,1134.52,344.8307,1136.1035,339.9461,1133.2503,342.7993,1128.3657,335.11,1134.52" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="64" x="405" y="1098.6984">«extends»</text></g><!--MD5=[e12d9a59f64df477d6c60ba2d48c57f2]
+reverse link UC15 to UC17--><g id="link_UC15_UC17"><path d="M348.72,1164.68 C404.75,1175.82 481.01,1190.97 533.23,1201.35 " fill="none" id="UC15-backto-UC17" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="343.82,1163.71,351.8703,1169.3838,348.7245,1164.6823,353.426,1161.5366,343.82,1163.71" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="64" x="405" y="1172.6984">«extends»</text></g><!--MD5=[687ef2a769cc8fbf8bf7f91ba510f6f9]
+reverse link UC15 to UC18--><g id="link_UC15_UC18"><path d="M369.38,1147.46 C415.32,1146.16 469.99,1144.61 513.72,1143.37 " fill="none" id="UC15-backto-UC18" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="364.47,1147.6,373.5806,1151.3413,369.468,1147.4572,373.3521,1143.3446,364.47,1147.6" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="64" x="405" y="1141.6984">«extends»</text></g><!--MD5=[b96f593c71fba68a3ee0d4ffe4694043]
+link UC18 to UC19--><g id="link_UC18_UC19"><path d="M670.64,1146.37 C715.4,1149.45 773.7,1153.46 828.04,1157.19 " fill="none" id="UC18-to-UC19" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="832.79,1157.52,824.0856,1152.912,827.8018,1157.177,823.5368,1160.8931,832.79,1157.52" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="60" x="736" y="1148.6984">«include»</text></g><!--MD5=[7c411a2aac3bd4fcae87f15fcb6c296a]
+link UC17 to UC19--><g id="link_UC17_UC19"><path d="M664.22,1205.14 C712.67,1199.58 779.06,1191.97 839.04,1185.09 " fill="none" id="UC17-to-UC19" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="843.69,1184.56,834.2921,1181.6139,838.7227,1185.131,835.2056,1189.5616,843.69,1184.56" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="60" x="736" y="1187.6984">«include»</text></g><!--MD5=[51cacb273e42540451b37874286b3f1d]
+link UC10 to Laboratory--><g id="link_UC10_Laboratory"><path d="M194.5,419.26 C162.04,425.38 129.03,439.31 115.5,469.63 C90.05,526.65 99.15,690.36 115.5,750.63 C133.235,816 171.0925,881.7425 205.4188,932.1588 C222.5819,957.3669 238.8622,978.7434 251.303,994.3261 C251.4974,994.5696 251.6908,994.8116 251.8833,995.0523 " fill="none" id="UC10-to-Laboratory" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="251.8833,995.0523,249.3848,985.5256,248.76,991.1478,243.1377,990.523,251.8833,995.0523" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[ffaba8b9f42a2ef7461b95a4574b19e1]
+link UC16 to EMR--><g id="link_UC16_EMR"><path d="M562.06,1047.64 C541.93,1033.34 516.32,1012.27 500,988.13 C476.62,953.55 494.4,933 470,899.13 C438.825,855.86 391.22,819.5725 350.9113,793.8763 C330.7569,781.0281 312.4266,770.8278 298.8861,763.7264 C297.1935,762.8387 295.5758,761.9995 294.0387,761.2095 C293.6545,761.012 293.2752,760.8176 292.9011,760.6263 C292.7141,760.5307 292.5283,760.4358 292.3438,760.3417 " fill="none" id="UC16-to-EMR" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="292.3438,760.3417,298.5432,767.9946,296.7978,762.6138,302.1786,760.8683,292.3438,760.3417" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="62" x="406" y="829.6984">Lab result</text></g><!--MD5=[2991bdf992fb7b18586074358bcef827]
+link iol to cdr--><g id="link_iol_cdr"><path d="M672.79,810.36 C729.135,801.89 806.1025,790.32 869.7575,780.7513 C885.6712,778.3591 900.753,776.092 914.4724,774.0296 C917.9023,773.514 921.247,773.0113 924.4983,772.5225 C926.1239,772.2782 927.7262,772.0373 929.3041,771.8001 C930.0931,771.6815 930.8759,771.5638 931.6526,771.4471 C932.0409,771.3887 932.4276,771.3306 932.8128,771.2727 " fill="none" id="iol-cdr" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="932.8128,771.2727,923.3182,768.655,927.8684,772.0159,924.5074,776.5661,932.8128,771.2727" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="667.99,811.08,677.4845,813.698,672.9345,810.3369,676.2956,805.7868,667.99,811.08" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="40" x="746" y="789.6984">HTTPS</text></g><!--MD5=[d23e741388bad012a3534bf82a1da7e5]
+link EMR to iol--><g id="link_EMR_iol"><path d="M312.0603,760.2036 C312.6128,760.3257 313.1703,760.4488 313.7327,760.573 C318.2316,761.5666 323.0442,762.6294 328.1242,763.7512 C338.2842,765.9949 349.5137,768.4747 361.4425,771.1088 C409.1575,781.645 468.06,794.65 514.45,804.89 " fill="none" id="EMR-iol" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="519.28,805.96,511.362,800.1029,514.3991,804.8753,509.6266,807.9124,519.28,805.96" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="312.0603,760.2036,319.986,766.0504,316.9427,761.2819,321.7112,758.2386,312.0603,760.2036" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="57" x="408.5" y="777.6984">EMR data</text></g><!--MD5=[0b7c36cf0c6fb9a65fa811ca56230e90]
+link Laboratory to iol--><g id="link_Laboratory_iol"><path d="M346.2295,994.9103 C346.5341,994.7753 346.8393,994.6398 347.145,994.5038 C386.275,977.095 433.955,951.89 470,920.13 C487.48,904.72 482.93,893 500,877.13 C504.82,872.65 510.06,868.36 515.52,864.3 " fill="none" id="Laboratory-iol" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="519.37,861.51,509.7348,863.5504,515.3208,864.4432,514.4279,870.0291,519.37,861.51" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="346.2295,994.9103,356.0783,994.9197,350.8005,992.884,352.8362,987.6061,346.2295,994.9103" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="53" x="410.5" y="916.6984">Lab data</text></g><!--MD5=[fdb44ddcdecbad69fafeab140b46ad63]
+link macthingAdmin to UC21--><g id="link_macthingAdmin_UC21"><path d="M674.88,926.78 C726.92,922.67 795.89,917.22 855.76,912.5 " fill="none" id="macthingAdmin-to-UC21" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="860.39,912.13,851.1083,908.8361,855.4049,912.5157,851.7253,916.8123,860.39,912.13" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[bfa5fa7131f7f5cf103e7646e557b347]
+link iol to cr--><g id="link_iol_cr"><path d="M672.59,825.51 C692.91,826.37 714.77,827.3 735,828.13 C762.56,829.265 791.8169,830.4469 820.2664,831.5839 C822.0445,831.655 823.8194,831.7259 825.5906,831.7966 C826.4762,831.8319 827.3609,831.8672 828.2445,831.9024 C828.6863,831.9201 829.1279,831.9377 829.5692,831.9553 " fill="none" id="iol-cr" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="829.5692,831.9553,820.7357,827.5999,824.5731,831.7561,820.4169,835.5935,829.5692,831.9553" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="667.85,825.3,676.6705,829.6817,672.8454,825.5141,677.013,821.689,667.85,825.3" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="40" x="746" y="824.6984">HTTPS</text></g><!--MD5=[21e25c03627f8a873b1fd8e53710f956]
+link caseReporter to UC22--><g id="link_caseReporter_UC22"><path d="M1036.98,1310.21 C1080.76,1301.78 1145.13,1283.84 1189,1247.13 C1300.76,1153.63 1362.43,980.95 1382.3,916.89 " fill="none" id="caseReporter-to-UC22" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="1383.65,912.48,1377.1817,919.907,1382.1806,917.2592,1384.8284,922.2581,1383.65,912.48" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[a5d55c278f90994c9923b0999686fcf3]
+link cdr to dm--><g id="link_cdr_dm"><path d="M1034.1393,771.2176 C1035.3989,771.4443 1036.6797,771.6748 1037.9813,771.9092 C1040.5843,772.378 1043.2699,772.8619 1046.0327,773.3601 C1057.084,775.3528 1069.3709,777.5738 1082.5538,779.965 C1135.285,789.53 1202.35,801.82 1262,813.13 C1268.9813,814.4538 1276.1748,815.8303 1283.4228,817.2266 C1283.8758,817.3139 1284.329,817.4013 1284.7824,817.4887 C1285.0091,817.5324 1285.2359,817.5761 1285.4626,817.6199 " fill="none" id="cdr-to-dm" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="1285.4626,817.6199,1277.3831,811.9877,1280.5531,816.6729,1275.8679,819.8429,1285.4626,817.6199" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="63" x="1198" y="798.6984">Push Data</text></g><!--MD5=[9f74507ba4c5de429b9ead8eee9af94d]
+link cr to dm--><g id="link_cr_dm"><path d="M1145.688,838.13 C1146.4416,838.13 1147.1961,838.13 1147.9514,838.13 C1149.462,838.13 1150.9759,838.13 1152.4927,838.13 C1164.6271,838.13 1176.948,838.13 1189.2688,838.13 C1213.9103,838.13 1238.5515,838.13 1261.6998,838.13 C1267.4869,838.13 1273.1806,838.13 1278.7578,838.13 C1280.1521,838.13 1281.5391,838.13 1282.9184,838.13 C1283.6081,838.13 1284.2958,838.13 1284.9816,838.13 " fill="none" id="cr-to-dm" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="1284.9816,838.13,1275.9816,834.13,1279.9816,838.13,1275.9816,842.13,1284.9816,838.13" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="63" x="1198" y="834.6984">Push Data</text></g><!--MD5=[719f0f494ad9708a580032a5f6039566]
+@startuml UseCaseDiagram
+left to right direction
+actor "Nurse" as nurse
+rectangle EMR {
+  usecase "Register Client" as UC1
+  usecase "ART Regimen Switching" as UC2
+  usecase "ART Initiation" as UC3
+  usecase "CD4" as UC4
+  usecase "Death" as UC5
+  usecase "Enrolled to Care" as UC6
+  usecase "HIV Diagnosis" as UC7
+  usecase "Viral Suppression" as UC8
+  usecase "Subsequent Sampling" as UC9
+  usecase "Sumbit Lab Order" as UC10
+  usecase "HIV Recency Testing" as UC11
+}
+
+nurse - -> UC1
+nurse - -> UC2
+nurse - -> UC3
+nurse - -> UC4
+nurse - -> UC5
+nurse - -> UC6
+nurse - -> UC7
+nurse - -> UC8
+nurse - -> UC10
+nurse - -> UC11
+
+(UC4) <.. (UC9) : "<<extends>>"
+(UC8) <.. (UC9) : "<<extends>>"
+(UC8) <.. (UC11) : "<<extends>>"
+
+
+actor "Lab Assistant" as labAssistant
+rectangle Laboratory {
+  usecase "Sample Collection" as UC14
+  usecase "Process Lab Request" as UC15
+  usecase "Document Lab Result" as UC16
+  usecase "Reject Lab Order" as UC17
+  usecase "Cancel Lab Order" as UC18
+  usecase "Document Reason For Not Performing Test" as UC19
+}
+
+labAssistant - -> UC14
+labAssistant - -> UC15
+
+
+(UC15) <.. (UC16) : "<<extends>>"
+(UC15) <.. (UC17) : "<<extends>>"
+(UC15) <.. (UC18) : "<<extends>>"
+
+(UC18) ..> (UC19) : "<<include>>"
+(UC17) ..> (UC19) : "<<include>>"
+
+(UC10) ..> Laboratory
+
+(UC16) ..> EMR : "Lab result"
+
+actor "Interoperability Layer" as iol
+rectangle "Centralised Data Repository" as cdr {
+  usecase "Manage Clinical Data" as UC20
+}
+
+iol <- -> cdr : "HTTPS"
+
+EMR <..> iol : "EMR data"
+Laboratory <..> iol : "Lab data"
+
+
+actor "Matching Administrator" as macthingAdmin
+rectangle "Client Registry" as cr {
+  usecase "Manage Master Patient Index (MPI)" as UC21
+}
+
+macthingAdmin - -> UC21
+
+iol <- -> cr : "HTTPS"
+
+actor "Case Reporter" as caseReporter
+rectangle "Data Mart" as dm {
+  usecase "Generate Reports" as UC22
+}
+
+caseReporter - -> UC22
+
+cdr - -> dm : "Push Data"
+cr - -> dm : "Push Data"
+
+@enduml
+
+PlantUML version 1.2022.7(Mon Aug 22 19:01:30 SAST 2022)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: GB
+--></g></svg>
+        <figcaption>Use Case Diagram</figcaption>
+    </figure>
+
+   <p class="heading">Use Case Context</p>
+
+    <p>
+        This use case supports integration between the EMR and lab systems in order to effectively process lab requests and have the results returned to the EMR for diagnosis.
+        <br/>
+        <br/>
+        In addition, this use case illustrates the need for a Centralised Data Repository (DR) and a Client Registry (CR) to enable regional and/or national HIV case reporting. 
+        <br/>
+        <br/>
+        The <a href="index.html#technicalBackground">technical specificaton documentation</a> for the Data Integration Strategies &amp; Implementation reference platform identifies the following technologies for the two aforementioned centralised repositories.
+    </p>
+    <ol>
+        <li><strong>DR:</strong> <a href="https://hapifhir.io/hapi-fhir/docs/getting_started/introduction.html" target="_blank">HAPI FHIR</a></li>
+        <li><strong>CR:</strong> <a href="https://jembi.gitbook.io/jembi-platform/packages/client-registry-santempi" target="_blank">SanteMPI</a></li>
+    </ol>
+
+    <blockquote class="stu-note">
+        <ul>
+            <li>The <a href="#use-case-summary">use case summary</a> is limited to the <a href="bundles.html">specification</a> for this implementation guide and will not discuss the architectural components for the DR, CR and Data Mart.</li>
+            <li>For more information regarding the implementation of a the architectural components, please see the <a href="index.html#technicalBackground">technical specificaton documentation</a>.</li>
+        </ul>
+    </blockquote>
+
+    <a name="2"/><h3 id="use-case-summary">Use Case Summary</h3> <a name="usecase-summary">  </a>
+    <p class="heading">Register Client</p>
+
+    <p>Before an individual can be screened and assessed (diagnosis) for HIV, the individual must be registered into the EMR at the assessing facility/organisation.</p>
+
+    
+
+    <a name="3"/><h3>References</h3> <a name="references">  </a>
+
+    <div>
+        <ol>
+            <li id="ref1"/>
+        </ol>
+    </div>
+</div>
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+           
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2019+ <a style="color: #81BEF7" href="https://www.jembi.org">Jembi Health Systems</a>.  Package openhie.fhir.hiv.cbs#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Feb 22, 2023 14:01+0000">2023-02-22</span>
+          <br/>
+          <span style="color: #FFFF77">
+                      Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
+                 <a style="color: #81BEF7" href="qa.html">QA Report</a> |
+                 
+                 <a style="color: #81BEF7" target="_blank" href="http://openhie.org/fhir/hiv-cbs/history.html">Version History</a> |
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC-BY" src="assets/images/cc-by.png" height="17"/></a> |
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+  <!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

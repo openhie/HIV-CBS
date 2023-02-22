@@ -1,0 +1,38 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "vs-hiv-recency-status",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-cs-hiv-recency-status.html\"><code>http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-hiv-recency-status</code></a></li></ul></div>"
+  },
+  "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-hiv-recency-status",
+  "version" : "0.2.0",
+  "name" : "VSHIVRecencyStatus",
+  "title" : "HIV Recency Testing Status",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2023-02-22T14:01:55+00:00",
+  "publisher" : "Jembi Health Systems",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.jembi.org"
+    },
+    {
+      "system" : "email",
+      "value" : "info@jembi.org"
+    }]
+  }],
+  "description" : "A list of HIV recency statuses",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-hiv-recency-status"
+    }]
+  }
+}
