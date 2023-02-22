@@ -3,12 +3,12 @@ left to right direction
 actor "Health Professional" as professional
 rectangle EMR {
   usecase "Register Client" as UC1
-  usecase "Document Changes to ART Regimen" as UC2
-  usecase "Document ART Initiation" as UC3
+  usecase "ART Regimen Switching" as UC2
+  usecase "ART Initiation" as UC3
   usecase "CD4 Results" as UC4
-  usecase "Document Patient Outcome" as UC5
-  usecase "Enrolled a patient into Care" as UC6
-  usecase "Document the HIV Diagnosis" as UC7
+  usecase "Patient Outcome" as UC5
+  usecase "Enrolled into Care" as UC6
+  usecase "HIV Diagnosis" as UC7
   usecase "Viral Load Results" as UC8
   usecase "Subsequent Sampling" as UC9
   usecase "Submit Lab Order" as UC10
