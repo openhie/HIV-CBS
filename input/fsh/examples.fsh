@@ -346,18 +346,34 @@ Description: "ARVCarePlan Refused example"
 * note.authorReference = Reference(HIVOrganizationExample)
 * note.time = "2022-02-07T13:28:17-05:00"
 
-Instance: HIVRecencyTestExample
-InstanceOf: HIVRecencyTest
+Instance: HIVRecencyTestDoneExample
+InstanceOf: HIVRecencyTestDone
 Usage: #example
 Title: "HIV Recency Test Done example"
-Description: "HIV Recency Test example"
+Description: "HIV Recency Test done example"
 * status = #final
 * code = $SCT#409788009
 * subject = Reference(HIVPatientExample)
 * encounter = Reference(TargetFacilityEncounterExample)
 * effectiveDateTime = "2022-12-10"
-* valueCodeableConcept = #Recent
-* valueCodeableConcept.coding.system = "http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-hiv-recency-status"
+* valueCodeableConcept = $SCT#373066001
 * note.text = "Additional information regarding the HIV recency test"
 * note.authorReference = Reference(HIVOrganizationExample)
 * note.time = "2015-02-07T13:28:17-05:00"
+
+Instance: HIVRecencyTestResultExample
+InstanceOf: HIVRecencyTestResult
+Usage: #example
+Title: "HIV Recency Test Result example"
+Description: "HIV Recency Test Result example"
+* status = #final
+* code = $SCT#409788009
+* subject = Reference(HIVPatientExample)
+* encounter = Reference(TargetFacilityEncounterExample)
+* effectiveDateTime = "2022-12-10"
+* valueCodeableConcept = $SCT#118246004
+* interpretation = $SCT#6493001
+* note.text = "Additional information regarding the HIV recency test result"
+* note.authorReference = Reference(HIVOrganizationExample)
+* note.time = "2015-02-07T13:28:17-05:00"
+* performer = Reference(HIVOrganizationExample)

@@ -280,9 +280,9 @@ Description: "Populations who are at higher risk for HIV"
 * value[x] only CodeableConcept
 * valueCodeableConcept from VSKeyPopulationSatus (required)
 
-Profile: HIVRecencyTest
+Profile: HIVRecencyTestDone
 Parent: Observation
-Id: hiv-recency-test
+Id: hiv-recency-test-done
 Title: "HIV Recency Test"
 Description: "This profile is to record the HIV recency testing data for a patient."
 * status = #final
@@ -290,5 +290,20 @@ Description: "This profile is to record the HIV recency testing data for a patie
 * subject 1..1
 * encounter 1..1
 * effectiveDateTime 1..1
-* valueCodeableConcept from VSHIVRecencyStatus (required)
+* valueCodeableConcept from VSYesNoUnknown (required)
+* note 0..1
+
+Profile: HIVRecencyTestResult
+Parent: Observation
+Id: hiv-recency-test-result
+Title: "HIV Recency Test Result"
+Description: "This profile is to record the HIV recency test result data for a patient."
+* status = #final
+* code from VSHIVRecencyTest (required)
+* subject 1..1
+* encounter 1..1
+* effectiveDateTime 1..1
+* valueCodeableConcept from VSHIVRecencyTestResult (required)
+* interpretation from VSHIVRecencyStatus (required)
+* performer 1..1
 * note 0..1
