@@ -12,7 +12,7 @@
   <title value="HIV Case-Based Surveillance"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2023-02-22T12:56:47+00:00"/>
+  <date value="2023-02-22T14:46:19+00:00"/>
   <publisher value="Jembi Health Systems"/>
   <contact>
     <telecom>
@@ -481,13 +481,13 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
+        <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="Observation/HIVRecencyTestExample"/>
+        <reference value="ValueSet/vs-hiv-recency-test-result"/>
       </reference>
-      <name value="Example Observation - HIVRecencyTestExample"/>
-      <exampleCanonical value="http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-recency-test"/>
+      <name value="Recency HIV Test Result"/>
+      <description value="A list of HIV recency test result codes."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -508,6 +508,16 @@
       </reference>
       <name value="Example Bundle - LabCancellation"/>
       <exampleCanonical value="http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-lab-task"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/HIVRecencyTestResultExample"/>
+      </reference>
+      <name value="Example Observation - HIVRecencyTestResultExample"/>
+      <exampleCanonical value="http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-recency-test-result"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -901,13 +911,13 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
+        <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/cs-hiv-recency-status"/>
+        <reference value="ValueSet/vs-yes-no"/>
       </reference>
-      <name value="HIV Recency Testing Status"/>
-      <description value="A list of HIV recency statuses"/>
+      <name value="Yes No Unknown"/>
+      <description value="A list of options used to provide an answer"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1021,6 +1031,16 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/HIVRecencyTestDoneExample"/>
+      </reference>
+      <name value="Example Observation - HIVRecencyTestDoneExample"/>
+      <exampleCanonical value="http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-recency-test-done"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -1038,6 +1058,16 @@
       </reference>
       <name value="Example Practitioner - PractitionerExample"/>
       <exampleCanonical value="http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-practitioner"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/hiv-recency-test-done"/>
+      </reference>
+      <name value="HIV Recency Test"/>
+      <description value="This profile is to record the HIV recency testing data for a patient."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1074,10 +1104,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/hiv-recency-test"/>
+        <reference value="StructureDefinition/hiv-recency-test-result"/>
       </reference>
-      <name value="HIV Recency Test"/>
-      <description value="This profile is to record the HIV recency testing data for a patient."/>
+      <name value="HIV Recency Test Result"/>
+      <description value="This profile is to record the HIV recency test result data for a patient."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

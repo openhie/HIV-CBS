@@ -1,12 +1,5 @@
 [
   {
-    "id" : "cs-hiv-recency-status",
-    "type" : "CodeSystem",
-    "url" : "http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-hiv-recency-status",
-    "version" : "0.2.0",
-    "name" : "CSHIVRecencyStatus"
-  },
-  {
     "id" : "cs-key-population-status",
     "type" : "CodeSystem",
     "url" : "http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-key-population-status",
@@ -112,11 +105,18 @@
     "name" : "HIVPractitioner"
   },
   {
-    "id" : "hiv-recency-test",
+    "id" : "hiv-recency-test-done",
     "type" : "StructureDefinition",
-    "url" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-recency-test",
+    "url" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-recency-test-done",
     "version" : "0.2.0",
-    "name" : "HIVRecencyTest"
+    "name" : "HIVRecencyTestDone"
+  },
+  {
+    "id" : "hiv-recency-test-result",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-recency-test-result",
+    "version" : "0.2.0",
+    "name" : "HIVRecencyTestResult"
   },
   {
     "id" : "hiv-service-request-location",
@@ -210,6 +210,13 @@
     "name" : "VSHIVRecencyTest"
   },
   {
+    "id" : "vs-hiv-recency-test-result",
+    "type" : "ValueSet",
+    "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-hiv-recency-test-result",
+    "version" : "0.2.0",
+    "name" : "VSHIVRecencyTestResult"
+  },
+  {
     "id" : "vs-hiv-test-done",
     "type" : "ValueSet",
     "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-hiv-test-done",
@@ -264,5 +271,12 @@
     "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-vl-suppression",
     "version" : "0.2.0",
     "name" : "VSVLSuppression"
+  },
+  {
+    "id" : "vs-yes-no",
+    "type" : "ValueSet",
+    "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-yes-no",
+    "version" : "0.2.0",
+    "name" : "VSYesNoUnknown"
   }
 ]

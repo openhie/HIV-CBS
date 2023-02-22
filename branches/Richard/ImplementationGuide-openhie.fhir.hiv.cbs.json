@@ -11,7 +11,7 @@
   "title" : "HIV Case-Based Surveillance",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2023-02-22T12:56:47+00:00",
+  "date" : "2023-02-22T14:46:19+00:00",
   "publisher" : "Jembi Health Systems",
   "contact" : [{
     "telecom" : [{
@@ -641,13 +641,13 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
+        "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "Observation/HIVRecencyTestExample"
+        "reference" : "ValueSet/vs-hiv-recency-test-result"
       },
-      "name" : "Example Observation - HIVRecencyTestExample",
-      "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-recency-test"
+      "name" : "Recency HIV Test Result",
+      "description" : "A list of HIV recency test result codes."
     },
     {
       "extension" : [{
@@ -670,6 +670,17 @@
       },
       "name" : "Example Bundle - LabCancellation",
       "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-lab-task"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/HIVRecencyTestResultExample"
+      },
+      "name" : "Example Observation - HIVRecencyTestResultExample",
+      "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-recency-test-result"
     },
     {
       "extension" : [{
@@ -1103,13 +1114,13 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
+        "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "CodeSystem/cs-hiv-recency-status"
+        "reference" : "ValueSet/vs-yes-no"
       },
-      "name" : "HIV Recency Testing Status",
-      "description" : "A list of HIV recency statuses"
+      "name" : "Yes No Unknown",
+      "description" : "A list of options used to provide an answer"
     },
     {
       "extension" : [{
@@ -1235,6 +1246,17 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/HIVRecencyTestDoneExample"
+      },
+      "name" : "Example Observation - HIVRecencyTestDoneExample",
+      "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-recency-test-done"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
@@ -1253,6 +1275,17 @@
       },
       "name" : "Example Practitioner - PractitionerExample",
       "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-practitioner"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/hiv-recency-test-done"
+      },
+      "name" : "HIV Recency Test",
+      "description" : "This profile is to record the HIV recency testing data for a patient."
     },
     {
       "extension" : [{
@@ -1293,10 +1326,10 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/hiv-recency-test"
+        "reference" : "StructureDefinition/hiv-recency-test-result"
       },
-      "name" : "HIV Recency Test",
-      "description" : "This profile is to record the HIV recency testing data for a patient."
+      "name" : "HIV Recency Test Result",
+      "description" : "This profile is to record the HIV recency test result data for a patient."
     },
     {
       "extension" : [{
