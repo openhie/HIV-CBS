@@ -474,17 +474,216 @@ Country: GB
     <a name="2"/><h3 id="use-case-summary">Use Case Summary</h3> <a name="usecase-summary">  </a>
     <p class="heading">Register Client</p>
 
-    <p>Before an individual can be screened and assessed (diagnosis) for HIV, the individual must be registered into the EMR at the assessing facility/organisation.</p>
+    <p>
+        Before an individual can be screened and assessed (diagnosis) for Human immunodeficiency virus (HIV), the individual must be registered into the EMR at the assessing facility/organisation.
+        <br/>
+        <br/>
+        In addition, this use case documents the HIV Key Population associated with this sentinel event.
+    </p>
 
-    <p class="heading">Document the HIV Diagnosis</p>
+     <ul>
+        <li><strong>General Population</strong></li>
+        <li><strong>Men who have sex with men (MSM):</strong> <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=472986005&amp;edition=MAIN/2023-01-31&amp;release=&amp;languages=en&amp;latestRedirect=false" target="_blank">472986005</a></li>
+        <li><strong>Female sex worker (FSW):</strong> <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=159799000&amp;edition=MAIN/2023-01-31&amp;release=&amp;languages=en&amp;latestRedirect=false" target="_blank">159799000</a></li>
+        <li><strong>Male sex worker (MSW):</strong> <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=159800001&amp;edition=MAIN/2023-01-31&amp;release=&amp;languages=en&amp;latestRedirect=false" target="_blank">159800001</a></li>
+        <li><strong>Persons who inject drugs (PWID):</strong> <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=228388006&amp;edition=MAIN/2023-01-31&amp;release=&amp;languages=en&amp;latestRedirect=false" target="_blank">228388006</a></li>
+        <li><strong>People who use drugs (PWUD):</strong> <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=417284009&amp;edition=MAIN/2023-01-31&amp;release=&amp;languages=en&amp;latestRedirect=false" target="_blank">417284009</a></li>
+        <li><strong>Transgender:</strong> <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=407375002&amp;edition=MAIN/2023-01-31&amp;release=&amp;languages=en&amp;latestRedirect=false" target="_blank">407375002</a></li>
+    </ul>
 
-    <p>Add text...</p>
+    <p class="heading">HIV Diagnosis</p>
+
+    <p>
+        The healthcare professional must be able to document the HIV infection status (HIV positive or negative) for an individual.
+        Typically, this will only happen upon confirmation of blood sample examination.
+        <br/>
+        <br/>
+        In addition, this use case documents the <u>key</u> metadata associated with this sentinel event.
+    </p>
+
+    <p class="heading">Enrolled Into Care</p>
+
+    <p>
+        The healthcare professional must be able to enrol a HIV positive individual into an Antiretroviral Therapy (ART) program as fast as possible so that Antiretroviral (ARV) treatment can commence.
+        <br/>
+        <br/>
+        In addition, this use case includes the following <u>key</u> data.
+    </p>
+
+    <ul>
+        <li>Metadata</li>
+    </ul>
+
+    <p class="heading">ART Initiation</p>
+
+    <p>
+        The healthcare professional must be able to initiate an HIV positive patient onto a given ARV regimen and associate it with a specific therapeutic line.
+        Therapeutic line is the term used to describe the order in which different therapies (ARV regimen) are given to patients as their disease progresses.
+        An ARV regimen is a substance that kills or suppresses a retrovirus, such as HIV <a href="#ref1" id="citation1">(VA.gov | Veterans Affairs, 2019)</a>.
+    </p>
+
+    <p class="heading">ART Regimen Switching</p>
+        
+    <p>
+        The healthcare professional must be able to change the current ARV regimen to a new ARV regimen from any therapeutic line.
+        A change in the ARV regimen is often necessary because of both acute and chronic toxicities, concomitant clinical conditions, and development of virologic failure <a href="#ref2" id="citation2">(Wilkin et al., 2006)</a>.
+    </p>
+
+    <p class="heading">Viral Load Results - (First &amp; Subsequent)</p>
+        
+    <p>
+        The healthcare professional must be able to retrospectively capture the viral load (VL) results for first and follow-up examinations.
+        In addition, should there be laboratory integration with the EMR, the laboratory system must be able to automatically document the VL count to the patient record in the EMR.
+        <br/>
+        <br/>
+        According to <a href="#ref3" id="citation3">Moncivaiz (2021)</a>, VL examinations typically take place at the following frequencies.
+    </p>
+
+    <ol>
+        <li>When first diagnosed with HIV.</li>
+        <li>Within 2 months if there is a change in ARV regimen.</li>
+        <li>Every 1 to 2 months until the VL is no longer detectable (virally suppressed).</li>
+        <li>Every 3 to 4 months while ART remains stable and the viral load remains suppressed.</li>
+        <li>Every 6 months after 2 years while VL remains undetectable, and CD4 counts are over 500 cells/mm3.</li>
+    </ol>
+
+    <p class="heading">CD4 Results - (First &amp; Subsequent)</p>
+        
+    <p>
+        The healthcare professional must be able to retrospectively capture the CD4 results for first and follow-up examinations.
+        In addition, should there be laboratory integration with the EMR, the laboratory system must be able to automatically document the CD4 count to the patient record in the EMR.
+        <br/>
+        <br/>
+        According to <a href="#ref4" id="citation4">Medlineplus (2022)</a>, a CD4 count is conducted with every VL examination. It is used to determine if the patient's current ARV regimen is stable or requires a regimen switch.
+    </p>
+
+    <p class="heading">Patient Outcome</p>
+        
+    <p>
+        The healthcare professional must be able to document the event associated with the death of a patient.
+    </p>
+
+    <p class="heading">HIV Recency Testing</p>
+        
+    <p>
+        The healthcare professional must be able to retrospectively capture the VL result for a HIV recency examination.
+        In addition, should there be laboratory integration with the EMR, the laboratory system must be able to automatically document the VL count to the patient record in the EMR.
+        <br/>
+        <br/>
+        According to <a href="#ref5" id="citation5">Recency Learning Hub (n.d.)</a>, VL testing is highly recommended to be included when testing for recent infections as part of recent infection testing algorithm (RITA). 
+        HIV recency testing should be offered as an additional test to clients who are confirmed as newly diagnosed with HIV-1 based on the national HIV testing algorithm <a href="#ref5">(Recency Learning Hub, n.d.)</a>.
+    </p>
+
+    <p class="heading">Submit lab order</p>
+
+    <p>
+        The healthcare professional must be able to submit a request from the EMR for a sample to be collected and examined at the laboratory. 
+        <br/>
+        <br/>
+
+        A lab request, in the context of this implementation guide, will typically contain the following <u>key</u> data. 
+    </p>
+
+     <ul>
+        <li>Metadata</li>
+        <li>Order number</li>
+        <li>Test requested code</li>
+            <ul>
+                <li><strong>HIV 2 proviral DNA [Presence] in Specimen by NAA with probe detection:</strong> <a href="https://loinc.org/25842-6/" target="_blank">25842-6</a></li>
+                <li><strong>HIV 1 RNA [#/volume] (viral load) in Specimen by NAA with probe detection:</strong> <a href="https://loinc.org/25836-8/" target="_blank">25836-8</a></li>
+            </ul>
+        <li>Reason for the test</li>
+        <li>Specimen type</li>
+            <ul>
+                <li><strong>Plasma:</strong> <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=119361006&amp;edition=MAIN/2023-01-31&amp;release=&amp;languages=en&amp;latestRedirect=false" target="_blank">119361006</a></li>
+                <li><strong>Dried blood spot:</strong> <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=440500007&amp;edition=MAIN/2023-01-31&amp;release=&amp;languages=en&amp;latestRedirect=false" target="_blank">440500007</a></li>
+                <li><strong>Oral fluid:</strong> <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=441620008&amp;edition=MAIN/2023-01-31&amp;release=&amp;languages=en&amp;latestRedirect=false" target="_blank">441620008</a></li>
+                <li><strong>Whole blood:</strong> <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=258580003&amp;edition=MAIN/2023-01-31&amp;release=&amp;languages=en&amp;latestRedirect=false" target="_blank">258580003</a></li>
+                <li><strong>Serum:</strong> <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=119364003&amp;edition=MAIN/2023-01-31&amp;release=&amp;languages=en&amp;latestRedirect=false" target="_blank">119364003</a></li>
+            </ul>
+        <li>Specimen ID</li>
+    </ul>
+
+    <p class="heading">Sample Collection</p>
+
+    <p>
+        A lab assistant must be able to collect samples that have been submitted for testing from the EMR.
+        <br/>
+        <br/>
+
+        Sample collection in the context of this implementation guide, will typically contain the following <u>key</u> data. 
+    </p>
+
+    <ul>
+        <li>Metadata</li>
+        <li>Sample collection date &amp; time</li>
+        <li>Specimen type</li>
+            <ul>
+                <li>Same as the <u>submit lab order</u> use case</li>
+            </ul>
+        <li>Specimen ID</li>
+    </ul>
+
+    <p class="heading">Process Lab Request</p>
+
+    <p>
+        A lab assistant must be able to close the request for sample examination using one of the following three statuses.
+    </p>
+
+    <ol>
+        <li>The specimen was successfully examined and the result issued (<a href="lab-result-bundle.html">lab result</a>)</li>
+        <li>The request for sample examination was cancelled by the lab order requester (<a href="lab-cancellation-bundle.html">lab cancellation</a>)</li>
+        <li>The specimen examination was rejected by the lab performer without carrying out any part of the test (<a href="lab-rejection-bundle.html">lab rejection</a>)</li>
+    </ol>
+
+    <p>
+        Process lab request in the context of this implementation guide, will typically contain the following <u>key</u> data. 
+    </p>
+
+    <ul>
+        <li>Metadata</li>
+        <li>Order number</li>
+        <li>Reason for not performing test</li>
+            <ul>
+                <li>Only applicable for lab cancellations and lab rejections</li>
+            </ul>
+        <li>Output code</li>
+            <ul>
+                <li>Only applicable to lab orders that have been successfully examined and issued with a result</li>
+                <li>Currently, the code of <a href="ValueSet-vs-vl-result-code.html">Human immunodeficiency virus-1 nucleic acid assay</a> represents the successfull completion of a lab order</li>
+            </ul>
+        <li>Test requested code</li>
+            <ul>
+                <li>Same as the <u>submit lab order</u> use case</li>
+            </ul>
+        <li>Specimen ID</li>
+            <ul>
+                <li>Same as the <u>sample collection</u> use case</li>
+            </ul>
+        <li>Specimen type</li>
+            <ul>
+                <li>Same as the <u>submit lab order</u> use case</li>
+            </ul>
+        <li>Result code</li>
+            <ul>
+                <li>Only applicable to lab orders that have been successfully examined and issued with a result</li>
+                <li>Codes</li>
+                <ul>
+                    <li><strong>Human immunodeficiency virus infection:</strong> <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=86406008&amp;edition=MAIN/2023-01-31&amp;release=&amp;languages=en&amp;latestRedirect=false" target="_blank">86406008</a></li>
+                </ul>
+            </ul>
+    </ul>
 
     <a name="3"/><h3>References</h3> <a name="references">  </a>
 
     <div>
         <ol>
-            <li id="ref1"/>
+            <li id="ref4">Medlineplus. (2022, August 22). CD4 Lymphocyte Count. National Library of Medicine. Retrieved February 23, 2023, from https://medlineplus.gov/lab-tests/cd4-lymphocyte-count/#:~:text=A%20CD4%20count%20is%20used,which%20means%20you%20have%20AIDS</li>
+            <li id="ref3">Moncivaiz, A. (2021, October 5). CD4 vs. Viral Load: What’s in a Number? Healthline. https://www.healthline.com/health/hiv-aids/cd4-viral-count</li>
+            <li id="ref5">Recency Learning Hub. (n.d.). https://trace-recency.org/</li>
+            <li id="ref1">VA.gov | Veterans Affairs. (2019). https://www.hiv.va.gov/provider/glossary/index.asp</li>
+            <li id="ref2">Wilkin, T., Gulick, R.M. and International Association of Physicians in AIDS Care (2006) Switching antiretroviral therapy: Why, when and how - thebodypro. Available at: https://www.thebodypro.com/article/switching-antiretroviral-therapy-why (Accessed: February 23, 2023).</li>
+            
         </ol>
     </div>
 </div>
@@ -511,7 +710,7 @@ Country: GB
            
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2019+ <a style="color: #81BEF7" href="https://www.jembi.org">Jembi Health Systems</a>.  Package openhie.fhir.hiv.cbs#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 23, 2023 08:27+0000">2023-02-23</span>
+          IG &#169; 2019+ <a style="color: #81BEF7" href="https://www.jembi.org">Jembi Health Systems</a>.  Package openhie.fhir.hiv.cbs#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 23, 2023 13:59+0000">2023-02-23</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
