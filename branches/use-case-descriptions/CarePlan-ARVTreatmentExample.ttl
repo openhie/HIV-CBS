@@ -1,0 +1,84 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://openhie.org/fhir/hiv-cbs/CarePlan/ARVTreatmentExample> a fhir:CarePlan;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "ARVTreatmentExample"]; # 
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-arv-treatment";
+       fhir:index 0;
+       fhir:link <http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-arv-treatment>
+     ]
+  ]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: CarePlan</b><a name=\"ARVTreatmentExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource CarePlan &quot;ARVTreatmentExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-arv-treatment.html\">ARV Treatment</a></p></div><p><b>status</b>: active</p><p><b>intent</b>: plan</p><p><b>subject</b>: <a href=\"Patient-HIVPatientExample.html\">Patient/HIVPatientExample</a> &quot; SMITH&quot;</p><p><b>encounter</b>: <a href=\"Encounter-TargetFacilityEncounterExample.html\">Encounter/TargetFacilityEncounterExample</a></p><p><b>period</b>: 2022-12-01 --&gt; 2022-12-01</p><blockquote><p><b>activity</b></p><h3>Details</h3><table class=\"grid\"><tr><td>-</td><td><b>Extension</b></td><td><b>Kind</b></td><td><b>Code</b></td><td><b>Status</b></td><td><b>Product[x]</b></td></tr><tr><td>*</td><td/><td>MedicationRequest</td><td>HIV ART medication <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#45260-7)</span></td><td>in-progress</td><td>TDF/3TC/DTG <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></td></tr></table></blockquote><p><b>note</b>: Additional information regarding the ARV treatment prescribed (By Organization/HIVOrganizationExample @Feb 7, 2015, 6:28:17 PM)</p></div>"
+  ]; # 
+  fhir:CarePlan.status [ fhir:value "active"]; # 
+  fhir:CarePlan.intent [ fhir:value "plan"]; # 
+  fhir:CarePlan.subject [
+     fhir:link <http://openhie.org/fhir/hiv-cbs/Patient/HIVPatientExample>;
+     fhir:Reference.reference [ fhir:value "Patient/HIVPatientExample" ]
+  ]; # 
+  fhir:CarePlan.encounter [
+     fhir:link <http://openhie.org/fhir/hiv-cbs/Encounter/TargetFacilityEncounterExample>;
+     fhir:Reference.reference [ fhir:value "Encounter/TargetFacilityEncounterExample" ]
+  ]; # 
+  fhir:CarePlan.period [
+     fhir:Period.start [ fhir:value "2022-12-01"^^xsd:date ];
+     fhir:Period.end [ fhir:value "2022-12-01"^^xsd:date ]
+  ]; # 
+  fhir:CarePlan.activity [
+     fhir:index 0;
+     fhir:CarePlan.activity.detail [
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://openhie.org/fhir/hiv-cbs/StructureDefinition/art-regimen-line" ];
+         fhir:Extension.valueCodeableConcept [
+           fhir:CodeableConcept.coding [
+             fhir:index 0;
+             a sct:708255002;
+             fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+             fhir:Coding.code [ fhir:value "708255002" ]
+           ]
+         ]
+       ];
+       fhir:CarePlan.activity.detail.kind [ fhir:value "MedicationRequest" ];
+       fhir:CarePlan.activity.detail.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           a loinc:45260-7;
+           fhir:Coding.system [ fhir:value "http://loinc.org" ];
+           fhir:Coding.code [ fhir:value "45260-7" ]
+         ]
+       ];
+       fhir:CarePlan.activity.detail.status [ fhir:value "in-progress" ];
+       fhir:CarePlan.activity.detail.productCodeableConcept [
+         fhir:CodeableConcept.text [ fhir:value "TDF/3TC/DTG" ]
+       ]
+     ]
+  ]; # 
+  fhir:CarePlan.note [
+     fhir:index 0;
+     fhir:Annotation.authorReference [
+       fhir:link <http://openhie.org/fhir/hiv-cbs/Organization/HIVOrganizationExample>;
+       fhir:Reference.reference [ fhir:value "Organization/HIVOrganizationExample" ]
+     ];
+     fhir:Annotation.time [ fhir:value "2015-02-07T13:28:17-05:00"^^xsd:dateTime ];
+     fhir:Annotation.text [ fhir:value "Additional information regarding the ARV treatment prescribed" ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<http://openhie.org/fhir/hiv-cbs/CarePlan/ARVTreatmentExample.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

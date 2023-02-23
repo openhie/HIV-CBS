@@ -1,0 +1,70 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://openhie.org/fhir/hiv-cbs/ValueSet/vs-artregimen-lines> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "vs-artregimen-lines"]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/708255002\">708255002</a></td><td>First line treatment (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/708256001\">708256001</a></td><td>Second line treatment (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/708257005\">708257005</a></td><td>Third line treatment (procedure)</td></tr></table></li></ul></div>"
+  ]; # 
+  fhir:ValueSet.url [ fhir:value "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-artregimen-lines"]; # 
+  fhir:ValueSet.version [ fhir:value "0.2.0"]; # 
+  fhir:ValueSet.name [ fhir:value "VSARTRegimenLines"]; # 
+  fhir:ValueSet.title [ fhir:value "ART Regimen Lines"]; # 
+  fhir:ValueSet.status [ fhir:value "active"]; # 
+  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean]; # 
+  fhir:ValueSet.date [ fhir:value "2023-02-23T08:38:42+00:00"^^xsd:dateTime]; # 
+  fhir:ValueSet.publisher [ fhir:value "Jembi Health Systems"]; # 
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://www.jembi.org" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "info@jembi.org" ]
+     ]
+  ]; # 
+  fhir:ValueSet.description [ fhir:value "A list of ART regimen therapeutic lines."]; # 
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
+       fhir:Coding.code [ fhir:value "001" ]
+     ]
+  ]; # 
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "708255002" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "First line treatment (procedure)" ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "708256001" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Second line treatment (procedure)" ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "708257005" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Third line treatment (procedure)" ]
+       ]
+     ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<http://openhie.org/fhir/hiv-cbs/ValueSet/vs-artregimen-lines.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
