@@ -8,8 +8,8 @@
     <h3>How to Report</h3> <a name="how-to-report"> </a>
 
     <p>
-        HIV CBS is routinely generated individual-level information tha must be captured using a single case report containing information pertaining only to that person which forms a longitudinal record of treatment and care outcomes.
-        DISI's reference platform architecture provides a <a href="https://jembi.gitbook.io/disi-on-platform/" target="_blank">centralised data repository</a> that will enable implementers to monitor and measure the full spectrum of the disease from diagnosis to death.
+        HIV CBS is routinely generated individual-level information that must be captured using a single case report containing information pertaining only to that person which forms a longitudinal record of treatment and care outcomes.
+        DISI's reference platform architecture provides a <a href="https://jembi.gitbook.io/disi-on-platform/" target="_blank">centralized data repository</a> that will enable implementers to monitor and measure the full spectrum of the disease from diagnosis to death.
     </p>
    
     <p>Laboratory data elements must be reported in one or more of the following ways.</p>
@@ -17,10 +17,10 @@
     <ol>
         <li>
             Lab data can be submitted directly to an EMR electronically provided the communication stream adheres to country laws in regards to privacy &amp; confidentiality.
-            Lab results must be shared with the requesting organisation/provider or individual as applicable.
+            Lab results must be shared with the requesting organization/provider or individual as applicable.
         </li>
         <li>
-            Lab data can be submitted directly to a <a href="https://jembi.gitbook.io/disi-on-platform/" target="_blank">centralised data repository</a>, stripped of all personally identifiable information (<a href="https://piwik.pro/blog/what-is-pii-personal-data/" target="_blank">PII</a>) and later be routed to an analytics platform for reporting.
+            Lab data can be submitted directly to a <a href="https://jembi.gitbook.io/disi-on-platform/" target="_blank">centralized data repository</a>, stripped of all personally identifiable information (<a href="https://piwik.pro/blog/what-is-pii-personal-data/" target="_blank">PII</a>) and later be routed to an analytics platform for reporting.
         </li>
         <li>
             Lab data can be submitted to an EMR via a health information exchange (HIE). It will be the responsibility of the interoperability layer to facilitate the mediation of the message to the correct destination system. 
@@ -46,7 +46,7 @@
     <ul>
         <li><a href="ValueSet-vs-test-types.html">Test requested</a> (must use the LOINC code system for harmonization)</li>
         <li>Device ID</li>
-        <li>Test result - measured as copies per millilitre of blood (copies/mL)</li>
+        <li>Test result - measured as copies per milliliter of blood (copies/mL)</li>
         <li>Specimen ID</li>
         <li>Patient age</li>
             <ul>
@@ -97,7 +97,7 @@
             </ul>
         <li>Patient's transfer out date</li>
             <ul>
-                <li>Receiving organisation</li>
+                <li>Receiving organization</li>
             </ul>
         <li>Patient's date of death</li>
         <li>Patient's interruption in treatment (IIT)</li>
