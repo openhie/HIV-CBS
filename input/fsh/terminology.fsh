@@ -82,6 +82,7 @@ Description: "A list of HIV test types"
 * ^experimental = false
 * $LNC#25842-6 "HIV 2 proviral DNA [Presence] in Specimen by NAA with probe detection"   
 * $LNC#25836-8 "HIV 1 RNA [#/volume] (viral load) in Specimen by NAA with probe detection"
+* $LNC#24467-3 "CD3+CD4+ (T4 helper) cells [#/volume] in Blood"
 
 ValueSet: VSReasonForAssessmentOrTestNotPerformed
 Id: vs-reason-for-assessment-or-test-not-performed

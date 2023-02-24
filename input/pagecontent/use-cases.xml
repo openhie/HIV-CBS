@@ -51,7 +51,7 @@
     </p>
 
      <ul>
-        <li><strong>General Population</strong></li>
+        <li><strong>General Population:</strong> <a href="CodeSystem-cs-key-population-status.html#cs-key-population-status-General-Population"></a>General Population</li>
         <li><strong>Men who have sex with men (MSM):</strong> <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=472986005&amp;edition=MAIN/2023-01-31&amp;release=&amp;languages=en&amp;latestRedirect=false" target="_blank">472986005</a></li>
         <li><strong>Female sex worker (FSW):</strong> <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=159799000&amp;edition=MAIN/2023-01-31&amp;release=&amp;languages=en&amp;latestRedirect=false" target="_blank">159799000</a></li>
         <li><strong>Male sex worker (MSW):</strong> <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=159800001&amp;edition=MAIN/2023-01-31&amp;release=&amp;languages=en&amp;latestRedirect=false" target="_blank">159800001</a></li>
@@ -67,7 +67,7 @@
         Typically, this will only happen upon confirmation of blood sample examination.
         <br />
         <br />
-        In addition, this use case documents the <u>key</u> metadata associated with this sentinel event.
+        In addition, this use case documents metadata associated with this sentinel event.
     </p>
 
     <p class="heading">Enrolled Into Care</p>
@@ -81,6 +81,14 @@
 
     <ul>
         <li>Metadata</li>
+        <li>Unique ID at enrollment</li>
+        <li>Patient type at enrollment</li>
+         <ul>
+            <li><strong>New client:</strong> <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=185387006&amp;edition=MAIN/2023-01-31&amp;release=&amp;languages=en&amp;latestRedirect=false" target="_blank">185387006</a></li>
+            <li><strong>Transferred in:</strong> <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=309037001&amp;edition=MAIN/2023-01-31&amp;release=&amp;languages=en&amp;latestRedirect=false" target="_blank">309037001</a></li>
+            <li><strong>Re-enroll:</strong> <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=182837001&amp;edition=MAIN/2023-01-31&amp;release=&amp;languages=en&amp;latestRedirect=false" target="_blank">182837001</a></li>
+            <li><strong>Mother enrolled in PMTCT program:</strong> <a href="https://loinc.org/LA6505-7" target="_blank">LA6505-7</a></li>
+        </ul>
     </ul>
 
     <p class="heading">ART Initiation</p>
@@ -89,14 +97,37 @@
         The healthcare professional must be able to initiate an HIV positive patient onto a given ARV regimen and associate it with a specific therapeutic line.
         Therapeutic line is the term used to describe the order in which different therapies (ARV regimen) are given to patients as their disease progresses.
         An ARV regimen is a substance that kills or suppresses a retrovirus, such as HIV <a href="#ref1" id="citation1">(VA.gov | Veterans Affairs, 2019)</a>.
+        <br />
+        <br />
+        In addition, this use case includes the following <u>key</u> data.
     </p>
+
+     <ul>
+        <li>Metadata</li>
+        <li><strong>Patient refusal of treatments:</strong> <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=105480006&amp;edition=MAIN/2023-01-31&amp;release=&amp;languages=en&amp;latestRedirect=false" target="_blank">105480006</a></li>
+        <li><strong>Medication request:</strong> <a href="https://loinc.org/45260-7" target="_blank">45260-7</a></li>
+        <li>ARV regimen</li>
+        <li>ART therapeutic line</li>
+        <ul>
+            <li><strong>First line treatment:</strong> <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=708255002&amp;edition=MAIN/2023-01-31&amp;release=&amp;languages=en&amp;latestRedirect=false" target="_blank">708255002</a></li>
+            <li><strong>Second line treatment:</strong> <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=708256001&amp;edition=MAIN/2023-01-31&amp;release=&amp;languages=en&amp;latestRedirect=false" target="_blank">708256001</a></li>
+            <li><strong>Third line treatment:</strong> <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=708257005&amp;edition=MAIN/2023-01-31&amp;release=&amp;languages=en&amp;latestRedirect=false" target="_blank">708257005</a></li>
+        </ul>
+    </ul>
 
     <p class="heading">ART Regimen Switching</p>
         
     <p>
         The healthcare professional must be able to change the current ARV regimen to a new ARV regimen from any therapeutic line.
         A change in the ARV regimen is often necessary because of both acute and chronic toxicities, concomitant clinical conditions, and development of virologic failure <a href="#ref2" id="citation2">(Wilkin et al., 2006)</a>.
+        <br />
+        <br />
+        In addition, this use case includes the following <u>key</u> data.
     </p>
+
+    <ul>
+        <li>Same as the <u>ART Regimen Switching</u> use case</li>
+    </ul>
 
     <p class="heading">Viral Load Results - (First &amp; Subsequent)</p>
         
@@ -130,7 +161,18 @@
         
     <p>
         The healthcare professional must be able to document the event associated with the death of a patient.
+        <br />
+        <br />
+        In addition, this use case includes the following <u>key</u> data.
     </p>
+
+    <ul>
+        <li>Metadata</li>
+        <li>Outcome code</li>
+        <ul>
+            <li><strong>Death:</strong> <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=419099009&amp;edition=MAIN/2023-01-31&amp;release=&amp;languages=en&amp;latestRedirect=false" target="_blank">419099009</a></li>
+        </ul>
+    </ul>
 
     <p class="heading">HIV Recency Testing</p>
         
@@ -141,7 +183,33 @@
         <br />
         According to <a href="#ref5" id="citation5">Recency Learning Hub (n.d.)</a>, VL testing is highly recommended to be included when testing for recent infections as part of recent infection testing algorithm (RITA). 
         HIV recency testing should be offered as an additional test to clients who are confirmed as newly diagnosed with HIV-1 based on the national HIV testing algorithm <a href="#ref5">(Recency Learning Hub, n.d.)</a>.
+        <br />
+        <br />
+        In addition, this use case includes the following <u>key</u> data.
     </p>
+
+    <ul>
+        <li>Metadata</li>
+        <li>Test code</li>
+        <ul>
+            <li><strong>Rapid human immunodeficiency virus type 1 antibody test:</strong> <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=409788009&amp;edition=MAIN/2023-01-31&amp;release=&amp;languages=en&amp;latestRedirect=false" target="_blank">409788009</a></li>
+        </ul>
+        <li>Indication whether the HIV recency test was done</li>
+        <ul>
+            <li><strong>Yes:</strong> <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=373066001&amp;edition=MAIN/2023-01-31&amp;release=&amp;languages=en&amp;latestRedirect=false" target="_blank">373066001</a></li>
+            <li><strong>No:</strong> <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=373067005&amp;edition=MAIN/2023-01-31&amp;release=&amp;languages=en&amp;latestRedirect=false" target="_blank">373067005</a></li>
+            <li><strong>Unknown:</strong> <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=261665006&amp;edition=MAIN/2023-01-31&amp;release=&amp;languages=en&amp;latestRedirect=false" target="_blank">261665006</a></li>
+        </ul>
+        <li>HIV recency test result</li>
+        <ul>
+            <li><strong>Laboratory test finding:</strong> <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=118246004&amp;edition=MAIN/2023-01-31&amp;release=&amp;languages=en&amp;latestRedirect=false" target="_blank">118246004</a></li>
+        </ul>
+        <li>HIV recency status</li>
+        <ul>
+            <li><strong>Recent:</strong> <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=6493001&amp;edition=MAIN/2023-01-31&amp;release=&amp;languages=en&amp;latestRedirect=false" target="_blank">6493001</a></li>
+            <li><strong>Note recent:</strong> <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=307294006&amp;edition=MAIN/2023-01-31&amp;release=&amp;languages=en&amp;latestRedirect=false" target="_blank">307294006</a></li>
+        </ul>
+    </ul>
 
     <p class="heading">Submit lab order</p>
 
@@ -160,6 +228,7 @@
             <ul>
                 <li><strong>HIV 2 proviral DNA [Presence] in Specimen by NAA with probe detection:</strong> <a href="https://loinc.org/25842-6/" target="_blank">25842-6</a></li>
                 <li><strong>HIV 1 RNA [#/volume] (viral load) in Specimen by NAA with probe detection:</strong> <a href="https://loinc.org/25836-8/" target="_blank">25836-8</a></li>
+                <li><strong>CD3+CD4+ (T4 helper) cells [#/volume] in Blood:</strong> <a href="https://loinc.org/24467-3/" target="_blank">24467-3</a></li>
             </ul>
         <li>Reason for the test</li>
         <li>Specimen type</li>
