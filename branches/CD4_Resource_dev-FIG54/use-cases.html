@@ -1,0 +1,827 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>OPENHIE.FHIR.HIV.CBS\Use Cases - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/openhie.css" rel="stylesheet"/>
+<link href="assets/css/lforms.min.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"2.1.1"}
+    h3,h4,h5,h6{--heading-prefix:"2.1.1"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+<!-- Left logo - typically the publisher's logo - project or affiliate -->
+        <div id="project-nav">
+          <a id="project-logo" no-external="true" href="http://hl7.eu">
+            <img height="71" alt="Project home" src="assets/images/home.png"/>
+          </a>
+        </div>
+
+<!-- Right logo - for example the FHIR logo -->
+<!-- Make sure you have authorization to use the FHIR logo -->
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="70" alt="FHIR website" src="assets/images/fire.png"/> </a>
+        </div>
+
+<!-- search icon - if you want -->
+<!--
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+-->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">HIV Case-Based Surveillance</span>
+            <br/>
+            <span style="display:inline-block;">0.2.0 - CI Build
+
+
+
+  <img alt="International flag" src="assets/images/001.svg" height="16" title="International"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <style>
+    *,
+*::before,
+*::after {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.dropdown {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 100px;
+}
+
+.dropdown li {
+    position: relative;
+    z-index: 999;
+}
+
+.dropdown li a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+}
+
+.dropdown li ul {
+    position: absolute;
+    top: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: none;
+    line-height: normal;
+    background-color: #DDFFEE;
+}
+
+.dropdown li ul li a {
+    text-align: left;
+    color: black;
+    font-size: 12px;
+    padding: 10px;
+    display: block;
+    white-space: nowrap;
+}
+
+.dropdown li ul li ul {
+    left: 100%;
+    top: 0;
+}
+
+#mainMenuOptions li:hover>a {
+    background-color: #43A682;
+    color: white;
+    text-decoration: underline;
+    font-size: 13px;
+}
+
+#mainMenuOptions li:hover>ul {
+    display: block;
+}
+
+	.heading {
+    display: block;
+    font-family: verdana;
+    line-height: 1.2em;
+    font-size: 1.2em;
+    margin: 0 0 3px 0;
+    margin-top: 10px;
+    color: #337AB7;
+    background-color: white !important;
+}
+
+.not-allowed {
+    cursor: not-allowed !important;
+    text-decoration: none !important;
+}
+
+.pointer {
+    cursor: pointer;
+}
+</style>
+
+<ul id="mainMenuOptions" xmlns="http://www.w3.org/1999/xhtml" class="dropdown">
+	<li><a href="#" style="font-size: 12px; text-decoration: none;">Menu <b class="caret"></b></a>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="bussiness-description.html">Business Description <b class="caret" style="transform:rotate(270deg);"></b></a>
+				<ul>
+					<li>
+						<a href="requirements.html">Functional Requirements <b class="caret" style="transform:rotate(270deg);"></b></a>
+						<ul>
+							<li>
+								<a href="use-cases.html">Use Cases</a>
+							</li>
+						</ul>
+					</li>
+					<li><a href="personas.html">Personas</a></li>
+					<li><a href="workflows.html">Usage Workflows</a></li>
+				</ul>
+			</li>
+			<li><a href="deployment.html">Deployment &amp; Use <b class="caret" style="transform:rotate(270deg);"></b></a>
+				<ul>
+					<li><a href="bundles.html">Message Bundles <b class="caret" style="transform:rotate(270deg);"></b></a>
+						<ul>
+							<li>
+								<a href="emr-bundle.html">EMR</a>
+							</li>
+							<li>
+								<a href="lab-order-bundle.html">Lab Order</a>
+							</li>
+							<li>
+								<a href="lab-result-bundle.html">Lab Result</a>
+							</li>
+							<li>
+								<a href="lab-rejection-bundle.html">Lab Rejection</a>
+							</li>
+							<li>
+								<a href="lab-cancellation-bundle.html">Lab Cancellation</a>
+							</li>
+						</ul>
+					</li>
+					<li><a href="security-privacy.html">Security &amp; Privacy</a></li>
+					<li><a href="testing.html">Testing</a></li>
+				</ul>
+			</li>
+			
+			<li><a href="referenced-sources.html">References</a></li>
+			<li><a href="artifacts.html">Artifacts</a></li>
+			<li><a href="toc.html">Table of Contents</a></li>
+		</ul>
+    </li>
+</ul> 
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='bussiness-description.html'><b>Business Description</b></a></li><li><a href='requirements.html'><b>Functional Requirements</b></a></li><li><b>Use Cases</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">HIV Case-Based Surveillance, published by Jembi Health Systems. This is not an authorized publication; it is the continuous build for version 0.2.0). This version is based on the current content of <a href="https://github.com/openhie/HIV-CBS">https://github.com/openhie/HIV-CBS</a> and changes regularly. See the <a href="http://openhie.org/fhir/hiv-cbs/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Use Cases</h2>
+  
+  
+  
+  <div xmlns="http://www.w3.org/1999/xhtml" lang="en"><div class="markdown-toc"><p>Contents:</p><ul><li><a href="#1">Overview</a></li><li><a href="#2">Use Case Summary</a></li><li><a href="#3">References</a></li></ul></div>
+    <style>
+    .heading {
+    display: block;
+    font-family: verdana;
+    line-height: 1.2em;
+    font-size: 1.2em;
+    margin: 0 0 3px 0;
+    margin-top: 10px;
+    color: #337AB7;
+    background-color: white !important;
+}
+
+.not-allowed {
+    cursor: not-allowed !important;
+    text-decoration: none !important;
+}
+
+.pointer {
+    cursor: pointer;
+}
+  </style>
+
+    <a name="1"/><h3>Overview</h3> <a name="usecase-description">  </a>
+
+    <p>
+        The following uses cases have been identified for this implementation guide.
+    </p>
+
+    <p class="heading" id="use-case-diagram">Use Case Diagram</p>
+    <p/>
+    
+    <figure>
+        <?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="1311px" preserveAspectRatio="none" style="width:1543px;height:1311px;background:#FFFFFF;" version="1.1" viewBox="0 0 1543 1311" width="1543px" zoomAndPan="magnify"><defs/><g><!--MD5=[2caf110011a8ade4bad137ae4abd946e]
+cluster EMR--><g id="cluster_EMR"><rect fill="none" height="692" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:1.0;" width="560" x="193" y="118.55"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="31" x="457.5" y="134.0852">EMR</text></g><!--MD5=[65c07aa696f0c0abf1b42f55bef1ceca]
+cluster Laboratory--><g id="cluster_Laboratory"><rect fill="none" height="260" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:1.0;" width="1011.5" x="203.5" y="1045.55"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="77" x="670.75" y="1061.0852">Laboratory</text></g><!--MD5=[c4f146e7e0bb2ab052f683a5eaa91d46]
+cluster cdr--><g id="cluster_cdr"><rect fill="none" height="128" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:1.0;" width="230" x="915" y="693.55"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="203" x="928.5" y="709.0852">Centralised Data Repository</text></g><!--MD5=[406dfc753155caba3382a0c02f353a1f]
+cluster cr--><g id="cluster_cr"><rect fill="none" height="144" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:1.0;" width="315" x="872.5" y="861.55"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="108" x="976" y="877.0852">Client Registry</text></g><!--MD5=[6ddf9795535009af07f6e79791270a0d]
+cluster dm--><g id="cluster_dm"><rect fill="none" height="124" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:1.0;" width="209" x="1328" y="697.55"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="71" x="1397" y="713.0852">Data Mart</text></g><g id="elem_UC1"><ellipse cx="316.5403" cy="464.4581" fill="#F1F1F1" rx="72.5403" ry="16.9081" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="100" x="266.0432" y="467.8841">Register Client</text></g><g id="elem_UC2"><ellipse cx="316.2712" cy="539.3042" fill="#F1F1F1" rx="99.2712" ry="22.2542" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="162" x="235.2712" y="542.5953">ART Regimen Switching</text></g><g id="elem_UC3"><ellipse cx="316.3192" cy="613.4138" fill="#F1F1F1" rx="69.8192" ry="16.3638" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="93" x="267.9253" y="617.1873">ART Initiation</text></g><g id="elem_UC4"><ellipse cx="316.3318" cy="680.6164" fill="#F1F1F1" rx="65.8318" ry="15.5664" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="82" x="272.3318" y="684.6339">CD4 Results</text></g><g id="elem_UC5"><ellipse cx="316.3692" cy="749.5238" fill="#F1F1F1" rx="77.8692" ry="17.9738" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="113" x="259.8692" y="752.8149">Patient Outcome</text></g><g id="elem_UC6"><ellipse cx="316.5182" cy="180.4536" fill="#F1F1F1" rx="82.5182" ry="18.9036" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="124" x="254.5182" y="183.7447">Enrolled into Care</text></g><g id="elem_UC7"><ellipse cx="316.699" cy="251.4898" fill="#F1F1F1" rx="70.199" ry="16.4398" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="94" x="268.0115" y="255.2147">HIV Diagnosis</text></g><g id="elem_UC8"><ellipse cx="316.7394" cy="321.6979" fill="#F1F1F1" rx="81.2394" ry="18.6479" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="121" x="256.2394" y="324.9889">Viral Load Results</text></g><g id="elem_UC9"><ellipse cx="635.44" cy="321.638" fill="#F1F1F1" rx="93.44" ry="21.088" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="149" x="560.94" y="324.929">Subsequent Sampling</text></g><g id="elem_UC10"><ellipse cx="316.3148" cy="393.613" fill="#F1F1F1" rx="80.8148" ry="18.563" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="120" x="256.3148" y="396.904">Submit Lab Order</text></g><g id="elem_UC11"><ellipse cx="635.6434" cy="213.5787" fill="#F1F1F1" rx="88.1434" ry="20.0287" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="137" x="567.1434" y="216.8697">HIV Recency Testing</text></g><g id="elem_UC14"><ellipse cx="316.5911" cy="1262.3682" fill="#F1F1F1" rx="82.0911" ry="18.8182" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="123" x="255.0911" y="1265.6592">Sample Collection</text></g><g id="elem_UC15"><ellipse cx="316.5197" cy="1188.7539" fill="#F1F1F1" rx="89.0197" ry="20.2039" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="139" x="247.0197" y="1192.045">Process Lab Request</text></g><g id="elem_UC16"><ellipse cx="635.7221" cy="1117.6944" fill="#F1F1F1" rx="91.2221" ry="20.6444" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="144" x="563.7221" y="1120.9854">Document Lab Result</text></g><g id="elem_UC17"><ellipse cx="635.3692" cy="1263.5238" fill="#F1F1F1" rx="77.8692" ry="17.9738" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="113" x="578.8692" y="1266.8149">Reject Lab Order</text></g><g id="elem_UC18"><ellipse cx="635.4685" cy="1191.4437" fill="#F1F1F1" rx="79.9685" ry="18.3937" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="118" x="576.4685" y="1194.7347">Cancel Lab Order</text></g><g id="elem_UC19"><ellipse cx="1029.9728" cy="1218.6446" fill="#F1F1F1" rx="160.9728" ry="34.5946" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="293" x="883.4728" y="1221.9356">Document Reason For Not Performing Test</text></g><g id="elem_UC20"><ellipse cx="1029.7804" cy="757.6061" fill="#F1F1F1" rx="90.7804" ry="20.5561" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="143" x="958.2804" y="760.8971">Manage Clinical Data</text></g><g id="elem_UC21"><ellipse cx="1030.1719" cy="952.6844" fill="#F1F1F1" rx="133.6719" ry="29.1344" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="236" x="912.1719" y="955.9754">Manage Master Patient Index (MPI)</text></g><g id="elem_UC22"><ellipse cx="1432.3912" cy="759.5282" fill="#F1F1F1" rx="80.3912" ry="18.4782" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="119" x="1372.8912" y="762.8193">Generate Reports</text></g><!--MD5=[85f4524d246ccabf70fb7ac546369006]
+entity professional--><g id="elem_professional"><ellipse cx="72" cy="364.05" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><path d="M72,372.05 L72,399.05 M59,380.05 L85,380.05 M72,399.05 L59,414.05 M72,399.05 L85,414.05 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="132" x="6" y="429.0852">Health Professional</text></g><!--MD5=[bed5f9a2aca8d4dfc4757558722d4a3e]
+entity labAssistant--><g id="elem_labAssistant"><ellipse cx="72" cy="1199.05" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><path d="M72,1207.05 L72,1234.05 M59,1215.05 L85,1215.05 M72,1234.05 L59,1249.05 M72,1234.05 L85,1249.05 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="90" x="27" y="1264.0852">Lab Assistant</text></g><!--MD5=[4806f71af226774e476198568b04cfbd]
+entity iol--><g id="elem_iol"><ellipse cx="635.5" cy="843.05" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><path d="M635.5,851.05 L635.5,878.05 M622.5,859.05 L648.5,859.05 M635.5,878.05 L622.5,893.05 M635.5,878.05 L648.5,893.05 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="145" x="563" y="908.0852">Interoperability Layer</text></g><!--MD5=[3bbd0f9bb50975ee3cb0a847e628e35f]
+entity macthingAdmin--><g id="elem_macthingAdmin"><ellipse cx="635.5" cy="954.05" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><path d="M635.5,962.05 L635.5,989.05 M622.5,970.05 L648.5,970.05 M635.5,989.05 L622.5,1004.05 M635.5,989.05 L648.5,1004.05 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="162" x="554.5" y="1019.0852">Matching Administrator</text></g><!--MD5=[e4cba3338b0a4420f2b91f3e79e58e40]
+entity caseReporter--><g id="elem_caseReporter"><ellipse cx="1030" cy="602.05" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><path d="M1030,610.05 L1030,637.05 M1017,618.05 L1043,618.05 M1030,637.05 L1017,652.05 M1030,637.05 L1043,652.05 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="97" x="981.5" y="667.0852">Case Reporter</text></g><!--MD5=[bfebdc11b4dab418cb5ae2576e80d70b]
+link professional to UC1--><g id="link_professional_UC1"><path d="M138.47,417.17 C151.18,421.48 164.46,425.8 177,429.55 C203.18,437.37 232.47,444.94 257.36,451.03 " fill="none" id="professional-to-UC1" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="262.11,452.19,254.3154,446.1697,257.2526,451.0042,252.4181,453.9415,262.11,452.19" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[4da7f2d8ed95983b47cfac8214e485ba]
+link professional to UC2--><g id="link_professional_UC2"><path d="M102.54,431.87 C121.6,454.21 148.15,481.3 177,498.55 C194.46,508.99 214.75,516.93 234.34,522.91 " fill="none" id="professional-to-UC2" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="238.94,524.27,231.4375,517.8894,234.1439,522.8569,229.1764,525.5632,238.94,524.27" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[bd7034f632c2a4dc533eaba82c5b1adb]
+link professional to UC3--><g id="link_professional_UC3"><path d="M84.15,431.79 C98.57,474.37 127.85,542.12 177,579.55 C195.99,594.01 220.31,602.4 243.26,607.24 " fill="none" id="professional-to-UC3" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="247.89,608.16,239.8556,602.4636,242.9882,607.1739,238.2779,610.3065,247.89,608.16" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[a089187ba5aec8608c26d12eb053a987]
+link professional to UC4--><g id="link_professional_UC4"><path d="M77.68,431.74 C86.62,487.71 111.48,591.46 177,647.55 C195.79,663.63 221.05,672.19 244.85,676.64 " fill="none" id="professional-to-UC4" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="249.7,677.48,241.5185,671.9971,244.7739,676.6233,240.1477,679.8788,249.7,677.48" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[0310815b33dff4eeac79443da0b236f5]
+link professional to UC5--><g id="link_professional_UC5"><path d="M74.11,432.01 C78.2,499.14 96.52,637.76 177,713.55 C192.88,728.51 214.17,737.44 235.29,742.72 " fill="none" id="professional-to-UC5" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="240.05,743.84,232.185,737.912,235.179,742.7115,230.3794,745.7055,240.05,743.84" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[a31f451e9293c8f32da5b2d23fb365fb]
+link professional to UC6--><g id="link_professional_UC6"><path d="M85.67,355.33 C100.99,315.07 130.63,252.73 177,217.55 C194.14,204.54 215.51,196.1 236.28,190.62 " fill="none" id="professional-to-UC6" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="240.95,189.46,231.2486,187.7623,236.0993,190.6727,233.1889,195.5234,240.95,189.46" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[053fd3f6ab09428c32ef80ba113c097f]
+link professional to UC7--><g id="link_professional_UC7"><path d="M100.75,355.2 C119.7,331.73 146.77,302.96 177,285.55 C198.27,273.3 223.84,265.44 247.19,260.4 " fill="none" id="professional-to-UC7" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="251.9,259.43,242.276,257.3373,247.0038,260.4435,243.8976,265.1713,251.9,259.43" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[d28ff642dd429441b2d78e4b23784ec0]
+link professional to UC8--><g id="link_professional_UC8"><path d="M138.49,370 C151.2,365.68 164.47,361.34 177,357.55 C201.88,350.02 229.56,342.63 253.59,336.53 " fill="none" id="professional-to-UC8" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="258.15,335.38,248.4427,333.7159,253.3035,336.6095,250.4099,341.4703,258.15,335.38" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[9d8e63e670874bc3de8948c98379c467]
+link professional to UC9--><g id="link_professional_UC9"><path d="M76.15,355.33 C83.16,297.94 105.63,191.16 177,143.55 C265.37,84.6 314,113.89 416,143.55 C464.54,157.67 476.04,169.02 512,204.55 C529.36,221.71 525.42,232.64 542,250.55 C558.6,268.47 580.1,285.27 598.19,298.03 " fill="none" id="professional-to-UC9" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="601.96,300.65,596.8493,292.231,597.8532,297.798,592.2861,298.8019,601.96,300.65" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[5c23f88f658a7c36c3db1d9837bb45b0]
+link professional to UC10--><g id="link_professional_UC10"><path d="M138.3,393.55 C166.2,393.55 199.16,393.55 229.03,393.55 " fill="none" id="professional-to-UC10" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="233.85,393.55,224.85,389.55,228.85,393.55,224.85,397.55,233.85,393.55" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[94910a63d1553fb86c2bfba6eecc0aa1]
+link professional to UC11--><g id="link_professional_UC11"><path d="M73.35,355.14 C76.3,289.66 92.96,157.91 177,100.55 C315.53,6 525.56,135.34 603.76,190.62 " fill="none" id="professional-to-UC11" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="607.48,193.28,602.4701,184.8006,603.4075,190.3792,597.8288,191.3166,607.48,193.28" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[f2ac441e7b3fd549a6c6801e088e4a59]
+reverse link UC4 to UC9--><g id="link_UC4_UC9"><path d="M373.77,668.68 C388.48,663.78 403.66,656.97 416,647.55 C528.67,561.58 602.49,400.1 626.22,342.57 " fill="none" id="UC4-backto-UC9" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="369.39,670.07,379.1783,671.1601,374.1558,668.5575,376.7584,663.5349,369.39,670.07" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="64" x="447" y="545.1184">«extends»</text></g><!--MD5=[992c56ecf1ced6032554a8cf34d7aa5c]
+reverse link UC8 to UC9--><g id="link_UC8_UC9"><path d="M404.38,321.55 C446.93,321.55 498.2,321.55 541.54,321.55 " fill="none" id="UC8-backto-UC9" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="399.42,321.55,408.42,325.55,404.42,321.55,408.42,317.55,399.42,321.55" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="64" x="447" y="318.1184">«extends»</text></g><!--MD5=[771f78555a4e6c662fbb80d4764fb8c7]
+reverse link UC7 to UC11--><g id="link_UC7_UC11"><path d="M386.1,243.33 C436.38,237.3 504.69,229.11 556.96,222.85 " fill="none" id="UC7-backto-UC11" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="381.25,243.91,390.6644,246.8028,386.214,243.3109,389.7059,238.8604,381.25,243.91" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="64" x="447" y="226.1184">«extends»</text></g><!--MD5=[34d381eedb8ccadbc0a8444545915146]
+link labAssistant to UC14--><g id="link_labAssistant_UC14"><path d="M117.48,1234.79 C151.48,1239.55 199.17,1246.24 239.23,1251.86 " fill="none" id="labAssistant-to-UC14" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="244.09,1252.54,235.7377,1247.3209,239.1391,1251.8409,234.6191,1255.2423,244.09,1252.54" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[2310bbd90d52def0e36722a3f6e87ed6]
+link labAssistant to UC15--><g id="link_labAssistant_UC15"><path d="M117.48,1221.21 C150.96,1215.69 197.72,1207.98 237.39,1201.43 " fill="none" id="labAssistant-to-UC15" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="242.2,1200.64,232.6683,1198.1606,237.2669,1201.455,233.9724,1206.0536,242.2,1200.64" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[53c18909305255e08ec985690ddfe6d6]
+reverse link UC15 to UC16--><g id="link_UC15_UC16"><path d="M387.08,1172.97 C441.45,1160.79 516.45,1143.99 569.59,1132.09 " fill="none" id="UC15-backto-UC16" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="382.36,1174.02,392.0188,1175.9455,387.2379,1172.9218,390.2616,1168.1409,382.36,1174.02" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="64" x="447" y="1143.1184">«extends»</text></g><!--MD5=[e12d9a59f64df477d6c60ba2d48c57f2]
+reverse link UC15 to UC17--><g id="link_UC15_UC17"><path d="M385.24,1204.58 C443.3,1218.31 525.85,1237.84 579.79,1250.61 " fill="none" id="UC15-backto-UC17" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="380.47,1203.45,388.298,1209.4268,385.3339,1204.6087,390.152,1201.6446,380.47,1203.45" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="64" x="447" y="1215.1184">«extends»</text></g><!--MD5=[687ef2a769cc8fbf8bf7f91ba510f6f9]
+reverse link UC15 to UC18--><g id="link_UC15_UC18"><path d="M412.18,1189.45 C457.81,1189.88 511.92,1190.39 555.33,1190.8 " fill="none" id="UC15-backto-UC18" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="407.32,1189.4,416.2854,1193.477,412.3198,1189.4429,416.354,1185.4773,407.32,1189.4" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="64" x="447" y="1186.1184">«extends»</text></g><!--MD5=[b96f593c71fba68a3ee0d4ffe4694043]
+link UC18 to UC19--><g id="link_UC18_UC19"><path d="M712.64,1196.79 C757.4,1199.87 815.7,1203.88 870.04,1207.61 " fill="none" id="UC18-to-UC19" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="874.79,1207.94,866.0856,1203.332,869.8018,1207.597,865.5368,1211.3131,874.79,1207.94" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="60" x="778" y="1198.1184">«include»</text></g><!--MD5=[7c411a2aac3bd4fcae87f15fcb6c296a]
+link UC17 to UC19--><g id="link_UC17_UC19"><path d="M706.22,1255.56 C754.67,1250 821.06,1242.39 881.04,1235.51 " fill="none" id="UC17-to-UC19" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="885.69,1234.98,876.2921,1232.0339,880.7227,1235.551,877.2056,1239.9816,885.69,1234.98" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="60" x="778" y="1237.1184">«include»</text></g><!--MD5=[51cacb273e42540451b37874286b3f1d]
+link UC10 to Laboratory--><g id="link_UC10_Laboratory"><path d="M236.5,396.68 C204.04,402.8 171.03,416.73 157.5,447.05 C141.47,482.97 147.2,763.09 157.5,801.05 C175.235,866.42 213.0925,932.1625 247.4188,982.5787 C264.5819,1007.7869 280.8622,1029.1634 293.303,1044.7461 C293.4974,1044.9896 293.6908,1045.2316 293.8833,1045.4723 " fill="none" id="UC10-to-Laboratory" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="293.8833,1045.4723,291.3848,1035.9456,290.76,1041.5678,285.1377,1040.943,293.8833,1045.4723" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[ffaba8b9f42a2ef7461b95a4574b19e1]
+link UC16 to EMR--><g id="link_UC16_EMR"><path d="M603.59,1098.1 C583.51,1084.03 558.15,1063.37 542,1039.55 C518.33,1004.66 536.59,983.8 512,949.55 C480.895,906.23 433.2925,869.9425 392.9675,844.2588 C372.805,831.4169 354.4619,821.2259 340.91,814.1323 C339.216,813.2456 337.5969,812.4073 336.0584,811.6183 C335.6738,811.421 335.2943,811.2269 334.9198,811.0358 C334.7326,810.9402 334.5467,810.8455 334.362,810.7515 " fill="none" id="UC16-to-EMR" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="334.362,810.7515,340.5679,818.3992,338.8179,813.0198,344.1972,811.2698,334.362,810.7515" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="62" x="448" y="880.1184">Lab result</text></g><!--MD5=[2991bdf992fb7b18586074358bcef827]
+link iol to cdr--><g id="link_iol_cdr"><path d="M714.79,860.78 C771.135,852.31 848.1025,840.74 911.7575,831.1713 C927.6712,828.7791 942.753,826.512 956.4724,824.4496 C959.9023,823.934 963.247,823.4313 966.4983,822.9425 C968.1239,822.6982 969.7262,822.4573 971.3041,822.2201 C972.0931,822.1015 972.8759,821.9838 973.6526,821.8671 C974.0409,821.8087 974.4276,821.7506 974.8128,821.6927 " fill="none" id="iol-cdr" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="974.8128,821.6927,965.3182,819.075,969.8684,822.4359,966.5074,826.9861,974.8128,821.6927" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="709.99,861.5,719.4845,864.118,714.9345,860.7569,718.2956,856.2068,709.99,861.5" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="40" x="788" y="840.1184">HTTPS</text></g><!--MD5=[d23e741388bad012a3534bf82a1da7e5]
+link EMR to iol--><g id="link_EMR_iol"><path d="M354.0603,810.6236 C354.6128,810.7457 355.1703,810.8688 355.7327,810.993 C360.2316,811.9866 365.0442,813.0494 370.1242,814.1712 C380.2842,816.4149 391.5137,818.8947 403.4425,821.5288 C451.1575,832.065 510.06,845.07 556.45,855.31 " fill="none" id="EMR-iol" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="561.28,856.38,553.362,850.5229,556.3991,855.2953,551.6266,858.3324,561.28,856.38" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="354.0603,810.6236,361.986,816.4704,358.9427,811.7019,363.7112,808.6586,354.0603,810.6236" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="57" x="450.5" y="828.1184">EMR data</text></g><!--MD5=[0b7c36cf0c6fb9a65fa811ca56230e90]
+link Laboratory to iol--><g id="link_Laboratory_iol"><path d="M388.2295,1045.3303 C388.5341,1045.1953 388.8393,1045.0598 389.145,1044.9238 C428.275,1027.515 475.955,1002.31 512,970.55 C529.48,955.14 524.93,943.42 542,927.55 C546.82,923.07 552.06,918.78 557.52,914.72 " fill="none" id="Laboratory-iol" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="561.37,911.93,551.7348,913.9704,557.3208,914.8632,556.4279,920.4491,561.37,911.93" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="388.2295,1045.3303,398.0783,1045.3397,392.8005,1043.304,394.8362,1038.0261,388.2295,1045.3303" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="53" x="452.5" y="967.1184">Lab data</text></g><!--MD5=[fdb44ddcdecbad69fafeab140b46ad63]
+link macthingAdmin to UC21--><g id="link_macthingAdmin_UC21"><path d="M716.88,977.2 C768.92,973.09 837.89,967.64 897.76,962.92 " fill="none" id="macthingAdmin-to-UC21" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="902.39,962.55,893.1083,959.2561,897.4049,962.9357,893.7253,967.2323,902.39,962.55" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[bfa5fa7131f7f5cf103e7646e557b347]
+link iol to cr--><g id="link_iol_cr"><path d="M714.59,875.93 C734.91,876.79 756.77,877.72 777,878.55 C804.56,879.685 833.8169,880.8669 862.2664,882.0039 C864.0445,882.075 865.8194,882.1459 867.5906,882.2166 C868.4762,882.2519 869.3609,882.2872 870.2445,882.3224 C870.6863,882.3401 871.1279,882.3577 871.5692,882.3753 " fill="none" id="iol-cr" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="871.5692,882.3753,862.7357,878.0199,866.5731,882.1761,862.4169,886.0135,871.5692,882.3753" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="709.85,875.72,718.6705,880.1017,714.8454,875.9341,719.013,872.109,709.85,875.72" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="40" x="788" y="875.1184">HTTPS</text></g><!--MD5=[21e25c03627f8a873b1fd8e53710f956]
+link caseReporter to UC22--><g id="link_caseReporter_UC22"><path d="M1078.91,646.86 C1154.19,670.92 1299.65,717.41 1378.16,742.5 " fill="none" id="caseReporter-to-UC22" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="1382.71,743.96,1375.3473,737.4186,1377.9456,742.4434,1372.9207,745.0417,1382.71,743.96" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[a5d55c278f90994c9923b0999686fcf3]
+link cdr to dm--><g id="link_cdr_dm"><path d="M1145.9808,813.55 C1147.3894,813.55 1148.8049,813.55 1150.227,813.55 C1153.0712,813.55 1155.9416,813.55 1158.8354,813.55 C1181.9852,813.55 1206.6272,813.55 1231.2688,813.55 C1255.9103,813.55 1280.5515,813.55 1303.6998,813.55 C1309.4869,813.55 1315.1806,813.55 1320.7578,813.55 C1322.1521,813.55 1323.5391,813.55 1324.9184,813.55 C1325.6081,813.55 1326.2958,813.55 1326.9816,813.55 " fill="none" id="cdr-to-dm" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="1326.9816,813.55,1317.9816,809.55,1321.9816,813.55,1317.9816,817.55,1326.9816,813.55" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="63" x="1240" y="810.1184">Push Data</text></g><!--MD5=[9f74507ba4c5de429b9ead8eee9af94d]
+link cr to dm--><g id="link_cr_dm"><path d="M1181.7253,861.2932 C1182.1933,861.2074 1182.6618,861.1215 1183.1306,861.0356 C1185.0061,860.6918 1186.8883,860.3466 1188.7766,860.0001 C1196.3294,858.6142 1203.9789,857.2073 1211.6823,855.7869 C1242.4963,850.105 1274.175,844.205 1304,838.55 C1331.925,833.255 1363.2475,827.115 1387.8587,822.245 C1388.6279,822.0928 1389.3904,821.9419 1390.1461,821.7922 C1390.5239,821.7174 1390.9001,821.6429 1391.2744,821.5687 " fill="none" id="cr-to-dm" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="1391.2744,821.5687,1381.6687,819.3938,1386.3697,822.5403,1383.2232,827.2414,1391.2744,821.5687" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="63" x="1240" y="835.1184">Push Data</text></g><!--MD5=[74b4b478605f28ca88cb621bb9747af0]
+@startuml UseCaseDiagram
+left to right direction
+actor "Health Professional" as professional
+rectangle EMR {
+  usecase "Register Client" as UC1
+  usecase "ART Regimen Switching" as UC2
+  usecase "ART Initiation" as UC3
+  usecase "CD4 Results" as UC4
+  usecase "Patient Outcome" as UC5
+  usecase "Enrolled into Care" as UC6
+  usecase "HIV Diagnosis" as UC7
+  usecase "Viral Load Results" as UC8
+  usecase "Subsequent Sampling" as UC9
+  usecase "Submit Lab Order" as UC10
+  usecase "HIV Recency Testing" as UC11
+}
+
+professional - -> UC1
+professional - -> UC2
+professional - -> UC3
+professional - -> UC4
+professional - -> UC5
+professional - -> UC6
+professional - -> UC7
+professional - -> UC8
+professional - -> UC9
+professional - -> UC10
+professional - -> UC11
+
+(UC4) <.. (UC9) : "<<extends>>"
+(UC8) <.. (UC9) : "<<extends>>"
+(UC7) <.. (UC11) : "<<extends>>"
+
+
+actor "Lab Assistant" as labAssistant
+rectangle Laboratory {
+  usecase "Sample Collection" as UC14
+  usecase "Process Lab Request" as UC15
+  usecase "Document Lab Result" as UC16
+  usecase "Reject Lab Order" as UC17
+  usecase "Cancel Lab Order" as UC18
+  usecase "Document Reason For Not Performing Test" as UC19
+}
+
+labAssistant - -> UC14
+labAssistant - -> UC15
+
+
+(UC15) <.. (UC16) : "<<extends>>"
+(UC15) <.. (UC17) : "<<extends>>"
+(UC15) <.. (UC18) : "<<extends>>"
+
+(UC18) ..> (UC19) : "<<include>>"
+(UC17) ..> (UC19) : "<<include>>"
+
+(UC10) ..> Laboratory
+
+(UC16) ..> EMR : "Lab result"
+
+actor "Interoperability Layer" as iol
+rectangle "Centralised Data Repository" as cdr {
+  usecase "Manage Clinical Data" as UC20
+}
+
+iol <- -> cdr : "HTTPS"
+
+EMR <..> iol : "EMR data"
+Laboratory <..> iol : "Lab data"
+
+
+actor "Matching Administrator" as macthingAdmin
+rectangle "Client Registry" as cr {
+  usecase "Manage Master Patient Index (MPI)" as UC21
+}
+
+macthingAdmin - -> UC21
+
+iol <- -> cr : "HTTPS"
+
+actor "Case Reporter" as caseReporter
+rectangle "Data Mart" as dm {
+  usecase "Generate Reports" as UC22
+}
+
+caseReporter - -> UC22
+
+cdr - -> dm : "Push Data"
+cr - -> dm : "Push Data"
+
+@enduml
+
+PlantUML version 1.2022.7(Mon Aug 22 19:01:30 SAST 2022)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: GB
+--></g></svg>
+        <figcaption>Use Case Diagram</figcaption>
+    </figure>
+
+   <p class="heading">Use Case Context</p>
+
+    <p>
+        This use case supports integration between the EMR and lab systems in order to effectively process lab requests and have the results returned to the EMR for diagnosis.
+        <br/>
+        <br/>
+        In addition, this use case illustrates the need for a Centralized Data Repository (DR) and a Client Registry (CR) to enable regional and/or national HIV case reporting. 
+        <br/>
+        <br/>
+        The <a href="index.html#technicalBackground">technical specification documentation</a> for the Data Integration Strategies &amp; Implementation reference platform identifies the following technologies for the two aforementioned centralized repositories.
+    </p>
+    <ol>
+        <li><strong>DR:</strong> <a href="https://hapifhir.io/hapi-fhir/docs/getting_started/introduction.html" target="_blank">HAPI FHIR</a></li>
+        <li><strong>CR:</strong> <a href="https://jembi.gitbook.io/jembi-platform/packages/client-registry-santempi" target="_blank">SanteMPI</a></li>
+    </ol>
+
+    <blockquote class="stu-note">
+        <ul>
+            <li>The <a href="#use-case-summary">use case summary</a> is limited to the <a href="bundles.html">specification</a> for this implementation guide and will not discuss the architectural components for the DR, CR and Data Mart.</li>
+            <li>For more information regarding the implementation of a the architectural components, please see the <a href="index.html#technicalBackground">technical specification documentation</a>.</li>
+        </ul>
+    </blockquote>
+
+    <a name="2"/><h3 id="use-case-summary">Use Case Summary</h3> <a name="usecase-summary">  </a>
+    <p class="heading">Register Client</p>
+
+    <p>
+        Before an individual can be screened and assessed (diagnosis) for Human immunodeficiency virus (HIV), the individual must be registered into the EMR at the assessing facility/organization.
+        <br/>
+        <br/>
+        In addition, this use case documents the HIV Key Population associated with this sentinel event.
+    </p>
+
+     <ul>
+        <li><strong>General Population:</strong> <a href="CodeSystem-cs-key-population-status.html#cs-key-population-status-General-Population">General Population</a></li>
+        <li><strong>Men who have sex with men (MSM):</strong> <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=472986005&amp;edition=MAIN/2023-01-31&amp;release=&amp;languages=en&amp;latestRedirect=false" target="_blank">472986005</a></li>
+        <li><strong>Female sex worker (FSW):</strong> <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=159799000&amp;edition=MAIN/2023-01-31&amp;release=&amp;languages=en&amp;latestRedirect=false" target="_blank">159799000</a></li>
+        <li><strong>Male sex worker (MSW):</strong> <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=159800001&amp;edition=MAIN/2023-01-31&amp;release=&amp;languages=en&amp;latestRedirect=false" target="_blank">159800001</a></li>
+        <li><strong>Persons who inject drugs (PWID):</strong> <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=228388006&amp;edition=MAIN/2023-01-31&amp;release=&amp;languages=en&amp;latestRedirect=false" target="_blank">228388006</a></li>
+        <li><strong>People who use drugs (PWUD):</strong> <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=417284009&amp;edition=MAIN/2023-01-31&amp;release=&amp;languages=en&amp;latestRedirect=false" target="_blank">417284009</a></li>
+        <li><strong>Transgender:</strong> <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=407375002&amp;edition=MAIN/2023-01-31&amp;release=&amp;languages=en&amp;latestRedirect=false" target="_blank">407375002</a></li>
+    </ul>
+
+    <p class="heading">HIV Diagnosis</p>
+
+    <p>
+        The healthcare professional must be able to document the HIV infection status (HIV positive or negative) for an individual.
+        Typically, this will only happen upon confirmation of blood sample examination.
+        <br/>
+        <br/>
+        In addition, this use case documents metadata associated with this sentinel event.
+    </p>
+
+    <p class="heading">Enrolled Into Care</p>
+
+    <p>
+        The healthcare professional must be able to enroll a HIV positive individual into an Antiretroviral Therapy (ART) program as fast as possible so that Antiretroviral (ARV) treatment can commence.
+        <br/>
+        <br/>
+        In addition, this use case includes the following <u>key</u> data.
+    </p>
+
+    <ul>
+        <li>Metadata</li>
+        <li>Unique ID at enrollment</li>
+        <li>Patient type at enrollment</li>
+         <ul>
+            <li><strong>New client:</strong> <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=185387006&amp;edition=MAIN/2023-01-31&amp;release=&amp;languages=en&amp;latestRedirect=false" target="_blank">185387006</a></li>
+            <li><strong>Transferred in:</strong> <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=309037001&amp;edition=MAIN/2023-01-31&amp;release=&amp;languages=en&amp;latestRedirect=false" target="_blank">309037001</a></li>
+            <li><strong>Re-enroll:</strong> <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=182837001&amp;edition=MAIN/2023-01-31&amp;release=&amp;languages=en&amp;latestRedirect=false" target="_blank">182837001</a></li>
+            <li><strong>Mother enrolled in PMTCT program:</strong> <a href="https://loinc.org/LA6505-7" target="_blank">LA6505-7</a></li>
+        </ul>
+    </ul>
+
+    <p class="heading">ART Initiation</p>
+
+    <p>
+        The healthcare professional must be able to initiate an HIV positive patient onto a given ARV regimen and associate it with a specific therapeutic line.
+        Therapeutic line is the term used to describe the order in which different therapies (ARV regimen) are given to patients as their disease progresses.
+        An ARV regimen is a substance that kills or suppresses a retrovirus, such as HIV <a href="#ref1" id="citation1">(VA.gov | Veterans Affairs, 2019)</a>.
+        <br/>
+        <br/>
+        In addition, this use case includes the following <u>key</u> data.
+    </p>
+
+     <ul>
+        <li>Metadata</li>
+        <li><strong>Patient refusal of treatments:</strong> <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=105480006&amp;edition=MAIN/2023-01-31&amp;release=&amp;languages=en&amp;latestRedirect=false" target="_blank">105480006</a></li>
+        <li><strong>Medication request:</strong> <a href="https://loinc.org/45260-7" target="_blank">45260-7</a></li>
+        <li>ARV regimen</li>
+        <li>ART therapeutic line</li>
+        <ul>
+            <li><strong>First line treatment:</strong> <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=708255002&amp;edition=MAIN/2023-01-31&amp;release=&amp;languages=en&amp;latestRedirect=false" target="_blank">708255002</a></li>
+            <li><strong>Second line treatment:</strong> <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=708256001&amp;edition=MAIN/2023-01-31&amp;release=&amp;languages=en&amp;latestRedirect=false" target="_blank">708256001</a></li>
+            <li><strong>Third line treatment:</strong> <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=708257005&amp;edition=MAIN/2023-01-31&amp;release=&amp;languages=en&amp;latestRedirect=false" target="_blank">708257005</a></li>
+        </ul>
+    </ul>
+
+    <p class="heading">ART Regimen Switching</p>
+        
+    <p>
+        The healthcare professional must be able to change the current ARV regimen to a new ARV regimen from any therapeutic line.
+        A change in the ARV regimen is often necessary because of both acute and chronic toxicities, concomitant clinical conditions, and development of virologic failure <a href="#ref2" id="citation2">(Wilkin et al., 2006)</a>.
+        <br/>
+        <br/>
+        In addition, this use case includes the following <u>key</u> data.
+    </p>
+
+    <ul>
+        <li>Same as the <u>ART Regimen Switching</u> use case</li>
+    </ul>
+
+    <p class="heading">Viral Load Results - (First &amp; Subsequent)</p>
+        
+    <p>
+        The healthcare professional must be able to retrospectively capture the viral load (VL) results for first and follow-up examinations.
+        In addition, should there be laboratory integration with the EMR, the laboratory system must be able to automatically document the VL count to the patient record in the EMR.
+        <br/>
+        <br/>
+        According to <a href="#ref3" id="citation3">Moncivaiz (2021)</a>, VL examinations typically take place at the following frequencies.
+    </p>
+
+    <ol>
+        <li>When first diagnosed with HIV.</li>
+        <li>Within 2 months if there is a change in ARV regimen.</li>
+        <li>Every 1 to 2 months until the VL is no longer detectable (virally suppressed).</li>
+        <li>Every 3 to 4 months while ART remains stable and the viral load remains suppressed.</li>
+        <li>Every 6 months after 2 years while VL remains undetectable, and CD4 counts are over 500 cells/mm3.</li>
+    </ol>
+
+    <p class="heading">CD4 Results - (First &amp; Subsequent)</p>
+        
+    <p>
+        The healthcare professional must be able to retrospectively capture the CD4 results for first and follow-up examinations.
+        In addition, should there be laboratory integration with the EMR, the laboratory system must be able to automatically document the CD4 count to the patient record in the EMR.
+        <br/>
+        <br/>
+        According to <a href="#ref4" id="citation4">Medlineplus (2022)</a>, a CD4 count is conducted with every VL examination. It is used to determine if the patient's current ARV regimen is stable or requires a regimen switch.
+    </p>
+
+    <p class="heading">Patient Outcome</p>
+        
+    <p>
+        The healthcare professional must be able to document the event associated with the death of a patient.
+        <br/>
+        <br/>
+        In addition, this use case includes the following <u>key</u> data.
+    </p>
+
+    <ul>
+        <li>Metadata</li>
+        <li>Outcome code</li>
+        <ul>
+            <li><strong>Death:</strong> <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=419099009&amp;edition=MAIN/2023-01-31&amp;release=&amp;languages=en&amp;latestRedirect=false" target="_blank">419099009</a></li>
+        </ul>
+    </ul>
+
+    <p class="heading">HIV Recency Testing</p>
+        
+    <p>
+        The healthcare professional must be able to retrospectively capture the VL result for a HIV recency examination.
+        In addition, should there be laboratory integration with the EMR, the laboratory system must be able to automatically document the VL count to the patient record in the EMR.
+        <br/>
+        <br/>
+        According to <a href="#ref5" id="citation5">Recency Learning Hub (n.d.)</a>, VL testing is highly recommended to be included when testing for recent infections as part of recent infection testing algorithm (RITA). 
+        HIV recency testing should be offered as an additional test to clients who are confirmed as newly diagnosed with HIV-1 based on the national HIV testing algorithm <a href="#ref5">(Recency Learning Hub, n.d.)</a>.
+        <br/>
+        <br/>
+        In addition, this use case includes the following <u>key</u> data.
+    </p>
+
+    <ul>
+        <li>Metadata</li>
+        <li>Test code</li>
+        <ul>
+            <li><strong>Rapid human immunodeficiency virus type 1 antibody test:</strong> <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=409788009&amp;edition=MAIN/2023-01-31&amp;release=&amp;languages=en&amp;latestRedirect=false" target="_blank">409788009</a></li>
+        </ul>
+        <li>Indication whether the HIV recency test was done</li>
+        <ul>
+            <li><strong>Yes:</strong> <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=373066001&amp;edition=MAIN/2023-01-31&amp;release=&amp;languages=en&amp;latestRedirect=false" target="_blank">373066001</a></li>
+            <li><strong>No:</strong> <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=373067005&amp;edition=MAIN/2023-01-31&amp;release=&amp;languages=en&amp;latestRedirect=false" target="_blank">373067005</a></li>
+            <li><strong>Unknown:</strong> <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=261665006&amp;edition=MAIN/2023-01-31&amp;release=&amp;languages=en&amp;latestRedirect=false" target="_blank">261665006</a></li>
+        </ul>
+        <li>HIV recency test result</li>
+        <ul>
+            <li><strong>Laboratory test finding:</strong> <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=118246004&amp;edition=MAIN/2023-01-31&amp;release=&amp;languages=en&amp;latestRedirect=false" target="_blank">118246004</a></li>
+        </ul>
+        <li>HIV recency status</li>
+        <ul>
+            <li><strong>Recent:</strong> <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=6493001&amp;edition=MAIN/2023-01-31&amp;release=&amp;languages=en&amp;latestRedirect=false" target="_blank">6493001</a></li>
+            <li><strong>Note recent:</strong> <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=307294006&amp;edition=MAIN/2023-01-31&amp;release=&amp;languages=en&amp;latestRedirect=false" target="_blank">307294006</a></li>
+        </ul>
+    </ul>
+
+    <p class="heading">Submit lab order</p>
+
+    <p>
+        The healthcare professional must be able to submit a request from the EMR for a sample to be collected and examined at the laboratory. 
+        <br/>
+        <br/>
+
+        A lab request, in the context of this implementation guide, will typically contain the following <u>key</u> data. 
+    </p>
+
+     <ul>
+        <li>Metadata</li>
+        <li>Order number</li>
+        <li>Test requested code</li>
+            <ul>
+                <li><strong>HIV 2 proviral DNA [Presence] in Specimen by NAA with probe detection:</strong> <a href="https://loinc.org/25842-6/" target="_blank">25842-6</a></li>
+                <li><strong>HIV 1 RNA [#/volume] (viral load) in Specimen by NAA with probe detection:</strong> <a href="https://loinc.org/25836-8/" target="_blank">25836-8</a></li>
+                <li><strong>CD3+CD4+ (T4 helper) cells [#/volume] in Blood:</strong> <a href="https://loinc.org/24467-3/" target="_blank">24467-3</a></li>
+            </ul>
+        <li>Reason for the test</li>
+        <li>Specimen type</li>
+            <ul>
+                <li><strong>Plasma:</strong> <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=119361006&amp;edition=MAIN/2023-01-31&amp;release=&amp;languages=en&amp;latestRedirect=false" target="_blank">119361006</a></li>
+                <li><strong>Dried blood spot:</strong> <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=440500007&amp;edition=MAIN/2023-01-31&amp;release=&amp;languages=en&amp;latestRedirect=false" target="_blank">440500007</a></li>
+                <li><strong>Oral fluid:</strong> <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=441620008&amp;edition=MAIN/2023-01-31&amp;release=&amp;languages=en&amp;latestRedirect=false" target="_blank">441620008</a></li>
+                <li><strong>Whole blood:</strong> <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=258580003&amp;edition=MAIN/2023-01-31&amp;release=&amp;languages=en&amp;latestRedirect=false" target="_blank">258580003</a></li>
+                <li><strong>Serum:</strong> <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=119364003&amp;edition=MAIN/2023-01-31&amp;release=&amp;languages=en&amp;latestRedirect=false" target="_blank">119364003</a></li>
+            </ul>
+        <li>Specimen ID</li>
+    </ul>
+
+    <p class="heading">Sample Collection</p>
+
+    <p>
+        A lab assistant must be able to collect samples that have been submitted for testing from the EMR.
+        <br/>
+        <br/>
+
+        Sample collection in the context of this implementation guide, will typically contain the following <u>key</u> data. 
+    </p>
+
+    <ul>
+        <li>Metadata</li>
+        <li>Sample collection date &amp; time</li>
+        <li>Specimen type</li>
+            <ul>
+                <li>Same as the <u>submit lab order</u> use case</li>
+            </ul>
+        <li>Specimen ID</li>
+    </ul>
+
+    <p class="heading">Process Lab Request</p>
+
+    <p>
+        A lab assistant must be able to close the request for sample examination using one of the following three statuses.
+    </p>
+
+    <ol>
+        <li>The specimen was successfully examined and the result issued (<a href="lab-result-bundle.html">lab result</a>)</li>
+        <li>The request for sample examination was cancelled by the lab order requester (<a href="lab-cancellation-bundle.html">lab cancellation</a>)</li>
+        <li>The specimen examination was rejected by the lab performer without carrying out any part of the test (<a href="lab-rejection-bundle.html">lab rejection</a>)</li>
+    </ol>
+
+    <p>
+        Process lab request in the context of this implementation guide, will typically contain the following <u>key</u> data. 
+    </p>
+
+    <ul>
+        <li>Metadata</li>
+        <li>Order number</li>
+        <li>Reason for not performing test</li>
+            <ul>
+                <li>Only applicable for lab cancellations and lab rejections</li>
+            </ul>
+        <li>Output code</li>
+            <ul>
+                <li>Only applicable to lab orders that have been successfully examined and issued with a result</li>
+                <li>Currently, the code of <a href="ValueSet-vs-vl-result-code.html">Human immunodeficiency virus-1 nucleic acid assay</a> represents the successful completion of a lab order</li>
+            </ul>
+        <li>Test requested code</li>
+            <ul>
+                <li>Same as the <u>submit lab order</u> use case</li>
+            </ul>
+        <li>Specimen ID</li>
+            <ul>
+                <li>Same as the <u>sample collection</u> use case</li>
+            </ul>
+        <li>Specimen type</li>
+            <ul>
+                <li>Same as the <u>submit lab order</u> use case</li>
+            </ul>
+        <li>Result code</li>
+            <ul>
+                <li>Only applicable to lab orders that have been successfully examined and issued with a result</li>
+                <li>Codes</li>
+                <ul>
+                    <li><strong>Human immunodeficiency virus infection:</strong> <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=86406008&amp;edition=MAIN/2023-01-31&amp;release=&amp;languages=en&amp;latestRedirect=false" target="_blank">86406008</a></li>
+                </ul>
+            </ul>
+    </ul>
+
+    <a name="3"/><h3>References</h3> <a name="references">  </a>
+
+    <div>
+        <ol>
+            <li id="ref4">Medlineplus. (2022, August 22). CD4 Lymphocyte Count. National Library of Medicine. Retrieved February 23, 2023, from https://medlineplus.gov/lab-tests/cd4-lymphocyte-count/#:~:text=A%20CD4%20count%20is%20used,which%20means%20you%20have%20AIDS</li>
+            <li id="ref3">Moncivaiz, A. (2021, October 5). CD4 vs. Viral Load: What’s in a Number? Healthline. https://www.healthline.com/health/hiv-aids/cd4-viral-count</li>
+            <li id="ref5">Recency Learning Hub. (n.d.). https://trace-recency.org/</li>
+            <li id="ref1">VA.gov | Veterans Affairs. (2019). https://www.hiv.va.gov/provider/glossary/index.asp</li>
+            <li id="ref2">Wilkin, T., Gulick, R.M. and International Association of Physicians in AIDS Care (2006) Switching antiretroviral therapy: Why, when and how - thebodypro. Available at: https://www.thebodypro.com/article/switching-antiretroviral-therapy-why (Accessed: February 23, 2023).</li>
+            
+        </ol>
+    </div>
+</div>
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+           
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2019+ <a style="color: #81BEF7" href="https://www.jembi.org">Jembi Health Systems</a>.  Package openhie.fhir.hiv.cbs#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Feb 24, 2023 14:37+0000">2023-02-24</span>
+          <br/>
+          <span style="color: #FFFF77">
+                      Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
+                 <a style="color: #81BEF7" href="qa.html">QA Report</a> |
+                 
+                 <a style="color: #81BEF7" target="_blank" href="http://openhie.org/fhir/hiv-cbs/history.html">Version History</a> |
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC-BY" src="assets/images/cc-by.png" height="17"/></a> |
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+  <!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

@@ -1,0 +1,50 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "vs-vl-suppression",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/245780008\">245780008</a></td><td>Suppressed (qualifier value)</td></tr><tr><td><a href=\"http://snomed.info/id/19032002\">19032002</a></td><td>Uncontrolled (qualifier value)</td></tr><tr><td><a href=\"http://snomed.info/id/261665006\">261665006</a></td><td>Unknown (qualifier value)</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-vl-suppression",
+  "version" : "0.2.0",
+  "name" : "VSVLSuppression",
+  "title" : "Viral Load Suppressions Status",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2023-02-24T14:37:07+00:00",
+  "publisher" : "Jembi Health Systems",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.jembi.org"
+    },
+    {
+      "system" : "email",
+      "value" : "info@jembi.org"
+    }]
+  }],
+  "description" : "Describes a patient's current viral load status.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "245780008",
+        "display" : "Suppressed (qualifier value)"
+      },
+      {
+        "code" : "19032002",
+        "display" : "Uncontrolled (qualifier value)"
+      },
+      {
+        "code" : "261665006",
+        "display" : "Unknown (qualifier value)"
+      }]
+    }]
+  }
+}
