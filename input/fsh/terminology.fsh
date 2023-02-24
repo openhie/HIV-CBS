@@ -165,3 +165,17 @@ Description:  "A list of options used to provide an answer"
 * $SCT#373066001 "Yes"
 * $SCT#373067005 "No"
 * $SCT#261665006 "Unknown"
+
+ValueSet: VSCD4Percentage
+Id: vs-cd4-percentage
+Title: "CD4 percentage code"
+Description:  "A list of CD4 percentage codes"
+* ^experimental = false 
+* $SCT#313938009 "CD4 percent count (procedure)" 
+
+ValueSet: VSCD4Count
+Id: vs-cd4-count
+Title: "CD4 test result code"
+Description:  "A list of CD4 test result codes"
+* ^experimental = false
+* $SCT#151271000119102 "Abnormal blood test (finding)"  

@@ -377,3 +377,34 @@ Description: "HIV Recency Test Result example"
 * note.authorReference = Reference(HIVOrganizationExample)
 * note.time = "2015-02-07T13:28:17-05:00"
 * performer = Reference(HIVOrganizationExample)
+
+Instance: CD4PercentageExample
+InstanceOf: CD4Percentage
+Usage: #example
+Title: "CD4 Percentage Observation Example"
+Description: "CD4 Percentage Observation Example"
+* status = #final
+* code = $SCT#313938009
+* subject = Reference(HIVPatientExample)
+* encounter = Reference(TargetFacilityEncounterExample)
+* effectiveDateTime = "2022-12-10"
+* valueQuantity.value  = 45.23
+* note.text = "Additional information regarding the CD4 Percentage"
+* note.authorReference = Reference(HIVOrganizationExample)
+* note.time = "2015-02-07T13:28:17-05:00"
+
+Instance: CD4TestResultExample
+InstanceOf: CD4TestResult
+Usage: #example
+Title: "Absolute CD4 Count Example"
+Description:  "Absolute CD4 Count Example"
+* status = #final
+* code = $SCT#151271000119102
+* subject = Reference(HIVPatientExample)
+* encounter = Reference(TargetFacilityEncounterExample)
+* effectiveDateTime =  "2022-12-10"  
+* valueInteger  = 250
+* derivedFrom   = Reference(CD4PercentageExample)
+* note.text = "Additional information regarding the CD4 Count"
+* note.authorReference = Reference(HIVOrganizationExample)
+* note.time = "2015-02-07T13:28:17-05:00"
