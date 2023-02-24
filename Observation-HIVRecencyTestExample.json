@@ -1,0 +1,38 @@
+{
+  "resourceType" : "Observation",
+  "id" : "HIVRecencyTestExample",
+  "meta" : {
+    "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-recency-test"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"HIVRecencyTestExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;HIVRecencyTestExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-recency-test.html\">HIV Recency Test</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Rapid HIV-1 antibody test <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#409788009)</span></p><p><b>subject</b>: <a href=\"Patient-HIVPatientExample.html\">Patient/HIVPatientExample</a> &quot; SMITH&quot;</p><p><b>encounter</b>: <a href=\"Encounter-TargetFacilityEncounterExample.html\">Encounter/TargetFacilityEncounterExample</a></p><p><b>effective</b>: 2022-12-10</p><p><b>value</b>: Recent <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-cs-hiv-recency-status.html\">HIV Recency Testing Status</a>#Recent)</span></p><p><b>note</b>: Additional information regarding the HIV recency test (By Organization/HIVOrganizationExample @Feb 7, 2015, 6:28:17 PM)</p></div>"
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "409788009"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/HIVPatientExample"
+  },
+  "encounter" : {
+    "reference" : "Encounter/TargetFacilityEncounterExample"
+  },
+  "effectiveDateTime" : "2022-12-10",
+  "valueCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-hiv-recency-status",
+      "code" : "Recent"
+    }]
+  },
+  "note" : [{
+    "authorReference" : {
+      "reference" : "Organization/HIVOrganizationExample"
+    },
+    "time" : "2015-02-07T13:28:17-05:00",
+    "text" : "Additional information regarding the HIV recency test"
+  }]
+}

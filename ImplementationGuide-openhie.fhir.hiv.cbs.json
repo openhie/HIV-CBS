@@ -11,7 +11,7 @@
   "title" : "HIV Case-Based Surveillance",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2023-02-24T12:58:33+00:00",
+  "date" : "2023-02-24T14:04:00+00:00",
   "publisher" : "Jembi Health Systems",
   "contact" : [{
     "telecom" : [{
@@ -641,13 +641,24 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
+        "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "ValueSet/vs-hiv-recency-test-result"
+        "reference" : "Observation/CD4TestResultExample"
       },
-      "name" : "Recency HIV Test Result",
-      "description" : "A list of HIV recency test result codes."
+      "name" : "Example Observation - CD4TestResultExample",
+      "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-cd4-test"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/HIVRecencyTestExample"
+      },
+      "name" : "Example Observation - HIVRecencyTestExample",
+      "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-recency-test"
     },
     {
       "extension" : [{
@@ -670,17 +681,6 @@
       },
       "name" : "Example Bundle - LabCancellation",
       "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-lab-task"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/HIVRecencyTestResultExample"
-      },
-      "name" : "Example Observation - HIVRecencyTestResultExample",
-      "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-recency-test-result"
     },
     {
       "extension" : [{
@@ -861,6 +861,17 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/hiv-cd4-test"
+      },
+      "name" : "Absolute CD4 Count",
+      "description" : "This profile is for recording the Patient's CD4 Count"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Bundle"
       }],
       "reference" : {
@@ -879,6 +890,17 @@
       },
       "name" : "Transferring Facility Encounter",
       "description" : "This profile represents the facility the patient is being transferred from"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/CD4PercentageExample"
+      },
+      "name" : "Example Observation - CD4PercentageExample",
+      "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-cd4-percentage"
     },
     {
       "extension" : [{
@@ -993,6 +1015,17 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/hiv-cd4-percentage"
+      },
+      "name" : "CD4 Percentage Observation",
+      "description" : "This profile is for recording the patient's CD4 percentage"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "DiagnosticReport"
       }],
       "reference" : {
@@ -1044,6 +1077,17 @@
       },
       "name" : "Example Bundle - LabResult",
       "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-lab-task"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vs-cd4-percentage"
+      },
+      "name" : "CD4 percentage code",
+      "description" : "A list of CD4 percentage codes"
     },
     {
       "extension" : [{
@@ -1114,13 +1158,13 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
+        "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "ValueSet/vs-yes-no"
+        "reference" : "CodeSystem/cs-hiv-recency-status"
       },
-      "name" : "Yes No Unknown",
-      "description" : "A list of options used to provide an answer"
+      "name" : "HIV Recency Testing Status",
+      "description" : "A list of HIV recency statuses"
     },
     {
       "extension" : [{
@@ -1246,17 +1290,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/HIVRecencyTestDoneExample"
-      },
-      "name" : "Example Observation - HIVRecencyTestDoneExample",
-      "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-recency-test-done"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
@@ -1268,6 +1301,17 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vs-cd4-count"
+      },
+      "name" : "CD4 test result code",
+      "description" : "A list of CD4 test result codes"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Practitioner"
       }],
       "reference" : {
@@ -1275,17 +1319,6 @@
       },
       "name" : "Example Practitioner - PractitionerExample",
       "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-practitioner"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/hiv-recency-test-done"
-      },
-      "name" : "HIV Recency Test",
-      "description" : "This profile is to record the HIV recency testing data for a patient."
     },
     {
       "extension" : [{
@@ -1326,10 +1359,10 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/hiv-recency-test-result"
+        "reference" : "StructureDefinition/hiv-recency-test"
       },
-      "name" : "HIV Recency Test Result",
-      "description" : "This profile is to record the HIV recency test result data for a patient."
+      "name" : "HIV Recency Test",
+      "description" : "This profile is to record the HIV recency testing data for a patient."
     },
     {
       "extension" : [{

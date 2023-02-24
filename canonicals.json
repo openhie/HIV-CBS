@@ -1,5 +1,12 @@
 [
   {
+    "id" : "cs-hiv-recency-status",
+    "type" : "CodeSystem",
+    "url" : "http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-hiv-recency-status",
+    "version" : "0.2.0",
+    "name" : "CSHIVRecencyStatus"
+  },
+  {
     "id" : "cs-key-population-status",
     "type" : "CodeSystem",
     "url" : "http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-key-population-status",
@@ -56,6 +63,20 @@
     "name" : "HIVCareNextAppointment"
   },
   {
+    "id" : "hiv-cd4-percentage",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-cd4-percentage",
+    "version" : "0.2.0",
+    "name" : "CD4Percentage"
+  },
+  {
+    "id" : "hiv-cd4-test",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-cd4-test",
+    "version" : "0.2.0",
+    "name" : "CD4TestResult"
+  },
+  {
     "id" : "hiv-diagnosis",
     "type" : "StructureDefinition",
     "url" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-diagnosis",
@@ -105,18 +126,11 @@
     "name" : "HIVPractitioner"
   },
   {
-    "id" : "hiv-recency-test-done",
+    "id" : "hiv-recency-test",
     "type" : "StructureDefinition",
-    "url" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-recency-test-done",
+    "url" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-recency-test",
     "version" : "0.2.0",
-    "name" : "HIVRecencyTestDone"
-  },
-  {
-    "id" : "hiv-recency-test-result",
-    "type" : "StructureDefinition",
-    "url" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-recency-test-result",
-    "version" : "0.2.0",
-    "name" : "HIVRecencyTestResult"
+    "name" : "HIVRecencyTest"
   },
   {
     "id" : "hiv-service-request-location",
@@ -182,6 +196,20 @@
     "name" : "VSCarePlanActivityOutcome"
   },
   {
+    "id" : "vs-cd4-count",
+    "type" : "ValueSet",
+    "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-cd4-count",
+    "version" : "0.2.0",
+    "name" : "VSCD4Count"
+  },
+  {
+    "id" : "vs-cd4-percentage",
+    "type" : "ValueSet",
+    "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-cd4-percentage",
+    "version" : "0.2.0",
+    "name" : "VSCD4Percentage"
+  },
+  {
     "id" : "vs-condition",
     "type" : "ValueSet",
     "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-condition",
@@ -208,13 +236,6 @@
     "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-hiv-recency-test",
     "version" : "0.2.0",
     "name" : "VSHIVRecencyTest"
-  },
-  {
-    "id" : "vs-hiv-recency-test-result",
-    "type" : "ValueSet",
-    "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-hiv-recency-test-result",
-    "version" : "0.2.0",
-    "name" : "VSHIVRecencyTestResult"
   },
   {
     "id" : "vs-hiv-test-done",
@@ -271,12 +292,5 @@
     "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-vl-suppression",
     "version" : "0.2.0",
     "name" : "VSVLSuppression"
-  },
-  {
-    "id" : "vs-yes-no",
-    "type" : "ValueSet",
-    "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-yes-no",
-    "version" : "0.2.0",
-    "name" : "VSYesNoUnknown"
   }
 ]
