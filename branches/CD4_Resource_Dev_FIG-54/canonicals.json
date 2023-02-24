@@ -63,6 +63,20 @@
     "name" : "HIVCareNextAppointment"
   },
   {
+    "id" : "hiv-cd4-percentage",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-cd4-percentage",
+    "version" : "0.2.0",
+    "name" : "CD4Percentage"
+  },
+  {
+    "id" : "hiv-cd4-test",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-cd4-test",
+    "version" : "0.2.0",
+    "name" : "CD4TestResult"
+  },
+  {
     "id" : "hiv-diagnosis",
     "type" : "StructureDefinition",
     "url" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-diagnosis",
@@ -180,6 +194,20 @@
     "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-careplan-outcome",
     "version" : "0.2.0",
     "name" : "VSCarePlanActivityOutcome"
+  },
+  {
+    "id" : "vs-cd4-count",
+    "type" : "ValueSet",
+    "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-cd4-count",
+    "version" : "0.2.0",
+    "name" : "VSCD4Count"
+  },
+  {
+    "id" : "vs-cd4-percentage",
+    "type" : "ValueSet",
+    "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-cd4-percentage",
+    "version" : "0.2.0",
+    "name" : "VSCD4Percentage"
   },
   {
     "id" : "vs-condition",
