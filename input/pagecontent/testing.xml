@@ -31,7 +31,7 @@
                 <li><em>End-to-end testing</em></li>
                 <ol>
                     <li>
-                        To ensure that data is moving along the pipeline from the PoS system to the analytics platform in a timeous fashion and that both target systems (<a href="https://hapifhir.io/hapi-fhir/docs/getting_started/introduction.html" target="_blank">Central Data Repository</a> &amp; <a href="https://jembi.gitbook.io/jembi-platform/packages/client-registry-santempi" target="_blank">Client Registry</a>) represent data that is accurate and correct. 
+                        To ensure that data is moving along the pipeline from the point of service (PoS) system to the analytics platform in a timeous fashion and that both target systems (<a href="https://hapifhir.io/hapi-fhir/docs/getting_started/introduction.html" target="_blank">Central Data Repository</a> &amp; <a href="https://jembi.gitbook.io/jembi-platform/packages/client-registry-santempi" target="_blank">Client Registry</a>) represent data that is accurate and correct. 
                         The key objective of this test is to ensure the availability of data and data quality.
                     </li>
                 </ol>

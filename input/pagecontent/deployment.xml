@@ -11,7 +11,7 @@
         specifies the minimum required data elements per FHIR resource and also has control over which data elements are mandatory.
         <br />
         <br />
-        Systems must be able to talk the same lanuguage otherwise important information will be lost...
+        Systems must be able to talk the same language otherwise important information will be lost...
     </p>
 
     <p class="heading">Prerequisites</p>
@@ -21,7 +21,7 @@
     </p>
 
     <ol>
-        <li><strong>Define a minimum dataset (MDS)</strong>: Identifify the informational requirements for specific use cases. I.e., what data elements are needed by the EMR and lab systems to be interoperable with regards to data availability?</li>
+        <li><strong>Define a minimum dataset (MDS)</strong>: Identify the informational requirements for specific use cases. I.e., what data elements are needed by the EMR and lab systems to be interoperable with regards to data availability?</li>
         <li><strong>Map the MDS fields to FHIR elements</strong>: Identify the appropriate FHIR resources and their data elements and establish a mapping with the MDS data elements.</li>
     </ol>
 
@@ -34,7 +34,7 @@
     <ol>
         <li><a href="https://desktop.github.com/" target="_blank">GitHub Desktop</a></li>
         <li><a href="https://code.visualstudio.com/download" target="_blank">Visual Studio Code</a>: A code editor.</li>
-        <li><a href="https://nodejs.org/en/download/" target="_blank">NodeJS</a>: A Runtime enviornment.</li>
+        <li><a href="https://nodejs.org/en/download/" target="_blank">NodeJS</a>: A Runtime environment.</li>
         <li>
             <a href="https://github.com/FHIR/sushi" target="_blank">Sushi</a>: Enables FHIR shorthand which greatly reduces the complexities associated with implementation guide development.
             <br />
@@ -59,7 +59,7 @@
 
         <blockquote class="stu-note">
             <ul>
-                <li>The OpenHIE Github space only permits authorised accounts to create new implementation guides.</li>
+                <li>The OpenHIE Github space only permits authorized accounts to create new implementation guides.</li>
                 <li>Assistance may be required by the OpenHIE community to assist with the process of getting an implementation guide published.</li>
             </ul>
         </blockquote>
@@ -88,7 +88,7 @@
             <blockquote class="stu-note">
                 <ul>
                     <li>The aforementioned template is already packaged with <a href="https://github.com/FHIR/sushi" target="_blank">Sushi</a>.</li>
-                    <li>Continous integration is already configured into the build and deployment process.</li>
+                    <li>Continuous integration is already configured into the build and deployment process.</li>
                 </ul>
             </blockquote>
         </li>
@@ -142,7 +142,7 @@
             <ul>
                 <li>The output\qa.html report is a critical tool to inform quality and correctness of an implementation guide!</li>
                 <li>The implementation guide must be free of all errors!</li>
-                <li>There may be a need to silence uneccessary warnings. Follow the instructions in the file "<strong>ignoreWarnings.txt</strong>".</li>
+                <li>There may be a need to silence unnecessary warnings. Follow the instructions in the file "<strong>ignoreWarnings.txt</strong>".</li>
             </ul>
         </blockquote>
     </p>
