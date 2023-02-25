@@ -3,7 +3,7 @@
 
 err = 0, warn = 4, info = 0
 IG Publisher Version: 1.2.38
-Generated Fri Feb 24 14:54:36 UTC 2023. FHIR version 4.0.1 for openhie.fhir.hiv.cbs#0.2.0 (canonical = http://openhie.org/fhir/hiv-cbs)
+Generated Sat Feb 25 15:23:08 UTC 2023. FHIR version 4.0.1 for openhie.fhir.hiv.cbs#0.2.0 (canonical = http://openhie.org/fhir/hiv-cbs)
  Build Errors : 0 / 4 / 0
  /github/workspace/fsh-generated/resources/Bundle-EMR : 0 / 0 / 19
  /github/workspace/fsh-generated/resources/Bundle-LabCancellation : 0 / 0 / 3
@@ -19,7 +19,6 @@ Generated Fri Feb 24 14:54:36 UTC 2023. FHIR version 4.0.1 for openhie.fhir.hiv.
  /github/workspace/fsh-generated/resources/Encounter-TransferringFacilityEncounterExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/EpisodeOfCare-HIVEpisodeOfCareExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Location-HIVServiceRequestLocationExample : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/Observation-CD4PercentageExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Observation-CD4TestResultExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Observation-DateHIVTestDoneExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Observation-DeathExample : 0 / 0 / 1
@@ -37,7 +36,6 @@ Generated Fri Feb 24 14:54:36 UTC 2023. FHIR version 4.0.1 for openhie.fhir.hiv.
  /github/workspace/fsh-generated/resources/StructureDefinition-death : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-hiv-arv-treatment : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-hiv-care-next-visit : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-hiv-cd4-percentage : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-hiv-cd4-test : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-hiv-diagnosis : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-hiv-diagnostic-report : 0 / 0 / 1
@@ -98,7 +96,6 @@ WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in 
 == fsh-generated/resources/Encounter-TransferringFacilityEncounterExample.json ==
 == fsh-generated/resources/EpisodeOfCare-HIVEpisodeOfCareExample.json ==
 == fsh-generated/resources/Location-HIVServiceRequestLocationExample.json ==
-== fsh-generated/resources/Observation-CD4PercentageExample.json ==
 == fsh-generated/resources/Observation-CD4TestResultExample.json ==
 == fsh-generated/resources/Observation-DateHIVTestDoneExample.json ==
 == fsh-generated/resources/Observation-DeathExample.json ==
@@ -116,7 +113,6 @@ WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in 
 == fsh-generated/resources/StructureDefinition-death.json ==
 == fsh-generated/resources/StructureDefinition-hiv-arv-treatment.json ==
 == fsh-generated/resources/StructureDefinition-hiv-care-next-visit.json ==
-== fsh-generated/resources/StructureDefinition-hiv-cd4-percentage.json ==
 == fsh-generated/resources/StructureDefinition-hiv-cd4-test.json ==
 == fsh-generated/resources/StructureDefinition-hiv-diagnosis.json ==
 == fsh-generated/resources/StructureDefinition-hiv-diagnostic-report.json ==

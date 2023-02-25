@@ -18,7 +18,7 @@
   ]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"CD4TestResultExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;CD4TestResultExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-cd4-test.html\">Absolute CD4 Count</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Blood test measurement abnormal <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#151271000119102)</span></p><p><b>subject</b>: <a href=\"Patient-HIVPatientExample.html\">Patient/HIVPatientExample</a> &quot; SMITH&quot;</p><p><b>encounter</b>: <a href=\"Encounter-TargetFacilityEncounterExample.html\">Encounter/TargetFacilityEncounterExample</a></p><p><b>effective</b>: 2022-12-10</p><p><b>value</b>: 250</p><p><b>note</b>: Additional information regarding the CD4 Count (By Organization/HIVOrganizationExample @Feb 7, 2015, 6:28:17 PM)</p><p><b>derivedFrom</b>: <a href=\"Observation-CD4PercentageExample.html\">Observation/CD4PercentageExample</a></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"CD4TestResultExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;CD4TestResultExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-cd4-test.html\">Absolute CD4 Count and CD4 percentage</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Blood test measurement abnormal <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#151271000119102)</span></p><p><b>subject</b>: <a href=\"Patient-HIVPatientExample.html\">Patient/HIVPatientExample</a> &quot; SMITH&quot;</p><p><b>encounter</b>: <a href=\"Encounter-TargetFacilityEncounterExample.html\">Encounter/TargetFacilityEncounterExample</a></p><p><b>effective</b>: 2022-12-10</p><p><b>performer</b>: <a href=\"Organization-HIVOrganizationExample.html\">Organization/HIVOrganizationExample</a> &quot;HIV Test Services Health Facility&quot;</p><p><b>value</b>: 650</p><p><b>note</b>: Additional information regarding the CD4 Count (By Organization/HIVOrganizationExample @Feb 7, 2015, 6:28:17 PM)</p><h3>Components</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>Percentage CD4 count <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#313938009)</span></td><td>45.23</td></tr></table></div>"
   ]; # 
   fhir:Observation.status [ fhir:value "final"]; # 
   fhir:Observation.code [
@@ -38,7 +38,12 @@
      fhir:Reference.reference [ fhir:value "Encounter/TargetFacilityEncounterExample" ]
   ]; # 
   fhir:Observation.effectiveDateTime [ fhir:value "2022-12-10"^^xsd:date]; # 
-  fhir:Observation.valueInteger [ fhir:value "250"^^xsd:integer]; # 
+  fhir:Observation.performer [
+     fhir:index 0;
+     fhir:link <http://openhie.org/fhir/hiv-cbs/Organization/HIVOrganizationExample>;
+     fhir:Reference.reference [ fhir:value "Organization/HIVOrganizationExample" ]
+  ]; # 
+  fhir:Observation.valueInteger [ fhir:value "650"^^xsd:integer]; # 
   fhir:Observation.note [
      fhir:index 0;
      fhir:Annotation.authorReference [
@@ -48,10 +53,19 @@
      fhir:Annotation.time [ fhir:value "2015-02-07T13:28:17-05:00"^^xsd:dateTime ];
      fhir:Annotation.text [ fhir:value "Additional information regarding the CD4 Count" ]
   ]; # 
-  fhir:Observation.derivedFrom [
+  fhir:Observation.component [
      fhir:index 0;
-     fhir:link <http://openhie.org/fhir/hiv-cbs/Observation/CD4PercentageExample>;
-     fhir:Reference.reference [ fhir:value "Observation/CD4PercentageExample" ]
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a sct:313938009;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:Coding.code [ fhir:value "313938009" ]
+       ]
+     ];
+     fhir:Observation.component.valueQuantity [
+       fhir:Quantity.value [ fhir:value "45.23"^^xsd:decimal ]
+     ]
   ] . # 
 
 # - ontology header ------------------------------------------------------------

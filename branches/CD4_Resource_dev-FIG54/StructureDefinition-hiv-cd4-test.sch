@@ -14,9 +14,11 @@
     <sch:rule context="f:Observation">
       <sch:assert test="count(f:subject) &gt;= 1">subject: minimum cardinality of 'subject' is 1</sch:assert>
       <sch:assert test="count(f:encounter) &gt;= 1">encounter: minimum cardinality of 'encounter' is 1</sch:assert>
+      <sch:assert test="count(f:performer) &gt;= 1">performer: minimum cardinality of 'performer' is 1</sch:assert>
+      <sch:assert test="count(f:performer) &lt;= 1">performer: maximum cardinality of 'performer' is 1</sch:assert>
       <sch:assert test="count(f:note) &lt;= 1">note: maximum cardinality of 'note' is 1</sch:assert>
-      <sch:assert test="count(f:derivedFrom) &gt;= 1">derivedFrom: minimum cardinality of 'derivedFrom' is 1</sch:assert>
-      <sch:assert test="count(f:derivedFrom) &lt;= 1">derivedFrom: maximum cardinality of 'derivedFrom' is 1</sch:assert>
+      <sch:assert test="count(f:component) &gt;= 1">component: minimum cardinality of 'component' is 1</sch:assert>
+      <sch:assert test="count(f:component) &lt;= 1">component: maximum cardinality of 'component' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
 </sch:schema>
