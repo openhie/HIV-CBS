@@ -320,7 +320,7 @@ Description: "This profile is for recording the patient's CD4 percentage."
 * effectiveDateTime 1..1
 * performer 1..1
 * valueQuantity 1..1
-* derivedFrom only Reference(Observation) MS
+* derivedFrom only Reference(Observation)
 * note 0..1
 
 Profile: CD4TestResult
