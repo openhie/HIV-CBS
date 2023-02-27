@@ -1,0 +1,57 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "vs-patient-enrollment-type",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/185387006\">185387006</a></td><td>New patient consultation (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/309037001\">309037001</a></td><td>Transfer status (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/182837001\">182837001</a></td><td>Restart of medication (procedure)</td></tr></table></li><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"https://loinc.org/LA6505-7/\">LA6505-7</a></td><td>PMTCT</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-patient-enrollment-type",
+  "version" : "0.2.0",
+  "name" : "VSPatientEnrollmentType",
+  "title" : "Patient Type at Enrolment",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2023-02-27T09:43:15+00:00",
+  "publisher" : "Jembi Health Systems",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.jembi.org"
+    },
+    {
+      "system" : "email",
+      "value" : "info@jembi.org"
+    }]
+  }],
+  "description" : "A list of Patient Types at Enrolment",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "185387006",
+        "display" : "New patient consultation (procedure)"
+      },
+      {
+        "code" : "309037001",
+        "display" : "Transfer status (finding)"
+      },
+      {
+        "code" : "182837001",
+        "display" : "Restart of medication (procedure)"
+      }]
+    },
+    {
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "LA6505-7",
+        "display" : "PMTCT"
+      }]
+    }]
+  }
+}
