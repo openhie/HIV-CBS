@@ -311,8 +311,8 @@ Description: "This profile is to record the HIV recency test result data for a p
 Profile: CD4Percentage
 Parent: Observation
 Id: hiv-cd4-percentage
-Title: "CD4 Percentage Observation"
-Description: "This profile is for recording the patient's CD4 percentage"
+Title: "CD4 Percentage"
+Description: "This profile is for recording the patient's CD4 percentage."
 * status = #final
 * code from VSCD4Percentage (required)
 * subject 1..1 
@@ -327,7 +327,7 @@ Profile: CD4TestResult
 Parent: Observation
 Id: hiv-cd4-test
 Title: "Absolute CD4 Count"
-Description: "This profile is for recording the Patient's CD4 Count"
+Description: "This profile is for recording the Patient's CD4 Count."
 * status = #final
 * code from VSCD4Count (required)
 * subject 1..1 
