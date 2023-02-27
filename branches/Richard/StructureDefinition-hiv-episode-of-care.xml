@@ -16,9 +16,9 @@
   <url value="http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-episode-of-care"/>
   <version value="0.2.0"/>
   <name value="HIVEpisodeOfCare"/>
-  <title value="HIV Episode Of Care"/>
+  <title value="Patient Enrollment Type"/>
   <status value="active"/>
-  <date value="2023-02-25T14:44:55+00:00"/>
+  <date value="2023-02-27T07:20:27+00:00"/>
   <publisher value="Jembi Health Systems"/>
   <contact>
     <telecom>
@@ -30,7 +30,7 @@
       <value value="info@jembi.org"/>
     </telecom>
   </contact>
-  <description value="This profile is to record the patient HIV Management Programme Enrollment details."/>
+  <description value="This profile is used to record the enrolment type at the time of the encounter."/>
   <jurisdiction>
     <coding>
       <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>

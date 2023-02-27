@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "TargetFacilityEncounter"]; # 
   fhir:StructureDefinition.title [ fhir:value "Target Facility Encounter"]; # 
   fhir:StructureDefinition.status [ fhir:value "active"]; # 
-  fhir:StructureDefinition.date [ fhir:value "2023-02-25T14:44:55+00:00"^^xsd:dateTime]; # 
+  fhir:StructureDefinition.date [ fhir:value "2023-02-27T07:20:27+00:00"^^xsd:dateTime]; # 
   fhir:StructureDefinition.publisher [ fhir:value "Jembi Health Systems"]; # 
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -31,7 +31,7 @@
        fhir:ContactPoint.value [ fhir:value "info@jembi.org" ]
      ]
   ]; # 
-  fhir:StructureDefinition.description [ fhir:value "This profile represents the facility the patient is being transferred to"]; # 
+  fhir:StructureDefinition.description [ fhir:value "This profile represents the current facility at which the patient is receiving treatment."]; # 
   fhir:StructureDefinition.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [
@@ -455,7 +455,7 @@
        fhir:ElementDefinition.path [ fhir:value "Encounter.extension" ];
        fhir:ElementDefinition.sliceName [ fhir:value "next-visit" ];
        fhir:ElementDefinition.short [ fhir:value "Next Appointment Date" ];
-       fhir:ElementDefinition.definition [ fhir:value "A date representing the patient's next scheduled appointment" ];
+       fhir:ElementDefinition.definition [ fhir:value "A date representing the patient's next scheduled appointment." ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.base [

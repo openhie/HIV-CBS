@@ -24,7 +24,7 @@
   <name value="ARVTreatment"/>
   <title value="ARV Treatment"/>
   <status value="active"/>
-  <date value="2023-02-25T14:44:55+00:00"/>
+  <date value="2023-02-27T07:20:27+00:00"/>
   <publisher value="Jembi Health Systems"/>
   <contact>
     <telecom>
@@ -36,7 +36,7 @@
       <value value="info@jembi.org"/>
     </telecom>
   </contact>
-  <description value="This profile is to record prescribed ARV regimen against a given therapeutic line"/>
+  <description value="This profile is to record prescribed ARV regimen against a given therapeutic line."/>
   <jurisdiction>
     <coding>
       <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
@@ -1590,7 +1590,7 @@
       <path value="CarePlan.activity.detail.extension"/>
       <sliceName value="artRegimenLine"/>
       <short value="ART Regimen Line"/>
-      <definition value="ART Regimen Line"/>
+      <definition value="Therapeutic lines that are used to classify the patient's currently prescribed ARV regimen."/>
       <min value="1"/>
       <max value="1"/>
       <base>

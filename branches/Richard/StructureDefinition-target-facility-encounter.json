@@ -10,7 +10,7 @@
   "name" : "TargetFacilityEncounter",
   "title" : "Target Facility Encounter",
   "status" : "active",
-  "date" : "2023-02-25T14:44:55+00:00",
+  "date" : "2023-02-27T07:20:27+00:00",
   "publisher" : "Jembi Health Systems",
   "contact" : [{
     "telecom" : [{
@@ -22,7 +22,7 @@
       "value" : "info@jembi.org"
     }]
   }],
-  "description" : "This profile represents the facility the patient is being transferred to",
+  "description" : "This profile represents the current facility at which the patient is receiving treatment.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
@@ -361,7 +361,7 @@
       "path" : "Encounter.extension",
       "sliceName" : "next-visit",
       "short" : "Next Appointment Date",
-      "definition" : "A date representing the patient's next scheduled appointment",
+      "definition" : "A date representing the patient's next scheduled appointment.",
       "min" : 0,
       "max" : "1",
       "base" : {

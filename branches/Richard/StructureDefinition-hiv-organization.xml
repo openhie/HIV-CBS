@@ -21,7 +21,7 @@
   <name value="HIVOrganization"/>
   <title value="HIV Organization"/>
   <status value="active"/>
-  <date value="2023-02-25T14:44:55+00:00"/>
+  <date value="2023-02-27T07:20:27+00:00"/>
   <publisher value="Jembi Health Systems"/>
   <contact>
     <telecom>
@@ -33,7 +33,7 @@
       <value value="info@jembi.org"/>
     </telecom>
   </contact>
-  <description value="Organization providing HIV Testing Services"/>
+  <description value="Organization providing HIV Testing Services."/>
   <jurisdiction>
     <coding>
       <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
@@ -412,7 +412,7 @@
           <type value="pattern"/>
           <path value="system"/>
         </discriminator>
-        <description value="Slice based on the type of identifier"/>
+        <description value="Slice based on the type of identifier."/>
         <rules value="openAtEnd"/>
       </slicing>
       <short value="Identifies this organization  across multiple systems"/>
@@ -1977,7 +1977,7 @@
           <type value="pattern"/>
           <path value="system"/>
         </discriminator>
-        <description value="Slice based on the type of identifier"/>
+        <description value="Slice based on the type of identifier."/>
         <rules value="openAtEnd"/>
       </slicing>
       <min value="1"/>
