@@ -138,7 +138,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "CarePlan.activity.detail.extension:artRegimenLine","CarePlan.activity.detail.extension","artRegimenLine","","",1,1,"","","","Extension {[CanonicalType[http://openhie.org/fhir/hiv-cbs/StructureDefinition/art-regimen-line]]} {[]}
-","ART Regimen Line","ART Regimen Line","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","ART Regimen Line","Therapeutic lines that are used to classify the patient's currently prescribed ARV regimen.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "CarePlan.activity.detail.modifierExtension","CarePlan.activity.detail.modifierExtension","","extensions

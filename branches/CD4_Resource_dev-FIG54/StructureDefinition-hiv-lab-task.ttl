@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "HIVLabTask"]; # 
   fhir:StructureDefinition.title [ fhir:value "Lab Task"]; # 
   fhir:StructureDefinition.status [ fhir:value "active"]; # 
-  fhir:StructureDefinition.date [ fhir:value "2023-02-25T15:28:03+00:00"^^xsd:dateTime]; # 
+  fhir:StructureDefinition.date [ fhir:value "2023-02-27T07:44:43+00:00"^^xsd:dateTime]; # 
   fhir:StructureDefinition.publisher [ fhir:value "Jembi Health Systems"]; # 
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -31,7 +31,7 @@
        fhir:ContactPoint.value [ fhir:value "info@jembi.org" ]
      ]
   ]; # 
-  fhir:StructureDefinition.description [ fhir:value "Assists with tracking the state of the lab order and its completion status"]; # 
+  fhir:StructureDefinition.description [ fhir:value "Assists with tracking the state of the lab order and its completion status."]; # 
   fhir:StructureDefinition.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [

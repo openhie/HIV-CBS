@@ -137,7 +137,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "hiv-arv-treatment","CarePlan.activity.detail.extension:artRegimenLine","CarePlan.activity.detail.extension","artRegimenLine","","",1,1,"","","","Extension {[CanonicalType[http://openhie.org/fhir/hiv-cbs/StructureDefinition/art-regimen-line]]} {[]}
-","ART Regimen Line","ART Regimen Line","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","ART Regimen Line","Therapeutic lines that are used to classify the patient's currently prescribed ARV regimen.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "hiv-arv-treatment","CarePlan.activity.detail.modifierExtension","CarePlan.activity.detail.modifierExtension","","extensions
@@ -242,7 +242,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "hiv-organization","Organization.identifier","Organization.identifier","","","",1,*,"","","Y","Identifier {[]} {[]}
 ","Identifies this organization  across multiple systems","Identifier for the organization that is used to identify the organization across multiple disparate systems.","","Organizations are known by a variety of ids. Some institutions maintain several, and most collect identifiers for exchange with other organizations concerning the organization.","","","","","","","",,,,,"","pattern:system}
-","Slice based on the type of identifier",,"openAtEnd","Organization.identifier",0,*,"org-1
+","Slice based on the type of identifier.",,"openAtEnd","Organization.identifier",0,*,"org-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "hiv-organization","Organization.identifier:HTS","Organization.identifier","HTS","","",1,1,"","","Y","Identifier {[]} {[]}
@@ -564,7 +564,7 @@ The alternate way is to use the value element for actual observations and use th
 ","Provides guide for interpretation of component result","Guidance on how to interpret the value by comparison to a normal or recommended range.","Most observations only have one generic reference range. Systems MAY choose to restrict to only supplying the relevant reference range based on knowledge about the patient (e.g., specific to the patient's age, gender, weight and other factors), but this might not be possible or appropriate. Whenever more than one reference range is supplied, the differences between them SHOULD be provided in the reference range and/or age properties.","Knowing what values are considered ""normal"" can help evaluate the significance of a particular result. Need to be able to provide multiple reference ranges for different contexts.","","","","","","","",,,,,"",,,,"Observation.component.referenceRange",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "art-regimen-line","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","ART Regimen Line","ART Regimen Line","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+","ART Regimen Line","Therapeutic lines that are used to classify the patient's currently prescribed ARV regimen.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ",""
 "art-regimen-line","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
@@ -838,7 +838,7 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "target-facility-encounter","Encounter.extension:next-visit","Encounter.extension","next-visit","","",0,1,"Y","","","Extension {[CanonicalType[http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-care-next-visit]]} {[]}
-","Next Appointment Date","A date representing the patient's next scheduled appointment","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","Next Appointment Date","A date representing the patient's next scheduled appointment.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "target-facility-encounter","Encounter.modifierExtension","Encounter.modifierExtension","","extensions
@@ -1065,7 +1065,7 @@ There may be many levels in the hierachy, and this may only pic specific levels 
 ","Another Encounter this encounter is part of","Another Encounter of which this encounter is a part of (administratively or in time).","This is also used for associating a child's encounter back to the mother's encounter.Refer to the Notes section in the Patient resource for further details.","","","","","","","","",,,,,"",,,,"Encounter.partOf",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "key-population-status","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","Key HIV Population","Populations who are at higher risk for HIV","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+","Key HIV Population","Populations who are at higher risk for HIV.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ",""
 "key-population-status","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
@@ -1407,7 +1407,7 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "hiv-patient","Patient.extension:KPS","Patient.extension","KPS","","",1,1,"","","","Extension {[CanonicalType[http://openhie.org/fhir/hiv-cbs/StructureDefinition/key-population-status]]} {[]}
-","Key HIV Population","Populations who are at higher risk for HIV","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","Key HIV Population","Populations who are at higher risk for HIV.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "hiv-patient","Patient.modifierExtension","Patient.modifierExtension","","extensions
@@ -2935,7 +2935,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Additional information about the Condition","Additional information about the Condition. This is a general notes/comments entry  for description of the Condition, its diagnosis and prognosis.","","","","","","","","","",,,,,"",,,,"Condition.note",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "hiv-care-next-visit","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","Next Appointment Date","A date representing the patient's next scheduled appointment","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+","Next Appointment Date","A date representing the patient's next scheduled appointment.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ",""
 "hiv-care-next-visit","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""

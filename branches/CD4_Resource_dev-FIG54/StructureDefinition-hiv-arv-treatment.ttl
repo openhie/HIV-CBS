@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "ARVTreatment"]; # 
   fhir:StructureDefinition.title [ fhir:value "ARV Treatment"]; # 
   fhir:StructureDefinition.status [ fhir:value "active"]; # 
-  fhir:StructureDefinition.date [ fhir:value "2023-02-25T15:28:03+00:00"^^xsd:dateTime]; # 
+  fhir:StructureDefinition.date [ fhir:value "2023-02-27T07:44:43+00:00"^^xsd:dateTime]; # 
   fhir:StructureDefinition.publisher [ fhir:value "Jembi Health Systems"]; # 
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -31,7 +31,7 @@
        fhir:ContactPoint.value [ fhir:value "info@jembi.org" ]
      ]
   ]; # 
-  fhir:StructureDefinition.description [ fhir:value "This profile is to record prescribed ARV regimen against a given therapeutic line"]; # 
+  fhir:StructureDefinition.description [ fhir:value "This profile is to record prescribed ARV regimen against a given therapeutic line."]; # 
   fhir:StructureDefinition.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [
@@ -2127,7 +2127,7 @@
        fhir:ElementDefinition.path [ fhir:value "CarePlan.activity.detail.extension" ];
        fhir:ElementDefinition.sliceName [ fhir:value "artRegimenLine" ];
        fhir:ElementDefinition.short [ fhir:value "ART Regimen Line" ];
-       fhir:ElementDefinition.definition [ fhir:value "ART Regimen Line" ];
+       fhir:ElementDefinition.definition [ fhir:value "Therapeutic lines that are used to classify the patient's currently prescribed ARV regimen." ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.base [

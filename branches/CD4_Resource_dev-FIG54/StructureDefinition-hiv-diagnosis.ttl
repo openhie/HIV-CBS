@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "HIVDiagnosis"]; # 
   fhir:StructureDefinition.title [ fhir:value "Diagnosis"]; # 
   fhir:StructureDefinition.status [ fhir:value "active"]; # 
-  fhir:StructureDefinition.date [ fhir:value "2023-02-25T15:28:03+00:00"^^xsd:dateTime]; # 
+  fhir:StructureDefinition.date [ fhir:value "2023-02-27T07:44:43+00:00"^^xsd:dateTime]; # 
   fhir:StructureDefinition.publisher [ fhir:value "Jembi Health Systems"]; # 
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -31,7 +31,7 @@
        fhir:ContactPoint.value [ fhir:value "info@jembi.org" ]
      ]
   ]; # 
-  fhir:StructureDefinition.description [ fhir:value "Confirmation of the diagnosis"]; # 
+  fhir:StructureDefinition.description [ fhir:value "This profile represents the confirmation of HIV diagnosis."]; # 
   fhir:StructureDefinition.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [

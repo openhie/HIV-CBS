@@ -25,7 +25,7 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Encounter.extension:next-visit","Encounter.extension","next-visit","","",0,1,"Y","","","Extension {[CanonicalType[http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-care-next-visit]]} {[]}
-","Next Appointment Date","A date representing the patient's next scheduled appointment","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","Next Appointment Date","A date representing the patient's next scheduled appointment.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Encounter.modifierExtension","Encounter.modifierExtension","","extensions
