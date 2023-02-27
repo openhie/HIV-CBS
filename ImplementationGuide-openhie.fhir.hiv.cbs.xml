@@ -12,7 +12,7 @@
   <title value="HIV Case-Based Surveillance"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2023-02-27T07:44:43+00:00"/>
+  <date value="2023-02-27T08:08:58+00:00"/>
   <publisher value="Jembi Health Systems"/>
   <contact>
     <telecom>
@@ -696,8 +696,8 @@
       <reference>
         <reference value="StructureDefinition/hiv-cd4-test"/>
       </reference>
-      <name value="Absolute CD4 Count and CD4 percentage"/>
-      <description value="This profile is used to record the Patient's CD4 count and CD4 percentage."/>
+      <name value="Absolute CD4 Count"/>
+      <description value="This profile is for recording the Patient's CD4 Count."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -718,6 +718,16 @@
       </reference>
       <name value="Transferring Facility Encounter"/>
       <description value="This profile represents the facility the patient is being transferred from."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/CD4PercentageExample"/>
+      </reference>
+      <name value="Example Observation - CD4PercentageExample"/>
+      <exampleCanonical value="http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-cd4-percentage"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -818,6 +828,16 @@
       </reference>
       <name value="Example Specimen - VLSpecimenExample"/>
       <exampleCanonical value="http://openhie.org/fhir/hiv-cbs/StructureDefinition/viral-load-specimen"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/hiv-cd4-percentage"/>
+      </reference>
+      <name value="CD4 Percentage"/>
+      <description value="This profile is for recording the patient's CD4 percentage."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
