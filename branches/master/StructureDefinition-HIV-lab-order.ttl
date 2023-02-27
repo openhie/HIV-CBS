@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "HIVServiceRequest"]; # 
   fhir:StructureDefinition.title [ fhir:value "Lab Order"]; # 
   fhir:StructureDefinition.status [ fhir:value "active"]; # 
-  fhir:StructureDefinition.date [ fhir:value "2023-02-24T14:30:46+00:00"^^xsd:dateTime]; # 
+  fhir:StructureDefinition.date [ fhir:value "2023-02-27T07:31:33+00:00"^^xsd:dateTime]; # 
   fhir:StructureDefinition.publisher [ fhir:value "Jembi Health Systems"]; # 
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -31,7 +31,7 @@
        fhir:ContactPoint.value [ fhir:value "info@jembi.org" ]
      ]
   ]; # 
-  fhir:StructureDefinition.description [ fhir:value "A service request that initiates the need for the lab to collect the test sample"]; # 
+  fhir:StructureDefinition.description [ fhir:value "A service request that initiates the need for the lab to collect the test sample."]; # 
   fhir:StructureDefinition.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [

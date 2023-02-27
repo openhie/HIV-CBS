@@ -11,7 +11,7 @@
   "title" : "HIV Case-Based Surveillance",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2023-02-24T14:30:46+00:00",
+  "date" : "2023-02-27T07:31:33+00:00",
   "publisher" : "Jembi Health Systems",
   "contact" : [{
     "telecom" : [{
@@ -625,7 +625,7 @@
         "reference" : "StructureDefinition/hiv-arv-treatment"
       },
       "name" : "ARV Treatment",
-      "description" : "This profile is to record prescribed ARV regimen against a given therapeutic line"
+      "description" : "This profile is to record prescribed ARV regimen against a given therapeutic line."
     },
     {
       "extension" : [{
@@ -658,7 +658,7 @@
         "reference" : "StructureDefinition/hiv-organization"
       },
       "name" : "HIV Organization",
-      "description" : "Organization providing HIV Testing Services"
+      "description" : "Organization providing HIV Testing Services."
     },
     {
       "extension" : [{
@@ -691,7 +691,7 @@
         "reference" : "StructureDefinition/death"
       },
       "name" : "Patient Death",
-      "description" : "This profile is to record the death of a patient observation"
+      "description" : "This profile captures the death outcome for a patient."
     },
     {
       "extension" : [{
@@ -713,7 +713,7 @@
         "reference" : "StructureDefinition/art-regimen-line"
       },
       "name" : "ART Regimen Line",
-      "description" : "ART Regimen Line"
+      "description" : "Therapeutic lines that are used to classify the patient's currently prescribed ARV regimen."
     },
     {
       "extension" : [{
@@ -724,7 +724,7 @@
         "reference" : "StructureDefinition/hiv-lab-task"
       },
       "name" : "Lab Task",
-      "description" : "Assists with tracking the state of the lab order and its completion status"
+      "description" : "Assists with tracking the state of the lab order and its completion status."
     },
     {
       "extension" : [{
@@ -757,7 +757,7 @@
         "reference" : "StructureDefinition/target-facility-encounter"
       },
       "name" : "Target Facility Encounter",
-      "description" : "This profile represents the facility the patient is being transferred to"
+      "description" : "This profile represents the current facility at which the patient is receiving treatment."
     },
     {
       "extension" : [{
@@ -779,7 +779,7 @@
         "reference" : "StructureDefinition/key-population-status"
       },
       "name" : "Key HIV Population",
-      "description" : "Populations who are at higher risk for HIV"
+      "description" : "Populations who are at higher risk for HIV."
     },
     {
       "extension" : [{
@@ -790,7 +790,7 @@
         "reference" : "StructureDefinition/hiv-diagnostic-report"
       },
       "name" : "Diagnostic Report",
-      "description" : "A report as a result of the lab task being completed"
+      "description" : "A report as a result of the lab task being completed."
     },
     {
       "extension" : [{
@@ -834,7 +834,7 @@
         "reference" : "StructureDefinition/date-hiv-test-done"
       },
       "name" : "Date HIV Test Done",
-      "description" : "This profile is to record the Date when HIV test was done for a patient"
+      "description" : "This profile is to record the date when HIV test was done for a patient."
     },
     {
       "extension" : [{
@@ -878,7 +878,7 @@
         "reference" : "StructureDefinition/transferring-facility-encounter"
       },
       "name" : "Transferring Facility Encounter",
-      "description" : "This profile represents the facility the patient is being transferred from"
+      "description" : "This profile represents the facility the patient is being transferred from."
     },
     {
       "extension" : [{
@@ -899,8 +899,8 @@
       "reference" : {
         "reference" : "StructureDefinition/hiv-episode-of-care"
       },
-      "name" : "HIV Episode Of Care",
-      "description" : "This profile is to record the patient HIV Management Programme Enrollment details."
+      "name" : "Patient Enrollment Type",
+      "description" : "This profile is used to record the enrolment type at the time of the encounter."
     },
     {
       "extension" : [{
@@ -922,7 +922,7 @@
         "reference" : "StructureDefinition/viral-load-specimen"
       },
       "name" : "Viral Load Specimen",
-      "description" : "The test sample that was collected for the initiated lab order"
+      "description" : "The test sample that was collected for the initiated lab order."
     },
     {
       "extension" : [{
@@ -977,7 +977,7 @@
         "reference" : "StructureDefinition/hiv-test-results"
       },
       "name" : "Lab Results",
-      "description" : "The result of the lab test which determines whether the patient is infected with HIV or not"
+      "description" : "The result of the lab test which determines whether the patient is infected with HIV or not."
     },
     {
       "extension" : [{
@@ -1021,7 +1021,7 @@
         "reference" : "StructureDefinition/hiv-practitioner"
       },
       "name" : "Practitioner",
-      "description" : "The healthcare professional who has been assigned to a given lab task"
+      "description" : "The healthcare professional who has been assigned to a given lab task."
     },
     {
       "extension" : [{
@@ -1065,7 +1065,7 @@
         "reference" : "StructureDefinition/hiv-diagnosis"
       },
       "name" : "Diagnosis",
-      "description" : "Confirmation of the diagnosis"
+      "description" : "This profile represents the confirmation of HIV diagnosis."
     },
     {
       "extension" : [{
@@ -1098,7 +1098,7 @@
         "reference" : "StructureDefinition/hiv-care-next-visit"
       },
       "name" : "Next Appointment Date",
-      "description" : "A date representing the patient's next scheduled appointment"
+      "description" : "A date representing the patient's next scheduled appointment."
     },
     {
       "extension" : [{
@@ -1318,7 +1318,7 @@
         "reference" : "StructureDefinition/HIV-lab-order"
       },
       "name" : "Lab Order",
-      "description" : "A service request that initiates the need for the lab to collect the test sample"
+      "description" : "A service request that initiates the need for the lab to collect the test sample."
     },
     {
       "extension" : [{

@@ -17,7 +17,7 @@
   <name value="TargetFacilityEncounter"/>
   <title value="Target Facility Encounter"/>
   <status value="active"/>
-  <date value="2023-02-24T14:30:46+00:00"/>
+  <date value="2023-02-27T07:31:33+00:00"/>
   <publisher value="Jembi Health Systems"/>
   <contact>
     <telecom>
@@ -29,7 +29,7 @@
       <value value="info@jembi.org"/>
     </telecom>
   </contact>
-  <description value="This profile represents the facility the patient is being transferred to"/>
+  <description value="This profile represents the current facility at which the patient is receiving treatment."/>
   <jurisdiction>
     <coding>
       <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
@@ -353,7 +353,7 @@
       <path value="Encounter.extension"/>
       <sliceName value="next-visit"/>
       <short value="Next Appointment Date"/>
-      <definition value="A date representing the patient's next scheduled appointment"/>
+      <definition value="A date representing the patient's next scheduled appointment."/>
       <min value="0"/>
       <max value="1"/>
       <base>

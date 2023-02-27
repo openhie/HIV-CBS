@@ -18,7 +18,7 @@
   fhir:ImplementationGuide.title [ fhir:value "HIV Case-Based Surveillance"]; # 
   fhir:ImplementationGuide.status [ fhir:value "draft"]; # 
   fhir:ImplementationGuide.experimental [ fhir:value "false"^^xsd:boolean]; # 
-  fhir:ImplementationGuide.date [ fhir:value "2023-02-24T14:30:46+00:00"^^xsd:dateTime]; # 
+  fhir:ImplementationGuide.date [ fhir:value "2023-02-27T07:31:33+00:00"^^xsd:dateTime]; # 
   fhir:ImplementationGuide.publisher [ fhir:value "Jembi Health Systems"]; # 
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -700,7 +700,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/hiv-arv-treatment" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ARV Treatment" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This profile is to record prescribed ARV regimen against a given therapeutic line" ]
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This profile is to record prescribed ARV regimen against a given therapeutic line." ]
      ], [
        fhir:index 1;
        fhir:Element.extension [
@@ -742,7 +742,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/hiv-organization" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "HIV Organization" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Organization providing HIV Testing Services" ]
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Organization providing HIV Testing Services." ]
      ], [
        fhir:index 4;
        fhir:Element.extension [
@@ -787,7 +787,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/death" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Patient Death" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This profile is to record the death of a patient observation" ]
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This profile captures the death outcome for a patient." ]
      ], [
        fhir:index 7;
        fhir:Element.extension [
@@ -816,7 +816,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/art-regimen-line" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ART Regimen Line" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ART Regimen Line" ]
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Therapeutic lines that are used to classify the patient's currently prescribed ARV regimen." ]
      ], [
        fhir:index 9;
        fhir:Element.extension [
@@ -829,7 +829,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/hiv-lab-task" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Lab Task" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Assists with tracking the state of the lab order and its completion status" ]
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Assists with tracking the state of the lab order and its completion status." ]
      ], [
        fhir:index 10;
        fhir:Element.extension [
@@ -871,7 +871,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/target-facility-encounter" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Target Facility Encounter" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This profile represents the facility the patient is being transferred to" ]
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This profile represents the current facility at which the patient is receiving treatment." ]
      ], [
        fhir:index 13;
        fhir:Element.extension [
@@ -900,7 +900,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/key-population-status" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Key HIV Population" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Populations who are at higher risk for HIV" ]
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Populations who are at higher risk for HIV." ]
      ], [
        fhir:index 15;
        fhir:Element.extension [
@@ -913,7 +913,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/hiv-diagnostic-report" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Diagnostic Report" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A report as a result of the lab task being completed" ]
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A report as a result of the lab task being completed." ]
      ], [
        fhir:index 16;
        fhir:Element.extension [
@@ -965,7 +965,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/date-hiv-test-done" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Date HIV Test Done" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This profile is to record the Date when HIV test was done for a patient" ]
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This profile is to record the date when HIV test was done for a patient." ]
      ], [
        fhir:index 20;
        fhir:Element.extension [
@@ -1023,7 +1023,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/transferring-facility-encounter" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Transferring Facility Encounter" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This profile represents the facility the patient is being transferred from" ]
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This profile represents the facility the patient is being transferred from." ]
      ], [
        fhir:index 24;
        fhir:Element.extension [
@@ -1048,8 +1048,8 @@
          fhir:link <http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-episode-of-care>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/hiv-episode-of-care" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "HIV Episode Of Care" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This profile is to record the patient HIV Management Programme Enrollment details." ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Patient Enrollment Type" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This profile is used to record the enrolment type at the time of the encounter." ]
      ], [
        fhir:index 26;
        fhir:Element.extension [
@@ -1078,7 +1078,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/viral-load-specimen" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Viral Load Specimen" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The test sample that was collected for the initiated lab order" ]
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The test sample that was collected for the initiated lab order." ]
      ], [
        fhir:index 28;
        fhir:Element.extension [
@@ -1149,7 +1149,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/hiv-test-results" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Lab Results" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The result of the lab test which determines whether the patient is infected with HIV or not" ]
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The result of the lab test which determines whether the patient is infected with HIV or not." ]
      ], [
        fhir:index 33;
        fhir:Element.extension [
@@ -1207,7 +1207,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/hiv-practitioner" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Practitioner" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The healthcare professional who has been assigned to a given lab task" ]
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The healthcare professional who has been assigned to a given lab task." ]
      ], [
        fhir:index 37;
        fhir:Element.extension [
@@ -1268,7 +1268,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/hiv-diagnosis" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Diagnosis" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Confirmation of the diagnosis" ]
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This profile represents the confirmation of HIV diagnosis." ]
      ], [
        fhir:index 41;
        fhir:Element.extension [
@@ -1310,7 +1310,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/hiv-care-next-visit" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Next Appointment Date" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A date representing the patient's next scheduled appointment" ]
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A date representing the patient's next scheduled appointment." ]
      ], [
        fhir:index 44;
        fhir:Element.extension [
@@ -1597,7 +1597,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/HIV-lab-order" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Lab Order" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A service request that initiates the need for the lab to collect the test sample" ]
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A service request that initiates the need for the lab to collect the test sample." ]
      ], [
        fhir:index 64;
        fhir:Element.extension [
