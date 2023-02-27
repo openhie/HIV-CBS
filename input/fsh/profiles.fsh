@@ -307,3 +307,32 @@ Description: "This profile is to record the HIV recency test result data for a p
 * interpretation from VSHIVRecencyStatus (required)
 * performer 1..1
 * note 0..1
+
+Profile: CD4Percentage
+Parent: Observation
+Id: hiv-cd4-percentage
+Title: "CD4 Percentage"
+Description: "This profile is for recording the patient's CD4 percentage."
+* status = #final
+* code from VSCD4Percentage (required)
+* subject 1..1 
+* encounter 1..1
+* effectiveDateTime 1..1
+* performer 1..1
+* valueQuantity 1..1
+* derivedFrom only Reference(Observation)
+* note 0..1
+
+Profile: CD4TestResult
+Parent: Observation
+Id: hiv-cd4-test
+Title: "Absolute CD4 Count"
+Description: "This profile is for recording the Patient's CD4 Count."
+* status = #final
+* code from VSCD4Count (required)
+* subject 1..1 
+* encounter 1..1
+* effectiveDateTime 1..1
+* performer 1..1
+* valueInteger 1..1
+* note 0..1
