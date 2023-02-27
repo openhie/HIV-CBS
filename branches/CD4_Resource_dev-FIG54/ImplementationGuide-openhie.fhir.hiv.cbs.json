@@ -11,7 +11,7 @@
   "title" : "HIV Case-Based Surveillance",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2023-02-27T07:44:43+00:00",
+  "date" : "2023-02-27T08:08:58+00:00",
   "publisher" : "Jembi Health Systems",
   "contact" : [{
     "telecom" : [{
@@ -877,8 +877,8 @@
       "reference" : {
         "reference" : "StructureDefinition/hiv-cd4-test"
       },
-      "name" : "Absolute CD4 Count and CD4 percentage",
-      "description" : "This profile is used to record the Patient's CD4 count and CD4 percentage."
+      "name" : "Absolute CD4 Count",
+      "description" : "This profile is for recording the Patient's CD4 Count."
     },
     {
       "extension" : [{
@@ -901,6 +901,17 @@
       },
       "name" : "Transferring Facility Encounter",
       "description" : "This profile represents the facility the patient is being transferred from."
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/CD4PercentageExample"
+      },
+      "name" : "Example Observation - CD4PercentageExample",
+      "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-cd4-percentage"
     },
     {
       "extension" : [{
@@ -1011,6 +1022,17 @@
       },
       "name" : "Example Specimen - VLSpecimenExample",
       "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/viral-load-specimen"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/hiv-cd4-percentage"
+      },
+      "name" : "CD4 Percentage",
+      "description" : "This profile is for recording the patient's CD4 percentage."
     },
     {
       "extension" : [{

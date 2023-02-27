@@ -17,8 +17,6 @@
       <sch:assert test="count(f:performer) &gt;= 1">performer: minimum cardinality of 'performer' is 1</sch:assert>
       <sch:assert test="count(f:performer) &lt;= 1">performer: maximum cardinality of 'performer' is 1</sch:assert>
       <sch:assert test="count(f:note) &lt;= 1">note: maximum cardinality of 'note' is 1</sch:assert>
-      <sch:assert test="count(f:component) &gt;= 1">component: minimum cardinality of 'component' is 1</sch:assert>
-      <sch:assert test="count(f:component) &lt;= 1">component: maximum cardinality of 'component' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
 </sch:schema>

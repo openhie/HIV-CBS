@@ -56,6 +56,13 @@
     "name" : "HIVCareNextAppointment"
   },
   {
+    "id" : "hiv-cd4-percentage",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-cd4-percentage",
+    "version" : "0.2.0",
+    "name" : "CD4Percentage"
+  },
+  {
     "id" : "hiv-cd4-test",
     "type" : "StructureDefinition",
     "url" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-cd4-test",
