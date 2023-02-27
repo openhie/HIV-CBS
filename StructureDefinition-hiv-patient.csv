@@ -25,7 +25,7 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Patient.extension:KPS","Patient.extension","KPS","","",1,1,"","","","Extension {[CanonicalType[http://openhie.org/fhir/hiv-cbs/StructureDefinition/key-population-status]]} {[]}
-","Key HIV Population","Populations who are at higher risk for HIV","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","Key HIV Population","Populations who are at higher risk for HIV.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Patient.modifierExtension","Patient.modifierExtension","","extensions

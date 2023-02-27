@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "HIVPatient"]; # 
   fhir:StructureDefinition.title [ fhir:value "Patient"]; # 
   fhir:StructureDefinition.status [ fhir:value "active"]; # 
-  fhir:StructureDefinition.date [ fhir:value "2023-02-25T15:28:03+00:00"^^xsd:dateTime]; # 
+  fhir:StructureDefinition.date [ fhir:value "2023-02-27T07:20:27+00:00"^^xsd:dateTime]; # 
   fhir:StructureDefinition.publisher [ fhir:value "Jembi Health Systems"]; # 
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -460,7 +460,7 @@
        fhir:ElementDefinition.path [ fhir:value "Patient.extension" ];
        fhir:ElementDefinition.sliceName [ fhir:value "KPS" ];
        fhir:ElementDefinition.short [ fhir:value "Key HIV Population" ];
-       fhir:ElementDefinition.definition [ fhir:value "Populations who are at higher risk for HIV" ];
+       fhir:ElementDefinition.definition [ fhir:value "Populations who are at higher risk for HIV." ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.base [

@@ -10,7 +10,7 @@
   "name" : "HIVPatient",
   "title" : "Patient",
   "status" : "active",
-  "date" : "2023-02-25T15:28:03+00:00",
+  "date" : "2023-02-27T07:20:27+00:00",
   "publisher" : "Jembi Health Systems",
   "contact" : [{
     "telecom" : [{
@@ -366,7 +366,7 @@
       "path" : "Patient.extension",
       "sliceName" : "KPS",
       "short" : "Key HIV Population",
-      "definition" : "Populations who are at higher risk for HIV",
+      "definition" : "Populations who are at higher risk for HIV.",
       "min" : 1,
       "max" : "1",
       "base" : {

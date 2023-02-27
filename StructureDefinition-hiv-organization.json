@@ -10,7 +10,7 @@
   "name" : "HIVOrganization",
   "title" : "HIV Organization",
   "status" : "active",
-  "date" : "2023-02-25T15:28:03+00:00",
+  "date" : "2023-02-27T07:20:27+00:00",
   "publisher" : "Jembi Health Systems",
   "contact" : [{
     "telecom" : [{
@@ -22,7 +22,7 @@
       "value" : "info@jembi.org"
     }]
   }],
-  "description" : "Organization providing HIV Testing Services",
+  "description" : "Organization providing HIV Testing Services.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
@@ -417,7 +417,7 @@
           "type" : "pattern",
           "path" : "system"
         }],
-        "description" : "Slice based on the type of identifier",
+        "description" : "Slice based on the type of identifier.",
         "rules" : "openAtEnd"
       },
       "short" : "Identifies this organization  across multiple systems",
@@ -2032,7 +2032,7 @@
           "type" : "pattern",
           "path" : "system"
         }],
-        "description" : "Slice based on the type of identifier",
+        "description" : "Slice based on the type of identifier.",
         "rules" : "openAtEnd"
       },
       "min" : 1

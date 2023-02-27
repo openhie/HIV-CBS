@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "HIVOrganization"]; # 
   fhir:StructureDefinition.title [ fhir:value "HIV Organization"]; # 
   fhir:StructureDefinition.status [ fhir:value "active"]; # 
-  fhir:StructureDefinition.date [ fhir:value "2023-02-25T15:28:03+00:00"^^xsd:dateTime]; # 
+  fhir:StructureDefinition.date [ fhir:value "2023-02-27T07:20:27+00:00"^^xsd:dateTime]; # 
   fhir:StructureDefinition.publisher [ fhir:value "Jembi Health Systems"]; # 
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -31,7 +31,7 @@
        fhir:ContactPoint.value [ fhir:value "info@jembi.org" ]
      ]
   ]; # 
-  fhir:StructureDefinition.description [ fhir:value "Organization providing HIV Testing Services"]; # 
+  fhir:StructureDefinition.description [ fhir:value "Organization providing HIV Testing Services."]; # 
   fhir:StructureDefinition.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [
@@ -531,7 +531,7 @@
            fhir:ElementDefinition.slicing.discriminator.type [ fhir:value "pattern" ];
            fhir:ElementDefinition.slicing.discriminator.path [ fhir:value "system" ]
          ];
-         fhir:ElementDefinition.slicing.description [ fhir:value "Slice based on the type of identifier" ];
+         fhir:ElementDefinition.slicing.description [ fhir:value "Slice based on the type of identifier." ];
          fhir:ElementDefinition.slicing.rules [ fhir:value "openAtEnd" ]
        ];
        fhir:ElementDefinition.short [ fhir:value "Identifies this organization  across multiple systems" ];
@@ -2494,7 +2494,7 @@
            fhir:ElementDefinition.slicing.discriminator.type [ fhir:value "pattern" ];
            fhir:ElementDefinition.slicing.discriminator.path [ fhir:value "system" ]
          ];
-         fhir:ElementDefinition.slicing.description [ fhir:value "Slice based on the type of identifier" ];
+         fhir:ElementDefinition.slicing.description [ fhir:value "Slice based on the type of identifier." ];
          fhir:ElementDefinition.slicing.rules [ fhir:value "openAtEnd" ]
        ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ]

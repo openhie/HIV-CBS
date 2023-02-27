@@ -15,9 +15,9 @@
   fhir:StructureDefinition.url [ fhir:value "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-episode-of-care"]; # 
   fhir:StructureDefinition.version [ fhir:value "0.2.0"]; # 
   fhir:StructureDefinition.name [ fhir:value "HIVEpisodeOfCare"]; # 
-  fhir:StructureDefinition.title [ fhir:value "HIV Episode Of Care"]; # 
+  fhir:StructureDefinition.title [ fhir:value "Patient Enrollment Type"]; # 
   fhir:StructureDefinition.status [ fhir:value "active"]; # 
-  fhir:StructureDefinition.date [ fhir:value "2023-02-25T15:28:03+00:00"^^xsd:dateTime]; # 
+  fhir:StructureDefinition.date [ fhir:value "2023-02-27T07:20:27+00:00"^^xsd:dateTime]; # 
   fhir:StructureDefinition.publisher [ fhir:value "Jembi Health Systems"]; # 
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -31,7 +31,7 @@
        fhir:ContactPoint.value [ fhir:value "info@jembi.org" ]
      ]
   ]; # 
-  fhir:StructureDefinition.description [ fhir:value "This profile is to record the patient HIV Management Programme Enrollment details."]; # 
+  fhir:StructureDefinition.description [ fhir:value "This profile is used to record the enrolment type at the time of the encounter."]; # 
   fhir:StructureDefinition.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [
