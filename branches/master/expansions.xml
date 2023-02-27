@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="cc9ba666-fb20-4fae-846b-f13e0b52e9a9"/>
+  <id value="f5ceed13-8ebe-4069-a768-411dc46ebff8"/>
   <meta>
-    <lastUpdated value="2023-02-27T07:31:33.401+00:00"/>
+    <lastUpdated value="2023-02-27T08:19:52.092+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -45,7 +45,7 @@
         <title value="Recency HIV Test Result"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-02-27T07:31:33+00:00"/>
+        <date value="2023-02-27T08:19:52+00:00"/>
         <publisher value="Jembi Health Systems"/>
         <contact>
           <telecom>
@@ -65,8 +65,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:030c8608-8c06-45f8-bba5-b6e3c219e429"/>
-          <timestamp value="2023-02-27T07:32:16+00:00"/>
+          <identifier value="urn:uuid:45067604-ee17-45d5-aef5-c5ddb7693083"/>
+          <timestamp value="2023-02-27T08:20:29+00:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
@@ -128,7 +128,7 @@
         <title value="HIV Test Done"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-02-27T07:31:33+00:00"/>
+        <date value="2023-02-27T08:19:52+00:00"/>
         <publisher value="Jembi Health Systems"/>
         <contact>
           <telecom>
@@ -148,8 +148,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:4f43ccd1-344f-4bab-9a60-2d7d3adc2b0e"/>
-          <timestamp value="2023-02-27T07:32:20+00:00"/>
+          <identifier value="urn:uuid:d4217468-5f79-42d7-b8b3-96a61f3461e8"/>
+          <timestamp value="2023-02-27T08:20:33+00:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
@@ -219,7 +219,7 @@
         <title value="HIV Recency Testing Status"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-02-27T07:31:33+00:00"/>
+        <date value="2023-02-27T08:19:52+00:00"/>
         <publisher value="Jembi Health Systems"/>
         <contact>
           <telecom>
@@ -239,8 +239,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:68c7f9ad-6728-4441-913a-17ebe38b5f5e"/>
-          <timestamp value="2023-02-27T07:32:23+00:00"/>
+          <identifier value="urn:uuid:6e9595b8-11a9-4ecd-97b6-77dcb8e05840"/>
+          <timestamp value="2023-02-27T08:20:35+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -337,7 +337,7 @@
         <title value="Patient Type at Enrolment"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-02-27T07:31:33+00:00"/>
+        <date value="2023-02-27T08:19:52+00:00"/>
         <publisher value="Jembi Health Systems"/>
         <contact>
           <telecom>
@@ -357,8 +357,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:2ed3cbbb-bd73-467b-a7c2-21c6d54d680c"/>
-          <timestamp value="2023-02-27T07:32:24+00:00"/>
+          <identifier value="urn:uuid:4ea11db2-8e91-48ef-9ad0-8316b8aedcb2"/>
+          <timestamp value="2023-02-27T08:20:35+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -459,7 +459,7 @@
         <title value="Viral Load Suppressions Status"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-02-27T07:31:33+00:00"/>
+        <date value="2023-02-27T08:19:52+00:00"/>
         <publisher value="Jembi Health Systems"/>
         <contact>
           <telecom>
@@ -479,8 +479,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:49c6dfda-28ec-4c3d-8d9c-999c9f0511cc"/>
-          <timestamp value="2023-02-27T07:32:24+00:00"/>
+          <identifier value="urn:uuid:7f90d7ab-df95-4303-8203-af668275768e"/>
+          <timestamp value="2023-02-27T08:20:35+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -552,7 +552,7 @@
         <title value="ARV treatment outcomes"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-02-27T07:31:33+00:00"/>
+        <date value="2023-02-27T08:19:52+00:00"/>
         <publisher value="Jembi Health Systems"/>
         <contact>
           <telecom>
@@ -572,8 +572,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:d95f683f-7e41-4782-8008-e39a697c7c3c"/>
-          <timestamp value="2023-02-27T07:32:31+00:00"/>
+          <identifier value="urn:uuid:d32d6a00-e019-491b-ae56-fa22d7a2514d"/>
+          <timestamp value="2023-02-27T08:20:41+00:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
@@ -747,7 +747,7 @@
         <title value="Reason for Assessment or Test Not Performed"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-02-27T07:31:33+00:00"/>
+        <date value="2023-02-27T08:19:52+00:00"/>
         <publisher value="Jembi Health Systems"/>
         <contact>
           <telecom>
@@ -767,8 +767,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:c24475a2-a9f5-4cf5-bb4e-d93b1968bafc"/>
-          <timestamp value="2023-02-27T07:32:31+00:00"/>
+          <identifier value="urn:uuid:11aabb17-73f3-403d-bd20-ed75aab66320"/>
+          <timestamp value="2023-02-27T08:20:41+00:00"/>
           <total value="15"/>
           <parameter>
             <name value="excludeNested"/>
@@ -900,7 +900,7 @@
         <title value="Conditions"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-02-27T07:31:33+00:00"/>
+        <date value="2023-02-27T08:19:52+00:00"/>
         <publisher value="Jembi Health Systems"/>
         <contact>
           <telecom>
@@ -920,8 +920,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:8e5add05-95ff-43ff-b341-ce9b99ce4c34"/>
-          <timestamp value="2023-02-27T07:32:32+00:00"/>
+          <identifier value="urn:uuid:80da1da6-a1ed-43cd-8f60-f300fa4650df"/>
+          <timestamp value="2023-02-27T08:20:43+00:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
@@ -939,6 +939,89 @@
             <system value="http://snomed.info/sct"/>
             <code value="86406008"/>
             <display value="Human immunodeficiency virus infection (disorder)"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://openhie.org/fhir/hiv-cbs/ValueSet/vs-cd4-percentage"/>
+    <resource>
+      <ValueSet>
+        <id value="vs-cd4-percentage"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 1 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2022</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-313938009"> </a>  
+                  <a href="http://snomed.info/id/313938009">313938009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>CD4 percent count (procedure)</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://openhie.org/fhir/hiv-cbs/ValueSet/vs-cd4-percentage"/>
+        <version value="0.2.0"/>
+        <name value="VSCD4Percentage"/>
+        <title value="CD4 percentage code"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2023-02-27T08:19:52+00:00"/>
+        <publisher value="Jembi Health Systems"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="https://www.jembi.org"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+            <value value="info@jembi.org"/>
+          </telecom>
+        </contact>
+        <description value="A list of CD4 percentage codes"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:9f995ff7-9fcd-4275-8b4a-824894e566c0"/>
+          <timestamp value="2023-02-27T08:20:44+00:00"/>
+          <total value="1"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220731"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="313938009"/>
+            <display value="CD4 percent count (procedure)"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -999,7 +1082,7 @@
         <title value="Yes No Unknown"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-02-27T07:31:33+00:00"/>
+        <date value="2023-02-27T08:19:52+00:00"/>
         <publisher value="Jembi Health Systems"/>
         <contact>
           <telecom>
@@ -1019,8 +1102,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:bafa7dd6-f75e-408c-a167-23d50abcc379"/>
-          <timestamp value="2023-02-27T07:32:34+00:00"/>
+          <identifier value="urn:uuid:4b479392-59df-46c9-9f0d-1d0cdb6a0562"/>
+          <timestamp value="2023-02-27T08:20:45+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1092,7 +1175,7 @@
         <title value="Recency HIV Test"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-02-27T07:31:33+00:00"/>
+        <date value="2023-02-27T08:19:52+00:00"/>
         <publisher value="Jembi Health Systems"/>
         <contact>
           <telecom>
@@ -1112,8 +1195,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:ad46b457-52b4-444a-9657-7d2d3184edb5"/>
-          <timestamp value="2023-02-27T07:32:34+00:00"/>
+          <identifier value="urn:uuid:27258efe-f8f9-41f2-8f83-9878db330d81"/>
+          <timestamp value="2023-02-27T08:20:45+00:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1175,7 +1258,7 @@
         <title value="Death"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-02-27T07:31:33+00:00"/>
+        <date value="2023-02-27T08:19:52+00:00"/>
         <publisher value="Jembi Health Systems"/>
         <contact>
           <telecom>
@@ -1195,8 +1278,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:3262de8d-433c-4afc-ad1e-3f9dba823eb7"/>
-          <timestamp value="2023-02-27T07:32:34+00:00"/>
+          <identifier value="urn:uuid:16981f54-815d-4b3f-b400-34d62fdb5d9c"/>
+          <timestamp value="2023-02-27T08:20:45+00:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1274,7 +1357,7 @@
         <title value="Test Types"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-02-27T07:31:33+00:00"/>
+        <date value="2023-02-27T08:19:52+00:00"/>
         <publisher value="Jembi Health Systems"/>
         <contact>
           <telecom>
@@ -1294,8 +1377,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:a5081a59-9871-483e-ac9f-0f3cc5b9fafe"/>
-          <timestamp value="2023-02-27T07:32:34+00:00"/>
+          <identifier value="urn:uuid:c606f534-257b-4667-94b5-3a426792eeec"/>
+          <timestamp value="2023-02-27T08:20:45+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1383,7 +1466,7 @@
         <title value="ART Regimen Lines"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-02-27T07:31:33+00:00"/>
+        <date value="2023-02-27T08:19:52+00:00"/>
         <publisher value="Jembi Health Systems"/>
         <contact>
           <telecom>
@@ -1403,8 +1486,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:dbcd7da9-cf21-46b7-ae72-d82a0bd25368"/>
-          <timestamp value="2023-02-27T07:32:35+00:00"/>
+          <identifier value="urn:uuid:17efb810-0647-49cd-b070-62bd5b261815"/>
+          <timestamp value="2023-02-27T08:20:46+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1508,7 +1591,7 @@
         <title value="Specimen Type Used In Viral Load testing"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-02-27T07:31:33+00:00"/>
+        <date value="2023-02-27T08:19:52+00:00"/>
         <publisher value="Jembi Health Systems"/>
         <contact>
           <telecom>
@@ -1528,8 +1611,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:6ca80407-7fa6-4227-8198-b2381421463f"/>
-          <timestamp value="2023-02-27T07:32:35+00:00"/>
+          <identifier value="urn:uuid:77bc8706-14b4-4617-bb7c-5adee2501d28"/>
+          <timestamp value="2023-02-27T08:20:46+00:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1611,7 +1694,7 @@
         <title value="Viral Load Result Code"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-02-27T07:31:33+00:00"/>
+        <date value="2023-02-27T08:19:52+00:00"/>
         <publisher value="Jembi Health Systems"/>
         <contact>
           <telecom>
@@ -1631,8 +1714,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:f4b35c84-21fd-405f-81ab-a8b187eb2104"/>
-          <timestamp value="2023-02-27T07:32:35+00:00"/>
+          <identifier value="urn:uuid:3e8acfcc-4ad4-4244-9c1c-51e8204a3fee"/>
+          <timestamp value="2023-02-27T08:20:46+00:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1650,6 +1733,89 @@
             <system value="http://snomed.info/sct"/>
             <code value="398579006"/>
             <display value="Human immunodeficiency virus-1 nucleic acid assay (procedure)"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://openhie.org/fhir/hiv-cbs/ValueSet/vs-cd4-count"/>
+    <resource>
+      <ValueSet>
+        <id value="vs-cd4-count"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 1 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2022</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-151271000119102"> </a>  
+                  <a href="http://snomed.info/id/151271000119102">151271000119102</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Abnormal blood test (finding)</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://openhie.org/fhir/hiv-cbs/ValueSet/vs-cd4-count"/>
+        <version value="0.2.0"/>
+        <name value="VSCD4Count"/>
+        <title value="CD4 test result code"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2023-02-27T08:19:52+00:00"/>
+        <publisher value="Jembi Health Systems"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="https://www.jembi.org"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+            <value value="info@jembi.org"/>
+          </telecom>
+        </contact>
+        <description value="A list of CD4 test result codes"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:76a71de3-debc-41fe-addc-d2659dca3e22"/>
+          <timestamp value="2023-02-27T08:20:46+00:00"/>
+          <total value="1"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220731"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="151271000119102"/>
+            <display value="Abnormal blood test (finding)"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -1694,7 +1860,7 @@
         <title value="ARV Treatment Medication Request"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-02-27T07:31:33+00:00"/>
+        <date value="2023-02-27T08:19:52+00:00"/>
         <publisher value="Jembi Health Systems"/>
         <contact>
           <telecom>
@@ -1714,8 +1880,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:c2696f36-4f43-4902-b03f-8c656fef885c"/>
-          <timestamp value="2023-02-27T07:32:36+00:00"/>
+          <identifier value="urn:uuid:180daa88-51b0-4138-a040-5f58a7fcd4e6"/>
+          <timestamp value="2023-02-27T08:20:47+00:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1833,7 +1999,7 @@
         <title value="Key Population Status"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-02-27T07:31:33+00:00"/>
+        <date value="2023-02-27T08:19:52+00:00"/>
         <publisher value="Jembi Health Systems"/>
         <contact>
           <telecom>
@@ -1853,8 +2019,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:a5eb2f15-beac-4cd6-bbb4-b586172608ce"/>
-          <timestamp value="2023-02-27T07:32:37+00:00"/>
+          <identifier value="urn:uuid:22466268-d998-40ae-8215-e1c47266aede"/>
+          <timestamp value="2023-02-27T08:20:47+00:00"/>
           <total value="7"/>
           <parameter>
             <name value="excludeNested"/>

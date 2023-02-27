@@ -1,0 +1,63 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://openhie.org/fhir/hiv-cbs/Observation/CD4TestResultExample> a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "CD4TestResultExample"]; # 
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-cd4-test";
+       fhir:index 0;
+       fhir:link <http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-cd4-test>
+     ]
+  ]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"CD4TestResultExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;CD4TestResultExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-cd4-test.html\">Absolute CD4 Count</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Blood test measurement abnormal <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#151271000119102)</span></p><p><b>subject</b>: <a href=\"Patient-HIVPatientExample.html\">Patient/HIVPatientExample</a> &quot; SMITH&quot;</p><p><b>encounter</b>: <a href=\"Encounter-TargetFacilityEncounterExample.html\">Encounter/TargetFacilityEncounterExample</a></p><p><b>effective</b>: 2022-12-10</p><p><b>performer</b>: <a href=\"Organization-HIVOrganizationExample.html\">Organization/HIVOrganizationExample</a> &quot;HIV Test Services Health Facility&quot;</p><p><b>value</b>: 650</p><p><b>note</b>: Additional information regarding the CD4 Count (By Organization/HIVOrganizationExample @Feb 7, 2015, 6:28:17 PM)</p></div>"
+  ]; # 
+  fhir:Observation.status [ fhir:value "final"]; # 
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:151271000119102;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "151271000119102" ]
+     ]
+  ]; # 
+  fhir:Observation.subject [
+     fhir:link <http://openhie.org/fhir/hiv-cbs/Patient/HIVPatientExample>;
+     fhir:Reference.reference [ fhir:value "Patient/HIVPatientExample" ]
+  ]; # 
+  fhir:Observation.encounter [
+     fhir:link <http://openhie.org/fhir/hiv-cbs/Encounter/TargetFacilityEncounterExample>;
+     fhir:Reference.reference [ fhir:value "Encounter/TargetFacilityEncounterExample" ]
+  ]; # 
+  fhir:Observation.effectiveDateTime [ fhir:value "2022-12-10"^^xsd:date]; # 
+  fhir:Observation.performer [
+     fhir:index 0;
+     fhir:link <http://openhie.org/fhir/hiv-cbs/Organization/HIVOrganizationExample>;
+     fhir:Reference.reference [ fhir:value "Organization/HIVOrganizationExample" ]
+  ]; # 
+  fhir:Observation.valueInteger [ fhir:value "650"^^xsd:integer]; # 
+  fhir:Observation.note [
+     fhir:index 0;
+     fhir:Annotation.authorReference [
+       fhir:link <http://openhie.org/fhir/hiv-cbs/Organization/HIVOrganizationExample>;
+       fhir:Reference.reference [ fhir:value "Organization/HIVOrganizationExample" ]
+     ];
+     fhir:Annotation.time [ fhir:value "2015-02-07T13:28:17-05:00"^^xsd:dateTime ];
+     fhir:Annotation.text [ fhir:value "Additional information regarding the CD4 Count" ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<http://openhie.org/fhir/hiv-cbs/Observation/CD4TestResultExample.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

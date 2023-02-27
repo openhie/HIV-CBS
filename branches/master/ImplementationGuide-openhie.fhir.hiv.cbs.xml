@@ -12,7 +12,7 @@
   <title value="HIV Case-Based Surveillance"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2023-02-27T07:31:33+00:00"/>
+  <date value="2023-02-27T08:19:52+00:00"/>
   <publisher value="Jembi Health Systems"/>
   <contact>
     <telecom>
@@ -491,6 +491,16 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/CD4TestResultExample"/>
+      </reference>
+      <name value="Example Observation - CD4TestResultExample"/>
+      <exampleCanonical value="http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-cd4-test"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -681,6 +691,16 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/hiv-cd4-test"/>
+      </reference>
+      <name value="Absolute CD4 Count"/>
+      <description value="This profile is for recording the Patient's CD4 Count."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Bundle"/>
       </extension>
       <reference>
@@ -698,6 +718,16 @@
       </reference>
       <name value="Transferring Facility Encounter"/>
       <description value="This profile represents the facility the patient is being transferred from."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/CD4PercentageExample"/>
+      </reference>
+      <name value="Example Observation - CD4PercentageExample"/>
+      <exampleCanonical value="http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-cd4-percentage"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -801,6 +831,16 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/hiv-cd4-percentage"/>
+      </reference>
+      <name value="CD4 Percentage"/>
+      <description value="This profile is for recording the patient's CD4 percentage."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="DiagnosticReport"/>
       </extension>
       <reference>
@@ -848,6 +888,16 @@
       </reference>
       <name value="Example Bundle - LabResult"/>
       <exampleCanonical value="http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-lab-task"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-cd4-percentage"/>
+      </reference>
+      <name value="CD4 percentage code"/>
+      <description value="A list of CD4 percentage codes"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1048,6 +1098,16 @@
       </reference>
       <name value="Viral Load Result Code"/>
       <description value="A code used to indicate the category for the lab result."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-cd4-count"/>
+      </reference>
+      <name value="CD4 test result code"/>
+      <description value="A list of CD4 test result codes"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

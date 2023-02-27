@@ -11,7 +11,7 @@
   "title" : "HIV Case-Based Surveillance",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2023-02-27T07:31:33+00:00",
+  "date" : "2023-02-27T08:19:52+00:00",
   "publisher" : "Jembi Health Systems",
   "contact" : [{
     "telecom" : [{
@@ -652,6 +652,17 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/CD4TestResultExample"
+      },
+      "name" : "Example Observation - CD4TestResultExample",
+      "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-cd4-test"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -861,6 +872,17 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/hiv-cd4-test"
+      },
+      "name" : "Absolute CD4 Count",
+      "description" : "This profile is for recording the Patient's CD4 Count."
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Bundle"
       }],
       "reference" : {
@@ -879,6 +901,17 @@
       },
       "name" : "Transferring Facility Encounter",
       "description" : "This profile represents the facility the patient is being transferred from."
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/CD4PercentageExample"
+      },
+      "name" : "Example Observation - CD4PercentageExample",
+      "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-cd4-percentage"
     },
     {
       "extension" : [{
@@ -993,6 +1026,17 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/hiv-cd4-percentage"
+      },
+      "name" : "CD4 Percentage",
+      "description" : "This profile is for recording the patient's CD4 percentage."
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "DiagnosticReport"
       }],
       "reference" : {
@@ -1044,6 +1088,17 @@
       },
       "name" : "Example Bundle - LabResult",
       "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-lab-task"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vs-cd4-percentage"
+      },
+      "name" : "CD4 percentage code",
+      "description" : "A list of CD4 percentage codes"
     },
     {
       "extension" : [{
@@ -1264,6 +1319,17 @@
       },
       "name" : "Viral Load Result Code",
       "description" : "A code used to indicate the category for the lab result."
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vs-cd4-count"
+      },
+      "name" : "CD4 test result code",
+      "description" : "A list of CD4 test result codes"
     },
     {
       "extension" : [{
