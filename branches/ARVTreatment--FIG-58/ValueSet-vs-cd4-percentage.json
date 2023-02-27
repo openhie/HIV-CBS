@@ -1,0 +1,42 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "vs-cd4-percentage",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/313938009\">313938009</a></td><td>CD4 percent count (procedure)</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-cd4-percentage",
+  "version" : "0.2.0",
+  "name" : "VSCD4Percentage",
+  "title" : "CD4 percentage code",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2023-02-27T11:32:09+00:00",
+  "publisher" : "Jembi Health Systems",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.jembi.org"
+    },
+    {
+      "system" : "email",
+      "value" : "info@jembi.org"
+    }]
+  }],
+  "description" : "A list of CD4 percentage codes",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "313938009",
+        "display" : "CD4 percent count (procedure)"
+      }]
+    }]
+  }
+}

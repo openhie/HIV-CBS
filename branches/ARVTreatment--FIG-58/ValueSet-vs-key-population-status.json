@@ -1,0 +1,65 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "vs-key-population-status",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/472986005\">472986005</a></td><td>Sexually active with men (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/159799000\">159799000</a></td><td>Female prostitute (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/159800001\">159800001</a></td><td>Male prostitute (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/228388006\">228388006</a></td><td>Intravenous drug user (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/417284009\">417284009</a></td><td>Current drug user (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/407375002\">407375002</a></td><td>Surgically transgendered transsexual (finding)</td></tr></table></li><li>Include all codes defined in <a href=\"CodeSystem-cs-key-population-status.html\"><code>http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-key-population-status</code></a></li></ul></div>"
+  },
+  "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-key-population-status",
+  "version" : "0.2.0",
+  "name" : "VSKeyPopulationSatus",
+  "title" : "Key Population Status",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2023-02-27T11:32:09+00:00",
+  "publisher" : "Jembi Health Systems",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.jembi.org"
+    },
+    {
+      "system" : "email",
+      "value" : "info@jembi.org"
+    }]
+  }],
+  "description" : "A list of key population types",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "472986005",
+        "display" : "Sexually active with men (finding)"
+      },
+      {
+        "code" : "159799000",
+        "display" : "Female prostitute (occupation)"
+      },
+      {
+        "code" : "159800001",
+        "display" : "Male prostitute (occupation)"
+      },
+      {
+        "code" : "228388006",
+        "display" : "Intravenous drug user (finding)"
+      },
+      {
+        "code" : "417284009",
+        "display" : "Current drug user (finding)"
+      },
+      {
+        "code" : "407375002",
+        "display" : "Surgically transgendered transsexual (finding)"
+      }]
+    },
+    {
+      "system" : "http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-key-population-status"
+    }]
+  }
+}
