@@ -133,10 +133,10 @@ Description: "This profile is to record prescribed ARV regimen against a given t
 * activity.detail.kind = #MedicationRequest
 * activity.detail.code from VSARVMedicationRequest (required)
 * activity.detail.status 1..1
-* activity.detail.scheduledPeriod MS
 * activity.detail.productCodeableConcept 1..1  
 * activity.detail.extension contains ARTRegimenLine named artRegimenLine 1..1
 * note 0..1
+* extension contains ARTChangeType named change-type 1..1
 
 Extension: ARTRegimenLine
 Id: art-regimen-line
@@ -336,3 +336,10 @@ Description: "This profile is for recording the Patient's CD4 Count."
 * performer 1..1
 * valueInteger 1..1
 * note 0..1
+
+Extension: ARTChangeType
+Id: art-change-type
+Title: "ART Change Type"
+Description: "A list of options to distinguish the ART between Initial, Switch and Substitute"
+* value[x] only CodeableConcept
+* valueCodeableConcept from VSARTChangeType (required)
