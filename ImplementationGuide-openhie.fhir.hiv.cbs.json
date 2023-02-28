@@ -11,7 +11,7 @@
   "title" : "HIV Case-Based Surveillance",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2023-02-28T11:30:20+00:00",
+  "date" : "2023-02-28T14:52:43+00:00",
   "publisher" : "Jembi Health Systems",
   "contact" : [{
     "telecom" : [{
@@ -861,6 +861,17 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/art-change-type"
+      },
+      "name" : "ART Change Type",
+      "description" : "A list of options to distinguish the ART between Initial, Switch and Substitute"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -978,6 +989,17 @@
       },
       "name" : "Example Task - HIVLabOrderRejectionTaskExample",
       "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-lab-task"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vs-art-change-type"
+      },
+      "name" : "ART Change Type",
+      "description" : "A list of options to distinguish the ART between Initial, Switch and Substitute"
     },
     {
       "extension" : [{
@@ -1114,6 +1136,17 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/cs-art-change-type"
+      },
+      "name" : "ART Change Type",
+      "description" : "A list of options to distinguish the ART between Initial, Switch and Substitute"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -1121,17 +1154,6 @@
       },
       "name" : "Diagnosis",
       "description" : "This profile represents the confirmation of HIV diagnosis."
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CarePlan"
-      }],
-      "reference" : {
-        "reference" : "CarePlan/ARVTreatmentRefusedExample"
-      },
-      "name" : "Example CarePlan - ARVTreatmentRefusedExample",
-      "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-arv-treatment"
     },
     {
       "extension" : [{

@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "dee7023b-0bda-49b6-ab1c-be36c4a789ad",
+  "id" : "b9acd609-d4ab-4629-b95b-5c246a5cfcb7",
   "meta" : {
-    "lastUpdated" : "2023-02-28T11:30:20.357+00:00"
+    "lastUpdated" : "2023-02-28T14:52:43.976+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -20,7 +20,7 @@
       "title" : "Recency HIV Test Result",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-02-28T11:30:20+00:00",
+      "date" : "2023-02-28T14:52:43+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -40,8 +40,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:42c5011a-d9dd-45d9-a110-4ca0d26d1a1c",
-        "timestamp" : "2023-02-28T11:31:04+00:00",
+        "identifier" : "urn:uuid:e2680ce7-4a07-48fd-b55f-26fa0baeba82",
+        "timestamp" : "2023-02-28T14:53:32+00:00",
         "total" : 1,
         "parameter" : [{
           "name" : "excludeNested",
@@ -78,7 +78,7 @@
       "title" : "HIV Test Done",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-02-28T11:30:20+00:00",
+      "date" : "2023-02-28T14:52:43+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -98,8 +98,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:4f0b4791-69ea-4f36-9acc-6b5ed6473337",
-        "timestamp" : "2023-02-28T11:31:07+00:00",
+        "identifier" : "urn:uuid:18519bb2-cf0c-489a-a843-208e384badf5",
+        "timestamp" : "2023-02-28T14:53:37+00:00",
         "total" : 1,
         "parameter" : [{
           "name" : "excludeNested",
@@ -136,7 +136,7 @@
       "title" : "HIV Recency Testing Status",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-02-28T11:30:20+00:00",
+      "date" : "2023-02-28T14:52:43+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -156,8 +156,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:f09ecfcf-ee0a-45ea-b735-da4e854673ee",
-        "timestamp" : "2023-02-28T11:31:09+00:00",
+        "identifier" : "urn:uuid:01ce52da-ba41-4b8e-aa0e-3755a7be462e",
+        "timestamp" : "2023-02-28T14:53:40+00:00",
         "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",
@@ -199,7 +199,7 @@
       "title" : "Patient Type at Enrolment",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-02-28T11:30:20+00:00",
+      "date" : "2023-02-28T14:52:43+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -219,8 +219,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:93edf543-1061-4bd9-913f-176174718943",
-        "timestamp" : "2023-02-28T11:31:09+00:00",
+        "identifier" : "urn:uuid:47b59542-1a33-44dd-8b7b-c1df7b054063",
+        "timestamp" : "2023-02-28T14:53:41+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -280,7 +280,7 @@
       "title" : "Viral Load Suppressions Status",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-02-28T11:30:20+00:00",
+      "date" : "2023-02-28T14:52:43+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -300,8 +300,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:5012301f-b5e3-4227-a990-37dabaae4d49",
-        "timestamp" : "2023-02-28T11:31:10+00:00",
+        "identifier" : "urn:uuid:8cd4f856-2390-49c6-acb7-639ccd19e291",
+        "timestamp" : "2023-02-28T14:53:41+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -334,6 +334,70 @@
     }
   },
   {
+    "fullUrl" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-art-change-type",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "vs-art-change-type",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-cs-art-change-type.html\">ART Change Type v0.2.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-cbs-CodeSystem-cs-art-change-type-artInit\"> </a>  <a href=\"CodeSystem-cs-art-change-type.html#cs-art-change-type-artInit\">artInit</a></td><td>http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-art-change-type</td><td>ART Initiated</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-cbs-CodeSystem-cs-art-change-type-artSwitch\"> </a>  <a href=\"CodeSystem-cs-art-change-type.html#cs-art-change-type-artSwitch\">artSwitch</a></td><td>http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-art-change-type</td><td>ART Switch</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-cbs-CodeSystem-cs-art-change-type-artSub\"> </a>  <a href=\"CodeSystem-cs-art-change-type.html#cs-art-change-type-artSub\">artSub</a></td><td>http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-art-change-type</td><td>ART Substitute</td></tr></table></div>"
+      },
+      "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-art-change-type",
+      "version" : "0.2.0",
+      "name" : "VSARTChangeType",
+      "title" : "ART Change Type",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2023-02-28T14:52:43+00:00",
+      "publisher" : "Jembi Health Systems",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.jembi.org"
+        },
+        {
+          "system" : "email",
+          "value" : "info@jembi.org"
+        }]
+      }],
+      "description" : "A list of options to distinguish the ART between Initial, Switch and Substitute",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:36b2164f-92ab-4b4b-947e-de88d079221b",
+        "timestamp" : "2023-02-28T14:53:49+00:00",
+        "total" : 3,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-art-change-type|0.2.0"
+        }],
+        "contains" : [{
+          "system" : "http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-art-change-type",
+          "code" : "artInit",
+          "display" : "ART Initiated"
+        },
+        {
+          "system" : "http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-art-change-type",
+          "code" : "artSwitch",
+          "display" : "ART Switch"
+        },
+        {
+          "system" : "http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-art-change-type",
+          "code" : "artSub",
+          "display" : "ART Substitute"
+        }]
+      }
+    }
+  },
+  {
     "fullUrl" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-careplan-outcome",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -348,7 +412,7 @@
       "title" : "ARV treatment outcomes",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-02-28T11:30:20+00:00",
+      "date" : "2023-02-28T14:52:43+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -368,8 +432,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:413409bf-572b-4009-bfef-a976e3fb20a3",
-        "timestamp" : "2023-02-28T11:31:15+00:00",
+        "identifier" : "urn:uuid:f9b998bf-8924-4bb7-b178-a60de71b89d1",
+        "timestamp" : "2023-02-28T14:53:49+00:00",
         "total" : 1,
         "parameter" : [{
           "name" : "excludeNested",
@@ -406,7 +470,7 @@
       "title" : "Reason for Assessment or Test Not Performed",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-02-28T11:30:20+00:00",
+      "date" : "2023-02-28T14:52:43+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -426,8 +490,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:a23a432e-fb4d-4d99-99aa-f3652c359ff5",
-        "timestamp" : "2023-02-28T11:31:15+00:00",
+        "identifier" : "urn:uuid:0ed49792-f600-45a6-9c4c-f81e8aed0f93",
+        "timestamp" : "2023-02-28T14:53:49+00:00",
         "total" : 15,
         "parameter" : [{
           "name" : "excludeNested",
@@ -534,7 +598,7 @@
       "title" : "Conditions",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-02-28T11:30:20+00:00",
+      "date" : "2023-02-28T14:52:43+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -554,8 +618,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:dd189f61-2fc0-4b66-9fa2-83939757059c",
-        "timestamp" : "2023-02-28T11:31:17+00:00",
+        "identifier" : "urn:uuid:2800943e-3d60-4786-9d92-2a47d4b69e4d",
+        "timestamp" : "2023-02-28T14:53:52+00:00",
         "total" : 1,
         "parameter" : [{
           "name" : "excludeNested",
@@ -592,7 +656,7 @@
       "title" : "CD4 percentage code",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-02-28T11:30:20+00:00",
+      "date" : "2023-02-28T14:52:43+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -612,8 +676,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:492e22c7-4415-4255-ab5e-6fe83d928c0d",
-        "timestamp" : "2023-02-28T11:31:18+00:00",
+        "identifier" : "urn:uuid:53d4f10d-4b67-42b6-bbbb-8012aa8911d2",
+        "timestamp" : "2023-02-28T14:53:53+00:00",
         "total" : 1,
         "parameter" : [{
           "name" : "excludeNested",
@@ -650,7 +714,7 @@
       "title" : "Yes No Unknown",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-02-28T11:30:20+00:00",
+      "date" : "2023-02-28T14:52:43+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -670,8 +734,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:369bb4a4-04de-4f6b-adb6-bdab070042bb",
-        "timestamp" : "2023-02-28T11:31:19+00:00",
+        "identifier" : "urn:uuid:fa93924f-bdcc-46ea-bcd6-e3517e46ac1a",
+        "timestamp" : "2023-02-28T14:53:54+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -718,7 +782,7 @@
       "title" : "Recency HIV Test",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-02-28T11:30:20+00:00",
+      "date" : "2023-02-28T14:52:43+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -738,8 +802,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:f3da2bd6-037b-4984-b891-adb39ef13bf3",
-        "timestamp" : "2023-02-28T11:31:19+00:00",
+        "identifier" : "urn:uuid:f1a767e8-ac4f-4c4a-a8c9-d6b5b6d431ad",
+        "timestamp" : "2023-02-28T14:53:54+00:00",
         "total" : 1,
         "parameter" : [{
           "name" : "excludeNested",
@@ -776,7 +840,7 @@
       "title" : "Death",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-02-28T11:30:20+00:00",
+      "date" : "2023-02-28T14:52:43+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -796,8 +860,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:e360b8be-e619-4ecf-aed1-e1dc12c8a126",
-        "timestamp" : "2023-02-28T11:31:20+00:00",
+        "identifier" : "urn:uuid:c1d1a4aa-fac4-4bf3-9668-123f05eb43f5",
+        "timestamp" : "2023-02-28T14:53:54+00:00",
         "total" : 1,
         "parameter" : [{
           "name" : "excludeNested",
@@ -834,7 +898,7 @@
       "title" : "Test Types",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-02-28T11:30:20+00:00",
+      "date" : "2023-02-28T14:52:43+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -854,8 +918,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:d920efba-976c-4bcb-94b9-690a62d76c0d",
-        "timestamp" : "2023-02-28T11:31:20+00:00",
+        "identifier" : "urn:uuid:a2ff79db-50e7-4013-a585-1c84c6c44e18",
+        "timestamp" : "2023-02-28T14:53:55+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -902,7 +966,7 @@
       "title" : "ART Regimen Lines",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-02-28T11:30:20+00:00",
+      "date" : "2023-02-28T14:52:43+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -922,8 +986,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:bac41f9f-ce90-4e49-9cff-cef497d7b3ce",
-        "timestamp" : "2023-02-28T11:31:20+00:00",
+        "identifier" : "urn:uuid:b57d3048-7681-4f0e-b9ae-e97f43cd0f0f",
+        "timestamp" : "2023-02-28T14:53:55+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -970,7 +1034,7 @@
       "title" : "Specimen Type Used In Viral Load testing",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-02-28T11:30:20+00:00",
+      "date" : "2023-02-28T14:52:43+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -990,8 +1054,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:5cd75754-ceab-4352-b33d-6836735497de",
-        "timestamp" : "2023-02-28T11:31:20+00:00",
+        "identifier" : "urn:uuid:eeadc2e1-ce87-4311-a840-b2a2d29c065a",
+        "timestamp" : "2023-02-28T14:53:55+00:00",
         "total" : 5,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1048,7 +1112,7 @@
       "title" : "Viral Load Result Code",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-02-28T11:30:20+00:00",
+      "date" : "2023-02-28T14:52:43+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -1068,8 +1132,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:8282f232-1833-4f94-a239-5d52c7c17119",
-        "timestamp" : "2023-02-28T11:31:21+00:00",
+        "identifier" : "urn:uuid:c1c6f87b-8d4f-4e9e-8822-dc6657c6c73b",
+        "timestamp" : "2023-02-28T14:53:55+00:00",
         "total" : 1,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1106,7 +1170,7 @@
       "title" : "CD4 test result code",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-02-28T11:30:20+00:00",
+      "date" : "2023-02-28T14:52:43+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -1126,8 +1190,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:73c77310-8ca3-420f-83db-58ab1b26b393",
-        "timestamp" : "2023-02-28T11:31:21+00:00",
+        "identifier" : "urn:uuid:9cf9ed2d-9145-439b-b9af-33a15908d165",
+        "timestamp" : "2023-02-28T14:53:55+00:00",
         "total" : 1,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1164,7 +1228,7 @@
       "title" : "ARV Treatment Medication Request",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-02-28T11:30:20+00:00",
+      "date" : "2023-02-28T14:52:43+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -1184,8 +1248,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:9124a4c2-ec88-41ec-bd3e-2d825ef19742",
-        "timestamp" : "2023-02-28T11:31:22+00:00",
+        "identifier" : "urn:uuid:fb686d79-4068-47a9-b98c-1b7376bc53ae",
+        "timestamp" : "2023-02-28T14:53:57+00:00",
         "total" : 1,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1222,7 +1286,7 @@
       "title" : "Key Population Status",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-02-28T11:30:20+00:00",
+      "date" : "2023-02-28T14:52:43+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -1242,8 +1306,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:c0437008-861c-431a-bf48-4f2313490fb4",
-        "timestamp" : "2023-02-28T11:31:22+00:00",
+        "identifier" : "urn:uuid:079e5e0c-b710-4cb5-b571-eeb18665ccba",
+        "timestamp" : "2023-02-28T14:53:57+00:00",
         "total" : 7,
         "parameter" : [{
           "name" : "excludeNested",
