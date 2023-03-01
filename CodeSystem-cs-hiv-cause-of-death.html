@@ -1,13 +1,9 @@
-<!-- layouts\layout-changehistory.html -->
-<!-- get modelType -->
-
-
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>OPENHIE.FHIR.HIV.CBS\ - FHIR v4.0.1</title>
+    <title>OPENHIE.FHIR.HIV.CBS\Causes of Death - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -46,8 +42,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:""}
-    h3,h4,h5,h6{--heading-prefix:""}</style>
+    <style type="text/css">h2{--heading-prefix:"6.50"}
+    h3,h4,h5,h6{--heading-prefix:"6.50"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -250,7 +246,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Causes of Death</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -262,8 +258,7 @@
         <div class="row">
           <div class="inner-wrapper">
 
-
-<div style="counter-reset: section 10" class="col-12">
+<div class="col-12">
   <!--ReleaseHeader--><p id="publish-box">HIV Case-Based Surveillance, published by Jembi Health Systems. This is not an authorized publication; it is the continuous build for version 0.2.0). This version is based on the current content of <a href="https://github.com/openhie/HIV-CBS">https://github.com/openhie/HIV-CBS</a> and changes regularly. See the <a href="http://openhie.org/fhir/hiv-cbs/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
@@ -276,29 +271,29 @@
 
 <ul class="nav nav-tabs">
 
-  <li>
-    <a href="MedicationRequest-HIVCareMedicationRequestExample.html">Narrative Content</a>
+  <li class="active">
+    <a href="#">Narrative Content</a>
   </li>
 
 
 
   
     <li>
-      <a href="MedicationRequest-HIVCareMedicationRequestExample.xml.html">XML</a>
+      <a href="CodeSystem-cs-hiv-cause-of-death.xml.html">XML</a>
     </li>
   
 
 
   
     <li>
-      <a href="MedicationRequest-HIVCareMedicationRequestExample.json.html">JSON</a>
+      <a href="CodeSystem-cs-hiv-cause-of-death.json.html">JSON</a>
     </li>
   
 
 
   
     <li>
-      <a href="MedicationRequest-HIVCareMedicationRequestExample.ttl.html">TTL</a>
+      <a href="CodeSystem-cs-hiv-cause-of-death.ttl.html">TTL</a>
     </li>
   
 
@@ -306,15 +301,80 @@
 
 </ul>
 
-
   <a name="root"> </a>
-  <h2 id="root">: MedicationRequest/HIVCareMedicationRequestExample - Change History</h2>
-  <p>History of changes for HIVCareMedicationRequestExample .</p>
+  <h2 id="root">CodeSystem: Causes of Death
+
+  </h2>
+
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-hiv-cause-of-death<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-hiv-cause-of-death"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">0.2.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-hiv-cause-of-death|0.2.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2023-03-01
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">CSHIVCauseOfDeath</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+<p>
+<p>A list of possible HIV causes of deaths</p>
+
+</p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <p>
+  This Code system is referenced in the content logical definition of the following value sets:
+  </p>
+
+  
+<ul>
+ <li><a href="ValueSet-vs-hiv-cause-of-death.html">VSHIVCauseOfDeath</a></li>
+</ul>
+
+
+  <div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-hiv-cause-of-death</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">HIV-RELATED<a name="cs-hiv-cause-of-death-HIV-RELATED"> </a></td><td>HIV related death</td></tr><tr><td style="white-space:nowrap">NON-HIV-RELATED<a name="cs-hiv-cause-of-death-NON-HIV-RELATED"> </a></td><td>Non HIV related death</td></tr></table></div>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
 
   
 
 </div>
-
         </div>  <!-- /inner-wrapper -->
       </div>  <!-- /row -->
     </div>  <!-- /container -->
@@ -322,29 +382,6 @@
 
   <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
-
-  <script type="text/javascript">
-    try {
-      var currentTabIndex = sessionStorage.getItem('fhir-resource-tab-index');
-    } catch(exception) {
-    }
-
-    if (!currentTabIndex)
-      currentTabIndex = '0';
-
-    $( '#tabs' ).tabs({
-      active: currentTabIndex,
-      activate: function( event, ui ) {
-        var active = $('.selector').tabs('option', 'active');
-        currentTabIndex = ui.newTab.index();
-        document.activeElement.blur();
-        try {
-          sessionStorage.setItem('fhir-resource-tab-index', currentTabIndex);
-        } catch(exception) {
-        }
-      }
-    });
-  </script>
 
   <script type="text/javascript">
     $(document).ready(function(){
@@ -360,7 +397,7 @@
            
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2019+ <a style="color: #81BEF7" href="https://www.jembi.org">Jembi Health Systems</a>.  Package openhie.fhir.hiv.cbs#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Mar 1, 2023 14:07+0000">2023-03-01</span>
+          IG &#169; 2019+ <a style="color: #81BEF7" href="https://www.jembi.org">Jembi Health Systems</a>.  Package openhie.fhir.hiv.cbs#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Mar 1, 2023 15:00+0000">2023-03-01</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

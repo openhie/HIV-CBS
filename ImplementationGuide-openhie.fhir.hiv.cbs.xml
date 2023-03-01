@@ -12,7 +12,7 @@
   <title value="HIV Case-Based Surveillance"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2023-03-01T14:07:40+00:00"/>
+  <date value="2023-03-01T15:00:07+00:00"/>
   <publisher value="Jembi Health Systems"/>
   <contact>
     <telecom>
@@ -468,16 +468,6 @@
       </reference>
       <name value="ART Regimen Change Types"/>
       <description value="A list of options to determine whether an ARV regimen was switched or substituted."/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="MedicationRequest"/>
-      </extension>
-      <reference>
-        <reference value="MedicationRequest/HIVCareMedicationRequestExample"/>
-      </reference>
-      <name value="Example MedicationRequest - HIVCareMedicationRequestExample"/>
-      <exampleCanonical value="http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-med-req"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -971,6 +961,16 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-hiv-cause-of-death"/>
+      </reference>
+      <name value="Causes of Death"/>
+      <description value="A list of possible HIV causes of deaths"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -1151,6 +1151,16 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/cs-hiv-cause-of-death"/>
+      </reference>
+      <name value="Causes of Death"/>
+      <description value="A list of possible HIV causes of deaths"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -1158,16 +1168,6 @@
       </reference>
       <name value="Viral Load Result Code"/>
       <description value="A code used to indicate the category for the lab result."/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/hiv-med-req"/>
-      </reference>
-      <name value="HIV Care Medication Request"/>
-      <description value="This profile is for recording the Patient's ARV Dispensing quantity in days."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1238,16 +1238,6 @@
       </reference>
       <name value="HIV Recency Test Result"/>
       <description value="This profile is to record the HIV recency test result data for a patient."/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/vs-hiv-art-medication"/>
-      </reference>
-      <name value="HIV ART Medication"/>
-      <description value="A list of HIV ART medication"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

@@ -1,0 +1,44 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "cs-hiv-cause-of-death",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-hiv-cause-of-death</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">HIV-RELATED<a name=\"cs-hiv-cause-of-death-HIV-RELATED\"> </a></td><td>HIV related death</td></tr><tr><td style=\"white-space:nowrap\">NON-HIV-RELATED<a name=\"cs-hiv-cause-of-death-NON-HIV-RELATED\"> </a></td><td>Non HIV related death</td></tr></table></div>"
+  },
+  "url" : "http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-hiv-cause-of-death",
+  "version" : "0.2.0",
+  "name" : "CSHIVCauseOfDeath",
+  "title" : "Causes of Death",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2023-03-01T15:00:07+00:00",
+  "publisher" : "Jembi Health Systems",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.jembi.org"
+    },
+    {
+      "system" : "email",
+      "value" : "info@jembi.org"
+    }]
+  }],
+  "description" : "A list of possible HIV causes of deaths",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 2,
+  "concept" : [{
+    "code" : "HIV-RELATED",
+    "display" : "HIV related death"
+  },
+  {
+    "code" : "NON-HIV-RELATED",
+    "display" : "Non HIV related death"
+  }]
+}
