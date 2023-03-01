@@ -179,3 +179,19 @@ Title: "CD4 test result code"
 Description:  "A list of CD4 test result codes"
 * ^experimental = false
 * $SCT#151271000119102 "Abnormal blood test (finding)"  
+
+CodeSystem: CSARTRegimenChangeType
+Id: cs-art-regimen-change-type
+Title: "ART Regimen Change Types"
+Description: "A list of options to determine whether an ARV regimen was switched or substituted."
+* ^experimental = false
+* ^caseSensitive = true
+* #Switched "ARV Regimen Switched"
+* #Substituted "ARV Regimen Substituted"
+
+ValueSet: VSARTRegimenChangeType
+Id: vs-art-regimen-change-type
+Title: "ART Regimen Change Types"
+Description: "A list of options to determine whether an ARV regimen was switched or substituted."
+* ^experimental = false
+* include codes from system CSARTRegimenChangeType

@@ -133,8 +133,8 @@ Description: "This profile is to record prescribed ARV regimen against a given t
 * activity.detail.kind = #MedicationRequest
 * activity.detail.code from VSARVMedicationRequest (required)
 * activity.detail.status 1..1
-* activity.detail.scheduledPeriod MS
-* activity.detail.productCodeableConcept 1..1  
+* activity.detail.productCodeableConcept 1..1 
+* activity.detail.extension contains ARTRegimenSwitchedOrSubstituted named artRegimenSwitchedOrSubstituted 0..1 MS
 * activity.detail.extension contains ARTRegimenLine named artRegimenLine 1..1
 * note 0..1
 
@@ -144,6 +144,13 @@ Title: "ART Regimen Line"
 Description: "Therapeutic lines that are used to classify the patient's currently prescribed ARV regimen."
 * value[x] only CodeableConcept
 * valueCodeableConcept from VSARTRegimenLines (required)
+
+Extension: ARTRegimenSwitchedOrSubstituted
+Id: art-regimen-switched-or-substituted
+Title: "ART Regimen Switched Or Substituted"
+Description: "The ARV regimen has been switched to a new ARV regimen or has been substituted by another ARV regimen."
+* value[x] only CodeableConcept
+* valueCodeableConcept from VSARTRegimenChangeType (required)
 
 Profile: HIVEpisodeOfCare
 Parent: EpisodeOfCare

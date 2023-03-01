@@ -323,29 +323,6 @@ Description: "HIV Lab Results Diagnostic Report example"
 * result = Reference(HIVTestResultExample)
 * conclusion = "Some conclusion text"
 
-Instance: ARVTreatmentRefusedExample
-InstanceOf: ARVTreatment
-Usage: #example
-Title: "ARVCarePlan Refused example"
-Description: "ARVCarePlan Refused example"
-* status = #active
-* intent = #plan
-* subject = Reference(HIVPatientExample)
-* encounter = Reference(TargetFacilityEncounterExample)
-* period.start = "2021-12-01"
-* period.end = "2022-12-01"
-* activity.outcomeCodeableConcept = $SCT#105480006
-* activity.detail.kind = #MedicationRequest
-* activity.detail.code = $LNC#45260-7 
-* activity.detail.status = #stopped
-* activity.detail.productCodeableConcept.text = "TDF/3TC/DTG"
-* activity.detail.scheduledPeriod.start = "2022-06-01"
-* activity.detail.scheduledPeriod.end = "2022-06-01"
-* activity.detail.extension[artRegimenLine].valueCodeableConcept = $SCT#708255002
-* note.text = "Patient stopped treatment"
-* note.authorReference = Reference(HIVOrganizationExample)
-* note.time = "2022-02-07T13:28:17-05:00"
-
 Instance: HIVRecencyTestDoneExample
 InstanceOf: HIVRecencyTestDone
 Usage: #example
@@ -410,3 +387,25 @@ Description:  "Absolute CD4 Count Example"
 * note.authorReference = Reference(HIVOrganizationExample)
 * note.time = "2015-02-07T13:28:17-05:00"
 * performer = Reference(HIVOrganizationExample)
+
+Instance: ARVTreatmentRegimenSwitchedOrSubstitutedExample
+InstanceOf: ARVTreatment
+Usage: #example
+Title: "ARV Regimen switched or substituted example"
+Description: "ARV Regimen switched or substituted example"
+* status = #active
+* intent = #plan
+* subject = Reference(HIVPatientExample)
+* encounter = Reference(TargetFacilityEncounterExample)
+* period.start = "2022-12-01"
+* period.end = "2022-12-01"
+* activity.detail.kind = #MedicationRequest
+* activity.detail.code = $LNC#45260-7 
+* activity.detail.status = #in-progress
+* activity.detail.productCodeableConcept.text = "TDF/3TC/DTG"
+* activity.detail.extension[artRegimenLine].valueCodeableConcept = $SCT#708255002
+* activity.detail.extension[artRegimenSwitchedOrSubstituted].valueCodeableConcept.coding.code = #Switched
+* activity.detail.extension[artRegimenSwitchedOrSubstituted].valueCodeableConcept.coding.system = "http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-art-regimen-change-type"
+* note.text = "Additional information regarding the switching of the ARV regimen with another ARV regimen."
+* note.authorReference = Reference(HIVOrganizationExample)
+* note.time = "2015-02-07T13:28:17-05:00"
