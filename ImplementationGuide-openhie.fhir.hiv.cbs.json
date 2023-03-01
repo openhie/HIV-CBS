@@ -11,7 +11,7 @@
   "title" : "HIV Case-Based Surveillance",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2023-03-01T12:49:43+00:00",
+  "date" : "2023-03-01T13:04:01+00:00",
   "publisher" : "Jembi Health Systems",
   "contact" : [{
     "telecom" : [{
@@ -729,17 +729,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/vs-reason-sample-cancelled-or-rejected"
-      },
-      "name" : "Reasons why a lab order was cancelled or rejected",
-      "description" : "Reasons why a lab order was cancelled or rejected."
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
@@ -879,17 +868,6 @@
       },
       "name" : "Date HIV Test Done",
       "description" : "This profile is to record the date when HIV test was done for a patient."
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/vs-arv-regimen"
-      },
-      "name" : "A list of ARV regimen",
-      "description" : "A list of ARV regimen."
     },
     {
       "extension" : [{
@@ -1169,6 +1147,17 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vs-hiv-cause-of-death"
+      },
+      "name" : "Causes of Death",
+      "description" : "A list of possible HIV causes of deaths"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -1363,6 +1352,17 @@
       },
       "name" : "Example Observation - HIVRecencyTestDoneExample",
       "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-recency-test-done"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/cs-hiv-cause-of-death"
+      },
+      "name" : "Causes of Death",
+      "description" : "A list of possible HIV causes of deaths"
     },
     {
       "extension" : [{

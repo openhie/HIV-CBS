@@ -7,6 +7,13 @@
     "name" : "CSARTRegimenChangeType"
   },
   {
+    "id" : "cs-hiv-cause-of-death",
+    "type" : "CodeSystem",
+    "url" : "http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-hiv-cause-of-death",
+    "version" : "0.2.0",
+    "name" : "CSHIVCauseOfDeath"
+  },
+  {
     "id" : "cs-key-population-status",
     "type" : "CodeSystem",
     "url" : "http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-key-population-status",
@@ -203,13 +210,6 @@
     "name" : "VSARTRegimenLines"
   },
   {
-    "id" : "vs-arv-regimen",
-    "type" : "ValueSet",
-    "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-arv-regimen",
-    "version" : "0.2.0",
-    "name" : "VSARVRegimen"
-  },
-  {
     "id" : "vs-arvtreatment-activity-type",
     "type" : "ValueSet",
     "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-arvtreatment-activity-type",
@@ -243,6 +243,13 @@
     "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-condition",
     "version" : "0.2.0",
     "name" : "VSCondition"
+  },
+  {
+    "id" : "vs-hiv-cause-of-death",
+    "type" : "ValueSet",
+    "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-hiv-cause-of-death",
+    "version" : "0.2.0",
+    "name" : "VSHIVCauseOfDeath"
   },
   {
     "id" : "vs-hiv-death",
@@ -299,13 +306,6 @@
     "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-reason-for-assessment-or-test-not-performed",
     "version" : "0.2.0",
     "name" : "VSReasonForAssessmentOrTestNotPerformed"
-  },
-  {
-    "id" : "vs-reason-sample-cancelled-or-rejected",
-    "type" : "ValueSet",
-    "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-reason-sample-cancelled-or-rejected",
-    "version" : "0.2.0",
-    "name" : "VSReasonForSampleCancellationOrRejection"
   },
   {
     "id" : "vs-specimen-type",

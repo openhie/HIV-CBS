@@ -12,7 +12,7 @@
   <title value="HIV Case-Based Surveillance"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2023-03-01T12:49:43+00:00"/>
+  <date value="2023-03-01T13:04:01+00:00"/>
   <publisher value="Jembi Health Systems"/>
   <contact>
     <telecom>
@@ -561,16 +561,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/vs-reason-sample-cancelled-or-rejected"/>
-      </reference>
-      <name value="Reasons why a lab order was cancelled or rejected"/>
-      <description value="Reasons why a lab order was cancelled or rejected."/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
@@ -698,16 +688,6 @@
       </reference>
       <name value="Date HIV Test Done"/>
       <description value="This profile is to record the date when HIV test was done for a patient."/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/vs-arv-regimen"/>
-      </reference>
-      <name value="A list of ARV regimen"/>
-      <description value="A list of ARV regimen."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -961,6 +941,16 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-hiv-cause-of-death"/>
+      </reference>
+      <name value="Causes of Death"/>
+      <description value="A list of possible HIV causes of deaths"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -1138,6 +1128,16 @@
       </reference>
       <name value="Example Observation - HIVRecencyTestDoneExample"/>
       <exampleCanonical value="http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-recency-test-done"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/cs-hiv-cause-of-death"/>
+      </reference>
+      <name value="Causes of Death"/>
+      <description value="A list of possible HIV causes of deaths"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
