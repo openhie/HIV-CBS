@@ -133,7 +133,7 @@ Description: "This profile is to record prescribed ARV regimen against a given t
 * activity.detail.kind = #MedicationRequest
 * activity.detail.code from VSARVMedicationRequest (required)
 * activity.detail.status 1..1
-* activity.detail.productCodeableConcept 1..1 
+* activity.detail.productCodeableConcept from VSARVRegimen (required)
 * activity.detail.extension contains ARTRegimenSwitchedOrSubstituted named artRegimenSwitchedOrSubstituted 0..1 MS
 * activity.detail.extension contains ARTRegimenLine named artRegimenLine 1..1
 * note 0..1
@@ -255,7 +255,7 @@ Description: "Assists with tracking the state of the lab order and its completio
 * identifier 1..*
 * basedOn only Reference(ServiceRequest)
 * status 1..1
-* statusReason 0..1
+* statusReason from VSReasonForSampleCancellationOrRejection
 * intent = #order
 * executionPeriod 1..1
 * lastModified 0..1

@@ -156,7 +156,7 @@ Description: "ARVCarePlan example"
 * activity.detail.kind = #MedicationRequest
 * activity.detail.code = $LNC#45260-7 
 * activity.detail.status = #in-progress
-* activity.detail.productCodeableConcept.text = "TDF/3TC/DTG"
+* activity.detail.productCodeableConcept = $SCT#387005008
 * activity.detail.extension[artRegimenLine].valueCodeableConcept = $SCT#708255002
 * note.text = "Additional information regarding the ARV treatment prescribed"
 * note.authorReference = Reference(HIVOrganizationExample)
@@ -402,7 +402,7 @@ Description: "ARV Regimen switched or substituted example"
 * activity.detail.kind = #MedicationRequest
 * activity.detail.code = $LNC#45260-7 
 * activity.detail.status = #in-progress
-* activity.detail.productCodeableConcept.text = "TDF/3TC/DTG"
+* activity.detail.productCodeableConcept = $SCT#387005008
 * activity.detail.extension[artRegimenLine].valueCodeableConcept = $SCT#708255002
 * activity.detail.extension[artRegimenSwitchedOrSubstituted].valueCodeableConcept.coding.code = #Switched
 * activity.detail.extension[artRegimenSwitchedOrSubstituted].valueCodeableConcept.coding.system = "http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-art-regimen-change-type"
