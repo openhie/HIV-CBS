@@ -195,3 +195,19 @@ Title: "ART Regimen Change Types"
 Description: "A list of options to determine whether an ARV regimen was switched or substituted."
 * ^experimental = false
 * include codes from system CSARTRegimenChangeType
+
+CodeSystem: CSHIVCauseOfDeath
+Id: cs-hiv-cause-of-death
+Title: "Causes of Death"
+Description: "A list of possible HIV causes of deaths"
+* ^experimental = false
+* ^caseSensitive = true
+* #HIV-RELATED "HIV related death"
+* #NON-HIV-RELATED "Non HIV related death"
+
+ValueSet: VSHIVCauseOfDeath
+Id: vs-hiv-cause-of-death
+Title: "Causes of Death"
+Description: "A list of possible HIV causes of deaths"
+* ^experimental = false
+* include codes from system CSHIVCauseOfDeath
