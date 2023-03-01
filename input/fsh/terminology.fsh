@@ -179,20 +179,3 @@ Title: "CD4 test result code"
 Description:  "A list of CD4 test result codes"
 * ^experimental = false
 * $SCT#151271000119102 "Abnormal blood test (finding)"  
-
-CodeSystem: CSARTChangeType
-Id: cs-art-change-type
-Title: "ART Change Type"
-Description: "A list of options to distinguish the ART between Initial, Switch and Substitute"
-* ^experimental = false
-* ^caseSensitive = true
-* #artInit "ART Initiated"
-* #artSwitch "ART Switch"
-* #artSub "ART Substitute"
-
-ValueSet: VSARTChangeType
-Id: vs-art-change-type
-Title: "ART Change Type"
-Description: "A list of options to distinguish the ART between Initial, Switch and Substitute"
-* ^experimental = false
-* include codes from system CSARTChangeType

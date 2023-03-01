@@ -157,12 +157,12 @@ Description: "ARVCarePlan example"
 * activity.detail.code = $LNC#45260-7 
 * activity.detail.status = #in-progress
 * activity.detail.productCodeableConcept.text = "TDF/3TC/DTG"
+* activity.detail.extension[artRegimenSwitched].valueBoolean = false
+* activity.detail.extension[artRegimenSubstituded].valueBoolean = false
 * activity.detail.extension[artRegimenLine].valueCodeableConcept = $SCT#708255002
 * note.text = "Additional information regarding the ARV treatment prescribed"
 * note.authorReference = Reference(HIVOrganizationExample)
 * note.time = "2015-02-07T13:28:17-05:00"
-* extension[change-type].valueCodeableConcept.coding.code = #artInit
-* extension[change-type].valueCodeableConcept.coding.system = "http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-art-change-type"
 
 Instance: HIVEpisodeOfCareExample
 InstanceOf: HIVEpisodeOfCare
