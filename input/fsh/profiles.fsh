@@ -146,7 +146,7 @@ Description: "Therapeutic lines that are used to classify the patient's currentl
 * valueCodeableConcept from VSARTRegimenLines (required)
 
 Extension: ARTRegimenSwitchedOrSubstituted
-Id: art-regimen-switched-or-substituded
+Id: art-regimen-switched-or-substituted
 Title: "ART Regimen Switched Or Substituted"
 Description: "The ARV regimen has been switched to a new ARV regimen or has been substituted by another ARV regimen."
 * value[x] only CodeableConcept
