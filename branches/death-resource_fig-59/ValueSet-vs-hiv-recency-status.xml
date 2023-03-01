@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vs-hiv-recency-status"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/6493001">6493001</a></td><td>Recent (qualifier value)</td></tr><tr><td><a href="http://snomed.info/id/307294006">307294006</a></td><td>Personal history finding (finding)</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://openhie.org/fhir/hiv-cbs/ValueSet/vs-hiv-recency-status"/>
+  <version value="0.2.0"/>
+  <name value="VSHIVRecencyStatus"/>
+  <title value="HIV Recency Testing Status"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-03-01T13:04:01+00:00"/>
+  <publisher value="Jembi Health Systems"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.jembi.org"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@jembi.org"/>
+    </telecom>
+  </contact>
+  <description value="A list of HIV recency statuses"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="6493001"/>
+        <display value="Recent (qualifier value)"/>
+      </concept>
+      <concept>
+        <code value="307294006"/>
+        <display value="Personal history finding (finding)"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

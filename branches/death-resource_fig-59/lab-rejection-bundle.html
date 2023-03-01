@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>OPENHIE.FHIR.HIV.CBS\Lab Rejection Bundle - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/openhie.css" rel="stylesheet"/>
+<link href="assets/css/lforms.min.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"3.1.5"}
+    h3,h4,h5,h6{--heading-prefix:"3.1.5"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+<!-- Left logo - typically the publisher's logo - project or affiliate -->
+        <div id="project-nav">
+          <a id="project-logo" no-external="true" href="http://hl7.eu">
+            <img height="71" alt="Project home" src="assets/images/home.png"/>
+          </a>
+        </div>
+
+<!-- Right logo - for example the FHIR logo -->
+<!-- Make sure you have authorization to use the FHIR logo -->
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="70" alt="FHIR website" src="assets/images/fire.png"/> </a>
+        </div>
+
+<!-- search icon - if you want -->
+<!--
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+-->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">HIV Case-Based Surveillance</span>
+            <br/>
+            <span style="display:inline-block;">0.2.0 - CI Build
+
+
+
+  <img alt="International flag" src="assets/images/001.svg" height="16" title="International"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <style>
+    *,
+*::before,
+*::after {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.dropdown {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 100px;
+}
+
+.dropdown li {
+    position: relative;
+    z-index: 999;
+}
+
+.dropdown li a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+}
+
+.dropdown li ul {
+    position: absolute;
+    top: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: none;
+    line-height: normal;
+    background-color: #DDFFEE;
+}
+
+.dropdown li ul li a {
+    text-align: left;
+    color: black;
+    font-size: 12px;
+    padding: 10px;
+    display: block;
+    white-space: nowrap;
+}
+
+.dropdown li ul li ul {
+    left: 100%;
+    top: 0;
+}
+
+#mainMenuOptions li:hover>a {
+    background-color: #43A682;
+    color: white;
+    text-decoration: underline;
+    font-size: 13px;
+}
+
+#mainMenuOptions li:hover>ul {
+    display: block;
+}
+
+	.heading {
+    display: block;
+    font-family: verdana;
+    line-height: 1.2em;
+    font-size: 1.2em;
+    margin: 0 0 3px 0;
+    margin-top: 10px;
+    color: #337AB7;
+    background-color: white !important;
+}
+
+.not-allowed {
+    cursor: not-allowed !important;
+    text-decoration: none !important;
+}
+
+.pointer {
+    cursor: pointer;
+}
+</style>
+
+<ul id="mainMenuOptions" xmlns="http://www.w3.org/1999/xhtml" class="dropdown">
+	<li><a href="#" style="font-size: 12px; text-decoration: none;">Menu <b class="caret"></b></a>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="bussiness-description.html">Business Description <b class="caret" style="transform:rotate(270deg);"></b></a>
+				<ul>
+					<li>
+						<a href="requirements.html">Functional Requirements <b class="caret" style="transform:rotate(270deg);"></b></a>
+						<ul>
+							<li>
+								<a href="use-cases.html">Use Cases</a>
+							</li>
+						</ul>
+					</li>
+					<li><a href="personas.html">Personas</a></li>
+					<li><a href="workflows.html">Usage Workflows</a></li>
+				</ul>
+			</li>
+			<li><a href="deployment.html">Deployment &amp; Use <b class="caret" style="transform:rotate(270deg);"></b></a>
+				<ul>
+					<li><a href="bundles.html">Message Bundles <b class="caret" style="transform:rotate(270deg);"></b></a>
+						<ul>
+							<li>
+								<a href="emr-bundle.html">EMR</a>
+							</li>
+							<li>
+								<a href="lab-order-bundle.html">Lab Order</a>
+							</li>
+							<li>
+								<a href="lab-result-bundle.html">Lab Result</a>
+							</li>
+							<li>
+								<a href="lab-rejection-bundle.html">Lab Rejection</a>
+							</li>
+							<li>
+								<a href="lab-cancellation-bundle.html">Lab Cancellation</a>
+							</li>
+						</ul>
+					</li>
+					<li><a href="security-privacy.html">Security &amp; Privacy</a></li>
+					<li><a href="testing.html">Testing</a></li>
+				</ul>
+			</li>
+			
+			<li><a href="referenced-sources.html">References</a></li>
+			<li><a href="artifacts.html">Artifacts</a></li>
+			<li><a href="toc.html">Table of Contents</a></li>
+		</ul>
+    </li>
+</ul> 
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='deployment.html'><b>Deployment &amp; Use</b></a></li><li><a href='bundles.html'><b>Message Bundles</b></a></li><li><b>Lab Rejection Bundle</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">HIV Case-Based Surveillance, published by Jembi Health Systems. This is not an authorized publication; it is the continuous build for version 0.2.0). This version is based on the current content of <a href="https://github.com/openhie/HIV-CBS">https://github.com/openhie/HIV-CBS</a> and changes regularly. See the <a href="http://openhie.org/fhir/hiv-cbs/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Lab Rejection Bundle</h2>
+  
+  
+  
+  <div xmlns="http://www.w3.org/1999/xhtml" lang="en"><div class="markdown-toc"><p>Contents:</p><ul><li><a href="#1">Introduction</a></li><li><a href="#2">UML</a></li></ul></div>
+   <a name="1"/><h3>Introduction</h3> <a name="intro">  </a>
+  <p>
+    This UML diagram has been modelled from the <a href="Bundle-LabRejection.html">EMR message bundle</a> specification.
+  </p>
+
+  <a name="2"/><h3>UML</h3> <a name="uml">  </a>
+  <p/>
+  
+  <figure>
+    <?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="358px" preserveAspectRatio="none" style="width:2461px;height:358px;background:#FFFFFF;" version="1.1" viewBox="0 0 2461 358" width="2461px" zoomAndPan="magnify"><defs/><g><rect fill="#F1F1F1" height="81.9531" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="203" x="10" y="158"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="96" x="15" y="173.5352">resourceType</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="47" x="121" y="173.5352">Bundle</text><line style="stroke:#000000;stroke-width:1.0;" x1="116" x2="116" y1="158" y2="178.4883"/><line style="stroke:#000000;stroke-width:1.0;" x1="10" x2="213" y1="178.4883" y2="178.4883"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="14" x="15" y="194.0234">id</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="87" x="121" y="194.0234">LabRejection</text><line style="stroke:#000000;stroke-width:1.0;" x1="116" x2="116" y1="178.4883" y2="198.9766"/><line style="stroke:#000000;stroke-width:1.0;" x1="10" x2="213" y1="198.9766" y2="198.9766"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="31" x="15" y="214.5117">type</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="77" x="121" y="214.5117">transaction</text><line style="stroke:#000000;stroke-width:1.0;" x1="116" x2="116" y1="198.9766" y2="219.4648"/><line style="stroke:#000000;stroke-width:1.0;" x1="10" x2="213" y1="219.4648" y2="219.4648"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="37" x="15" y="235">entry</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="12" x="121" y="235">   </text><line style="stroke:#000000;stroke-width:1.0;" x1="116" x2="116" y1="219.4648" y2="239.9531"/><rect fill="none" height="81.9531" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="203" x="10" y="158"/><rect fill="#F1F1F1" height="20.4883" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="22" x="250" y="220"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="12" x="255" y="235.5352">   </text><rect fill="none" height="20.4883" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="22" x="250" y="220"/><rect fill="#F1F1F1" height="61.4648" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="361" x="311" y="199.5"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="46" x="316" y="215.0352">fullUrl</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="280" x="387" y="215.0352">Task/HIVLabOrderRejectionTaskExample</text><line style="stroke:#000000;stroke-width:1.0;" x1="382" x2="382" y1="199.5" y2="219.9883"/><line style="stroke:#000000;stroke-width:1.0;" x1="311" x2="672" y1="219.9883" y2="219.9883"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="61" x="316" y="235.5234">resource</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="12" x="387" y="235.5234">   </text><line style="stroke:#000000;stroke-width:1.0;" x1="382" x2="382" y1="219.9883" y2="240.4766"/><line style="stroke:#000000;stroke-width:1.0;" x1="311" x2="672" y1="240.4766" y2="240.4766"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="54" x="316" y="256.0117">request</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="12" x="387" y="256.0117">   </text><line style="stroke:#000000;stroke-width:1.0;" x1="382" x2="382" y1="240.4766" y2="260.9648"/><rect fill="none" height="61.4648" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="361" x="311" y="199.5"/><rect fill="#F1F1F1" height="266.3477" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="376" x="709" y="21"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="96" x="714" y="36.5352">resourceType</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="32" x="839" y="36.5352">Task</text><line style="stroke:#000000;stroke-width:1.0;" x1="834" x2="834" y1="21" y2="41.4883"/><line style="stroke:#000000;stroke-width:1.0;" x1="709" x2="1085" y1="41.4883" y2="41.4883"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="14" x="714" y="57.0234">id</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="241" x="839" y="57.0234">HIVLabOrderRejectionTaskExample</text><line style="stroke:#000000;stroke-width:1.0;" x1="834" x2="834" y1="41.4883" y2="61.9766"/><line style="stroke:#000000;stroke-width:1.0;" x1="709" x2="1085" y1="61.9766" y2="61.9766"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="36" x="714" y="77.5117">meta</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="12" x="839" y="77.5117">   </text><line style="stroke:#000000;stroke-width:1.0;" x1="834" x2="834" y1="61.9766" y2="82.4648"/><line style="stroke:#000000;stroke-width:1.0;" x1="709" x2="1085" y1="82.4648" y2="82.4648"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="67" x="714" y="98">identifier</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="12" x="839" y="98">   </text><line style="stroke:#000000;stroke-width:1.0;" x1="834" x2="834" y1="82.4648" y2="102.9531"/><line style="stroke:#000000;stroke-width:1.0;" x1="709" x2="1085" y1="102.9531" y2="102.9531"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="63" x="714" y="118.4883">basedOn</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="12" x="839" y="118.4883">   </text><line style="stroke:#000000;stroke-width:1.0;" x1="834" x2="834" y1="102.9531" y2="123.4414"/><line style="stroke:#000000;stroke-width:1.0;" x1="709" x2="1085" y1="123.4414" y2="123.4414"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="45" x="714" y="138.9766">status</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="55" x="839" y="138.9766">rejected</text><line style="stroke:#000000;stroke-width:1.0;" x1="834" x2="834" y1="123.4414" y2="143.9297"/><line style="stroke:#000000;stroke-width:1.0;" x1="709" x2="1085" y1="143.9297" y2="143.9297"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="97" x="714" y="159.4648">statusReason</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="12" x="839" y="159.4648">   </text><line style="stroke:#000000;stroke-width:1.0;" x1="834" x2="834" y1="143.9297" y2="164.418"/><line style="stroke:#000000;stroke-width:1.0;" x1="709" x2="1085" y1="164.418" y2="164.418"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="43" x="714" y="179.9531">intent</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="38" x="839" y="179.9531">order</text><line style="stroke:#000000;stroke-width:1.0;" x1="834" x2="834" y1="164.418" y2="184.9063"/><line style="stroke:#000000;stroke-width:1.0;" x1="709" x2="1085" y1="184.9063" y2="184.9063"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="115" x="714" y="200.4414">executionPeriod</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="12" x="839" y="200.4414">   </text><line style="stroke:#000000;stroke-width:1.0;" x1="834" x2="834" y1="184.9063" y2="205.3945"/><line style="stroke:#000000;stroke-width:1.0;" x1="709" x2="1085" y1="205.3945" y2="205.3945"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="91" x="714" y="220.9297">lastModified</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="88" x="839" y="220.9297">2022-07-30</text><line style="stroke:#000000;stroke-width:1.0;" x1="834" x2="834" y1="205.3945" y2="225.8828"/><line style="stroke:#000000;stroke-width:1.0;" x1="709" x2="1085" y1="225.8828" y2="225.8828"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="68" x="714" y="241.418">requester</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="12" x="839" y="241.418">   </text><line style="stroke:#000000;stroke-width:1.0;" x1="834" x2="834" y1="225.8828" y2="246.3711"/><line style="stroke:#000000;stroke-width:1.0;" x1="709" x2="1085" y1="246.3711" y2="246.3711"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="44" x="714" y="261.9063">owner</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="12" x="839" y="261.9063">   </text><line style="stroke:#000000;stroke-width:1.0;" x1="834" x2="834" y1="246.3711" y2="266.8594"/><line style="stroke:#000000;stroke-width:1.0;" x1="709" x2="1085" y1="266.8594" y2="266.8594"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="32" x="714" y="282.3945">note</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="12" x="839" y="282.3945">   </text><line style="stroke:#000000;stroke-width:1.0;" x1="834" x2="834" y1="266.8594" y2="287.3477"/><rect fill="none" height="266.3477" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="376" x="709" y="21"/><rect fill="#F1F1F1" height="20.4883" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="80" x="1259.5" y="17"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="48" x="1264.5" y="32.5352">profile</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="12" x="1322.5" y="32.5352">   </text><line style="stroke:#000000;stroke-width:1.0;" x1="1317.5" x2="1317.5" y1="17" y2="37.4883"/><rect fill="none" height="20.4883" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="80" x="1259.5" y="17"/><rect fill="#F1F1F1" height="20.4883" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="458" x="1556.5" y="10"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="448" x="1561.5" y="25.5352">http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-lab-task</text><rect fill="none" height="20.4883" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="458" x="1556.5" y="10"/><rect fill="#F1F1F1" height="20.4883" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="22" x="1287.5" y="60"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="12" x="1292.5" y="75.5352">   </text><rect fill="none" height="20.4883" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="22" x="1287.5" y="60"/><rect fill="#F1F1F1" height="40.9766" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="543" x="1514" y="48.5"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="52" x="1519" y="64.0352">system</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="471" x="1581" y="64.0352">http://openhie.org/fhir/hiv-cbs/lab-integration/test-order-number</text><line style="stroke:#000000;stroke-width:1.0;" x1="1576" x2="1576" y1="48.5" y2="68.9883"/><line style="stroke:#000000;stroke-width:1.0;" x1="1514" x2="2057" y1="68.9883" y2="68.9883"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="38" x="1519" y="84.5234">value</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="92" x="1581" y="84.5234">ORDER12345</text><line style="stroke:#000000;stroke-width:1.0;" x1="1576" x2="1576" y1="68.9883" y2="89.4766"/><rect fill="none" height="40.9766" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="543" x="1514" y="48.5"/><rect fill="#F1F1F1" height="20.4883" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="22" x="1287.5" y="103"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="12" x="1292.5" y="118.5352">   </text><rect fill="none" height="20.4883" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="22" x="1287.5" y="103"/><rect fill="#F1F1F1" height="20.4883" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="381" x="1595" y="108"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="66" x="1600" y="123.5352">reference</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="295" x="1676" y="123.5352">ServiceRequest/HIVServiceRequestExample</text><line style="stroke:#000000;stroke-width:1.0;" x1="1671" x2="1671" y1="108" y2="128.4883"/><rect fill="none" height="20.4883" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="381" x="1595" y="108"/><rect fill="#F1F1F1" height="20.4883" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="80" x="1259.5" y="144"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="48" x="1264.5" y="159.5352">coding</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="12" x="1322.5" y="159.5352">   </text><line style="stroke:#000000;stroke-width:1.0;" x1="1317.5" x2="1317.5" y1="144" y2="164.4883"/><rect fill="none" height="20.4883" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="80" x="1259.5" y="144"/><rect fill="#F1F1F1" height="20.4883" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="22" x="1773.5" y="146"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="12" x="1778.5" y="161.5352">   </text><rect fill="none" height="20.4883" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="22" x="1773.5" y="146"/><rect fill="#F1F1F1" height="40.9766" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="230" x="2156.5" y="135.5"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="52" x="2161.5" y="151.0352">system</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="158" x="2223.5" y="151.0352">http://snomed.info/sct</text><line style="stroke:#000000;stroke-width:1.0;" x1="2218.5" x2="2218.5" y1="135.5" y2="155.9883"/><line style="stroke:#000000;stroke-width:1.0;" x1="2156.5" x2="2386.5" y1="155.9883" y2="155.9883"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="33" x="2161.5" y="171.5234">code</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="81" x="2223.5" y="171.5234">135839007</text><line style="stroke:#000000;stroke-width:1.0;" x1="2218.5" x2="2218.5" y1="155.9883" y2="176.4766"/><rect fill="none" height="40.9766" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="230" x="2156.5" y="135.5"/><rect fill="#F1F1F1" height="20.4883" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="134" x="1232.5" y="184"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="26" x="1237.5" y="199.5352">end</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="88" x="1273.5" y="199.5352">2022-07-30</text><line style="stroke:#000000;stroke-width:1.0;" x1="1268.5" x2="1268.5" y1="184" y2="204.4883"/><rect fill="none" height="20.4883" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="134" x="1232.5" y="184"/><rect fill="#F1F1F1" height="20.4883" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="355" x="1122" y="222"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="66" x="1127" y="237.5352">reference</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="269" x="1203" y="237.5352">Organization/HIVOrganizationExample</text><line style="stroke:#000000;stroke-width:1.0;" x1="1198" x2="1198" y1="222" y2="242.4883"/><rect fill="none" height="20.4883" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="355" x="1122" y="222"/><rect fill="#F1F1F1" height="20.4883" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="355" x="1122" y="260"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="66" x="1127" y="275.5352">reference</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="269" x="1203" y="275.5352">Organization/HIVOrganizationExample</text><line style="stroke:#000000;stroke-width:1.0;" x1="1198" x2="1198" y1="260" y2="280.4883"/><rect fill="none" height="20.4883" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="355" x="1122" y="260"/><rect fill="#F1F1F1" height="20.4883" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="22" x="1287.5" y="298"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="12" x="1292.5" y="313.5352">   </text><rect fill="none" height="20.4883" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="22" x="1287.5" y="298"/><rect fill="#F1F1F1" height="61.4648" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="344" x="1613.5" y="277.5"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="117" x="1618.5" y="293.0352">authorReference</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="12" x="1745.5" y="293.0352">   </text><line style="stroke:#000000;stroke-width:1.0;" x1="1740.5" x2="1740.5" y1="277.5" y2="297.9883"/><line style="stroke:#000000;stroke-width:1.0;" x1="1613.5" x2="1957.5" y1="297.9883" y2="297.9883"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="33" x="1618.5" y="313.5234">time</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="207" x="1745.5" y="313.5234">2015-02-07T13:28:17-05:00</text><line style="stroke:#000000;stroke-width:1.0;" x1="1740.5" x2="1740.5" y1="297.9883" y2="318.4766"/><line style="stroke:#000000;stroke-width:1.0;" x1="1613.5" x2="1957.5" y1="318.4766" y2="318.4766"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="28" x="1618.5" y="334.0117">text</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="146" x="1745.5" y="334.0117">additional notes here</text><line style="stroke:#000000;stroke-width:1.0;" x1="1740.5" x2="1740.5" y1="318.4766" y2="338.9648"/><rect fill="none" height="61.4648" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="344" x="1613.5" y="277.5"/><rect fill="#F1F1F1" height="20.4883" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="355" x="2094" y="277"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="66" x="2099" y="292.5352">reference</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="269" x="2175" y="292.5352">Organization/HIVOrganizationExample</text><line style="stroke:#000000;stroke-width:1.0;" x1="2170" x2="2170" y1="277" y2="297.4883"/><rect fill="none" height="20.4883" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="355" x="2094" y="277"/><rect fill="#F1F1F1" height="40.9766" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="355" x="719.5" y="305.5"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="55" x="724.5" y="321.0352">method</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="27" x="789.5" y="321.0352">PUT</text><line style="stroke:#000000;stroke-width:1.0;" x1="784.5" x2="784.5" y1="305.5" y2="325.9883"/><line style="stroke:#000000;stroke-width:1.0;" x1="719.5" x2="1074.5" y1="325.9883" y2="325.9883"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="20" x="724.5" y="341.5234">url</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="280" x="789.5" y="341.5234">Task/HIVLabOrderRejectionTaskExample</text><line style="stroke:#000000;stroke-width:1.0;" x1="784.5" x2="784.5" y1="325.9883" y2="346.4766"/><rect fill="none" height="40.9766" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="355" x="719.5" y="305.5"/><path d="M1328,27 L1341,27 C1408.5512,27 1481.8762,26.1799 1549.1086,25.1012 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"/><path d="M1549.159,28.1994 L1551.4323,25.0634 L1549.0583,22.003 L1556.8541,24.9753 L1549.159,28.1994 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"/><ellipse cx="1328" cy="27" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><path d="M1073,71 L1086,71 C1104.3033,71 1104.6312,56.7739 1122,51 C1164.7203,36.7986 1215.9092,30.986 1252.2236,28.6148 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"/><path d="M1252.4058,31.6207 L1254.478,28.4781 L1252.0413,25.6088 L1259.7385,28.1592 L1252.4058,31.6207 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"/><ellipse cx="1073" cy="71" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><path d="M1299.4762,70.0011 L1312.4762,69.9743 C1342.2687,69.9128 1421.4545,69.7496 1506.6759,69.5739 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"/><path d="M1506.6823,72.6665 L1508.9953,69.5691 L1506.6695,66.4813 L1514.4074,69.5579 L1506.6823,72.6665 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"/><ellipse cx="1299.4762" cy="70.0011" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><path d="M1073,92 L1086,92 C1158.2345,92 1243.5228,79.3261 1280.4359,73.2174 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"/><path d="M1280.9419,76.2248 L1282.6915,72.8379 L1279.9299,70.21 L1287.9545,71.9524 L1280.9419,76.2248 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"/><ellipse cx="1073" cy="92" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><path d="M1299.4769,112.9946 L1312.4762,113.1286 C1351.6459,113.5324 1476.1951,114.8164 1587.588,115.9648 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"/><path d="M1587.5564,119.0274 L1589.8849,115.9885 L1587.6196,112.9023 L1595.2444,116.0438 L1587.5564,119.0274 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"/><ellipse cx="1299.4769" cy="112.9946" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><path d="M1073,112 L1086,112 C1157.853,112 1243.3389,112.5761 1280.3694,112.8538 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"/><path d="M1280.3464,115.8712 L1282.6325,112.871 L1280.3924,109.8363 L1287.913,112.9113 L1280.3464,115.8712 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"/><ellipse cx="1073" cy="112" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><path d="M1785.4762,156 L1798.4762,156 C1846.9098,156 2025.8847,156 2149.1127,156 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"/><path d="M2149.1127,159.066 L2151.4122,156 L2149.1127,152.934 L2156.7778,156 L2149.1127,159.066 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"/><ellipse cx="1785.4762" cy="156" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><path d="M1328,154 L1341,154 C1505.5437,154 1704.3846,155.3905 1765.9246,155.8527 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"/><path d="M1765.9011,158.9545 L1768.251,155.8703 L1765.9481,152.7509 L1773.6791,155.9115 L1765.9011,158.9545 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"/><ellipse cx="1328" cy="154" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><path d="M1073,153 L1086,153 C1143.2114,153 1209.0658,153.3652 1252.2215,153.6542 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"/><path d="M1252.201,156.6627 L1254.4778,153.6696 L1252.2419,150.6458 L1259.7426,153.7054 L1252.201,156.6627 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"/><ellipse cx="1073" cy="153" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><path d="M1073,195 L1086,195 C1132.301,195 1184.2628,194.7608 1225.2725,194.5164 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"/><path d="M1225.2908,197.5268 L1227.5304,194.5027 L1225.2543,191.5059 L1232.7987,194.4707 L1225.2908,197.5268 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"/><ellipse cx="1073" cy="195" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><path d="M1073,236 L1086,236 C1095.3389,236 1104.9077,235.9611 1114.5702,235.8909 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"/><path d="M1114.5953,238.9976 L1116.9002,235.8721 L1114.5451,232.7843 L1122.3368,235.8281 L1114.5953,238.9976 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"/><ellipse cx="1073" cy="236" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><path d="M1073,256 L1086,256 C1116.8328,256 1150.1221,257.4787 1181.0147,259.475 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"/><path d="M1180.8074,262.5948 L1183.3545,259.6304 L1181.2219,256.3552 L1188.8141,259.9931 L1180.8074,262.5948 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"/><ellipse cx="1073" cy="256" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><path d="M1946,287 L1959,287 C2000.3899,287 2044.8683,287 2086.904,287 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"/><path d="M2086.904,290.0176 L2089.1672,287 L2086.904,283.9824 L2094.4481,287 L2086.904,290.0176 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"/><ellipse cx="1946" cy="287" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><path d="M1299.4762,308 L1312.4762,308 C1353.8613,308 1490.5569,308 1606.3446,308 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"/><path d="M1606.3446,311.0381 L1608.6232,308 L1606.3446,304.9619 L1613.9398,308 L1606.3446,311.0381 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"/><ellipse cx="1299.4762" cy="308" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><path d="M1073,277 L1086,277 C1102.8655,277 1105.5205,285.4126 1122,289 C1178.5514,301.3105 1247.0803,305.7775 1279.8028,307.2888 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"/><path d="M1279.6677,310.441 L1282.167,307.3901 L1279.9379,304.1366 L1287.6833,307.6266 L1279.6677,310.441 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"/><ellipse cx="1073" cy="277" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><path d="M660,229 L673,229 C682.4463,229 692.006,228.3904 701.5818,227.2811 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"/><path d="M701.9797,230.3536 L703.8862,226.9827 L701.184,224.2086 L709.2631,226.2864 L701.9797,230.3536 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"/><ellipse cx="660" cy="229" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><path d="M660,250 L673,250 C698.961,250 686.6362,282.8153 709,296 C712.8205,298.2524 716.7572,300.3508 720.7874,302.3054 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"/><path d="M719.5253,305.0521 L722.8474,303.252 L722.0495,299.5587 L727.6542,305.4606 L719.5253,305.0521 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"/><ellipse cx="660" cy="250" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><path d="M261.7852,230 L274.7852,230 C282.0012,230 292.0209,230 303.8251,230 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"/><path d="M303.8251,233.0285 L306.0964,230 L303.8251,226.9715 L311.3963,230 L303.8251,233.0285 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"/><ellipse cx="261.7852" cy="230" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><path d="M201,230 L214,230 C223.374,230 233.7885,230 242.4714,230 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"/><path d="M242.4714,233.0815 L244.7825,230 L242.4714,226.9185 L250.1751,230 L242.4714,233.0815 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"/><ellipse cx="201" cy="230" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><!--MD5=[160cc04ba3f75439ce7c8943aa1b0fe9]
+@startjson lab-rejection-bundle
+{
+  "resourceType" : "Bundle",
+  "id" : "LabRejection",
+  "type" : "transaction",
+  "entry" : [{
+    "fullUrl" : "Task/HIVLabOrderRejectionTaskExample",
+    "resource" : {
+      "resourceType" : "Task",
+      "id" : "HIVLabOrderRejectionTaskExample",
+      "meta" : {
+        "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-lab-task"]
+      },
+     
+      "identifier" : [{
+        "system" : "http://openhie.org/fhir/hiv-cbs/lab-integration/test-order-number",
+        "value" : "ORDER12345"
+      }],
+      "basedOn" : [{
+        "reference" : "ServiceRequest/HIVServiceRequestExample"
+      }],
+      "status" : "rejected",
+      "statusReason" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "135839007"
+        }]
+      },
+      "intent" : "order",
+      "executionPeriod" : {
+        "end" : "2022-07-30"
+      },
+      "lastModified" : "2022-07-30",
+      "requester" : {
+        "reference" : "Organization/HIVOrganizationExample"
+      },
+      "owner" : {
+        "reference" : "Organization/HIVOrganizationExample"
+      },
+      "note" : [{
+        "authorReference" : {
+          "reference" : "Organization/HIVOrganizationExample"
+        },
+        "time" : "2015-02-07T13:28:17-05:00",
+        "text" : "additional notes here"
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Task/HIVLabOrderRejectionTaskExample"
+    }
+  }]
+}
+
+@endjson
+
+PlantUML version 1.2022.7(Mon Aug 22 19:01:30 SAST 2022)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: GB
+--></g></svg>
+    <figcaption>Lab Rejection Bundle - UML Diagram</figcaption>
+  </figure>
+</div>
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+           
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2019+ <a style="color: #81BEF7" href="https://www.jembi.org">Jembi Health Systems</a>.  Package openhie.fhir.hiv.cbs#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Mar 1, 2023 13:04+0000">2023-03-01</span>
+          <br/>
+          <span style="color: #FFFF77">
+                      Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
+                 <a style="color: #81BEF7" href="qa.html">QA Report</a> |
+                 
+                 <a style="color: #81BEF7" target="_blank" href="http://openhie.org/fhir/hiv-cbs/history.html">Version History</a> |
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC-BY" src="assets/images/cc-by.png" height="17"/></a> |
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+  <!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+
