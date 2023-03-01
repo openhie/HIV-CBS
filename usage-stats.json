@@ -5,14 +5,6 @@
   "jurisdiction": "001",
   "extensions": [
     {
-      "url": "http://openhie.org/fhir/hiv-cbs/StructureDefinition/art-change-type",
-      "title": "ART Change Type",
-      "types": [
-        "CodeableConcept",
-        "CodeableConcept"
-      ]
-    },
-    {
       "url": "http://openhie.org/fhir/hiv-cbs/StructureDefinition/art-regimen-line",
       "title": "ART Regimen Line",
       "types": [
@@ -168,10 +160,6 @@
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
-    ],
-    "http://openhie.org/fhir/hiv-cbs/StructureDefinition/art-change-type": [
-      "Bundle.entry.resource",
-      "CarePlan"
     ],
     "http://openhie.org/fhir/hiv-cbs/StructureDefinition/art-regimen-line": [
       "Bundle.entry.resource.activity.detail",

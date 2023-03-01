@@ -12,8 +12,6 @@
   <sch:pattern>
     <sch:title>f:CarePlan</sch:title>
     <sch:rule context="f:CarePlan">
-      <sch:assert test="count(f:extension[@url = 'http://openhie.org/fhir/hiv-cbs/StructureDefinition/art-change-type']) &gt;= 1">extension with URL = 'http://openhie.org/fhir/hiv-cbs/StructureDefinition/art-change-type': minimum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://openhie.org/fhir/hiv-cbs/StructureDefinition/art-change-type']) &lt;= 1">extension with URL = 'http://openhie.org/fhir/hiv-cbs/StructureDefinition/art-change-type': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:encounter) &gt;= 1">encounter: minimum cardinality of 'encounter' is 1</sch:assert>
       <sch:assert test="count(f:period) &gt;= 1">period: minimum cardinality of 'period' is 1</sch:assert>
       <sch:assert test="count(f:activity) &gt;= 1">activity: minimum cardinality of 'activity' is 1</sch:assert>

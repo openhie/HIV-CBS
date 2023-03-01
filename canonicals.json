@@ -1,12 +1,5 @@
 [
   {
-    "id" : "cs-art-change-type",
-    "type" : "CodeSystem",
-    "url" : "http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-art-change-type",
-    "version" : "0.2.0",
-    "name" : "CSARTChangeType"
-  },
-  {
     "id" : "cs-key-population-status",
     "type" : "CodeSystem",
     "url" : "http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-key-population-status",
@@ -26,13 +19,6 @@
     "url" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/HIV-lab-order",
     "version" : "0.2.0",
     "name" : "HIVServiceRequest"
-  },
-  {
-    "id" : "art-change-type",
-    "type" : "StructureDefinition",
-    "url" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/art-change-type",
-    "version" : "0.2.0",
-    "name" : "ARTChangeType"
   },
   {
     "id" : "art-regimen-line",
@@ -187,13 +173,6 @@
     "url" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/viral-load-specimen",
     "version" : "0.2.0",
     "name" : "VLSpecimen"
-  },
-  {
-    "id" : "vs-art-change-type",
-    "type" : "ValueSet",
-    "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-art-change-type",
-    "version" : "0.2.0",
-    "name" : "VSARTChangeType"
   },
   {
     "id" : "vs-artregimen-lines",
