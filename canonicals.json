@@ -7,13 +7,6 @@
     "name" : "CSARTRegimenChangeType"
   },
   {
-    "id" : "cs-hiv-cause-of-death",
-    "type" : "CodeSystem",
-    "url" : "http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-hiv-cause-of-death",
-    "version" : "0.2.0",
-    "name" : "CSHIVCauseOfDeath"
-  },
-  {
     "id" : "cs-key-population-status",
     "type" : "CodeSystem",
     "url" : "http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-key-population-status",
@@ -117,6 +110,13 @@
     "url" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-lab-task",
     "version" : "0.2.0",
     "name" : "HIVLabTask"
+  },
+  {
+    "id" : "hiv-med-req",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-med-req",
+    "version" : "0.2.0",
+    "name" : "HIVCareMedicationRequest"
   },
   {
     "id" : "hiv-organization",
@@ -252,11 +252,11 @@
     "name" : "VSCondition"
   },
   {
-    "id" : "vs-hiv-cause-of-death",
+    "id" : "vs-hiv-art-medication",
     "type" : "ValueSet",
-    "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-hiv-cause-of-death",
+    "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-hiv-art-medication",
     "version" : "0.2.0",
-    "name" : "VSHIVCauseOfDeath"
+    "name" : "VSHIVARTMedication"
   },
   {
     "id" : "vs-hiv-death",
