@@ -103,6 +103,7 @@ Description: "This profile captures the death outcome for a patient."
 * subject 1..1
 * encounter 1..1
 * effectiveDateTime 1..1
+* valueCodeableConcept from VSHIVCauseOfDeath (required)
 * note 0..1
 
 Profile: DateHIVTestDone

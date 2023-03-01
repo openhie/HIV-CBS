@@ -124,6 +124,8 @@ Description: "Patient Death example"
 * subject = Reference(HIVPatientExample)
 * encounter = Reference(TargetFacilityEncounterExample)
 * effectiveDateTime = "2023-02-05"
+* valueCodeableConcept = #HIV-RELATED
+* valueCodeableConcept.coding.system = "http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-hiv-cause-of-death"
 * note.text = "Deatils regarding death"
 * note.authorReference = Reference(HIVOrganizationExample)
 * note.time = "2015-02-07T13:28:17-05:00"
