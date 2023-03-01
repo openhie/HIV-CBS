@@ -136,7 +136,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"hiv-arv-treatment","CarePlan.activity.detail.extension:artRegimenSwitchedOrSubstituted","CarePlan.activity.detail.extension","artRegimenSwitchedOrSubstituted","","",0,1,"Y","","","Extension {[CanonicalType[http://openhie.org/fhir/hiv-cbs/StructureDefinition/art-regimen-switched-or-substituded]]} {[]}
+"hiv-arv-treatment","CarePlan.activity.detail.extension:artRegimenSwitchedOrSubstituted","CarePlan.activity.detail.extension","artRegimenSwitchedOrSubstituted","","",0,1,"Y","","","Extension {[CanonicalType[http://openhie.org/fhir/hiv-cbs/StructureDefinition/art-regimen-switched-or-substituted]]} {[]}
 ","ART Regimen Switched Or Substituted","The ARV regimen has been switched to a new ARV regimen or has been substituted by another ARV regimen.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -580,6 +580,24 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "art-regimen-line","Extension.value[x]:valueCodeableConcept","Extension.value[x]","valueCodeableConcept","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,"required","","http://openhie.org/fhir/hiv-cbs/ValueSet/vs-artregimen-lines","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"art-regimen-switched-or-substituted","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
+","ART Regimen Switched Or Substituted","The ARV regimen has been switched to a new ARV regimen or has been substituted by another ARV regimen.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+",""
+"art-regimen-switched-or-substituted","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"art-regimen-switched-or-substituted","Extension.extension","Extension.extension","","","",0,0,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"art-regimen-switched-or-substituted","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://openhie.org/fhir/hiv-cbs/StructureDefinition/art-regimen-switched-or-substituted""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
+"art-regimen-switched-or-substituted","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"","type:$this}
+","",,"closed","Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"art-regimen-switched-or-substituted","Extension.value[x]:valueCodeableConcept","Extension.value[x]","valueCodeableConcept","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,"required","","http://openhie.org/fhir/hiv-cbs/ValueSet/vs-art-regimen-change-type","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "hiv-lab-task","Task","Task","","","",0,*,"","","","null {[]} {[]}
 ","A task to be performed","A task to be performed.","","","","","","","","","",,,,,"",,,,"Task",0,*,"",""
@@ -1197,24 +1215,6 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "hiv-diagnostic-report","DiagnosticReport.presentedForm","DiagnosticReport.presentedForm","","","",0,*,"","","","Attachment {[]} {[]}
 ","Entire report as issued","Rich text representation of the entire result as issued by the diagnostic service. Multiple formats are allowed but they SHALL be semantically equivalent.","""application/pdf"" is recommended as the most reliable and interoperable in this context.","Gives laboratory the ability to provide its own fully formatted report for clinical fidelity.","","","","","","","",,,,,"",,,,"DiagnosticReport.presentedForm",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-"
-"art-regimen-switched-or-substituded","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","ART Regimen Switched Or Substituted","The ARV regimen has been switched to a new ARV regimen or has been substituted by another ARV regimen.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
-",""
-"art-regimen-switched-or-substituded","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
-","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
-"art-regimen-switched-or-substituded","Extension.extension","Extension.extension","","","",0,0,"","","","Extension {[]} {[]}
-","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
-","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"art-regimen-switched-or-substituded","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
-","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://openhie.org/fhir/hiv-cbs/StructureDefinition/art-regimen-switched-or-substituded""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
-"art-regimen-switched-or-substituded","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
-","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"","type:$this}
-","",,"closed","Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-"
-"art-regimen-switched-or-substituded","Extension.value[x]:valueCodeableConcept","Extension.value[x]","valueCodeableConcept","","",0,1,"","","","CodeableConcept {[]} {[]}
-","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,"required","","http://openhie.org/fhir/hiv-cbs/ValueSet/vs-art-regimen-change-type","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "date-hiv-test-done","Observation","Observation","","Vital Signs
 MeasurementResultsTests","",0,*,"","","","null {[]} {[]}

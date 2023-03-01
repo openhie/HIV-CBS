@@ -13,7 +13,7 @@
       ]
     },
     {
-      "url": "http://openhie.org/fhir/hiv-cbs/StructureDefinition/art-regimen-switched-or-substituded",
+      "url": "http://openhie.org/fhir/hiv-cbs/StructureDefinition/art-regimen-switched-or-substituted",
       "title": "ART Regimen Switched Or Substituted",
       "types": [
         "CodeableConcept",
@@ -173,7 +173,7 @@
       "Bundle.entry.resource.activity.detail",
       "CarePlan.activity.detail"
     ],
-    "http://openhie.org/fhir/hiv-cbs/StructureDefinition/art-regimen-switched-or-substituded": [
+    "http://openhie.org/fhir/hiv-cbs/StructureDefinition/art-regimen-switched-or-substituted": [
       "CarePlan.activity.detail"
     ],
     "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-care-next-visit": [

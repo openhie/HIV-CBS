@@ -51,7 +51,7 @@
          ]
        ], [
          fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://openhie.org/fhir/hiv-cbs/StructureDefinition/art-regimen-switched-or-substituded" ];
+         fhir:Extension.url [ fhir:value "http://openhie.org/fhir/hiv-cbs/StructureDefinition/art-regimen-switched-or-substituted" ];
          fhir:Extension.valueCodeableConcept [
            fhir:CodeableConcept.coding [
              fhir:index 0;
