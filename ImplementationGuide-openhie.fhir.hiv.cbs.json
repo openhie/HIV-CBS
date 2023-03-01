@@ -11,7 +11,7 @@
   "title" : "HIV Case-Based Surveillance",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2023-03-01T11:04:17+00:00",
+  "date" : "2023-03-01T11:23:11+00:00",
   "publisher" : "Jembi Health Systems",
   "contact" : [{
     "telecom" : [{
@@ -674,6 +674,17 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CarePlan"
+      }],
+      "reference" : {
+        "reference" : "CarePlan/ARVTreatmentRegimenSwitchedExample"
+      },
+      "name" : "Example CarePlan - ARVTreatmentRegimenSwitchedExample",
+      "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-arv-treatment"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Bundle"
       }],
       "reference" : {
@@ -1132,6 +1143,17 @@
       },
       "name" : "Diagnosis",
       "description" : "This profile represents the confirmation of HIV diagnosis."
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CarePlan"
+      }],
+      "reference" : {
+        "reference" : "CarePlan/ARVTreatmentRegimenSubstitutedExample"
+      },
+      "name" : "Example CarePlan - ARVTreatmentRegimenSubstitutedExample",
+      "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-arv-treatment"
     },
     {
       "extension" : [{
