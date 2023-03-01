@@ -28,6 +28,20 @@
     "name" : "ARTRegimenLine"
   },
   {
+    "id" : "art-regimen-substituted",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/art-regimen-substituted",
+    "version" : "0.2.0",
+    "name" : "ARTRegimenSubstituded"
+  },
+  {
+    "id" : "art-regimen-switched",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/art-regimen-switched",
+    "version" : "0.2.0",
+    "name" : "ARTRegimenSwitched"
+  },
+  {
     "id" : "date-hiv-test-done",
     "type" : "StructureDefinition",
     "url" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/date-hiv-test-done",

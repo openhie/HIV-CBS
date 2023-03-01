@@ -13,6 +13,20 @@
       ]
     },
     {
+      "url": "http://openhie.org/fhir/hiv-cbs/StructureDefinition/art-regimen-substituted",
+      "title": "ART Regimen Substituted",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://openhie.org/fhir/hiv-cbs/StructureDefinition/art-regimen-switched",
+      "title": "ART Regimen Switched",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
       "url": "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-care-next-visit",
       "title": "Next Appointment Date",
       "types": [
@@ -162,6 +176,14 @@
       "ImplementationGuide.definition.resource"
     ],
     "http://openhie.org/fhir/hiv-cbs/StructureDefinition/art-regimen-line": [
+      "Bundle.entry.resource.activity.detail",
+      "CarePlan.activity.detail"
+    ],
+    "http://openhie.org/fhir/hiv-cbs/StructureDefinition/art-regimen-substituted": [
+      "Bundle.entry.resource.activity.detail",
+      "CarePlan.activity.detail"
+    ],
+    "http://openhie.org/fhir/hiv-cbs/StructureDefinition/art-regimen-switched": [
       "Bundle.entry.resource.activity.detail",
       "CarePlan.activity.detail"
     ],

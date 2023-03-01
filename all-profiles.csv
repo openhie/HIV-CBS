@@ -101,7 +101,8 @@ This element is labeled as a modifier because the status contains the code enter
 ","Desired outcome of plan","Describes the intended objective(s) of carrying out the care plan.","Goal can be achieving a particular change or merely maintaining a current state or even slowing a decline.","Provides context for plan.  Allows plan effectiveness to be evaluated by clinicians.","","","","","","","",,,,,"",,,,"CarePlan.goal",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "hiv-arv-treatment","CarePlan.activity","CarePlan.activity","","","",1,*,"","","","BackboneElement {[]} {[]}
-","Action to occur as part of plan","Identifies a planned action to occur as part of the plan.  For example, a medication to be used, lab tests to perform, self-monitoring, education, etc.","","Allows systems to prompt for performance of planned activities, and validate plans against best practice.","","","","","","","",,,,,"",,,,"CarePlan.activity",0,*,"",""
+","Action to occur as part of plan","Identifies a planned action to occur as part of the plan.  For example, a medication to be used, lab tests to perform, self-monitoring, education, etc.","","Allows systems to prompt for performance of planned activities, and validate plans against best practice.","","","","","","","",,,,,"",,,,"CarePlan.activity",0,*,"","cpl-3:Provide a reference or detail, not both {detail.empty() or reference.empty()}
+ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}"
 "hiv-arv-treatment","CarePlan.activity.id","CarePlan.activity.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
 "hiv-arv-treatment","CarePlan.activity.extension","CarePlan.activity.extension","","extensions
@@ -129,12 +130,21 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "hiv-arv-treatment","CarePlan.activity.detail","CarePlan.activity.detail","","","",1,1,"","","","BackboneElement {[]} {[]}
 ","In-line definition of activity","A simple summary of a planned activity suitable for a general care plan system (e.g. form driven) that doesn't know about specific resources such as procedure etc.","","Details in a simple form for generic care plan systems.","","","","","","","",,,,,"",,,,"CarePlan.activity.detail",0,1,"cpl-3
-",""
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
 "hiv-arv-treatment","CarePlan.activity.detail.id","CarePlan.activity.detail.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
-"hiv-arv-treatment","CarePlan.activity.detail.extension","CarePlan.activity.detail.extension","","","",1,*,"","","","Extension {[]} {[]}
+"hiv-arv-treatment","CarePlan.activity.detail.extension","CarePlan.activity.detail.extension","","","",3,*,"","","","Extension {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"hiv-arv-treatment","CarePlan.activity.detail.extension:artRegimenSwitched","CarePlan.activity.detail.extension","artRegimenSwitched","","",1,1,"","","","Extension {[CanonicalType[http://openhie.org/fhir/hiv-cbs/StructureDefinition/art-regimen-switched]]} {[]}
+","ART Regimen Switched","The ARV regimen has been switched to a new ARV regimen.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"hiv-arv-treatment","CarePlan.activity.detail.extension:artRegimenSubstituded","CarePlan.activity.detail.extension","artRegimenSubstituded","","",1,1,"","","","Extension {[CanonicalType[http://openhie.org/fhir/hiv-cbs/StructureDefinition/art-regimen-substituted]]} {[]}
+","ART Regimen Substituted","The ARV regimen has been substituded by a new ARV regimen.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "hiv-arv-treatment","CarePlan.activity.detail.extension:artRegimenLine","CarePlan.activity.detail.extension","artRegimenLine","","",1,1,"","","","Extension {[CanonicalType[http://openhie.org/fhir/hiv-cbs/StructureDefinition/art-regimen-line]]} {[]}
 ","ART Regimen Line","Therapeutic lines that are used to classify the patient's currently prescribed ARV regimen.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
@@ -178,11 +188,7 @@ The unknown code is not to be used to convey other statuses.  The unknown code s
 ","If true, activity is prohibiting action","If true, indicates that the described activity is one that must NOT be engaged in when following the plan.  If false, or missing, indicates that the described activity is one that should be engaged in when following the plan.","This element is labeled as a modifier because it marks an activity as an activity that is not to be performed.","Captures intention to not do something that may have been previously typical.","","If missing indicates that the described activity is one that should be engaged in when following the plan.","","","","","",,,,,"",,,,"CarePlan.activity.detail.doNotPerform",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "hiv-arv-treatment","CarePlan.activity.detail.scheduled[x]","CarePlan.activity.detail.scheduled[x]","","","",0,1,"","","","Timing {[]} {[]}
-Period {[]} {[]}string {[]} {[]}","When activity is to occur","The period, timing or frequency upon which the described activity is to occur.","","Allows prompting for activities and detection of missed planned activities.","","","","","","","",,,,,"","type:$this}
-","",,"open","CarePlan.activity.detail.scheduled[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-"
-"hiv-arv-treatment","CarePlan.activity.detail.scheduled[x]:scheduledPeriod","CarePlan.activity.detail.scheduled[x]","scheduledPeriod","","",0,1,"Y","","","Period {[]} {[]}
-","When activity is to occur","The period, timing or frequency upon which the described activity is to occur.","","Allows prompting for activities and detection of missed planned activities.","","","","","","","",,,,,"",,,,"CarePlan.activity.detail.scheduled[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+Period {[]} {[]}string {[]} {[]}","When activity is to occur","The period, timing or frequency upon which the described activity is to occur.","","Allows prompting for activities and detection of missed planned activities.","","","","","","","",,,,,"",,,,"CarePlan.activity.detail.scheduled[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "hiv-arv-treatment","CarePlan.activity.detail.location","CarePlan.activity.detail.location","","","",0,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Location]]}
 ","Where it should happen","Identifies the facility where the activity will occur; e.g. home, hospital, specific clinic, etc.","May reference a specific clinical location or may identify a type of location.","Helps in planning of activity.","","","","","","","",,,,,"",,,,"CarePlan.activity.detail.location",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -2687,6 +2693,20 @@ The alternate way is to use the value element for actual observations and use th
 "hiv-test-results","Observation.component.referenceRange","Observation.component.referenceRange","","","",0,*,"","","","null {[]} {[]}
 ","Provides guide for interpretation of component result","Guidance on how to interpret the value by comparison to a normal or recommended range.","Most observations only have one generic reference range. Systems MAY choose to restrict to only supplying the relevant reference range based on knowledge about the patient (e.g., specific to the patient's age, gender, weight and other factors), but this might not be possible or appropriate. Whenever more than one reference range is supplied, the differences between them SHOULD be provided in the reference range and/or age properties.","Knowing what values are considered ""normal"" can help evaluate the significance of a particular result. Need to be able to provide multiple reference ranges for different contexts.","","","","","","","",,,,,"",,,,"Observation.component.referenceRange",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
+"art-regimen-substituted","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
+","ART Regimen Substituted","The ARV regimen has been substituded by a new ARV regimen.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+",""
+"art-regimen-substituted","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"art-regimen-substituted","Extension.extension","Extension.extension","","","",0,0,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"art-regimen-substituted","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://openhie.org/fhir/hiv-cbs/StructureDefinition/art-regimen-substituted""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
+"art-regimen-substituted","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","boolean {[]} {[]}
+","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
 "hiv-cd4-percentage","Observation","Observation","","Vital Signs
 MeasurementResultsTests","",0,*,"","","","null {[]} {[]}
 ","Measurements and simple assertions","Measurements and simple assertions made about a patient, device or other subject.","Used for simple observations such as device measurements, laboratory atomic results, vital signs, height, weight, smoking status, comments, etc.  Other resources are used to provide context for observations such as laboratory reports, etc.","","","","","","","","",,,,,"",,,,"Observation",0,*,"",""
@@ -3130,6 +3150,20 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "hiv-care-next-visit","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
 ","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-care-next-visit""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
 "hiv-care-next-visit","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","dateTime {[]} {[]}
+","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"art-regimen-switched","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
+","ART Regimen Switched","The ARV regimen has been switched to a new ARV regimen.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+",""
+"art-regimen-switched","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"art-regimen-switched","Extension.extension","Extension.extension","","","",0,0,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"art-regimen-switched","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://openhie.org/fhir/hiv-cbs/StructureDefinition/art-regimen-switched""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
+"art-regimen-switched","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","boolean {[]} {[]}
 ","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "hiv-recency-test-done","Observation","Observation","","Vital Signs
