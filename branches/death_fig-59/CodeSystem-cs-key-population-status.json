@@ -1,0 +1,40 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "cs-key-population-status",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-key-population-status</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">General-Population<a name=\"cs-key-population-status-General-Population\"> </a></td><td>General Population</td></tr></table></div>"
+  },
+  "url" : "http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-key-population-status",
+  "version" : "0.2.0",
+  "name" : "CSKeyPopulationStatus",
+  "title" : "Key Population Status",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2023-03-01T13:36:33+00:00",
+  "publisher" : "Jembi Health Systems",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.jembi.org"
+    },
+    {
+      "system" : "email",
+      "value" : "info@jembi.org"
+    }]
+  }],
+  "description" : "A list of key population types",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 1,
+  "concept" : [{
+    "code" : "General-Population",
+    "display" : "General Population"
+  }]
+}

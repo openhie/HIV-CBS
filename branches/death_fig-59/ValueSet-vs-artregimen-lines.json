@@ -1,0 +1,50 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "vs-artregimen-lines",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/708255002\">708255002</a></td><td>First line treatment (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/708256001\">708256001</a></td><td>Second line treatment (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/708257005\">708257005</a></td><td>Third line treatment (procedure)</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-artregimen-lines",
+  "version" : "0.2.0",
+  "name" : "VSARTRegimenLines",
+  "title" : "ART Regimen Lines",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2023-03-01T13:36:33+00:00",
+  "publisher" : "Jembi Health Systems",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.jembi.org"
+    },
+    {
+      "system" : "email",
+      "value" : "info@jembi.org"
+    }]
+  }],
+  "description" : "A list of ART regimen therapeutic lines.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "708255002",
+        "display" : "First line treatment (procedure)"
+      },
+      {
+        "code" : "708256001",
+        "display" : "Second line treatment (procedure)"
+      },
+      {
+        "code" : "708257005",
+        "display" : "Third line treatment (procedure)"
+      }]
+    }]
+  }
+}
