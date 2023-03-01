@@ -388,11 +388,11 @@ Description:  "Absolute CD4 Count Example"
 * note.time = "2015-02-07T13:28:17-05:00"
 * performer = Reference(HIVOrganizationExample)
 
-Instance: ARVTreatmentRegimenSwitchedExample
+Instance: ARVTreatmentRegimenSwitchedOrSubstitutedExample
 InstanceOf: ARVTreatment
 Usage: #example
-Title: "Regimen switched example"
-Description: "Regimen switched example"
+Title: "ARV Regimen switched or substituted example"
+Description: "ARV Regimen switched or substituted example"
 * status = #active
 * intent = #plan
 * subject = Reference(HIVPatientExample)
@@ -404,28 +404,8 @@ Description: "Regimen switched example"
 * activity.detail.status = #in-progress
 * activity.detail.productCodeableConcept.text = "TDF/3TC/DTG"
 * activity.detail.extension[artRegimenLine].valueCodeableConcept = $SCT#708255002
-* activity.detail.extension[artRegimenSwitched].valueBoolean = true
+* activity.detail.extension[artRegimenSwitchedOrSubstituted].valueCodeableConcept.coding.code = #Switched
+* activity.detail.extension[artRegimenSwitchedOrSubstituted].valueCodeableConcept.coding.system = "http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-art-regimen-change-type"
 * note.text = "Additional information regarding the switching of the ARV regimen with another ARV regimen."
-* note.authorReference = Reference(HIVOrganizationExample)
-* note.time = "2015-02-07T13:28:17-05:00"
-
-Instance: ARVTreatmentRegimenSubstitutedExample
-InstanceOf: ARVTreatment
-Usage: #example
-Title: "Regimen substituted example"
-Description: "Regimen substituted example"
-* status = #active
-* intent = #plan
-* subject = Reference(HIVPatientExample)
-* encounter = Reference(TargetFacilityEncounterExample)
-* period.start = "2022-12-01"
-* period.end = "2022-12-01"
-* activity.detail.kind = #MedicationRequest
-* activity.detail.code = $LNC#45260-7 
-* activity.detail.status = #in-progress
-* activity.detail.productCodeableConcept.text = "TDF/3TC/DTG"
-* activity.detail.extension[artRegimenLine].valueCodeableConcept = $SCT#708255002
-* activity.detail.extension[artRegimenSubstituded].valueBoolean = true
-* note.text = "Additional information regarding the substitution of the ARV regimen by another ARV regimen."
 * note.authorReference = Reference(HIVOrganizationExample)
 * note.time = "2015-02-07T13:28:17-05:00"
