@@ -136,6 +136,10 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"hiv-arv-treatment","CarePlan.activity.detail.extension:artRegimenSwitchedOrSubstituted","CarePlan.activity.detail.extension","artRegimenSwitchedOrSubstituted","","",0,1,"Y","","","Extension {[CanonicalType[http://openhie.org/fhir/hiv-cbs/StructureDefinition/art-regimen-switched-or-substituted]]} {[]}
+","ART Regimen Switched Or Substituted","The ARV regimen has been switched to a new ARV regimen or has been substituted by another ARV regimen.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "hiv-arv-treatment","CarePlan.activity.detail.extension:artRegimenLine","CarePlan.activity.detail.extension","artRegimenLine","","",1,1,"","","","Extension {[CanonicalType[http://openhie.org/fhir/hiv-cbs/StructureDefinition/art-regimen-line]]} {[]}
 ","ART Regimen Line","Therapeutic lines that are used to classify the patient's currently prescribed ARV regimen.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -178,11 +182,7 @@ The unknown code is not to be used to convey other statuses.  The unknown code s
 ","If true, activity is prohibiting action","If true, indicates that the described activity is one that must NOT be engaged in when following the plan.  If false, or missing, indicates that the described activity is one that should be engaged in when following the plan.","This element is labeled as a modifier because it marks an activity as an activity that is not to be performed.","Captures intention to not do something that may have been previously typical.","","If missing indicates that the described activity is one that should be engaged in when following the plan.","","","","","",,,,,"",,,,"CarePlan.activity.detail.doNotPerform",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "hiv-arv-treatment","CarePlan.activity.detail.scheduled[x]","CarePlan.activity.detail.scheduled[x]","","","",0,1,"","","","Timing {[]} {[]}
-Period {[]} {[]}string {[]} {[]}","When activity is to occur","The period, timing or frequency upon which the described activity is to occur.","","Allows prompting for activities and detection of missed planned activities.","","","","","","","",,,,,"","type:$this}
-","",,"open","CarePlan.activity.detail.scheduled[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-"
-"hiv-arv-treatment","CarePlan.activity.detail.scheduled[x]:scheduledPeriod","CarePlan.activity.detail.scheduled[x]","scheduledPeriod","","",0,1,"Y","","","Period {[]} {[]}
-","When activity is to occur","The period, timing or frequency upon which the described activity is to occur.","","Allows prompting for activities and detection of missed planned activities.","","","","","","","",,,,,"",,,,"CarePlan.activity.detail.scheduled[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+Period {[]} {[]}string {[]} {[]}","When activity is to occur","The period, timing or frequency upon which the described activity is to occur.","","Allows prompting for activities and detection of missed planned activities.","","","","","","","",,,,,"",,,,"CarePlan.activity.detail.scheduled[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "hiv-arv-treatment","CarePlan.activity.detail.location","CarePlan.activity.detail.location","","","",0,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Location]]}
 ","Where it should happen","Identifies the facility where the activity will occur; e.g. home, hospital, specific clinic, etc.","May reference a specific clinical location or may identify a type of location.","Helps in planning of activity.","","","","","","","",,,,,"",,,,"CarePlan.activity.detail.location",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -190,12 +190,12 @@ Period {[]} {[]}string {[]} {[]}","When activity is to occur","The period, timin
 "hiv-arv-treatment","CarePlan.activity.detail.performer","CarePlan.activity.detail.performer","","","",0,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner], CanonicalType[http://hl7.org/fhir/StructureDefinition/PractitionerRole], CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization], CanonicalType[http://hl7.org/fhir/StructureDefinition/RelatedPerson], CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient], CanonicalType[http://hl7.org/fhir/StructureDefinition/CareTeam], CanonicalType[http://hl7.org/fhir/StructureDefinition/HealthcareService], CanonicalType[http://hl7.org/fhir/StructureDefinition/Device]]}
 ","Who will be responsible?","Identifies who's expected to be involved in the activity.","A performer MAY also be a participant in the care plan.","Helps in planning of activity.","","","","","","","",,,,,"",,,,"CarePlan.activity.detail.performer",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"hiv-arv-treatment","CarePlan.activity.detail.product[x]","CarePlan.activity.detail.product[x]","","","",1,1,"","","","CodeableConcept {[]} {[]}
-","What is to be administered/supplied","Identifies the food, drug or other product to be consumed or supplied in the activity.","","","","","","","","","",,"example","A product supplied or administered as part of a care plan activity.","http://hl7.org/fhir/ValueSet/medication-codes","","type:$this}
-","",,"closed","CarePlan.activity.detail.product[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"hiv-arv-treatment","CarePlan.activity.detail.product[x]","CarePlan.activity.detail.product[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
+Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Medication], CanonicalType[http://hl7.org/fhir/StructureDefinition/Substance]]}","What is to be administered/supplied","Identifies the food, drug or other product to be consumed or supplied in the activity.","","","","","","","","","",,"example","A product supplied or administered as part of a care plan activity.","http://hl7.org/fhir/ValueSet/medication-codes","","type:$this}
+","",,"open","CarePlan.activity.detail.product[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"hiv-arv-treatment","CarePlan.activity.detail.product[x]:productCodeableConcept","CarePlan.activity.detail.product[x]","productCodeableConcept","","",1,1,"","","","CodeableConcept {[]} {[]}
-","What is to be administered/supplied","Identifies the food, drug or other product to be consumed or supplied in the activity.","","","","","","","","","",,"example","A product supplied or administered as part of a care plan activity.","http://hl7.org/fhir/ValueSet/medication-codes","",,,,"CarePlan.activity.detail.product[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"hiv-arv-treatment","CarePlan.activity.detail.product[x]:productCodeableConcept","CarePlan.activity.detail.product[x]","productCodeableConcept","","",0,1,"","","","CodeableConcept {[]} {[]}
+","What is to be administered/supplied","Identifies the food, drug or other product to be consumed or supplied in the activity.","","","","","","","","","",,"required","","http://openhie.org/fhir/hiv-cbs/ValueSet/vs-arv-regimen","",,,,"CarePlan.activity.detail.product[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "hiv-arv-treatment","CarePlan.activity.detail.dailyAmount","CarePlan.activity.detail.dailyAmount","","daily dose
 ","",0,1,"","","","Quantity {[CanonicalType[http://hl7.org/fhir/StructureDefinition/SimpleQuantity]]} {[]}
@@ -581,6 +581,24 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "art-regimen-line","Extension.value[x]:valueCodeableConcept","Extension.value[x]","valueCodeableConcept","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,"required","","http://openhie.org/fhir/hiv-cbs/ValueSet/vs-artregimen-lines","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
+"art-regimen-switched-or-substituted","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
+","ART Regimen Switched Or Substituted","The ARV regimen has been switched to a new ARV regimen or has been substituted by another ARV regimen.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+",""
+"art-regimen-switched-or-substituted","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"art-regimen-switched-or-substituted","Extension.extension","Extension.extension","","","",0,0,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"art-regimen-switched-or-substituted","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://openhie.org/fhir/hiv-cbs/StructureDefinition/art-regimen-switched-or-substituted""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
+"art-regimen-switched-or-substituted","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"","type:$this}
+","",,"closed","Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"art-regimen-switched-or-substituted","Extension.value[x]:valueCodeableConcept","Extension.value[x]","valueCodeableConcept","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,"required","","http://openhie.org/fhir/hiv-cbs/ValueSet/vs-art-regimen-change-type","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
 "hiv-lab-task","Task","Task","","","",0,*,"","","","null {[]} {[]}
 ","A task to be performed","A task to be performed.","","","","","","","","","",,,,,"",,,,"Task",0,*,"",""
 "hiv-lab-task","Task.id","Task.id","","","",0,1,"","","Y","id {[]} {[]}
@@ -633,7 +651,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","draft | requested | received | accepted | +","The current status of the task.","","These states enable coordination of task status with off-the-shelf workflow solutions that support automation of tasks.","","","","","","","",,"required","The current status of the task.","http://hl7.org/fhir/ValueSet/task-status|4.0.1","",,,,"Task.status",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "hiv-lab-task","Task.statusReason","Task.statusReason","","","",0,1,"","","Y","CodeableConcept {[]} {[]}
-","Reason for current status","An explanation as to why this task is held, failed, was refused, etc.","This applies to the current status.  Look at the history of the task to see reasons for past statuses.","","","","","","","","",,"example","Codes to identify the reason for current status.  These will typically be specific to a particular workflow.","","",,,,"Task.statusReason",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Reason for current status","An explanation as to why this task is held, failed, was refused, etc.","This applies to the current status.  Look at the history of the task to see reasons for past statuses.","","","","","","","","",,"required","","http://openhie.org/fhir/hiv-cbs/ValueSet/vs-reason-sample-cancelled-or-rejected","",,,,"Task.statusReason",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "hiv-lab-task","Task.businessStatus","Task.businessStatus","","","",0,1,"","","Y","CodeableConcept {[]} {[]}
 ","E.g. ""Specimen collected"", ""IV prepped""","Contains business-specific nuances of the business state.","","There's often a need to track substates of a task - this is often variable by specific workflow implementation.","","","","","","","",,"example","The domain-specific business-contextual sub-state of the task.  For example: ""Blood drawn"", ""IV inserted"", ""Awaiting physician signature"", etc.","","",,,,"Task.businessStatus",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
