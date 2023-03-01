@@ -3,7 +3,7 @@
 
 err = 0, warn = 4, info = 0
 IG Publisher Version: 1.2.38
-Generated Wed Mar 01 12:33:35 UTC 2023. FHIR version 4.0.1 for openhie.fhir.hiv.cbs#0.2.0 (canonical = http://openhie.org/fhir/hiv-cbs)
+Generated Wed Mar 01 13:11:01 UTC 2023. FHIR version 4.0.1 for openhie.fhir.hiv.cbs#0.2.0 (canonical = http://openhie.org/fhir/hiv-cbs)
  Build Errors : 0 / 4 / 0
  /github/workspace/fsh-generated/resources/Bundle-EMR : 0 / 0 / 19
  /github/workspace/fsh-generated/resources/Bundle-LabCancellation : 0 / 0 / 3
@@ -62,6 +62,7 @@ Generated Wed Mar 01 12:33:35 UTC 2023. FHIR version 4.0.1 for openhie.fhir.hiv.
  /github/workspace/fsh-generated/resources/Task-HIVLabResultTaskExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-art-regimen-change-type : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-artregimen-lines : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-arv-regimen : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-arvtreatment-activity-type : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-careplan-outcome : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-cd4-count : 0 / 0 / 1
@@ -75,6 +76,7 @@ Generated Wed Mar 01 12:33:35 UTC 2023. FHIR version 4.0.1 for openhie.fhir.hiv.
  /github/workspace/fsh-generated/resources/ValueSet-vs-key-population-status : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-patient-enrollment-type : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-reason-for-assessment-or-test-not-performed : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-reason-sample-cancelled-or-rejected : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-specimen-type : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-test-types : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-vl-result-code : 0 / 0 / 1
@@ -144,6 +146,7 @@ WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in 
 == fsh-generated/resources/Task-HIVLabResultTaskExample.json ==
 == fsh-generated/resources/ValueSet-vs-art-regimen-change-type.json ==
 == fsh-generated/resources/ValueSet-vs-artregimen-lines.json ==
+== fsh-generated/resources/ValueSet-vs-arv-regimen.json ==
 == fsh-generated/resources/ValueSet-vs-arvtreatment-activity-type.json ==
 == fsh-generated/resources/ValueSet-vs-careplan-outcome.json ==
 == fsh-generated/resources/ValueSet-vs-cd4-count.json ==
@@ -157,6 +160,7 @@ WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in 
 == fsh-generated/resources/ValueSet-vs-key-population-status.json ==
 == fsh-generated/resources/ValueSet-vs-patient-enrollment-type.json ==
 == fsh-generated/resources/ValueSet-vs-reason-for-assessment-or-test-not-performed.json ==
+== fsh-generated/resources/ValueSet-vs-reason-sample-cancelled-or-rejected.json ==
 == fsh-generated/resources/ValueSet-vs-specimen-type.json ==
 == fsh-generated/resources/ValueSet-vs-test-types.json ==
 == fsh-generated/resources/ValueSet-vs-vl-result-code.json ==
