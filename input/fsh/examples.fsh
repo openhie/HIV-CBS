@@ -409,3 +409,18 @@ Description: "ARV Regimen switched or substituted example"
 * note.text = "Additional information regarding the switching of the ARV regimen with another ARV regimen."
 * note.authorReference = Reference(HIVOrganizationExample)
 * note.time = "2015-02-07T13:28:17-05:00"
+
+Instance: HIVCareMedicationRequestExample
+InstanceOf: HIVCareMedicationRequest
+Usage: #example
+Title: "HIV Care Medication Request Example"
+Description: "HIV Care Medication Request Example"
+* status = #active
+* intent = #proposal
+* medicationCodeableConcept = $LNC#45260-7
+* subject = Reference(HIVPatientExample)
+* basedOn = Reference(ARVTreatmentExample)
+* dispenseRequest.quantity.value = 30
+* note.text = "Additional information regarding the HIV Medication Request"
+* note.authorReference = Reference(HIVOrganizationExample)
+* note.time = "2015-02-07T13:28:17-05:00"

@@ -256,3 +256,10 @@ Description: "A list of ARV regimen."
 * $SCT#427314002 "Tenofovir disoproxil and lamivudine (TDF + 3TC)"
 * $SCT#387151007 "Zidovudine (AZT)"
 * $SCT#776469003 "Zidovudine and lamivudine (AZT + 3TC)"
+
+ValueSet: VSHIVARTMedication
+Id: vs-hiv-art-medication
+Title: "HIV ART Medication"
+Description: "A list of HIV ART medication"
+* ^experimental = false
+* $LNC#45260-7 "HIV ART medication"  ///CHEK THE LATEST TERMINOLOGY LIST
