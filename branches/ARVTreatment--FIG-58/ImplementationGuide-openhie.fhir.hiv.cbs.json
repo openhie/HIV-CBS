@@ -11,7 +11,7 @@
   "title" : "HIV Case-Based Surveillance",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2023-03-01T11:24:18+00:00",
+  "date" : "2023-03-01T12:12:05+00:00",
   "publisher" : "Jembi Health Systems",
   "contact" : [{
     "telecom" : [{
@@ -619,6 +619,17 @@
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/cs-art-regimen-change-type"
+      },
+      "name" : "ART Regimen Change Types",
+      "description" : "A list of options to determine whether an ARV regimen was switched or substituted."
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -670,17 +681,6 @@
       },
       "name" : "HIV Organization",
       "description" : "Organization providing HIV Testing Services."
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CarePlan"
-      }],
-      "reference" : {
-        "reference" : "CarePlan/ARVTreatmentRegimenSwitchedExample"
-      },
-      "name" : "Example CarePlan - ARVTreatmentRegimenSwitchedExample",
-      "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-arv-treatment"
     },
     {
       "extension" : [{
@@ -835,6 +835,17 @@
       },
       "name" : "Patient Type at Enrolment",
       "description" : "A list of Patient Types at Enrolment"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/art-regimen-switched-or-substituded"
+      },
+      "name" : "ART Regimen Switched Or Substituted",
+      "description" : "The ARV regimen has been switched to a new ARV regimen or has been substituted by another ARV regimen."
     },
     {
       "extension" : [{
@@ -1026,17 +1037,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/art-regimen-substituted"
-      },
-      "name" : "ART Regimen Substituted",
-      "description" : "The ARV regimen has been substituded by a new ARV regimen."
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Specimen"
       }],
       "reference" : {
@@ -1103,6 +1103,17 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CarePlan"
+      }],
+      "reference" : {
+        "reference" : "CarePlan/ARVTreatmentRegimenSwitchedOrSubstitutedExample"
+      },
+      "name" : "Example CarePlan - ARVTreatmentRegimenSwitchedOrSubstitutedExample",
+      "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-arv-treatment"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Bundle"
       }],
       "reference" : {
@@ -1147,13 +1158,13 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CarePlan"
+        "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "CarePlan/ARVTreatmentRegimenSubstitutedExample"
+        "reference" : "ValueSet/vs-art-regimen-change-type"
       },
-      "name" : "Example CarePlan - ARVTreatmentRegimenSubstitutedExample",
-      "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-arv-treatment"
+      "name" : "ART Regimen Change Types",
+      "description" : "A list of options to determine whether an ARV regimen was switched or substituted."
     },
     {
       "extension" : [{
@@ -1264,17 +1275,6 @@
       },
       "name" : "Example Task - HIVLabOrderTaskExample",
       "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-lab-task"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/art-regimen-switched"
-      },
-      "name" : "ART Regimen Switched",
-      "description" : "The ARV regimen has been switched to a new ARV regimen."
     },
     {
       "extension" : [{
