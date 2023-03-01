@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vs-reason-sample-cancelled-or-rejected"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/281264009">281264009</a></td><td>Inappropriate bottle or container for sample (finding)</td></tr><tr><td><a href="http://snomed.info/id/281266006">281266006</a></td><td>No sample received (finding)</td></tr><tr><td><a href="http://snomed.info/id/135839007">135839007</a></td><td>Sample rejected (finding)</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://openhie.org/fhir/hiv-cbs/ValueSet/vs-reason-sample-cancelled-or-rejected"/>
+  <version value="0.2.0"/>
+  <name value="VSReasonForSampleCancellationOrRejection"/>
+  <title value="Reasons why a lab order was cancelled or rejected"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-03-01T14:07:40+00:00"/>
+  <publisher value="Jembi Health Systems"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.jembi.org"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@jembi.org"/>
+    </telecom>
+  </contact>
+  <description value="Reasons why a lab order was cancelled or rejected."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="281264009"/>
+        <display value="Inappropriate bottle or container for sample (finding)"/>
+      </concept>
+      <concept>
+        <code value="281266006"/>
+        <display value="No sample received (finding)"/>
+      </concept>
+      <concept>
+        <code value="135839007"/>
+        <display value="Sample rejected (finding)"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

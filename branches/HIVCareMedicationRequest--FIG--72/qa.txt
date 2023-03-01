@@ -3,7 +3,7 @@
 
 err = 0, warn = 4, info = 0
 IG Publisher Version: 1.2.38
-Generated Wed Mar 01 07:42:27 UTC 2023. FHIR version 4.0.1 for openhie.fhir.hiv.cbs#0.2.0 (canonical = http://openhie.org/fhir/hiv-cbs)
+Generated Wed Mar 01 14:09:25 UTC 2023. FHIR version 4.0.1 for openhie.fhir.hiv.cbs#0.2.0 (canonical = http://openhie.org/fhir/hiv-cbs)
  Build Errors : 0 / 4 / 0
  /github/workspace/fsh-generated/resources/Bundle-EMR : 0 / 0 / 19
  /github/workspace/fsh-generated/resources/Bundle-LabCancellation : 0 / 0 / 3
@@ -11,7 +11,8 @@ Generated Wed Mar 01 07:42:27 UTC 2023. FHIR version 4.0.1 for openhie.fhir.hiv.
  /github/workspace/fsh-generated/resources/Bundle-LabRejection : 0 / 0 / 3
  /github/workspace/fsh-generated/resources/Bundle-LabResult : 0 / 0 / 11
  /github/workspace/fsh-generated/resources/CarePlan-ARVTreatmentExample : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/CarePlan-ARVTreatmentRefusedExample : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/CarePlan-ARVTreatmentRegimenSwitchedOrSubstitutedExample : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-cs-art-regimen-change-type : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-cs-key-population-status : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Condition-HIVDiagnosisExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/DiagnosticReport-HIVLabResultsDiagnosticReportExample : 0 / 0 / 1
@@ -19,6 +20,7 @@ Generated Wed Mar 01 07:42:27 UTC 2023. FHIR version 4.0.1 for openhie.fhir.hiv.
  /github/workspace/fsh-generated/resources/Encounter-TransferringFacilityEncounterExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/EpisodeOfCare-HIVEpisodeOfCareExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Location-HIVServiceRequestLocationExample : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/MedicationRequest-HIVCareMedicationRequestExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Observation-CD4PercentageExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Observation-CD4TestResultExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Observation-DateHIVTestDoneExample : 0 / 0 / 1
@@ -33,6 +35,7 @@ Generated Wed Mar 01 07:42:27 UTC 2023. FHIR version 4.0.1 for openhie.fhir.hiv.
  /github/workspace/fsh-generated/resources/Specimen-VLSpecimenExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-HIV-lab-order : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-art-regimen-line : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-art-regimen-switched-or-substituted : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-date-hiv-test-done : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-death : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-hiv-arv-treatment : 0 / 0 / 1
@@ -43,6 +46,7 @@ Generated Wed Mar 01 07:42:27 UTC 2023. FHIR version 4.0.1 for openhie.fhir.hiv.
  /github/workspace/fsh-generated/resources/StructureDefinition-hiv-diagnostic-report : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-hiv-episode-of-care : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-hiv-lab-task : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-hiv-med-req : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-hiv-organization : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-hiv-patient : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-hiv-practitioner : 0 / 0 / 1
@@ -58,12 +62,15 @@ Generated Wed Mar 01 07:42:27 UTC 2023. FHIR version 4.0.1 for openhie.fhir.hiv.
  /github/workspace/fsh-generated/resources/Task-HIVLabOrderRejectionTaskExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Task-HIVLabOrderTaskExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Task-HIVLabResultTaskExample : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-art-regimen-change-type : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-artregimen-lines : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-arv-regimen : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-arvtreatment-activity-type : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-careplan-outcome : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-cd4-count : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-cd4-percentage : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-condition : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-hiv-art-medication : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-hiv-death : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-hiv-recency-status : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-hiv-recency-test : 0 / 0 / 1
@@ -72,6 +79,7 @@ Generated Wed Mar 01 07:42:27 UTC 2023. FHIR version 4.0.1 for openhie.fhir.hiv.
  /github/workspace/fsh-generated/resources/ValueSet-vs-key-population-status : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-patient-enrollment-type : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-reason-for-assessment-or-test-not-performed : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-reason-sample-cancelled-or-rejected : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-specimen-type : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-test-types : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-vl-result-code : 0 / 0 / 1
@@ -90,7 +98,8 @@ WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in 
 == fsh-generated/resources/Bundle-LabRejection.json ==
 == fsh-generated/resources/Bundle-LabResult.json ==
 == fsh-generated/resources/CarePlan-ARVTreatmentExample.json ==
-== fsh-generated/resources/CarePlan-ARVTreatmentRefusedExample.json ==
+== fsh-generated/resources/CarePlan-ARVTreatmentRegimenSwitchedOrSubstitutedExample.json ==
+== fsh-generated/resources/CodeSystem-cs-art-regimen-change-type.json ==
 == fsh-generated/resources/CodeSystem-cs-key-population-status.json ==
 == fsh-generated/resources/Condition-HIVDiagnosisExample.json ==
 == fsh-generated/resources/DiagnosticReport-HIVLabResultsDiagnosticReportExample.json ==
@@ -98,6 +107,7 @@ WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in 
 == fsh-generated/resources/Encounter-TransferringFacilityEncounterExample.json ==
 == fsh-generated/resources/EpisodeOfCare-HIVEpisodeOfCareExample.json ==
 == fsh-generated/resources/Location-HIVServiceRequestLocationExample.json ==
+== fsh-generated/resources/MedicationRequest-HIVCareMedicationRequestExample.json ==
 == fsh-generated/resources/Observation-CD4PercentageExample.json ==
 == fsh-generated/resources/Observation-CD4TestResultExample.json ==
 == fsh-generated/resources/Observation-DateHIVTestDoneExample.json ==
@@ -112,6 +122,7 @@ WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in 
 == fsh-generated/resources/Specimen-VLSpecimenExample.json ==
 == fsh-generated/resources/StructureDefinition-HIV-lab-order.json ==
 == fsh-generated/resources/StructureDefinition-art-regimen-line.json ==
+== fsh-generated/resources/StructureDefinition-art-regimen-switched-or-substituted.json ==
 == fsh-generated/resources/StructureDefinition-date-hiv-test-done.json ==
 == fsh-generated/resources/StructureDefinition-death.json ==
 == fsh-generated/resources/StructureDefinition-hiv-arv-treatment.json ==
@@ -122,6 +133,7 @@ WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in 
 == fsh-generated/resources/StructureDefinition-hiv-diagnostic-report.json ==
 == fsh-generated/resources/StructureDefinition-hiv-episode-of-care.json ==
 == fsh-generated/resources/StructureDefinition-hiv-lab-task.json ==
+== fsh-generated/resources/StructureDefinition-hiv-med-req.json ==
 == fsh-generated/resources/StructureDefinition-hiv-organization.json ==
 == fsh-generated/resources/StructureDefinition-hiv-patient.json ==
 == fsh-generated/resources/StructureDefinition-hiv-practitioner.json ==
@@ -137,12 +149,15 @@ WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in 
 == fsh-generated/resources/Task-HIVLabOrderRejectionTaskExample.json ==
 == fsh-generated/resources/Task-HIVLabOrderTaskExample.json ==
 == fsh-generated/resources/Task-HIVLabResultTaskExample.json ==
+== fsh-generated/resources/ValueSet-vs-art-regimen-change-type.json ==
 == fsh-generated/resources/ValueSet-vs-artregimen-lines.json ==
+== fsh-generated/resources/ValueSet-vs-arv-regimen.json ==
 == fsh-generated/resources/ValueSet-vs-arvtreatment-activity-type.json ==
 == fsh-generated/resources/ValueSet-vs-careplan-outcome.json ==
 == fsh-generated/resources/ValueSet-vs-cd4-count.json ==
 == fsh-generated/resources/ValueSet-vs-cd4-percentage.json ==
 == fsh-generated/resources/ValueSet-vs-condition.json ==
+== fsh-generated/resources/ValueSet-vs-hiv-art-medication.json ==
 == fsh-generated/resources/ValueSet-vs-hiv-death.json ==
 == fsh-generated/resources/ValueSet-vs-hiv-recency-status.json ==
 == fsh-generated/resources/ValueSet-vs-hiv-recency-test.json ==
@@ -151,6 +166,7 @@ WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in 
 == fsh-generated/resources/ValueSet-vs-key-population-status.json ==
 == fsh-generated/resources/ValueSet-vs-patient-enrollment-type.json ==
 == fsh-generated/resources/ValueSet-vs-reason-for-assessment-or-test-not-performed.json ==
+== fsh-generated/resources/ValueSet-vs-reason-sample-cancelled-or-rejected.json ==
 == fsh-generated/resources/ValueSet-vs-specimen-type.json ==
 == fsh-generated/resources/ValueSet-vs-test-types.json ==
 == fsh-generated/resources/ValueSet-vs-vl-result-code.json ==
