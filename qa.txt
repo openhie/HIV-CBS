@@ -3,7 +3,7 @@
 
 err = 0, warn = 4, info = 0
 IG Publisher Version: 1.2.38
-Generated Wed Mar 01 13:26:34 UTC 2023. FHIR version 4.0.1 for openhie.fhir.hiv.cbs#0.2.0 (canonical = http://openhie.org/fhir/hiv-cbs)
+Generated Wed Mar 01 13:38:04 UTC 2023. FHIR version 4.0.1 for openhie.fhir.hiv.cbs#0.2.0 (canonical = http://openhie.org/fhir/hiv-cbs)
  Build Errors : 0 / 4 / 0
  /github/workspace/fsh-generated/resources/Bundle-EMR : 0 / 0 / 19
  /github/workspace/fsh-generated/resources/Bundle-LabCancellation : 0 / 0 / 3
@@ -13,6 +13,7 @@ Generated Wed Mar 01 13:26:34 UTC 2023. FHIR version 4.0.1 for openhie.fhir.hiv.
  /github/workspace/fsh-generated/resources/CarePlan-ARVTreatmentExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CarePlan-ARVTreatmentRegimenSwitchedOrSubstitutedExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-cs-art-regimen-change-type : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-cs-hiv-cause-of-death : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-cs-key-population-status : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Condition-HIVDiagnosisExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/DiagnosticReport-HIVLabResultsDiagnosticReportExample : 0 / 0 / 1
@@ -68,6 +69,7 @@ Generated Wed Mar 01 13:26:34 UTC 2023. FHIR version 4.0.1 for openhie.fhir.hiv.
  /github/workspace/fsh-generated/resources/ValueSet-vs-cd4-count : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-cd4-percentage : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-condition : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-hiv-cause-of-death : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-hiv-death : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-hiv-recency-status : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-hiv-recency-test : 0 / 0 / 1
@@ -97,6 +99,7 @@ WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in 
 == fsh-generated/resources/CarePlan-ARVTreatmentExample.json ==
 == fsh-generated/resources/CarePlan-ARVTreatmentRegimenSwitchedOrSubstitutedExample.json ==
 == fsh-generated/resources/CodeSystem-cs-art-regimen-change-type.json ==
+== fsh-generated/resources/CodeSystem-cs-hiv-cause-of-death.json ==
 == fsh-generated/resources/CodeSystem-cs-key-population-status.json ==
 == fsh-generated/resources/Condition-HIVDiagnosisExample.json ==
 == fsh-generated/resources/DiagnosticReport-HIVLabResultsDiagnosticReportExample.json ==
@@ -152,6 +155,7 @@ WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in 
 == fsh-generated/resources/ValueSet-vs-cd4-count.json ==
 == fsh-generated/resources/ValueSet-vs-cd4-percentage.json ==
 == fsh-generated/resources/ValueSet-vs-condition.json ==
+== fsh-generated/resources/ValueSet-vs-hiv-cause-of-death.json ==
 == fsh-generated/resources/ValueSet-vs-hiv-death.json ==
 == fsh-generated/resources/ValueSet-vs-hiv-recency-status.json ==
 == fsh-generated/resources/ValueSet-vs-hiv-recency-test.json ==
