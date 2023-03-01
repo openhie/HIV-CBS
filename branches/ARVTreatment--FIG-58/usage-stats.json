@@ -5,19 +5,25 @@
   "jurisdiction": "001",
   "extensions": [
     {
-      "url": "http://openhie.org/fhir/hiv-cbs/StructureDefinition/art-change-type",
-      "title": "ART Change Type",
+      "url": "http://openhie.org/fhir/hiv-cbs/StructureDefinition/art-regimen-line",
+      "title": "ART Regimen Line",
       "types": [
         "CodeableConcept",
         "CodeableConcept"
       ]
     },
     {
-      "url": "http://openhie.org/fhir/hiv-cbs/StructureDefinition/art-regimen-line",
-      "title": "ART Regimen Line",
+      "url": "http://openhie.org/fhir/hiv-cbs/StructureDefinition/art-regimen-substituted",
+      "title": "ART Regimen Substituted",
       "types": [
-        "CodeableConcept",
-        "CodeableConcept"
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://openhie.org/fhir/hiv-cbs/StructureDefinition/art-regimen-switched",
+      "title": "ART Regimen Switched",
+      "types": [
+        "boolean"
       ]
     },
     {
@@ -169,11 +175,15 @@
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
     ],
-    "http://openhie.org/fhir/hiv-cbs/StructureDefinition/art-change-type": [
-      "Bundle.entry.resource",
-      "CarePlan"
-    ],
     "http://openhie.org/fhir/hiv-cbs/StructureDefinition/art-regimen-line": [
+      "Bundle.entry.resource.activity.detail",
+      "CarePlan.activity.detail"
+    ],
+    "http://openhie.org/fhir/hiv-cbs/StructureDefinition/art-regimen-substituted": [
+      "Bundle.entry.resource.activity.detail",
+      "CarePlan.activity.detail"
+    ],
+    "http://openhie.org/fhir/hiv-cbs/StructureDefinition/art-regimen-switched": [
       "Bundle.entry.resource.activity.detail",
       "CarePlan.activity.detail"
     ],

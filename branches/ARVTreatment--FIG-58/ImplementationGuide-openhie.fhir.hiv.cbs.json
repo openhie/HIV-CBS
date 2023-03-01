@@ -11,7 +11,7 @@
   "title" : "HIV Case-Based Surveillance",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2023-02-28T14:54:29+00:00",
+  "date" : "2023-03-01T11:03:16+00:00",
   "publisher" : "Jembi Health Systems",
   "contact" : [{
     "telecom" : [{
@@ -861,17 +861,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/art-change-type"
-      },
-      "name" : "ART Change Type",
-      "description" : "A list of options to distinguish the ART between Initial, Switch and Substitute"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -996,17 +985,6 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/vs-art-change-type"
-      },
-      "name" : "ART Change Type",
-      "description" : "A list of options to distinguish the ART between Initial, Switch and Substitute"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
         "reference" : "ValueSet/vs-careplan-outcome"
       },
       "name" : "ARV treatment outcomes",
@@ -1033,6 +1011,17 @@
       },
       "name" : "Lab Results",
       "description" : "The result of the lab test which determines whether the patient is infected with HIV or not."
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/art-regimen-substituted"
+      },
+      "name" : "ART Regimen Substituted",
+      "description" : "The ARV regimen has been substituded by a new ARV regimen."
     },
     {
       "extension" : [{
@@ -1132,17 +1121,6 @@
       },
       "name" : "Example Observation - DeathExample",
       "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/death"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/cs-art-change-type"
-      },
-      "name" : "ART Change Type",
-      "description" : "A list of options to distinguish the ART between Initial, Switch and Substitute"
     },
     {
       "extension" : [{
@@ -1264,6 +1242,17 @@
       },
       "name" : "Example Task - HIVLabOrderTaskExample",
       "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-lab-task"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/art-regimen-switched"
+      },
+      "name" : "ART Regimen Switched",
+      "description" : "The ARV regimen has been switched to a new ARV regimen."
     },
     {
       "extension" : [{

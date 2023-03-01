@@ -12,7 +12,7 @@
   <title value="HIV Case-Based Surveillance"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2023-02-28T14:54:29+00:00"/>
+  <date value="2023-03-01T11:03:16+00:00"/>
   <publisher value="Jembi Health Systems"/>
   <contact>
     <telecom>
@@ -681,16 +681,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/art-change-type"/>
-      </reference>
-      <name value="ART Change Type"/>
-      <description value="A list of options to distinguish the ART between Initial, Switch and Substitute"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -804,16 +794,6 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/vs-art-change-type"/>
-      </reference>
-      <name value="ART Change Type"/>
-      <description value="A list of options to distinguish the ART between Initial, Switch and Substitute"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
         <reference value="ValueSet/vs-careplan-outcome"/>
       </reference>
       <name value="ARV treatment outcomes"/>
@@ -838,6 +818,16 @@
       </reference>
       <name value="Lab Results"/>
       <description value="The result of the lab test which determines whether the patient is infected with HIV or not."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/art-regimen-substituted"/>
+      </reference>
+      <name value="ART Regimen Substituted"/>
+      <description value="The ARV regimen has been substituded by a new ARV regimen."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -928,16 +918,6 @@
       </reference>
       <name value="Example Observation - DeathExample"/>
       <exampleCanonical value="http://openhie.org/fhir/hiv-cbs/StructureDefinition/death"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/cs-art-change-type"/>
-      </reference>
-      <name value="ART Change Type"/>
-      <description value="A list of options to distinguish the ART between Initial, Switch and Substitute"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1048,6 +1028,16 @@
       </reference>
       <name value="Example Task - HIVLabOrderTaskExample"/>
       <exampleCanonical value="http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-lab-task"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/art-regimen-switched"/>
+      </reference>
+      <name value="ART Regimen Switched"/>
+      <description value="The ARV regimen has been switched to a new ARV regimen."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
