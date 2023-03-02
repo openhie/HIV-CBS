@@ -353,6 +353,7 @@ Description: "This profile is for recording the Patient's ARV Dispensing quantit
 * intent 1..1
 * medicationCodeableConcept from VSHIVARTMedication (required)
 * subject 1..1
+* encounter 1..1 
 * basedOn 1..1 
 * dispenseRequest.quantity 1..1 
 * note 0..1

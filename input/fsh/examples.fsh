@@ -419,6 +419,7 @@ Description: "HIV Care Medication Request Example"
 * intent = #proposal
 * medicationCodeableConcept = $LNC#45260-7
 * subject = Reference(HIVPatientExample)
+* encounter = Reference(TargetFacilityEncounterExample)
 * basedOn = Reference(ARVTreatmentExample)
 * dispenseRequest.quantity.value = 30
 * note.text = "Additional information regarding the HIV Medication Request"
