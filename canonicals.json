@@ -112,6 +112,13 @@
     "name" : "HIVLabTask"
   },
   {
+    "id" : "hiv-med-req",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-med-req",
+    "version" : "0.2.0",
+    "name" : "HIVCareMedicationRequest"
+  },
+  {
     "id" : "hiv-organization",
     "type" : "StructureDefinition",
     "url" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-organization",
@@ -243,6 +250,13 @@
     "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-condition",
     "version" : "0.2.0",
     "name" : "VSCondition"
+  },
+  {
+    "id" : "vs-hiv-art-medication",
+    "type" : "ValueSet",
+    "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-hiv-art-medication",
+    "version" : "0.2.0",
+    "name" : "VSHIVARTMedication"
   },
   {
     "id" : "vs-hiv-death",

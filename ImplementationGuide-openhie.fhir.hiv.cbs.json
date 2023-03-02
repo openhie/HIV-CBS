@@ -11,7 +11,7 @@
   "title" : "HIV Case-Based Surveillance",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2023-03-02T07:03:01+00:00",
+  "date" : "2023-03-02T09:16:05+00:00",
   "publisher" : "Jembi Health Systems",
   "contact" : [{
     "telecom" : [{
@@ -626,6 +626,17 @@
       },
       "name" : "ART Regimen Change Types",
       "description" : "A list of options to determine whether an ARV regimen was switched or substituted."
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationRequest"
+      }],
+      "reference" : {
+        "reference" : "MedicationRequest/HIVCareMedicationRequestExample"
+      },
+      "name" : "Example MedicationRequest - HIVCareMedicationRequestExample",
+      "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-med-req"
     },
     {
       "extension" : [{
@@ -1378,6 +1389,17 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/hiv-med-req"
+      },
+      "name" : "HIV Care Medication Request",
+      "description" : "This profile is for recording the Patient's ARV Dispensing quantity in days."
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
@@ -1451,6 +1473,17 @@
       },
       "name" : "HIV Recency Test Result",
       "description" : "This profile is to record the HIV recency test result data for a patient."
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vs-hiv-art-medication"
+      },
+      "name" : "HIV ART Medication",
+      "description" : "A list of HIV ART medication"
     },
     {
       "extension" : [{
