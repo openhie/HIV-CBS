@@ -120,11 +120,12 @@ Usage: #example
 Title: "Patient Death example"
 Description: "Patient Death example"
 * status = #final
-* code = $SCT#419099009
+* code = $SCT#419620001
 * subject = Reference(HIVPatientExample)
 * encounter = Reference(TargetFacilityEncounterExample)
 * effectiveDateTime = "2023-02-05"
-* note.text = "Deatils regarding death"
+* valueCodeableConcept = $LNC#80359-3
+* note.text = "Details regarding death"
 * note.authorReference = Reference(HIVOrganizationExample)
 * note.time = "2015-02-07T13:28:17-05:00"
 

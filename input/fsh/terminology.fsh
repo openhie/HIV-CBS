@@ -29,7 +29,7 @@ Id: vs-hiv-death
 Title: "Death"
 Description:  "A list of possible HIV deaths"
 * ^experimental = false
-* $SCT#419099009 "Dead (finding)"
+* $SCT#419620001 "Dead (finding)"
 
 ValueSet: VSHIVTestDone
 Id: vs-hiv-test-done
@@ -256,3 +256,11 @@ Description: "A list of ARV regimen."
 * $SCT#427314002 "Tenofovir disoproxil and lamivudine (TDF + 3TC)"
 * $SCT#387151007 "Zidovudine (AZT)"
 * $SCT#776469003 "Zidovudine and lamivudine (AZT + 3TC)"
+
+ValueSet: VSHIVCauseOfDeath
+Id: vs-hiv-cause-of-death
+Title: "Causes of Death"
+Description: "A list of possible HIV causes of deaths"
+* ^experimental = false
+*  $LNC#80359-3 "Cause of death.underlying [Manual]"
+*  $LNC#69441-4 "Other significant causes or conditions of death"
