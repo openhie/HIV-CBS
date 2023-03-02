@@ -159,6 +159,8 @@ Description: "ARVCarePlan example"
 * activity.detail.status = #in-progress
 * activity.detail.productCodeableConcept = $SCT#387005008
 * activity.detail.extension[artRegimenLine].valueCodeableConcept = $SCT#708255002
+* activity.detail.scheduledPeriod.start = "2023-01-01"
+* activity.detail.scheduledPeriod.end = "2023-01-01"
 * note.text = "Additional information regarding the ARV treatment prescribed"
 * note.authorReference = Reference(HIVOrganizationExample)
 * note.time = "2015-02-07T13:28:17-05:00"

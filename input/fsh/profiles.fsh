@@ -137,6 +137,7 @@ Description: "This profile is to record prescribed ARV regimen against a given t
 * activity.detail.productCodeableConcept from VSARVRegimen (required)
 * activity.detail.extension contains ARTRegimenSwitchedOrSubstituted named artRegimenSwitchedOrSubstituted 0..1 MS
 * activity.detail.extension contains ARTRegimenLine named artRegimenLine 1..1
+* activity.detail.scheduledPeriod 0..1
 * note 0..1
 
 Extension: ARTRegimenLine
