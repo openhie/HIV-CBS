@@ -352,7 +352,7 @@ Title: "HIV Care Medication Request"
 Description: "This profile is for recording the Patient's ARV Dispensing quantity in days."
 * status 1..1
 * intent 1..1
-* medicationCodeableConcept from VSHIVARTMedication (required)
+* medicationCodeableConcept from VSARVRegimen (required)
 * subject 1..1
 * encounter 1..1 
 * basedOn 1..1 

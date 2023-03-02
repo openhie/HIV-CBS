@@ -418,7 +418,7 @@ Title: "HIV Care Medication Request Example"
 Description: "HIV Care Medication Request Example"
 * status = #active
 * intent = #proposal
-* medicationCodeableConcept = $LNC#45260-7
+* medicationCodeableConcept = $SCT#878898002
 * subject = Reference(HIVPatientExample)
 * encounter = Reference(TargetFacilityEncounterExample)
 * basedOn = Reference(ARVTreatmentExample)
