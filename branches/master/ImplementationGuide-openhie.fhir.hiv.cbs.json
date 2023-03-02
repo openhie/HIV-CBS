@@ -11,7 +11,7 @@
   "title" : "HIV Case-Based Surveillance",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2023-03-02T07:03:01+00:00",
+  "date" : "2023-03-02T10:01:05+00:00",
   "publisher" : "Jembi Health Systems",
   "contact" : [{
     "telecom" : [{
@@ -1165,6 +1165,17 @@
       },
       "name" : "Example Observation - DeathExample",
       "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/death"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vs-hiv-cause-of-death"
+      },
+      "name" : "Causes of Death",
+      "description" : "A list of possible HIV causes of deaths"
     },
     {
       "extension" : [{

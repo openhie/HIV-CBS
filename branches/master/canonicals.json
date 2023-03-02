@@ -245,6 +245,13 @@
     "name" : "VSCondition"
   },
   {
+    "id" : "vs-hiv-cause-of-death",
+    "type" : "ValueSet",
+    "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-hiv-cause-of-death",
+    "version" : "0.2.0",
+    "name" : "VSHIVCauseOfDeath"
+  },
+  {
     "id" : "vs-hiv-death",
     "type" : "ValueSet",
     "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-hiv-death",
