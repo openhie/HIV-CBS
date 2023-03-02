@@ -344,3 +344,18 @@ Description: "This profile is for recording the Patient's CD4 Count."
 * performer 1..1
 * valueInteger 1..1
 * note 0..1
+
+Profile: HIVCareMedicationRequest
+Parent: MedicationRequest
+Id: hiv-med-req
+Title: "HIV Care Medication Request"
+Description: "This profile is for recording the Patient's ARV Dispensing quantity in days."
+* status 1..1
+* intent 1..1
+* medicationCodeableConcept from VSARVRegimen (required)
+* subject 1..1
+* encounter 1..1 
+* basedOn 1..1 
+* dispenseRequest.quantity 1..1 
+* note 0..1
+
