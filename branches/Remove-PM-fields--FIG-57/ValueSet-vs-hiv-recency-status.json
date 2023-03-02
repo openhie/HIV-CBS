@@ -1,0 +1,46 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "vs-hiv-recency-status",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/6493001\">6493001</a></td><td>Recent (qualifier value)</td></tr><tr><td><a href=\"http://snomed.info/id/307294006\">307294006</a></td><td>Personal history finding (finding)</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-hiv-recency-status",
+  "version" : "0.2.0",
+  "name" : "VSHIVRecencyStatus",
+  "title" : "HIV Recency Testing Status",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2023-03-02T11:42:48+00:00",
+  "publisher" : "Jembi Health Systems",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.jembi.org"
+    },
+    {
+      "system" : "email",
+      "value" : "info@jembi.org"
+    }]
+  }],
+  "description" : "A list of HIV recency statuses",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "6493001",
+        "display" : "Recent (qualifier value)"
+      },
+      {
+        "code" : "307294006",
+        "display" : "Personal history finding (finding)"
+      }]
+    }]
+  }
+}
