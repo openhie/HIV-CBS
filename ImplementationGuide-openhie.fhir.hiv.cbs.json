@@ -11,7 +11,7 @@
   "title" : "HIV Case-Based Surveillance",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2023-03-02T11:42:48+00:00",
+  "date" : "2023-03-02T11:49:40+00:00",
   "publisher" : "Jembi Health Systems",
   "contact" : [{
     "telecom" : [{
@@ -626,6 +626,17 @@
       },
       "name" : "ART Regimen Change Types",
       "description" : "A list of options to determine whether an ARV regimen was switched or substituted."
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationRequest"
+      }],
+      "reference" : {
+        "reference" : "MedicationRequest/HIVCareMedicationRequestExample"
+      },
+      "name" : "Example MedicationRequest - HIVCareMedicationRequestExample",
+      "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-med-req"
     },
     {
       "extension" : [{
@@ -1385,6 +1396,17 @@
       },
       "name" : "Viral Load Result Code",
       "description" : "A code used to indicate the category for the lab result."
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/hiv-med-req"
+      },
+      "name" : "HIV Care Medication Request",
+      "description" : "This profile is for recording the Patient's ARV Dispensing quantity in days."
     },
     {
       "extension" : [{
