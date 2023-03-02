@@ -265,13 +265,13 @@
           <profile value="http://openhie.org/fhir/hiv-cbs/StructureDefinition/death"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="DeathExample"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;DeathExample&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-death.html">Patient Death</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Dead (finding) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#419099009)</span></p><p><b>subject</b>: <a href="#Patient_HIVPatientExample">See above (Patient/HIVPatientExample)</a></p><p><b>encounter</b>: <a href="#Encounter_TargetFacilityEncounterExample">See above (Encounter/TargetFacilityEncounterExample)</a></p><p><b>effective</b>: 2023-02-05</p><p><b>value</b>: HIV related death <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-cs-hiv-cause-of-death.html">Causes of Death</a>#HIV-RELATED)</span></p><p><b>note</b>: Details regarding death (By Organization/HIVOrganizationExample @Feb 7, 2015, 6:28:17 PM)</p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="DeathExample"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;DeathExample&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-death.html">Patient Death</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Death (event) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#419620001)</span></p><p><b>subject</b>: <a href="#Patient_HIVPatientExample">See above (Patient/HIVPatientExample)</a></p><p><b>encounter</b>: <a href="#Encounter_TargetFacilityEncounterExample">See above (Encounter/TargetFacilityEncounterExample)</a></p><p><b>effective</b>: 2023-02-05</p><p><b>value</b>: Cause of death.underlying [Manual] <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#80359-3)</span></p><p><b>note</b>: Details regarding death (By Organization/HIVOrganizationExample @Feb 7, 2015, 6:28:17 PM)</p></div>
         </text>
         <status value="final"/>
         <code>
           <coding>
             <system value="http://snomed.info/sct"/>
-            <code value="419099009"/>
+            <code value="419620001"/>
           </coding>
         </code>
         <subject>
@@ -283,8 +283,8 @@
         <effectiveDateTime value="2023-02-05"/>
         <valueCodeableConcept>
           <coding>
-            <system value="http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-hiv-cause-of-death"/>
-            <code value="HIV-RELATED"/>
+            <system value="http://loinc.org"/>
+            <code value="80359-3"/>
           </coding>
         </valueCodeableConcept>
         <note>
