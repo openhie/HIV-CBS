@@ -393,7 +393,6 @@ NOTE: This is a list of contained Request-Event tuples!}</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;statusReason</td><td>Request.statusReason</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;doNotPerform</td><td>Request.doNotPerform</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;scheduled[x]</td><td>Request.occurrence[x]</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;scheduled[x] (scheduledPeriod)</td><td>Request.occurrence[x]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;performer</td><td>Request.performer</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;note</td><td>Request.note</td> </tr>
 </table>
@@ -432,7 +431,6 @@ NOTE: This is a list of contained Request-Event tuples!}</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;status</td><td>.statusCode not-started = new scheduled = not-started (and fulfillment relationship to appointent) in-progress = active on-hold = suspended completed = completed cancelled = aborted</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;doNotPerform</td><td>actionNegationInd</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;scheduled[x]</td><td>.effectiveTime</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;scheduled[x] (scheduledPeriod)</td><td>.effectiveTime</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;location</td><td>.participation[typeCode=LOC].role</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;performer</td><td>.participation[typeCode=PFM]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;product[x]</td><td>.participation[typeCode=PRD].role</td> </tr>
@@ -473,7 +471,6 @@ NOTE: This is a list of contained Request-Event tuples!}</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;code</td><td>OBR-4 / RXE-2 / RXO-1 / RXD-2</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;status</td><td>ORC-5?</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;scheduled[x]</td><td>TQ1</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;scheduled[x] (scheduledPeriod)</td><td>TQ1</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;location</td><td>OBR-24(???!!)</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;performer</td><td>PRT-5 : ( PRV-4 = (provider participations)); PRT-5 : ( PRV-4 = (non-provider person participations )) ; PRT-5 : ( PRV-4 = (patient non-subject of care) ) ; PRT-8</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;product[x]</td><td>RXE-2 / RXO-1 / RXD-2</td> </tr>
@@ -537,7 +534,7 @@ NOTE: This is a list of contained Request-Event tuples!}</td> </tr>
            
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2019+ <a style="color: #81BEF7" href="https://www.jembi.org">Jembi Health Systems</a>.  Package openhie.fhir.hiv.cbs#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Mar 2, 2023 13:11+0000">2023-03-02</span>
+          IG &#169; 2019+ <a style="color: #81BEF7" href="https://www.jembi.org">Jembi Health Systems</a>.  Package openhie.fhir.hiv.cbs#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Mar 2, 2023 13:30+0000">2023-03-02</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
