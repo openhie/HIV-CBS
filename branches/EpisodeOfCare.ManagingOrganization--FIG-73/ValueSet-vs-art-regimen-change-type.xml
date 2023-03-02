@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vs-art-regimen-change-type"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-cs-art-regimen-change-type.html"><code>http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-art-regimen-change-type</code></a></li></ul></div>
+  </text>
+  <url value="http://openhie.org/fhir/hiv-cbs/ValueSet/vs-art-regimen-change-type"/>
+  <version value="0.2.0"/>
+  <name value="VSARTRegimenChangeType"/>
+  <title value="ART Regimen Change Types"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-03-02T13:30:18+00:00"/>
+  <publisher value="Jembi Health Systems"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.jembi.org"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@jembi.org"/>
+    </telecom>
+  </contact>
+  <description value="A list of options to determine whether an ARV regimen was switched or substituted."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-art-regimen-change-type"/>
+    </include>
+  </compose>
+</ValueSet>

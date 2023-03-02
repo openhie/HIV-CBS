@@ -1,0 +1,44 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "cs-art-regimen-change-type",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-art-regimen-change-type</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">Switched<a name=\"cs-art-regimen-change-type-Switched\"> </a></td><td>ARV Regimen Switched</td></tr><tr><td style=\"white-space:nowrap\">Substituted<a name=\"cs-art-regimen-change-type-Substituted\"> </a></td><td>ARV Regimen Substituted</td></tr></table></div>"
+  },
+  "url" : "http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-art-regimen-change-type",
+  "version" : "0.2.0",
+  "name" : "CSARTRegimenChangeType",
+  "title" : "ART Regimen Change Types",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2023-03-02T13:30:18+00:00",
+  "publisher" : "Jembi Health Systems",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.jembi.org"
+    },
+    {
+      "system" : "email",
+      "value" : "info@jembi.org"
+    }]
+  }],
+  "description" : "A list of options to determine whether an ARV regimen was switched or substituted.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 2,
+  "concept" : [{
+    "code" : "Switched",
+    "display" : "ARV Regimen Switched"
+  },
+  {
+    "code" : "Substituted",
+    "display" : "ARV Regimen Substituted"
+  }]
+}
