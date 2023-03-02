@@ -29,7 +29,7 @@ Id: vs-hiv-death
 Title: "Death"
 Description:  "A list of possible HIV deaths"
 * ^experimental = false
-* $SCT#419099009 "Dead (finding)"
+* $SCT#419620001 "Dead (finding)"
 
 ValueSet: VSHIVTestDone
 Id: vs-hiv-test-done
@@ -257,18 +257,10 @@ Description: "A list of ARV regimen."
 * $SCT#387151007 "Zidovudine (AZT)"
 * $SCT#776469003 "Zidovudine and lamivudine (AZT + 3TC)"
 
-CodeSystem: CSHIVCauseOfDeath
-Id: cs-hiv-cause-of-death
-Title: "Causes of Death"
-Description: "A list of possible HIV causes of deaths"
-* ^experimental = false
-* ^caseSensitive = true
-* #HIV-RELATED "HIV related death"
-* #NON-HIV-RELATED "Non HIV related death"
-
 ValueSet: VSHIVCauseOfDeath
 Id: vs-hiv-cause-of-death
 Title: "Causes of Death"
 Description: "A list of possible HIV causes of deaths"
 * ^experimental = false
-* include codes from system CSHIVCauseOfDeath
+*  $LNC#80359-3 "Cause of death.underlying [Manual]"
+*  $LNC#69441-4 "Other significant causes or conditions of death"
