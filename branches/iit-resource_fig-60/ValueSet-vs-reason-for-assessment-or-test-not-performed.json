@@ -1,0 +1,98 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "vs-reason-for-assessment-or-test-not-performed",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/77386006\">77386006</a></td><td>Currently pregnant</td></tr><tr><td><a href=\"http://snomed.info/id/428450006\">428450006</a></td><td>Repeat</td></tr><tr><td><a href=\"http://snomed.info/id/171111007\">171111007</a></td><td>Results not available</td></tr><tr><td><a href=\"http://snomed.info/id/266721009\">266721009</a></td><td>Absent response to treatment</td></tr><tr><td><a href=\"http://snomed.info/id/170564007\">170564007</a></td><td>Chronic disease - treatment changed (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/413712001\">413712001</a></td><td>Breastfeeding (mother) (observable entity)</td></tr><tr><td><a href=\"http://snomed.info/id/315124004\">315124004</a></td><td>Baseline Viral Load / Routine Viral Load</td></tr><tr><td><a href=\"http://snomed.info/id/2528003\">2528003</a></td><td>Persistent low-Level viraemia</td></tr><tr><td><a href=\"http://snomed.info/id/441510007\">441510007</a></td><td>Blood sample coagulated</td></tr><tr><td><a href=\"http://snomed.info/id/123840003\">123840003</a></td><td>Contaminated specimen</td></tr><tr><td><a href=\"http://snomed.info/id/397933008\">397933008</a></td><td>Equipment failure</td></tr><tr><td><a href=\"http://snomed.info/id/281264009\">281264009</a></td><td>Inappropriate sample container used</td></tr><tr><td><a href=\"http://snomed.info/id/281268007\">281268007</a></td><td>Insufficient sample</td></tr><tr><td><a href=\"http://snomed.info/id/281265005\">281265005</a></td><td>Specimen not labeled</td></tr><tr><td><a href=\"http://snomed.info/id/419182006\">419182006</a></td><td>Supplies not available</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-reason-for-assessment-or-test-not-performed",
+  "version" : "0.2.0",
+  "name" : "VSReasonForAssessmentOrTestNotPerformed",
+  "title" : "Reason for Assessment or Test Not Performed",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2023-03-02T12:58:17+00:00",
+  "publisher" : "Jembi Health Systems",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.jembi.org"
+    },
+    {
+      "system" : "email",
+      "value" : "info@jembi.org"
+    }]
+  }],
+  "description" : "A list of reasons associated with the service request for the lab order.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "77386006",
+        "display" : "Currently pregnant"
+      },
+      {
+        "code" : "428450006",
+        "display" : "Repeat"
+      },
+      {
+        "code" : "171111007",
+        "display" : "Results not available"
+      },
+      {
+        "code" : "266721009",
+        "display" : "Absent response to treatment"
+      },
+      {
+        "code" : "170564007",
+        "display" : "Chronic disease - treatment changed (finding)"
+      },
+      {
+        "code" : "413712001",
+        "display" : "Breastfeeding (mother) (observable entity)"
+      },
+      {
+        "code" : "315124004",
+        "display" : "Baseline Viral Load / Routine Viral Load"
+      },
+      {
+        "code" : "2528003",
+        "display" : "Persistent low-Level viraemia"
+      },
+      {
+        "code" : "441510007",
+        "display" : "Blood sample coagulated"
+      },
+      {
+        "code" : "123840003",
+        "display" : "Contaminated specimen"
+      },
+      {
+        "code" : "397933008",
+        "display" : "Equipment failure"
+      },
+      {
+        "code" : "281264009",
+        "display" : "Inappropriate sample container used"
+      },
+      {
+        "code" : "281268007",
+        "display" : "Insufficient sample"
+      },
+      {
+        "code" : "281265005",
+        "display" : "Specimen not labeled"
+      },
+      {
+        "code" : "419182006",
+        "display" : "Supplies not available"
+      }]
+    }]
+  }
+}

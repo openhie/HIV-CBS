@@ -1,0 +1,38 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "vs-art-regimen-change-type",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-cs-art-regimen-change-type.html\"><code>http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-art-regimen-change-type</code></a></li></ul></div>"
+  },
+  "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-art-regimen-change-type",
+  "version" : "0.2.0",
+  "name" : "VSARTRegimenChangeType",
+  "title" : "ART Regimen Change Types",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2023-03-02T12:58:17+00:00",
+  "publisher" : "Jembi Health Systems",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.jembi.org"
+    },
+    {
+      "system" : "email",
+      "value" : "info@jembi.org"
+    }]
+  }],
+  "description" : "A list of options to determine whether an ARV regimen was switched or substituted.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-art-regimen-change-type"
+    }]
+  }
+}
