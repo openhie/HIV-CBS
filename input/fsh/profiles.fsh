@@ -170,6 +170,7 @@ Description: "This profile is used to record the enrolment type at the time of t
 * diagnosis 1..* 
 * diagnosis.condition 1..1 
 * patient 1..1
+* managingOrganization 1..1
 * period 1..1 
 
 Profile: VLSpecimen
