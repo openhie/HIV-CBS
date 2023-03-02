@@ -12,7 +12,7 @@
   <title value="HIV Case-Based Surveillance"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2023-03-02T10:01:05+00:00"/>
+  <date value="2023-03-02T11:57:08+00:00"/>
   <publisher value="Jembi Health Systems"/>
   <contact>
     <telecom>
@@ -468,6 +468,16 @@
       </reference>
       <name value="ART Regimen Change Types"/>
       <description value="A list of options to determine whether an ARV regimen was switched or substituted."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/HIVCareMedicationRequestExample"/>
+      </reference>
+      <name value="Example MedicationRequest - HIVCareMedicationRequestExample"/>
+      <exampleCanonical value="http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-med-req"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1158,6 +1168,16 @@
       </reference>
       <name value="Viral Load Result Code"/>
       <description value="A code used to indicate the category for the lab result."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/hiv-med-req"/>
+      </reference>
+      <name value="HIV Care Medication Request"/>
+      <description value="This profile is for recording the Patient's ARV Dispensing quantity in days."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
