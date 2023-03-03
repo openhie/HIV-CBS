@@ -167,7 +167,7 @@ Profile: HIVEpisodeOfCare
 Parent: EpisodeOfCare
 Id: hiv-episode-of-care
 Title: "Patient Enrollment Type"
-Description: "This profile is used to record the enrolment type at the time of the encounter."
+Description: "This profile is used to enrol the patient into HIV care."
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #openAtEnd
