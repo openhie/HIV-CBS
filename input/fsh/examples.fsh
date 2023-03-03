@@ -23,6 +23,8 @@ Title: "Patient example"
 Description: "Patient example"
 * identifier[NID].value = "NID1234567"
 * identifier[NID].system = "http://openhie.org/fhir/hiv-cbs/identifier/nid"
+* identifier[MN].value = "ORG1-0765712"
+* identifier[MN].system = "http://openhie.org/fhir/hiv-cbs/identifier/mn"
 * active = true
 * name.use = #official
 * name.family = "Smith"
