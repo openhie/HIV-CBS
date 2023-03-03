@@ -12,6 +12,8 @@
   <sch:pattern>
     <sch:title>f:EpisodeOfCare</sch:title>
     <sch:rule context="f:EpisodeOfCare">
+      <sch:assert test="count(f:type) &gt;= 1">type: minimum cardinality of 'type' is 1</sch:assert>
+      <sch:assert test="count(f:type) &lt;= 1">type: maximum cardinality of 'type' is 1</sch:assert>
       <sch:assert test="count(f:diagnosis) &gt;= 1">diagnosis: minimum cardinality of 'diagnosis' is 1</sch:assert>
       <sch:assert test="count(f:managingOrganization) &gt;= 1">managingOrganization: minimum cardinality of 'managingOrganization' is 1</sch:assert>
       <sch:assert test="count(f:period) &gt;= 1">period: minimum cardinality of 'period' is 1</sch:assert>

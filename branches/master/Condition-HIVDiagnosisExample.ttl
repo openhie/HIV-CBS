@@ -6,70 +6,60 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://openhie.org/fhir/hiv-cbs/Condition/HIVDiagnosisExample> a fhir:Condition;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "HIVDiagnosisExample"]; # 
-  fhir:Resource.meta [
-     fhir:Meta.profile [
-       fhir:value "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-diagnosis";
-       fhir:index 0;
+<http://openhie.org/fhir/hiv-cbs/Condition/HIVDiagnosisExample> a fhir:Condition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "HIVDiagnosisExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-diagnosis"^^xsd:anyURI ;
        fhir:link <http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-diagnosis>
-     ]
-  ]; # 
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"HIVDiagnosisExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;HIVDiagnosisExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-diagnosis.html\">Diagnosis</a></p></div><p><b>identifier</b>: id: abc123</p><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#active)</span></p><p><b>verificationStatus</b>: Confirmed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-ver-status.html\">ConditionVerificationStatus</a>#confirmed)</span></p><p><b>code</b>: Human immunodeficiency virus infection <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#86406008)</span></p><p><b>subject</b>: <a href=\"Patient-HIVPatientExample.html\">Patient/HIVPatientExample</a> &quot; SMITH&quot;</p><p><b>encounter</b>: <a href=\"Encounter-TargetFacilityEncounterExample.html\">Encounter/TargetFacilityEncounterExample</a></p><p><b>recordedDate</b>: 2021-05-18</p><p><b>note</b>: Additional information regarding the HIV diagnosis (By Organization/HIVOrganizationExample @Feb 7, 2015, 6:28:17 PM)</p></div>"
-  ]; # 
-  fhir:Condition.identifier [
-     fhir:index 0;
-     fhir:Identifier.system [ fhir:value "http://openhie.org/fhir/hiv-cbs/identifier/hiv-diagnosis" ];
-     fhir:Identifier.value [ fhir:value "abc123" ]
-  ]; # 
-  fhir:Condition.clinicalStatus [
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/condition-clinical" ];
-       fhir:Coding.code [ fhir:value "active" ]
-     ]
-  ]; # 
-  fhir:Condition.verificationStatus [
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/condition-ver-status" ];
-       fhir:Coding.code [ fhir:value "confirmed" ]
-     ]
-  ]; # 
-  fhir:Condition.code [
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       a sct:86406008;
-       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
-       fhir:Coding.code [ fhir:value "86406008" ]
-     ]
-  ]; # 
-  fhir:Condition.subject [
-     fhir:link <http://openhie.org/fhir/hiv-cbs/Patient/HIVPatientExample>;
-     fhir:Reference.reference [ fhir:value "Patient/HIVPatientExample" ]
-  ]; # 
-  fhir:Condition.encounter [
-     fhir:link <http://openhie.org/fhir/hiv-cbs/Encounter/TargetFacilityEncounterExample>;
-     fhir:Reference.reference [ fhir:value "Encounter/TargetFacilityEncounterExample" ]
-  ]; # 
-  fhir:Condition.recordedDate [ fhir:value "2021-05-18"^^xsd:date]; # 
-  fhir:Condition.note [
-     fhir:index 0;
-     fhir:Annotation.authorReference [
-       fhir:link <http://openhie.org/fhir/hiv-cbs/Organization/HIVOrganizationExample>;
-       fhir:Reference.reference [ fhir:value "Organization/HIVOrganizationExample" ]
-     ];
-     fhir:Annotation.time [ fhir:value "2015-02-07T13:28:17-05:00"^^xsd:dateTime ];
-     fhir:Annotation.text [ fhir:value "Additional information regarding the HIV diagnosis" ]
-  ] . # 
-
-# - ontology header ------------------------------------------------------------
-
-<http://openhie.org/fhir/hiv-cbs/Condition/HIVDiagnosisExample.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"HIVDiagnosisExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;HIVDiagnosisExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-diagnosis.html\">Diagnosis</a></p></div><p><b>identifier</b>: id: abc123</p><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#active)</span></p><p><b>verificationStatus</b>: Confirmed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-ver-status.html\">ConditionVerificationStatus</a>#confirmed)</span></p><p><b>code</b>: Human immunodeficiency virus infection <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#86406008)</span></p><p><b>subject</b>: <a href=\"Patient-HIVPatientExample.html\">Patient/HIVPatientExample</a> &quot; SMITH&quot;</p><p><b>encounter</b>: <a href=\"Encounter-TargetFacilityEncounterExample.html\">Encounter/TargetFacilityEncounterExample</a></p><p><b>recordedDate</b>: 2021-05-18</p><p><b>note</b>: Additional information regarding the HIV diagnosis (By Organization/HIVOrganizationExample @Feb 7, 2015, 6:28:17 PM)</p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://openhie.org/fhir/hiv-cbs/identifier/hiv-diagnosis"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "abc123" ]
+  ] ) ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "active" ]
+     ] )
+  ] ; # 
+  fhir:verificationStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-ver-status"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "confirmed" ]
+     ] )
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:86406008 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "86406008" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://openhie.org/fhir/hiv-cbs/Patient/HIVPatientExample> ;
+     fhir:reference [ fhir:v "Patient/HIVPatientExample" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <http://openhie.org/fhir/hiv-cbs/Encounter/TargetFacilityEncounterExample> ;
+     fhir:reference [ fhir:v "Encounter/TargetFacilityEncounterExample" ]
+  ] ; # 
+  fhir:recordedDate [ fhir:v "2021-05-18"^^xsd:date] ; # 
+  fhir:note ( [
+     fhir:author [
+       a fhir:Reference ;
+       fhir:link <http://openhie.org/fhir/hiv-cbs/Organization/HIVOrganizationExample> ;
+       fhir:reference [ fhir:v "Organization/HIVOrganizationExample" ]
+     ] ;
+     fhir:time [ fhir:v "2015-02-07T13:28:17-05:00"^^xsd:dateTime ] ;
+     fhir:text [ fhir:v "Additional information regarding the HIV diagnosis" ]
+  ] ) . # 
 
 # -------------------------------------------------------------------------------------
 
