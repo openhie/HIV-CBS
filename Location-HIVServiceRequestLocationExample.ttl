@@ -5,32 +5,26 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://openhie.org/fhir/hiv-cbs/Location/HIVServiceRequestLocationExample> a fhir:Location;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "HIVServiceRequestLocationExample"]; # 
-  fhir:Resource.meta [
-     fhir:Meta.profile [
-       fhir:value "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-service-request-location";
-       fhir:index 0;
+<http://openhie.org/fhir/hiv-cbs/Location/HIVServiceRequestLocationExample> a fhir:Location ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "HIVServiceRequestLocationExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-service-request-location"^^xsd:anyURI ;
        fhir:link <http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-service-request-location>
-     ]
-  ]; # 
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Location</b><a name=\"HIVServiceRequestLocationExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Location &quot;HIVServiceRequestLocationExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-service-request-location.html\">Lab Order Request Location</a></p></div><p><b>name</b>: HIV Location</p><p><b>address</b>: DISI city DISI state DISI country </p></div>"
-  ]; # 
-  fhir:Location.name [ fhir:value "HIV Location"]; # 
-  fhir:Location.address [
-     fhir:Address.city [ fhir:value "DISI city" ];
-     fhir:Address.district [ fhir:value "DISI district" ];
-     fhir:Address.state [ fhir:value "DISI state" ];
-     fhir:Address.country [ fhir:value "DISI country" ]
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Location</b><a name=\"HIVServiceRequestLocationExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Location &quot;HIVServiceRequestLocationExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-service-request-location.html\">Lab Order Request Location</a></p></div><p><b>name</b>: HIV Location</p><p><b>address</b>: DISI city DISI state DISI country </p></div>"
+  ] ; # 
+  fhir:name [ fhir:v "HIV Location"] ; # 
+  fhir:address [
+     fhir:city [ fhir:v "DISI city" ] ;
+     fhir:district [ fhir:v "DISI district" ] ;
+     fhir:state [ fhir:v "DISI state" ] ;
+     fhir:country [ fhir:v "DISI country" ]
   ] . # 
-
-# - ontology header ------------------------------------------------------------
-
-<http://openhie.org/fhir/hiv-cbs/Location/HIVServiceRequestLocationExample.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

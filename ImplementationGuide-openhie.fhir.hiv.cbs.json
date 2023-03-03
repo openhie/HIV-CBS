@@ -11,7 +11,7 @@
   "title" : "HIV Case-Based Surveillance",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2023-03-02T16:08:14+00:00",
+  "date" : "2023-03-03T11:25:12+00:00",
   "publisher" : "Jembi Health Systems",
   "contact" : [{
     "telecom" : [{
@@ -857,17 +857,6 @@
       },
       "name" : "HIV Recency Testing Status",
       "description" : "A list of HIV recency statuses"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/vs-patient-enrollment-type"
-      },
-      "name" : "Patient Type at Enrolment",
-      "description" : "A list of Patient Types at Enrolment"
     },
     {
       "extension" : [{

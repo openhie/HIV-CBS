@@ -412,19 +412,13 @@
           <profile value="http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-episode-of-care"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: EpisodeOfCare</b><a name="HIVEpisodeOfCareExample"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource EpisodeOfCare &quot;HIVEpisodeOfCareExample&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-hiv-episode-of-care.html">Patient Enrollment Type</a></p></div><p><b>identifier</b>: id: abc123</p><p><b>status</b>: active</p><p><b>type</b>: Restart of medication <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#182837001)</span></p><h3>Diagnoses</h3><table class="grid"><tr><td>-</td><td><b>Condition</b></td></tr><tr><td>*</td><td><a href="#Condition_HIVDiagnosisExample">See above (Condition/HIVDiagnosisExample)</a></td></tr></table><p><b>patient</b>: <a href="#Patient_HIVPatientExample">See above (Patient/HIVPatientExample)</a></p><p><b>managingOrganization</b>: <a href="Organization-HIVOrganizationExample.html">Organization/HIVOrganizationExample</a> &quot;HIV Test Services Health Facility&quot;</p><p><b>period</b>: 2021-05-18 --&gt; 2021-05-18</p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: EpisodeOfCare</b><a name="HIVEpisodeOfCareExample"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource EpisodeOfCare &quot;HIVEpisodeOfCareExample&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-hiv-episode-of-care.html">Patient Enrollment Type</a></p></div><p><b>identifier</b>: id: abc123</p><p><b>status</b>: active</p><h3>Diagnoses</h3><table class="grid"><tr><td>-</td><td><b>Condition</b></td></tr><tr><td>*</td><td><a href="#Condition_HIVDiagnosisExample">See above (Condition/HIVDiagnosisExample)</a></td></tr></table><p><b>patient</b>: <a href="#Patient_HIVPatientExample">See above (Patient/HIVPatientExample)</a></p><p><b>managingOrganization</b>: <a href="Organization-HIVOrganizationExample.html">Organization/HIVOrganizationExample</a> &quot;HIV Test Services Health Facility&quot;</p><p><b>period</b>: 2021-05-18 --&gt; 2021-05-18</p></div>
         </text>
         <identifier>
           <system value="http://openhie.org/fhir/hiv-cbs/identifier/enrollment-unique-id"/>
           <value value="abc123"/>
         </identifier>
         <status value="active"/>
-        <type>
-          <coding>
-            <system value="http://snomed.info/sct"/>
-            <code value="182837001"/>
-          </coding>
-        </type>
         <diagnosis>
           <condition>
             <reference value="Condition/HIVDiagnosisExample"/>

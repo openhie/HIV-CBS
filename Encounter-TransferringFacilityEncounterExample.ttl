@@ -5,38 +5,32 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://openhie.org/fhir/hiv-cbs/Encounter/TransferringFacilityEncounterExample> a fhir:Encounter;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "TransferringFacilityEncounterExample"]; # 
-  fhir:Resource.meta [
-     fhir:Meta.profile [
-       fhir:value "http://openhie.org/fhir/hiv-cbs/StructureDefinition/transferring-facility-encounter";
-       fhir:index 0;
+<http://openhie.org/fhir/hiv-cbs/Encounter/TransferringFacilityEncounterExample> a fhir:Encounter ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "TransferringFacilityEncounterExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://openhie.org/fhir/hiv-cbs/StructureDefinition/transferring-facility-encounter"^^xsd:anyURI ;
        fhir:link <http://openhie.org/fhir/hiv-cbs/StructureDefinition/transferring-facility-encounter>
-     ]
-  ]; # 
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Encounter</b><a name=\"TransferringFacilityEncounterExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Encounter &quot;TransferringFacilityEncounterExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-transferring-facility-encounter.html\">Transferring Facility Encounter</a></p></div><p><b>status</b>: finished</p><p><b>class</b>: ambulatory (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code AMB = 'ambulatory', stated as 'null')</p><p><b>period</b>: 2022-12-01 --&gt; 2023-01-20</p><p><b>serviceProvider</b>: <a href=\"Organization-HIVOrganizationExample.html\">Organization/HIVOrganizationExample</a> &quot;HIV Test Services Health Facility&quot;</p></div>"
-  ]; # 
-  fhir:Encounter.status [ fhir:value "finished"]; # 
-  fhir:Encounter.class [
-     fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ActCode" ];
-     fhir:Coding.code [ fhir:value "AMB" ]
-  ]; # 
-  fhir:Encounter.period [
-     fhir:Period.start [ fhir:value "2022-12-01"^^xsd:date ];
-     fhir:Period.end [ fhir:value "2023-01-20"^^xsd:date ]
-  ]; # 
-  fhir:Encounter.serviceProvider [
-     fhir:link <http://openhie.org/fhir/hiv-cbs/Organization/HIVOrganizationExample>;
-     fhir:Reference.reference [ fhir:value "Organization/HIVOrganizationExample" ]
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Encounter</b><a name=\"TransferringFacilityEncounterExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Encounter &quot;TransferringFacilityEncounterExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-transferring-facility-encounter.html\">Transferring Facility Encounter</a></p></div><p><b>status</b>: finished</p><p><b>class</b>: ambulatory (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code AMB = 'ambulatory', stated as 'null')</p><p><b>period</b>: 2022-12-01 --&gt; 2023-01-20</p><p><b>serviceProvider</b>: <a href=\"Organization-HIVOrganizationExample.html\">Organization/HIVOrganizationExample</a> &quot;HIV Test Services Health Facility&quot;</p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "finished"] ; # 
+  fhir:class [
+     fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "AMB" ]
+  ] ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2022-12-01"^^xsd:date ] ;
+     fhir:end [ fhir:v "2023-01-20"^^xsd:date ]
+  ] ; # 
+  fhir:serviceProvider [
+     fhir:link <http://openhie.org/fhir/hiv-cbs/Organization/HIVOrganizationExample> ;
+     fhir:reference [ fhir:v "Organization/HIVOrganizationExample" ]
   ] . # 
-
-# - ontology header ------------------------------------------------------------
-
-<http://openhie.org/fhir/hiv-cbs/Encounter/TransferringFacilityEncounterExample.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 
