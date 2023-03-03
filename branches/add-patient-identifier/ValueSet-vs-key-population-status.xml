@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vs-key-population-status"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/472986005">472986005</a></td><td>Sexually active with men (finding)</td></tr><tr><td><a href="http://snomed.info/id/159799000">159799000</a></td><td>Female prostitute (occupation)</td></tr><tr><td><a href="http://snomed.info/id/159800001">159800001</a></td><td>Male prostitute (occupation)</td></tr><tr><td><a href="http://snomed.info/id/228388006">228388006</a></td><td>Intravenous drug user (finding)</td></tr><tr><td><a href="http://snomed.info/id/417284009">417284009</a></td><td>Current drug user (finding)</td></tr><tr><td><a href="http://snomed.info/id/407375002">407375002</a></td><td>Surgically transgendered transsexual (finding)</td></tr></table></li><li>Include all codes defined in <a href="CodeSystem-cs-key-population-status.html"><code>http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-key-population-status</code></a></li></ul></div>
+  </text>
+  <url value="http://openhie.org/fhir/hiv-cbs/ValueSet/vs-key-population-status"/>
+  <version value="0.2.0"/>
+  <name value="VSKeyPopulationSatus"/>
+  <title value="Key Population Status"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-03-03T14:22:20+00:00"/>
+  <publisher value="Jembi Health Systems"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.jembi.org"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@jembi.org"/>
+    </telecom>
+  </contact>
+  <description value="A list of key population types"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="472986005"/>
+        <display value="Sexually active with men (finding)"/>
+      </concept>
+      <concept>
+        <code value="159799000"/>
+        <display value="Female prostitute (occupation)"/>
+      </concept>
+      <concept>
+        <code value="159800001"/>
+        <display value="Male prostitute (occupation)"/>
+      </concept>
+      <concept>
+        <code value="228388006"/>
+        <display value="Intravenous drug user (finding)"/>
+      </concept>
+      <concept>
+        <code value="417284009"/>
+        <display value="Current drug user (finding)"/>
+      </concept>
+      <concept>
+        <code value="407375002"/>
+        <display value="Surgically transgendered transsexual (finding)"/>
+      </concept>
+    </include>
+    <include>
+      <system value="http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-key-population-status"/>
+    </include>
+  </compose>
+</ValueSet>
