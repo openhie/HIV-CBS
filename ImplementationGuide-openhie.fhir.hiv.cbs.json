@@ -11,7 +11,7 @@
   "title" : "HIV Case-Based Surveillance",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2023-03-03T15:35:13+00:00",
+  "date" : "2023-03-03T15:45:33+00:00",
   "publisher" : "Jembi Health Systems",
   "contact" : [{
     "telecom" : [{
@@ -988,7 +988,7 @@
         "reference" : "StructureDefinition/hiv-episode-of-care"
       },
       "name" : "Patient Enrollment Type",
-      "description" : "This profile is used to record the enrolment type at the time of the encounter."
+      "description" : "This profile is used to enrol the patient into HIV care."
     },
     {
       "extension" : [{

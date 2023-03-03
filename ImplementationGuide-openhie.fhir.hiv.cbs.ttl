@@ -18,7 +18,7 @@
   fhir:title [ fhir:v "HIV Case-Based Surveillance"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2023-03-03T15:35:13+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-03-03T15:45:33+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Jembi Health Systems"] ; # 
   fhir:contact ( [
      fhir:telecom ( [
@@ -931,7 +931,7 @@
          fhir:reference [ fhir:v "StructureDefinition/hiv-episode-of-care" ]
        ] ;
        fhir:name [ fhir:v "Patient Enrollment Type" ] ;
-       fhir:description [ fhir:v "This profile is used to record the enrolment type at the time of the encounter." ]
+       fhir:description [ fhir:v "This profile is used to enrol the patient into HIV care." ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
