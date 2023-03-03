@@ -18,7 +18,7 @@
   fhir:title [ fhir:v "HIV Case-Based Surveillance"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2023-03-03T12:35:01+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-03-03T12:56:42+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Jembi Health Systems"] ; # 
   fhir:contact ( [
      fhir:telecom ( [
@@ -802,17 +802,6 @@
        ] ;
        fhir:name [ fhir:v "HIV Recency Testing Status" ] ;
        fhir:description [ fhir:v "A list of HIV recency statuses" ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://openhie.org/fhir/hiv-cbs/ValueSet/vs-patient-enrollment-type> ;
-         fhir:reference [ fhir:v "ValueSet/vs-patient-enrollment-type" ]
-       ] ;
-       fhir:name [ fhir:v "Patient Type at Enrolment" ] ;
-       fhir:description [ fhir:v "A list of Patient Types at Enrolment" ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;

@@ -12,7 +12,7 @@
   <title value="HIV Case-Based Surveillance"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2023-03-03T12:35:01+00:00"/>
+  <date value="2023-03-03T12:56:42+00:00"/>
   <publisher value="Jembi Health Systems"/>
   <contact>
     <telecom>
@@ -688,16 +688,6 @@
       </reference>
       <name value="HIV Recency Testing Status"/>
       <description value="A list of HIV recency statuses"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/vs-patient-enrollment-type"/>
-      </reference>
-      <name value="Patient Type at Enrolment"/>
-      <description value="A list of Patient Types at Enrolment"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
