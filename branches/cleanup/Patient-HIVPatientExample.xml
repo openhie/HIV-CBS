@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="HIVPatientExample"/>
+  <meta>
+    <profile value="http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-patient"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;"><b>Jane Maria Smith (OFFICIAL)</b> female, DoB: 1990-12-12 ( id: ORG1-0765712)</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Record is active">Active:</td><td>true</td><td style="background-color: #f3f5da" title="Known Marital status of Patient">Marital Status:</td><td colspan="3"><span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}">Married</span></td></tr><tr><td style="background-color: #f3f5da" title="Other Ids (see the one above)">Other Id:</td><td colspan="3">id: NID1234567</td></tr><tr><td style="background-color: #f3f5da" title="Ways to contact the Patient">Contact Details:</td><td colspan="3"><ul><li><a href="tel:+27821234567">+27821234567</a></li><li><a href="mailto:someone@example.com">someone@example.com</a></li><li>Cape Town Western Province South Africa </li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Nominated Contact: Next-of-Kin">Next-of-Kin:</td><td colspan="3"><ul><li>John Doe </li><li><a href="tel:+27829999999">+27829999999</a></li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Patient Links">Links:</td><td colspan="3"><ul><li>Managing Organization: <a href="Organization-HIVOrganizationExample.html">Organization/HIVOrganizationExample</a> &quot;HIV Test Services Health Facility&quot;</li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Populations who are at higher risk for HIV."><a href="StructureDefinition-key-population-status.html">Key HIV Population:</a></td><td colspan="3"><ul><li><span title="Codes: {http://snomed.info/sct 417284009}">Current drug user (finding)</span></li></ul></td></tr></table></div>
+  </text>
+  <extension url="http://openhie.org/fhir/hiv-cbs/StructureDefinition/key-population-status">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="417284009"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <identifier>
+    <system value="http://openhie.org/fhir/hiv-cbs/identifier/mn"/>
+    <value value="ORG1-0765712"/>
+  </identifier>
+  <identifier>
+    <system value="http://openhie.org/fhir/hiv-cbs/identifier/nid"/>
+    <value value="NID1234567"/>
+  </identifier>
+  <active value="true"/>
+  <name>
+    <use value="official"/>
+    <family value="Smith"/>
+    <given value="Jane"/>
+    <given value="Maria"/>
+  </name>
+  <telecom>
+    <system value="phone"/>
+    <value value="+27821234567"/>
+  </telecom>
+  <telecom>
+    <system value="email"/>
+    <value value="someone@example.com"/>
+  </telecom>
+  <gender value="female"/>
+  <birthDate value="1990-12-12"/>
+  <address>
+    <city value="Cape Town"/>
+    <district value="City of Cape Town"/>
+    <state value="Western Province"/>
+    <country value="South Africa"/>
+  </address>
+  <maritalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"/>
+      <code value="M"/>
+    </coding>
+  </maritalStatus>
+  <contact>
+    <relationship>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0131"/>
+        <code value="N"/>
+      </coding>
+    </relationship>
+    <name>
+      <family value="Doe"/>
+      <given value="John"/>
+    </name>
+    <telecom>
+      <system value="phone"/>
+      <value value="+27829999999"/>
+    </telecom>
+  </contact>
+  <managingOrganization>
+    <reference value="Organization/HIVOrganizationExample"/>
+  </managingOrganization>
+</Patient>

@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>OPENHIE.FHIR.HIV.CBS\Business Description - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/openhie.css" rel="stylesheet"/>
+<link href="assets/css/lforms.min.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"2"}
+    h3,h4,h5,h6{--heading-prefix:"2.0"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+<!-- Left logo - typically the publisher's logo - project or affiliate -->
+        <div id="project-nav">
+          <a id="project-logo" no-external="true" href="http://hl7.eu">
+            <img height="71" alt="Project home" src="assets/images/home.png"/>
+          </a>
+        </div>
+
+<!-- Right logo - for example the FHIR logo -->
+<!-- Make sure you have authorization to use the FHIR logo -->
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="70" alt="FHIR website" src="assets/images/fire.png"/> </a>
+        </div>
+
+<!-- search icon - if you want -->
+<!--
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+-->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">HIV Case-Based Surveillance</span>
+            <br/>
+            <span style="display:inline-block;">0.2.0 - CI Build
+
+
+
+  <img alt="International flag" src="assets/images/001.svg" height="16" title="International"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <style>
+    *,
+*::before,
+*::after {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.dropdown {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 100px;
+}
+
+.dropdown li {
+    position: relative;
+    z-index: 999;
+}
+
+.dropdown li a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+}
+
+.dropdown li ul {
+    position: absolute;
+    top: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: none;
+    line-height: normal;
+    background-color: #DDFFEE;
+}
+
+.dropdown li ul li a {
+    text-align: left;
+    color: black;
+    font-size: 12px;
+    padding: 10px;
+    display: block;
+    white-space: nowrap;
+}
+
+.dropdown li ul li ul {
+    left: 100%;
+    top: 0;
+}
+
+#mainMenuOptions li:hover>a {
+    background-color: #43A682;
+    color: white;
+    text-decoration: underline;
+    font-size: 13px;
+}
+
+#mainMenuOptions li:hover>ul {
+    display: block;
+}
+
+	.heading {
+    display: block;
+    font-family: verdana;
+    line-height: 1.2em;
+    font-size: 1.2em;
+    margin: 0 0 3px 0;
+    margin-top: 10px;
+    color: #337AB7;
+    background-color: white !important;
+}
+
+.not-allowed {
+    cursor: not-allowed !important;
+    text-decoration: none !important;
+}
+
+.pointer {
+    cursor: pointer;
+}
+</style>
+
+<ul id="mainMenuOptions" xmlns="http://www.w3.org/1999/xhtml" class="dropdown">
+	<li><a href="#" style="font-size: 12px; text-decoration: none;">Menu <b class="caret"></b></a>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="bussiness-description.html">Business Description <b class="caret" style="transform:rotate(270deg);"></b></a>
+				<ul>
+					<li>
+						<a href="requirements.html">Functional Requirements <b class="caret" style="transform:rotate(270deg);"></b></a>
+						<ul>
+							<li>
+								<a href="use-cases.html">Use Cases</a>
+							</li>
+						</ul>
+					</li>
+					<li><a href="personas.html">Personas</a></li>
+					<li><a href="workflows.html">Usage Workflows</a></li>
+				</ul>
+			</li>
+			<li><a href="deployment.html">Deployment &amp; Use <b class="caret" style="transform:rotate(270deg);"></b></a>
+				<ul>
+					<li><a href="bundles.html">Message Bundles <b class="caret" style="transform:rotate(270deg);"></b></a>
+						<ul>
+							<li>
+								<a href="emr-bundle.html">EMR</a>
+							</li>
+							<li>
+								<a href="lab-order-bundle.html">Lab Order</a>
+							</li>
+							<li>
+								<a href="lab-result-bundle.html">Lab Result</a>
+							</li>
+							<li>
+								<a href="lab-rejection-bundle.html">Lab Rejection</a>
+							</li>
+							<li>
+								<a href="lab-cancellation-bundle.html">Lab Cancellation</a>
+							</li>
+						</ul>
+					</li>
+					<li><a href="security-privacy.html">Security &amp; Privacy</a></li>
+					<li><a href="testing.html">Testing</a></li>
+				</ul>
+			</li>
+			
+			<li><a href="referenced-sources.html">References</a></li>
+			<li><a href="artifacts.html">Artifacts</a></li>
+			<li><a href="toc.html">Table of Contents</a></li>
+		</ul>
+    </li>
+</ul> 
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Business Description</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">HIV Case-Based Surveillance, published by Jembi Health Systems. This is not an authorized publication; it is the continuous build for version 0.2.0). This version is based on the current content of <a href="https://github.com/openhie/HIV-CBS">https://github.com/openhie/HIV-CBS</a> and changes regularly. See the <a href="http://openhie.org/fhir/hiv-cbs/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Business Description</h2>
+  
+  
+  
+  <div xmlns="http://www.w3.org/1999/xhtml" lang="en"><div class="markdown-toc"><p>Contents:</p><ul><li><a href="#1">Introduction</a></li><li><a href="#2">Reporting Objectives</a></li><li><a href="#3">References</a></li></ul></div>
+  <style>
+    .heading {
+    display: block;
+    font-family: verdana;
+    line-height: 1.2em;
+    font-size: 1.2em;
+    margin: 0 0 3px 0;
+    margin-top: 10px;
+    color: #337AB7;
+    background-color: white !important;
+}
+
+.not-allowed {
+    cursor: not-allowed !important;
+    text-decoration: none !important;
+}
+
+.pointer {
+    cursor: pointer;
+}
+  </style>
+
+  <a name="1"/><h3>Introduction</h3> <a name="intro">  </a>
+
+  <p>
+    This implementation guide supports the needs to effectively monitor the HIV key population &amp; and measure their progress towards being virally suppressed.
+    <strong>Key populations</strong> are defined groups who, due to specific higher-risk behaviors, are at increased risk of HIV, irrespective of the epidemic type or local context. Also, they often have legal and social issues related to their behaviors that increase their vulnerability to HIV <a id="citation1" href="#ref1">(Geneva: World Health Organization, 2016)</a>.
+    Key populations also play a role with regards to the dynamics associated with the effective responsiveness towards the epidemic.
+    <br/>
+    <br/>
+    Currently, only the following key populations are supported by this implementation guide.
+  </p>
+
+  <ol>
+    <li>Female sex workers (FSW)</li>
+    <li>General population</li>
+    <li>Male sex workers (MSW)</li>
+    <li>Men who have sex with men (MSM)</li>
+    <li>People who inject drugs (PWID)</li>
+    <li>People who use drugs (PWUD)</li>
+    <li>Transgender people</li>
+  </ol>
+
+  <p>
+    This implementation guide was derived using a <a href="requirements.html">functional requirement specification</a> which was developed to support the following key HIV CBS sentinel events.
+  </p>
+
+  <ol>
+    <li>
+      <strong>Antiretroviral therapy (ART) regimen switching</strong>: According to the <a id="citation2" href="#ref2">World Health Organization (2010)</a>, a regimen switch may occur when:
+      <ol>
+        <li>Where available, use viral load (VL) to confirm treatment failure.</li>
+        <li>Where routinely available, use VL every 6 months to detect viral replication.</li>
+        <li>A persistent VL of &gt;5000 copies/ml confirms treatment failure.</li>
+        <li>The VL is not available, use immunological criteria to confirm clinical failure.</li>
+      </ol>
+    </li>
+    <li>
+      <strong>ART initiation</strong>: According to the <a id="citation3" href="#ref3">Initiation of Antiretroviral Therapy | NIH (2019)</a>, initiation into ART should happen as fast as possible after HIV diagnosis in order to increase the uptake of ART and linkage to care, decrease the time to viral suppression for individual patients, and improve the rate of virologic suppression among persons with HIV.
+      This is essential to prevent HIV-associated morbidity and mortality.
+    </li>
+    <li>
+      <strong>CD4 first/subsequent sampling</strong>: The progressions of the HIV disease can be assessed by the immunologic status using the CD4 cell count <a id="citation4" href="#ref4">(Ministry of Health – Moh, 2019)</a>.
+      The progressive depletion of the CD4 cell count will eventually result in the weakening of the individuals immune ability to fight against HIV which ultimately leads to the death of patients during the terminal stage of the disease <a id="citation5" href="#ref5">(Pattanapanyasat K, 2012)</a>.
+    </li>
+    <li>
+      <strong>Death</strong>: Patients who have died while infected with the disease.
+    </li>
+    <li>
+      <strong>Enrolled to care</strong>: Patients who are enrolled into a HIV program in order to receive ART therapy and other HIV related services.
+    </li>
+    <li>
+      <strong>HIV diagnosis</strong>: HIV can be diagnosed through blood or saliva. If an individual has been diagnosed with HIV, they should immediately be enrolled into care and start ART therapy, regardless of their stage of infection or complications.
+    </li>
+    <li>
+      <strong>Viral suppression first/subsequent sampling</strong>: Viral load tests are used to diagnose acute HIV infection, guide treatment choices, and monitor response to ART <a id="citation8" href="#ref8">(Drain et al., 2019)</a>.
+    </li>
+  </ol>
+
+  <figure style="border: none; outline: none;">
+      <?xml version="1.0" encoding="UTF-8"?>
+<!-- Do not edit this file with editors other than diagrams.net -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1487px" height="841px" viewBox="-0.5 -0.5 1487 841" content="&lt;mxfile host=&quot;app.diagrams.net&quot; modified=&quot;2023-02-23T09:23:31.693Z&quot; agent=&quot;5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36&quot; etag=&quot;XLMJRMXCToe7aejCvRk3&quot; version=&quot;20.8.23&quot; type=&quot;google&quot;&gt;&lt;diagram name=&quot;Page-1&quot; id=&quot;13e1069c-82ec-6db2-03f1-153e76fe0fe0&quot;&gt;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&lt;/diagram&gt;&lt;/mxfile&gt;"><defs/><g><rect x="490" y="210" width="276" height="100" fill="#ffffff" stroke="rgb(0, 0, 0)" stroke-dasharray="3 3" pointer-events="all"/><g transform="translate(-0.5 -0.5)"><switch><foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe flex-start; width: 274px; height: 1px; padding-top: 260px; margin-left: 492px;"><div data-drawio-colors="color: #000000; " style="box-sizing: border-box; font-size: 0px; text-align: left;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Patient diagnosed HIV+ upon confirmation of blood sample examination.<br /><br /><b>PoS client captures first 3 sentinel events </b></div></div></div></foreignObject><text x="492" y="264" fill="#000000" font-family="Helvetica" font-size="12px">Patient diagnosed HIV+ upon confirmation of bl...</text></switch></g><rect x="1" y="475" width="430" height="290" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" pointer-events="all"/><path d="M 152 659 L 96 659 L 95.96 606.41" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="stroke"/><path d="M 95.96 601.16 L 99.47 608.16 L 95.96 606.41 L 92.47 608.16 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"/><path d="M 280 659 L 347 659 L 346.96 605.37" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="stroke"/><path d="M 346.96 600.12 L 350.47 607.12 L 346.96 605.37 L 343.47 607.12 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"/><image x="151.5" y="594.5" width="128" height="128" xlink:href="https://cdn0.iconfinder.com/data/icons/medical-line-healtcare-value/512/medical_history-128.png" preserveAspectRatio="none"/><g transform="translate(-0.5 -0.5)"><switch><foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 730px; margin-left: 216px;"><div data-drawio-colors="color: rgb(0, 0, 0); background-color: #ffffff; " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; background-color: rgb(255, 255, 255); white-space: nowrap;">Longitudinal Patient Record</div></div></div></foreignObject><text x="216" y="742" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px" text-anchor="middle">Longitudinal Patient...</text></switch></g><path d="M 32 535 L 152 535 L 152 603 Q 122 581.4 92 603 Q 62 624.6 32 603 L 32 547 Z" fill="#dae8fc" stroke="#6c8ebf" stroke-miterlimit="10" pointer-events="all"/><g transform="translate(-0.5 -0.5)"><switch><foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 118px; height: 1px; padding-top: 563px; margin-left: 33px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Demographic data</div></div></div></foreignObject><text x="92" y="567" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px" text-anchor="middle">Demographic data</text></switch></g><path d="M 400 555 L 486.53 421.84" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="stroke"/><path d="M 489.39 417.44 L 488.51 425.21 L 486.53 421.84 L 482.64 421.4 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"/><path d="M 280 535 L 400 535 L 400 603 Q 370 581.4 340 603 Q 310 624.6 280 603 L 280 547 Z" fill="#f8cecc" stroke="#b85450" stroke-miterlimit="10" pointer-events="all"/><g transform="translate(-0.5 -0.5)"><switch><foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 118px; height: 1px; padding-top: 563px; margin-left: 281px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Clinical data</div></div></div></foreignObject><text x="340" y="567" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px" text-anchor="middle">Clinical data</text></switch></g><rect x="1" y="455" width="185" height="20" fill="#ffe6cc" stroke="#d79b00" pointer-events="all"/><g transform="translate(-0.5 -0.5)"><switch><foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 183px; height: 1px; padding-top: 465px; margin-left: 2px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Patient record logical separation</div></div></div></foreignObject><text x="94" y="469" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px" text-anchor="middle">Patient record logical separati...</text></switch></g><rect x="490" y="379" width="800" height="150" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" pointer-events="all"/><path d="M 588 438 L 630 438" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="stroke"/><rect x="510" y="399" width="78" height="78" fill="none" stroke="none" pointer-events="all"/><path d="M 560.85 414.75 L 557.58 413.35 L 562.56 401.68 L 565.83 403.08 Z M 571.02 423.69 L 568.88 420.84 L 579.09 413.18 L 581.23 416.03 Z M 574.85 432.94 L 587.55 431.33 L 588 434.86 L 575.3 436.47 Z M 573.89 446.37 L 585.69 451.26 L 584.32 454.54 L 572.53 449.66 Z M 566.27 457.56 L 574 467.63 L 571.17 469.79 L 563.45 459.73 Z M 554.02 463.53 L 555.61 476.07 L 552.08 476.52 L 550.49 463.97 Z M 537.15 461.25 L 540.42 462.65 L 535.44 474.32 L 532.17 472.92 Z M 526.98 452.31 L 529.12 455.16 L 518.91 462.82 L 516.77 459.97 Z M 523.15 443.06 L 510.45 444.67 L 510 441.14 L 522.7 439.53 Z M 524.11 429.63 L 512.32 424.74 L 513.67 421.46 L 525.47 426.34 Z M 531.73 418.43 L 524 408.37 L 526.83 406.21 L 534.55 416.27 Z M 543.98 412.47 L 542.39 399.93 L 545.92 399.48 L 547.51 412.03 Z M 556.33 451.08 L 540.92 451.08 L 533.22 437.73 L 540.92 424.39 L 556.33 424.39 L 564.03 437.73 Z M 567.63 436.85 L 558.9 421.72 C 558.58 421.17 557.99 420.83 557.36 420.83 L 539.89 420.83 C 539.26 420.83 538.67 421.17 538.35 421.72 L 529.62 436.85 C 529.3 437.4 529.3 438.07 529.62 438.62 L 538.35 453.75 C 538.67 454.3 539.26 454.64 539.89 454.64 L 557.36 454.64 C 557.99 454.64 558.58 454.3 558.9 453.75 L 567.63 438.62 C 567.95 438.07 567.95 437.4 567.63 436.85 Z" fill="#60a917" stroke="none" pointer-events="all"/><g transform="translate(-0.5 -0.5)"><switch><foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 484px; margin-left: 549px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: nowrap;"><font>HIV Diagnosis</font></div></div></div></foreignObject><text x="549" y="496" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px" text-anchor="middle">HIV Diagnosis</text></switch></g><path d="M 708 438 L 740 438" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="stroke"/><rect x="630" y="399" width="78" height="78" fill="none" stroke="none" pointer-events="all"/><path d="M 680.85 414.75 L 677.58 413.35 L 682.56 401.68 L 685.83 403.08 Z M 691.02 423.69 L 688.88 420.84 L 699.09 413.18 L 701.23 416.03 Z M 694.85 432.94 L 707.55 431.33 L 708 434.86 L 695.3 436.47 Z M 693.89 446.37 L 705.69 451.26 L 704.32 454.54 L 692.53 449.66 Z M 686.27 457.56 L 694 467.63 L 691.17 469.79 L 683.45 459.73 Z M 674.02 463.53 L 675.61 476.07 L 672.08 476.52 L 670.49 463.97 Z M 657.15 461.25 L 660.42 462.65 L 655.44 474.32 L 652.17 472.92 Z M 646.98 452.31 L 649.12 455.16 L 638.91 462.82 L 636.77 459.97 Z M 643.15 443.06 L 630.45 444.67 L 630 441.14 L 642.7 439.53 Z M 644.11 429.63 L 632.32 424.74 L 633.67 421.46 L 645.47 426.34 Z M 651.73 418.43 L 644 408.37 L 646.83 406.21 L 654.55 416.27 Z M 663.98 412.47 L 662.39 399.93 L 665.92 399.48 L 667.51 412.03 Z M 676.33 451.08 L 660.92 451.08 L 653.22 437.73 L 660.92 424.39 L 676.33 424.39 L 684.03 437.73 Z M 687.63 436.85 L 678.9 421.72 C 678.58 421.17 677.99 420.83 677.36 420.83 L 659.89 420.83 C 659.26 420.83 658.67 421.17 658.35 421.72 L 649.62 436.85 C 649.3 437.4 649.3 438.07 649.62 438.62 L 658.35 453.75 C 658.67 454.3 659.26 454.64 659.89 454.64 L 677.36 454.64 C 677.99 454.64 678.58 454.3 678.9 453.75 L 687.63 438.62 C 687.95 438.07 687.95 437.4 687.63 436.85 Z" fill="#f0a30a" stroke="none" pointer-events="all"/><g transform="translate(-0.5 -0.5)"><switch><foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 484px; margin-left: 669px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: nowrap;">CD4 Count</div></div></div></foreignObject><text x="669" y="496" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px" text-anchor="middle">CD4 Count</text></switch></g><path d="M 818 438 L 850 438" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="stroke"/><rect x="740" y="399" width="78" height="78" fill="none" stroke="none" pointer-events="all"/><path d="M 790.85 414.75 L 787.58 413.35 L 792.56 401.68 L 795.83 403.08 Z M 801.02 423.69 L 798.88 420.84 L 809.09 413.18 L 811.23 416.03 Z M 804.85 432.94 L 817.55 431.33 L 818 434.86 L 805.3 436.47 Z M 803.89 446.37 L 815.69 451.26 L 814.32 454.54 L 802.53 449.66 Z M 796.27 457.56 L 804 467.63 L 801.17 469.79 L 793.45 459.73 Z M 784.02 463.53 L 785.61 476.07 L 782.08 476.52 L 780.49 463.97 Z M 767.15 461.25 L 770.42 462.65 L 765.44 474.32 L 762.17 472.92 Z M 756.98 452.31 L 759.12 455.16 L 748.91 462.82 L 746.77 459.97 Z M 753.15 443.06 L 740.45 444.67 L 740 441.14 L 752.7 439.53 Z M 754.11 429.63 L 742.32 424.74 L 743.67 421.46 L 755.47 426.34 Z M 761.73 418.43 L 754 408.37 L 756.83 406.21 L 764.55 416.27 Z M 773.98 412.47 L 772.39 399.93 L 775.92 399.48 L 777.51 412.03 Z M 786.33 451.08 L 770.92 451.08 L 763.22 437.73 L 770.92 424.39 L 786.33 424.39 L 794.03 437.73 Z M 797.63 436.85 L 788.9 421.72 C 788.58 421.17 787.99 420.83 787.36 420.83 L 769.89 420.83 C 769.26 420.83 768.67 421.17 768.35 421.72 L 759.62 436.85 C 759.3 437.4 759.3 438.07 759.62 438.62 L 768.35 453.75 C 768.67 454.3 769.26 454.64 769.89 454.64 L 787.36 454.64 C 787.99 454.64 788.58 454.3 788.9 453.75 L 797.63 438.62 C 797.95 438.07 797.95 437.4 797.63 436.85 Z" fill="#f0a30a" stroke="none" pointer-events="all"/><g transform="translate(-0.5 -0.5)"><switch><foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 484px; margin-left: 779px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: nowrap;">Viral Load</div></div></div></foreignObject><text x="779" y="496" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px" text-anchor="middle">Viral Load</text></switch></g><path d="M 928 438 L 960 438" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="stroke"/><rect x="850" y="399" width="78" height="78" fill="none" stroke="none" pointer-events="all"/><path d="M 900.85 414.75 L 897.58 413.35 L 902.56 401.68 L 905.83 403.08 Z M 911.02 423.69 L 908.88 420.84 L 919.09 413.18 L 921.23 416.03 Z M 914.85 432.94 L 927.55 431.33 L 928 434.86 L 915.3 436.47 Z M 913.89 446.37 L 925.69 451.26 L 924.32 454.54 L 912.53 449.66 Z M 906.27 457.56 L 914 467.63 L 911.17 469.79 L 903.45 459.73 Z M 894.02 463.53 L 895.61 476.07 L 892.08 476.52 L 890.49 463.97 Z M 877.15 461.25 L 880.42 462.65 L 875.44 474.32 L 872.17 472.92 Z M 866.98 452.31 L 869.12 455.16 L 858.91 462.82 L 856.77 459.97 Z M 863.15 443.06 L 850.45 444.67 L 850 441.14 L 862.7 439.53 Z M 864.11 429.63 L 852.32 424.74 L 853.67 421.46 L 865.47 426.34 Z M 871.73 418.43 L 864 408.37 L 866.83 406.21 L 874.55 416.27 Z M 883.98 412.47 L 882.39 399.93 L 885.92 399.48 L 887.51 412.03 Z M 896.33 451.08 L 880.92 451.08 L 873.22 437.73 L 880.92 424.39 L 896.33 424.39 L 904.03 437.73 Z M 907.63 436.85 L 898.9 421.72 C 898.58 421.17 897.99 420.83 897.36 420.83 L 879.89 420.83 C 879.26 420.83 878.67 421.17 878.35 421.72 L 869.62 436.85 C 869.3 437.4 869.3 438.07 869.62 438.62 L 878.35 453.75 C 878.67 454.3 879.26 454.64 879.89 454.64 L 897.36 454.64 C 897.99 454.64 898.58 454.3 898.9 453.75 L 907.63 438.62 C 907.95 438.07 907.95 437.4 907.63 436.85 Z" fill="#647687" stroke="none" pointer-events="all"/><g transform="translate(-0.5 -0.5)"><switch><foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 484px; margin-left: 889px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: nowrap;">Entry to Care</div></div></div></foreignObject><text x="889" y="496" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px" text-anchor="middle">Entry to Care</text></switch></g><path d="M 1038 438 L 1080 438" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="stroke"/><rect x="960" y="399" width="78" height="78" fill="none" stroke="none" pointer-events="all"/><path d="M 1010.85 414.75 L 1007.58 413.35 L 1012.56 401.68 L 1015.83 403.08 Z M 1021.02 423.69 L 1018.88 420.84 L 1029.09 413.18 L 1031.23 416.03 Z M 1024.85 432.94 L 1037.55 431.33 L 1038 434.86 L 1025.3 436.47 Z M 1023.89 446.37 L 1035.69 451.26 L 1034.32 454.54 L 1022.53 449.66 Z M 1016.27 457.56 L 1024 467.63 L 1021.17 469.79 L 1013.45 459.73 Z M 1004.02 463.53 L 1005.61 476.07 L 1002.08 476.52 L 1000.49 463.97 Z M 987.15 461.25 L 990.42 462.65 L 985.44 474.32 L 982.17 472.92 Z M 976.98 452.31 L 979.12 455.16 L 968.91 462.82 L 966.77 459.97 Z M 973.15 443.06 L 960.45 444.67 L 960 441.14 L 972.7 439.53 Z M 974.11 429.63 L 962.32 424.74 L 963.67 421.46 L 975.47 426.34 Z M 981.73 418.43 L 974 408.37 L 976.83 406.21 L 984.55 416.27 Z M 993.98 412.47 L 992.39 399.93 L 995.92 399.48 L 997.51 412.03 Z M 1006.33 451.08 L 990.92 451.08 L 983.22 437.73 L 990.92 424.39 L 1006.33 424.39 L 1014.03 437.73 Z M 1017.63 436.85 L 1008.9 421.72 C 1008.58 421.17 1007.99 420.83 1007.36 420.83 L 989.89 420.83 C 989.26 420.83 988.67 421.17 988.35 421.72 L 979.62 436.85 C 979.3 437.4 979.3 438.07 979.62 438.62 L 988.35 453.75 C 988.67 454.3 989.26 454.64 989.89 454.64 L 1007.36 454.64 C 1007.99 454.64 1008.58 454.3 1008.9 453.75 L 1017.63 438.62 C 1017.95 438.07 1017.95 437.4 1017.63 436.85 Z" fill="#647687" stroke="none" pointer-events="all"/><g transform="translate(-0.5 -0.5)"><switch><foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 484px; margin-left: 999px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: nowrap;">Initiation of ART</div></div></div></foreignObject><text x="999" y="496" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px" text-anchor="middle">Initiation of...</text></switch></g><path d="M 1158 438 L 1190 438" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="stroke"/><rect x="1080" y="399" width="78" height="78" fill="none" stroke="none" pointer-events="all"/><path d="M 1130.85 414.75 L 1127.58 413.35 L 1132.56 401.68 L 1135.83 403.08 Z M 1141.02 423.69 L 1138.88 420.84 L 1149.09 413.18 L 1151.23 416.03 Z M 1144.85 432.94 L 1157.55 431.33 L 1158 434.86 L 1145.3 436.47 Z M 1143.89 446.37 L 1155.69 451.26 L 1154.32 454.54 L 1142.53 449.66 Z M 1136.27 457.56 L 1144 467.63 L 1141.17 469.79 L 1133.45 459.73 Z M 1124.02 463.53 L 1125.61 476.07 L 1122.08 476.52 L 1120.49 463.97 Z M 1107.15 461.25 L 1110.42 462.65 L 1105.44 474.32 L 1102.17 472.92 Z M 1096.98 452.31 L 1099.12 455.16 L 1088.91 462.82 L 1086.77 459.97 Z M 1093.15 443.06 L 1080.45 444.67 L 1080 441.14 L 1092.7 439.53 Z M 1094.11 429.63 L 1082.32 424.74 L 1083.67 421.46 L 1095.47 426.34 Z M 1101.73 418.43 L 1094 408.37 L 1096.83 406.21 L 1104.55 416.27 Z M 1113.98 412.47 L 1112.39 399.93 L 1115.92 399.48 L 1117.51 412.03 Z M 1126.33 451.08 L 1110.92 451.08 L 1103.22 437.73 L 1110.92 424.39 L 1126.33 424.39 L 1134.03 437.73 Z M 1137.63 436.85 L 1128.9 421.72 C 1128.58 421.17 1127.99 420.83 1127.36 420.83 L 1109.89 420.83 C 1109.26 420.83 1108.67 421.17 1108.35 421.72 L 1099.62 436.85 C 1099.3 437.4 1099.3 438.07 1099.62 438.62 L 1108.35 453.75 C 1108.67 454.3 1109.26 454.64 1109.89 454.64 L 1127.36 454.64 C 1127.99 454.64 1128.58 454.3 1128.9 453.75 L 1137.63 438.62 C 1137.95 438.07 1137.95 437.4 1137.63 436.85 Z" fill="#e3c800" stroke="none" pointer-events="all"/><g transform="translate(-0.5 -0.5)"><switch><foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 484px; margin-left: 1119px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: nowrap;">Advanced HIV</div></div></div></foreignObject><text x="1119" y="496" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px" text-anchor="middle">Advanced HIV</text></switch></g><rect x="1190" y="399" width="78" height="78" fill="none" stroke="none" pointer-events="all"/><path d="M 1240.85 414.75 L 1237.58 413.35 L 1242.56 401.68 L 1245.83 403.08 Z M 1251.02 423.69 L 1248.88 420.84 L 1259.09 413.18 L 1261.23 416.03 Z M 1254.85 432.94 L 1267.55 431.33 L 1268 434.86 L 1255.3 436.47 Z M 1253.89 446.37 L 1265.69 451.26 L 1264.32 454.54 L 1252.53 449.66 Z M 1246.27 457.56 L 1254 467.63 L 1251.17 469.79 L 1243.45 459.73 Z M 1234.02 463.53 L 1235.61 476.07 L 1232.08 476.52 L 1230.49 463.97 Z M 1217.15 461.25 L 1220.42 462.65 L 1215.44 474.32 L 1212.17 472.92 Z M 1206.98 452.31 L 1209.12 455.16 L 1198.91 462.82 L 1196.77 459.97 Z M 1203.15 443.06 L 1190.45 444.67 L 1190 441.14 L 1202.7 439.53 Z M 1204.11 429.63 L 1192.32 424.74 L 1193.67 421.46 L 1205.47 426.34 Z M 1211.73 418.43 L 1204 408.37 L 1206.83 406.21 L 1214.55 416.27 Z M 1223.98 412.47 L 1222.39 399.93 L 1225.92 399.48 L 1227.51 412.03 Z M 1236.33 451.08 L 1220.92 451.08 L 1213.22 437.73 L 1220.92 424.39 L 1236.33 424.39 L 1244.03 437.73 Z M 1247.63 436.85 L 1238.9 421.72 C 1238.58 421.17 1237.99 420.83 1237.36 420.83 L 1219.89 420.83 C 1219.26 420.83 1218.67 421.17 1218.35 421.72 L 1209.62 436.85 C 1209.3 437.4 1209.3 438.07 1209.62 438.62 L 1218.35 453.75 C 1218.67 454.3 1219.26 454.64 1219.89 454.64 L 1237.36 454.64 C 1237.99 454.64 1238.58 454.3 1238.9 453.75 L 1247.63 438.62 C 1247.95 438.07 1247.95 437.4 1247.63 436.85 Z" fill="#e51400" stroke="none" pointer-events="all"/><g transform="translate(-0.5 -0.5)"><switch><foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 484px; margin-left: 1229px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: nowrap;">Death</div></div></div></foreignObject><text x="1229" y="496" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px" text-anchor="middle">Death</text></switch></g><path d="M 490 539 L 1276.16 539" fill="none" stroke="#666666" stroke-width="5" stroke-miterlimit="10" pointer-events="stroke"/><path d="M 1284.41 539 L 1273.41 544.5 L 1276.16 539 L 1273.41 533.5 Z" fill="#666666" stroke="#666666" stroke-width="5" stroke-miterlimit="10" pointer-events="all"/><g transform="translate(-0.5 -0.5)"><switch><foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 540px; margin-left: 880px;"><div data-drawio-colors="color: #000000; background-color: rgb(255, 255, 255); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 11px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; background-color: rgb(255, 255, 255); white-space: nowrap;"><font style="font-size: 19px">CBS Sentinel Events On a Timeline</font></div></div></div></foreignObject><text x="880" y="543" fill="#000000" font-family="Helvetica" font-size="11px" text-anchor="middle">CBS Sentinel Events On a Timeline</text></switch></g><rect x="490" y="190" width="185" height="20" fill="#ffe6cc" stroke="#d79b00" pointer-events="all"/><g transform="translate(-0.5 -0.5)"><switch><foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 183px; height: 1px; padding-top: 200px; margin-left: 491px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; font-weight: bold; white-space: normal; overflow-wrap: normal;">First Visit</div></div></div></foreignObject><text x="583" y="204" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px" text-anchor="middle" font-weight="bold">First Visit</text></switch></g><path d="M 628 310 L 654.72 393.42" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="stroke"/><path d="M 656.32 398.42 L 650.85 392.82 L 654.72 393.42 L 657.52 390.68 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"/><path d="M 628 310 L 576.12 394.06" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="stroke"/><path d="M 573.36 398.53 L 574.06 390.74 L 576.12 394.06 L 580.01 394.41 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"/><path d="M 628 310 L 735.14 400.82" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="stroke"/><path d="M 739.15 404.22 L 731.54 402.36 L 735.14 400.82 L 736.07 397.02 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"/><path d="M 1041 310 L 932.87 401.06" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="stroke"/><path d="M 928.86 404.44 L 931.96 397.25 L 932.87 401.06 L 936.46 402.61 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"/><path d="M 1041 310 L 1013.62 393.43" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="stroke"/><path d="M 1011.99 398.42 L 1010.84 390.68 L 1013.62 393.43 L 1017.49 392.86 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"/><rect x="886" y="210" width="310" height="100" fill="#ffffff" stroke="rgb(0, 0, 0)" stroke-dasharray="3 3" pointer-events="all"/><g transform="translate(-0.5 -0.5)"><switch><foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe flex-start; width: 308px; height: 1px; padding-top: 260px; margin-left: 888px;"><div data-drawio-colors="color: #000000; " style="box-sizing: border-box; font-size: 0px; text-align: left;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Patient routinely returns to facility to receive blood results and is enrolled into HIV program and is initiated onto ART for a prescribed ARV regimen for a given ARV protocol.<br /><br /><b>PoS client captures next two sentinel events</b></div></div></div></foreignObject><text x="888" y="264" fill="#000000" font-family="Helvetica" font-size="12px">Patient routinely returns to facility to receive bl...</text></switch></g><rect x="886" y="190" width="185" height="20" fill="#ffe6cc" stroke="#d79b00" pointer-events="all"/><g transform="translate(-0.5 -0.5)"><switch><foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 183px; height: 1px; padding-top: 200px; margin-left: 887px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; font-weight: bold; white-space: normal; overflow-wrap: normal;">Second Visit (Routine)</div></div></div></foreignObject><text x="979" y="204" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px" text-anchor="middle" font-weight="bold">Second Visit (Routine)</text></switch></g><rect x="496" y="620" width="400" height="210" fill="#ffffff" stroke="rgb(0, 0, 0)" stroke-dasharray="3 3" pointer-events="all"/><g transform="translate(-0.5 -0.5)"><switch><foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe flex-start; width: 398px; height: 1px; padding-top: 725px; margin-left: 498px;"><div data-drawio-colors="color: #000000; " style="box-sizing: border-box; font-size: 0px; text-align: left;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;"><font style="font-size: 12px">Routine follow-up visits to conduct blood examinations to monitor CD4 count and viral load.<br /><br />- Usually virally suppressed if viral load &lt;  1000 copies<br /><br />- Usually advanced HIV if CD4<span style="text-align: center"> count &lt; 100 cells mm</span></font><sup style="text-align: center"><font style="font-size: 12px"><font style="font-size: 12px">3<br /><br />- Routinely monitor ARV treatment and refill ARV drugs<br /></font><br /><b>PoS client adds CD4 Count and Viral Load events to sentinel events<br /></b></font></sup><b style="text-align: center">PoS client adds sentinel event for advanced HIV if applicable<br /></b></div></div></div></foreignObject><text x="498" y="729" fill="#000000" font-family="Helvetica" font-size="12px">Routine follow-up visits to conduct blood examinations to monitor...</text></switch></g><path d="M 616 600 L 653.63 505.91" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="stroke"/><path d="M 655.58 501.04 L 656.23 508.84 L 653.63 505.91 L 649.74 506.24 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"/><path d="M 616 600 L 735.73 481.01" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="stroke"/><path d="M 739.45 477.31 L 736.95 484.72 L 735.73 481.01 L 732.02 479.76 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"/><path d="M 616 600 Q 616 570 867.5 570 Q 1119 570 1119 506.37" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="stroke"/><path d="M 1119 501.12 L 1122.5 508.12 L 1119 506.37 L 1115.5 508.12 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"/><rect x="496" y="600" width="240" height="20" fill="#ffe6cc" stroke="#d79b00" pointer-events="all"/><g transform="translate(-0.5 -0.5)"><switch><foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 238px; height: 1px; padding-top: 610px; margin-left: 497px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; font-weight: bold; white-space: normal; overflow-wrap: normal;">Third Visit (Routine)</div></div></div></foreignObject><text x="616" y="614" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px" text-anchor="middle" font-weight="bold">Third Visit (Routine)</text></switch></g><rect x="1086" y="620" width="400" height="220" fill="#ffffff" stroke="rgb(0, 0, 0)" stroke-dasharray="3 3" pointer-events="all"/><g transform="translate(-0.5 -0.5)"><switch><foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe flex-start; width: 398px; height: 1px; padding-top: 730px; margin-left: 1088px;"><div data-drawio-colors="color: #000000; " style="box-sizing: border-box; font-size: 0px; text-align: left;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;"><font style="font-size: 12px">Routine follow-up visits to conduct blood examinations to monitor CD4 count and viral load.<br /><br /></font>- Usually virally suppressed if viral load &lt;  1000 copies<br /><br />- Usually advanced HIV if CD4<span style="text-align: center"> count &lt; 100 cells mm</span><sup style="text-align: center"><font style="font-size: 12px">3<br /><br />-Routinely monitor ARV treatment and refill ARV drugs</font></sup><sup style="text-align: center"><font style="font-size: 12px"><font style="font-size: 12px"><br /></font><br /><b>PoS client adds CD4 Count and Viral Load events to sentinel events<br /></b></font></sup><b style="text-align: center">PoS client adds sentinel event for advanced HIV if applicable</b><sup style="text-align: center"><br /></sup></div></div></div></foreignObject><text x="1088" y="734" fill="#000000" font-family="Helvetica" font-size="12px">Routine follow-up visits to conduct blood examinations to monitor...</text></switch></g><rect x="1086" y="600" width="240" height="20" fill="#ffe6cc" stroke="#d79b00" pointer-events="all"/><g transform="translate(-0.5 -0.5)"><switch><foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 238px; height: 1px; padding-top: 610px; margin-left: 1087px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; font-weight: bold; white-space: normal; overflow-wrap: normal;">N<sup>th</sup> Follow-up Visit (Routine)</div></div></div></foreignObject><text x="1206" y="614" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px" text-anchor="middle" font-weight="bold">Nth Follow-up Visit (Routine)</text></switch></g><path d="M 779 160 Q 779 160 779 393.12" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="stroke"/><path d="M 779 398.37 L 775.5 391.37 L 779 393.12 L 782.5 391.37 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"/><path d="M 554 0 L 990 0 L 1004 14 L 1004 160 L 554 160 L 554 0 Z" fill="#eeeeee" stroke="#36393d" stroke-miterlimit="10" pointer-events="all"/><path d="M 990 0 L 990 14 L 1004 14" fill="none" stroke="#36393d" stroke-miterlimit="10" pointer-events="all"/><g transform="translate(-0.5 -0.5)"><switch><foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe flex-start; width: 448px; height: 1px; padding-top: 1px; margin-left: 556px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: left;"><div style="display: inline-block; font-size: 12px; font-family: Verdana; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Note VL frequency:<br />- Usually when first diagnosed<br /><br /><div>- Usually within 2 months if treatment changes</div><div><br /></div><div>- Usually every 1 - 2 months until the VL is not detectable (virally suppressed)</div><div><br /></div><div>- Usually every 3 to 4 months if on stable therapy and the virus load remains suppressed (Usually reduced to 6 months after 2 years of this)</div></div></div></div></foreignObject><text x="556" y="13" fill="rgb(0, 0, 0)" font-family="Verdana" font-size="12px">Note VL frequency:...</text></switch></g><path d="M 1086 691.11 C 1086 718.11 1063.05 740 1034.75 740 C 1006.45 740 983.5 718.11 983.5 691.11 C 983.5 664.11 1006.45 642.22 1034.75 642.22" fill="none" stroke="#006eaf" stroke-width="2" stroke-miterlimit="10" pointer-events="all"/><path d="M 1034.75 630 L 1053.97 642.22 L 1034.75 654.44 Z" fill="#1ba1e2" stroke="#006eaf" stroke-width="2" stroke-miterlimit="10" pointer-events="all"/><rect x="1004.75" y="680" width="60" height="20" fill="none" stroke="none" pointer-events="all"/><g transform="translate(-0.5 -0.5)"><switch><foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 58px; height: 1px; padding-top: 690px; margin-left: 1006px;"><div data-drawio-colors="color: #000000; " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Repeats until death</div></div></div></foreignObject><text x="1035" y="694" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle">Repeats un...</text></switch></g><path d="M 1229 40 Q 1229 40 1229 393.12" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="stroke"/><path d="M 1229 398.37 L 1225.5 391.37 L 1229 393.12 L 1232.5 391.37 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"/><path d="M 1124 0 L 1320 0 L 1334 14 L 1334 40 L 1124 40 L 1124 0 Z" fill="#eeeeee" stroke="#36393d" stroke-miterlimit="10" pointer-events="all"/><path d="M 1320 0 L 1320 14 L 1334 14" fill="none" stroke="#36393d" stroke-miterlimit="10" pointer-events="all"/><g transform="translate(-0.5 -0.5)"><switch><foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe flex-start; width: 208px; height: 1px; padding-top: 1px; margin-left: 1126px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: left;"><div style="display: inline-block; font-size: 12px; font-family: Verdana; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Death of any person with HIV, regardless of cause of death</div></div></div></foreignObject><text x="1126" y="13" fill="rgb(0, 0, 0)" font-family="Verdana" font-size="12px">Death of any person with HIV, regar...</text></switch></g><path d="M 216 394.2 Q 216 394.2 216 468.63" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="stroke"/><path d="M 216 473.88 L 212.5 466.88 L 216 468.63 L 219.5 466.88 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"/><g transform="translate(-0.5 -0.5)"><switch><foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 440px; margin-left: 301px;"><div data-drawio-colors="color: #000000; background-color: rgb(255, 255, 255); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 11px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; background-color: rgb(255, 255, 255); white-space: nowrap;"><span style="font-size: 12px">manage patient record in EMR</span></div></div></div></foreignObject><text x="301" y="443" fill="#000000" font-family="Helvetica" font-size="11px" text-anchor="middle">manage patient record in EMR</text></switch></g><image x="174.18" y="309.5" width="82.63" height="84.2" xlink:href="https://app.diagrams.net/img/lib/allied_telesis/computer_and_terminals/Personal_Computer_Wireless.svg"/><g transform="translate(-0.5 -0.5)"><switch><foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 401px; margin-left: 216px;"><div data-drawio-colors="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; background-color: rgb(255, 255, 255); white-space: nowrap;">Facility PoS Client</div></div></div></foreignObject><text x="216" y="413" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px" text-anchor="middle">Facility PoS C...</text></switch></g><rect x="0.5" y="20" width="425.5" height="230" fill="#f5f5f5" stroke="#666666" pointer-events="all"/><rect x="26" y="200" width="380" height="20" fill="#d5e8d4" stroke="#82b366" pointer-events="all"/><g transform="translate(-0.5 -0.5)"><switch><foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 378px; height: 1px; padding-top: 210px; margin-left: 27px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">Interoperability Layer</div></div></div></foreignObject><text x="216" y="214" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px" text-anchor="middle">Interoperability Layer</text></switch></g><path d="M 66 116.37 L 66 190 L 66 193.63" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="stroke"/><path d="M 66 111.12 L 69.5 118.12 L 66 116.37 L 62.5 118.12 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"/><path d="M 66 198.88 L 62.5 191.88 L 66 193.63 L 69.5 191.88 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"/><path d="M 36 45 C 36 36.72 49.43 30 66 30 C 73.96 30 81.59 31.58 87.21 34.39 C 92.84 37.21 96 41.02 96 45 L 96 95 C 96 103.28 82.57 110 66 110 C 49.43 110 36 103.28 36 95 Z" fill="#f8cecc" stroke="#b85450" stroke-miterlimit="10" pointer-events="all"/><path d="M 96 45 C 96 53.28 82.57 60 66 60 C 49.43 60 36 53.28 36 45" fill="none" stroke="#b85450" stroke-miterlimit="10" pointer-events="all"/><g transform="translate(-0.5 -0.5)"><switch><foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 58px; height: 1px; padding-top: 83px; margin-left: 37px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">CDR</div></div></div></foreignObject><text x="66" y="86" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px" text-anchor="middle">CDR</text></switch></g><path d="M 256 116.37 L 256 180 L 256 193.63" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="stroke"/><path d="M 256 111.12 L 259.5 118.12 L 256 116.37 L 252.5 118.12 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"/><path d="M 256 198.88 L 252.5 191.88 L 256 193.63 L 259.5 191.88 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"/><path d="M 226 45 C 226 36.72 239.43 30 256 30 C 263.96 30 271.59 31.58 277.21 34.39 C 282.84 37.21 286 41.02 286 45 L 286 95 C 286 103.28 272.57 110 256 110 C 239.43 110 226 103.28 226 95 Z" fill="#dae8fc" stroke="#6c8ebf" stroke-miterlimit="10" pointer-events="all"/><path d="M 286 45 C 286 53.28 272.57 60 256 60 C 239.43 60 226 53.28 226 45" fill="none" stroke="#6c8ebf" stroke-miterlimit="10" pointer-events="all"/><g transform="translate(-0.5 -0.5)"><switch><foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 58px; height: 1px; padding-top: 83px; margin-left: 227px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">CR</div></div></div></foreignObject><text x="256" y="86" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px" text-anchor="middle">CR</text></switch></g><rect x="0.5" y="0" width="425.5" height="20" fill="#ffe6cc" stroke="#d79b00" pointer-events="all"/><g transform="translate(-0.5 -0.5)"><switch><foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 424px; height: 1px; padding-top: 10px; margin-left: 2px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 17px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">DISI</div></div></div></foreignObject><text x="213" y="15" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="17px" text-anchor="middle">DISI</text></switch></g><rect x="76" y="140" width="120" height="20" fill="none" stroke="none" pointer-events="all"/><g transform="translate(-0.5 -0.5)"><switch><foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe flex-start; width: 118px; height: 1px; padding-top: 150px; margin-left: 78px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: left;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">accepts new data for sentinel events</div></div></div></foreignObject><text x="78" y="154" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px">accepts new data for...</text></switch></g><rect x="270" y="140" width="140" height="20" fill="none" stroke="none" pointer-events="all"/><g transform="translate(-0.5 -0.5)"><switch><foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe flex-start; width: 138px; height: 1px; padding-top: 150px; margin-left: 272px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: left;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">accepts only demographic data which may be updated at any time</div></div></div></foreignObject><text x="272" y="154" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px">accepts only demographi...</text></switch></g><path d="M 216 303.63 Q 216 303.63 216 226.37" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="stroke"/><path d="M 216 308.88 L 212.5 301.88 L 216 303.63 L 219.5 301.88 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"/><path d="M 216 221.12 L 219.5 228.12 L 216 226.37 L 212.5 228.12 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"/><g transform="translate(-0.5 -0.5)"><switch><foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 271px; margin-left: 217px;"><div data-drawio-colors="color: #000000; background-color: rgb(255, 255, 255); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 11px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; background-color: rgb(255, 255, 255); white-space: nowrap;">1<sup>st</sup>, 2<sup>nd</sup>, 3<sup>rd</sup>, n<sup>th</sup> visit - add/update/append sentinel event data</div></div></div></foreignObject><text x="217" y="274" fill="#000000" font-family="Helvetica" font-size="11px" text-anchor="middle">1st, 2nd, 3rd, nth visit - add/update/append sentinel event data</text></switch></g></g><switch><g requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"/><a transform="translate(0,-5)" xlink:href="https://www.diagrams.net/doc/faq/svg-export-text-problems" target="_blank"><text text-anchor="middle" font-size="10px" x="50%" y="100%">Text is not SVG - cannot display</text></a></switch></svg>
+      <figcaption>CBS Sentinel Events On a Timeline</figcaption>
+  </figure>
+
+  <a name="2"/><h3>Reporting Objectives</h3> <a name="objectives">  </a>
+
+  <p>
+    HIV CBS is the systematic reporting of <strong>newly diagnosed</strong> persons living with HIV (PLHIV) at the time of diagnosis and if applicable subsequent reporting of key clinical events (sentinel events) for that individual during the course of the disease. 
+    <br/>
+    <br/>
+    The following key HIV CBS indicators have been identified for this implementation guide.
+  </p>
+
+  <ol>
+    <li>To calculate the number of individuals who have been newly diagnosed with HIV within the reporting period.</li>
+    <li>To calculate the number of newly diagnosed HIV positive individuals who have been enrolled into the HIV program within the reporting period.</li>
+    <li>To calculate the number of newly diagnosed HIV positive individuals who have been initiated on ART therapy within the reporting period.</li>
+    <li>To calculate the number of new ART individuals who are virally suppressed within the reporting period.</li>
+    <li>To calculate the number of HIV positive individuals who have died within the reporting period.</li>
+  </ol>
+
+  <p>
+    The following PEPFAR indicators can be implemented in order to support HIV case reporting.  
+  </p>
+
+  <ul>
+    <li><strong>(HTS_TST)</strong> Calculate the number of individuals who received HIV Testing Services (HTS) and received their test results.</li>
+    <li><strong>(HTS_TST_POS)</strong> Calculate the number of individuals who received HTS and were diagnosed with HIV.</li>
+    <li><strong>(TX_NEW)</strong> Calculate the Number of adults and children newly enrolled on ART.</li>
+    <li><strong>(TX_CURR)</strong> Calculate the number of adults and children currently receiving ART.</li>
+    <li><strong>(TX_ML)</strong> Calculate the number of ART patients (currently on ART or newly initiating ART) with no clinical contact or ARV pick-up for greater than 28 days since their last expected clinical contact or ARV pick-up.</li>
+    <li><strong>(TX_RTT)</strong> Calculate the number of ART patients who experienced interruption in treatment (IIT) during any previous reporting period, who successfully restarted ARVs within the reporting period and remained on treatment until the end of the reporting period.</li>
+    <li><strong>(TX_PVLS)</strong> Calculate the number of ART patients with suppressed VL results (&lt;1,000 copies/ml) documented in the medical or laboratory records/lab information system (LIS) within the past 12 months.</li>
+  </ul>
+
+  <blockquote class="stu-note">
+    <ul>
+      <li>Even though this implementation guide is able to support some of the key <a href="https://www.state.gov/wp-content/uploads/2021/09/FY22-MER-2.6-Indicator-Reference-Guide.pdf" target="_blank">PEPFAR</a> HIV reporting indicators, not all disaggregation groups per indicator will be supported.</li>
+      <li>This implementation guide specification is currently limited to <a href="https://docs.google.com/spreadsheets/d/1vp54C2m-2xSGHKWstd4tSFsTuglz5k6jaCe30MTS_18/edit#gid=113954378" target="_blank">this minimum dataset</a>.</li>
+      <li>DISI's reference platform architecture enables HIV case reporting at national and sub-national levels.</li>
+    </ul>
+  </blockquote>
+
+  <a name="3"/><h3>References</h3> <a name="references">  </a>
+
+  <div>
+    <ol>
+      <li id="ref8">Drain, P. K., Dorward, J., Bender, A. R., Lillis, L., Marinucci, F., Sacks, J. A., Bershteyn, A., Boyle, D. L., Posner, J. D., &amp; Garrett, N. (2019). Point-of-Care HIV Viral Load Testing: an Essential Tool for a Sustainable Global HIV/AIDS Response. Clinical Microbiology Reviews, 32(3). https://doi.org/10.1128/cmr.00097-18</li>
+      <li id="ref1">Geneva: World Health Organization. (2016). Consolidated Guidelines on HIV Prevention, Diagnosis, Treatment and Care for Key Populations – 2016 Update: DEFINITIONS OF KEY TERMS.</li>
+      <li id="ref3">Initiation of Antiretroviral Therapy | NIH. (2019, December 18). https://clinicalinfo.hiv.gov/en/guidelines/hiv-clinical-guidelines-adult-and-adolescent-arv/initiation-antiretroviral-therapy</li>
+      <li id="ref4">Ministry of Health – Moh. (2019). Retrieved February 15, 2023, from https://www.moh.gov.zm/wp-content/uploads/filebase/HIV-Case-Based-Surveillance-Implementation-Operating-Framework-2019.pdf</li>
+      <li id="ref5">Pattanapanyasat K. (2012). Immune status monitoring of HIV/AIDS patients in resource-limited settings: a review with an emphasis on CD4+ T-lymphocyte determination. Asian Pacific journal of allergy and immunology, 30(1), 11–25.</li>
+      <li id="ref2">World Health Organization. (2010). Antiretroviral therapy for HIV infection in adults and adolescents: recommendations for a public health approach - 2010 revision. https://apps.who.int/iris/handle/10665/44379</li>
+    </ol>
+  </div>
+</div>
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+           
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2019+ <a style="color: #81BEF7" href="https://www.jembi.org">Jembi Health Systems</a>.  Package openhie.fhir.hiv.cbs#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Mar 3, 2023 15:35+0000">2023-03-03</span>
+          <br/>
+          <span style="color: #FFFF77">
+                      Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
+                 <a style="color: #81BEF7" href="qa.html">QA Report</a> |
+                 
+                 <a style="color: #81BEF7" target="_blank" href="http://openhie.org/fhir/hiv-cbs/history.html">Version History</a> |
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC-BY" src="assets/images/cc-by.png" height="17"/></a> |
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+  <!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+
