@@ -6,107 +6,81 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://openhie.org/fhir/hiv-cbs/Patient/HIVPatientExample> a fhir:Patient;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "HIVPatientExample"]; # 
-  fhir:Resource.meta [
-     fhir:Meta.profile [
-       fhir:value "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-patient";
-       fhir:index 0;
+<http://openhie.org/fhir/hiv-cbs/Patient/HIVPatientExample> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "HIVPatientExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-patient"^^xsd:anyURI ;
        fhir:link <http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-patient>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Jane Maria Smith (OFFICIAL)</b> female, DoB: 1990-12-12 ( id: NID1234567)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td>true</td><td style=\"background-color: #f3f5da\" title=\"Known Marital status of Patient\">Marital Status:</td><td colspan=\"3\"><span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}\">Married</span></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Details:</td><td colspan=\"3\"><ul><li><a href=\"tel:+27821234567\">+27821234567</a></li><li><a href=\"mailto:someone@example.com\">someone@example.com</a></li><li>Cape Town Western Province South Africa </li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Nominated Contact: Next-of-Kin\">Next-of-Kin:</td><td colspan=\"3\"><ul><li>John Doe </li><li><a href=\"tel:+27829999999\">+27829999999</a></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Patient Links\">Links:</td><td colspan=\"3\"><ul><li>Managing Organization: <a href=\"Organization-HIVOrganizationExample.html\">Organization/HIVOrganizationExample</a> &quot;HIV Test Services Health Facility&quot;</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Populations who are at higher risk for HIV.\"><a href=\"StructureDefinition-key-population-status.html\">Key HIV Population:</a></td><td colspan=\"3\"><ul><li><span title=\"Codes: {http://snomed.info/sct 417284009}\">Current drug user (finding)</span></li></ul></td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://openhie.org/fhir/hiv-cbs/StructureDefinition/key-population-status"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         a sct:417284009 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "417284009" ]
+       ] )
      ]
-  ]; # 
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Jane Maria Smith (OFFICIAL)</b> female, DoB: 1990-12-12 ( id: NID1234567)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td>true</td><td style=\"background-color: #f3f5da\" title=\"Known Marital status of Patient\">Marital Status:</td><td colspan=\"3\"><span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}\">Married</span></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Details:</td><td colspan=\"3\"><ul><li><a href=\"tel:+27821234567\">+27821234567</a></li><li><a href=\"mailto:someone@example.com\">someone@example.com</a></li><li>Cape Town Western Province South Africa </li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Nominated Contact: Next-of-Kin\">Next-of-Kin:</td><td colspan=\"3\"><ul><li>John Doe </li><li><a href=\"tel:+27829999999\">+27829999999</a></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Patient Links\">Links:</td><td colspan=\"3\"><ul><li>Managing Organization: <a href=\"Organization-HIVOrganizationExample.html\">Organization/HIVOrganizationExample</a> &quot;HIV Test Services Health Facility&quot;</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Populations who are at higher risk for HIV.\"><a href=\"StructureDefinition-key-population-status.html\">Key HIV Population:</a></td><td colspan=\"3\"><ul><li><span title=\"Codes: {http://snomed.info/sct 417284009}\">Current drug user (finding)</span></li></ul></td></tr></table></div>"
-  ]; # 
-  fhir:DomainResource.extension [
-     fhir:index 0;
-     fhir:Extension.url [ fhir:value "http://openhie.org/fhir/hiv-cbs/StructureDefinition/key-population-status" ];
-     fhir:Extension.valueCodeableConcept [
-       fhir:CodeableConcept.coding [
-         fhir:index 0;
-         a sct:417284009;
-         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
-         fhir:Coding.code [ fhir:value "417284009" ]
-       ]
-     ]
-  ]; # 
-  fhir:Patient.identifier [
-     fhir:index 0;
-     fhir:Identifier.system [ fhir:value "http://openhie.org/fhir/hiv-cbs/identifier/nid" ];
-     fhir:Identifier.value [ fhir:value "NID1234567" ]
-  ]; # 
-  fhir:Patient.active [ fhir:value "true"^^xsd:boolean]; # 
-  fhir:Patient.name [
-     fhir:index 0;
-     fhir:HumanName.use [ fhir:value "official" ];
-     fhir:HumanName.family [ fhir:value "Smith" ];
-     fhir:HumanName.given [
-       fhir:value "Jane";
-       fhir:index 0
-     ], [
-       fhir:value "Maria";
-       fhir:index 1
-     ]
-  ]; # 
-  fhir:Patient.telecom [
-     fhir:index 0;
-     fhir:ContactPoint.system [ fhir:value "phone" ];
-     fhir:ContactPoint.value [ fhir:value "+27821234567" ]
-  ], [
-     fhir:index 1;
-     fhir:ContactPoint.system [ fhir:value "email" ];
-     fhir:ContactPoint.value [ fhir:value "someone@example.com" ]
-  ]; # 
-  fhir:Patient.gender [ fhir:value "female"]; # 
-  fhir:Patient.birthDate [ fhir:value "1990-12-12"^^xsd:date]; # 
-  fhir:Patient.address [
-     fhir:index 0;
-     fhir:Address.city [ fhir:value "Cape Town" ];
-     fhir:Address.district [ fhir:value "City of Cape Town" ];
-     fhir:Address.state [ fhir:value "Western Province" ];
-     fhir:Address.country [ fhir:value "South Africa" ]
-  ]; # 
-  fhir:Patient.maritalStatus [
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus" ];
-       fhir:Coding.code [ fhir:value "M" ]
-     ]
-  ]; # 
-  fhir:Patient.contact [
-     fhir:index 0;
-     fhir:Patient.contact.relationship [
-       fhir:index 0;
-       fhir:CodeableConcept.coding [
-         fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0131" ];
-         fhir:Coding.code [ fhir:value "N" ]
-       ]
-     ];
-     fhir:Patient.contact.name [
-       fhir:HumanName.family [ fhir:value "Doe" ];
-       fhir:HumanName.given [
-         fhir:value "John";
-         fhir:index 0
-       ]
-     ];
-     fhir:Patient.contact.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "phone" ];
-       fhir:ContactPoint.value [ fhir:value "+27829999999" ]
-     ]
-  ]; # 
-  fhir:Patient.managingOrganization [
-     fhir:link <http://openhie.org/fhir/hiv-cbs/Organization/HIVOrganizationExample>;
-     fhir:Reference.reference [ fhir:value "Organization/HIVOrganizationExample" ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://openhie.org/fhir/hiv-cbs/identifier/nid"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "NID1234567" ]
+  ] ) ; # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:name ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:family [ fhir:v "Smith" ] ;
+     fhir:given ( [ fhir:v "Jane" ] [ fhir:v "Maria" ] )
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "+27821234567" ]
+  ] [
+     fhir:system [ fhir:v "email" ] ;
+     fhir:value [ fhir:v "someone@example.com" ]
+  ] ) ; # 
+  fhir:gender [ fhir:v "female"] ; # 
+  fhir:birthDate [ fhir:v "1990-12-12"^^xsd:date] ; # 
+  fhir:address ( [
+     fhir:city [ fhir:v "Cape Town" ] ;
+     fhir:district [ fhir:v "City of Cape Town" ] ;
+     fhir:state [ fhir:v "Western Province" ] ;
+     fhir:country [ fhir:v "South Africa" ]
+  ] ) ; # 
+  fhir:maritalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "M" ]
+     ] )
+  ] ; # 
+  fhir:contact ( [
+     fhir:relationship ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0131"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "N" ]
+       ] )
+     ] ) ;
+     fhir:name [
+       fhir:family [ fhir:v "Doe" ] ;
+       fhir:given ( [ fhir:v "John" ] )
+     ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "phone" ] ;
+       fhir:value [ fhir:v "+27829999999" ]
+     ] )
+  ] ) ; # 
+  fhir:managingOrganization [
+     fhir:link <http://openhie.org/fhir/hiv-cbs/Organization/HIVOrganizationExample> ;
+     fhir:reference [ fhir:v "Organization/HIVOrganizationExample" ]
   ] . # 
-
-# - ontology header ------------------------------------------------------------
-
-<http://openhie.org/fhir/hiv-cbs/Patient/HIVPatientExample.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

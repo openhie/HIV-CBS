@@ -5,138 +5,106 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://openhie.org/fhir/hiv-cbs/ValueSet/vs-arv-regimen> a fhir:ValueSet;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "vs-arv-regimen"]; # 
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/387105006\">387105006</a></td><td>Didanosine (DDI)</td></tr><tr><td><a href=\"http://snomed.info/id/387005008\">387005008</a></td><td>Abacavir (ABC)</td></tr><tr><td><a href=\"http://snomed.info/id/772188001\">772188001</a></td><td>Abacavir and lamivudine (ABC + 3TC)</td></tr><tr><td><a href=\"http://snomed.info/id/427314002\">427314002</a></td><td>ABC + 3TC + ATV/r</td></tr><tr><td><a href=\"http://snomed.info/id/878898002\">878898002</a></td><td>Atazanavir/ritonavir (ATV/r)</td></tr><tr><td><a href=\"http://snomed.info/id/713464000\">713464000</a></td><td>Dolutegravir (DTG)</td></tr><tr><td><a href=\"http://snomed.info/id/387001004\">387001004</a></td><td>Efavirenz (EFV)</td></tr><tr><td><a href=\"http://snomed.info/id/404856006\">404856006</a></td><td>Emtricitabine (FTC)</td></tr><tr><td><a href=\"http://snomed.info/id/432121008\">432121008</a></td><td>Etravirine (ETV)</td></tr><tr><td><a href=\"http://snomed.info/id/386897000\">386897000</a></td><td>Lamivudine (3TC)</td></tr><tr><td><a href=\"http://snomed.info/id/776569000\">776569000</a></td><td>Lopinavir/ritonavir (LPV/r)</td></tr><tr><td><a href=\"http://snomed.info/id/386898005\">386898005</a></td><td>Nevirapine (NVP)</td></tr><tr><td><a href=\"http://snomed.info/id/429707008\">429707008</a></td><td>Raltegravir (RAL)</td></tr><tr><td><a href=\"http://snomed.info/id/703123005\">703123005</a></td><td>Rilpivirine (RIL)</td></tr><tr><td><a href=\"http://snomed.info/id/386896009\">386896009</a></td><td>Ritonavir (RTV)</td></tr><tr><td><a href=\"http://snomed.info/id/386895008\">386895008</a></td><td>Stavudine (D4T)</td></tr><tr><td><a href=\"http://snomed.info/id/422091007\">422091007</a></td><td>Tenofovir (TDF)</td></tr><tr><td><a href=\"http://snomed.info/id/421203005\">421203005</a></td><td>Tenofovir disoproxil (TDF)</td></tr><tr><td><a href=\"http://snomed.info/id/414091005\">414091005</a></td><td>Tenofovir disoproxil and emtricitabine (TDF + FTC)</td></tr><tr><td><a href=\"http://snomed.info/id/387151007\">387151007</a></td><td>Zidovudine (AZT)</td></tr><tr><td><a href=\"http://snomed.info/id/776469003\">776469003</a></td><td>Zidovudine and lamivudine (AZT + 3TC)</td></tr></table></li></ul></div>"
-  ]; # 
-  fhir:ValueSet.url [ fhir:value "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-arv-regimen"]; # 
-  fhir:ValueSet.version [ fhir:value "0.2.0"]; # 
-  fhir:ValueSet.name [ fhir:value "VSARVRegimen"]; # 
-  fhir:ValueSet.title [ fhir:value "A list of ARV regimen"]; # 
-  fhir:ValueSet.status [ fhir:value "active"]; # 
-  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean]; # 
-  fhir:ValueSet.date [ fhir:value "2023-03-02T13:11:41+00:00"^^xsd:dateTime]; # 
-  fhir:ValueSet.publisher [ fhir:value "Jembi Health Systems"]; # 
-  fhir:ValueSet.contact [
-     fhir:index 0;
-     fhir:ContactDetail.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "https://www.jembi.org" ]
-     ], [
-       fhir:index 1;
-       fhir:ContactPoint.system [ fhir:value "email" ];
-       fhir:ContactPoint.value [ fhir:value "info@jembi.org" ]
-     ]
-  ]; # 
-  fhir:ValueSet.description [ fhir:value "A list of ARV regimen."]; # 
-  fhir:ValueSet.jurisdiction [
-     fhir:index 0;
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
-       fhir:Coding.code [ fhir:value "001" ]
-     ]
-  ]; # 
-  fhir:ValueSet.compose [
-     fhir:ValueSet.compose.include [
-       fhir:index 0;
-       fhir:ValueSet.compose.include.system [ fhir:value "http://snomed.info/sct" ];
-       fhir:ValueSet.compose.include.concept [
-         fhir:index 0;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "387105006" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Didanosine (DDI)" ]
-       ], [
-         fhir:index 1;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "387005008" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Abacavir (ABC)" ]
-       ], [
-         fhir:index 2;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "772188001" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Abacavir and lamivudine (ABC + 3TC)" ]
-       ], [
-         fhir:index 3;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "427314002" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "ABC + 3TC + ATV/r" ]
-       ], [
-         fhir:index 4;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "878898002" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Atazanavir/ritonavir (ATV/r)" ]
-       ], [
-         fhir:index 5;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "713464000" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Dolutegravir (DTG)" ]
-       ], [
-         fhir:index 6;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "387001004" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Efavirenz (EFV)" ]
-       ], [
-         fhir:index 7;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "404856006" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Emtricitabine (FTC)" ]
-       ], [
-         fhir:index 8;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "432121008" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Etravirine (ETV)" ]
-       ], [
-         fhir:index 9;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "386897000" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lamivudine (3TC)" ]
-       ], [
-         fhir:index 10;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "776569000" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lopinavir/ritonavir (LPV/r)" ]
-       ], [
-         fhir:index 11;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "386898005" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nevirapine (NVP)" ]
-       ], [
-         fhir:index 12;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "429707008" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Raltegravir (RAL)" ]
-       ], [
-         fhir:index 13;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "703123005" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Rilpivirine (RIL)" ]
-       ], [
-         fhir:index 14;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "386896009" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ritonavir (RTV)" ]
-       ], [
-         fhir:index 15;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "386895008" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Stavudine (D4T)" ]
-       ], [
-         fhir:index 16;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "422091007" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tenofovir (TDF)" ]
-       ], [
-         fhir:index 17;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "421203005" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tenofovir disoproxil (TDF)" ]
-       ], [
-         fhir:index 18;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "414091005" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tenofovir disoproxil and emtricitabine (TDF + FTC)" ]
-       ], [
-         fhir:index 19;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "387151007" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Zidovudine (AZT)" ]
-       ], [
-         fhir:index 20;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "776469003" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Zidovudine and lamivudine (AZT + 3TC)" ]
-       ]
-     ]
+<http://openhie.org/fhir/hiv-cbs/ValueSet/vs-arv-regimen> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "vs-arv-regimen"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/387105006\">387105006</a></td><td>Didanosine (DDI)</td></tr><tr><td><a href=\"http://snomed.info/id/387005008\">387005008</a></td><td>Abacavir (ABC)</td></tr><tr><td><a href=\"http://snomed.info/id/772188001\">772188001</a></td><td>Abacavir and lamivudine (ABC + 3TC)</td></tr><tr><td><a href=\"http://snomed.info/id/427314002\">427314002</a></td><td>ABC + 3TC + ATV/r</td></tr><tr><td><a href=\"http://snomed.info/id/878898002\">878898002</a></td><td>Atazanavir/ritonavir (ATV/r)</td></tr><tr><td><a href=\"http://snomed.info/id/713464000\">713464000</a></td><td>Dolutegravir (DTG)</td></tr><tr><td><a href=\"http://snomed.info/id/387001004\">387001004</a></td><td>Efavirenz (EFV)</td></tr><tr><td><a href=\"http://snomed.info/id/404856006\">404856006</a></td><td>Emtricitabine (FTC)</td></tr><tr><td><a href=\"http://snomed.info/id/432121008\">432121008</a></td><td>Etravirine (ETV)</td></tr><tr><td><a href=\"http://snomed.info/id/386897000\">386897000</a></td><td>Lamivudine (3TC)</td></tr><tr><td><a href=\"http://snomed.info/id/776569000\">776569000</a></td><td>Lopinavir/ritonavir (LPV/r)</td></tr><tr><td><a href=\"http://snomed.info/id/386898005\">386898005</a></td><td>Nevirapine (NVP)</td></tr><tr><td><a href=\"http://snomed.info/id/429707008\">429707008</a></td><td>Raltegravir (RAL)</td></tr><tr><td><a href=\"http://snomed.info/id/703123005\">703123005</a></td><td>Rilpivirine (RIL)</td></tr><tr><td><a href=\"http://snomed.info/id/386896009\">386896009</a></td><td>Ritonavir (RTV)</td></tr><tr><td><a href=\"http://snomed.info/id/386895008\">386895008</a></td><td>Stavudine (D4T)</td></tr><tr><td><a href=\"http://snomed.info/id/422091007\">422091007</a></td><td>Tenofovir (TDF)</td></tr><tr><td><a href=\"http://snomed.info/id/421203005\">421203005</a></td><td>Tenofovir disoproxil (TDF)</td></tr><tr><td><a href=\"http://snomed.info/id/414091005\">414091005</a></td><td>Tenofovir disoproxil and emtricitabine (TDF + FTC)</td></tr><tr><td><a href=\"http://snomed.info/id/387151007\">387151007</a></td><td>Zidovudine (AZT)</td></tr><tr><td><a href=\"http://snomed.info/id/776469003\">776469003</a></td><td>Zidovudine and lamivudine (AZT + 3TC)</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-arv-regimen"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.2.0"] ; # 
+  fhir:name [ fhir:v "VSARVRegimen"] ; # 
+  fhir:title [ fhir:v "A list of ARV regimen"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-03-03T12:25:55+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Jembi Health Systems"] ; # 
+  fhir:contact ( [
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.jembi.org" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@jembi.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "A list of ARV regimen."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ]
+     ] )
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "387105006" ] ;
+         fhir:display [ fhir:v "Didanosine (DDI)" ]
+       ] [
+         fhir:code [ fhir:v "387005008" ] ;
+         fhir:display [ fhir:v "Abacavir (ABC)" ]
+       ] [
+         fhir:code [ fhir:v "772188001" ] ;
+         fhir:display [ fhir:v "Abacavir and lamivudine (ABC + 3TC)" ]
+       ] [
+         fhir:code [ fhir:v "427314002" ] ;
+         fhir:display [ fhir:v "ABC + 3TC + ATV/r" ]
+       ] [
+         fhir:code [ fhir:v "878898002" ] ;
+         fhir:display [ fhir:v "Atazanavir/ritonavir (ATV/r)" ]
+       ] [
+         fhir:code [ fhir:v "713464000" ] ;
+         fhir:display [ fhir:v "Dolutegravir (DTG)" ]
+       ] [
+         fhir:code [ fhir:v "387001004" ] ;
+         fhir:display [ fhir:v "Efavirenz (EFV)" ]
+       ] [
+         fhir:code [ fhir:v "404856006" ] ;
+         fhir:display [ fhir:v "Emtricitabine (FTC)" ]
+       ] [
+         fhir:code [ fhir:v "432121008" ] ;
+         fhir:display [ fhir:v "Etravirine (ETV)" ]
+       ] [
+         fhir:code [ fhir:v "386897000" ] ;
+         fhir:display [ fhir:v "Lamivudine (3TC)" ]
+       ] [
+         fhir:code [ fhir:v "776569000" ] ;
+         fhir:display [ fhir:v "Lopinavir/ritonavir (LPV/r)" ]
+       ] [
+         fhir:code [ fhir:v "386898005" ] ;
+         fhir:display [ fhir:v "Nevirapine (NVP)" ]
+       ] [
+         fhir:code [ fhir:v "429707008" ] ;
+         fhir:display [ fhir:v "Raltegravir (RAL)" ]
+       ] [
+         fhir:code [ fhir:v "703123005" ] ;
+         fhir:display [ fhir:v "Rilpivirine (RIL)" ]
+       ] [
+         fhir:code [ fhir:v "386896009" ] ;
+         fhir:display [ fhir:v "Ritonavir (RTV)" ]
+       ] [
+         fhir:code [ fhir:v "386895008" ] ;
+         fhir:display [ fhir:v "Stavudine (D4T)" ]
+       ] [
+         fhir:code [ fhir:v "422091007" ] ;
+         fhir:display [ fhir:v "Tenofovir (TDF)" ]
+       ] [
+         fhir:code [ fhir:v "421203005" ] ;
+         fhir:display [ fhir:v "Tenofovir disoproxil (TDF)" ]
+       ] [
+         fhir:code [ fhir:v "414091005" ] ;
+         fhir:display [ fhir:v "Tenofovir disoproxil and emtricitabine (TDF + FTC)" ]
+       ] [
+         fhir:code [ fhir:v "387151007" ] ;
+         fhir:display [ fhir:v "Zidovudine (AZT)" ]
+       ] [
+         fhir:code [ fhir:v "776469003" ] ;
+         fhir:display [ fhir:v "Zidovudine and lamivudine (AZT + 3TC)" ]
+       ] )
+     ] )
   ] . # 
-
-# - ontology header ------------------------------------------------------------
-
-<http://openhie.org/fhir/hiv-cbs/ValueSet/vs-arv-regimen.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 
