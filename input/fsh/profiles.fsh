@@ -173,8 +173,6 @@ Description: "This profile is used to record the enrolment type at the time of t
 * identifier[HMPUI].value 1..1
 * identifier[HMPUI].system = "http://openhie.org/fhir/hiv-cbs/identifier/enrollment-unique-id" (exactly)
 * status 1..1
-* type 1..1
-* type from VSPatientEnrollmentType (required)
 * diagnosis 1..* 
 * diagnosis.condition 1..1 
 * patient 1..1

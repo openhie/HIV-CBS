@@ -53,16 +53,6 @@ Title: "ARV Treatment Medication Request"
 Description: "Codes used to represent a medication request for ART."
 * ^experimental = false
 *  $LNC#45260-7 "HIV ART medication"
-  
-ValueSet: VSPatientEnrollmentType
-Id: vs-patient-enrollment-type
-Title: "Patient Type at Enrolment"
-Description:  "A list of Patient Types at Enrolment"
-* ^experimental = false
-* $SCT#185387006 "New patient consultation (procedure)"  
-* $SCT#309037001 "Transfer status (finding)" 
-* $SCT#182837001 "Restart of medication (procedure)" 
-* $LNC#LA6505-7 "PMTCT"
 
 ValueSet: VSSpecimenType
 Id: vs-specimen-type

@@ -173,7 +173,6 @@ Description: "This resource is used for Management of a Patient's HIV Programme.
 * identifier[HMPUI].value = "abc123"
 * identifier[HMPUI].system = "http://openhie.org/fhir/hiv-cbs/identifier/enrollment-unique-id" (exactly)
 * status = #active
-* type = $SCT#182837001
 * diagnosis.condition = Reference(HIVDiagnosisExample)
 * patient = Reference(HIVPatientExample)
 * managingOrganization = Reference(HIVOrganizationExample)
