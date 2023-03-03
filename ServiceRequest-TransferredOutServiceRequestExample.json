@@ -1,0 +1,39 @@
+{
+  "resourceType" : "ServiceRequest",
+  "id" : "TransferredOutServiceRequestExample",
+  "meta" : {
+    "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/transferred-out"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ServiceRequest</b><a name=\"TransferredOutServiceRequestExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ServiceRequest &quot;TransferredOutServiceRequestExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-transferred-out.html\">Transferred Out Service Request</a></p></div><p><b>status</b>: completed</p><p><b>intent</b>: order</p><p><b>code</b>: Transferred to another hospital <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#LA20597-3)</span></p><p><b>subject</b>: <a href=\"Patient-HIVPatientExample.html\">Patient/HIVPatientExample</a> &quot; SMITH&quot;</p><p><b>encounter</b>: <a href=\"Encounter-TargetFacilityEncounterExample.html\">Encounter/TargetFacilityEncounterExample</a></p><p><b>occurrence</b>: 2012-01-05</p><p><b>requester</b>: <a href=\"Practitioner-PractitionerExample.html\">Practitioner/PractitionerExample</a> &quot; SMITH&quot;</p><p><b>performer</b>: <a href=\"Organization-HIVOrganizationPatientTransferredToExample.html\">Organization/HIVOrganizationPatientTransferredToExample</a> &quot;HIV Test Services Health Facility&quot;</p><p><b>note</b>: additional notes about the transfer (By Organization/HIVOrganizationExample @Feb 7, 2015, 6:28:17 PM)</p></div>"
+  },
+  "status" : "completed",
+  "intent" : "order",
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "LA20597-3"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/HIVPatientExample"
+  },
+  "encounter" : {
+    "reference" : "Encounter/TargetFacilityEncounterExample"
+  },
+  "occurrenceDateTime" : "2012-01-05",
+  "requester" : {
+    "reference" : "Practitioner/PractitionerExample"
+  },
+  "performer" : [{
+    "reference" : "Organization/HIVOrganizationPatientTransferredToExample"
+  }],
+  "note" : [{
+    "authorReference" : {
+      "reference" : "Organization/HIVOrganizationExample"
+    },
+    "time" : "2015-02-07T13:28:17-05:00",
+    "text" : "additional notes about the transfer"
+  }]
+}

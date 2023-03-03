@@ -39,8 +39,8 @@
   "profiles": {
     "ServiceRequest": [
       {
-        "url": "http://openhie.org/fhir/hiv-cbs/StructureDefinition/HIV-lab-order",
-        "title": "Lab Order"
+        "url": "http://openhie.org/fhir/hiv-cbs/StructureDefinition/transferred-out",
+        "title": "Transferred Out Service Request"
       }
     ],
     "Observation": [
@@ -89,6 +89,10 @@
       {
         "url": "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-organization",
         "title": "HIV Organization"
+      },
+      {
+        "url": "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-organization-patient-transferred-to",
+        "title": "HIV Organization Patient Is Transferred To"
       }
     ],
     "Patient": [
@@ -110,10 +114,6 @@
       }
     ],
     "Encounter": [
-      {
-        "url": "http://openhie.org/fhir/hiv-cbs/StructureDefinition/target-facility-encounter",
-        "title": "Target Facility Encounter"
-      },
       {
         "url": "http://openhie.org/fhir/hiv-cbs/StructureDefinition/transferring-facility-encounter",
         "title": "Transferring Facility Encounter"

@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "98120e0a-a483-4cfa-bfc6-0ecdf3a56a1f",
+  "id" : "76ff2112-62d0-4242-9c7f-5cf9c449b652",
   "meta" : {
-    "lastUpdated" : "2023-03-03T11:25:12.995+00:00"
+    "lastUpdated" : "2023-03-03T12:26:43.180+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -20,7 +20,7 @@
       "title" : "Recency HIV Test Result",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-03-03T11:25:12+00:00",
+      "date" : "2023-03-03T12:26:43+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -40,8 +40,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:a447487d-2796-4787-a073-4c12059d9e8b",
-        "timestamp" : "2023-03-03T11:25:59+00:00",
+        "identifier" : "urn:uuid:87351376-d6ef-47da-bade-3f70266ae1a6",
+        "timestamp" : "2023-03-03T12:28:14+00:00",
         "total" : 1,
         "parameter" : [{
           "name" : "excludeNested",
@@ -78,7 +78,7 @@
       "title" : "Reasons why a lab order was cancelled or rejected",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-03-03T11:25:12+00:00",
+      "date" : "2023-03-03T12:26:43+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -98,8 +98,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:0ae8bd9c-398c-49c2-b656-e59298a48d09",
-        "timestamp" : "2023-03-03T11:26:02+00:00",
+        "identifier" : "urn:uuid:a43c015c-d57a-4b86-8c7a-7341c1a99fd8",
+        "timestamp" : "2023-03-03T12:28:17+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -146,7 +146,7 @@
       "title" : "HIV Test Done",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-03-03T11:25:12+00:00",
+      "date" : "2023-03-03T12:26:43+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -166,8 +166,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:afeb04ef-5b4f-4d9c-8b21-ad7a4a9e9b25",
-        "timestamp" : "2023-03-03T11:26:03+00:00",
+        "identifier" : "urn:uuid:e1d4a09d-c9ac-45e9-b43b-66aa6a52e432",
+        "timestamp" : "2023-03-03T12:28:19+00:00",
         "total" : 1,
         "parameter" : [{
           "name" : "excludeNested",
@@ -204,7 +204,7 @@
       "title" : "HIV Recency Testing Status",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-03-03T11:25:12+00:00",
+      "date" : "2023-03-03T12:26:43+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -224,8 +224,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:73611855-ac17-49ca-ad69-98a0d4c139ef",
-        "timestamp" : "2023-03-03T11:26:05+00:00",
+        "identifier" : "urn:uuid:881699a6-7041-4ffb-90c9-7b051a36dd94",
+        "timestamp" : "2023-03-03T12:28:23+00:00",
         "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",
@@ -253,6 +253,87 @@
     }
   },
   {
+    "fullUrl" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-patient-enrollment-type",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "vs-patient-enrollment-type",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li>Loinc v2.73</li><li>SNOMED CT International edition 31-Jul 2022</li></ul></div><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-185387006\"> </a>  <a href=\"http://snomed.info/id/185387006\">185387006</a></td><td>http://snomed.info/sct</td><td>New patient consultation (procedure)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-309037001\"> </a>  <a href=\"http://snomed.info/id/309037001\">309037001</a></td><td>http://snomed.info/sct</td><td>Transfer status (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-182837001\"> </a>  <a href=\"http://snomed.info/id/182837001\">182837001</a></td><td>http://snomed.info/sct</td><td>Restart of medication (procedure)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA6505-7\"> </a>  <a href=\"https://loinc.org/LA6505-7/\">LA6505-7</a></td><td>http://loinc.org</td><td>PMTCT</td></tr></table></div>"
+      },
+      "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-patient-enrollment-type",
+      "version" : "0.2.0",
+      "name" : "VSPatientEnrollmentType",
+      "title" : "Patient Type at Enrolment",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2023-03-03T12:26:43+00:00",
+      "publisher" : "Jembi Health Systems",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.jembi.org"
+        },
+        {
+          "system" : "email",
+          "value" : "info@jembi.org"
+        }]
+      }],
+      "description" : "A list of Patient Types at Enrolment",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:da7a0e53-4391-47ed-b994-604daecfbec9",
+        "timestamp" : "2023-03-03T12:28:23+00:00",
+        "total" : 4,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220731"
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://loinc.org|2.73"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "185387006",
+          "display" : "New patient consultation (procedure)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "309037001",
+          "display" : "Transfer status (finding)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "182837001",
+          "display" : "Restart of medication (procedure)"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA6505-7",
+          "display" : "PMTCT"
+        }]
+      }
+    }
+  },
+  {
     "fullUrl" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-vl-suppression",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -267,7 +348,7 @@
       "title" : "Viral Load Suppressions Status",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-03-03T11:25:12+00:00",
+      "date" : "2023-03-03T12:26:43+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -287,8 +368,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:a020e1c9-1dd8-4eca-a212-d8454237005b",
-        "timestamp" : "2023-03-03T11:26:05+00:00",
+        "identifier" : "urn:uuid:76ae7750-e5b0-4100-b56a-bfceb339d976",
+        "timestamp" : "2023-03-03T12:28:23+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -335,7 +416,7 @@
       "title" : "A list of ARV regimen",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-03-03T11:25:12+00:00",
+      "date" : "2023-03-03T12:26:43+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -355,8 +436,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:b64205fb-dad9-48fb-939a-5c2a6a7b2ddd",
-        "timestamp" : "2023-03-03T11:26:07+00:00",
+        "identifier" : "urn:uuid:9cb6275b-caf9-49d2-840c-4e0589dfa6f7",
+        "timestamp" : "2023-03-03T12:28:25+00:00",
         "total" : 21,
         "parameter" : [{
           "name" : "excludeNested",
@@ -485,7 +566,7 @@
       "id" : "vs-careplan-outcome",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2022</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-105480006\"> </a>  <a href=\"http://snomed.info/id/105480006\">105480006</a></td><td>http://snomed.info/sct</td><td>Procedure declined by patient (situation)</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2022</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-737038009\"> </a>  <a href=\"http://snomed.info/id/737038009\">737038009</a></td><td>http://snomed.info/sct</td><td>Declined consent for treatment (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-386473003\"> </a>  <a href=\"http://snomed.info/id/386473003\">386473003</a></td><td>http://snomed.info/sct</td><td>Telephone follow-up (procedure)</td></tr></table></div>"
       },
       "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-careplan-outcome",
       "version" : "0.2.0",
@@ -493,7 +574,7 @@
       "title" : "ARV treatment outcomes",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-03-03T11:25:12+00:00",
+      "date" : "2023-03-03T12:26:43+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -513,9 +594,9 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:9caf3292-9aa2-48ea-9be5-755c11360345",
-        "timestamp" : "2023-03-03T11:26:11+00:00",
-        "total" : 1,
+        "identifier" : "urn:uuid:25c3e424-ee3d-4bfb-be37-03597b6fa683",
+        "timestamp" : "2023-03-03T12:28:31+00:00",
+        "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
@@ -530,8 +611,13 @@
         }],
         "contains" : [{
           "system" : "http://snomed.info/sct",
-          "code" : "105480006",
-          "display" : "Procedure declined by patient (situation)"
+          "code" : "737038009",
+          "display" : "Declined consent for treatment (finding)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "386473003",
+          "display" : "Telephone follow-up (procedure)"
         }]
       }
     }
@@ -551,7 +637,7 @@
       "title" : "Reason for Assessment or Test Not Performed",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-03-03T11:25:12+00:00",
+      "date" : "2023-03-03T12:26:43+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -571,8 +657,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:504a8405-f0f7-48fe-8afd-79e03f5c232e",
-        "timestamp" : "2023-03-03T11:26:12+00:00",
+        "identifier" : "urn:uuid:6a1091bf-9fd4-48e4-aecf-ffd57f46540d",
+        "timestamp" : "2023-03-03T12:28:32+00:00",
         "total" : 15,
         "parameter" : [{
           "name" : "excludeNested",
@@ -679,7 +765,7 @@
       "title" : "Conditions",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-03-03T11:25:12+00:00",
+      "date" : "2023-03-03T12:26:43+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -699,8 +785,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:4dd39f6a-dcd7-4b91-9300-3112317b3be4",
-        "timestamp" : "2023-03-03T11:26:14+00:00",
+        "identifier" : "urn:uuid:ce6d3039-a71d-4778-80ce-acc45ee5aaea",
+        "timestamp" : "2023-03-03T12:28:34+00:00",
         "total" : 1,
         "parameter" : [{
           "name" : "excludeNested",
@@ -737,7 +823,7 @@
       "title" : "CD4 percentage code",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-03-03T11:25:12+00:00",
+      "date" : "2023-03-03T12:26:43+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -757,8 +843,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:fa7bc22e-b30a-450e-9387-1105d7922744",
-        "timestamp" : "2023-03-03T11:26:14+00:00",
+        "identifier" : "urn:uuid:9f13f84e-4706-4de5-8286-485a78163cd7",
+        "timestamp" : "2023-03-03T12:28:35+00:00",
         "total" : 1,
         "parameter" : [{
           "name" : "excludeNested",
@@ -795,7 +881,7 @@
       "title" : "Causes of Death",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-03-03T11:25:12+00:00",
+      "date" : "2023-03-03T12:26:43+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -815,8 +901,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:a8280139-5491-4681-9366-36996c4999fa",
-        "timestamp" : "2023-03-03T11:26:15+00:00",
+        "identifier" : "urn:uuid:f71c2797-a841-4287-8fbd-d51d4eba339f",
+        "timestamp" : "2023-03-03T12:28:35+00:00",
         "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",
@@ -858,7 +944,7 @@
       "title" : "ART Regimen Change Types",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-03-03T11:25:12+00:00",
+      "date" : "2023-03-03T12:26:43+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -878,8 +964,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:b4198d86-4ce9-4024-b866-87bf784b7c3b",
-        "timestamp" : "2023-03-03T11:26:16+00:00",
+        "identifier" : "urn:uuid:2673c93d-c09e-4f57-8c38-ac7f4c731ea7",
+        "timestamp" : "2023-03-03T12:28:36+00:00",
         "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",
@@ -917,7 +1003,7 @@
       "title" : "Yes No Unknown",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-03-03T11:25:12+00:00",
+      "date" : "2023-03-03T12:26:43+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -937,8 +1023,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:68b15e3f-81f6-44f3-b9a9-e9733ab8230a",
-        "timestamp" : "2023-03-03T11:26:16+00:00",
+        "identifier" : "urn:uuid:89bb1a13-6932-41a9-84f1-03b4a2d549f7",
+        "timestamp" : "2023-03-03T12:28:36+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -985,7 +1071,7 @@
       "title" : "Recency HIV Test",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-03-03T11:25:12+00:00",
+      "date" : "2023-03-03T12:26:43+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -1005,8 +1091,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:145d3f03-7d9c-44b5-81b1-ef5976c0a827",
-        "timestamp" : "2023-03-03T11:26:16+00:00",
+        "identifier" : "urn:uuid:28e01b67-cf9a-45dd-b925-25e97a1ad333",
+        "timestamp" : "2023-03-03T12:28:37+00:00",
         "total" : 1,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1043,7 +1129,7 @@
       "title" : "Death",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-03-03T11:25:12+00:00",
+      "date" : "2023-03-03T12:26:43+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -1063,8 +1149,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:4b75d4a7-e6c5-4510-b286-2361d27efa3e",
-        "timestamp" : "2023-03-03T11:26:16+00:00",
+        "identifier" : "urn:uuid:97d76d93-634a-467c-8f26-342450c321d9",
+        "timestamp" : "2023-03-03T12:28:37+00:00",
         "total" : 1,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1101,7 +1187,7 @@
       "title" : "Test Types",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-03-03T11:25:12+00:00",
+      "date" : "2023-03-03T12:26:43+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -1121,8 +1207,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:c668881a-8d72-4db8-a284-56b148397d5c",
-        "timestamp" : "2023-03-03T11:26:16+00:00",
+        "identifier" : "urn:uuid:2c920795-7b93-47d9-8bb0-97b6308158ee",
+        "timestamp" : "2023-03-03T12:28:37+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1169,7 +1255,7 @@
       "title" : "ART Regimen Lines",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-03-03T11:25:12+00:00",
+      "date" : "2023-03-03T12:26:43+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -1189,8 +1275,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:fe98c905-4677-4848-ae53-94f28cb5f2b7",
-        "timestamp" : "2023-03-03T11:26:16+00:00",
+        "identifier" : "urn:uuid:4fecd7e4-0d51-4092-ada0-087400130c9d",
+        "timestamp" : "2023-03-03T12:28:38+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1237,7 +1323,7 @@
       "title" : "Specimen Type Used In Viral Load testing",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-03-03T11:25:12+00:00",
+      "date" : "2023-03-03T12:26:43+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -1257,8 +1343,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:d32cf267-d539-4856-ba49-475cec7b1bbd",
-        "timestamp" : "2023-03-03T11:26:17+00:00",
+        "identifier" : "urn:uuid:6744b454-065e-42c4-ad6c-c24979481d1e",
+        "timestamp" : "2023-03-03T12:28:39+00:00",
         "total" : 5,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1315,7 +1401,7 @@
       "title" : "Viral Load Result Code",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-03-03T11:25:12+00:00",
+      "date" : "2023-03-03T12:26:43+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -1335,8 +1421,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:75adb726-c3fb-4cb6-967c-169e7e418b67",
-        "timestamp" : "2023-03-03T11:26:17+00:00",
+        "identifier" : "urn:uuid:83a2663f-9020-45db-99b7-73d7546e5cfe",
+        "timestamp" : "2023-03-03T12:28:39+00:00",
         "total" : 1,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1373,7 +1459,7 @@
       "title" : "CD4 test result code",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-03-03T11:25:12+00:00",
+      "date" : "2023-03-03T12:26:43+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -1393,8 +1479,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:6999219f-aab3-4687-8de1-ae623821d421",
-        "timestamp" : "2023-03-03T11:26:18+00:00",
+        "identifier" : "urn:uuid:af657e24-ea98-4b3a-abbc-ad1efd5c2462",
+        "timestamp" : "2023-03-03T12:28:40+00:00",
         "total" : 1,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1431,7 +1517,7 @@
       "title" : "ARV Treatment Medication Request",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-03-03T11:25:12+00:00",
+      "date" : "2023-03-03T12:26:43+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -1451,8 +1537,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:cc365da6-a1bf-45c3-8842-fd2dee823cc3",
-        "timestamp" : "2023-03-03T11:26:19+00:00",
+        "identifier" : "urn:uuid:d620812a-f324-467b-898c-2ed16a87dbea",
+        "timestamp" : "2023-03-03T12:28:42+00:00",
         "total" : 1,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1489,7 +1575,7 @@
       "title" : "Key Population Status",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-03-03T11:25:12+00:00",
+      "date" : "2023-03-03T12:26:43+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -1509,8 +1595,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:0395be91-eaaa-4ee5-b405-527a3477ff85",
-        "timestamp" : "2023-03-03T11:26:19+00:00",
+        "identifier" : "urn:uuid:e143d9d2-40e3-4d70-bc9f-b9f2aa4cbafb",
+        "timestamp" : "2023-03-03T12:28:42+00:00",
         "total" : 7,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1562,6 +1648,64 @@
           "system" : "http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-key-population-status",
           "code" : "General-Population",
           "display" : "General Population"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-transferred-out",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "vs-transferred-out",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on Loinc v2.73</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA20597-3\"> </a>  <a href=\"https://loinc.org/LA20597-3/\">LA20597-3</a></td><td>http://loinc.org</td><td>Transferred to another hospital</td></tr></table></div>"
+      },
+      "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-transferred-out",
+      "version" : "0.2.0",
+      "name" : "VSTransferredOut",
+      "title" : "Transferred out",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2023-03-03T12:26:43+00:00",
+      "publisher" : "Jembi Health Systems",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.jembi.org"
+        },
+        {
+          "system" : "email",
+          "value" : "info@jembi.org"
+        }]
+      }],
+      "description" : "Transferred out codes",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:5a6c886d-dfb3-45bd-8ed2-14f8d8f1fe16",
+        "timestamp" : "2023-03-03T12:28:44+00:00",
+        "total" : 1,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://loinc.org|2.73"
+        }],
+        "contains" : [{
+          "system" : "http://loinc.org",
+          "code" : "LA20597-3",
+          "display" : "Transferred to another hospital"
         }]
       }
     }

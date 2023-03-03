@@ -18,7 +18,7 @@
   fhir:title [ fhir:v "HIV Case-Based Surveillance"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2023-03-03T11:25:12+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-03-03T12:26:43+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Jembi Health Systems"] ; # 
   fhir:contact ( [
      fhir:telecom ( [
@@ -525,6 +525,20 @@
      fhir:resource ( [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Organization" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/hiv-cbs/Organization/HIVOrganizationPatientTransferredToExample> ;
+         fhir:reference [ fhir:v "Organization/HIVOrganizationPatientTransferredToExample" ]
+       ] ;
+       fhir:name [ fhir:v "Example Organization - HIVOrganizationPatientTransferredToExample" ] ;
+       fhir:example [
+         fhir:v "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-organization-patient-transferred-to"^^xsd:anyURI ;
+         fhir:link <http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-organization-patient-transferred-to>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "CodeSystem" ]
        ] ) ;
        fhir:reference [
@@ -794,6 +808,17 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
+         fhir:link <http://openhie.org/fhir/hiv-cbs/ValueSet/vs-patient-enrollment-type> ;
+         fhir:reference [ fhir:v "ValueSet/vs-patient-enrollment-type" ]
+       ] ;
+       fhir:name [ fhir:v "Patient Type at Enrolment" ] ;
+       fhir:description [ fhir:v "A list of Patient Types at Enrolment" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <http://openhie.org/fhir/hiv-cbs/ValueSet/vs-vl-suppression> ;
          fhir:reference [ fhir:v "ValueSet/vs-vl-suppression" ]
        ] ;
@@ -943,6 +968,17 @@
        ] ;
        fhir:name [ fhir:v "Viral Load Specimen" ] ;
        fhir:description [ fhir:v "The test sample that was collected for the initiated lab order." ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-organization-patient-transferred-to> ;
+         fhir:reference [ fhir:v "StructureDefinition/hiv-organization-patient-transferred-to" ]
+       ] ;
+       fhir:name [ fhir:v "HIV Organization Patient Is Transferred To" ] ;
+       fhir:description [ fhir:v "Organization who is receiving the patient as being transferred in." ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -1157,6 +1193,20 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CarePlan" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/hiv-cbs/CarePlan/ARVTreatmentRefusedExample> ;
+         fhir:reference [ fhir:v "CarePlan/ARVTreatmentRefusedExample" ]
+       ] ;
+       fhir:name [ fhir:v "Example CarePlan - ARVTreatmentRefusedExample" ] ;
+       fhir:example [
+         fhir:v "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-arv-treatment"^^xsd:anyURI ;
+         fhir:link <http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-arv-treatment>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
@@ -1284,6 +1334,45 @@
          fhir:v "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-lab-task"^^xsd:anyURI ;
          fhir:link <http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-lab-task>
        ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CarePlan" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/hiv-cbs/CarePlan/ARVTreatmentContactedExample> ;
+         fhir:reference [ fhir:v "CarePlan/ARVTreatmentContactedExample" ]
+       ] ;
+       fhir:name [ fhir:v "Example CarePlan - ARVTreatmentContactedExample" ] ;
+       fhir:example [
+         fhir:v "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-arv-treatment"^^xsd:anyURI ;
+         fhir:link <http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-arv-treatment>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ServiceRequest" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/hiv-cbs/ServiceRequest/TransferredOutServiceRequestExample> ;
+         fhir:reference [ fhir:v "ServiceRequest/TransferredOutServiceRequestExample" ]
+       ] ;
+       fhir:name [ fhir:v "Example ServiceRequest - TransferredOutServiceRequestExample" ] ;
+       fhir:example [
+         fhir:v "http://openhie.org/fhir/hiv-cbs/StructureDefinition/transferred-out"^^xsd:anyURI ;
+         fhir:link <http://openhie.org/fhir/hiv-cbs/StructureDefinition/transferred-out>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/hiv-cbs/StructureDefinition/transferred-out> ;
+         fhir:reference [ fhir:v "StructureDefinition/transferred-out" ]
+       ] ;
+       fhir:name [ fhir:v "Transferred Out Service Request" ] ;
+       fhir:description [ fhir:v "A service request that initiates the need for a patient to be transferred to another organization." ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -1467,6 +1556,17 @@
        ] ;
        fhir:name [ fhir:v "HIV Recency Test Result" ] ;
        fhir:description [ fhir:v "This profile is to record the HIV recency test result data for a patient." ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/hiv-cbs/ValueSet/vs-transferred-out> ;
+         fhir:reference [ fhir:v "ValueSet/vs-transferred-out" ]
+       ] ;
+       fhir:name [ fhir:v "Transferred out" ] ;
+       fhir:description [ fhir:v "Transferred out codes" ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
