@@ -112,6 +112,13 @@
     "name" : "HIVLabTask"
   },
   {
+    "id" : "hiv-med-req",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-med-req",
+    "version" : "0.2.0",
+    "name" : "HIVCareMedicationRequest"
+  },
+  {
     "id" : "hiv-organization",
     "type" : "StructureDefinition",
     "url" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-organization",
@@ -292,13 +299,6 @@
     "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-key-population-status",
     "version" : "0.2.0",
     "name" : "VSKeyPopulationSatus"
-  },
-  {
-    "id" : "vs-patient-enrollment-type",
-    "type" : "ValueSet",
-    "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-patient-enrollment-type",
-    "version" : "0.2.0",
-    "name" : "VSPatientEnrollmentType"
   },
   {
     "id" : "vs-reason-for-assessment-or-test-not-performed",

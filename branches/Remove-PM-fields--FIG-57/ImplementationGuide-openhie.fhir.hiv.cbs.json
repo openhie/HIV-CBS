@@ -11,7 +11,7 @@
   "title" : "HIV Case-Based Surveillance",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2023-03-02T11:42:48+00:00",
+  "date" : "2023-03-03T11:24:23+00:00",
   "publisher" : "Jembi Health Systems",
   "contact" : [{
     "telecom" : [{
@@ -630,6 +630,17 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationRequest"
+      }],
+      "reference" : {
+        "reference" : "MedicationRequest/HIVCareMedicationRequestExample"
+      },
+      "name" : "Example MedicationRequest - HIVCareMedicationRequestExample",
+      "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-med-req"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -846,17 +857,6 @@
       },
       "name" : "HIV Recency Testing Status",
       "description" : "A list of HIV recency statuses"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/vs-patient-enrollment-type"
-      },
-      "name" : "Patient Type at Enrolment",
-      "description" : "A list of Patient Types at Enrolment"
     },
     {
       "extension" : [{
@@ -1385,6 +1385,17 @@
       },
       "name" : "Viral Load Result Code",
       "description" : "A code used to indicate the category for the lab result."
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/hiv-med-req"
+      },
+      "name" : "HIV Care Medication Request",
+      "description" : "This profile is for recording the Patient's ARV Dispensing quantity in days."
     },
     {
       "extension" : [{
