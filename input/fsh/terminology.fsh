@@ -112,7 +112,8 @@ Id: vs-careplan-outcome
 Title: "ARV treatment outcomes"
 Description: "A list of possible ARV treatment outcomes."
 * ^experimental = false
-* $SCT#105480006 "Procedure declined by patient (situation)"
+* $SCT#737038009 "Declined consent for treatment (finding)"
+* $SCT#386473003 "Telephone follow-up (procedure)"
 
 CodeSystem: CSKeyPopulationStatus
 Id: cs-key-population-status
@@ -264,3 +265,10 @@ Description: "A list of possible HIV causes of deaths"
 * ^experimental = false
 *  $LNC#80359-3 "Cause of death.underlying [Manual]"
 *  $LNC#69441-4 "Other significant causes or conditions of death"
+
+ValueSet: VSTransferredOut
+Id: vs-transferred-out
+Title: "Transferred out"
+Description: "Transferred out codes"
+* ^experimental = false
+* $LNC#LA20597-3 "Transferred to another hospital"
