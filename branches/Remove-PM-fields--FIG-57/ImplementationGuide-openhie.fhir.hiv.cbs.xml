@@ -12,7 +12,7 @@
   <title value="HIV Case-Based Surveillance"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2023-03-03T11:25:12+00:00"/>
+  <date value="2023-03-03T12:48:46+00:00"/>
   <publisher value="Jembi Health Systems"/>
   <contact>
     <telecom>
@@ -461,6 +461,16 @@
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/HIVOrganizationPatientTransferredToExample"/>
+      </reference>
+      <name value="Example Organization - HIVOrganizationPatientTransferredToExample"/>
+      <exampleCanonical value="http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-organization-patient-transferred-to"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
@@ -811,6 +821,16 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/hiv-organization-patient-transferred-to"/>
+      </reference>
+      <name value="HIV Organization Patient Is Transferred To"/>
+      <description value="Organization who is receiving the patient as being transferred in."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Observation"/>
       </extension>
       <reference>
@@ -981,6 +1001,16 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CarePlan"/>
+      </extension>
+      <reference>
+        <reference value="CarePlan/ARVTreatmentRefusedExample"/>
+      </reference>
+      <name value="Example CarePlan - ARVTreatmentRefusedExample"/>
+      <exampleCanonical value="http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-arv-treatment"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -1088,6 +1118,36 @@
       </reference>
       <name value="Example Task - HIVLabOrderTaskExample"/>
       <exampleCanonical value="http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-lab-task"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CarePlan"/>
+      </extension>
+      <reference>
+        <reference value="CarePlan/ARVTreatmentContactedExample"/>
+      </reference>
+      <name value="Example CarePlan - ARVTreatmentContactedExample"/>
+      <exampleCanonical value="http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-arv-treatment"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/TransferredOutServiceRequestExample"/>
+      </reference>
+      <name value="Example ServiceRequest - TransferredOutServiceRequestExample"/>
+      <exampleCanonical value="http://openhie.org/fhir/hiv-cbs/StructureDefinition/transferred-out"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/transferred-out"/>
+      </reference>
+      <name value="Transferred Out Service Request"/>
+      <description value="A service request that initiates the need for a patient to be transferred to another organization."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1238,6 +1298,16 @@
       </reference>
       <name value="HIV Recency Test Result"/>
       <description value="This profile is to record the HIV recency test result data for a patient."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-transferred-out"/>
+      </reference>
+      <name value="Transferred out"/>
+      <description value="Transferred out codes"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
