@@ -176,6 +176,7 @@ Description: "This resource is used for Management of a Patient's HIV Programme.
 * type = $SCT#182837001
 * diagnosis.condition = Reference(HIVDiagnosisExample)
 * patient = Reference(HIVPatientExample)
+* managingOrganization = Reference(HIVOrganizationExample)
 * period.start = "2021-05-18"
 * period.end = "2021-05-18"
 
