@@ -1,0 +1,42 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "vs-arvtreatment-activity-type",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"https://loinc.org/45260-7/\">45260-7</a></td><td>HIV ART medication</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-arvtreatment-activity-type",
+  "version" : "0.2.0",
+  "name" : "VSARVMedicationRequest",
+  "title" : "ARV Treatment Medication Request",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2023-03-04T08:01:39+00:00",
+  "publisher" : "Jembi Health Systems",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.jembi.org"
+    },
+    {
+      "system" : "email",
+      "value" : "info@jembi.org"
+    }]
+  }],
+  "description" : "Codes used to represent a medication request for ART.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "45260-7",
+        "display" : "HIV ART medication"
+      }]
+    }]
+  }
+}

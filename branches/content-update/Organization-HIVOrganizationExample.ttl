@@ -1,0 +1,36 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://openhie.org/fhir/hiv-cbs/Organization/HIVOrganizationExample> a fhir:Organization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "HIVOrganizationExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-organization"^^xsd:anyURI ;
+       fhir:link <http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-organization>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"HIVOrganizationExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;HIVOrganizationExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-organization.html\">HIV Organization</a></p></div><p><b>identifier</b>: id: facility1</p><p><b>name</b>: HIV Test Services Health Facility</p><p><b>address</b>: DISI line 1 DISI line 2 DISI line 3 DISI city 1 DISI state 1 DISI postal code DISI country </p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://openhie.org/fhir/hiv-cbs/identifier/hiv-organization"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "facility1" ]
+  ] ) ; # 
+  fhir:name [ fhir:v "HIV Test Services Health Facility"] ; # 
+  fhir:address ( [
+     fhir:line ( [ fhir:v "DISI line 1" ] [ fhir:v "DISI line 2" ] [ fhir:v "DISI line 3" ] ) ;
+     fhir:city [ fhir:v "DISI city 1" ] ;
+     fhir:district [ fhir:v "DISI district 1" ] ;
+     fhir:state [ fhir:v "DISI state 1" ] ;
+     fhir:postalCode [ fhir:v "DISI postal code" ] ;
+     fhir:country [ fhir:v "DISI country" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

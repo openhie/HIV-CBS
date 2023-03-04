@@ -1,0 +1,40 @@
+{
+  "resourceType" : "MedicationRequest",
+  "id" : "HIVCareMedicationRequestExample",
+  "meta" : {
+    "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-med-req"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MedicationRequest</b><a name=\"HIVCareMedicationRequestExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MedicationRequest &quot;HIVCareMedicationRequestExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-med-req.html\">HIV Care Medication Request</a></p></div><p><b>status</b>: active</p><p><b>intent</b>: proposal</p><p><b>medication</b>: Atazanavir and ritonavir only product <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#878898002)</span></p><p><b>subject</b>: <a href=\"Patient-HIVPatientExample.html\">Patient/HIVPatientExample</a> &quot; SMITH&quot;</p><p><b>encounter</b>: <a href=\"Encounter-TargetFacilityEncounterExample.html\">Encounter/TargetFacilityEncounterExample</a></p><p><b>basedOn</b>: <a href=\"CarePlan-ARVTreatmentExample.html\">CarePlan/ARVTreatmentExample</a></p><p><b>note</b>: Additional information regarding the HIV Medication Request (By Organization/HIVOrganizationExample @Feb 7, 2015, 6:28:17 PM)</p><h3>DispenseRequests</h3><table class=\"grid\"><tr><td>-</td><td><b>Quantity</b></td></tr><tr><td>*</td><td>30</td></tr></table></div>"
+  },
+  "status" : "active",
+  "intent" : "proposal",
+  "medicationCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "878898002"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/HIVPatientExample"
+  },
+  "encounter" : {
+    "reference" : "Encounter/TargetFacilityEncounterExample"
+  },
+  "basedOn" : [{
+    "reference" : "CarePlan/ARVTreatmentExample"
+  }],
+  "note" : [{
+    "authorReference" : {
+      "reference" : "Organization/HIVOrganizationExample"
+    },
+    "time" : "2015-02-07T13:28:17-05:00",
+    "text" : "Additional information regarding the HIV Medication Request"
+  }],
+  "dispenseRequest" : {
+    "quantity" : {
+      "value" : 30
+    }
+  }
+}
