@@ -47,17 +47,17 @@
         Before an individual can be screened and assessed (diagnosis) for Human immunodeficiency virus (HIV), the individual must be registered into the EMR at the assessing facility/organization.
         <br />
         <br />
-        In addition, this use case documents the HIV Key Population associated with this sentinel event.
+        In addition, this use case documents the <a href ="ValueSet-vs-key-population-status" target="_blank">HIV Key Population codes</a> associated with this sentinel event.
     </p>
 
      <ul>
-        <li><strong>General Population:</strong> <a href="CodeSystem-cs-key-population-status.html#cs-key-population-status-General-Population">General Population</a></li>
-        <li><strong>Men who have sex with men (MSM):</strong> <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=472986005&amp;edition=MAIN/2023-01-31&amp;release=&amp;languages=en&amp;latestRedirect=false" target="_blank">472986005</a></li>
-        <li><strong>Female sex worker (FSW):</strong> <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=159799000&amp;edition=MAIN/2023-01-31&amp;release=&amp;languages=en&amp;latestRedirect=false" target="_blank">159799000</a></li>
-        <li><strong>Male sex worker (MSW):</strong> <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=159800001&amp;edition=MAIN/2023-01-31&amp;release=&amp;languages=en&amp;latestRedirect=false" target="_blank">159800001</a></li>
-        <li><strong>Persons who inject drugs (PWID):</strong> <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=228388006&amp;edition=MAIN/2023-01-31&amp;release=&amp;languages=en&amp;latestRedirect=false" target="_blank">228388006</a></li>
-        <li><strong>People who use drugs (PWUD):</strong> <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=417284009&amp;edition=MAIN/2023-01-31&amp;release=&amp;languages=en&amp;latestRedirect=false" target="_blank">417284009</a></li>
-        <li><strong>Transgender:</strong> <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=407375002&amp;edition=MAIN/2023-01-31&amp;release=&amp;languages=en&amp;latestRedirect=false" target="_blank">407375002</a></li>
+        <li><strong>General Population</strong></li>
+        <li><strong>Men who have sex with men (MSM)</strong></li>
+        <li><strong>Female sex worker (FSW)</strong></li>
+        <li><strong>Male sex worker (MSW)</strong></li>
+        <li><strong>Persons who inject drugs (PWID)</strong></li>
+        <li><strong>People who use drugs (PWUD)</strong></li>
+        <li><strong>Transgender</strong></li>
     </ul>
 
     <p class="heading">HIV Diagnosis</p>
@@ -97,16 +97,11 @@
 
      <ul>
         <li>Metadata</li>
-        <li><strong>Patient refusal to receive ART:</strong> <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=737038009&amp;edition=MAIN/2023-01-31&amp;release=&amp;languages=en&amp;latestRedirect=false" target="_blank">737038009</a></li>
-        <li><strong>Patient contacted for ART:</strong> <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=386473003&amp;edition=MAIN/2023-01-31&amp;release=&amp;languages=en&amp;latestRedirect=false" target="_blank">386473003</a></li>
-        <li><strong>Medication request:</strong> <a href="https://loinc.org/45260-7" target="_blank">45260-7</a></li>
-        <li>ARV regimen</li>
-        <li>ART therapeutic line</li>
-        <ul>
-            <li><strong>First line treatment:</strong> <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=708255002&amp;edition=MAIN/2023-01-31&amp;release=&amp;languages=en&amp;latestRedirect=false" target="_blank">708255002</a></li>
-            <li><strong>Second line treatment:</strong> <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=708256001&amp;edition=MAIN/2023-01-31&amp;release=&amp;languages=en&amp;latestRedirect=false" target="_blank">708256001</a></li>
-            <li><strong>Third line treatment:</strong> <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=708257005&amp;edition=MAIN/2023-01-31&amp;release=&amp;languages=en&amp;latestRedirect=false" target="_blank">708257005</a></li>
-        </ul>
+        <li><strong>Patient refusal to receive ART:</strong> <a href="ValueSet-vs-careplan-outcome" target="_blank">Code</a></li>
+        <li><strong>Patient contacted for ART:</strong> <a href="ValueSet-vs-careplan-outcome" target="_blank">Code</a></li>
+        <li><strong>Medication request:</strong> <a href="ValueSet-vs-arvtreatment-activity-type" target="_blank">Code</a></li>
+        <li><strong>ARV regimen:</strong> <a href="ValueSet-vs-arv-regimen" target="_blank">Codes</a></li>
+        <li><strong>ART therapeutic line:</strong> <a href="ValueSet-vs-artregimen-lines" target="_blank">Codes</a></li>
     </ul>
 
     <p class="heading">ART Regimen Switching</p>
@@ -162,9 +157,9 @@
 
     <ul>
         <li>Metadata</li>
-        <li>Outcome code</li>
+        <li><a href="ValueSet-vs-hiv-death" target="_blank">Outcome code</a></li>
         <ul>
-            <li><strong>Death:</strong> <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=419620001&amp;edition=MAIN/2023-01-31&amp;release=&amp;languages=en&amp;latestRedirect=false" target="_blank">419620001</a></li>
+            <li><strong>Death</strong></li>
         </ul>
     </ul>
 
@@ -184,24 +179,24 @@
 
     <ul>
         <li>Metadata</li>
-        <li>Test code</li>
+        <li><a href="ValueSet-vs-hiv-recency-test" target="_blank">Test code</a></li>
         <ul>
-            <li><strong>Rapid human immunodeficiency virus type 1 antibody test:</strong> <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=409788009&amp;edition=MAIN/2023-01-31&amp;release=&amp;languages=en&amp;latestRedirect=false" target="_blank">409788009</a></li>
+            <li><strong>Rapid human immunodeficiency virus type 1 antibody test</strong></li>
         </ul>
-        <li>Indication whether the HIV recency test was done</li>
+        <li><a href="ValueSet-vs-yes-no" target="_blank">Indication</a> whether the HIV recency test was done</li>
         <ul>
-            <li><strong>Yes:</strong> <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=373066001&amp;edition=MAIN/2023-01-31&amp;release=&amp;languages=en&amp;latestRedirect=false" target="_blank">373066001</a></li>
-            <li><strong>No:</strong> <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=373067005&amp;edition=MAIN/2023-01-31&amp;release=&amp;languages=en&amp;latestRedirect=false" target="_blank">373067005</a></li>
-            <li><strong>Unknown:</strong> <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=261665006&amp;edition=MAIN/2023-01-31&amp;release=&amp;languages=en&amp;latestRedirect=false" target="_blank">261665006</a></li>
+            <li><strong>Yes</strong></li>
+            <li><strong>No</strong></li>
+            <li><strong>Unknown</strong></li>
         </ul>
-        <li>HIV recency test result</li>
+        <li><a href="ValueSet-vs-hiv-recency-test-result" target="_blank">HUV recency test result</a></li>
         <ul>
-            <li><strong>Laboratory test finding:</strong> <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=118246004&amp;edition=MAIN/2023-01-31&amp;release=&amp;languages=en&amp;latestRedirect=false" target="_blank">118246004</a></li>
+            <li><strong>Laboratory test finding</strong></li>
         </ul>
-        <li>HIV recency status</li>
+        <li><a href="ValueSet-vs-hiv-recency-status" target="_blank">HIV recency status</a></li>
         <ul>
-            <li><strong>Recent:</strong> <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=6493001&amp;edition=MAIN/2023-01-31&amp;release=&amp;languages=en&amp;latestRedirect=false" target="_blank">6493001</a></li>
-            <li><strong>Note recent:</strong> <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=307294006&amp;edition=MAIN/2023-01-31&amp;release=&amp;languages=en&amp;latestRedirect=false" target="_blank">307294006</a></li>
+            <li><strong>Recent</strong></li>
+            <li><strong>Note recent</strong></li>
         </ul>
     </ul>
 
@@ -218,20 +213,20 @@
      <ul>
         <li>Metadata</li>
         <li>Order number</li>
-        <li>Test requested code</li>
+        <li><a href="ValueSet-vs-test-types" target="_blank">Test requested codes</a></li>
             <ul>
-                <li><strong>HIV 2 proviral DNA [Presence] in Specimen by NAA with probe detection:</strong> <a href="https://loinc.org/25842-6/" target="_blank">25842-6</a></li>
-                <li><strong>HIV 1 RNA [#/volume] (viral load) in Specimen by NAA with probe detection:</strong> <a href="https://loinc.org/25836-8/" target="_blank">25836-8</a></li>
-                <li><strong>CD3+CD4+ (T4 helper) cells [#/volume] in Blood:</strong> <a href="https://loinc.org/24467-3/" target="_blank">24467-3</a></li>
+                <li><strong>HIV 2 proviral DNA [Presence] in Specimen by NAA with probe detection</strong></li>
+                <li><strong>HIV 1 RNA [#/volume] (viral load) in Specimen by NAA with probe detection</strong></li>
+                <li><strong>CD3+CD4+ (T4 helper) cells [#/volume] in Blood</strong></li>
             </ul>
         <li>Reason for the test</li>
-        <li>Specimen type</li>
+        <li><a href="ValueSet-vs-specimen-type" target="_blank">Specimen types</a></li>
             <ul>
-                <li><strong>Plasma:</strong> <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=119361006&amp;edition=MAIN/2023-01-31&amp;release=&amp;languages=en&amp;latestRedirect=false" target="_blank">119361006</a></li>
-                <li><strong>Dried blood spot:</strong> <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=440500007&amp;edition=MAIN/2023-01-31&amp;release=&amp;languages=en&amp;latestRedirect=false" target="_blank">440500007</a></li>
-                <li><strong>Oral fluid:</strong> <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=441620008&amp;edition=MAIN/2023-01-31&amp;release=&amp;languages=en&amp;latestRedirect=false" target="_blank">441620008</a></li>
-                <li><strong>Whole blood:</strong> <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=258580003&amp;edition=MAIN/2023-01-31&amp;release=&amp;languages=en&amp;latestRedirect=false" target="_blank">258580003</a></li>
-                <li><strong>Serum:</strong> <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=119364003&amp;edition=MAIN/2023-01-31&amp;release=&amp;languages=en&amp;latestRedirect=false" target="_blank">119364003</a></li>
+                <li><strong>Plasma</strong></li>
+                <li><strong>Dried blood spot</strong></li>
+                <li><strong>Oral fluid</strong></li>
+                <li><strong>Whole blood</strong></li>
+                <li><strong>Serum</strong></li>
             </ul>
         <li>Specimen ID</li>
     </ul>
@@ -301,7 +296,7 @@
                 <li>Only applicable to lab orders that have been successfully examined and issued with a result</li>
                 <li>Codes</li>
                 <ul>
-                    <li><strong>Human immunodeficiency virus infection:</strong> <a href="https://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=86406008&amp;edition=MAIN/2023-01-31&amp;release=&amp;languages=en&amp;latestRedirect=false" target="_blank">86406008</a></li>
+                    <li><strong>Human immunodeficiency virus infection:</strong> <a href="ValueSet-vs-condition" target="_blank">Code</a></li>
                 </ul>
             </ul>
     </ul>
