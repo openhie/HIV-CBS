@@ -49,21 +49,27 @@
         <li>Test result - measured as copies per milliliter of blood (copies/mL)</li>
         <li>Specimen ID</li>
         <li>Patient age</li>
+        <li>
             <ul>
                 <li>This is calculated using the patient's date of birth.</li>
             </ul>
+        </li>
         <li>Patient gender</li>
         <li>Patient residence country</li>
         <li>Lab order requesting provider name</li>
         <li>Lab order requesting provider zip code</li>
+        <li>
             <ul>
                 <li><strong>Currently not in scope</strong></li>
             </ul>
+        </li>
         <li>Lab examination performing provider name</li>
         <li>Lab examination performing provider zip code</li>
+        <li>
              <ul>
                 <li><strong>Currently not in scope</strong></li>
             </ul>
+        </li>
         <li><a href="ValueSet-vs-specimen-type.html">Specimen type</a> (must use appropriate codes issued by LOINC or SNOMED)</li>
         <li>Lab order date &amp; time</li>
         <li>Sample collection date</li>
@@ -74,49 +80,69 @@
         <li>Lab order requesting provider address</li>
         <li>Lab order requesting provider contact details</li>
         <li>Patient's family members' HIV status</li>
+        <li>
             <ul>
                 <li><strong>Currently not in scope</strong></li>
             </ul>
+        </li>
         <li>Patient's date of enrolment in HIV care</li>
         <li>Patient's date of starting ART</li>
         <li>Patient's ARV regimen (including any regimen switches)</li>
+        <li>
             <ul>
                 <li>Date prescribed</li>
                 <li>Date dispensed</li>
+                <li>
                      <ul>
                         <li><strong>Currently not in scope</strong></li>
                     </ul>
+                </li>
                 <li>Dose quantity</li>
+                <li>
                    <ul>
                         <li><strong>Currently not in scope</strong></li>
                     </ul>
+                </li>
             </ul>
+        </li>
         <li>Patient's TB status</li>
+        <li>
             <ul>
                 <li><strong>Currently not in scope</strong></li>
             </ul>
+        </li>
         <li>Patient's transfer out date</li>
+        <li>
             <ul>
                 <li>Receiving organization</li>
             </ul>
+        </li>
         <li>Patient's date of death</li>
         <li>Patient's interruption in treatment (IIT)</li>
+        <li>
             <ul>
                 <li>Date</li>
                 <li>Reason</li>
+                <li>
                     <ul>
                         <li><strong>Currently, only lost to follow-up (LTFU) is supported.</strong></li>
                     </ul>
+                </li>
             </ul>
+        </li>
         <li>Patient's pregnancy status</li>
+        <li>
             <ul>
                 <li><strong>Currently not in scope</strong></li>
             </ul>
+        </li>
         <li>Patient visit dates</li>
         <li>Reason for the patient visit</li>
+        <li>
             <ul>
                 <li><strong>Currently not in scope</strong></li>
             </ul>
+        </li>
     </ul>
 
     <h3>Use Cases</h3> <a name="use-cases"> </a>
