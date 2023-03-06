@@ -56,14 +56,14 @@
         You will need to create a new repository for the implementation guide project in the <a href="https://github.com/openhie" target="_blank">OpenHIE</a>.
         <br />
         <br />
-
-        <blockquote class="stu-note">
-            <ul>
-                <li>The OpenHIE Github space only permits authorized accounts to create new implementation guides.</li>
-                <li>Assistance may be required by the OpenHIE community to assist with the process of getting an implementation guide published.</li>
-            </ul>
-        </blockquote>
     </p>
+
+    <blockquote class="stu-note">
+        <ul>
+            <li>The OpenHIE Github space only permits authorized accounts to create new implementation guides.</li>
+            <li>Assistance may be required by the OpenHIE community to assist with the process of getting an implementation guide published.</li>
+        </ul>
+    </blockquote>
 
     <p>
         Follow these steps to create a new implementation guide repository in OpenHIE.
@@ -138,14 +138,15 @@
         When it comes to validating the implementation guide, simply launch the file "<strong>output\qa.html</strong>" and view its contents. It will inform you of any warnings and errors found in the implementation guide specification.
         <br />
         <br />
-        <blockquote class="stu-note">
-            <ul>
-                <li>The output\qa.html report is a critical tool to inform quality and correctness of an implementation guide!</li>
-                <li>The implementation guide must be free of all errors!</li>
-                <li>There may be a need to silence unnecessary warnings. Follow the instructions in the file "<strong>ignoreWarnings.txt</strong>".</li>
-            </ul>
-        </blockquote>
     </p>
+
+    <blockquote class="stu-note">
+        <ul>
+            <li>The output\qa.html report is a critical tool to inform quality and correctness of an implementation guide!</li>
+            <li>The implementation guide must be free of all errors!</li>
+            <li>There may be a need to silence unnecessary warnings. Follow the instructions in the file "<strong>ignoreWarnings.txt</strong>".</li>
+        </ul>
+    </blockquote>
 
     <p>
         Please use <a href="https://www.postman.com/" target="_blank">Postman</a> to facilitate the process of submitting message requests to your local HAPI FHIR instance.

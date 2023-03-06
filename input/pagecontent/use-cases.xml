@@ -47,7 +47,7 @@
         Before an individual can be screened and assessed (diagnosis) for Human immunodeficiency virus (HIV), the individual must be registered into the EMR at the assessing facility/organization.
         <br />
         <br />
-        In addition, this use case documents the <a href ="ValueSet-vs-key-population-status" target="_blank">HIV Key Population codes</a> associated with this sentinel event.
+        In addition, this use case documents the <a href="ValueSet-vs-key-population-status.html" target="_blank">HIV Key Population codes</a> associated with this sentinel event.
     </p>
 
      <ul>
@@ -97,11 +97,11 @@
 
      <ul>
         <li>Metadata</li>
-        <li><strong>Patient refusal to receive ART:</strong> <a href="ValueSet-vs-careplan-outcome" target="_blank">Code</a></li>
-        <li><strong>Patient contacted for ART:</strong> <a href="ValueSet-vs-careplan-outcome" target="_blank">Code</a></li>
-        <li><strong>Medication request:</strong> <a href="ValueSet-vs-arvtreatment-activity-type" target="_blank">Code</a></li>
-        <li><strong>ARV regimen:</strong> <a href="ValueSet-vs-arv-regimen" target="_blank">Codes</a></li>
-        <li><strong>ART therapeutic line:</strong> <a href="ValueSet-vs-artregimen-lines" target="_blank">Codes</a></li>
+        <li><strong>Patient refusal to receive ART:</strong> <a href="ValueSet-vs-careplan-outcome.html" target="_blank">Code</a></li>
+        <li><strong>Patient contacted for ART:</strong> <a href="ValueSet-vs-careplan-outcome.html" target="_blank">Code</a></li>
+        <li><strong>Medication request:</strong> <a href="ValueSet-vs-arvtreatment-activity-type.html" target="_blank">Code</a></li>
+        <li><strong>ARV regimen:</strong> <a href="ValueSet-vs-arv-regimen.html" target="_blank">Codes</a></li>
+        <li><strong>ART therapeutic line:</strong> <a href="ValueSet-vs-artregimen-lines.html" target="_blank">Codes</a></li>
     </ul>
 
     <p class="heading">ART Regimen Switching</p>
@@ -157,10 +157,12 @@
 
     <ul>
         <li>Metadata</li>
-        <li><a href="ValueSet-vs-hiv-death" target="_blank">Outcome code</a></li>
-        <ul>
-            <li><strong>Death</strong></li>
-        </ul>
+        <li><a href="ValueSet-vs-hiv-death.html" target="_blank">Outcome code</a></li>
+        <li>
+            <ul>
+                <li><strong>Death</strong></li>
+            </ul>
+        </li>
     </ul>
 
     <p class="heading">HIV Recency Testing</p>
@@ -179,25 +181,33 @@
 
     <ul>
         <li>Metadata</li>
-        <li><a href="ValueSet-vs-hiv-recency-test" target="_blank">Test code</a></li>
-        <ul>
-            <li><strong>Rapid human immunodeficiency virus type 1 antibody test</strong></li>
-        </ul>
-        <li><a href="ValueSet-vs-yes-no" target="_blank">Indication</a> whether the HIV recency test was done</li>
-        <ul>
-            <li><strong>Yes</strong></li>
-            <li><strong>No</strong></li>
-            <li><strong>Unknown</strong></li>
-        </ul>
-        <li><a href="ValueSet-vs-hiv-recency-test-result" target="_blank">HUV recency test result</a></li>
-        <ul>
-            <li><strong>Laboratory test finding</strong></li>
-        </ul>
-        <li><a href="ValueSet-vs-hiv-recency-status" target="_blank">HIV recency status</a></li>
-        <ul>
-            <li><strong>Recent</strong></li>
-            <li><strong>Note recent</strong></li>
-        </ul>
+        <li><a href="ValueSet-vs-hiv-recency-test.html" target="_blank">Test code</a></li>
+        <li>
+            <ul>
+                <li><strong>Rapid human immunodeficiency virus type 1 antibody test</strong></li>
+            </ul>
+        </li>
+        <li><a href="ValueSet-vs-yes-no.html" target="_blank">Indication</a> whether the HIV recency test was done</li>
+        <li>
+            <ul>
+                <li><strong>Yes</strong></li>
+                <li><strong>No</strong></li>
+                <li><strong>Unknown</strong></li>
+            </ul>
+        </li>
+        <li><a href="ValueSet-vs-hiv-recency-test-result.html" target="_blank">HIV recency test result</a></li>
+        <li>
+            <ul>
+                <li><strong>Laboratory test finding</strong></li>
+            </ul>
+        </li>
+        <li><a href="ValueSet-vs-hiv-recency-status.html" target="_blank">HIV recency status</a></li>
+        <li>
+            <ul>
+                <li><strong>Recent</strong></li>
+                <li><strong>Note recent</strong></li>
+            </ul>
+        </li>
     </ul>
 
     <p class="heading">Submit lab order</p>
@@ -213,14 +223,17 @@
      <ul>
         <li>Metadata</li>
         <li>Order number</li>
-        <li><a href="ValueSet-vs-test-types" target="_blank">Test requested codes</a></li>
+        <li><a href="ValueSet-vs-test-types.html" target="_blank">Test requested codes</a></li>
+        <li>
             <ul>
                 <li><strong>HIV 2 proviral DNA [Presence] in Specimen by NAA with probe detection</strong></li>
                 <li><strong>HIV 1 RNA [#/volume] (viral load) in Specimen by NAA with probe detection</strong></li>
                 <li><strong>CD3+CD4+ (T4 helper) cells [#/volume] in Blood</strong></li>
             </ul>
+        </li>
         <li>Reason for the test</li>
-        <li><a href="ValueSet-vs-specimen-type" target="_blank">Specimen types</a></li>
+        <li><a href="ValueSet-vs-specimen-type.html" target="_blank">Specimen types</a></li>
+        <li>
             <ul>
                 <li><strong>Plasma</strong></li>
                 <li><strong>Dried blood spot</strong></li>
@@ -228,6 +241,7 @@
                 <li><strong>Whole blood</strong></li>
                 <li><strong>Serum</strong></li>
             </ul>
+        </li>
         <li>Specimen ID</li>
     </ul>
 
@@ -245,9 +259,11 @@
         <li>Metadata</li>
         <li>Sample collection date &amp; time</li>
         <li>Specimen type</li>
+        <li>
             <ul>
                 <li>Same as the <u>submit lab order</u> use case</li>
             </ul>
+        </li>
         <li>Specimen ID</li>
     </ul>
 
@@ -271,34 +287,48 @@
         <li>Metadata</li>
         <li>Order number</li>
         <li>Reason for not performing test</li>
+        <li>
             <ul>
                 <li>Only applicable for lab cancellations and lab rejections</li>
             </ul>
+        </li>
         <li>Output code</li>
+        <li>
             <ul>
                 <li>Only applicable to lab orders that have been successfully examined and issued with a result</li>
                 <li>Currently, the code of <a href="ValueSet-vs-vl-result-code.html">Human immunodeficiency virus-1 nucleic acid assay</a> represents the successful completion of a lab order</li>
             </ul>
+        </li>
         <li>Test requested code</li>
+        <li>
             <ul>
                 <li>Same as the <u>submit lab order</u> use case</li>
             </ul>
+        </li>
         <li>Specimen ID</li>
+        <li>
             <ul>
                 <li>Same as the <u>sample collection</u> use case</li>
             </ul>
+        </li>
         <li>Specimen type</li>
+        <li>
             <ul>
                 <li>Same as the <u>submit lab order</u> use case</li>
             </ul>
+        </li>
         <li>Result code</li>
+        <li>
             <ul>
                 <li>Only applicable to lab orders that have been successfully examined and issued with a result</li>
                 <li>Codes</li>
-                <ul>
-                    <li><strong>Human immunodeficiency virus infection:</strong> <a href="ValueSet-vs-condition" target="_blank">Code</a></li>
-                </ul>
+                <li>
+                    <ul>
+                        <li><strong>Human immunodeficiency virus infection:</strong> <a href="ValueSet-vs-condition.html" target="_blank">Code</a></li>
+                    </ul>
+                </li>
             </ul>
+        </li>
     </ul>
 
     <h3>References</h3> <a name="references"> </a>
