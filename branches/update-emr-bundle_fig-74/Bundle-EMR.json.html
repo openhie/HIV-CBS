@@ -879,82 +879,6 @@
       }
     },
     {
-      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "Specimen/VLSpecimenExample",
-      "<a href="http://hl7.org/fhir/R4/specimen.html#Specimen">resource</a>" : {
-        "<a href="http://hl7.org/fhir/R4/specimen.html">resourceType</a>" : "Specimen",
-        "<a href="http://hl7.org/fhir/R4/specimen.html#Specimen.id">id</a>" : "VLSpecimenExample",
-        "<a href="http://hl7.org/fhir/R4/specimen.html#Specimen.meta">meta</a>" : {
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
-            "http://openhie.org/fhir/hiv-cbs/StructureDefinition/viral-load-specimen"
-          ]
-        },
-        "<a href="http://hl7.org/fhir/R4/specimen.html#Specimen.text">text</a>" : {
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Specimen&lt;/b&gt;&lt;a name=\&quot;VLSpecimenExample\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource Specimen &amp;quot;VLSpecimenExample&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-viral-load-specimen.html\&quot;&gt;Viral Load Specimen&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: abc123&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Plasma specimen &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://browser.ihtsdotools.org/\&quot;&gt;SNOMED CT&lt;/a&gt;#119361006)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;#Patient_HIVPatientExample\&quot;&gt;See above (Patient/HIVPatientExample)&lt;/a&gt;&lt;/p&gt;&lt;h3&gt;Collections&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Collected[x]&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;2022-07-28&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;note&lt;/b&gt;: additional notes here (By Organization/HIVOrganizationExample @Feb 7, 2015, 6:28:17 PM)&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
-        },
-        "<a href="http://hl7.org/fhir/R4/specimen.html#Specimen.identifier">identifier</a>" : [
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "http://openhie.org/fhir/hiv-cbs/identifier/specimen",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "abc123"
-          }
-        ],
-        "<a href="http://hl7.org/fhir/R4/specimen.html#Specimen.type">type</a>" : {
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
-              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "119361006"
-            }
-          ]
-        },
-        "<a href="http://hl7.org/fhir/R4/specimen.html#Specimen.subject">subject</a>" : {
-          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/HIVPatientExample"
-        },
-        "<a href="http://hl7.org/fhir/R4/specimen.html#Specimen.collection">collection</a>" : {
-          "<a href="http://hl7.org/fhir/R4/specimen.html#Specimen.collection.collected[x]">collectedDateTime</a>" : "2022-07-28"
-        },
-        "<a href="http://hl7.org/fhir/R4/specimen.html#Specimen.note">note</a>" : [
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Annotation#Annotation.author[x]">authorReference</a>" : {
-              "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Organization/HIVOrganizationExample"
-            },
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Annotation#Annotation.time">time</a>" : "2015-02-07T13:28:17-05:00",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Annotation#Annotation.text">text</a>" : "additional notes here"
-          }
-        ]
-      },
-      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request">request</a>" : {
-        "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.method">method</a>" : "PUT",
-        "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.url">url</a>" : "Specimen/VLSpecimenExample"
-      }
-    },
-    {
-      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "Location/HIVServiceRequestLocationExample",
-      "<a href="http://hl7.org/fhir/R4/location.html#Location">resource</a>" : {
-        "<a href="http://hl7.org/fhir/R4/location.html">resourceType</a>" : "Location",
-        "<a href="http://hl7.org/fhir/R4/location.html#Location.id">id</a>" : "HIVServiceRequestLocationExample",
-        "<a href="http://hl7.org/fhir/R4/location.html#Location.meta">meta</a>" : {
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
-            "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-service-request-location"
-          ]
-        },
-        "<a href="http://hl7.org/fhir/R4/location.html#Location.text">text</a>" : {
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Location&lt;/b&gt;&lt;a name=\&quot;HIVServiceRequestLocationExample\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource Location &amp;quot;HIVServiceRequestLocationExample&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-hiv-service-request-location.html\&quot;&gt;Lab Order Request Location&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: HIV Location&lt;/p&gt;&lt;p&gt;&lt;b&gt;address&lt;/b&gt;: DISI city DISI state DISI country &lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
-        },
-        "<a href="http://hl7.org/fhir/R4/location.html#Location.name">name</a>" : "HIV Location",
-        "<a href="http://hl7.org/fhir/R4/location.html#Location.address">address</a>" : {
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.city">city</a>" : "DISI city",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.district">district</a>" : "DISI district",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.state">state</a>" : "DISI state",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.country">country</a>" : "DISI country"
-        }
-      },
-      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request">request</a>" : {
-        "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.method">method</a>" : "PUT",
-        "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.url">url</a>" : "Location/HIVServiceRequestLocationExample"
-      }
-    },
-    {
       "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "Practitioner/PractitionerExample",
       "<a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner">resource</a>" : {
         "<a href="http://hl7.org/fhir/R4/practitioner.html">resourceType</a>" : "Practitioner",
@@ -1000,7 +924,7 @@
         },
         "<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.text">text</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: ServiceRequest&lt;/b&gt;&lt;a name=\&quot;HIVServiceRequestExample\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource ServiceRequest &amp;quot;HIVServiceRequestExample&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-HIV-lab-order.html\&quot;&gt;Lab Order&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: ORDER12345&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: completed&lt;/p&gt;&lt;p&gt;&lt;b&gt;intent&lt;/b&gt;: order&lt;/p&gt;&lt;p&gt;&lt;b&gt;doNotPerform&lt;/b&gt;: false&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: HIV 1 RNA [#/volume] (viral load) in Specimen by NAA with probe detection &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://loinc.org/\&quot;&gt;LOINC&lt;/a&gt;#25836-8)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;#Patient_HIVPatientExample\&quot;&gt;See above (Patient/HIVPatientExample)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;encounter&lt;/b&gt;: &lt;a href=\&quot;#Encounter_TargetFacilityEncounterExample\&quot;&gt;See above (Encounter/TargetFacilityEncounterExample)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;occurrence&lt;/b&gt;: 2012-01-05&lt;/p&gt;&lt;p&gt;&lt;b&gt;requester&lt;/b&gt;: &lt;a href=\&quot;#Practitioner_PractitionerExample\&quot;&gt;See above (Practitioner/PractitionerExample)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;locationReference&lt;/b&gt;: &lt;a href=\&quot;#Location_HIVServiceRequestLocationExample\&quot;&gt;See above (Location/HIVServiceRequestLocationExample)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;reasonCode&lt;/b&gt;: Repeat laboratory specimen sent (situation) &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://browser.ihtsdotools.org/\&quot;&gt;SNOMED CT&lt;/a&gt;#428450006)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;specimen&lt;/b&gt;: &lt;a href=\&quot;#Specimen_VLSpecimenExample\&quot;&gt;See above (Specimen/VLSpecimenExample)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;note&lt;/b&gt;: additional notes here (By Organization/HIVOrganizationExample @Feb 7, 2015, 6:28:17 PM)&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: ServiceRequest&lt;/b&gt;&lt;a name=\&quot;HIVServiceRequestExample\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource ServiceRequest &amp;quot;HIVServiceRequestExample&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-HIV-lab-order.html\&quot;&gt;Lab Order&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: ORDER12345&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: completed&lt;/p&gt;&lt;p&gt;&lt;b&gt;intent&lt;/b&gt;: order&lt;/p&gt;&lt;p&gt;&lt;b&gt;doNotPerform&lt;/b&gt;: false&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: HIV 1 RNA [#/volume] (viral load) in Specimen by NAA with probe detection &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://loinc.org/\&quot;&gt;LOINC&lt;/a&gt;#25836-8)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;#Patient_HIVPatientExample\&quot;&gt;See above (Patient/HIVPatientExample)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;encounter&lt;/b&gt;: &lt;a href=\&quot;#Encounter_TargetFacilityEncounterExample\&quot;&gt;See above (Encounter/TargetFacilityEncounterExample)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;occurrence&lt;/b&gt;: 2012-01-05&lt;/p&gt;&lt;p&gt;&lt;b&gt;requester&lt;/b&gt;: &lt;a href=\&quot;#Practitioner_PractitionerExample\&quot;&gt;See above (Practitioner/PractitionerExample)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;locationReference&lt;/b&gt;: &lt;a href=\&quot;Location-HIVServiceRequestLocationExample.html\&quot;&gt;Location/HIVServiceRequestLocationExample&lt;/a&gt; &amp;quot;HIV Location&amp;quot;&lt;/p&gt;&lt;p&gt;&lt;b&gt;reasonCode&lt;/b&gt;: Repeat laboratory specimen sent (situation) &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://browser.ihtsdotools.org/\&quot;&gt;SNOMED CT&lt;/a&gt;#428450006)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;specimen&lt;/b&gt;: &lt;a href=\&quot;Specimen-VLSpecimenExample.html\&quot;&gt;Specimen/VLSpecimenExample&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;note&lt;/b&gt;: additional notes here (By Organization/HIVOrganizationExample @Feb 7, 2015, 6:28:17 PM)&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
         },
         "<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.identifier">identifier</a>" : [
           {
@@ -1062,176 +986,6 @@
       "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request">request</a>" : {
         "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.method">method</a>" : "PUT",
         "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.url">url</a>" : "ServiceRequest/HIVServiceRequestExample"
-      }
-    },
-    {
-      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "Task/HIVLabOrderTaskExample",
-      "<a href="http://hl7.org/fhir/R4/task.html#Task">resource</a>" : {
-        "<a href="http://hl7.org/fhir/R4/task.html">resourceType</a>" : "Task",
-        "<a href="http://hl7.org/fhir/R4/task.html#Task.id">id</a>" : "HIVLabOrderTaskExample",
-        "<a href="http://hl7.org/fhir/R4/task.html#Task.meta">meta</a>" : {
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
-            "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-lab-task"
-          ]
-        },
-        "<a href="http://hl7.org/fhir/R4/task.html#Task.text">text</a>" : {
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Task&lt;/b&gt;&lt;a name=\&quot;HIVLabOrderTaskExample\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource Task &amp;quot;HIVLabOrderTaskExample&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-hiv-lab-task.html\&quot;&gt;Lab Task&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: ORDER12345&lt;/p&gt;&lt;p&gt;&lt;b&gt;basedOn&lt;/b&gt;: &lt;a href=\&quot;#ServiceRequest_HIVServiceRequestExample\&quot;&gt;See above (ServiceRequest/HIVServiceRequestExample)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: requested&lt;/p&gt;&lt;p&gt;&lt;b&gt;intent&lt;/b&gt;: order&lt;/p&gt;&lt;p&gt;&lt;b&gt;executionPeriod&lt;/b&gt;: 2022-07-28 --&amp;gt; (ongoing)&lt;/p&gt;&lt;p&gt;&lt;b&gt;lastModified&lt;/b&gt;: 2022-07-28&lt;/p&gt;&lt;p&gt;&lt;b&gt;requester&lt;/b&gt;: &lt;a href=\&quot;Organization-HIVOrganizationExample.html\&quot;&gt;Organization/HIVOrganizationExample&lt;/a&gt; &amp;quot;HIV Test Services Health Facility&amp;quot;&lt;/p&gt;&lt;p&gt;&lt;b&gt;owner&lt;/b&gt;: &lt;a href=\&quot;Organization-HIVOrganizationExample.html\&quot;&gt;Organization/HIVOrganizationExample&lt;/a&gt; &amp;quot;HIV Test Services Health Facility&amp;quot;&lt;/p&gt;&lt;p&gt;&lt;b&gt;note&lt;/b&gt;: additional notes here (By Organization/HIVOrganizationExample @Feb 7, 2015, 6:28:17 PM)&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
-        },
-        "<a href="http://hl7.org/fhir/R4/task.html#Task.identifier">identifier</a>" : [
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "http://openhie.org/fhir/hiv-cbs/lab-integration/test-order-number",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "ORDER12345"
-          }
-        ],
-        "<a href="http://hl7.org/fhir/R4/task.html#Task.basedOn">basedOn</a>" : [
-          {
-            "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "ServiceRequest/HIVServiceRequestExample"
-          }
-        ],
-        "<a href="http://hl7.org/fhir/R4/task.html#Task.status">status</a>" : "requested",
-        "<a href="http://hl7.org/fhir/R4/task.html#Task.intent">intent</a>" : "order",
-        "<a href="http://hl7.org/fhir/R4/task.html#Task.executionPeriod">executionPeriod</a>" : {
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">start</a>" : "2022-07-28"
-        },
-        "<a href="http://hl7.org/fhir/R4/task.html#Task.lastModified">lastModified</a>" : "2022-07-28",
-        "<a href="http://hl7.org/fhir/R4/task.html#Task.requester">requester</a>" : {
-          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Organization/HIVOrganizationExample"
-        },
-        "<a href="http://hl7.org/fhir/R4/task.html#Task.owner">owner</a>" : {
-          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Organization/HIVOrganizationExample"
-        },
-        "<a href="http://hl7.org/fhir/R4/task.html#Task.note">note</a>" : [
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Annotation#Annotation.author[x]">authorReference</a>" : {
-              "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Organization/HIVOrganizationExample"
-            },
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Annotation#Annotation.time">time</a>" : "2015-02-07T13:28:17-05:00",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Annotation#Annotation.text">text</a>" : "additional notes here"
-          }
-        ]
-      },
-      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request">request</a>" : {
-        "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.method">method</a>" : "PUT",
-        "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.url">url</a>" : "Task/HIVLabOrderTaskExample"
-      }
-    },
-    {
-      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "Task/HIVLabResultTaskExample",
-      "<a href="http://hl7.org/fhir/R4/task.html#Task">resource</a>" : {
-        "<a href="http://hl7.org/fhir/R4/task.html">resourceType</a>" : "Task",
-        "<a href="http://hl7.org/fhir/R4/task.html#Task.id">id</a>" : "HIVLabResultTaskExample",
-        "<a href="http://hl7.org/fhir/R4/task.html#Task.meta">meta</a>" : {
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
-            "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-lab-task"
-          ]
-        },
-        "<a href="http://hl7.org/fhir/R4/task.html#Task.text">text</a>" : {
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Task&lt;/b&gt;&lt;a name=\&quot;HIVLabResultTaskExample\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource Task &amp;quot;HIVLabResultTaskExample&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-hiv-lab-task.html\&quot;&gt;Lab Task&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: ORDER12345&lt;/p&gt;&lt;p&gt;&lt;b&gt;basedOn&lt;/b&gt;: &lt;a href=\&quot;#ServiceRequest_HIVServiceRequestExample\&quot;&gt;See above (ServiceRequest/HIVServiceRequestExample)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: completed&lt;/p&gt;&lt;p&gt;&lt;b&gt;intent&lt;/b&gt;: order&lt;/p&gt;&lt;p&gt;&lt;b&gt;executionPeriod&lt;/b&gt;: ?? --&amp;gt; 2022-07-30&lt;/p&gt;&lt;p&gt;&lt;b&gt;lastModified&lt;/b&gt;: 2022-07-30&lt;/p&gt;&lt;p&gt;&lt;b&gt;requester&lt;/b&gt;: &lt;a href=\&quot;Organization-HIVOrganizationExample.html\&quot;&gt;Organization/HIVOrganizationExample&lt;/a&gt; &amp;quot;HIV Test Services Health Facility&amp;quot;&lt;/p&gt;&lt;p&gt;&lt;b&gt;owner&lt;/b&gt;: &lt;a href=\&quot;Organization-HIVOrganizationExample.html\&quot;&gt;Organization/HIVOrganizationExample&lt;/a&gt; &amp;quot;HIV Test Services Health Facility&amp;quot;&lt;/p&gt;&lt;p&gt;&lt;b&gt;note&lt;/b&gt;: additional notes here (By Organization/HIVOrganizationExample @Feb 7, 2015, 6:28:17 PM)&lt;/p&gt;&lt;h3&gt;Outputs&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Value[x]&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;HIV 1 nucleic acid assay &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://browser.ihtsdotools.org/\&quot;&gt;SNOMED CT&lt;/a&gt;#398579006)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;#DiagnosticReport_HIVLabResultsDiagnosticReportExample\&quot;&gt;See above (DiagnosticReport/HIVLabResultsDiagnosticReportExample)&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
-        },
-        "<a href="http://hl7.org/fhir/R4/task.html#Task.identifier">identifier</a>" : [
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "http://openhie.org/fhir/hiv-cbs/lab-integration/test-order-number",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "ORDER12345"
-          }
-        ],
-        "<a href="http://hl7.org/fhir/R4/task.html#Task.basedOn">basedOn</a>" : [
-          {
-            "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "ServiceRequest/HIVServiceRequestExample"
-          }
-        ],
-        "<a href="http://hl7.org/fhir/R4/task.html#Task.status">status</a>" : "completed",
-        "<a href="http://hl7.org/fhir/R4/task.html#Task.intent">intent</a>" : "order",
-        "<a href="http://hl7.org/fhir/R4/task.html#Task.executionPeriod">executionPeriod</a>" : {
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.end">end</a>" : "2022-07-30"
-        },
-        "<a href="http://hl7.org/fhir/R4/task.html#Task.lastModified">lastModified</a>" : "2022-07-30",
-        "<a href="http://hl7.org/fhir/R4/task.html#Task.requester">requester</a>" : {
-          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Organization/HIVOrganizationExample"
-        },
-        "<a href="http://hl7.org/fhir/R4/task.html#Task.owner">owner</a>" : {
-          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Organization/HIVOrganizationExample"
-        },
-        "<a href="http://hl7.org/fhir/R4/task.html#Task.note">note</a>" : [
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Annotation#Annotation.author[x]">authorReference</a>" : {
-              "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Organization/HIVOrganizationExample"
-            },
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Annotation#Annotation.time">time</a>" : "2015-02-07T13:28:17-05:00",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Annotation#Annotation.text">text</a>" : "additional notes here"
-          }
-        ],
-        "<a href="http://hl7.org/fhir/R4/task.html#Task.output">output</a>" : [
-          {
-            "<a href="http://hl7.org/fhir/R4/task.html#Task.output.type">type</a>" : {
-              "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
-                {
-                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
-                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "398579006"
-                }
-              ]
-            },
-            "<a href="http://hl7.org/fhir/R4/task.html#Task.output.value[x]">valueReference</a>" : {
-              "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "DiagnosticReport/HIVLabResultsDiagnosticReportExample"
-            }
-          }
-        ]
-      },
-      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request">request</a>" : {
-        "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.method">method</a>" : "PUT",
-        "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.url">url</a>" : "Task/HIVLabResultTaskExample"
-      }
-    },
-    {
-      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "DiagnosticReport/HIVLabResultsDiagnosticReportExample",
-      "<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport">resource</a>" : {
-        "<a href="http://hl7.org/fhir/R4/diagnosticreport.html">resourceType</a>" : "DiagnosticReport",
-        "<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.id">id</a>" : "HIVLabResultsDiagnosticReportExample",
-        "<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.meta">meta</a>" : {
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
-            "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-diagnostic-report"
-          ]
-        },
-        "<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.text">text</a>" : {
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: DiagnosticReport&lt;/b&gt;&lt;a name=\&quot;HIVLabResultsDiagnosticReportExample\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource DiagnosticReport &amp;quot;HIVLabResultsDiagnosticReportExample&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-hiv-diagnostic-report.html\&quot;&gt;Diagnostic Report&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;basedOn&lt;/b&gt;: &lt;a href=\&quot;#ServiceRequest_HIVServiceRequestExample\&quot;&gt;See above (ServiceRequest/HIVServiceRequestExample)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: HIV 1 RNA [#/volume] (viral load) in Specimen by NAA with probe detection &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://loinc.org/\&quot;&gt;LOINC&lt;/a&gt;#25836-8)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;#Patient_HIVPatientExample\&quot;&gt;See above (Patient/HIVPatientExample)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;encounter&lt;/b&gt;: &lt;a href=\&quot;#Encounter_TargetFacilityEncounterExample\&quot;&gt;See above (Encounter/TargetFacilityEncounterExample)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;performer&lt;/b&gt;: &lt;a href=\&quot;#Practitioner_PractitionerExample\&quot;&gt;See above (Practitioner/PractitionerExample)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;result&lt;/b&gt;: &lt;a href=\&quot;#Observation_HIVTestResultExample\&quot;&gt;See above (Observation/HIVTestResultExample)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;conclusion&lt;/b&gt;: Some conclusion text&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
-        },
-        "<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.basedOn">basedOn</a>" : [
-          {
-            "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "ServiceRequest/HIVServiceRequestExample"
-          }
-        ],
-        "<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.status">status</a>" : "final",
-        "<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.code">code</a>" : {
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
-            {
-              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
-              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "25836-8"
-            }
-          ]
-        },
-        "<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.subject">subject</a>" : {
-          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/HIVPatientExample"
-        },
-        "<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.encounter">encounter</a>" : {
-          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Encounter/TargetFacilityEncounterExample"
-        },
-        "<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.performer">performer</a>" : [
-          {
-            "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Practitioner/PractitionerExample"
-          }
-        ],
-        "<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.result">result</a>" : [
-          {
-            "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Observation/HIVTestResultExample"
-          }
-        ],
-        "<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.conclusion">conclusion</a>" : "Some conclusion text"
-      },
-      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request">request</a>" : {
-        "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.method">method</a>" : "PUT",
-        "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.url">url</a>" : "DiagnosticReport/HIVLabResultsDiagnosticReportExample"
       }
     },
     {
@@ -1735,7 +1489,7 @@
            
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2019+ <a style="color: #81BEF7" href="https://www.jembi.org">Jembi Health Systems</a>.  Package openhie.fhir.hiv.cbs#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Mar 6, 2023 08:14+0000">2023-03-06</span>
+          IG &#169; 2019+ <a style="color: #81BEF7" href="https://www.jembi.org">Jembi Health Systems</a>.  Package openhie.fhir.hiv.cbs#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Mar 6, 2023 09:54+0000">2023-03-06</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
