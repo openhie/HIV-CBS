@@ -159,55 +159,6 @@
     }
   },
   {
-    "fullUrl" : "Observation/HIVTestResultExample",
-    "resource" : {
-      "resourceType" : "Observation",
-      "id" : "HIVTestResultExample",
-      "meta" : {
-        "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-test-results"]
-      },
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"HIVTestResultExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;HIVTestResultExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-test-results.html\">Lab Results</a></p></div><p><b>status</b>: final</p><p><b>code</b>: HIV 1 nucleic acid assay <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#398579006)</span></p><p><b>subject</b>: <a href=\"#Patient_HIVPatientExample\">See above (Patient/HIVPatientExample)</a></p><p><b>encounter</b>: <a href=\"#Encounter_TargetFacilityEncounterExample\">See above (Encounter/TargetFacilityEncounterExample)</a></p><p><b>effective</b>: 2022-11-30</p><p><b>performer</b>: <a href=\"Organization-HIVOrganizationExample.html\">Organization/HIVOrganizationExample</a> &quot;HIV Test Services Health Facility&quot;</p><p><b>value</b>: 1001</p><p><b>interpretation</b>: Uncontrolled <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#19032002)</span></p><p><b>note</b>: Viral load not suppressed (By Organization/HIVOrganizationExample @Feb 7, 2015, 6:28:17 PM)</p></div>"
-      },
-      "status" : "final",
-      "code" : {
-        "coding" : [{
-          "system" : "http://snomed.info/sct",
-          "code" : "398579006"
-        }]
-      },
-      "subject" : {
-        "reference" : "Patient/HIVPatientExample"
-      },
-      "encounter" : {
-        "reference" : "Encounter/TargetFacilityEncounterExample"
-      },
-      "effectiveDateTime" : "2022-11-30",
-      "performer" : [{
-        "reference" : "Organization/HIVOrganizationExample"
-      }],
-      "valueInteger" : 1001,
-      "interpretation" : [{
-        "coding" : [{
-          "system" : "http://snomed.info/sct",
-          "code" : "19032002"
-        }]
-      }],
-      "note" : [{
-        "authorReference" : {
-          "reference" : "Organization/HIVOrganizationExample"
-        },
-        "time" : "2015-02-07T13:28:17-05:00",
-        "text" : "Viral load not suppressed"
-      }]
-    },
-    "request" : {
-      "method" : "PUT",
-      "url" : "Observation/HIVTestResultExample"
-    }
-  },
-  {
     "fullUrl" : "Condition/HIVDiagnosisExample",
     "resource" : {
       "resourceType" : "Condition",
@@ -346,74 +297,6 @@
     }
   },
   {
-    "fullUrl" : "CarePlan/ARVTreatmentExample",
-    "resource" : {
-      "resourceType" : "CarePlan",
-      "id" : "ARVTreatmentExample",
-      "meta" : {
-        "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-arv-treatment"]
-      },
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: CarePlan</b><a name=\"ARVTreatmentExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource CarePlan &quot;ARVTreatmentExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-arv-treatment.html\">ARV Treatment</a></p></div><p><b>status</b>: active</p><p><b>intent</b>: plan</p><p><b>subject</b>: <a href=\"#Patient_HIVPatientExample\">See above (Patient/HIVPatientExample)</a></p><p><b>encounter</b>: <a href=\"#Encounter_TargetFacilityEncounterExample\">See above (Encounter/TargetFacilityEncounterExample)</a></p><p><b>period</b>: 2022-12-01 --&gt; 2022-12-01</p><blockquote><p><b>activity</b></p><h3>Details</h3><table class=\"grid\"><tr><td>-</td><td><b>Extension</b></td><td><b>Kind</b></td><td><b>Code</b></td><td><b>Status</b></td><td><b>Scheduled[x]</b></td><td><b>Product[x]</b></td></tr><tr><td>*</td><td/><td>MedicationRequest</td><td>HIV ART medication <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#45260-7)</span></td><td>in-progress</td><td>2023-01-01 --&gt; 2023-01-01</td><td>Abacavir (substance) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#387005008)</span></td></tr></table></blockquote><p><b>note</b>: Additional information regarding the ARV treatment prescribed (By Organization/HIVOrganizationExample @Feb 7, 2015, 6:28:17 PM)</p></div>"
-      },
-      "status" : "active",
-      "intent" : "plan",
-      "subject" : {
-        "reference" : "Patient/HIVPatientExample"
-      },
-      "encounter" : {
-        "reference" : "Encounter/TargetFacilityEncounterExample"
-      },
-      "period" : {
-        "start" : "2022-12-01",
-        "end" : "2022-12-01"
-      },
-      "activity" : [{
-        "detail" : {
-          "extension" : [{
-            "url" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/art-regimen-line",
-            "valueCodeableConcept" : {
-              "coding" : [{
-                "system" : "http://snomed.info/sct",
-                "code" : "708255002"
-              }]
-            }
-          }],
-          "kind" : "MedicationRequest",
-          "code" : {
-            "coding" : [{
-              "system" : "http://loinc.org",
-              "code" : "45260-7"
-            }]
-          },
-          "status" : "in-progress",
-          "scheduledPeriod" : {
-            "start" : "2023-01-01",
-            "end" : "2023-01-01"
-          },
-          "productCodeableConcept" : {
-            "coding" : [{
-              "system" : "http://snomed.info/sct",
-              "code" : "387005008"
-            }]
-          }
-        }
-      }],
-      "note" : [{
-        "authorReference" : {
-          "reference" : "Organization/HIVOrganizationExample"
-        },
-        "time" : "2015-02-07T13:28:17-05:00",
-        "text" : "Additional information regarding the ARV treatment prescribed"
-      }]
-    },
-    "request" : {
-      "method" : "PUT",
-      "url" : "CarePlan/ARVTreatmentExample"
-    }
-  },
-  {
     "fullUrl" : "EpisodeOfCare/HIVEpisodeOfCareExample",
     "resource" : {
       "resourceType" : "EpisodeOfCare",
@@ -449,6 +332,444 @@
     "request" : {
       "method" : "PUT",
       "url" : "EpisodeOfCare/HIVEpisodeOfCareExample"
+    }
+  },
+  {
+    "fullUrl" : "Observation/HIVRecencyTestDoneExample",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "HIVRecencyTestDoneExample",
+      "meta" : {
+        "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-recency-test-done"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"HIVRecencyTestDoneExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;HIVRecencyTestDoneExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-recency-test-done.html\">HIV Recency Test</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Rapid HIV-1 antibody test <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#409788009)</span></p><p><b>subject</b>: <a href=\"#Patient_HIVPatientExample\">See above (Patient/HIVPatientExample)</a></p><p><b>encounter</b>: <a href=\"#Encounter_TargetFacilityEncounterExample\">See above (Encounter/TargetFacilityEncounterExample)</a></p><p><b>effective</b>: 2022-12-10</p><p><b>value</b>: Yes (qualifier value) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#373066001)</span></p><p><b>note</b>: Additional information regarding the HIV recency test (By Organization/HIVOrganizationExample @Feb 7, 2015, 6:28:17 PM)</p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "409788009"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/HIVPatientExample"
+      },
+      "encounter" : {
+        "reference" : "Encounter/TargetFacilityEncounterExample"
+      },
+      "effectiveDateTime" : "2022-12-10",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "373066001"
+        }]
+      },
+      "note" : [{
+        "authorReference" : {
+          "reference" : "Organization/HIVOrganizationExample"
+        },
+        "time" : "2015-02-07T13:28:17-05:00",
+        "text" : "Additional information regarding the HIV recency test"
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/HIVRecencyTestDoneExample"
+    }
+  },
+  {
+    "fullUrl" : "Observation/HIVRecencyTestResultExample",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "HIVRecencyTestResultExample",
+      "meta" : {
+        "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-recency-test-result"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"HIVRecencyTestResultExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;HIVRecencyTestResultExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-recency-test-result.html\">HIV Recency Test Result</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Rapid HIV-1 antibody test <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#409788009)</span></p><p><b>subject</b>: <a href=\"#Patient_HIVPatientExample\">See above (Patient/HIVPatientExample)</a></p><p><b>encounter</b>: <a href=\"#Encounter_TargetFacilityEncounterExample\">See above (Encounter/TargetFacilityEncounterExample)</a></p><p><b>effective</b>: 2022-12-10</p><p><b>performer</b>: <a href=\"Organization-HIVOrganizationExample.html\">Organization/HIVOrganizationExample</a> &quot;HIV Test Services Health Facility&quot;</p><p><b>value</b>: Laboratory test finding <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#118246004)</span></p><p><b>interpretation</b>: Recent <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#6493001)</span></p><p><b>note</b>: Additional information regarding the HIV recency test result (By Organization/HIVOrganizationExample @Feb 7, 2015, 6:28:17 PM)</p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "409788009"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/HIVPatientExample"
+      },
+      "encounter" : {
+        "reference" : "Encounter/TargetFacilityEncounterExample"
+      },
+      "effectiveDateTime" : "2022-12-10",
+      "performer" : [{
+        "reference" : "Organization/HIVOrganizationExample"
+      }],
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "118246004"
+        }]
+      },
+      "interpretation" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "6493001"
+        }]
+      }],
+      "note" : [{
+        "authorReference" : {
+          "reference" : "Organization/HIVOrganizationExample"
+        },
+        "time" : "2015-02-07T13:28:17-05:00",
+        "text" : "Additional information regarding the HIV recency test result"
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/HIVRecencyTestResultExample"
+    }
+  },
+  {
+    "fullUrl" : "Observation/CD4PercentageExample",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "CD4PercentageExample",
+      "meta" : {
+        "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-cd4-percentage"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"CD4PercentageExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;CD4PercentageExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-cd4-percentage.html\">CD4 Percentage</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Percentage CD4 count <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#313938009)</span></p><p><b>subject</b>: <a href=\"#Patient_HIVPatientExample\">See above (Patient/HIVPatientExample)</a></p><p><b>encounter</b>: <a href=\"#Encounter_TargetFacilityEncounterExample\">See above (Encounter/TargetFacilityEncounterExample)</a></p><p><b>effective</b>: 2022-12-10</p><p><b>performer</b>: <a href=\"Organization-HIVOrganizationExample.html\">Organization/HIVOrganizationExample</a> &quot;HIV Test Services Health Facility&quot;</p><p><b>value</b>: 45.23</p><p><b>note</b>: Additional information regarding the CD4 Percentage (By Organization/HIVOrganizationExample @Feb 7, 2015, 6:28:17 PM)</p><p><b>derivedFrom</b>: <a href=\"#Observation_CD4TestResultExample\">See above (Observation/CD4TestResultExample)</a></p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "313938009"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/HIVPatientExample"
+      },
+      "encounter" : {
+        "reference" : "Encounter/TargetFacilityEncounterExample"
+      },
+      "effectiveDateTime" : "2022-12-10",
+      "performer" : [{
+        "reference" : "Organization/HIVOrganizationExample"
+      }],
+      "valueQuantity" : {
+        "value" : 45.23
+      },
+      "note" : [{
+        "authorReference" : {
+          "reference" : "Organization/HIVOrganizationExample"
+        },
+        "time" : "2015-02-07T13:28:17-05:00",
+        "text" : "Additional information regarding the CD4 Percentage"
+      }],
+      "derivedFrom" : [{
+        "reference" : "Observation/CD4TestResultExample"
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/CD4PercentageExample"
+    }
+  },
+  {
+    "fullUrl" : "Observation/CD4TestResultExample",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "CD4TestResultExample",
+      "meta" : {
+        "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-cd4-test"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"CD4TestResultExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;CD4TestResultExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-cd4-test.html\">Absolute CD4 Count</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Blood test measurement abnormal <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#151271000119102)</span></p><p><b>subject</b>: <a href=\"#Patient_HIVPatientExample\">See above (Patient/HIVPatientExample)</a></p><p><b>encounter</b>: <a href=\"#Encounter_TargetFacilityEncounterExample\">See above (Encounter/TargetFacilityEncounterExample)</a></p><p><b>effective</b>: 2022-12-10</p><p><b>performer</b>: <a href=\"Organization-HIVOrganizationExample.html\">Organization/HIVOrganizationExample</a> &quot;HIV Test Services Health Facility&quot;</p><p><b>value</b>: 650</p><p><b>note</b>: Additional information regarding the CD4 Count (By Organization/HIVOrganizationExample @Feb 7, 2015, 6:28:17 PM)</p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "151271000119102"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/HIVPatientExample"
+      },
+      "encounter" : {
+        "reference" : "Encounter/TargetFacilityEncounterExample"
+      },
+      "effectiveDateTime" : "2022-12-10",
+      "performer" : [{
+        "reference" : "Organization/HIVOrganizationExample"
+      }],
+      "valueInteger" : 650,
+      "note" : [{
+        "authorReference" : {
+          "reference" : "Organization/HIVOrganizationExample"
+        },
+        "time" : "2015-02-07T13:28:17-05:00",
+        "text" : "Additional information regarding the CD4 Count"
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/CD4TestResultExample"
+    }
+  },
+  {
+    "fullUrl" : "CarePlan/ARVTreatmentRegimenSwitchedOrSubstitutedExample",
+    "resource" : {
+      "resourceType" : "CarePlan",
+      "id" : "ARVTreatmentRegimenSwitchedOrSubstitutedExample",
+      "meta" : {
+        "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-arv-treatment"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: CarePlan</b><a name=\"ARVTreatmentRegimenSwitchedOrSubstitutedExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource CarePlan &quot;ARVTreatmentRegimenSwitchedOrSubstitutedExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-arv-treatment.html\">ARV Treatment</a></p></div><p><b>status</b>: active</p><p><b>intent</b>: plan</p><p><b>subject</b>: <a href=\"#Patient_HIVPatientExample\">See above (Patient/HIVPatientExample)</a></p><p><b>encounter</b>: <a href=\"#Encounter_TargetFacilityEncounterExample\">See above (Encounter/TargetFacilityEncounterExample)</a></p><p><b>period</b>: 2022-12-01 --&gt; 2022-12-01</p><blockquote><p><b>activity</b></p><h3>Details</h3><table class=\"grid\"><tr><td>-</td><td><b>Extension</b></td><td><b>Kind</b></td><td><b>Code</b></td><td><b>Status</b></td><td><b>Product[x]</b></td></tr><tr><td>*</td><td>, </td><td>MedicationRequest</td><td>HIV ART medication <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#45260-7)</span></td><td>in-progress</td><td>Abacavir (substance) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#387005008)</span></td></tr></table></blockquote><p><b>note</b>: Additional information regarding the switching of the ARV regimen with another ARV regimen. (By Organization/HIVOrganizationExample @Feb 7, 2015, 6:28:17 PM)</p></div>"
+      },
+      "status" : "active",
+      "intent" : "plan",
+      "subject" : {
+        "reference" : "Patient/HIVPatientExample"
+      },
+      "encounter" : {
+        "reference" : "Encounter/TargetFacilityEncounterExample"
+      },
+      "period" : {
+        "start" : "2022-12-01",
+        "end" : "2022-12-01"
+      },
+      "activity" : [{
+        "detail" : {
+          "extension" : [{
+            "url" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/art-regimen-line",
+            "valueCodeableConcept" : {
+              "coding" : [{
+                "system" : "http://snomed.info/sct",
+                "code" : "708255002"
+              }]
+            }
+          },
+          {
+            "url" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/art-regimen-switched-or-substituted",
+            "valueCodeableConcept" : {
+              "coding" : [{
+                "system" : "http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-art-regimen-change-type",
+                "code" : "Switched"
+              }]
+            }
+          }],
+          "kind" : "MedicationRequest",
+          "code" : {
+            "coding" : [{
+              "system" : "http://loinc.org",
+              "code" : "45260-7"
+            }]
+          },
+          "status" : "in-progress",
+          "productCodeableConcept" : {
+            "coding" : [{
+              "system" : "http://snomed.info/sct",
+              "code" : "387005008"
+            }]
+          }
+        }
+      }],
+      "note" : [{
+        "authorReference" : {
+          "reference" : "Organization/HIVOrganizationExample"
+        },
+        "time" : "2015-02-07T13:28:17-05:00",
+        "text" : "Additional information regarding the switching of the ARV regimen with another ARV regimen."
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "CarePlan/ARVTreatmentRegimenSwitchedOrSubstitutedExample"
+    }
+  },
+  {
+    "fullUrl" : "MedicationRequest/HIVCareMedicationRequestExample",
+    "resource" : {
+      "resourceType" : "MedicationRequest",
+      "id" : "HIVCareMedicationRequestExample",
+      "meta" : {
+        "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-med-req"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MedicationRequest</b><a name=\"HIVCareMedicationRequestExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MedicationRequest &quot;HIVCareMedicationRequestExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-med-req.html\">HIV Care Medication Request</a></p></div><p><b>status</b>: active</p><p><b>intent</b>: proposal</p><p><b>medication</b>: Atazanavir and ritonavir only product <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#878898002)</span></p><p><b>subject</b>: <a href=\"#Patient_HIVPatientExample\">See above (Patient/HIVPatientExample)</a></p><p><b>encounter</b>: <a href=\"#Encounter_TargetFacilityEncounterExample\">See above (Encounter/TargetFacilityEncounterExample)</a></p><p><b>basedOn</b>: <a href=\"CarePlan-ARVTreatmentExample.html\">CarePlan/ARVTreatmentExample</a></p><p><b>note</b>: Additional information regarding the HIV Medication Request (By Organization/HIVOrganizationExample @Feb 7, 2015, 6:28:17 PM)</p><h3>DispenseRequests</h3><table class=\"grid\"><tr><td>-</td><td><b>Quantity</b></td></tr><tr><td>*</td><td>30</td></tr></table></div>"
+      },
+      "status" : "active",
+      "intent" : "proposal",
+      "medicationCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "878898002"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/HIVPatientExample"
+      },
+      "encounter" : {
+        "reference" : "Encounter/TargetFacilityEncounterExample"
+      },
+      "basedOn" : [{
+        "reference" : "CarePlan/ARVTreatmentExample"
+      }],
+      "note" : [{
+        "authorReference" : {
+          "reference" : "Organization/HIVOrganizationExample"
+        },
+        "time" : "2015-02-07T13:28:17-05:00",
+        "text" : "Additional information regarding the HIV Medication Request"
+      }],
+      "dispenseRequest" : {
+        "quantity" : {
+          "value" : 30
+        }
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "MedicationRequest/HIVCareMedicationRequestExample"
+    }
+  },
+  {
+    "fullUrl" : "ServiceRequest/TransferredOutServiceRequestExample",
+    "resource" : {
+      "resourceType" : "ServiceRequest",
+      "id" : "TransferredOutServiceRequestExample",
+      "meta" : {
+        "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/transferred-out"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ServiceRequest</b><a name=\"TransferredOutServiceRequestExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ServiceRequest &quot;TransferredOutServiceRequestExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-transferred-out.html\">Transferred Out Service Request</a></p></div><p><b>status</b>: completed</p><p><b>intent</b>: order</p><p><b>code</b>: Transferred to another hospital <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#LA20597-3)</span></p><p><b>subject</b>: <a href=\"#Patient_HIVPatientExample\">See above (Patient/HIVPatientExample)</a></p><p><b>encounter</b>: <a href=\"#Encounter_TargetFacilityEncounterExample\">See above (Encounter/TargetFacilityEncounterExample)</a></p><p><b>occurrence</b>: 2012-01-05</p><p><b>requester</b>: <a href=\"Practitioner-PractitionerExample.html\">Practitioner/PractitionerExample</a> &quot; SMITH&quot;</p><p><b>performer</b>: <a href=\"#Organization_HIVOrganizationPatientTransferredToExample\">See above (Organization/HIVOrganizationPatientTransferredToExample)</a></p><p><b>note</b>: additional notes about the transfer (By Organization/HIVOrganizationExample @Feb 7, 2015, 6:28:17 PM)</p></div>"
+      },
+      "status" : "completed",
+      "intent" : "order",
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "LA20597-3"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/HIVPatientExample"
+      },
+      "encounter" : {
+        "reference" : "Encounter/TargetFacilityEncounterExample"
+      },
+      "occurrenceDateTime" : "2012-01-05",
+      "requester" : {
+        "reference" : "Practitioner/PractitionerExample"
+      },
+      "performer" : [{
+        "reference" : "Organization/HIVOrganizationPatientTransferredToExample"
+      }],
+      "note" : [{
+        "authorReference" : {
+          "reference" : "Organization/HIVOrganizationExample"
+        },
+        "time" : "2015-02-07T13:28:17-05:00",
+        "text" : "additional notes about the transfer"
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "ServiceRequest/TransferredOutServiceRequestExample"
+    }
+  },
+  {
+    "fullUrl" : "Organization/HIVOrganizationPatientTransferredToExample",
+    "resource" : {
+      "resourceType" : "Organization",
+      "id" : "HIVOrganizationPatientTransferredToExample",
+      "meta" : {
+        "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-organization-patient-transferred-to"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"HIVOrganizationPatientTransferredToExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;HIVOrganizationPatientTransferredToExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-organization-patient-transferred-to.html\">HIV Organization Patient Is Transferred To</a></p></div><p><b>identifier</b>: id: facility1</p><p><b>name</b>: HIV Test Services Health Facility</p><p><b>address</b>: DISI line 1 DISI line 2 DISI line 3 DISI city 1 DISI state 1 DISI postal code DISI country </p></div>"
+      },
+      "identifier" : [{
+        "system" : "http://openhie.org/fhir/hiv-cbs/identifier/hiv-organization",
+        "value" : "facility1"
+      }],
+      "name" : "HIV Test Services Health Facility",
+      "address" : [{
+        "line" : ["DISI line 1",
+        "DISI line 2",
+        "DISI line 3"],
+        "city" : "DISI city 1",
+        "district" : "DISI district 1",
+        "state" : "DISI state 1",
+        "postalCode" : "DISI postal code",
+        "country" : "DISI country"
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Organization/HIVOrganizationPatientTransferredToExample"
+    }
+  },
+  {
+    "fullUrl" : "Observation/HIVTestResultExample",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "HIVTestResultExample",
+      "meta" : {
+        "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-test-results"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"HIVTestResultExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;HIVTestResultExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-test-results.html\">Lab Results</a></p></div><p><b>status</b>: final</p><p><b>code</b>: HIV 1 nucleic acid assay <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#398579006)</span></p><p><b>subject</b>: <a href=\"#Patient_HIVPatientExample\">See above (Patient/HIVPatientExample)</a></p><p><b>encounter</b>: <a href=\"#Encounter_TargetFacilityEncounterExample\">See above (Encounter/TargetFacilityEncounterExample)</a></p><p><b>effective</b>: 2022-11-30</p><p><b>performer</b>: <a href=\"Organization-HIVOrganizationExample.html\">Organization/HIVOrganizationExample</a> &quot;HIV Test Services Health Facility&quot;</p><p><b>value</b>: 1001</p><p><b>interpretation</b>: Uncontrolled <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#19032002)</span></p><p><b>note</b>: Viral load not suppressed (By Organization/HIVOrganizationExample @Feb 7, 2015, 6:28:17 PM)</p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "398579006"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/HIVPatientExample"
+      },
+      "encounter" : {
+        "reference" : "Encounter/TargetFacilityEncounterExample"
+      },
+      "effectiveDateTime" : "2022-11-30",
+      "performer" : [{
+        "reference" : "Organization/HIVOrganizationExample"
+      }],
+      "valueInteger" : 1001,
+      "interpretation" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "19032002"
+        }]
+      }],
+      "note" : [{
+        "authorReference" : {
+          "reference" : "Organization/HIVOrganizationExample"
+        },
+        "time" : "2015-02-07T13:28:17-05:00",
+        "text" : "Viral load not suppressed"
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/HIVTestResultExample"
     }
   }]
 }

@@ -12,7 +12,7 @@
   <title value="HIV Case-Based Surveillance"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2023-03-06T07:25:44+00:00"/>
+  <date value="2023-03-06T13:23:19+00:00"/>
   <publisher value="Jembi Health Systems"/>
   <contact>
     <telecom>
@@ -727,7 +727,7 @@
         <reference value="Bundle/EMR"/>
       </reference>
       <name value="Example Bundle - EMR"/>
-      <exampleCanonical value="http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-arv-treatment"/>
+      <exampleCanonical value="http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-cd4-test"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
