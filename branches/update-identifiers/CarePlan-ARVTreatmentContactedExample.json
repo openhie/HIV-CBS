@@ -1,0 +1,45 @@
+{
+  "resourceType" : "CarePlan",
+  "id" : "ARVTreatmentContactedExample",
+  "meta" : {
+    "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-arv-treatment"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: CarePlan</b><a name=\"ARVTreatmentContactedExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource CarePlan &quot;ARVTreatmentContactedExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-arv-treatment.html\">ARV Treatment</a></p></div><p><b>status</b>: completed</p><p><b>intent</b>: plan</p><p><b>subject</b>: <a href=\"Patient-HIVPatientExample.html\">Patient/HIVPatientExample</a> &quot; SMITH&quot;</p><p><b>encounter</b>: <a href=\"Encounter-TargetFacilityEncounterExample.html\">Encounter/TargetFacilityEncounterExample</a></p><p><b>period</b>: 2022-12-01 --&gt; 2022-12-01</p><blockquote><p><b>activity</b></p><p><b>outcomeCodeableConcept</b>: Telephone follow-up (procedure) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#386473003)</span></p><h3>Details</h3><table class=\"grid\"><tr><td>-</td><td><b>Status</b></td><td><b>Scheduled[x]</b></td></tr><tr><td>*</td><td>not-started</td><td>2023-01-01 --&gt; 2023-01-01</td></tr></table></blockquote><p><b>note</b>: Additional information in regards to contacting the patient for ARV treatment. (By Organization/HIVOrganizationExample @Feb 7, 2015, 6:28:17 PM)</p></div>"
+  },
+  "status" : "completed",
+  "intent" : "plan",
+  "subject" : {
+    "reference" : "Patient/HIVPatientExample"
+  },
+  "encounter" : {
+    "reference" : "Encounter/TargetFacilityEncounterExample"
+  },
+  "period" : {
+    "start" : "2022-12-01",
+    "end" : "2022-12-01"
+  },
+  "activity" : [{
+    "outcomeCodeableConcept" : [{
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "386473003"
+      }]
+    }],
+    "detail" : {
+      "status" : "not-started",
+      "scheduledPeriod" : {
+        "start" : "2023-01-01",
+        "end" : "2023-01-01"
+      }
+    }
+  }],
+  "note" : [{
+    "authorReference" : {
+      "reference" : "Organization/HIVOrganizationExample"
+    },
+    "time" : "2015-02-07T13:28:17-05:00",
+    "text" : "Additional information in regards to contacting the patient for ARV treatment."
+  }]
+}
