@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="cs-art-regimen-change-type"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-art-regimen-change-type</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">Switched<a name="cs-art-regimen-change-type-Switched"> </a></td><td>ARV Regimen Switched</td></tr><tr><td style="white-space:nowrap">Substituted<a name="cs-art-regimen-change-type-Substituted"> </a></td><td>ARV Regimen Substituted</td></tr></table></div>
+  </text>
+  <url value="http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-art-regimen-change-type"/>
+  <version value="0.2.0"/>
+  <name value="CSARTRegimenChangeType"/>
+  <title value="ART Regimen Change Types"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-03-06T13:36:35+00:00"/>
+  <publisher value="Jembi Health Systems"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.jembi.org"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@jembi.org"/>
+    </telecom>
+  </contact>
+  <description value="A list of options to determine whether an ARV regimen was switched or substituted."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="2"/>
+  <concept>
+    <code value="Switched"/>
+    <display value="ARV Regimen Switched"/>
+  </concept>
+  <concept>
+    <code value="Substituted"/>
+    <display value="ARV Regimen Substituted"/>
+  </concept>
+</CodeSystem>
