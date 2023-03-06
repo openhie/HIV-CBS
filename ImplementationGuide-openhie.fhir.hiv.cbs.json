@@ -11,7 +11,7 @@
   "title" : "HIV Case-Based Surveillance",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2023-03-06T09:55:26+00:00",
+  "date" : "2023-03-06T10:50:25+00:00",
   "publisher" : "Jembi Health Systems",
   "contact" : [{
     "telecom" : [{
@@ -911,7 +911,7 @@
         "reference" : "Bundle/EMR"
       },
       "name" : "Example Bundle - EMR",
-      "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-cd4-test"
+      "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-arv-treatment"
     },
     {
       "extension" : [{
