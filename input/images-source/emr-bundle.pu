@@ -12,7 +12,20 @@
         "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-patient"]
       },
     
+      "extension" : [{
+        "url" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/key-population-status",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "417284009"
+          }]
+        }
+      }],
       "identifier" : [{
+        "system" : "http://openhie.org/fhir/hiv-cbs/identifier/mn",
+        "value" : "ORG1-0765712"
+      },
+      {
         "system" : "http://openhie.org/fhir/hiv-cbs/identifier/nid",
         "value" : "NID1234567"
       }],
@@ -38,6 +51,28 @@
         "district" : "City of Cape Town",
         "state" : "Western Province",
         "country" : "South Africa"
+      }],
+      "maritalStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+          "code" : "M"
+        }]
+      },
+      "contact" : [{
+        "relationship" : [{
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0131",
+            "code" : "N"
+          }]
+        }],
+        "name" : {
+          "family" : "Doe",
+          "given" : ["John"]
+        },
+        "telecom" : [{
+          "system" : "phone",
+          "value" : "+27829999999"
+        }]
       }],
       "managingOrganization" : {
         "reference" : "Organization/HIVOrganizationExample"
@@ -116,53 +151,6 @@
     }
   },
   {
-    "fullUrl" : "Observation/HIVTestResultExample",
-    "resource" : {
-      "resourceType" : "Observation",
-      "id" : "HIVTestResultExample",
-      "meta" : {
-        "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-test-results"]
-      },
-    
-      "status" : "final",
-      "code" : {
-        "coding" : [{
-          "system" : "http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-vl-result-code",
-          "code" : "VL-RESULT"
-        }]
-      },
-      "subject" : {
-        "reference" : "Patient/HIVPatientExample"
-      },
-      "encounter" : {
-        "reference" : "Encounter/TargetFacilityEncounterExample"
-      },
-      "effectiveDateTime" : "2022-11-30",
-      "performer" : [{
-        "reference" : "Organization/HIVOrganizationExample"
-      }],
-      "valueInteger" : 1001,
-      "interpretation" : [{
-        "coding" : [{
-          "system" : "http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-vl-suppression",
-          "code" : "UNSUP",
-          "display" : "Unsuppressed"
-        }]
-      }],
-      "note" : [{
-        "authorReference" : {
-          "reference" : "Organization/HIVOrganizationExample"
-        },
-        "time" : "2015-02-07T13:28:17-05:00",
-        "text" : "Viral load not suppressed"
-      }]
-    },
-    "request" : {
-      "method" : "PUT",
-      "url" : "Observation/HIVTestResultExample"
-    }
-  },
-  {
     "fullUrl" : "Condition/HIVDiagnosisExample",
     "resource" : {
       "resourceType" : "Condition",
@@ -170,7 +158,7 @@
       "meta" : {
         "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-diagnosis"]
       },
-     
+    
       "identifier" : [{
         "system" : "http://openhie.org/fhir/hiv-cbs/identifier/hiv-diagnosis",
         "value" : "abc123"
@@ -226,7 +214,7 @@
       "code" : {
         "coding" : [{
           "system" : "http://snomed.info/sct",
-          "code" : "419099009"
+          "code" : "419620001"
         }]
       },
       "subject" : {
@@ -236,12 +224,18 @@
         "reference" : "Encounter/TargetFacilityEncounterExample"
       },
       "effectiveDateTime" : "2023-02-05",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "80359-3"
+        }]
+      },
       "note" : [{
         "authorReference" : {
           "reference" : "Organization/HIVOrganizationExample"
         },
         "time" : "2015-02-07T13:28:17-05:00",
-        "text" : "Deatils regarding death"
+        "text" : "Details regarding death"
       }]
     },
     "request" : {
@@ -293,7 +287,7 @@
       "meta" : {
         "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-arv-treatment"]
       },
-     
+    
       "status" : "active",
       "intent" : "plan",
       "subject" : {
@@ -325,8 +319,15 @@
             }]
           },
           "status" : "in-progress",
+          "scheduledPeriod" : {
+            "start" : "2023-01-01",
+            "end" : "2023-01-01"
+          },
           "productCodeableConcept" : {
-            "text" : "TDF/3TC/DTG"
+            "coding" : [{
+              "system" : "http://snomed.info/sct",
+              "code" : "387005008"
+            }]
           }
         }
       }],
@@ -357,12 +358,6 @@
         "value" : "abc123"
       }],
       "status" : "active",
-      "type" : [{
-        "coding" : [{
-          "system" : "http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-patient-enrollment-type",
-          "code" : "PMTCT"
-        }]
-      }],
       "diagnosis" : [{
         "condition" : {
           "reference" : "Condition/HIVDiagnosisExample"
@@ -370,6 +365,9 @@
       }],
       "patient" : {
         "reference" : "Patient/HIVPatientExample"
+      },
+      "managingOrganization" : {
+        "reference" : "Organization/HIVOrganizationExample"
       },
       "period" : {
         "start" : "2021-05-18",
@@ -380,7 +378,371 @@
       "method" : "PUT",
       "url" : "EpisodeOfCare/HIVEpisodeOfCareExample"
     }
+  },
+  {
+    "fullUrl" : "Observation/HIVRecencyTestDoneExample",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "HIVRecencyTestDoneExample",
+      "meta" : {
+        "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-recency-test-done"]
+      },
+    
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "409788009"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/HIVPatientExample"
+      },
+      "encounter" : {
+        "reference" : "Encounter/TargetFacilityEncounterExample"
+      },
+      "effectiveDateTime" : "2022-12-10",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "373066001"
+        }]
+      },
+      "note" : [{
+        "authorReference" : {
+          "reference" : "Organization/HIVOrganizationExample"
+        },
+        "time" : "2015-02-07T13:28:17-05:00",
+        "text" : "Additional information regarding the HIV recency test"
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/HIVRecencyTestDoneExample"
+    }
+  },
+  {
+    "fullUrl" : "Observation/HIVRecencyTestResultExample",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "HIVRecencyTestResultExample",
+      "meta" : {
+        "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-recency-test-result"]
+      },
+   
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "409788009"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/HIVPatientExample"
+      },
+      "encounter" : {
+        "reference" : "Encounter/TargetFacilityEncounterExample"
+      },
+      "effectiveDateTime" : "2022-12-10",
+      "performer" : [{
+        "reference" : "Organization/HIVOrganizationExample"
+      }],
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "118246004"
+        }]
+      },
+      "interpretation" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "6493001"
+        }]
+      }],
+      "note" : [{
+        "authorReference" : {
+          "reference" : "Organization/HIVOrganizationExample"
+        },
+        "time" : "2015-02-07T13:28:17-05:00",
+        "text" : "Additional information regarding the HIV recency test result"
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/HIVRecencyTestResultExample"
+    }
+  },
+  {
+    "fullUrl" : "Observation/CD4PercentageExample",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "CD4PercentageExample",
+      "meta" : {
+        "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-cd4-percentage"]
+      },
+   
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "313938009"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/HIVPatientExample"
+      },
+      "encounter" : {
+        "reference" : "Encounter/TargetFacilityEncounterExample"
+      },
+      "effectiveDateTime" : "2022-12-10",
+      "performer" : [{
+        "reference" : "Organization/HIVOrganizationExample"
+      }],
+      "valueQuantity" : {
+        "value" : 45.23
+      },
+      "note" : [{
+        "authorReference" : {
+          "reference" : "Organization/HIVOrganizationExample"
+        },
+        "time" : "2015-02-07T13:28:17-05:00",
+        "text" : "Additional information regarding the CD4 Percentage"
+      }],
+      "derivedFrom" : [{
+        "reference" : "Observation/CD4TestResultExample"
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/CD4PercentageExample"
+    }
+  },
+  {
+    "fullUrl" : "Observation/CD4TestResultExample",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "CD4TestResultExample",
+      "meta" : {
+        "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-cd4-test"]
+      },
+   
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "151271000119102"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/HIVPatientExample"
+      },
+      "encounter" : {
+        "reference" : "Encounter/TargetFacilityEncounterExample"
+      },
+      "effectiveDateTime" : "2022-12-10",
+      "performer" : [{
+        "reference" : "Organization/HIVOrganizationExample"
+      }],
+      "valueInteger" : 650,
+      "note" : [{
+        "authorReference" : {
+          "reference" : "Organization/HIVOrganizationExample"
+        },
+        "time" : "2015-02-07T13:28:17-05:00",
+        "text" : "Additional information regarding the CD4 Count"
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/CD4TestResultExample"
+    }
+  },
+  {
+    "fullUrl" : "CarePlan/ARVTreatmentRegimenSwitchedOrSubstitutedExample",
+    "resource" : {
+      "resourceType" : "CarePlan",
+      "id" : "ARVTreatmentRegimenSwitchedOrSubstitutedExample",
+      "meta" : {
+        "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-arv-treatment"]
+      },
+     
+      "status" : "active",
+      "intent" : "plan",
+      "subject" : {
+        "reference" : "Patient/HIVPatientExample"
+      },
+      "encounter" : {
+        "reference" : "Encounter/TargetFacilityEncounterExample"
+      },
+      "period" : {
+        "start" : "2022-12-01",
+        "end" : "2022-12-01"
+      },
+      "activity" : [{
+        "detail" : {
+          "extension" : [{
+            "url" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/art-regimen-line",
+            "valueCodeableConcept" : {
+              "coding" : [{
+                "system" : "http://snomed.info/sct",
+                "code" : "708255002"
+              }]
+            }
+          },
+          {
+            "url" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/art-regimen-switched-or-substituted",
+            "valueCodeableConcept" : {
+              "coding" : [{
+                "system" : "http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-art-regimen-change-type",
+                "code" : "Switched"
+              }]
+            }
+          }],
+          "kind" : "MedicationRequest",
+          "code" : {
+            "coding" : [{
+              "system" : "http://loinc.org",
+              "code" : "45260-7"
+            }]
+          },
+          "status" : "in-progress",
+          "productCodeableConcept" : {
+            "coding" : [{
+              "system" : "http://snomed.info/sct",
+              "code" : "387005008"
+            }]
+          }
+        }
+      }],
+      "note" : [{
+        "authorReference" : {
+          "reference" : "Organization/HIVOrganizationExample"
+        },
+        "time" : "2015-02-07T13:28:17-05:00",
+        "text" : "Additional information regarding the switching of the ARV regimen with another ARV regimen."
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "CarePlan/ARVTreatmentRegimenSwitchedOrSubstitutedExample"
+    }
+  },
+  {
+    "fullUrl" : "MedicationRequest/HIVCareMedicationRequestExample",
+    "resource" : {
+      "resourceType" : "MedicationRequest",
+      "id" : "HIVCareMedicationRequestExample",
+      "meta" : {
+        "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-med-req"]
+      },
+   
+      "status" : "active",
+      "intent" : "proposal",
+      "medicationCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "878898002"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/HIVPatientExample"
+      },
+      "encounter" : {
+        "reference" : "Encounter/TargetFacilityEncounterExample"
+      },
+      "basedOn" : [{
+        "reference" : "CarePlan/ARVTreatmentExample"
+      }],
+      "note" : [{
+        "authorReference" : {
+          "reference" : "Organization/HIVOrganizationExample"
+        },
+        "time" : "2015-02-07T13:28:17-05:00",
+        "text" : "Additional information regarding the HIV Medication Request"
+      }],
+      "dispenseRequest" : {
+        "quantity" : {
+          "value" : 30
+        }
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "MedicationRequest/HIVCareMedicationRequestExample"
+    }
+  },
+  {
+    "fullUrl" : "ServiceRequest/TransferredOutServiceRequestExample",
+    "resource" : {
+      "resourceType" : "ServiceRequest",
+      "id" : "TransferredOutServiceRequestExample",
+      "meta" : {
+        "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/transferred-out"]
+      },
+    
+      "status" : "completed",
+      "intent" : "order",
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "LA20597-3"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/HIVPatientExample"
+      },
+      "encounter" : {
+        "reference" : "Encounter/TargetFacilityEncounterExample"
+      },
+      "occurrenceDateTime" : "2012-01-05",
+      "requester" : {
+        "reference" : "Practitioner/PractitionerExample"
+      },
+      "performer" : [{
+        "reference" : "Organization/HIVOrganizationPatientTransferredToExample"
+      }],
+      "note" : [{
+        "authorReference" : {
+          "reference" : "Organization/HIVOrganizationExample"
+        },
+        "time" : "2015-02-07T13:28:17-05:00",
+        "text" : "additional notes about the transfer"
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "ServiceRequest/TransferredOutServiceRequestExample"
+    }
+  },
+  {
+    "fullUrl" : "Organization/HIVOrganizationPatientTransferredToExample",
+    "resource" : {
+      "resourceType" : "Organization",
+      "id" : "HIVOrganizationPatientTransferredToExample",
+      "meta" : {
+        "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-organization-patient-transferred-to"]
+      },
+   
+      "identifier" : [{
+        "system" : "http://openhie.org/fhir/hiv-cbs/identifier/hiv-organization",
+        "value" : "facility1"
+      }],
+      "name" : "HIV Test Services Health Facility",
+      "address" : [{
+        "line" : ["DISI line 1",
+        "DISI line 2",
+        "DISI line 3"],
+        "city" : "DISI city 1",
+        "district" : "DISI district 1",
+        "state" : "DISI state 1",
+        "postalCode" : "DISI postal code",
+        "country" : "DISI country"
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Organization/HIVOrganizationPatientTransferredToExample"
+    }
   }]
 }
-
 @endjson
