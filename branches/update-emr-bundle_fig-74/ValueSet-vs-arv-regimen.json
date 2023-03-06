@@ -1,0 +1,122 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "vs-arv-regimen",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/387105006\">387105006</a></td><td>Didanosine (DDI)</td></tr><tr><td><a href=\"http://snomed.info/id/387005008\">387005008</a></td><td>Abacavir (ABC)</td></tr><tr><td><a href=\"http://snomed.info/id/772188001\">772188001</a></td><td>Abacavir and lamivudine (ABC + 3TC)</td></tr><tr><td><a href=\"http://snomed.info/id/427314002\">427314002</a></td><td>ABC + 3TC + ATV/r</td></tr><tr><td><a href=\"http://snomed.info/id/878898002\">878898002</a></td><td>Atazanavir/ritonavir (ATV/r)</td></tr><tr><td><a href=\"http://snomed.info/id/713464000\">713464000</a></td><td>Dolutegravir (DTG)</td></tr><tr><td><a href=\"http://snomed.info/id/387001004\">387001004</a></td><td>Efavirenz (EFV)</td></tr><tr><td><a href=\"http://snomed.info/id/404856006\">404856006</a></td><td>Emtricitabine (FTC)</td></tr><tr><td><a href=\"http://snomed.info/id/432121008\">432121008</a></td><td>Etravirine (ETV)</td></tr><tr><td><a href=\"http://snomed.info/id/386897000\">386897000</a></td><td>Lamivudine (3TC)</td></tr><tr><td><a href=\"http://snomed.info/id/776569000\">776569000</a></td><td>Lopinavir/ritonavir (LPV/r)</td></tr><tr><td><a href=\"http://snomed.info/id/386898005\">386898005</a></td><td>Nevirapine (NVP)</td></tr><tr><td><a href=\"http://snomed.info/id/429707008\">429707008</a></td><td>Raltegravir (RAL)</td></tr><tr><td><a href=\"http://snomed.info/id/703123005\">703123005</a></td><td>Rilpivirine (RIL)</td></tr><tr><td><a href=\"http://snomed.info/id/386896009\">386896009</a></td><td>Ritonavir (RTV)</td></tr><tr><td><a href=\"http://snomed.info/id/386895008\">386895008</a></td><td>Stavudine (D4T)</td></tr><tr><td><a href=\"http://snomed.info/id/422091007\">422091007</a></td><td>Tenofovir (TDF)</td></tr><tr><td><a href=\"http://snomed.info/id/421203005\">421203005</a></td><td>Tenofovir disoproxil (TDF)</td></tr><tr><td><a href=\"http://snomed.info/id/414091005\">414091005</a></td><td>Tenofovir disoproxil and emtricitabine (TDF + FTC)</td></tr><tr><td><a href=\"http://snomed.info/id/387151007\">387151007</a></td><td>Zidovudine (AZT)</td></tr><tr><td><a href=\"http://snomed.info/id/776469003\">776469003</a></td><td>Zidovudine and lamivudine (AZT + 3TC)</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-arv-regimen",
+  "version" : "0.2.0",
+  "name" : "VSARVRegimen",
+  "title" : "A list of ARV regimen",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2023-03-06T08:13:25+00:00",
+  "publisher" : "Jembi Health Systems",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.jembi.org"
+    },
+    {
+      "system" : "email",
+      "value" : "info@jembi.org"
+    }]
+  }],
+  "description" : "A list of ARV regimen.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "387105006",
+        "display" : "Didanosine (DDI)"
+      },
+      {
+        "code" : "387005008",
+        "display" : "Abacavir (ABC)"
+      },
+      {
+        "code" : "772188001",
+        "display" : "Abacavir and lamivudine (ABC + 3TC)"
+      },
+      {
+        "code" : "427314002",
+        "display" : "ABC + 3TC + ATV/r"
+      },
+      {
+        "code" : "878898002",
+        "display" : "Atazanavir/ritonavir (ATV/r)"
+      },
+      {
+        "code" : "713464000",
+        "display" : "Dolutegravir (DTG)"
+      },
+      {
+        "code" : "387001004",
+        "display" : "Efavirenz (EFV)"
+      },
+      {
+        "code" : "404856006",
+        "display" : "Emtricitabine (FTC)"
+      },
+      {
+        "code" : "432121008",
+        "display" : "Etravirine (ETV)"
+      },
+      {
+        "code" : "386897000",
+        "display" : "Lamivudine (3TC)"
+      },
+      {
+        "code" : "776569000",
+        "display" : "Lopinavir/ritonavir (LPV/r)"
+      },
+      {
+        "code" : "386898005",
+        "display" : "Nevirapine (NVP)"
+      },
+      {
+        "code" : "429707008",
+        "display" : "Raltegravir (RAL)"
+      },
+      {
+        "code" : "703123005",
+        "display" : "Rilpivirine (RIL)"
+      },
+      {
+        "code" : "386896009",
+        "display" : "Ritonavir (RTV)"
+      },
+      {
+        "code" : "386895008",
+        "display" : "Stavudine (D4T)"
+      },
+      {
+        "code" : "422091007",
+        "display" : "Tenofovir (TDF)"
+      },
+      {
+        "code" : "421203005",
+        "display" : "Tenofovir disoproxil (TDF)"
+      },
+      {
+        "code" : "414091005",
+        "display" : "Tenofovir disoproxil and emtricitabine (TDF + FTC)"
+      },
+      {
+        "code" : "387151007",
+        "display" : "Zidovudine (AZT)"
+      },
+      {
+        "code" : "776469003",
+        "display" : "Zidovudine and lamivudine (AZT + 3TC)"
+      }]
+    }]
+  }
+}

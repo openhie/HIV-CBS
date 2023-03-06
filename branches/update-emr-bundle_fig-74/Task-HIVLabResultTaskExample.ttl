@@ -1,0 +1,69 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://openhie.org/fhir/hiv-cbs/Task/HIVLabResultTaskExample> a fhir:Task ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "HIVLabResultTaskExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-lab-task"^^xsd:anyURI ;
+       fhir:link <http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-lab-task>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Task</b><a name=\"HIVLabResultTaskExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Task &quot;HIVLabResultTaskExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-lab-task.html\">Lab Task</a></p></div><p><b>identifier</b>: id: ORDER12345</p><p><b>basedOn</b>: <a href=\"ServiceRequest-HIVServiceRequestExample.html\">ServiceRequest/HIVServiceRequestExample</a></p><p><b>status</b>: completed</p><p><b>intent</b>: order</p><p><b>executionPeriod</b>: ?? --&gt; 2022-07-30</p><p><b>lastModified</b>: 2022-07-30</p><p><b>requester</b>: <a href=\"Organization-HIVOrganizationExample.html\">Organization/HIVOrganizationExample</a> &quot;HIV Test Services Health Facility&quot;</p><p><b>owner</b>: <a href=\"Organization-HIVOrganizationExample.html\">Organization/HIVOrganizationExample</a> &quot;HIV Test Services Health Facility&quot;</p><p><b>note</b>: additional notes here (By Organization/HIVOrganizationExample @Feb 7, 2015, 6:28:17 PM)</p><h3>Outputs</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>HIV 1 nucleic acid assay <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#398579006)</span></td><td><a href=\"DiagnosticReport-HIVLabResultsDiagnosticReportExample.html\">DiagnosticReport/HIVLabResultsDiagnosticReportExample</a></td></tr></table></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://openhie.org/fhir/hiv-cbs/lab-integration/test-order-number"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "ORDER12345" ]
+  ] ) ; # 
+  fhir:basedOn ( [
+     fhir:link <http://openhie.org/fhir/hiv-cbs/ServiceRequest/HIVServiceRequestExample> ;
+     fhir:reference [ fhir:v "ServiceRequest/HIVServiceRequestExample" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:intent [ fhir:v "order"] ; # 
+  fhir:executionPeriod [
+     fhir:end [ fhir:v "2022-07-30"^^xsd:date ]
+  ] ; # 
+  fhir:lastModified [ fhir:v "2022-07-30"^^xsd:date] ; # 
+  fhir:requester [
+     fhir:link <http://openhie.org/fhir/hiv-cbs/Organization/HIVOrganizationExample> ;
+     fhir:reference [ fhir:v "Organization/HIVOrganizationExample" ]
+  ] ; # 
+  fhir:owner [
+     fhir:link <http://openhie.org/fhir/hiv-cbs/Organization/HIVOrganizationExample> ;
+     fhir:reference [ fhir:v "Organization/HIVOrganizationExample" ]
+  ] ; # 
+  fhir:note ( [
+     fhir:author [
+       a fhir:Reference ;
+       fhir:link <http://openhie.org/fhir/hiv-cbs/Organization/HIVOrganizationExample> ;
+       fhir:reference [ fhir:v "Organization/HIVOrganizationExample" ]
+     ] ;
+     fhir:time [ fhir:v "2015-02-07T13:28:17-05:00"^^xsd:dateTime ] ;
+     fhir:text [ fhir:v "additional notes here" ]
+  ] ) ; # 
+  fhir:output ( [
+     fhir:type [
+       fhir:coding ( [
+         a sct:398579006 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "398579006" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <http://openhie.org/fhir/hiv-cbs/DiagnosticReport/HIVLabResultsDiagnosticReportExample> ;
+       fhir:reference [ fhir:v "DiagnosticReport/HIVLabResultsDiagnosticReportExample" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
