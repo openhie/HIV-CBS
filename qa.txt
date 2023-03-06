@@ -3,8 +3,8 @@
 
 err = 0, warn = 4, info = 0
 IG Publisher Version: 1.2.39
-Generated Sun Mar 05 11:47:12 UTC 2023. FHIR version 4.0.1 for openhie.fhir.hiv.cbs#0.2.0 (canonical = http://openhie.org/fhir/hiv-cbs)
- Build Errors : 14 / 4 / 0
+Generated Mon Mar 06 06:40:48 UTC 2023. FHIR version 4.0.1 for openhie.fhir.hiv.cbs#0.2.0 (canonical = http://openhie.org/fhir/hiv-cbs)
+ Build Errors : 0 / 4 / 0
  /github/workspace/fsh-generated/resources/Bundle-EMR : 0 / 0 / 19
  /github/workspace/fsh-generated/resources/Bundle-LabCancellation : 0 / 0 / 3
  /github/workspace/fsh-generated/resources/Bundle-LabOrder : 0 / 0 / 11
@@ -94,20 +94,6 @@ Generated Sun Mar 05 11:47:12 UTC 2023. FHIR version 4.0.1 for openhie.fhir.hiv.
  /github/workspace/input/hiv-cbs : 0 / 0 / 1
 </table>
 == n/a ==
-ERROR: /github/workspace/output/use-cases.html#/html/body/div/div/div/div/div/div/p/a at Line 481, column 51: The link 'ValueSet-vs-key-population-status' for "HIV Key Population codes" cannot be resolved
-ERROR: /github/workspace/output/use-cases.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 531, column 63: The link 'ValueSet-vs-careplan-outcome' for "Code" cannot be resolved
-ERROR: /github/workspace/output/use-cases.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 532, column 58: The link 'ValueSet-vs-careplan-outcome' for "Code" cannot be resolved
-ERROR: /github/workspace/output/use-cases.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 533, column 51: The link 'ValueSet-vs-arvtreatment-activity-type' for "Code" cannot be resolved
-ERROR: /github/workspace/output/use-cases.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 534, column 44: The link 'ValueSet-vs-arv-regimen' for "Codes" cannot be resolved
-ERROR: /github/workspace/output/use-cases.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 535, column 53: The link 'ValueSet-vs-artregimen-lines' for "Codes" cannot be resolved
-ERROR: /github/workspace/output/use-cases.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 591, column 14: The link 'ValueSet-vs-hiv-death' for "Outcome code" cannot be resolved
-ERROR: /github/workspace/output/use-cases.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 613, column 14: The link 'ValueSet-vs-hiv-recency-test' for "Test code" cannot be resolved
-ERROR: /github/workspace/output/use-cases.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 617, column 14: The link 'ValueSet-vs-yes-no' for "Indication" cannot be resolved
-ERROR: /github/workspace/output/use-cases.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 623, column 14: The link 'ValueSet-vs-hiv-recency-test-result' for "HUV recency test result" cannot be resolved
-ERROR: /github/workspace/output/use-cases.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 627, column 14: The link 'ValueSet-vs-hiv-recency-status' for "HIV recency status" cannot be resolved
-ERROR: /github/workspace/output/use-cases.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 647, column 14: The link 'ValueSet-vs-test-types' for "Test requested codes" cannot be resolved
-ERROR: /github/workspace/output/use-cases.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 654, column 14: The link 'ValueSet-vs-specimen-type' for "Specimen types" cannot be resolved
-ERROR: /github/workspace/output/use-cases.html#/html/body/div/div/div/div/div/div/ul/ul/ul/li/a at Line 730, column 83: The link 'ValueSet-vs-condition' for "Code" cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
