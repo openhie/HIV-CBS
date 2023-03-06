@@ -20,11 +20,6 @@ Description: "HIV Submit EMR Bundle Example"
 * entry[=].request.method = #PUT
 * entry[=].request.url = "Encounter/TransferringFacilityEncounterExample"
 
-* entry[+].fullUrl = "Observation/HIVTestResultExample"
-* entry[=].resource = HIVTestResultExample
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Observation/HIVTestResultExample"
-
 * entry[+].fullUrl = "Condition/HIVDiagnosisExample"
 * entry[=].resource = HIVDiagnosisExample
 * entry[=].request.method = #PUT
@@ -49,16 +44,6 @@ Description: "HIV Submit EMR Bundle Example"
 * entry[=].resource = HIVEpisodeOfCareExample
 * entry[=].request.method = #PUT
 * entry[=].request.url = "EpisodeOfCare/HIVEpisodeOfCareExample"
-
-* entry[+].fullUrl = "Practitioner/PractitionerExample"
-* entry[=].resource = PractitionerExample
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Practitioner/PractitionerExample"
-
-* entry[+].fullUrl = "ServiceRequest/HIVServiceRequestExample"
-* entry[=].resource = HIVServiceRequestExample
-* entry[=].request.method = #PUT
-* entry[=].request.url = "ServiceRequest/HIVServiceRequestExample"
 
 * entry[+].fullUrl = "Observation/HIVRecencyTestDoneExample"
 * entry[=].resource = HIVRecencyTestDoneExample
