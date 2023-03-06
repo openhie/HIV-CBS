@@ -11,7 +11,7 @@
       "meta" : {
         "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-lab-task"]
       },
-      
+    
       "identifier" : [{
         "system" : "http://openhie.org/fhir/hiv-cbs/lab-integration/test-order-number",
         "value" : "ORDER12345"
@@ -41,8 +41,8 @@
       "output" : [{
         "type" : {
           "coding" : [{
-            "system" : "http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-vl-result-code",
-            "code" : "VL-RESULT"
+            "system" : "http://snomed.info/sct",
+            "code" : "398579006"
           }]
         },
         "valueReference" : {
@@ -101,7 +101,7 @@
       "meta" : {
         "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-practitioner"]
       },
-     
+    
       "name" : [{
         "family" : "Smith",
         "given" : ["James"]
@@ -132,7 +132,7 @@
       "type" : {
         "coding" : [{
           "system" : "http://snomed.info/sct",
-          "code" : "395058002"
+          "code" : "119361006"
         }]
       },
       "subject" : {
@@ -162,12 +162,12 @@
       "meta" : {
         "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-test-results"]
       },
-     
+    
       "status" : "final",
       "code" : {
         "coding" : [{
-          "system" : "http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-vl-result-code",
-          "code" : "VL-RESULT"
+          "system" : "http://snomed.info/sct",
+          "code" : "398579006"
         }]
       },
       "subject" : {
@@ -183,9 +183,8 @@
       "valueInteger" : 1001,
       "interpretation" : [{
         "coding" : [{
-          "system" : "http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-vl-suppression",
-          "code" : "UNSUP",
-          "display" : "Unsuppressed"
+          "system" : "http://snomed.info/sct",
+          "code" : "19032002"
         }]
       }],
       "note" : [{
