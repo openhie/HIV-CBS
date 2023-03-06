@@ -18,7 +18,7 @@
   fhir:title [ fhir:v "HIV Case-Based Surveillance"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2023-03-06T10:50:25+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-03-06T11:14:25+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Jembi Health Systems"] ; # 
   fhir:contact ( [
      fhir:telecom ( [
@@ -846,8 +846,8 @@
        ] ;
        fhir:name [ fhir:v "Example Bundle - EMR" ] ;
        fhir:example [
-         fhir:v "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-arv-treatment"^^xsd:anyURI ;
-         fhir:link <http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-arv-treatment>
+         fhir:v "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-cd4-test"^^xsd:anyURI ;
+         fhir:link <http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-cd4-test>
        ]
      ] [
        fhir:extension ( [
