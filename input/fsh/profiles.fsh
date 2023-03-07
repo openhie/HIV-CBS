@@ -215,7 +215,7 @@ Description: "The test sample that was collected for the initiated lab order."
 * note 0..1
 
 Profile: HIVServiceRequestLocation
-Parent: Location
+Parent: Organization
 Id: hiv-service-request-location
 Title: "Lab Order Request Location"
 Description: "What is the location of the organization responsible for conducting the examination of the individual's sample?"
