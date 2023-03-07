@@ -35,7 +35,6 @@ Description: "A patient resource for an HIV Patient"
     MR 1..1
 * identifier[NID].value 0..1
 * identifier[NID].system = "http://openhie.org/fhir/hiv-cbs/identifier/nid" (exactly)
-
 * identifier[MR].value 1..1
 * identifier[MR].system = "http://openhie.org/fhir/hiv-cbs/identifier/mr" (exactly)
 * identifier[MR].type.coding.code = #MR
