@@ -251,7 +251,7 @@ Description: "HIV Lab Order example"
 * encounter = Reference(TargetFacilityEncounterExample)
 * occurrenceDateTime = "2012-01-05"
 * requester = Reference(PractitionerExample)
-* locationReference = Reference(HIVServiceRequestLocationExample)
+* performer = Reference(HIVServiceRequestLocationExample)
 * doNotPerform = false
 * reasonCode = $SCT#428450006
 * specimen = Reference(VLSpecimenExample)

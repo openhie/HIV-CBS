@@ -261,7 +261,7 @@ Description: "A service request that initiates the need for the lab to collect t
 * encounter 1..1
 * occurrenceDateTime 1..1
 * requester 1..1
-* locationReference 1..1
+* performer 1..1
 * doNotPerform 0..1
 * reasonCode 1..*
 * reasonCode from VSReasonForAssessmentOrTestNotPerformed (required)
