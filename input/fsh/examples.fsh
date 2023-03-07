@@ -261,8 +261,10 @@ InstanceOf: HIVLabTask
 Usage: #example
 Title: "Lab Order example"
 Description: "Lab Order example"
-* identifier.system = "http://openhie.org/fhir/hiv-cbs/lab-integration/test-order-number"
-* identifier.value = "ORDER12345"
+* identifier[FILL].system = "http://openhie.org/fhir/hiv-cbs/lab-integration/order-id"
+* identifier[FILL].value = "ORDER12345"
+* identifier[FILL].type.coding.code = #FILL
+* identifier[FILL].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
 * basedOn = Reference(HIVServiceRequestExample)
 * status = #requested
 * intent = #order
@@ -279,8 +281,10 @@ InstanceOf: HIVLabTask
 Usage: #example
 Title: "Lab Result Task example"
 Description: "Lab Result Task example"
-* identifier.system = "http://openhie.org/fhir/hiv-cbs/lab-integration/test-order-number"
-* identifier.value = "ORDER12345"
+* identifier[FILL].system = "http://openhie.org/fhir/hiv-cbs/lab-integration/order-id"
+* identifier[FILL].value = "ORDER12345"
+* identifier[FILL].type.coding.code = #FILL
+* identifier[FILL].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
 * basedOn = Reference(HIVServiceRequestExample)
 * status = #completed
 * intent = #order
@@ -320,8 +324,10 @@ InstanceOf: HIVLabTask
 Usage: #example
 Title: "HIV Lab Order Rejection  example"
 Description: "HIV Lab Order Rejection Task example"
-* identifier.system = "http://openhie.org/fhir/hiv-cbs/lab-integration/test-order-number"
-* identifier.value = "ORDER12345"
+* identifier[FILL].system = "http://openhie.org/fhir/hiv-cbs/lab-integration/order-id"
+* identifier[FILL].value = "ORDER12345"
+* identifier[FILL].type.coding.code = #FILL
+* identifier[FILL].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
 * basedOn = Reference(HIVServiceRequestExample)
 * status = #rejected
 * statusReason = $SCT#135839007 
