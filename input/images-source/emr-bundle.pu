@@ -11,7 +11,7 @@
       "meta" : {
         "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-patient"]
       },
-    
+     
       "extension" : [{
         "url" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/key-population-status",
         "valueCodeableConcept" : {
@@ -22,7 +22,7 @@
         }
       }],
       "identifier" : [{
-        "system" : "http://openhie.org/fhir/hiv-cbs/identifier/mn",
+        "system" : "http://openhie.org/fhir/hiv-cbs/identifier/mr",
         "value" : "ORG1-0765712"
       },
       {
@@ -91,7 +91,7 @@
       "meta" : {
         "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/target-facility-encounter"]
       },
-    
+     
       "extension" : [{
         "url" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-care-next-visit",
         "valueDateTime" : "2022-10-22"
@@ -158,8 +158,14 @@
       "meta" : {
         "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-diagnosis"]
       },
-    
+     
       "identifier" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "PI"
+          }]
+        },
         "system" : "http://openhie.org/fhir/hiv-cbs/identifier/hiv-diagnosis",
         "value" : "abc123"
       }],
@@ -280,71 +286,6 @@
     }
   },
   {
-    "fullUrl" : "CarePlan/ARVTreatmentExample",
-    "resource" : {
-      "resourceType" : "CarePlan",
-      "id" : "ARVTreatmentExample",
-      "meta" : {
-        "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-arv-treatment"]
-      },
-    
-      "status" : "active",
-      "intent" : "plan",
-      "subject" : {
-        "reference" : "Patient/HIVPatientExample"
-      },
-      "encounter" : {
-        "reference" : "Encounter/TargetFacilityEncounterExample"
-      },
-      "period" : {
-        "start" : "2022-12-01",
-        "end" : "2022-12-01"
-      },
-      "activity" : [{
-        "detail" : {
-          "extension" : [{
-            "url" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/art-regimen-line",
-            "valueCodeableConcept" : {
-              "coding" : [{
-                "system" : "http://snomed.info/sct",
-                "code" : "708255002"
-              }]
-            }
-          }],
-          "kind" : "MedicationRequest",
-          "code" : {
-            "coding" : [{
-              "system" : "http://loinc.org",
-              "code" : "45260-7"
-            }]
-          },
-          "status" : "in-progress",
-          "scheduledPeriod" : {
-            "start" : "2023-01-01",
-            "end" : "2023-01-01"
-          },
-          "productCodeableConcept" : {
-            "coding" : [{
-              "system" : "http://snomed.info/sct",
-              "code" : "387005008"
-            }]
-          }
-        }
-      }],
-      "note" : [{
-        "authorReference" : {
-          "reference" : "Organization/HIVOrganizationExample"
-        },
-        "time" : "2015-02-07T13:28:17-05:00",
-        "text" : "Additional information regarding the ARV treatment prescribed"
-      }]
-    },
-    "request" : {
-      "method" : "PUT",
-      "url" : "CarePlan/ARVTreatmentExample"
-    }
-  },
-  {
     "fullUrl" : "EpisodeOfCare/HIVEpisodeOfCareExample",
     "resource" : {
       "resourceType" : "EpisodeOfCare",
@@ -352,8 +293,14 @@
       "meta" : {
         "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-episode-of-care"]
       },
-     
+    
       "identifier" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "PI"
+          }]
+        },
         "system" : "http://openhie.org/fhir/hiv-cbs/identifier/enrollment-unique-id",
         "value" : "abc123"
       }],
@@ -429,7 +376,7 @@
       "meta" : {
         "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-recency-test-result"]
       },
-   
+    
       "status" : "final",
       "code" : {
         "coding" : [{
@@ -480,7 +427,7 @@
       "meta" : {
         "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-cd4-percentage"]
       },
-   
+     
       "status" : "final",
       "code" : {
         "coding" : [{
@@ -525,7 +472,7 @@
       "meta" : {
         "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-cd4-test"]
       },
-   
+     
       "status" : "final",
       "code" : {
         "coding" : [{
@@ -635,7 +582,7 @@
       "meta" : {
         "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-med-req"]
       },
-   
+     
       "status" : "active",
       "intent" : "proposal",
       "medicationCodeableConcept" : {
@@ -722,8 +669,14 @@
       "meta" : {
         "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-organization-patient-transferred-to"]
       },
-   
+     
       "identifier" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "XX"
+          }]
+        },
         "system" : "http://openhie.org/fhir/hiv-cbs/identifier/hiv-organization",
         "value" : "facility1"
       }],
@@ -742,6 +695,52 @@
     "request" : {
       "method" : "PUT",
       "url" : "Organization/HIVOrganizationPatientTransferredToExample"
+    }
+  },
+  {
+    "fullUrl" : "Observation/HIVTestResultExample",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "HIVTestResultExample",
+      "meta" : {
+        "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-test-results"]
+      },
+      
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "398579006"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/HIVPatientExample"
+      },
+      "encounter" : {
+        "reference" : "Encounter/TargetFacilityEncounterExample"
+      },
+      "effectiveDateTime" : "2022-11-30",
+      "performer" : [{
+        "reference" : "Organization/HIVOrganizationExample"
+      }],
+      "valueInteger" : 1001,
+      "interpretation" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "19032002"
+        }]
+      }],
+      "note" : [{
+        "authorReference" : {
+          "reference" : "Organization/HIVOrganizationExample"
+        },
+        "time" : "2015-02-07T13:28:17-05:00",
+        "text" : "Viral load not suppressed"
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/HIVTestResultExample"
     }
   }]
 }

@@ -11,9 +11,15 @@
       "meta" : {
         "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-lab-task"]
       },
-    
+     
       "identifier" : [{
-        "system" : "http://openhie.org/fhir/hiv-cbs/lab-integration/test-order-number",
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "FILL"
+          }]
+        },
+        "system" : "http://openhie.org/fhir/hiv-cbs/lab-integration/order-id",
         "value" : "ORDER12345"
       }],
       "basedOn" : [{
@@ -52,12 +58,26 @@
       "meta" : {
         "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-service-request-location"]
       },
-    
-      "name" : "HIV Location",
+   
+      "identifier" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "XX"
+          }]
+        },
+        "system" : "http://openhie.org/fhir/hiv-cbs/identifier/hiv-service-request-location",
+        "value" : "facility2"
+      }],
+      "name" : "Laboratory Services",
       "address" : {
-        "city" : "DISI city",
-        "district" : "DISI district",
-        "state" : "DISI state",
+        "line" : ["DISI line 1",
+        "DISI line 2",
+        "DISI line 3"],
+        "city" : "DISI city 1",
+        "district" : "DISI district 1",
+        "state" : "DISI state 1",
+        "postalCode" : "DISI postal code",
         "country" : "DISI country"
       }
     },
@@ -74,8 +94,14 @@
       "meta" : {
         "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/HIV-lab-order"]
       },
-     
+    
       "identifier" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "PLAC"
+          }]
+        },
         "system" : "http://openhie.org/fhir/hiv-cbs/identifier/lab-order-identifier",
         "value" : "ORDER12345"
       }],
@@ -131,7 +157,7 @@
       "meta" : {
         "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-practitioner"]
       },
-     
+    
       "name" : [{
         "family" : "Smith",
         "given" : ["James"]
@@ -154,9 +180,15 @@
       "meta" : {
         "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/viral-load-specimen"]
       },
-     
+   
       "identifier" : [{
-        "system" : "http://openhie.org/fhir/hiv-cbs/identifier/specimen",
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "USID"
+          }]
+        },
+        "system" : "http://openhie.org/fhir/hiv-cbs/identifier/specimen-id",
         "value" : "abc123"
       }],
       "type" : {
@@ -185,5 +217,4 @@
     }
   }]
 }
-
 @endjson
