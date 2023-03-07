@@ -1,26 +1,26 @@
 {
   "resourceType" : "Bundle",
-  "id" : "041c1f0f-c3fc-46cd-a409-f83281eae36a",
+  "id" : "c50942fa-8897-4c55-a55f-979474d980a6",
   "meta" : {
-    "lastUpdated" : "2023-03-07T12:18:55.763+00:00"
+    "lastUpdated" : "2023-03-07T14:32:58.623+00:00"
   },
   "type" : "collection",
   "entry" : [{
-    "fullUrl" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-hiv-cause-of-death",
+    "fullUrl" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-hiv-recency-test-result",
     "resource" : {
       "resourceType" : "ValueSet",
-      "id" : "vs-hiv-cause-of-death",
+      "id" : "vs-hiv-recency-test-result",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on Loinc v2.73</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-80359-3\"> </a>  <a href=\"https://loinc.org/80359-3/\">80359-3</a></td><td>http://loinc.org</td><td>Cause of death.underlying [Manual]</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-69441-4\"> </a>  <a href=\"https://loinc.org/69441-4/\">69441-4</a></td><td>http://loinc.org</td><td>Other significant causes or conditions of death</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2022</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-118246004\"> </a>  <a href=\"http://snomed.info/id/118246004\">118246004</a></td><td>http://snomed.info/sct</td><td>Laboratory test finding (navigational concept)</td></tr></table></div>"
       },
-      "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-hiv-cause-of-death",
+      "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-hiv-recency-test-result",
       "version" : "0.2.0",
-      "name" : "VSHIVCauseOfDeath",
-      "title" : "Causes of Death",
+      "name" : "VSHIVRecencyTestResult",
+      "title" : "Recency HIV Test Result",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-03-07T12:18:55+00:00",
+      "date" : "2023-03-07T14:32:58+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -32,7 +32,7 @@
           "value" : "info@jembi.org"
         }]
       }],
-      "description" : "A list of possible HIV causes of deaths",
+      "description" : "A list of HIV recency test result codes.",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
@@ -40,139 +40,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:08c7e88e-9025-4238-87ba-69a1c9ee2e6c",
-        "timestamp" : "2023-03-07T12:19:43+00:00",
-        "total" : 2,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "limitedExpansion",
-          "valueBoolean" : true
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://loinc.org|2.73"
-        }],
-        "contains" : [{
-          "system" : "http://loinc.org",
-          "code" : "80359-3",
-          "display" : "Cause of death.underlying [Manual]"
-        },
-        {
-          "system" : "http://loinc.org",
-          "code" : "69441-4",
-          "display" : "Other significant causes or conditions of death"
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-vl-suppression",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "vs-vl-suppression",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2022</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-245780008\"> </a>  <a href=\"http://snomed.info/id/245780008\">245780008</a></td><td>http://snomed.info/sct</td><td>Suppressed (qualifier value)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-19032002\"> </a>  <a href=\"http://snomed.info/id/19032002\">19032002</a></td><td>http://snomed.info/sct</td><td>Uncontrolled (qualifier value)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-261665006\"> </a>  <a href=\"http://snomed.info/id/261665006\">261665006</a></td><td>http://snomed.info/sct</td><td>Unknown (qualifier value)</td></tr></table></div>"
-      },
-      "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-vl-suppression",
-      "version" : "0.2.0",
-      "name" : "VSVLSuppression",
-      "title" : "Viral Load Suppressions Status",
-      "status" : "active",
-      "experimental" : false,
-      "date" : "2023-03-07T12:18:55+00:00",
-      "publisher" : "Jembi Health Systems",
-      "contact" : [{
-        "telecom" : [{
-          "system" : "url",
-          "value" : "https://www.jembi.org"
-        },
-        {
-          "system" : "email",
-          "value" : "info@jembi.org"
-        }]
-      }],
-      "description" : "Describes a patient's current viral load status.",
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "code" : "001"
-        }]
-      }],
-      "expansion" : {
-        "identifier" : "urn:uuid:8d9f23fe-0232-4945-a3d0-75f080a6dc31",
-        "timestamp" : "2023-03-07T12:19:48+00:00",
-        "total" : 3,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "limitedExpansion",
-          "valueBoolean" : true
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220731"
-        }],
-        "contains" : [{
-          "system" : "http://snomed.info/sct",
-          "code" : "245780008",
-          "display" : "Suppressed (qualifier value)"
-        },
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "19032002",
-          "display" : "Uncontrolled (qualifier value)"
-        },
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "261665006",
-          "display" : "Unknown (qualifier value)"
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-hiv-test-done",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "vs-hiv-test-done",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2022</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-315124004\"> </a>  <a href=\"http://snomed.info/id/315124004\">315124004</a></td><td>http://snomed.info/sct</td><td>Human immunodeficiency virus viral load (procedure)</td></tr></table></div>"
-      },
-      "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-hiv-test-done",
-      "version" : "0.2.0",
-      "name" : "VSHIVTestDone",
-      "title" : "HIV Test Done",
-      "status" : "active",
-      "experimental" : false,
-      "date" : "2023-03-07T12:18:55+00:00",
-      "publisher" : "Jembi Health Systems",
-      "contact" : [{
-        "telecom" : [{
-          "system" : "url",
-          "value" : "https://www.jembi.org"
-        },
-        {
-          "system" : "email",
-          "value" : "info@jembi.org"
-        }]
-      }],
-      "description" : "Used by the observation to indicate that a HIV test was performed.",
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "code" : "001"
-        }]
-      }],
-      "expansion" : {
-        "identifier" : "urn:uuid:b416a5c4-b423-4f3c-9ec7-4541b78ecc7c",
-        "timestamp" : "2023-03-07T12:19:48+00:00",
+        "identifier" : "urn:uuid:423d2e34-aa78-43c6-8485-ca40470f4e98",
+        "timestamp" : "2023-03-07T14:33:37+00:00",
         "total" : 1,
         "parameter" : [{
           "name" : "excludeNested",
@@ -188,154 +57,8 @@
         }],
         "contains" : [{
           "system" : "http://snomed.info/sct",
-          "code" : "315124004",
-          "display" : "Human immunodeficiency virus viral load (procedure)"
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-test-types",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "vs-test-types",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on Loinc v2.73</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-25842-6\"> </a>  <a href=\"https://loinc.org/25842-6/\">25842-6</a></td><td>http://loinc.org</td><td>HIV 2 proviral DNA [Presence] in Specimen by NAA with probe detection</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-25836-8\"> </a>  <a href=\"https://loinc.org/25836-8/\">25836-8</a></td><td>http://loinc.org</td><td>HIV 1 RNA [#/volume] (viral load) in Specimen by NAA with probe detection</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-24467-3\"> </a>  <a href=\"https://loinc.org/24467-3/\">24467-3</a></td><td>http://loinc.org</td><td>CD3+CD4+ (T4 helper) cells [#/volume] in Blood</td></tr></table></div>"
-      },
-      "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-test-types",
-      "version" : "0.2.0",
-      "name" : "VSTestTypes",
-      "title" : "Test Types",
-      "status" : "active",
-      "experimental" : false,
-      "date" : "2023-03-07T12:18:55+00:00",
-      "publisher" : "Jembi Health Systems",
-      "contact" : [{
-        "telecom" : [{
-          "system" : "url",
-          "value" : "https://www.jembi.org"
-        },
-        {
-          "system" : "email",
-          "value" : "info@jembi.org"
-        }]
-      }],
-      "description" : "A list of HIV test types",
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "code" : "001"
-        }]
-      }],
-      "expansion" : {
-        "identifier" : "urn:uuid:8a8a3ba3-965e-47f2-be6e-2cdee6f8d94c",
-        "timestamp" : "2023-03-07T12:19:48+00:00",
-        "total" : 3,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "limitedExpansion",
-          "valueBoolean" : true
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://loinc.org|2.73"
-        }],
-        "contains" : [{
-          "system" : "http://loinc.org",
-          "code" : "25842-6",
-          "display" : "HIV 2 proviral DNA [Presence] in Specimen by NAA with probe detection"
-        },
-        {
-          "system" : "http://loinc.org",
-          "code" : "25836-8",
-          "display" : "HIV 1 RNA [#/volume] (viral load) in Specimen by NAA with probe detection"
-        },
-        {
-          "system" : "http://loinc.org",
-          "code" : "24467-3",
-          "display" : "CD3+CD4+ (T4 helper) cells [#/volume] in Blood"
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-specimen-type",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "vs-specimen-type",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 5 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2022</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-119361006\"> </a>  <a href=\"http://snomed.info/id/119361006\">119361006</a></td><td>http://snomed.info/sct</td><td>Plasma specimen (specimen)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-440500007\"> </a>  <a href=\"http://snomed.info/id/440500007\">440500007</a></td><td>http://snomed.info/sct</td><td>Dried blood spot specimen (specimen)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-441620008\"> </a>  <a href=\"http://snomed.info/id/441620008\">441620008</a></td><td>http://snomed.info/sct</td><td>Oral fluid specimen (specimen)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-258580003\"> </a>  <a href=\"http://snomed.info/id/258580003\">258580003</a></td><td>http://snomed.info/sct</td><td>Whole blood specimen (specimen)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-119364003\"> </a>  <a href=\"http://snomed.info/id/119364003\">119364003</a></td><td>http://snomed.info/sct</td><td>Serum specimen (specimen)</td></tr></table></div>"
-      },
-      "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-specimen-type",
-      "version" : "0.2.0",
-      "name" : "VSSpecimenType",
-      "title" : "Specimen Type Used In Viral Load testing",
-      "status" : "active",
-      "experimental" : false,
-      "date" : "2023-03-07T12:18:55+00:00",
-      "publisher" : "Jembi Health Systems",
-      "contact" : [{
-        "telecom" : [{
-          "system" : "url",
-          "value" : "https://www.jembi.org"
-        },
-        {
-          "system" : "email",
-          "value" : "info@jembi.org"
-        }]
-      }],
-      "description" : "A list of specimen types.",
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "code" : "001"
-        }]
-      }],
-      "expansion" : {
-        "identifier" : "urn:uuid:fa1fdd16-15d3-425b-9923-880a9dac75e3",
-        "timestamp" : "2023-03-07T12:19:48+00:00",
-        "total" : 5,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "limitedExpansion",
-          "valueBoolean" : true
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220731"
-        }],
-        "contains" : [{
-          "system" : "http://snomed.info/sct",
-          "code" : "119361006",
-          "display" : "Plasma specimen (specimen)"
-        },
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "440500007",
-          "display" : "Dried blood spot specimen (specimen)"
-        },
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "441620008",
-          "display" : "Oral fluid specimen (specimen)"
-        },
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "258580003",
-          "display" : "Whole blood specimen (specimen)"
-        },
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "119364003",
-          "display" : "Serum specimen (specimen)"
+          "code" : "118246004",
+          "display" : "Laboratory test finding (navigational concept)"
         }]
       }
     }
@@ -355,7 +78,7 @@
       "title" : "Reasons why a lab order was cancelled or rejected",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-03-07T12:18:55+00:00",
+      "date" : "2023-03-07T14:32:58+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -375,8 +98,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:f52ff02e-2089-428a-aad9-47aa7d748896",
-        "timestamp" : "2023-03-07T12:19:51+00:00",
+        "identifier" : "urn:uuid:39592bfb-15fc-488c-b3ed-931e5eed3537",
+        "timestamp" : "2023-03-07T14:33:39+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -409,21 +132,21 @@
     }
   },
   {
-    "fullUrl" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-yes-no",
+    "fullUrl" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-hiv-test-done",
     "resource" : {
       "resourceType" : "ValueSet",
-      "id" : "vs-yes-no",
+      "id" : "vs-hiv-test-done",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2022</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-373066001\"> </a>  <a href=\"http://snomed.info/id/373066001\">373066001</a></td><td>http://snomed.info/sct</td><td>Yes</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-373067005\"> </a>  <a href=\"http://snomed.info/id/373067005\">373067005</a></td><td>http://snomed.info/sct</td><td>No</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-261665006\"> </a>  <a href=\"http://snomed.info/id/261665006\">261665006</a></td><td>http://snomed.info/sct</td><td>Unknown</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2022</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-315124004\"> </a>  <a href=\"http://snomed.info/id/315124004\">315124004</a></td><td>http://snomed.info/sct</td><td>Human immunodeficiency virus viral load (procedure)</td></tr></table></div>"
       },
-      "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-yes-no",
+      "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-hiv-test-done",
       "version" : "0.2.0",
-      "name" : "VSYesNoUnknown",
-      "title" : "Yes No Unknown",
+      "name" : "VSHIVTestDone",
+      "title" : "HIV Test Done",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-03-07T12:18:55+00:00",
+      "date" : "2023-03-07T14:32:58+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -435,7 +158,7 @@
           "value" : "info@jembi.org"
         }]
       }],
-      "description" : "A list of options used to provide an answer",
+      "description" : "Used by the observation to indicate that a HIV test was performed.",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
@@ -443,144 +166,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:0b63228d-03b9-4c11-bc8d-46169bdc02d5",
-        "timestamp" : "2023-03-07T12:19:52+00:00",
-        "total" : 3,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "limitedExpansion",
-          "valueBoolean" : true
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220731"
-        }],
-        "contains" : [{
-          "system" : "http://snomed.info/sct",
-          "code" : "373066001",
-          "display" : "Yes"
-        },
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "373067005",
-          "display" : "No"
-        },
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "261665006",
-          "display" : "Unknown"
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-artregimen-lines",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "vs-artregimen-lines",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2022</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-708255002\"> </a>  <a href=\"http://snomed.info/id/708255002\">708255002</a></td><td>http://snomed.info/sct</td><td>First line treatment (procedure)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-708256001\"> </a>  <a href=\"http://snomed.info/id/708256001\">708256001</a></td><td>http://snomed.info/sct</td><td>Second line treatment (procedure)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-708257005\"> </a>  <a href=\"http://snomed.info/id/708257005\">708257005</a></td><td>http://snomed.info/sct</td><td>Third line treatment (procedure)</td></tr></table></div>"
-      },
-      "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-artregimen-lines",
-      "version" : "0.2.0",
-      "name" : "VSARTRegimenLines",
-      "title" : "ART Regimen Lines",
-      "status" : "active",
-      "experimental" : false,
-      "date" : "2023-03-07T12:18:55+00:00",
-      "publisher" : "Jembi Health Systems",
-      "contact" : [{
-        "telecom" : [{
-          "system" : "url",
-          "value" : "https://www.jembi.org"
-        },
-        {
-          "system" : "email",
-          "value" : "info@jembi.org"
-        }]
-      }],
-      "description" : "A list of ART regimen therapeutic lines.",
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "code" : "001"
-        }]
-      }],
-      "expansion" : {
-        "identifier" : "urn:uuid:efcd9c45-95df-47b1-aa51-0d9b78b6c180",
-        "timestamp" : "2023-03-07T12:19:53+00:00",
-        "total" : 3,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "limitedExpansion",
-          "valueBoolean" : true
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220731"
-        }],
-        "contains" : [{
-          "system" : "http://snomed.info/sct",
-          "code" : "708255002",
-          "display" : "First line treatment (procedure)"
-        },
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "708256001",
-          "display" : "Second line treatment (procedure)"
-        },
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "708257005",
-          "display" : "Third line treatment (procedure)"
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-hiv-recency-test-result",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "vs-hiv-recency-test-result",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2022</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-118246004\"> </a>  <a href=\"http://snomed.info/id/118246004\">118246004</a></td><td>http://snomed.info/sct</td><td>Laboratory test finding (navigational concept)</td></tr></table></div>"
-      },
-      "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-hiv-recency-test-result",
-      "version" : "0.2.0",
-      "name" : "VSHIVRecencyTestResult",
-      "title" : "Recency HIV Test Result",
-      "status" : "active",
-      "experimental" : false,
-      "date" : "2023-03-07T12:18:55+00:00",
-      "publisher" : "Jembi Health Systems",
-      "contact" : [{
-        "telecom" : [{
-          "system" : "url",
-          "value" : "https://www.jembi.org"
-        },
-        {
-          "system" : "email",
-          "value" : "info@jembi.org"
-        }]
-      }],
-      "description" : "A list of HIV recency test result codes.",
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "code" : "001"
-        }]
-      }],
-      "expansion" : {
-        "identifier" : "urn:uuid:a54d2ecf-5df5-40de-a049-eaeee4a6e554",
-        "timestamp" : "2023-03-07T12:20:02+00:00",
+        "identifier" : "urn:uuid:cdedcba8-3960-45d1-a44a-029964d56050",
+        "timestamp" : "2023-03-07T14:33:41+00:00",
         "total" : 1,
         "parameter" : [{
           "name" : "excludeNested",
@@ -596,28 +183,28 @@
         }],
         "contains" : [{
           "system" : "http://snomed.info/sct",
-          "code" : "118246004",
-          "display" : "Laboratory test finding (navigational concept)"
+          "code" : "315124004",
+          "display" : "Human immunodeficiency virus viral load (procedure)"
         }]
       }
     }
   },
   {
-    "fullUrl" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-art-regimen-change-type",
+    "fullUrl" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-hiv-recency-status",
     "resource" : {
       "resourceType" : "ValueSet",
-      "id" : "vs-art-regimen-change-type",
+      "id" : "vs-hiv-recency-status",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-cs-art-regimen-change-type.html\">ART Regimen Change Types v0.2.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-cbs-CodeSystem-cs-art-regimen-change-type-Switched\"> </a>  <a href=\"CodeSystem-cs-art-regimen-change-type.html#cs-art-regimen-change-type-Switched\">Switched</a></td><td>http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-art-regimen-change-type</td><td>ARV Regimen Switched</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-cbs-CodeSystem-cs-art-regimen-change-type-Substituted\"> </a>  <a href=\"CodeSystem-cs-art-regimen-change-type.html#cs-art-regimen-change-type-Substituted\">Substituted</a></td><td>http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-art-regimen-change-type</td><td>ARV Regimen Substituted</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2022</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-6493001\"> </a>  <a href=\"http://snomed.info/id/6493001\">6493001</a></td><td>http://snomed.info/sct</td><td>Recent (qualifier value)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-307294006\"> </a>  <a href=\"http://snomed.info/id/307294006\">307294006</a></td><td>http://snomed.info/sct</td><td>Personal history finding (finding)</td></tr></table></div>"
       },
-      "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-art-regimen-change-type",
+      "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-hiv-recency-status",
       "version" : "0.2.0",
-      "name" : "VSARTRegimenChangeType",
-      "title" : "ART Regimen Change Types",
+      "name" : "VSHIVRecencyStatus",
+      "title" : "HIV Recency Testing Status",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-03-07T12:18:55+00:00",
+      "date" : "2023-03-07T14:32:58+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -629,7 +216,7 @@
           "value" : "info@jembi.org"
         }]
       }],
-      "description" : "A list of options to determine whether an ARV regimen was switched or substituted.",
+      "description" : "A list of HIV recency statuses",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
@@ -637,46 +224,50 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:d053d325-0ffd-4829-b35a-e8f5d8dc7da9",
-        "timestamp" : "2023-03-07T12:20:02+00:00",
+        "identifier" : "urn:uuid:3e06cb2b-a1b1-4f68-b149-4ad0f4dd74a0",
+        "timestamp" : "2023-03-07T14:33:43+00:00",
         "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
         },
         {
-          "name" : "version",
-          "valueUri" : "http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-art-regimen-change-type|0.2.0"
-        }],
-        "contains" : [{
-          "system" : "http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-art-regimen-change-type",
-          "code" : "Switched",
-          "display" : "ARV Regimen Switched"
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
         },
         {
-          "system" : "http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-art-regimen-change-type",
-          "code" : "Substituted",
-          "display" : "ARV Regimen Substituted"
+          "name" : "version",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220731"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "6493001",
+          "display" : "Recent (qualifier value)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "307294006",
+          "display" : "Personal history finding (finding)"
         }]
       }
     }
   },
   {
-    "fullUrl" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-cd4-count",
+    "fullUrl" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-vl-suppression",
     "resource" : {
       "resourceType" : "ValueSet",
-      "id" : "vs-cd4-count",
+      "id" : "vs-vl-suppression",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2022</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-151271000119102\"> </a>  <a href=\"http://snomed.info/id/151271000119102\">151271000119102</a></td><td>http://snomed.info/sct</td><td>Abnormal blood test (finding)</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2022</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-245780008\"> </a>  <a href=\"http://snomed.info/id/245780008\">245780008</a></td><td>http://snomed.info/sct</td><td>Suppressed (qualifier value)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-19032002\"> </a>  <a href=\"http://snomed.info/id/19032002\">19032002</a></td><td>http://snomed.info/sct</td><td>Uncontrolled (qualifier value)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-261665006\"> </a>  <a href=\"http://snomed.info/id/261665006\">261665006</a></td><td>http://snomed.info/sct</td><td>Unknown (qualifier value)</td></tr></table></div>"
       },
-      "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-cd4-count",
+      "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-vl-suppression",
       "version" : "0.2.0",
-      "name" : "VSCD4Count",
-      "title" : "CD4 test result code",
+      "name" : "VSVLSuppression",
+      "title" : "Viral Load Suppressions Status",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-03-07T12:18:55+00:00",
+      "date" : "2023-03-07T14:32:58+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -688,7 +279,7 @@
           "value" : "info@jembi.org"
         }]
       }],
-      "description" : "A list of CD4 test result codes",
+      "description" : "Describes a patient's current viral load status.",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
@@ -696,9 +287,9 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:3cc39348-f21b-46df-95f0-bac803465cd1",
-        "timestamp" : "2023-03-07T12:20:02+00:00",
-        "total" : 1,
+        "identifier" : "urn:uuid:5da2a9cc-e39d-4c61-908b-07415d08b58a",
+        "timestamp" : "2023-03-07T14:33:43+00:00",
+        "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
@@ -713,8 +304,18 @@
         }],
         "contains" : [{
           "system" : "http://snomed.info/sct",
-          "code" : "151271000119102",
-          "display" : "Abnormal blood test (finding)"
+          "code" : "245780008",
+          "display" : "Suppressed (qualifier value)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "19032002",
+          "display" : "Uncontrolled (qualifier value)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "261665006",
+          "display" : "Unknown (qualifier value)"
         }]
       }
     }
@@ -734,7 +335,7 @@
       "title" : "A list of ARV regimen",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-03-07T12:18:55+00:00",
+      "date" : "2023-03-07T14:32:58+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -754,8 +355,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:c8274521-6390-43f1-93ca-d605dffbd64a",
-        "timestamp" : "2023-03-07T12:20:04+00:00",
+        "identifier" : "urn:uuid:aa362ebd-26dd-4807-912d-4ccaf8c5b012",
+        "timestamp" : "2023-03-07T14:33:44+00:00",
         "total" : 21,
         "parameter" : [{
           "name" : "excludeNested",
@@ -878,301 +479,6 @@
     }
   },
   {
-    "fullUrl" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-vl-result-code",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "vs-vl-result-code",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2022</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-398579006\"> </a>  <a href=\"http://snomed.info/id/398579006\">398579006</a></td><td>http://snomed.info/sct</td><td>Human immunodeficiency virus-1 nucleic acid assay (procedure)</td></tr></table></div>"
-      },
-      "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-vl-result-code",
-      "version" : "0.2.0",
-      "name" : "VSVLResultCode",
-      "title" : "Viral Load Result Code",
-      "status" : "active",
-      "experimental" : false,
-      "date" : "2023-03-07T12:18:55+00:00",
-      "publisher" : "Jembi Health Systems",
-      "contact" : [{
-        "telecom" : [{
-          "system" : "url",
-          "value" : "https://www.jembi.org"
-        },
-        {
-          "system" : "email",
-          "value" : "info@jembi.org"
-        }]
-      }],
-      "description" : "A code used to indicate the category for the lab result.",
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "code" : "001"
-        }]
-      }],
-      "expansion" : {
-        "identifier" : "urn:uuid:73ecf6e9-86c3-43b7-914c-52033dcf291f",
-        "timestamp" : "2023-03-07T12:20:04+00:00",
-        "total" : 1,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "limitedExpansion",
-          "valueBoolean" : true
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220731"
-        }],
-        "contains" : [{
-          "system" : "http://snomed.info/sct",
-          "code" : "398579006",
-          "display" : "Human immunodeficiency virus-1 nucleic acid assay (procedure)"
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-transferred-out",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "vs-transferred-out",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on Loinc v2.73</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA20597-3\"> </a>  <a href=\"https://loinc.org/LA20597-3/\">LA20597-3</a></td><td>http://loinc.org</td><td>Transferred to another hospital</td></tr></table></div>"
-      },
-      "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-transferred-out",
-      "version" : "0.2.0",
-      "name" : "VSTransferredOut",
-      "title" : "Transferred out",
-      "status" : "active",
-      "experimental" : false,
-      "date" : "2023-03-07T12:18:55+00:00",
-      "publisher" : "Jembi Health Systems",
-      "contact" : [{
-        "telecom" : [{
-          "system" : "url",
-          "value" : "https://www.jembi.org"
-        },
-        {
-          "system" : "email",
-          "value" : "info@jembi.org"
-        }]
-      }],
-      "description" : "Transferred out codes",
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "code" : "001"
-        }]
-      }],
-      "expansion" : {
-        "identifier" : "urn:uuid:19d96fe2-de2f-41f1-8ae6-107f53f285b9",
-        "timestamp" : "2023-03-07T12:20:08+00:00",
-        "total" : 1,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "limitedExpansion",
-          "valueBoolean" : true
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://loinc.org|2.73"
-        }],
-        "contains" : [{
-          "system" : "http://loinc.org",
-          "code" : "LA20597-3",
-          "display" : "Transferred to another hospital"
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-arvtreatment-activity-type",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "vs-arvtreatment-activity-type",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on Loinc v2.73</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-45260-7\"> </a>  <a href=\"https://loinc.org/45260-7/\">45260-7</a></td><td>http://loinc.org</td><td>HIV ART medication</td></tr></table></div>"
-      },
-      "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-arvtreatment-activity-type",
-      "version" : "0.2.0",
-      "name" : "VSARVMedicationRequest",
-      "title" : "ARV Treatment Medication Request",
-      "status" : "active",
-      "experimental" : false,
-      "date" : "2023-03-07T12:18:55+00:00",
-      "publisher" : "Jembi Health Systems",
-      "contact" : [{
-        "telecom" : [{
-          "system" : "url",
-          "value" : "https://www.jembi.org"
-        },
-        {
-          "system" : "email",
-          "value" : "info@jembi.org"
-        }]
-      }],
-      "description" : "Codes used to represent a medication request for ART.",
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "code" : "001"
-        }]
-      }],
-      "expansion" : {
-        "identifier" : "urn:uuid:e4e40d71-d70b-4eac-82fb-901e0ff36c77",
-        "timestamp" : "2023-03-07T12:20:08+00:00",
-        "total" : 1,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "limitedExpansion",
-          "valueBoolean" : true
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://loinc.org|2.73"
-        }],
-        "contains" : [{
-          "system" : "http://loinc.org",
-          "code" : "45260-7",
-          "display" : "HIV ART medication"
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-hiv-recency-status",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "vs-hiv-recency-status",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2022</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-6493001\"> </a>  <a href=\"http://snomed.info/id/6493001\">6493001</a></td><td>http://snomed.info/sct</td><td>Recent (qualifier value)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-307294006\"> </a>  <a href=\"http://snomed.info/id/307294006\">307294006</a></td><td>http://snomed.info/sct</td><td>Personal history finding (finding)</td></tr></table></div>"
-      },
-      "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-hiv-recency-status",
-      "version" : "0.2.0",
-      "name" : "VSHIVRecencyStatus",
-      "title" : "HIV Recency Testing Status",
-      "status" : "active",
-      "experimental" : false,
-      "date" : "2023-03-07T12:18:55+00:00",
-      "publisher" : "Jembi Health Systems",
-      "contact" : [{
-        "telecom" : [{
-          "system" : "url",
-          "value" : "https://www.jembi.org"
-        },
-        {
-          "system" : "email",
-          "value" : "info@jembi.org"
-        }]
-      }],
-      "description" : "A list of HIV recency statuses",
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "code" : "001"
-        }]
-      }],
-      "expansion" : {
-        "identifier" : "urn:uuid:816762e8-d311-4342-af53-6a0aae90ffd6",
-        "timestamp" : "2023-03-07T12:20:08+00:00",
-        "total" : 2,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "limitedExpansion",
-          "valueBoolean" : true
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220731"
-        }],
-        "contains" : [{
-          "system" : "http://snomed.info/sct",
-          "code" : "6493001",
-          "display" : "Recent (qualifier value)"
-        },
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "307294006",
-          "display" : "Personal history finding (finding)"
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-hiv-death",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "vs-hiv-death",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2022</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-419620001\"> </a>  <a href=\"http://snomed.info/id/419620001\">419620001</a></td><td>http://snomed.info/sct</td><td>Death (event)</td></tr></table></div>"
-      },
-      "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-hiv-death",
-      "version" : "0.2.0",
-      "name" : "VSHIVDeath",
-      "title" : "Death",
-      "status" : "active",
-      "experimental" : false,
-      "date" : "2023-03-07T12:18:55+00:00",
-      "publisher" : "Jembi Health Systems",
-      "contact" : [{
-        "telecom" : [{
-          "system" : "url",
-          "value" : "https://www.jembi.org"
-        },
-        {
-          "system" : "email",
-          "value" : "info@jembi.org"
-        }]
-      }],
-      "description" : "A list of possible HIV deaths",
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "code" : "001"
-        }]
-      }],
-      "expansion" : {
-        "identifier" : "urn:uuid:e29b8407-ae9a-4cf7-9a71-b26ca850b822",
-        "timestamp" : "2023-03-07T12:20:10+00:00",
-        "total" : 1,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "limitedExpansion",
-          "valueBoolean" : true
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220731"
-        }],
-        "contains" : [{
-          "system" : "http://snomed.info/sct",
-          "code" : "419620001",
-          "display" : "Death (event)"
-        }]
-      }
-    }
-  },
-  {
     "fullUrl" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-careplan-outcome",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -1187,7 +493,7 @@
       "title" : "ARV treatment outcomes",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-03-07T12:18:55+00:00",
+      "date" : "2023-03-07T14:32:58+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -1207,8 +513,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:9e3dc203-9a25-4f64-9275-dc937d317d6f",
-        "timestamp" : "2023-03-07T12:20:10+00:00",
+        "identifier" : "urn:uuid:babd6193-344e-4748-8c8d-2f7a78ec3cad",
+        "timestamp" : "2023-03-07T14:33:51+00:00",
         "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1236,214 +542,6 @@
     }
   },
   {
-    "fullUrl" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-key-population-status",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "vs-key-population-status",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 7 concepts</p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li><a href=\"CodeSystem-cs-key-population-status.html\">Key Population Status v0.2.0 (CodeSystem)</a></li><li>SNOMED CT International edition 31-Jul 2022</li></ul></div><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-472986005\"> </a>  <a href=\"http://snomed.info/id/472986005\">472986005</a></td><td>http://snomed.info/sct</td><td>Sexually active with men (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-159799000\"> </a>  <a href=\"http://snomed.info/id/159799000\">159799000</a></td><td>http://snomed.info/sct</td><td>Female prostitute (occupation)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-159800001\"> </a>  <a href=\"http://snomed.info/id/159800001\">159800001</a></td><td>http://snomed.info/sct</td><td>Male prostitute (occupation)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-228388006\"> </a>  <a href=\"http://snomed.info/id/228388006\">228388006</a></td><td>http://snomed.info/sct</td><td>Intravenous drug user (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-417284009\"> </a>  <a href=\"http://snomed.info/id/417284009\">417284009</a></td><td>http://snomed.info/sct</td><td>Current drug user (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-407375002\"> </a>  <a href=\"http://snomed.info/id/407375002\">407375002</a></td><td>http://snomed.info/sct</td><td>Surgically transgendered transsexual (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-cbs-CodeSystem-cs-key-population-status-General-Population\"> </a>  <a href=\"CodeSystem-cs-key-population-status.html#cs-key-population-status-General-Population\">General-Population</a></td><td>http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-key-population-status</td><td>General Population</td></tr></table></div>"
-      },
-      "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-key-population-status",
-      "version" : "0.2.0",
-      "name" : "VSKeyPopulationSatus",
-      "title" : "Key Population Status",
-      "status" : "active",
-      "experimental" : false,
-      "date" : "2023-03-07T12:18:55+00:00",
-      "publisher" : "Jembi Health Systems",
-      "contact" : [{
-        "telecom" : [{
-          "system" : "url",
-          "value" : "https://www.jembi.org"
-        },
-        {
-          "system" : "email",
-          "value" : "info@jembi.org"
-        }]
-      }],
-      "description" : "A list of key population types",
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "code" : "001"
-        }]
-      }],
-      "expansion" : {
-        "identifier" : "urn:uuid:8a2cb556-856d-4e1a-b660-5b7ccaec99b7",
-        "timestamp" : "2023-03-07T12:20:10+00:00",
-        "total" : 7,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "limitedExpansion",
-          "valueBoolean" : true
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220731"
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-key-population-status|0.2.0"
-        }],
-        "contains" : [{
-          "system" : "http://snomed.info/sct",
-          "code" : "472986005",
-          "display" : "Sexually active with men (finding)"
-        },
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "159799000",
-          "display" : "Female prostitute (occupation)"
-        },
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "159800001",
-          "display" : "Male prostitute (occupation)"
-        },
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "228388006",
-          "display" : "Intravenous drug user (finding)"
-        },
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "417284009",
-          "display" : "Current drug user (finding)"
-        },
-        {
-          "system" : "http://snomed.info/sct",
-          "code" : "407375002",
-          "display" : "Surgically transgendered transsexual (finding)"
-        },
-        {
-          "system" : "http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-key-population-status",
-          "code" : "General-Population",
-          "display" : "General Population"
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-hiv-recency-test",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "vs-hiv-recency-test",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2022</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-409788009\"> </a>  <a href=\"http://snomed.info/id/409788009\">409788009</a></td><td>http://snomed.info/sct</td><td>Rapid human immunodeficiency virus type 1 antibody test (procedure)</td></tr></table></div>"
-      },
-      "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-hiv-recency-test",
-      "version" : "0.2.0",
-      "name" : "VSHIVRecencyTest",
-      "title" : "Recency HIV Test",
-      "status" : "active",
-      "experimental" : false,
-      "date" : "2023-03-07T12:18:55+00:00",
-      "publisher" : "Jembi Health Systems",
-      "contact" : [{
-        "telecom" : [{
-          "system" : "url",
-          "value" : "https://www.jembi.org"
-        },
-        {
-          "system" : "email",
-          "value" : "info@jembi.org"
-        }]
-      }],
-      "description" : "Used by the observation to indicate that a HIV recency test was performed.",
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "code" : "001"
-        }]
-      }],
-      "expansion" : {
-        "identifier" : "urn:uuid:db9fd9c3-297e-4c06-8ff7-f0d0ccd01b2c",
-        "timestamp" : "2023-03-07T12:20:11+00:00",
-        "total" : 1,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "limitedExpansion",
-          "valueBoolean" : true
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220731"
-        }],
-        "contains" : [{
-          "system" : "http://snomed.info/sct",
-          "code" : "409788009",
-          "display" : "Rapid human immunodeficiency virus type 1 antibody test (procedure)"
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-cd4-percentage",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "vs-cd4-percentage",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2022</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-313938009\"> </a>  <a href=\"http://snomed.info/id/313938009\">313938009</a></td><td>http://snomed.info/sct</td><td>CD4 percent count (procedure)</td></tr></table></div>"
-      },
-      "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-cd4-percentage",
-      "version" : "0.2.0",
-      "name" : "VSCD4Percentage",
-      "title" : "CD4 percentage code",
-      "status" : "active",
-      "experimental" : false,
-      "date" : "2023-03-07T12:18:55+00:00",
-      "publisher" : "Jembi Health Systems",
-      "contact" : [{
-        "telecom" : [{
-          "system" : "url",
-          "value" : "https://www.jembi.org"
-        },
-        {
-          "system" : "email",
-          "value" : "info@jembi.org"
-        }]
-      }],
-      "description" : "A list of CD4 percentage codes",
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "code" : "001"
-        }]
-      }],
-      "expansion" : {
-        "identifier" : "urn:uuid:1babd41b-585b-4e94-b4e5-47d091796036",
-        "timestamp" : "2023-03-07T12:20:11+00:00",
-        "total" : 1,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "limitedExpansion",
-          "valueBoolean" : true
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220731"
-        }],
-        "contains" : [{
-          "system" : "http://snomed.info/sct",
-          "code" : "313938009",
-          "display" : "CD4 percent count (procedure)"
-        }]
-      }
-    }
-  },
-  {
     "fullUrl" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-reason-for-assessment-or-test-not-performed",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -1458,7 +556,7 @@
       "title" : "Reason for Assessment or Test Not Performed",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-03-07T12:18:55+00:00",
+      "date" : "2023-03-07T14:32:58+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -1478,8 +576,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:30579027-b663-4156-8d87-8d3f3fc3545f",
-        "timestamp" : "2023-03-07T12:20:11+00:00",
+        "identifier" : "urn:uuid:548177c4-0d0f-4e85-9034-e3d80b7b3c34",
+        "timestamp" : "2023-03-07T14:33:51+00:00",
         "total" : 15,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1586,7 +684,7 @@
       "title" : "Conditions",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-03-07T12:18:55+00:00",
+      "date" : "2023-03-07T14:32:58+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -1606,8 +704,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:63710aa2-9ea9-4e4a-8eb3-49cd50d3b9b2",
-        "timestamp" : "2023-03-07T12:20:14+00:00",
+        "identifier" : "urn:uuid:c06407d4-f21f-422a-9efb-b1697d949b0b",
+        "timestamp" : "2023-03-07T14:33:53+00:00",
         "total" : 1,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1625,6 +723,908 @@
           "system" : "http://snomed.info/sct",
           "code" : "86406008",
           "display" : "Human immunodeficiency virus infection (disorder)"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-cd4-percentage",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "vs-cd4-percentage",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2022</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-313938009\"> </a>  <a href=\"http://snomed.info/id/313938009\">313938009</a></td><td>http://snomed.info/sct</td><td>CD4 percent count (procedure)</td></tr></table></div>"
+      },
+      "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-cd4-percentage",
+      "version" : "0.2.0",
+      "name" : "VSCD4Percentage",
+      "title" : "CD4 percentage code",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2023-03-07T14:32:58+00:00",
+      "publisher" : "Jembi Health Systems",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.jembi.org"
+        },
+        {
+          "system" : "email",
+          "value" : "info@jembi.org"
+        }]
+      }],
+      "description" : "A list of CD4 percentage codes",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:1a908a4e-3f5c-4636-b4fa-e70219b6d6b1",
+        "timestamp" : "2023-03-07T14:33:53+00:00",
+        "total" : 1,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220731"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "313938009",
+          "display" : "CD4 percent count (procedure)"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-hiv-cause-of-death",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "vs-hiv-cause-of-death",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on Loinc v2.73</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-80359-3\"> </a>  <a href=\"https://loinc.org/80359-3/\">80359-3</a></td><td>http://loinc.org</td><td>Cause of death.underlying [Manual]</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-69441-4\"> </a>  <a href=\"https://loinc.org/69441-4/\">69441-4</a></td><td>http://loinc.org</td><td>Other significant causes or conditions of death</td></tr></table></div>"
+      },
+      "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-hiv-cause-of-death",
+      "version" : "0.2.0",
+      "name" : "VSHIVCauseOfDeath",
+      "title" : "Causes of Death",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2023-03-07T14:32:58+00:00",
+      "publisher" : "Jembi Health Systems",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.jembi.org"
+        },
+        {
+          "system" : "email",
+          "value" : "info@jembi.org"
+        }]
+      }],
+      "description" : "A list of possible HIV causes of deaths",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:04fb6b16-9043-4336-863e-5ae9a840a8a2",
+        "timestamp" : "2023-03-07T14:33:53+00:00",
+        "total" : 2,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://loinc.org|2.73"
+        }],
+        "contains" : [{
+          "system" : "http://loinc.org",
+          "code" : "80359-3",
+          "display" : "Cause of death.underlying [Manual]"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "69441-4",
+          "display" : "Other significant causes or conditions of death"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-art-regimen-change-type",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "vs-art-regimen-change-type",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-cs-art-regimen-change-type.html\">ART Regimen Change Types v0.2.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-cbs-CodeSystem-cs-art-regimen-change-type-Switched\"> </a>  <a href=\"CodeSystem-cs-art-regimen-change-type.html#cs-art-regimen-change-type-Switched\">Switched</a></td><td>http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-art-regimen-change-type</td><td>ARV Regimen Switched</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-cbs-CodeSystem-cs-art-regimen-change-type-Substituted\"> </a>  <a href=\"CodeSystem-cs-art-regimen-change-type.html#cs-art-regimen-change-type-Substituted\">Substituted</a></td><td>http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-art-regimen-change-type</td><td>ARV Regimen Substituted</td></tr></table></div>"
+      },
+      "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-art-regimen-change-type",
+      "version" : "0.2.0",
+      "name" : "VSARTRegimenChangeType",
+      "title" : "ART Regimen Change Types",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2023-03-07T14:32:58+00:00",
+      "publisher" : "Jembi Health Systems",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.jembi.org"
+        },
+        {
+          "system" : "email",
+          "value" : "info@jembi.org"
+        }]
+      }],
+      "description" : "A list of options to determine whether an ARV regimen was switched or substituted.",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:40425796-805c-4ddb-998e-0ff8307a1ba2",
+        "timestamp" : "2023-03-07T14:33:54+00:00",
+        "total" : 2,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-art-regimen-change-type|0.2.0"
+        }],
+        "contains" : [{
+          "system" : "http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-art-regimen-change-type",
+          "code" : "Switched",
+          "display" : "ARV Regimen Switched"
+        },
+        {
+          "system" : "http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-art-regimen-change-type",
+          "code" : "Substituted",
+          "display" : "ARV Regimen Substituted"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-yes-no",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "vs-yes-no",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2022</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-373066001\"> </a>  <a href=\"http://snomed.info/id/373066001\">373066001</a></td><td>http://snomed.info/sct</td><td>Yes</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-373067005\"> </a>  <a href=\"http://snomed.info/id/373067005\">373067005</a></td><td>http://snomed.info/sct</td><td>No</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-261665006\"> </a>  <a href=\"http://snomed.info/id/261665006\">261665006</a></td><td>http://snomed.info/sct</td><td>Unknown</td></tr></table></div>"
+      },
+      "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-yes-no",
+      "version" : "0.2.0",
+      "name" : "VSYesNoUnknown",
+      "title" : "Yes No Unknown",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2023-03-07T14:32:58+00:00",
+      "publisher" : "Jembi Health Systems",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.jembi.org"
+        },
+        {
+          "system" : "email",
+          "value" : "info@jembi.org"
+        }]
+      }],
+      "description" : "A list of options used to provide an answer",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:7d9fb9fc-c723-4ba9-bcd7-606ab266f7d3",
+        "timestamp" : "2023-03-07T14:33:54+00:00",
+        "total" : 3,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220731"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "373066001",
+          "display" : "Yes"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "373067005",
+          "display" : "No"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "261665006",
+          "display" : "Unknown"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-hiv-recency-test",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "vs-hiv-recency-test",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2022</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-409788009\"> </a>  <a href=\"http://snomed.info/id/409788009\">409788009</a></td><td>http://snomed.info/sct</td><td>Rapid human immunodeficiency virus type 1 antibody test (procedure)</td></tr></table></div>"
+      },
+      "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-hiv-recency-test",
+      "version" : "0.2.0",
+      "name" : "VSHIVRecencyTest",
+      "title" : "Recency HIV Test",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2023-03-07T14:32:58+00:00",
+      "publisher" : "Jembi Health Systems",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.jembi.org"
+        },
+        {
+          "system" : "email",
+          "value" : "info@jembi.org"
+        }]
+      }],
+      "description" : "Used by the observation to indicate that a HIV recency test was performed.",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:80e66a22-5d9b-42d8-992d-4dbf08376008",
+        "timestamp" : "2023-03-07T14:33:54+00:00",
+        "total" : 1,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220731"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "409788009",
+          "display" : "Rapid human immunodeficiency virus type 1 antibody test (procedure)"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-hiv-death",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "vs-hiv-death",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2022</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-419620001\"> </a>  <a href=\"http://snomed.info/id/419620001\">419620001</a></td><td>http://snomed.info/sct</td><td>Death (event)</td></tr></table></div>"
+      },
+      "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-hiv-death",
+      "version" : "0.2.0",
+      "name" : "VSHIVDeath",
+      "title" : "Death",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2023-03-07T14:32:58+00:00",
+      "publisher" : "Jembi Health Systems",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.jembi.org"
+        },
+        {
+          "system" : "email",
+          "value" : "info@jembi.org"
+        }]
+      }],
+      "description" : "A list of possible HIV deaths",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:526323e3-3544-4e41-8842-9bd45f7ec0b4",
+        "timestamp" : "2023-03-07T14:33:55+00:00",
+        "total" : 1,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220731"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "419620001",
+          "display" : "Death (event)"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-test-types",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "vs-test-types",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on Loinc v2.73</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-25842-6\"> </a>  <a href=\"https://loinc.org/25842-6/\">25842-6</a></td><td>http://loinc.org</td><td>HIV 2 proviral DNA [Presence] in Specimen by NAA with probe detection</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-25836-8\"> </a>  <a href=\"https://loinc.org/25836-8/\">25836-8</a></td><td>http://loinc.org</td><td>HIV 1 RNA [#/volume] (viral load) in Specimen by NAA with probe detection</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-24467-3\"> </a>  <a href=\"https://loinc.org/24467-3/\">24467-3</a></td><td>http://loinc.org</td><td>CD3+CD4+ (T4 helper) cells [#/volume] in Blood</td></tr></table></div>"
+      },
+      "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-test-types",
+      "version" : "0.2.0",
+      "name" : "VSTestTypes",
+      "title" : "Test Types",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2023-03-07T14:32:58+00:00",
+      "publisher" : "Jembi Health Systems",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.jembi.org"
+        },
+        {
+          "system" : "email",
+          "value" : "info@jembi.org"
+        }]
+      }],
+      "description" : "A list of HIV test types",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:ecaf31fa-a4cc-4e76-b10f-5b5032ec03df",
+        "timestamp" : "2023-03-07T14:33:55+00:00",
+        "total" : 3,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://loinc.org|2.73"
+        }],
+        "contains" : [{
+          "system" : "http://loinc.org",
+          "code" : "25842-6",
+          "display" : "HIV 2 proviral DNA [Presence] in Specimen by NAA with probe detection"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "25836-8",
+          "display" : "HIV 1 RNA [#/volume] (viral load) in Specimen by NAA with probe detection"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "24467-3",
+          "display" : "CD3+CD4+ (T4 helper) cells [#/volume] in Blood"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-artregimen-lines",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "vs-artregimen-lines",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2022</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-708255002\"> </a>  <a href=\"http://snomed.info/id/708255002\">708255002</a></td><td>http://snomed.info/sct</td><td>First line treatment (procedure)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-708256001\"> </a>  <a href=\"http://snomed.info/id/708256001\">708256001</a></td><td>http://snomed.info/sct</td><td>Second line treatment (procedure)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-708257005\"> </a>  <a href=\"http://snomed.info/id/708257005\">708257005</a></td><td>http://snomed.info/sct</td><td>Third line treatment (procedure)</td></tr></table></div>"
+      },
+      "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-artregimen-lines",
+      "version" : "0.2.0",
+      "name" : "VSARTRegimenLines",
+      "title" : "ART Regimen Lines",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2023-03-07T14:32:58+00:00",
+      "publisher" : "Jembi Health Systems",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.jembi.org"
+        },
+        {
+          "system" : "email",
+          "value" : "info@jembi.org"
+        }]
+      }],
+      "description" : "A list of ART regimen therapeutic lines.",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:9a0eb1f1-df9f-473e-9f4c-b04fc665bdb5",
+        "timestamp" : "2023-03-07T14:33:55+00:00",
+        "total" : 3,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220731"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "708255002",
+          "display" : "First line treatment (procedure)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "708256001",
+          "display" : "Second line treatment (procedure)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "708257005",
+          "display" : "Third line treatment (procedure)"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-specimen-type",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "vs-specimen-type",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 5 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2022</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-119361006\"> </a>  <a href=\"http://snomed.info/id/119361006\">119361006</a></td><td>http://snomed.info/sct</td><td>Plasma specimen (specimen)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-440500007\"> </a>  <a href=\"http://snomed.info/id/440500007\">440500007</a></td><td>http://snomed.info/sct</td><td>Dried blood spot specimen (specimen)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-441620008\"> </a>  <a href=\"http://snomed.info/id/441620008\">441620008</a></td><td>http://snomed.info/sct</td><td>Oral fluid specimen (specimen)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-258580003\"> </a>  <a href=\"http://snomed.info/id/258580003\">258580003</a></td><td>http://snomed.info/sct</td><td>Whole blood specimen (specimen)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-119364003\"> </a>  <a href=\"http://snomed.info/id/119364003\">119364003</a></td><td>http://snomed.info/sct</td><td>Serum specimen (specimen)</td></tr></table></div>"
+      },
+      "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-specimen-type",
+      "version" : "0.2.0",
+      "name" : "VSSpecimenType",
+      "title" : "Specimen Type Used In Viral Load testing",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2023-03-07T14:32:58+00:00",
+      "publisher" : "Jembi Health Systems",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.jembi.org"
+        },
+        {
+          "system" : "email",
+          "value" : "info@jembi.org"
+        }]
+      }],
+      "description" : "A list of specimen types.",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:55d240b3-cb94-420e-8405-954f42101ab8",
+        "timestamp" : "2023-03-07T14:33:55+00:00",
+        "total" : 5,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220731"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "119361006",
+          "display" : "Plasma specimen (specimen)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "440500007",
+          "display" : "Dried blood spot specimen (specimen)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "441620008",
+          "display" : "Oral fluid specimen (specimen)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "258580003",
+          "display" : "Whole blood specimen (specimen)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "119364003",
+          "display" : "Serum specimen (specimen)"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-vl-result-code",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "vs-vl-result-code",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2022</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-398579006\"> </a>  <a href=\"http://snomed.info/id/398579006\">398579006</a></td><td>http://snomed.info/sct</td><td>Human immunodeficiency virus-1 nucleic acid assay (procedure)</td></tr></table></div>"
+      },
+      "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-vl-result-code",
+      "version" : "0.2.0",
+      "name" : "VSVLResultCode",
+      "title" : "Viral Load Result Code",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2023-03-07T14:32:58+00:00",
+      "publisher" : "Jembi Health Systems",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.jembi.org"
+        },
+        {
+          "system" : "email",
+          "value" : "info@jembi.org"
+        }]
+      }],
+      "description" : "A code used to indicate the category for the lab result.",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:ccce12a0-c274-4aaf-a2a0-9d63ecfd500f",
+        "timestamp" : "2023-03-07T14:33:56+00:00",
+        "total" : 1,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220731"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "398579006",
+          "display" : "Human immunodeficiency virus-1 nucleic acid assay (procedure)"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-cd4-count",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "vs-cd4-count",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2022</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-151271000119102\"> </a>  <a href=\"http://snomed.info/id/151271000119102\">151271000119102</a></td><td>http://snomed.info/sct</td><td>Abnormal blood test (finding)</td></tr></table></div>"
+      },
+      "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-cd4-count",
+      "version" : "0.2.0",
+      "name" : "VSCD4Count",
+      "title" : "CD4 test result code",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2023-03-07T14:32:58+00:00",
+      "publisher" : "Jembi Health Systems",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.jembi.org"
+        },
+        {
+          "system" : "email",
+          "value" : "info@jembi.org"
+        }]
+      }],
+      "description" : "A list of CD4 test result codes",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:ac9da0a6-f7b9-49f2-91cb-b47229c56852",
+        "timestamp" : "2023-03-07T14:33:56+00:00",
+        "total" : 1,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220731"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "151271000119102",
+          "display" : "Abnormal blood test (finding)"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-arvtreatment-activity-type",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "vs-arvtreatment-activity-type",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on Loinc v2.73</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-45260-7\"> </a>  <a href=\"https://loinc.org/45260-7/\">45260-7</a></td><td>http://loinc.org</td><td>HIV ART medication</td></tr></table></div>"
+      },
+      "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-arvtreatment-activity-type",
+      "version" : "0.2.0",
+      "name" : "VSARVMedicationRequest",
+      "title" : "ARV Treatment Medication Request",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2023-03-07T14:32:58+00:00",
+      "publisher" : "Jembi Health Systems",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.jembi.org"
+        },
+        {
+          "system" : "email",
+          "value" : "info@jembi.org"
+        }]
+      }],
+      "description" : "Codes used to represent a medication request for ART.",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:53b3d366-393f-4f4c-a9cc-a8fdbefa7446",
+        "timestamp" : "2023-03-07T14:33:58+00:00",
+        "total" : 1,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://loinc.org|2.73"
+        }],
+        "contains" : [{
+          "system" : "http://loinc.org",
+          "code" : "45260-7",
+          "display" : "HIV ART medication"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-key-population-status",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "vs-key-population-status",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 7 concepts</p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li><a href=\"CodeSystem-cs-key-population-status.html\">Key Population Status v0.2.0 (CodeSystem)</a></li><li>SNOMED CT International edition 31-Jul 2022</li></ul></div><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-472986005\"> </a>  <a href=\"http://snomed.info/id/472986005\">472986005</a></td><td>http://snomed.info/sct</td><td>Sexually active with men (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-159799000\"> </a>  <a href=\"http://snomed.info/id/159799000\">159799000</a></td><td>http://snomed.info/sct</td><td>Female prostitute (occupation)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-159800001\"> </a>  <a href=\"http://snomed.info/id/159800001\">159800001</a></td><td>http://snomed.info/sct</td><td>Male prostitute (occupation)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-228388006\"> </a>  <a href=\"http://snomed.info/id/228388006\">228388006</a></td><td>http://snomed.info/sct</td><td>Intravenous drug user (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-417284009\"> </a>  <a href=\"http://snomed.info/id/417284009\">417284009</a></td><td>http://snomed.info/sct</td><td>Current drug user (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-407375002\"> </a>  <a href=\"http://snomed.info/id/407375002\">407375002</a></td><td>http://snomed.info/sct</td><td>Surgically transgendered transsexual (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-cbs-CodeSystem-cs-key-population-status-General-Population\"> </a>  <a href=\"CodeSystem-cs-key-population-status.html#cs-key-population-status-General-Population\">General-Population</a></td><td>http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-key-population-status</td><td>General Population</td></tr></table></div>"
+      },
+      "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-key-population-status",
+      "version" : "0.2.0",
+      "name" : "VSKeyPopulationSatus",
+      "title" : "Key Population Status",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2023-03-07T14:32:58+00:00",
+      "publisher" : "Jembi Health Systems",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.jembi.org"
+        },
+        {
+          "system" : "email",
+          "value" : "info@jembi.org"
+        }]
+      }],
+      "description" : "A list of key population types",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:a54a6703-9c20-4772-a4dc-070a0fd003dd",
+        "timestamp" : "2023-03-07T14:33:58+00:00",
+        "total" : 7,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220731"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-key-population-status|0.2.0"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "472986005",
+          "display" : "Sexually active with men (finding)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "159799000",
+          "display" : "Female prostitute (occupation)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "159800001",
+          "display" : "Male prostitute (occupation)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "228388006",
+          "display" : "Intravenous drug user (finding)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "417284009",
+          "display" : "Current drug user (finding)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "407375002",
+          "display" : "Surgically transgendered transsexual (finding)"
+        },
+        {
+          "system" : "http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-key-population-status",
+          "code" : "General-Population",
+          "display" : "General Population"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-transferred-out",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "vs-transferred-out",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on Loinc v2.73</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA20597-3\"> </a>  <a href=\"https://loinc.org/LA20597-3/\">LA20597-3</a></td><td>http://loinc.org</td><td>Transferred to another hospital</td></tr></table></div>"
+      },
+      "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-transferred-out",
+      "version" : "0.2.0",
+      "name" : "VSTransferredOut",
+      "title" : "Transferred out",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2023-03-07T14:32:58+00:00",
+      "publisher" : "Jembi Health Systems",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.jembi.org"
+        },
+        {
+          "system" : "email",
+          "value" : "info@jembi.org"
+        }]
+      }],
+      "description" : "Transferred out codes",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:5ecd0b14-b4c1-4d9d-9eb9-9cdd72bcd17d",
+        "timestamp" : "2023-03-07T14:34:00+00:00",
+        "total" : 1,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://loinc.org|2.73"
+        }],
+        "contains" : [{
+          "system" : "http://loinc.org",
+          "code" : "LA20597-3",
+          "display" : "Transferred to another hospital"
         }]
       }
     }
