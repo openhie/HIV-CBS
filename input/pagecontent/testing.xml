@@ -28,7 +28,7 @@
     <ol>
         <li><strong>Automation</strong></li>
             <ul>
-                <li><em>End-to-end testing</em>
+                <li>End-to-end testing
                     <ol>
                         <li>
                             To ensure that data is moving along the pipeline from the point of service (PoS) system to the analytics platform in a timeous fashion and that both target systems (<a href="https://hapifhir.io/hapi-fhir/docs/getting_started/introduction.html" target="_blank">Central Data Repository</a> &amp; <a href="https://jembi.gitbook.io/jembi-platform/packages/client-registry-santempi" target="_blank">Client Registry</a>) represent data that is accurate and correct. 
@@ -50,14 +50,14 @@
                 </li>
             </ul>
         <li><strong>Manual Testing</strong>
-            <ol>
+            <ul>
                 <li>
                     Methodology: 
                     With the availability of the EMR and assuming that it is stable, the tester will be able to transact with the <a href="index.html#technicalBackground">DISI's reference platform architecture</a> and perform tests against each component to compare outcomes as per the specification documentation and further measure data quality. 
                     Should the EMR not be available or unstable, <a href="index.html#messaging-testing">Postman</a> will be used as the tool to support the overall testing process. 
                     This area of testing will require that the tester explores each architectural component directly to understand its core capabilities and limitations.
                 </li>
-            </ol>
+            </ul>
         </li>
     </ol>
 
