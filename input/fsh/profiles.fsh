@@ -9,9 +9,11 @@ Description: "Organization providing HIV Testing Services."
 * identifier ^slicing.rules = #openAtEnd
 * identifier ^slicing.description = "Slice based on the type of identifier."
 * identifier contains
-    HTS 1..1
-* identifier[HTS].value 1..1
-* identifier[HTS].system = "http://openhie.org/fhir/hiv-cbs/identifier/hiv-organization" (exactly)
+    XX 1..1
+* identifier[XX].value 1..1
+* identifier[XX].system = "http://openhie.org/fhir/hiv-cbs/identifier/hiv-organization" (exactly)
+* identifier[XX].type.coding.code = #XX
+* identifier[XX].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
 * address 1..1
 * address.country 1..1
 * address.state 1..1
@@ -24,16 +26,20 @@ Parent: Patient
 Id: hiv-patient
 Title: "Patient"
 Description: "A patient resource for an HIV Patient"
-* identifier ^slicing.discriminator.type = #value
+* identifier 1..*
+* identifier ^slicing.discriminator.type = #pattern
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #openAtEnd
 * identifier contains
     NID 0..1 and
-    MN 1..1
+    MR 1..1
 * identifier[NID].value 0..1
 * identifier[NID].system = "http://openhie.org/fhir/hiv-cbs/identifier/nid" (exactly)
-* identifier[MN].value 1..1
-* identifier[MN].system = "http://openhie.org/fhir/hiv-cbs/identifier/mn" (exactly)
+
+* identifier[MR].value 1..1
+* identifier[MR].system = "http://openhie.org/fhir/hiv-cbs/identifier/mr" (exactly)
+* identifier[MR].type.coding.code = #MR
+* identifier[MR].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
 * active 0..1
 * name.given 1..*
 * name.family 1..1
@@ -81,13 +87,16 @@ Parent: Condition
 Id: hiv-diagnosis
 Title: "Diagnosis"
 Description: "This profile represents the confirmation of HIV diagnosis."
-* identifier ^slicing.discriminator.type = #value
+* identifier 1..*
+* identifier ^slicing.discriminator.type = #pattern
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #openAtEnd
 * identifier contains
-    HPTUI 1..1
-* identifier[HPTUI].value 1..1
-* identifier[HPTUI].system = "http://openhie.org/fhir/hiv-cbs/identifier/hiv-diagnosis" (exactly)
+    PI 1..1
+* identifier[PI].value 1..1
+* identifier[PI].system = "http://openhie.org/fhir/hiv-cbs/identifier/hiv-diagnosis" (exactly)
+* identifier[PI].type.coding.code = #PI
+* identifier[PI].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
 * clinicalStatus 1..1
 * verificationStatus 1..1
 * code 1..1
@@ -168,13 +177,16 @@ Parent: EpisodeOfCare
 Id: hiv-episode-of-care
 Title: "Patient Enrollment Type"
 Description: "This profile is used to enrol the patient into HIV care."
-* identifier ^slicing.discriminator.type = #value
+* identifier 1..*
+* identifier ^slicing.discriminator.type = #pattern
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #openAtEnd
 * identifier contains
-    HMPUI 1..*
-* identifier[HMPUI].value 1..1
-* identifier[HMPUI].system = "http://openhie.org/fhir/hiv-cbs/identifier/enrollment-unique-id" (exactly)
+    PI 1..1
+* identifier[PI].value 1..1
+* identifier[PI].system = "http://openhie.org/fhir/hiv-cbs/identifier/enrollment-unique-id" (exactly)
+* identifier[PI].type.coding.code = #PI
+* identifier[PI].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
 * status 1..1
 * diagnosis 1..* 
 * diagnosis.condition 1..1 
@@ -187,7 +199,16 @@ Parent: Specimen
 Id: viral-load-specimen
 Title: "Viral Load Specimen"
 Description: "The test sample that was collected for the initiated lab order."
-* identifier 1..1
+* identifier 1..*
+* identifier ^slicing.discriminator.type = #pattern
+* identifier ^slicing.discriminator.path = "system"
+* identifier ^slicing.rules = #openAtEnd
+* identifier contains
+    USID 1..1
+* identifier[USID].value 1..1
+* identifier[USID].system = "http://openhie.org/fhir/hiv-cbs/identifier/specimen-id" (exactly)
+* identifier[USID].type.coding.code = #USID
+* identifier[USID].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
 * type 1..1
 * type from VSSpecimenType (required)
 * subject 1..1
@@ -199,30 +220,40 @@ Parent: Location
 Id: hiv-service-request-location
 Title: "Lab Order Request Location"
 Description: "What is the location of the organization responsible for conducting the examination of the individual's sample?"
+* identifier 1..*
 * identifier ^slicing.discriminator.type = #pattern
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #openAtEnd
-* identifier ^slicing.description = "Slice based on the type of identifier"
+* identifier ^slicing.description = "Slice based on the type of identifier."
 * identifier contains
-    PRN 0..1
-* identifier[PRN].value 0..1
-* identifier[PRN].system = "http://openhie.org/fhir/hiv-cbs/identifier/hiv-service-request-location" (exactly)
-* name 1..1
+    XX 1..1
+* identifier[XX].value 1..1
+* identifier[XX].system = "http://openhie.org/fhir/hiv-cbs/identifier/hiv-service-request-location" (exactly)
+* identifier[XX].type.coding.code = #XX
+* identifier[XX].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
 * address 1..1
+* address.country 1..1
+* address.state 1..1
+* address.district 1..1
+* address.city 1..1
+* name 1..1
 
 Profile: HIVServiceRequest
 Parent: ServiceRequest
 Id: HIV-lab-order
 Title: "Lab Order"
 Description: "A service request that initiates the need for the lab to collect the test sample."
+* identifier 1..*
 * identifier ^slicing.discriminator.type = #pattern
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #openAtEnd
 * identifier ^slicing.description = "Slice based on the type of identifier"
 * identifier contains
-    FILL 1..1 
-* identifier[FILL].value 1..1
-* identifier[FILL].system = "http://openhie.org/fhir/hiv-cbs/identifier/lab-order-identifier" (exactly)
+    PLAC 1..1 
+* identifier[PLAC].value 1..1
+* identifier[PLAC].system = "http://openhie.org/fhir/hiv-cbs/identifier/lab-order-identifier" (exactly)
+* identifier[PLAC].type.coding.code = #PLAC
+* identifier[PLAC].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
 * status 1..1
 * intent = #order
 * code 1..1
@@ -403,9 +434,11 @@ Description: "Organization who is receiving the patient as being transferred in.
 * identifier ^slicing.rules = #openAtEnd
 * identifier ^slicing.description = "Slice based on the type of identifier"
 * identifier contains
-    HTS 1..1
-* identifier[HTS].value 1..1
-* identifier[HTS].system = "http://openhie.org/fhir/hiv-cbs/identifier/hiv-organization" (exactly)
+    XX 1..1
+* identifier[XX].value 1..1
+* identifier[XX].system = "http://openhie.org/fhir/hiv-cbs/identifier/hiv-organization" (exactly)
+* identifier[XX].type.coding.code = #XX
+* identifier[XX].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
 * address 1..1
 * address.country 1..1
 * address.state 1..1
