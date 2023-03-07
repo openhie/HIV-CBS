@@ -11,7 +11,7 @@
   "title" : "HIV Case-Based Surveillance",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2023-03-06T13:58:50+00:00",
+  "date" : "2023-03-07T12:18:55+00:00",
   "publisher" : "Jembi Health Systems",
   "contact" : [{
     "telecom" : [{
@@ -619,222 +619,13 @@
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Organization"
+        "valueString" : "ServiceRequest"
       }],
       "reference" : {
-        "reference" : "Organization/HIVOrganizationPatientTransferredToExample"
+        "reference" : "ServiceRequest/HIVServiceRequestExample"
       },
-      "name" : "Example Organization - HIVOrganizationPatientTransferredToExample",
-      "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-organization-patient-transferred-to"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/cs-art-regimen-change-type"
-      },
-      "name" : "ART Regimen Change Types",
-      "description" : "A list of options to determine whether an ARV regimen was switched or substituted."
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "MedicationRequest"
-      }],
-      "reference" : {
-        "reference" : "MedicationRequest/HIVCareMedicationRequestExample"
-      },
-      "name" : "Example MedicationRequest - HIVCareMedicationRequestExample",
-      "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-med-req"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/hiv-arv-treatment"
-      },
-      "name" : "ARV Treatment",
-      "description" : "This profile is to record prescribed ARV regimen against a given therapeutic line."
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Location"
-      }],
-      "reference" : {
-        "reference" : "Location/HIVServiceRequestLocationExample"
-      },
-      "name" : "Example Location - HIVServiceRequestLocationExample",
-      "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-service-request-location"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/vs-hiv-recency-test-result"
-      },
-      "name" : "Recency HIV Test Result",
-      "description" : "A list of HIV recency test result codes."
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/CD4TestResultExample"
-      },
-      "name" : "Example Observation - CD4TestResultExample",
-      "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-cd4-test"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/hiv-organization"
-      },
-      "name" : "HIV Organization",
-      "description" : "Organization providing HIV Testing Services."
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Bundle"
-      }],
-      "reference" : {
-        "reference" : "Bundle/LabCancellation"
-      },
-      "name" : "Example Bundle - LabCancellation",
-      "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-lab-task"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/HIVRecencyTestResultExample"
-      },
-      "name" : "Example Observation - HIVRecencyTestResultExample",
-      "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-recency-test-result"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/death"
-      },
-      "name" : "Patient Death",
-      "description" : "This profile captures the death outcome for a patient."
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Task"
-      }],
-      "reference" : {
-        "reference" : "Task/HIVLabOrderCancellationTaskExample"
-      },
-      "name" : "Example Task - HIVLabOrderCancellationTaskExample",
-      "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-lab-task"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/vs-reason-sample-cancelled-or-rejected"
-      },
-      "name" : "Reasons why a lab order was cancelled or rejected",
-      "description" : "Reasons why a lab order was cancelled or rejected."
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/art-regimen-line"
-      },
-      "name" : "ART Regimen Line",
-      "description" : "Therapeutic lines that are used to classify the patient's currently prescribed ARV regimen."
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/art-regimen-switched-or-substituted"
-      },
-      "name" : "ART Regimen Switched Or Substituted",
-      "description" : "The ARV regimen has been switched to a new ARV regimen or has been substituted by another ARV regimen."
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/hiv-lab-task"
-      },
-      "name" : "Lab Task",
-      "description" : "Assists with tracking the state of the lab order and its completion status."
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/DateHIVTestDoneExample"
-      },
-      "name" : "Example Observation - DateHIVTestDoneExample",
-      "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/date-hiv-test-done"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/vs-hiv-test-done"
-      },
-      "name" : "HIV Test Done",
-      "description" : "Used by the observation to indicate that a HIV test was performed."
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/target-facility-encounter"
-      },
-      "name" : "Target Facility Encounter",
-      "description" : "This profile represents the current facility at which the patient is receiving treatment."
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Patient"
-      }],
-      "reference" : {
-        "reference" : "Patient/HIVPatientExample"
-      },
-      "name" : "Example Patient - HIVPatientExample",
-      "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-patient"
+      "name" : "Example ServiceRequest - HIVServiceRequestExample",
+      "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/HIV-lab-order"
     },
     {
       "extension" : [{
@@ -850,35 +641,13 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/hiv-diagnostic-report"
-      },
-      "name" : "Diagnostic Report",
-      "description" : "A report as a result of the lab task being completed."
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/vs-hiv-recency-status"
+        "reference" : "ValueSet/vs-hiv-cause-of-death"
       },
-      "name" : "HIV Recency Testing Status",
-      "description" : "A list of HIV recency statuses"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/vs-vl-suppression"
-      },
-      "name" : "Viral Load Suppressions Status",
-      "description" : "Describes a patient's current viral load status."
+      "name" : "Causes of Death",
+      "description" : "A list of possible HIV causes of deaths"
     },
     {
       "extension" : [{
@@ -886,21 +655,32 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/date-hiv-test-done"
+        "reference" : "StructureDefinition/death"
       },
-      "name" : "Date HIV Test Done",
-      "description" : "This profile is to record the date when HIV test was done for a patient."
+      "name" : "Patient Death",
+      "description" : "This profile captures the death outcome for a patient."
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
+        "valueString" : "CarePlan"
       }],
       "reference" : {
-        "reference" : "ValueSet/vs-arv-regimen"
+        "reference" : "CarePlan/ARVTreatmentContactedExample"
       },
-      "name" : "A list of ARV regimen",
-      "description" : "A list of ARV regimen."
+      "name" : "Example CarePlan - ARVTreatmentContactedExample",
+      "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-arv-treatment"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/hiv-cd4-percentage"
+      },
+      "name" : "CD4 Percentage",
+      "description" : "This profile is for recording the patient's CD4 percentage."
     },
     {
       "extension" : [{
@@ -919,17 +699,6 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/hiv-patient"
-      },
-      "name" : "Patient",
-      "description" : "A patient resource for an HIV Patient"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
         "reference" : "StructureDefinition/hiv-cd4-test"
       },
       "name" : "Absolute CD4 Count",
@@ -938,13 +707,79 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Bundle"
+        "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Bundle/LabOrder"
+        "reference" : "Observation/CD4TestResultExample"
       },
-      "name" : "Example Bundle - LabOrder",
-      "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-service-request-location"
+      "name" : "Example Observation - CD4TestResultExample",
+      "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-cd4-test"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vs-vl-suppression"
+      },
+      "name" : "Viral Load Suppressions Status",
+      "description" : "Describes a patient's current viral load status."
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/art-regimen-switched-or-substituted"
+      },
+      "name" : "ART Regimen Switched Or Substituted",
+      "description" : "The ARV regimen has been switched to a new ARV regimen or has been substituted by another ARV regimen."
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vs-hiv-test-done"
+      },
+      "name" : "HIV Test Done",
+      "description" : "Used by the observation to indicate that a HIV test was performed."
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vs-test-types"
+      },
+      "name" : "Test Types",
+      "description" : "A list of HIV test types"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vs-specimen-type"
+      },
+      "name" : "Specimen Type Used In Viral Load testing",
+      "description" : "A list of specimen types."
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/cs-key-population-status"
+      },
+      "name" : "Key Population Status",
+      "description" : "A list of key population types"
     },
     {
       "extension" : [{
@@ -952,10 +787,230 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/transferring-facility-encounter"
+        "reference" : "StructureDefinition/hiv-service-request-location"
       },
-      "name" : "Transferring Facility Encounter",
-      "description" : "This profile represents the facility the patient is being transferred from."
+      "name" : "Lab Order Request Location",
+      "description" : "What is the location of the organization responsible for conducting the examination of the individual's sample?"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/DeathExample"
+      },
+      "name" : "Example Observation - DeathExample",
+      "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/death"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Task"
+      }],
+      "reference" : {
+        "reference" : "Task/HIVLabOrderCancellationTaskExample"
+      },
+      "name" : "Example Task - HIVLabOrderCancellationTaskExample",
+      "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-lab-task"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/hiv-lab-task"
+      },
+      "name" : "Lab Task",
+      "description" : "Assists with tracking the state of the lab order and its completion status."
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vs-reason-sample-cancelled-or-rejected"
+      },
+      "name" : "Reasons why a lab order was cancelled or rejected",
+      "description" : "Reasons why a lab order was cancelled or rejected."
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/HIVPatientExample"
+      },
+      "name" : "Example Patient - HIVPatientExample",
+      "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/art-regimen-line"
+      },
+      "name" : "ART Regimen Line",
+      "description" : "Therapeutic lines that are used to classify the patient's currently prescribed ARV regimen."
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vs-yes-no"
+      },
+      "name" : "Yes No Unknown",
+      "description" : "A list of options used to provide an answer"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/transferred-out"
+      },
+      "name" : "Transferred Out Service Request",
+      "description" : "A service request that initiates the need for a patient to be transferred to another organization."
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationRequest"
+      }],
+      "reference" : {
+        "reference" : "MedicationRequest/HIVCareMedicationRequestExample"
+      },
+      "name" : "Example MedicationRequest - HIVCareMedicationRequestExample",
+      "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-med-req"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vs-artregimen-lines"
+      },
+      "name" : "ART Regimen Lines",
+      "description" : "A list of ART regimen therapeutic lines."
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CarePlan"
+      }],
+      "reference" : {
+        "reference" : "CarePlan/ARVTreatmentExample"
+      },
+      "name" : "Example CarePlan - ARVTreatmentExample",
+      "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-arv-treatment"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/hiv-med-req"
+      },
+      "name" : "HIV Care Medication Request",
+      "description" : "This profile is for recording the Patient's ARV Dispensing quantity in days."
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Condition"
+      }],
+      "reference" : {
+        "reference" : "Condition/HIVDiagnosisExample"
+      },
+      "name" : "Example Condition - HIVDiagnosisExample",
+      "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-diagnosis"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/LabRejection"
+      },
+      "name" : "Example Bundle - LabRejection",
+      "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-lab-task"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ServiceRequest"
+      }],
+      "reference" : {
+        "reference" : "ServiceRequest/TransferredOutServiceRequestExample"
+      },
+      "name" : "Example ServiceRequest - TransferredOutServiceRequestExample",
+      "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/transferred-out"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/hiv-diagnosis"
+      },
+      "name" : "Diagnosis",
+      "description" : "This profile represents the confirmation of HIV diagnosis."
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/target-facility-encounter"
+      },
+      "name" : "Target Facility Encounter",
+      "description" : "This profile represents the current facility at which the patient is receiving treatment."
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/hiv-test-results"
+      },
+      "name" : "Lab Results",
+      "description" : "The result of the lab test which determines whether the patient is infected with HIV or not."
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Practitioner"
+      }],
+      "reference" : {
+        "reference" : "Practitioner/PractitionerExample"
+      },
+      "name" : "Example Practitioner - PractitionerExample",
+      "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-practitioner"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/HIVRecencyTestResultExample"
+      },
+      "name" : "Example Observation - HIVRecencyTestResultExample",
+      "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-recency-test-result"
     },
     {
       "extension" : [{
@@ -974,43 +1029,43 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/hiv-service-request-location"
-      },
-      "name" : "Lab Order Request Location",
-      "description" : "What is the location of the organization responsible for conducting the examination of the individual's sample?"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/hiv-episode-of-care"
-      },
-      "name" : "Patient Enrollment Type",
-      "description" : "This profile is used to enrol the patient into HIV care."
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Task"
-      }],
-      "reference" : {
-        "reference" : "Task/HIVLabResultTaskExample"
-      },
-      "name" : "Example Task - HIVLabResultTaskExample",
-      "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-lab-task"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
         "reference" : "StructureDefinition/viral-load-specimen"
       },
       "name" : "Viral Load Specimen",
       "description" : "The test sample that was collected for the initiated lab order."
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/hiv-recency-test-result"
+      },
+      "name" : "HIV Recency Test Result",
+      "description" : "This profile is to record the HIV recency test result data for a patient."
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/transferring-facility-encounter"
+      },
+      "name" : "Transferring Facility Encounter",
+      "description" : "This profile represents the facility the patient is being transferred from."
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/cs-art-regimen-change-type"
+      },
+      "name" : "ART Regimen Change Types",
+      "description" : "A list of options to determine whether an ARV regimen was switched or substituted."
     },
     {
       "extension" : [{
@@ -1029,10 +1084,32 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/HIVTestResultExample"
+        "reference" : "Observation/DateHIVTestDoneExample"
       },
-      "name" : "Example Observation - HIVTestResultExample",
-      "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-test-results"
+      "name" : "Example Observation - DateHIVTestDoneExample",
+      "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/date-hiv-test-done"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vs-hiv-recency-test-result"
+      },
+      "name" : "Recency HIV Test Result",
+      "description" : "A list of HIV recency test result codes."
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Encounter"
+      }],
+      "reference" : {
+        "reference" : "Encounter/TargetFacilityEncounterExample"
+      },
+      "name" : "Example Encounter - TargetFacilityEncounterExample",
+      "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/target-facility-encounter"
     },
     {
       "extension" : [{
@@ -1040,9 +1117,9 @@
         "valueString" : "Task"
       }],
       "reference" : {
-        "reference" : "Task/HIVLabOrderRejectionTaskExample"
+        "reference" : "Task/HIVLabOrderTaskExample"
       },
-      "name" : "Example Task - HIVLabOrderRejectionTaskExample",
+      "name" : "Example Task - HIVLabOrderTaskExample",
       "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-lab-task"
     },
     {
@@ -1051,10 +1128,10 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/vs-careplan-outcome"
+        "reference" : "ValueSet/vs-art-regimen-change-type"
       },
-      "name" : "ARV treatment outcomes",
-      "description" : "A list of possible ARV treatment outcomes."
+      "name" : "ART Regimen Change Types",
+      "description" : "A list of options to determine whether an ARV regimen was switched or substituted."
     },
     {
       "extension" : [{
@@ -1062,10 +1139,10 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/vs-reason-for-assessment-or-test-not-performed"
+        "reference" : "ValueSet/vs-cd4-count"
       },
-      "name" : "Reason for Assessment or Test Not Performed",
-      "description" : "A list of reasons associated with the service request for the lab order."
+      "name" : "CD4 test result code",
+      "description" : "A list of CD4 test result codes"
     },
     {
       "extension" : [{
@@ -1073,43 +1150,21 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/hiv-test-results"
+        "reference" : "StructureDefinition/hiv-recency-test-done"
       },
-      "name" : "Lab Results",
-      "description" : "The result of the lab test which determines whether the patient is infected with HIV or not."
+      "name" : "HIV Recency Test",
+      "description" : "This profile is to record the HIV recency testing data for a patient."
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Specimen"
+        "valueString" : "Bundle"
       }],
       "reference" : {
-        "reference" : "Specimen/VLSpecimenExample"
+        "reference" : "Bundle/LabOrder"
       },
-      "name" : "Example Specimen - VLSpecimenExample",
-      "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/viral-load-specimen"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/hiv-cd4-percentage"
-      },
-      "name" : "CD4 Percentage",
-      "description" : "This profile is for recording the patient's CD4 percentage."
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "DiagnosticReport"
-      }],
-      "reference" : {
-        "reference" : "DiagnosticReport/HIVLabResultsDiagnosticReportExample"
-      },
-      "name" : "Example DiagnosticReport - HIVLabResultsDiagnosticReportExample",
-      "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-diagnostic-report"
+      "name" : "Example Bundle - LabOrder",
+      "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-service-request-location"
     },
     {
       "extension" : [{
@@ -1117,10 +1172,43 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/vs-condition"
+        "reference" : "ValueSet/vs-arv-regimen"
       },
-      "name" : "Conditions",
-      "description" : "A list of possible HIV conditions."
+      "name" : "A list of ARV regimen",
+      "description" : "A list of ARV regimen."
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Task"
+      }],
+      "reference" : {
+        "reference" : "Task/HIVLabResultTaskExample"
+      },
+      "name" : "Example Task - HIVLabResultTaskExample",
+      "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-lab-task"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vs-vl-result-code"
+      },
+      "name" : "Viral Load Result Code",
+      "description" : "A code used to indicate the category for the lab result."
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/hiv-care-next-visit"
+      },
+      "name" : "Next Appointment Date",
+      "description" : "A date representing the patient's next scheduled appointment."
     },
     {
       "extension" : [{
@@ -1128,21 +1216,21 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/hiv-practitioner"
+        "reference" : "StructureDefinition/hiv-episode-of-care"
       },
-      "name" : "Practitioner",
-      "description" : "The healthcare professional who has been assigned to a given lab task."
+      "name" : "Patient Enrollment Type",
+      "description" : "This profile is used to enrol the patient into HIV care."
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Condition"
+        "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "Condition/HIVDiagnosisExample"
+        "reference" : "StructureDefinition/hiv-arv-treatment"
       },
-      "name" : "Example Condition - HIVDiagnosisExample",
-      "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-diagnosis"
+      "name" : "ARV Treatment",
+      "description" : "This profile is to record prescribed ARV regimen against a given therapeutic line."
     },
     {
       "extension" : [{
@@ -1169,211 +1257,13 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/vs-cd4-percentage"
-      },
-      "name" : "CD4 percentage code",
-      "description" : "A list of CD4 percentage codes"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/DeathExample"
+        "reference" : "Observation/HIVTestResultExample"
       },
-      "name" : "Example Observation - DeathExample",
-      "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/death"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/vs-hiv-cause-of-death"
-      },
-      "name" : "Causes of Death",
-      "description" : "A list of possible HIV causes of deaths"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/hiv-diagnosis"
-      },
-      "name" : "Diagnosis",
-      "description" : "This profile represents the confirmation of HIV diagnosis."
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CarePlan"
-      }],
-      "reference" : {
-        "reference" : "CarePlan/ARVTreatmentRefusedExample"
-      },
-      "name" : "Example CarePlan - ARVTreatmentRefusedExample",
-      "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-arv-treatment"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/vs-art-regimen-change-type"
-      },
-      "name" : "ART Regimen Change Types",
-      "description" : "A list of options to determine whether an ARV regimen was switched or substituted."
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/cs-key-population-status"
-      },
-      "name" : "Key Population Status",
-      "description" : "A list of key population types"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/hiv-care-next-visit"
-      },
-      "name" : "Next Appointment Date",
-      "description" : "A date representing the patient's next scheduled appointment."
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Bundle"
-      }],
-      "reference" : {
-        "reference" : "Bundle/LabRejection"
-      },
-      "name" : "Example Bundle - LabRejection",
-      "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-lab-task"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/vs-yes-no"
-      },
-      "name" : "Yes No Unknown",
-      "description" : "A list of options used to provide an answer"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/vs-hiv-recency-test"
-      },
-      "name" : "Recency HIV Test",
-      "description" : "Used by the observation to indicate that a HIV recency test was performed."
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/vs-hiv-death"
-      },
-      "name" : "Death",
-      "description" : "A list of possible HIV deaths"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/vs-test-types"
-      },
-      "name" : "Test Types",
-      "description" : "A list of HIV test types"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Organization"
-      }],
-      "reference" : {
-        "reference" : "Organization/HIVOrganizationExample"
-      },
-      "name" : "Example Organization - HIVOrganizationExample",
-      "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-organization"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/vs-artregimen-lines"
-      },
-      "name" : "ART Regimen Lines",
-      "description" : "A list of ART regimen therapeutic lines."
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Task"
-      }],
-      "reference" : {
-        "reference" : "Task/HIVLabOrderTaskExample"
-      },
-      "name" : "Example Task - HIVLabOrderTaskExample",
-      "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-lab-task"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CarePlan"
-      }],
-      "reference" : {
-        "reference" : "CarePlan/ARVTreatmentContactedExample"
-      },
-      "name" : "Example CarePlan - ARVTreatmentContactedExample",
-      "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-arv-treatment"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ServiceRequest"
-      }],
-      "reference" : {
-        "reference" : "ServiceRequest/TransferredOutServiceRequestExample"
-      },
-      "name" : "Example ServiceRequest - TransferredOutServiceRequestExample",
-      "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/transferred-out"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/transferred-out"
-      },
-      "name" : "Transferred Out Service Request",
-      "description" : "A service request that initiates the need for a patient to be transferred to another organization."
+      "name" : "Example Observation - HIVTestResultExample",
+      "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-test-results"
     },
     {
       "extension" : [{
@@ -1381,32 +1271,21 @@
         "valueString" : "Encounter"
       }],
       "reference" : {
-        "reference" : "Encounter/TargetFacilityEncounterExample"
+        "reference" : "Encounter/TransferringFacilityEncounterExample"
       },
-      "name" : "Example Encounter - TargetFacilityEncounterExample",
-      "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/target-facility-encounter"
+      "name" : "Example Encounter - TransferringFacilityEncounterExample",
+      "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/transferring-facility-encounter"
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
+        "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "ValueSet/vs-specimen-type"
+        "reference" : "StructureDefinition/hiv-diagnostic-report"
       },
-      "name" : "Specimen Type Used In Viral Load testing",
-      "description" : "A list of specimen types."
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CarePlan"
-      }],
-      "reference" : {
-        "reference" : "CarePlan/ARVTreatmentExample"
-      },
-      "name" : "Example CarePlan - ARVTreatmentExample",
-      "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-arv-treatment"
+      "name" : "Diagnostic Report",
+      "description" : "A report as a result of the lab task being completed."
     },
     {
       "extension" : [{
@@ -1422,24 +1301,13 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ServiceRequest"
+        "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "ServiceRequest/HIVServiceRequestExample"
+        "reference" : "StructureDefinition/hiv-organization"
       },
-      "name" : "Example ServiceRequest - HIVServiceRequestExample",
-      "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/HIV-lab-order"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/HIVRecencyTestDoneExample"
-      },
-      "name" : "Example Observation - HIVRecencyTestDoneExample",
-      "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-recency-test-done"
+      "name" : "HIV Organization",
+      "description" : "Organization providing HIV Testing Services."
     },
     {
       "extension" : [{
@@ -1447,54 +1315,10 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/vs-vl-result-code"
+        "reference" : "ValueSet/vs-transferred-out"
       },
-      "name" : "Viral Load Result Code",
-      "description" : "A code used to indicate the category for the lab result."
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/hiv-med-req"
-      },
-      "name" : "HIV Care Medication Request",
-      "description" : "This profile is for recording the Patient's ARV Dispensing quantity in days."
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/vs-cd4-count"
-      },
-      "name" : "CD4 test result code",
-      "description" : "A list of CD4 test result codes"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Practitioner"
-      }],
-      "reference" : {
-        "reference" : "Practitioner/PractitionerExample"
-      },
-      "name" : "Example Practitioner - PractitionerExample",
-      "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-practitioner"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/hiv-recency-test-done"
-      },
-      "name" : "HIV Recency Test",
-      "description" : "This profile is to record the HIV recency testing data for a patient."
+      "name" : "Transferred out",
+      "description" : "Transferred out codes"
     },
     {
       "extension" : [{
@@ -1513,10 +1337,186 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
+        "reference" : "ValueSet/vs-hiv-recency-status"
+      },
+      "name" : "HIV Recency Testing Status",
+      "description" : "A list of HIV recency statuses"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/hiv-patient"
+      },
+      "name" : "Patient",
+      "description" : "A patient resource for an HIV Patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vs-hiv-death"
+      },
+      "name" : "Death",
+      "description" : "A list of possible HIV deaths"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vs-careplan-outcome"
+      },
+      "name" : "ARV treatment outcomes",
+      "description" : "A list of possible ARV treatment outcomes."
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "DiagnosticReport"
+      }],
+      "reference" : {
+        "reference" : "DiagnosticReport/HIVLabResultsDiagnosticReportExample"
+      },
+      "name" : "Example DiagnosticReport - HIVLabResultsDiagnosticReportExample",
+      "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-diagnostic-report"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
         "reference" : "ValueSet/vs-key-population-status"
       },
       "name" : "Key Population Status",
       "description" : "A list of key population types"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CarePlan"
+      }],
+      "reference" : {
+        "reference" : "CarePlan/ARVTreatmentRefusedExample"
+      },
+      "name" : "Example CarePlan - ARVTreatmentRefusedExample",
+      "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-arv-treatment"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/LabCancellation"
+      },
+      "name" : "Example Bundle - LabCancellation",
+      "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-lab-task"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/HIVRecencyTestDoneExample"
+      },
+      "name" : "Example Observation - HIVRecencyTestDoneExample",
+      "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-recency-test-done"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/hiv-practitioner"
+      },
+      "name" : "Practitioner",
+      "description" : "The healthcare professional who has been assigned to a given lab task."
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vs-hiv-recency-test"
+      },
+      "name" : "Recency HIV Test",
+      "description" : "Used by the observation to indicate that a HIV recency test was performed."
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/HIVServiceRequestLocationExample"
+      },
+      "name" : "Example Location - HIVServiceRequestLocationExample",
+      "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-service-request-location"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/HIVOrganizationPatientTransferredToExample"
+      },
+      "name" : "Example Organization - HIVOrganizationPatientTransferredToExample",
+      "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-organization-patient-transferred-to"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Specimen"
+      }],
+      "reference" : {
+        "reference" : "Specimen/VLSpecimenExample"
+      },
+      "name" : "Example Specimen - VLSpecimenExample",
+      "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/viral-load-specimen"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vs-cd4-percentage"
+      },
+      "name" : "CD4 percentage code",
+      "description" : "A list of CD4 percentage codes"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vs-reason-for-assessment-or-test-not-performed"
+      },
+      "name" : "Reason for Assessment or Test Not Performed",
+      "description" : "A list of reasons associated with the service request for the lab order."
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/date-hiv-test-done"
+      },
+      "name" : "Date HIV Test Done",
+      "description" : "This profile is to record the date when HIV test was done for a patient."
     },
     {
       "extension" : [{
@@ -1532,13 +1532,24 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
+        "valueString" : "Task"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/hiv-recency-test-result"
+        "reference" : "Task/HIVLabOrderRejectionTaskExample"
       },
-      "name" : "HIV Recency Test Result",
-      "description" : "This profile is to record the HIV recency test result data for a patient."
+      "name" : "Example Task - HIVLabOrderRejectionTaskExample",
+      "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-lab-task"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/HIVOrganizationExample"
+      },
+      "name" : "Example Organization - HIVOrganizationExample",
+      "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-organization"
     },
     {
       "extension" : [{
@@ -1546,21 +1557,10 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/vs-transferred-out"
+        "reference" : "ValueSet/vs-condition"
       },
-      "name" : "Transferred out",
-      "description" : "Transferred out codes"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Encounter"
-      }],
-      "reference" : {
-        "reference" : "Encounter/TransferringFacilityEncounterExample"
-      },
-      "name" : "Example Encounter - TransferringFacilityEncounterExample",
-      "exampleCanonical" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/transferring-facility-encounter"
+      "name" : "Conditions",
+      "description" : "A list of possible HIV conditions."
     }],
     "page" : {
       "extension" : [{
