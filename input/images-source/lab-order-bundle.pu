@@ -51,14 +51,14 @@
     }
   },
   {
-    "fullUrl" : "Location/HIVServiceRequestLocationExample",
+    "fullUrl" : "Organization/HIVServiceRequestLocationExample",
     "resource" : {
-      "resourceType" : "Location",
+      "resourceType" : "Organization",
       "id" : "HIVServiceRequestLocationExample",
       "meta" : {
         "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-service-request-location"]
       },
-   
+     
       "identifier" : [{
         "type" : {
           "coding" : [{
@@ -70,7 +70,7 @@
         "value" : "facility2"
       }],
       "name" : "Laboratory Services",
-      "address" : {
+      "address" : [{
         "line" : ["DISI line 1",
         "DISI line 2",
         "DISI line 3"],
@@ -79,11 +79,11 @@
         "state" : "DISI state 1",
         "postalCode" : "DISI postal code",
         "country" : "DISI country"
-      }
+      }]
     },
     "request" : {
       "method" : "PUT",
-      "url" : "Location/HIVServiceRequestLocationExample"
+      "url" : "Organization/HIVServiceRequestLocationExample"
     }
   },
   {
@@ -94,7 +94,7 @@
       "meta" : {
         "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/HIV-lab-order"]
       },
-    
+   
       "identifier" : [{
         "type" : {
           "coding" : [{
@@ -124,8 +124,8 @@
       "requester" : {
         "reference" : "Practitioner/PractitionerExample"
       },
-      "locationReference" : [{
-        "reference" : "Location/HIVServiceRequestLocationExample"
+      "performer" : [{
+        "reference" : "Organization/HIVServiceRequestLocationExample"
       }],
       "reasonCode" : [{
         "coding" : [{
@@ -157,7 +157,7 @@
       "meta" : {
         "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-practitioner"]
       },
-    
+     
       "name" : [{
         "family" : "Smith",
         "given" : ["James"]
@@ -180,7 +180,7 @@
       "meta" : {
         "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/viral-load-specimen"]
       },
-   
+     
       "identifier" : [{
         "type" : {
           "coding" : [{

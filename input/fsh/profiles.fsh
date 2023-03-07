@@ -35,7 +35,6 @@ Description: "A patient resource for an HIV Patient"
     MR 1..1
 * identifier[NID].value 0..1
 * identifier[NID].system = "http://openhie.org/fhir/hiv-cbs/identifier/nid" (exactly)
-
 * identifier[MR].value 1..1
 * identifier[MR].system = "http://openhie.org/fhir/hiv-cbs/identifier/mr" (exactly)
 * identifier[MR].type.coding.code = #MR
@@ -216,7 +215,7 @@ Description: "The test sample that was collected for the initiated lab order."
 * note 0..1
 
 Profile: HIVServiceRequestLocation
-Parent: Location
+Parent: Organization
 Id: hiv-service-request-location
 Title: "Lab Order Request Location"
 Description: "What is the location of the organization responsible for conducting the examination of the individual's sample?"
@@ -262,7 +261,7 @@ Description: "A service request that initiates the need for the lab to collect t
 * encounter 1..1
 * occurrenceDateTime 1..1
 * requester 1..1
-* locationReference 1..1
+* performer 1..1
 * doNotPerform 0..1
 * reasonCode 1..*
 * reasonCode from VSReasonForAssessmentOrTestNotPerformed (required)
