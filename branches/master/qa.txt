@@ -2,8 +2,8 @@
 =========================================
 
 err = 0, warn = 4, info = 0
-IG Publisher Version: 1.2.39
-Generated Tue Mar 07 12:20:55 UTC 2023. FHIR version 4.0.1 for openhie.fhir.hiv.cbs#0.2.0 (canonical = http://openhie.org/fhir/hiv-cbs)
+IG Publisher Version: 1.2.40
+Generated Tue Mar 07 17:20:07 UTC 2023. FHIR version 4.0.1 for openhie.fhir.hiv.cbs#0.2.0 (canonical = http://openhie.org/fhir/hiv-cbs)
  Build Errors : 0 / 4 / 0
  /github/workspace/fsh-generated/resources/Bundle-EMR : 0 / 0 / 33
  /github/workspace/fsh-generated/resources/Bundle-LabCancellation : 0 / 0 / 3
@@ -21,7 +21,6 @@ Generated Tue Mar 07 12:20:55 UTC 2023. FHIR version 4.0.1 for openhie.fhir.hiv.
  /github/workspace/fsh-generated/resources/Encounter-TargetFacilityEncounterExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Encounter-TransferringFacilityEncounterExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/EpisodeOfCare-HIVEpisodeOfCareExample : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/Location-HIVServiceRequestLocationExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/MedicationRequest-HIVCareMedicationRequestExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Observation-CD4PercentageExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Observation-CD4TestResultExample : 0 / 0 / 1
@@ -32,6 +31,7 @@ Generated Tue Mar 07 12:20:55 UTC 2023. FHIR version 4.0.1 for openhie.fhir.hiv.
  /github/workspace/fsh-generated/resources/Observation-HIVTestResultExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Organization-HIVOrganizationExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Organization-HIVOrganizationPatientTransferredToExample : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Organization-HIVServiceRequestLocationExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Patient-HIVPatientExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Practitioner-PractitionerExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ServiceRequest-HIVServiceRequestExample : 0 / 0 / 1
@@ -114,7 +114,6 @@ WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in 
 == fsh-generated/resources/Encounter-TargetFacilityEncounterExample.json ==
 == fsh-generated/resources/Encounter-TransferringFacilityEncounterExample.json ==
 == fsh-generated/resources/EpisodeOfCare-HIVEpisodeOfCareExample.json ==
-== fsh-generated/resources/Location-HIVServiceRequestLocationExample.json ==
 == fsh-generated/resources/MedicationRequest-HIVCareMedicationRequestExample.json ==
 == fsh-generated/resources/Observation-CD4PercentageExample.json ==
 == fsh-generated/resources/Observation-CD4TestResultExample.json ==
@@ -125,6 +124,7 @@ WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in 
 == fsh-generated/resources/Observation-HIVTestResultExample.json ==
 == fsh-generated/resources/Organization-HIVOrganizationExample.json ==
 == fsh-generated/resources/Organization-HIVOrganizationPatientTransferredToExample.json ==
+== fsh-generated/resources/Organization-HIVServiceRequestLocationExample.json ==
 == fsh-generated/resources/Patient-HIVPatientExample.json ==
 == fsh-generated/resources/Practitioner-PractitionerExample.json ==
 == fsh-generated/resources/ServiceRequest-HIVServiceRequestExample.json ==
