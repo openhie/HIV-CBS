@@ -299,6 +299,16 @@ Id: hiv-lab-task
 Title: "Lab Task"
 Description: "Assists with tracking the state of the lab order and its completion status."
 * identifier 1..*
+* identifier ^slicing.discriminator.type = #pattern
+* identifier ^slicing.discriminator.path = "system"
+* identifier ^slicing.rules = #openAtEnd
+* identifier ^slicing.description = "Slice based on the type of identifier."
+* identifier contains
+    FILL 1..1
+* identifier[FILL].value 1..1
+* identifier[FILL].system = "http://openhie.org/fhir/hiv-cbs/lab-integration/order-id" (exactly)
+* identifier[FILL].type.coding.code = #FILL
+* identifier[FILL].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
 * basedOn only Reference(ServiceRequest)
 * status 1..1
 * statusReason from VSReasonForSampleCancellationOrRejection

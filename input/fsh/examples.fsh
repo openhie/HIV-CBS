@@ -299,8 +299,10 @@ InstanceOf: HIVLabTask
 Usage: #example
 Title: "HIV Lab Order Cancellation  example"
 Description: "HIV Lab Order Cancellation Task example"
-* identifier.system = "http://openhie.org/fhir/hiv-cbs/lab-integration/test-order-number"
-* identifier.value = "ORDER12345"
+* identifier[FILL].system = "http://openhie.org/fhir/hiv-cbs/lab-integration/order-id"
+* identifier[FILL].value = "ORDER12345"
+* identifier[FILL].type.coding.code = #FILL
+* identifier[FILL].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
 * basedOn = Reference(HIVServiceRequestExample)
 * status = #cancelled
 * statusReason = $SCT#281264009 
