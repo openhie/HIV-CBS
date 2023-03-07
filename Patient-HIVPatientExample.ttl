@@ -31,7 +31,7 @@
      ]
   ] ) ; # 
   fhir:identifier ( [
-     fhir:system [ fhir:v "http://openhie.org/fhir/hiv-cbs/identifier/mn"^^xsd:anyURI ] ;
+     fhir:system [ fhir:v "http://openhie.org/fhir/hiv-cbs/identifier/mr"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "ORG1-0765712" ]
   ] [
      fhir:system [ fhir:v "http://openhie.org/fhir/hiv-cbs/identifier/nid"^^xsd:anyURI ] ;
