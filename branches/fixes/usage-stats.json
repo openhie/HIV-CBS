@@ -87,8 +87,12 @@
     ],
     "Organization": [
       {
-        "url": "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-service-request-location",
-        "title": "Lab Order Request Location"
+        "url": "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-organization",
+        "title": "HIV Organization"
+      },
+      {
+        "url": "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-organization-patient-transferred-to",
+        "title": "HIV Organization Patient Is Transferred To"
       }
     ],
     "Patient": [
@@ -101,6 +105,12 @@
       {
         "url": "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-practitioner",
         "title": "Practitioner"
+      }
+    ],
+    "Location": [
+      {
+        "url": "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-service-request-location",
+        "title": "Lab Order Request Location"
       }
     ],
     "Encounter": [
