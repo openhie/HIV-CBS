@@ -11,7 +11,7 @@
       "meta" : {
         "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-patient"]
       },
-     
+    
       "extension" : [{
         "url" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/key-population-status",
         "valueCodeableConcept" : {
@@ -22,12 +22,6 @@
         }
       }],
       "identifier" : [{
-        "type" : {
-          "coding" : [{
-            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
-            "code" : "MR"
-          }]
-        },
         "system" : "http://openhie.org/fhir/hiv-cbs/identifier/mr",
         "value" : "ORG1-0765712"
       },
@@ -97,7 +91,7 @@
       "meta" : {
         "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/target-facility-encounter"]
       },
-   
+    
       "extension" : [{
         "url" : "http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-care-next-visit",
         "valueDateTime" : "2022-10-22"
@@ -137,7 +131,7 @@
       "meta" : {
         "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/transferring-facility-encounter"]
       },
-    
+     
       "status" : "finished",
       "class" : {
         "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
@@ -221,7 +215,7 @@
       "meta" : {
         "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/death"]
       },
-    
+     
       "status" : "final",
       "code" : {
         "coding" : [{
@@ -263,7 +257,7 @@
       "meta" : {
         "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/date-hiv-test-done"]
       },
-    
+     
       "status" : "final",
       "code" : {
         "coding" : [{
@@ -382,7 +376,7 @@
       "meta" : {
         "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-recency-test-result"]
       },
-    
+     
       "status" : "final",
       "code" : {
         "coding" : [{
@@ -433,7 +427,7 @@
       "meta" : {
         "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-cd4-percentage"]
       },
-     
+    
       "status" : "final",
       "code" : {
         "coding" : [{
@@ -478,7 +472,7 @@
       "meta" : {
         "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-cd4-test"]
       },
-    
+     
       "status" : "final",
       "code" : {
         "coding" : [{
@@ -518,7 +512,7 @@
       "meta" : {
         "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-arv-treatment"]
       },
-    
+     
       "status" : "active",
       "intent" : "plan",
       "subject" : {
@@ -559,6 +553,10 @@
             }]
           },
           "status" : "in-progress",
+          "scheduledPeriod" : {
+            "start" : "2023-01-01",
+            "end" : "2023-01-01"
+          },
           "productCodeableConcept" : {
             "coding" : [{
               "system" : "http://snomed.info/sct",
@@ -588,7 +586,7 @@
       "meta" : {
         "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-med-req"]
       },
-     
+    
       "status" : "active",
       "intent" : "proposal",
       "medicationCodeableConcept" : {
@@ -604,7 +602,7 @@
         "reference" : "Encounter/TargetFacilityEncounterExample"
       },
       "basedOn" : [{
-        "reference" : "CarePlan/ARVTreatmentExample"
+        "reference" : "CarePlan/ARVTreatmentRegimenSwitchedOrSubstitutedExample"
       }],
       "note" : [{
         "authorReference" : {
