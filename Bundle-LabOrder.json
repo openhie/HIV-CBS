@@ -53,16 +53,16 @@
     }
   },
   {
-    "fullUrl" : "Location/HIVServiceRequestLocationExample",
+    "fullUrl" : "Organization/HIVServiceRequestLocationExample",
     "resource" : {
-      "resourceType" : "Location",
+      "resourceType" : "Organization",
       "id" : "HIVServiceRequestLocationExample",
       "meta" : {
         "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-service-request-location"]
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Location</b><a name=\"HIVServiceRequestLocationExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Location &quot;HIVServiceRequestLocationExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-service-request-location.html\">Lab Order Request Location</a></p></div><p><b>identifier</b>: Organization identifier: facility2</p><p><b>name</b>: Laboratory Services</p><p><b>address</b>: DISI line 1 DISI line 2 DISI line 3 DISI city 1 DISI state 1 DISI postal code DISI country </p></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"HIVServiceRequestLocationExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;HIVServiceRequestLocationExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-service-request-location.html\">Lab Order Request Location</a></p></div><p><b>identifier</b>: Organization identifier: facility2</p><p><b>name</b>: Laboratory Services</p><p><b>address</b>: DISI line 1 DISI line 2 DISI line 3 DISI city 1 DISI state 1 DISI postal code DISI country </p></div>"
       },
       "identifier" : [{
         "type" : {
@@ -75,7 +75,7 @@
         "value" : "facility2"
       }],
       "name" : "Laboratory Services",
-      "address" : {
+      "address" : [{
         "line" : ["DISI line 1",
         "DISI line 2",
         "DISI line 3"],
@@ -84,11 +84,11 @@
         "state" : "DISI state 1",
         "postalCode" : "DISI postal code",
         "country" : "DISI country"
-      }
+      }]
     },
     "request" : {
       "method" : "PUT",
-      "url" : "Location/HIVServiceRequestLocationExample"
+      "url" : "Organization/HIVServiceRequestLocationExample"
     }
   },
   {
@@ -101,7 +101,7 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ServiceRequest</b><a name=\"HIVServiceRequestExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ServiceRequest &quot;HIVServiceRequestExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-HIV-lab-order.html\">Lab Order</a></p></div><p><b>identifier</b>: Placer Identifier: ORDER12345</p><p><b>status</b>: completed</p><p><b>intent</b>: order</p><p><b>doNotPerform</b>: false</p><p><b>code</b>: HIV 1 RNA [#/volume] (viral load) in Specimen by NAA with probe detection <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#25836-8)</span></p><p><b>subject</b>: <a href=\"Patient-HIVPatientExample.html\">Patient/HIVPatientExample</a> &quot; SMITH&quot;</p><p><b>encounter</b>: <a href=\"Encounter-TargetFacilityEncounterExample.html\">Encounter/TargetFacilityEncounterExample</a></p><p><b>occurrence</b>: 2012-01-05</p><p><b>requester</b>: <a href=\"#Practitioner_PractitionerExample\">See above (Practitioner/PractitionerExample)</a></p><p><b>locationReference</b>: <a href=\"#Location_HIVServiceRequestLocationExample\">See above (Location/HIVServiceRequestLocationExample)</a></p><p><b>reasonCode</b>: Repeat laboratory specimen sent (situation) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#428450006)</span></p><p><b>specimen</b>: <a href=\"#Specimen_VLSpecimenExample\">See above (Specimen/VLSpecimenExample)</a></p><p><b>note</b>: additional notes here (By Organization/HIVOrganizationExample @Feb 7, 2015, 6:28:17 PM)</p></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ServiceRequest</b><a name=\"HIVServiceRequestExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ServiceRequest &quot;HIVServiceRequestExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-HIV-lab-order.html\">Lab Order</a></p></div><p><b>identifier</b>: Placer Identifier: ORDER12345</p><p><b>status</b>: completed</p><p><b>intent</b>: order</p><p><b>doNotPerform</b>: false</p><p><b>code</b>: HIV 1 RNA [#/volume] (viral load) in Specimen by NAA with probe detection <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#25836-8)</span></p><p><b>subject</b>: <a href=\"Patient-HIVPatientExample.html\">Patient/HIVPatientExample</a> &quot; SMITH&quot;</p><p><b>encounter</b>: <a href=\"Encounter-TargetFacilityEncounterExample.html\">Encounter/TargetFacilityEncounterExample</a></p><p><b>occurrence</b>: 2012-01-05</p><p><b>requester</b>: <a href=\"#Practitioner_PractitionerExample\">See above (Practitioner/PractitionerExample)</a></p><p><b>performer</b>: <a href=\"#Organization_HIVServiceRequestLocationExample\">See above (Organization/HIVServiceRequestLocationExample)</a></p><p><b>reasonCode</b>: Repeat laboratory specimen sent (situation) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#428450006)</span></p><p><b>specimen</b>: <a href=\"#Specimen_VLSpecimenExample\">See above (Specimen/VLSpecimenExample)</a></p><p><b>note</b>: additional notes here (By Organization/HIVOrganizationExample @Feb 7, 2015, 6:28:17 PM)</p></div>"
       },
       "identifier" : [{
         "type" : {
@@ -132,8 +132,8 @@
       "requester" : {
         "reference" : "Practitioner/PractitionerExample"
       },
-      "locationReference" : [{
-        "reference" : "Location/HIVServiceRequestLocationExample"
+      "performer" : [{
+        "reference" : "Organization/HIVServiceRequestLocationExample"
       }],
       "reasonCode" : [{
         "coding" : [{
