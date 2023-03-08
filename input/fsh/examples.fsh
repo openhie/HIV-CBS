@@ -440,6 +440,8 @@ Description: "ARV Regimen switched or substituted example"
 * activity.detail.extension[artRegimenLine].valueCodeableConcept = $SCT#708255002
 * activity.detail.extension[artRegimenSwitchedOrSubstituted].valueCodeableConcept.coding.code = #Switched
 * activity.detail.extension[artRegimenSwitchedOrSubstituted].valueCodeableConcept.coding.system = "http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-art-regimen-change-type"
+* activity.detail.scheduledPeriod.start = "2023-01-01"
+* activity.detail.scheduledPeriod.end = "2023-01-01"
 * note.text = "Additional information regarding the switching of the ARV regimen with another ARV regimen."
 * note.authorReference = Reference(HIVOrganizationExample)
 * note.time = "2015-02-07T13:28:17-05:00"
@@ -454,7 +456,7 @@ Description: "HIV Care Medication Request Example"
 * medicationCodeableConcept = $SCT#878898002
 * subject = Reference(HIVPatientExample)
 * encounter = Reference(TargetFacilityEncounterExample)
-* basedOn = Reference(ARVTreatmentExample)
+* basedOn = Reference(ARVTreatmentRegimenSwitchedOrSubstitutedExample)
 * dispenseRequest.quantity.value = 30
 * note.text = "Additional information regarding the HIV Medication Request"
 * note.authorReference = Reference(HIVOrganizationExample)
