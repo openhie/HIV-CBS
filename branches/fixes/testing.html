@@ -301,37 +301,37 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <ol>
         <li><strong>Automation</strong></li>
             <ul>
-                <li><em>End-to-end testing</em></li>
-                <ol>
-                    <li>
-                        To ensure that data is moving along the pipeline from the point of service (PoS) system to the analytics platform in a timeous fashion and that both target systems (<a href="https://hapifhir.io/hapi-fhir/docs/getting_started/introduction.html" target="_blank">Central Data Repository</a> &amp; <a href="https://jembi.gitbook.io/jembi-platform/packages/client-registry-santempi" target="_blank">Client Registry</a>) represent data that is accurate and correct. 
-                        The key objective of this test is to ensure the availability of data and data quality.
-                    </li>
-                </ol>
-                <ol>
-                    <li>
-                        Methodology: 
-                        By using the CDR Automated Testing Framework in conjunction with the predefined input and expected outcome datasets, testers are able to prove that the system is processing data correctly, flattening data for analytical purposes and displaying information that is accurate and correct for each client and their encounters. 
-                        In particular, the testing framework will ensure that data displayed in each case report meets the needs documented in each report requirements specification.
-                        <br/>
-                        <br/>
-                        <blockquote class="stu-note">
-                            <ul>
-                                <li>The CDR testing framework operates on a transactional basis meaning that bulk submissions to the CDR are not possible.</li>
-                            </ul>
-                        </blockquote>
-                    </li>
-                </ol>
+                <li>End-to-end testing
+                    <ol>
+                        <li>
+                            To ensure that data is moving along the pipeline from the point of service (PoS) system to the analytics platform in a timeous fashion and that both target systems (<a href="https://hapifhir.io/hapi-fhir/docs/getting_started/introduction.html" target="_blank">Central Data Repository</a> &amp; <a href="https://jembi.gitbook.io/jembi-platform/packages/client-registry-santempi" target="_blank">Client Registry</a>) represent data that is accurate and correct. 
+                            The key objective of this test is to ensure the availability of data and data quality.
+                        </li>
+                        <li>
+                            Methodology: 
+                            By using the CDR Automated Testing Framework in conjunction with the predefined input and expected outcome datasets, testers are able to prove that the system is processing data correctly, flattening data for analytical purposes and displaying information that is accurate and correct for each client and their encounters. 
+                            In particular, the testing framework will ensure that data displayed in each case report meets the needs documented in each report requirements specification.
+                            <br/>
+                            <br/>
+                            <blockquote class="stu-note">
+                                <ul>
+                                    <li>The CDR testing framework operates on a transactional basis meaning that bulk submissions to the CDR are not possible.</li>
+                                </ul>
+                            </blockquote>
+                        </li>
+                    </ol>
+                </li>
             </ul>
-        <li><strong>Manual Testing</strong></li>
-        <ol>
-            <li>
-                Methodology: 
-                With the availability of the EMR and assuming that it is stable, the tester will be able to transact with the <a href="index.html#technicalBackground">DISI's reference platform architecture</a> and perform tests against each component to compare outcomes as per the specification documentation and further measure data quality. 
-                Should the EMR not be available or unstable, <a href="index.html#messaging-testing">Postman</a> will be used as the tool to support the overall testing process. 
-                This area of testing will require that the tester explores each architectural component directly to understand its core capabilities and limitations.
-            </li>
-        </ol>
+        <li><strong>Manual Testing</strong>
+            <ul>
+                <li>
+                    Methodology: 
+                    With the availability of the EMR and assuming that it is stable, the tester will be able to transact with the <a href="index.html#technicalBackground">DISI's reference platform architecture</a> and perform tests against each component to compare outcomes as per the specification documentation and further measure data quality. 
+                    Should the EMR not be available or unstable, <a href="index.html#messaging-testing">Postman</a> will be used as the tool to support the overall testing process. 
+                    This area of testing will require that the tester explores each architectural component directly to understand its core capabilities and limitations.
+                </li>
+            </ul>
+        </li>
     </ol>
 
     <a name="3"/><h3>Overview</h3> <a name="overview">  </a>
@@ -436,7 +436,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
            
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2019+ <a style="color: #81BEF7" href="https://www.jembi.org">Jembi Health Systems</a>.  Package openhie.fhir.hiv.cbs#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Mar 8, 2023 14:35+0000">2023-03-08</span>
+          IG &#169; 2019+ <a style="color: #81BEF7" href="https://www.jembi.org">Jembi Health Systems</a>.  Package openhie.fhir.hiv.cbs#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Mar 8, 2023 14:37+0000">2023-03-08</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
