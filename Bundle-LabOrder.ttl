@@ -19,11 +19,11 @@
        fhir:url [ fhir:v "Task/HIVLabOrderTaskExample"^^xsd:anyURI ]
      ]
   ] [
-     fhir:fullUrl [ fhir:v "Organization/HIVServiceRequestLocationExample"^^xsd:anyURI ] ;
-     fhir:resource ( <Organization/HIVServiceRequestLocationExample> ) ;
+     fhir:fullUrl [ fhir:v "Location/HIVServiceRequestLocationExample"^^xsd:anyURI ] ;
+     fhir:resource ( <Location/HIVServiceRequestLocationExample> ) ;
      fhir:request [
        fhir:method [ fhir:v "PUT" ] ;
-       fhir:url [ fhir:v "Organization/HIVServiceRequestLocationExample"^^xsd:anyURI ]
+       fhir:url [ fhir:v "Location/HIVServiceRequestLocationExample"^^xsd:anyURI ]
      ]
   ] [
      fhir:fullUrl [ fhir:v "ServiceRequest/HIVServiceRequestExample"^^xsd:anyURI ] ;
@@ -98,7 +98,7 @@
      fhir:text [ fhir:v "additional notes here" ]
   ] ) . # 
 
-<Organization/HIVServiceRequestLocationExample> a fhir:Organization ;
+<Location/HIVServiceRequestLocationExample> a fhir:Location ;
   fhir:id [ fhir:v "HIVServiceRequestLocationExample"] ; # 
   fhir:meta [
      fhir:profile ( [
@@ -108,7 +108,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"HIVServiceRequestLocationExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;HIVServiceRequestLocationExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-service-request-location.html\">Lab Order Request Location</a></p></div><p><b>identifier</b>: Organization identifier: facility2</p><p><b>name</b>: Laboratory Services</p><p><b>address</b>: DISI line 1 DISI line 2 DISI line 3 DISI city 1 DISI state 1 DISI postal code DISI country </p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Location</b><a name=\"HIVServiceRequestLocationExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Location &quot;HIVServiceRequestLocationExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-service-request-location.html\">Lab Order Request Location</a></p></div><p><b>identifier</b>: Organization identifier: facility2</p><p><b>name</b>: Laboratory Services</p><p><b>address</b>: DISI line 1 DISI line 2 DISI line 3 DISI city 1 DISI state 1 DISI postal code DISI country </p></div>"
   ] ; # 
   fhir:identifier ( [
      fhir:type [
@@ -121,14 +121,14 @@
      fhir:value [ fhir:v "facility2" ]
   ] ) ; # 
   fhir:name [ fhir:v "Laboratory Services"] ; # 
-  fhir:address ( [
+  fhir:address [
      fhir:line ( [ fhir:v "DISI line 1" ] [ fhir:v "DISI line 2" ] [ fhir:v "DISI line 3" ] ) ;
      fhir:city [ fhir:v "DISI city 1" ] ;
      fhir:district [ fhir:v "DISI district 1" ] ;
      fhir:state [ fhir:v "DISI state 1" ] ;
      fhir:postalCode [ fhir:v "DISI postal code" ] ;
      fhir:country [ fhir:v "DISI country" ]
-  ] ) . # 
+  ] . # 
 
 <ServiceRequest/HIVServiceRequestExample> a fhir:ServiceRequest ;
   fhir:id [ fhir:v "HIVServiceRequestExample"] ; # 
@@ -140,7 +140,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ServiceRequest</b><a name=\"HIVServiceRequestExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ServiceRequest &quot;HIVServiceRequestExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-HIV-lab-order.html\">Lab Order</a></p></div><p><b>identifier</b>: Placer Identifier: ORDER12345</p><p><b>status</b>: completed</p><p><b>intent</b>: order</p><p><b>doNotPerform</b>: false</p><p><b>code</b>: HIV 1 RNA [#/volume] (viral load) in Specimen by NAA with probe detection <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#25836-8)</span></p><p><b>subject</b>: <a href=\"Patient-HIVPatientExample.html\">Patient/HIVPatientExample</a> &quot; SMITH&quot;</p><p><b>encounter</b>: <a href=\"Encounter-TargetFacilityEncounterExample.html\">Encounter/TargetFacilityEncounterExample</a></p><p><b>occurrence</b>: 2012-01-05</p><p><b>requester</b>: <a href=\"#Practitioner_PractitionerExample\">See above (Practitioner/PractitionerExample)</a></p><p><b>performer</b>: <a href=\"#Organization_HIVServiceRequestLocationExample\">See above (Organization/HIVServiceRequestLocationExample)</a></p><p><b>reasonCode</b>: Repeat laboratory specimen sent (situation) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#428450006)</span></p><p><b>specimen</b>: <a href=\"#Specimen_VLSpecimenExample\">See above (Specimen/VLSpecimenExample)</a></p><p><b>note</b>: additional notes here (By Organization/HIVOrganizationExample @Feb 7, 2015, 6:28:17 PM)</p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ServiceRequest</b><a name=\"HIVServiceRequestExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ServiceRequest &quot;HIVServiceRequestExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-HIV-lab-order.html\">Lab Order</a></p></div><p><b>identifier</b>: Placer Identifier: ORDER12345</p><p><b>status</b>: completed</p><p><b>intent</b>: order</p><p><b>doNotPerform</b>: false</p><p><b>code</b>: HIV 1 RNA [#/volume] (viral load) in Specimen by NAA with probe detection <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#25836-8)</span></p><p><b>subject</b>: <a href=\"Patient-HIVPatientExample.html\">Patient/HIVPatientExample</a> &quot; SMITH&quot;</p><p><b>encounter</b>: <a href=\"Encounter-TargetFacilityEncounterExample.html\">Encounter/TargetFacilityEncounterExample</a></p><p><b>occurrence</b>: 2012-01-05</p><p><b>requester</b>: <a href=\"#Practitioner_PractitionerExample\">See above (Practitioner/PractitionerExample)</a></p><p><b>locationReference</b>: <a href=\"#Location_HIVServiceRequestLocationExample\">See above (Location/HIVServiceRequestLocationExample)</a></p><p><b>reasonCode</b>: Repeat laboratory specimen sent (situation) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#428450006)</span></p><p><b>specimen</b>: <a href=\"#Specimen_VLSpecimenExample\">See above (Specimen/VLSpecimenExample)</a></p><p><b>note</b>: additional notes here (By Organization/HIVOrganizationExample @Feb 7, 2015, 6:28:17 PM)</p></div>"
   ] ; # 
   fhir:identifier ( [
      fhir:type [
@@ -175,9 +175,9 @@
      fhir:link <http://openhie.org/fhir/hiv-cbs/Practitioner/PractitionerExample> ;
      fhir:reference [ fhir:v "Practitioner/PractitionerExample" ]
   ] ; # 
-  fhir:performer ( [
-     fhir:link <http://openhie.org/fhir/hiv-cbs/Organization/HIVServiceRequestLocationExample> ;
-     fhir:reference [ fhir:v "Organization/HIVServiceRequestLocationExample" ]
+  fhir:locationReference ( [
+     fhir:link <http://openhie.org/fhir/hiv-cbs/Location/HIVServiceRequestLocationExample> ;
+     fhir:reference [ fhir:v "Location/HIVServiceRequestLocationExample" ]
   ] ) ; # 
   fhir:reasonCode ( [
      fhir:coding ( [
