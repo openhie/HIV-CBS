@@ -222,7 +222,7 @@
       "meta" : {
         "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/death"]
       },
-     
+    
       "status" : "final",
       "code" : {
         "coding" : [{
@@ -264,7 +264,7 @@
       "meta" : {
         "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/date-hiv-test-done"]
       },
-     
+    
       "status" : "final",
       "code" : {
         "coding" : [{
@@ -479,7 +479,7 @@
       "meta" : {
         "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-cd4-test"]
       },
-     
+    
       "status" : "final",
       "code" : {
         "coding" : [{
@@ -519,7 +519,7 @@
       "meta" : {
         "profile" : ["http://openhie.org/fhir/hiv-cbs/StructureDefinition/hiv-arv-treatment"]
       },
-     
+    
       "status" : "active",
       "intent" : "plan",
       "subject" : {
