@@ -9,7 +9,18 @@
       "title": "ART Regimen Line",
       "types": [
         "CodeableConcept",
-        "CodeableConcept"
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "string"
       ]
     },
     {
@@ -17,7 +28,18 @@
       "title": "ART Regimen Switched Or Substituted",
       "types": [
         "CodeableConcept",
-        "CodeableConcept"
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "string"
       ]
     },
     {
@@ -32,7 +54,18 @@
       "title": "Key HIV Population",
       "types": [
         "CodeableConcept",
-        "CodeableConcept"
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "string"
       ]
     }
   ],

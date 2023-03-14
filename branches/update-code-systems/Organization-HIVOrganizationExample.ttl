@@ -22,7 +22,8 @@
      fhir:type [
        fhir:coding ( [
          fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "XX" ]
+         fhir:code [ fhir:v "XX" ] ;
+         fhir:display [ fhir:v "Organization identifier" ]
        ] )
      ] ;
      fhir:system [ fhir:v "http://openhie.org/fhir/hiv-cbs/identifier/hiv-organization"^^xsd:anyURI ] ;
