@@ -7,6 +7,7 @@ Description: "Organization example"
 * identifier[XX].system = "http://openhie.org/fhir/hiv-cbs/identifier/hiv-organization"
 * identifier[XX].type.coding.code = #XX
 * identifier[XX].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
+* identifier[XX].type.coding.display = "Organization identifier"
 * name = "HIV Test Services Health Facility"
 * address[+].country = "DISI country"
 * address[=].state = "DISI state 1"
@@ -30,6 +31,7 @@ Description: "Patient example"
 * identifier[MR].system = "http://openhie.org/fhir/hiv-cbs/identifier/mr"
 * identifier[MR].type.coding.code = #MR
 * identifier[MR].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
+* identifier[MR].type.coding.display = "Medical record number"
 * active = true
 * name.use = #official
 * name.family = "Smith"
@@ -54,8 +56,10 @@ Description: "Patient example"
 * maritalStatus = #M
 * maritalStatus.coding.system = "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"
 * managingOrganization = Reference(HIVOrganizationExample)
+* extension[KPS].valueCodeableConcept.text = "HIV key population"
 * extension[KPS].valueCodeableConcept.coding.code = $SCT#417284009
 * extension[KPS].valueCodeableConcept.coding.system = "http://snomed.info/sct"
+* extension[KPS].valueCodeableConcept.coding.display = "Current drug user"
 
 Instance: TargetFacilityEncounterExample
 InstanceOf: TargetFacilityEncounter
@@ -166,8 +170,12 @@ Description: "ARVCarePlan example"
 * activity.detail.kind = #MedicationRequest
 * activity.detail.code = $LNC#45260-7 
 * activity.detail.status = #in-progress
+* activity.detail.productCodeableConcept.text = "ARV regimen"
 * activity.detail.productCodeableConcept = $SCT#387005008
+* activity.detail.productCodeableConcept.coding.display = "Abacavir"
+* activity.detail.extension[artRegimenLine].valueCodeableConcept.text = "ART therapeutic line"
 * activity.detail.extension[artRegimenLine].valueCodeableConcept = $SCT#708255002
+* activity.detail.extension[artRegimenLine].valueCodeableConcept.coding.display = "First line treatment (procedure)"
 * activity.detail.scheduledPeriod.start = "2023-01-01"
 * activity.detail.scheduledPeriod.end = "2023-01-01"
 * note.text = "Additional information regarding the ARV treatment prescribed"
@@ -436,9 +444,15 @@ Description: "ARV Regimen switched or substituted example"
 * activity.detail.kind = #MedicationRequest
 * activity.detail.code = $LNC#45260-7 
 * activity.detail.status = #in-progress
+* activity.detail.productCodeableConcept.text = "ARV regimen"
 * activity.detail.productCodeableConcept = $SCT#387005008
+* activity.detail.productCodeableConcept.coding.display = "Abacavir"
+* activity.detail.extension[artRegimenLine].valueCodeableConcept.text = "ART therapeutic line"
 * activity.detail.extension[artRegimenLine].valueCodeableConcept = $SCT#708255002
+* activity.detail.extension[artRegimenLine].valueCodeableConcept.coding.display = "First line treatment (procedure)"
+* activity.detail.extension[artRegimenSwitchedOrSubstituted].valueCodeableConcept.text = "ARV regimen change"
 * activity.detail.extension[artRegimenSwitchedOrSubstituted].valueCodeableConcept.coding.code = #Switched
+* activity.detail.extension[artRegimenSwitchedOrSubstituted].valueCodeableConcept.coding.display = "ARV Regimen Switched"
 * activity.detail.extension[artRegimenSwitchedOrSubstituted].valueCodeableConcept.coding.system = "http://openhie.org/fhir/hiv-cbs/CodeSystem/cs-art-regimen-change-type"
 * activity.detail.scheduledPeriod.start = "2023-01-01"
 * activity.detail.scheduledPeriod.end = "2023-01-01"

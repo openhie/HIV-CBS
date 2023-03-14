@@ -14,6 +14,7 @@ Description: "Organization providing HIV Testing Services."
 * identifier[XX].system = "http://openhie.org/fhir/hiv-cbs/identifier/hiv-organization" (exactly)
 * identifier[XX].type.coding.code = #XX
 * identifier[XX].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
+* identifier[XX].type.coding.display = "Organization identifier"
 * address 1..1
 * address.country 1..1
 * address.state 1..1
@@ -39,6 +40,7 @@ Description: "A patient resource for an HIV Patient"
 * identifier[MR].system = "http://openhie.org/fhir/hiv-cbs/identifier/mr" (exactly)
 * identifier[MR].type.coding.code = #MR
 * identifier[MR].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
+* identifier[MR].type.coding.display = "Medical record number"
 * active 0..1
 * name.given 1..*
 * name.family 1..1
@@ -152,6 +154,8 @@ Description: "This profile is to record prescribed ARV regimen against a given t
 * activity.detail.code from VSARVMedicationRequest (required)
 * activity.detail.status 1..1
 * activity.detail.productCodeableConcept 0..1 MS
+* activity.detail.productCodeableConcept.text = "ARV regimen"
+* activity.detail.productCodeableConcept.coding.display 1..1
 * activity.detail.productCodeableConcept from VSARVRegimen (required)
 * activity.detail.extension contains ARTRegimenSwitchedOrSubstituted named artRegimenSwitchedOrSubstituted 0..1 MS
 * activity.detail.extension contains ARTRegimenLine named artRegimenLine 0..1 MS
@@ -164,6 +168,8 @@ Title: "ART Regimen Line"
 Description: "Therapeutic lines that are used to classify the patient's currently prescribed ARV regimen."
 * value[x] only CodeableConcept
 * valueCodeableConcept from VSARTRegimenLines (required)
+* valueCodeableConcept.text = "ART therapeutic line"
+* valueCodeableConcept.coding.display 1..1
 
 Extension: ARTRegimenSwitchedOrSubstituted
 Id: art-regimen-switched-or-substituted
@@ -171,6 +177,8 @@ Title: "ART Regimen Switched Or Substituted"
 Description: "The ARV regimen has been switched to a new ARV regimen or has been substituted by another ARV regimen."
 * value[x] only CodeableConcept
 * valueCodeableConcept from VSARTRegimenChangeType (required)
+* valueCodeableConcept.text = "ARV regimen change"
+* valueCodeableConcept.coding.display 1..1
 
 Profile: HIVEpisodeOfCare
 Parent: EpisodeOfCare
@@ -342,6 +350,8 @@ Title: "Key HIV Population"
 Description: "Populations who are at higher risk for HIV."
 * value[x] only CodeableConcept
 * valueCodeableConcept from VSKeyPopulationSatus (required)
+* valueCodeableConcept.text = "HIV key population"
+* valueCodeableConcept.coding.display 1..1
 
 Profile: HIVRecencyTestDone
 Parent: Observation

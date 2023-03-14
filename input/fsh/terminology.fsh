@@ -6,16 +6,16 @@ Id: vs-vl-result-code
 Title: "Viral Load Result Code"
 Description: "A code used to indicate the category for the lab result."
 * ^experimental = false
-* $SCT#398579006 "Human immunodeficiency virus-1 nucleic acid assay (procedure)"
+* $SCT#398579006 "Human immunodeficiency virus-1 nucleic acid assay"
 
 ValueSet: VSVLSuppression
 Id: vs-vl-suppression
 Title: "Viral Load Suppressions Status"
 Description: "Describes a patient's current viral load status."
 * ^experimental = false
-* $SCT#245780008 "Suppressed (qualifier value)"
-* $SCT#19032002 "Uncontrolled (qualifier value)" //Unsuppressed
-* $SCT#261665006 "Unknown (qualifier value)"
+* $SCT#245780008 "Suppressed"
+* $SCT#19032002 "Uncontrolled" //Unsuppressed
+* $SCT#261665006 "Unknown"
 
 ValueSet: VSCondition
 Id: vs-condition
@@ -118,12 +118,12 @@ Id: vs-key-population-status
 Title: "Key Population Status"
 Description: "A list of key population types"
 * ^experimental = false
-* $SCT#472986005 "Sexually active with men (finding)"
-* $SCT#159799000 "Female prostitute (occupation)"
-* $SCT#159800001 "Male prostitute (occupation)"
-* $SCT#228388006 "Intravenous drug user (finding)"
-* $SCT#417284009 "Current drug user (finding)"
-* $SCT#407375002 "Surgically transgendered transsexual (finding)"
+* $SCT#472986005 "Sexually active with men"
+* $SCT#159799000 "Female prostitute"
+* $SCT#159800001 "Male prostitute"
+* $SCT#228388006 "Intravenous drug user"
+* $SCT#417284009 "Current drug user"
+* $SCT#407375002 "Surgically transgendered transsexual"
 * include codes from system CSKeyPopulationStatus
 
 ValueSet: VSHIVRecencyTest
