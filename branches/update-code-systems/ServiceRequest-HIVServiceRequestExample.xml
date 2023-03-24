@@ -6,7 +6,7 @@
     <profile value="http://openhie.org/fhir/hiv-cbs/StructureDefinition/HIV-lab-order"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: ServiceRequest</b><a name="HIVServiceRequestExample"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource ServiceRequest &quot;HIVServiceRequestExample&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-HIV-lab-order.html">Lab Order</a></p></div><p><b>identifier</b>: Placer Identifier: ORDER12345</p><p><b>status</b>: completed</p><p><b>intent</b>: order</p><p><b>doNotPerform</b>: false</p><p><b>code</b>: HIV 1 RNA [#/volume] (viral load) in Specimen by NAA with probe detection <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#25836-8)</span></p><p><b>subject</b>: <a href="Patient-HIVPatientExample.html">Patient/HIVPatientExample</a> &quot; SMITH&quot;</p><p><b>encounter</b>: <a href="Encounter-TargetFacilityEncounterExample.html">Encounter/TargetFacilityEncounterExample</a></p><p><b>occurrence</b>: 2012-01-05</p><p><b>requester</b>: <a href="Practitioner-PractitionerExample.html">Practitioner/PractitionerExample</a> &quot; SMITH&quot;</p><p><b>performer</b>: <a href="Organization-HIVServiceRequestLocationExample.html">Organization/HIVServiceRequestLocationExample</a> &quot;Laboratory Services&quot;</p><p><b>reasonCode</b>: Repeat laboratory specimen sent (situation) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#428450006)</span></p><p><b>specimen</b>: <a href="Specimen-VLSpecimenExample.html">Specimen/VLSpecimenExample</a></p><p><b>note</b>: additional notes here (By Organization/HIVOrganizationExample @Feb 7, 2015, 6:28:17 PM)</p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: ServiceRequest</b><a name="HIVServiceRequestExample"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource ServiceRequest &quot;HIVServiceRequestExample&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-HIV-lab-order.html">Lab Order</a></p></div><p><b>identifier</b>: Placer Identifier: ORDER12345</p><p><b>status</b>: completed</p><p><b>intent</b>: order</p><p><b>doNotPerform</b>: false</p><p><b>code</b>: Test Type <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#25836-8 &quot;HIV 1 RNA [#/volume] (viral load) in Specimen by NAA with probe detection&quot;)</span></p><p><b>subject</b>: <a href="Patient-HIVPatientExample.html">Patient/HIVPatientExample</a> &quot; SMITH&quot;</p><p><b>encounter</b>: <a href="Encounter-TargetFacilityEncounterExample.html">Encounter/TargetFacilityEncounterExample</a></p><p><b>occurrence</b>: 2012-01-05</p><p><b>requester</b>: <a href="Practitioner-PractitionerExample.html">Practitioner/PractitionerExample</a> &quot; SMITH&quot;</p><p><b>performer</b>: <a href="Organization-HIVServiceRequestLocationExample.html">Organization/HIVServiceRequestLocationExample</a> &quot;Laboratory Services&quot;</p><p><b>reasonCode</b>: Reason <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#428450006 &quot;Repeat laboratory specimen sent&quot;)</span></p><p><b>specimen</b>: <a href="Specimen-VLSpecimenExample.html">Specimen/VLSpecimenExample</a></p><p><b>note</b>: additional notes here (By Organization/HIVOrganizationExample @Feb 7, 2015, 6:28:17 PM)</p></div>
   </text>
   <identifier>
     <type>
@@ -25,7 +25,9 @@
     <coding>
       <system value="http://loinc.org"/>
       <code value="25836-8"/>
+      <display value="HIV 1 RNA [#/volume] (viral load) in Specimen by NAA with probe detection"/>
     </coding>
+    <text value="Test Type"/>
   </code>
   <subject>
     <reference value="Patient/HIVPatientExample"/>
@@ -44,7 +46,9 @@
     <coding>
       <system value="http://snomed.info/sct"/>
       <code value="428450006"/>
+      <display value="Repeat laboratory specimen sent"/>
     </coding>
+    <text value="Reason"/>
   </reasonCode>
   <specimen>
     <reference value="Specimen/VLSpecimenExample"/>

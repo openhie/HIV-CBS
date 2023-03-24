@@ -10,7 +10,7 @@
   fhir:id [ fhir:v "vs-reason-for-assessment-or-test-not-performed"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/77386006\">77386006</a></td><td>Currently pregnant</td></tr><tr><td><a href=\"http://snomed.info/id/428450006\">428450006</a></td><td>Repeat</td></tr><tr><td><a href=\"http://snomed.info/id/171111007\">171111007</a></td><td>Results not available</td></tr><tr><td><a href=\"http://snomed.info/id/266721009\">266721009</a></td><td>Absent response to treatment</td></tr><tr><td><a href=\"http://snomed.info/id/170564007\">170564007</a></td><td>Chronic disease - treatment changed (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/413712001\">413712001</a></td><td>Breastfeeding (mother) (observable entity)</td></tr><tr><td><a href=\"http://snomed.info/id/315124004\">315124004</a></td><td>Baseline Viral Load / Routine Viral Load</td></tr><tr><td><a href=\"http://snomed.info/id/2528003\">2528003</a></td><td>Persistent low-Level viraemia</td></tr><tr><td><a href=\"http://snomed.info/id/441510007\">441510007</a></td><td>Blood sample coagulated</td></tr><tr><td><a href=\"http://snomed.info/id/123840003\">123840003</a></td><td>Contaminated specimen</td></tr><tr><td><a href=\"http://snomed.info/id/397933008\">397933008</a></td><td>Equipment failure</td></tr><tr><td><a href=\"http://snomed.info/id/281264009\">281264009</a></td><td>Inappropriate sample container used</td></tr><tr><td><a href=\"http://snomed.info/id/281268007\">281268007</a></td><td>Insufficient sample</td></tr><tr><td><a href=\"http://snomed.info/id/281265005\">281265005</a></td><td>Specimen not labeled</td></tr><tr><td><a href=\"http://snomed.info/id/419182006\">419182006</a></td><td>Supplies not available</td></tr></table></li></ul></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/77386006\">77386006</a></td><td>Pregnancy</td></tr><tr><td><a href=\"http://snomed.info/id/428450006\">428450006</a></td><td>Repeat laboratory specimen sent</td></tr><tr><td><a href=\"http://snomed.info/id/171111007\">171111007</a></td><td>Screened - no result yet</td></tr><tr><td><a href=\"http://snomed.info/id/266721009\">266721009</a></td><td>Absent response to treatment</td></tr><tr><td><a href=\"http://snomed.info/id/170564007\">170564007</a></td><td>Chronic disease - treatment changed</td></tr><tr><td><a href=\"http://snomed.info/id/413712001\">413712001</a></td><td>Breastfeeding (mother)</td></tr><tr><td><a href=\"http://snomed.info/id/315124004\">315124004</a></td><td>Human immunodeficiency virus viral load</td></tr><tr><td><a href=\"http://snomed.info/id/2528003\">2528003</a></td><td>Viremia</td></tr><tr><td><a href=\"http://snomed.info/id/441510007\">441510007</a></td><td>Blood specimen with anticoagulant</td></tr><tr><td><a href=\"http://snomed.info/id/123840003\">123840003</a></td><td>Sample contaminated</td></tr><tr><td><a href=\"http://snomed.info/id/397933008\">397933008</a></td><td>Equipment error/failure</td></tr><tr><td><a href=\"http://snomed.info/id/281264009\">281264009</a></td><td>Inappropriate bottle or container for sample</td></tr><tr><td><a href=\"http://snomed.info/id/281268007\">281268007</a></td><td>Insufficient sample</td></tr><tr><td><a href=\"http://snomed.info/id/281265005\">281265005</a></td><td>Sample incorrectly labeled</td></tr><tr><td><a href=\"http://snomed.info/id/419182006\">419182006</a></td><td>Supplies not available</td></tr></table></li></ul></div>"
   ] ; # 
   fhir:url [ fhir:v "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-reason-for-assessment-or-test-not-performed"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.2.0"] ; # 
@@ -18,7 +18,7 @@
   fhir:title [ fhir:v "Reason for Assessment or Test Not Performed"] ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2023-03-14T11:49:46+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-03-24T12:30:50+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Jembi Health Systems"] ; # 
   fhir:contact ( [
      fhir:telecom ( [
@@ -41,46 +41,46 @@
        fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
        fhir:concept ( [
          fhir:code [ fhir:v "77386006" ] ;
-         fhir:display [ fhir:v "Currently pregnant" ]
+         fhir:display [ fhir:v "Pregnancy" ]
        ] [
          fhir:code [ fhir:v "428450006" ] ;
-         fhir:display [ fhir:v "Repeat" ]
+         fhir:display [ fhir:v "Repeat laboratory specimen sent" ]
        ] [
          fhir:code [ fhir:v "171111007" ] ;
-         fhir:display [ fhir:v "Results not available" ]
+         fhir:display [ fhir:v "Screened - no result yet" ]
        ] [
          fhir:code [ fhir:v "266721009" ] ;
          fhir:display [ fhir:v "Absent response to treatment" ]
        ] [
          fhir:code [ fhir:v "170564007" ] ;
-         fhir:display [ fhir:v "Chronic disease - treatment changed (finding)" ]
+         fhir:display [ fhir:v "Chronic disease - treatment changed" ]
        ] [
          fhir:code [ fhir:v "413712001" ] ;
-         fhir:display [ fhir:v "Breastfeeding (mother) (observable entity)" ]
+         fhir:display [ fhir:v "Breastfeeding (mother)" ]
        ] [
          fhir:code [ fhir:v "315124004" ] ;
-         fhir:display [ fhir:v "Baseline Viral Load / Routine Viral Load" ]
+         fhir:display [ fhir:v "Human immunodeficiency virus viral load" ]
        ] [
          fhir:code [ fhir:v "2528003" ] ;
-         fhir:display [ fhir:v "Persistent low-Level viraemia" ]
+         fhir:display [ fhir:v "Viremia" ]
        ] [
          fhir:code [ fhir:v "441510007" ] ;
-         fhir:display [ fhir:v "Blood sample coagulated" ]
+         fhir:display [ fhir:v "Blood specimen with anticoagulant" ]
        ] [
          fhir:code [ fhir:v "123840003" ] ;
-         fhir:display [ fhir:v "Contaminated specimen" ]
+         fhir:display [ fhir:v "Sample contaminated" ]
        ] [
          fhir:code [ fhir:v "397933008" ] ;
-         fhir:display [ fhir:v "Equipment failure" ]
+         fhir:display [ fhir:v "Equipment error/failure" ]
        ] [
          fhir:code [ fhir:v "281264009" ] ;
-         fhir:display [ fhir:v "Inappropriate sample container used" ]
+         fhir:display [ fhir:v "Inappropriate bottle or container for sample" ]
        ] [
          fhir:code [ fhir:v "281268007" ] ;
          fhir:display [ fhir:v "Insufficient sample" ]
        ] [
          fhir:code [ fhir:v "281265005" ] ;
-         fhir:display [ fhir:v "Specimen not labeled" ]
+         fhir:display [ fhir:v "Sample incorrectly labeled" ]
        ] [
          fhir:code [ fhir:v "419182006" ] ;
          fhir:display [ fhir:v "Supplies not available" ]

@@ -3,7 +3,7 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="vs-specimen-type"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/119361006">119361006</a></td><td>Plasma specimen (specimen)</td></tr><tr><td><a href="http://snomed.info/id/440500007">440500007</a></td><td>Dried blood spot specimen (specimen)</td></tr><tr><td><a href="http://snomed.info/id/441620008">441620008</a></td><td>Oral fluid specimen (specimen)</td></tr><tr><td><a href="http://snomed.info/id/258580003">258580003</a></td><td>Whole blood specimen (specimen)</td></tr><tr><td><a href="http://snomed.info/id/119364003">119364003</a></td><td>Serum specimen (specimen)</td></tr></table></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/119361006">119361006</a></td><td>Plasma specimen</td></tr><tr><td><a href="http://snomed.info/id/440500007">440500007</a></td><td>Dried blood spot specimen</td></tr><tr><td><a href="http://snomed.info/id/441620008">441620008</a></td><td>Oral fluid specimen</td></tr><tr><td><a href="http://snomed.info/id/258580003">258580003</a></td><td>Whole blood specimen</td></tr><tr><td><a href="http://snomed.info/id/119364003">119364003</a></td><td>Serum specimen</td></tr></table></li></ul></div>
   </text>
   <url value="http://openhie.org/fhir/hiv-cbs/ValueSet/vs-specimen-type"/>
   <version value="0.2.0"/>
@@ -11,7 +11,7 @@
   <title value="Specimen Type Used In Viral Load testing"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2023-03-14T11:49:46+00:00"/>
+  <date value="2023-03-24T12:30:50+00:00"/>
   <publisher value="Jembi Health Systems"/>
   <contact>
     <telecom>
@@ -35,23 +35,23 @@
       <system value="http://snomed.info/sct"/>
       <concept>
         <code value="119361006"/>
-        <display value="Plasma specimen (specimen)"/>
+        <display value="Plasma specimen"/>
       </concept>
       <concept>
         <code value="440500007"/>
-        <display value="Dried blood spot specimen (specimen)"/>
+        <display value="Dried blood spot specimen"/>
       </concept>
       <concept>
         <code value="441620008"/>
-        <display value="Oral fluid specimen (specimen)"/>
+        <display value="Oral fluid specimen"/>
       </concept>
       <concept>
         <code value="258580003"/>
-        <display value="Whole blood specimen (specimen)"/>
+        <display value="Whole blood specimen"/>
       </concept>
       <concept>
         <code value="119364003"/>
-        <display value="Serum specimen (specimen)"/>
+        <display value="Serum specimen"/>
       </concept>
     </include>
   </compose>
