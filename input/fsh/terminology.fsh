@@ -59,11 +59,11 @@ Id: vs-specimen-type
 Title: "Specimen Type Used In Viral Load testing"
 Description:  "A list of specimen types."
 * ^experimental = false
-* $SCT#119361006 "Plasma specimen (specimen)"
-* $SCT#440500007 "Dried blood spot specimen (specimen)"
-* $SCT#441620008 "Oral fluid specimen (specimen)"
-* $SCT#258580003 "Whole blood specimen (specimen)"
-* $SCT#119364003 "Serum specimen (specimen)"
+* $SCT#119361006 "Plasma specimen"
+* $SCT#440500007 "Dried blood spot specimen"
+* $SCT#441620008 "Oral fluid specimen"
+* $SCT#258580003 "Whole blood specimen"
+* $SCT#119364003 "Serum specimen"
 
 ValueSet: VSTestTypes
 Id: vs-test-types
@@ -80,21 +80,21 @@ Title: "Reason for Assessment or Test Not Performed"
 Description: "A list of reasons associated with the service request for the lab order."
 * ^experimental = false
 //Reasons for assessment
-* $SCT#77386006 "Currently pregnant"
-* $SCT#428450006 "Repeat"
-* $SCT#171111007 "Results not available"
+* $SCT#77386006 "Pregnancy"
+* $SCT#428450006 "Repeat laboratory specimen sent"
+* $SCT#171111007 "Screened - no result yet"
 * $SCT#266721009 "Absent response to treatment"
-* $SCT#170564007 "Chronic disease - treatment changed (finding)"
-* $SCT#413712001 "Breastfeeding (mother) (observable entity)"
-* $SCT#315124004 "Baseline Viral Load / Routine Viral Load"
-* $SCT#2528003 "Persistent low-Level viraemia"
+* $SCT#170564007 "Chronic disease - treatment changed"
+* $SCT#413712001 "Breastfeeding (mother)"
+* $SCT#315124004 "Human immunodeficiency virus viral load"
+* $SCT#2528003 "Viremia"
 //Reasons test not performed
-* $SCT#441510007 "Blood sample coagulated" 
-* $SCT#123840003 "Contaminated specimen"
-* $SCT#397933008 "Equipment failure"
-* $SCT#281264009 "Inappropriate sample container used"
+* $SCT#441510007 "Blood specimen with anticoagulant" 
+* $SCT#123840003 "Sample contaminated"
+* $SCT#397933008 "Equipment error/failure"
+* $SCT#281264009 "Inappropriate bottle or container for sample"
 * $SCT#281268007 "Insufficient sample"
-* $SCT#281265005 "Specimen not labeled"
+* $SCT#281265005 "Sample incorrectly labeled"
 * $SCT#419182006 "Supplies not available"
 
 ValueSet: VSCarePlanActivityOutcome
@@ -192,9 +192,9 @@ Id: vs-reason-sample-cancelled-or-rejected
 Title: "Reasons why a lab order was cancelled or rejected"
 Description: "Reasons why a lab order was cancelled or rejected."
 * ^experimental = false
-* $SCT#281264009 "Inappropriate bottle or container for sample (finding)"
-* $SCT#281266006 "No sample received (finding)"
-* $SCT#135839007 "Sample rejected (finding)"
+* $SCT#281264009 "Inappropriate bottle or container for sample"
+* $SCT#281266006 "No sample received"
+* $SCT#135839007 "Sample rejected"
 
 ValueSet: VSARVRegimen
 Id: vs-arv-regimen

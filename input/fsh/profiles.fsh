@@ -219,6 +219,7 @@ Description: "The test sample that was collected for the initiated lab order."
 * identifier[USID].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
 * type 1..1
 * type from VSSpecimenType (required)
+* type.text = "Specimen Type"
 * subject 1..1
 * collection.collectedDateTime 1..1
 * note 0..1
@@ -266,6 +267,7 @@ Description: "A service request that initiates the need for the lab to collect t
 * intent = #order
 * code 1..1
 * code from VSTestTypes (required)
+* code.text = "Test Type"
 * subject 1..1
 * encounter 1..1
 * occurrenceDateTime 1..1
@@ -274,6 +276,7 @@ Description: "A service request that initiates the need for the lab to collect t
 * doNotPerform 0..1
 * reasonCode 1..*
 * reasonCode from VSReasonForAssessmentOrTestNotPerformed (required)
+* reasonCode.text = "Reason"
 * specimen 1..1
 * note 0..1
 
@@ -284,12 +287,14 @@ Title: "Lab Results"
 Description: "The result of the lab test which determines whether the patient is infected with HIV or not."
 * status = #final
 * code from VSVLResultCode (required)
+* code.text = "Viral Load Result"
 * subject 1..1
 * encounter 1..1
 * effectiveDateTime 1..1
 * valueInteger 1..1
 * interpretation 1..1
 * interpretation from VSVLSuppression (required)
+* interpretation.text = "Viral Load Suppression Status"
 * performer 1..1
 * note 0..1
 
@@ -320,6 +325,7 @@ Description: "Assists with tracking the state of the lab order and its completio
 * basedOn only Reference(ServiceRequest)
 * status 1..1
 * statusReason from VSReasonForSampleCancellationOrRejection
+* statusReason.text = "Reason For Canceling/Rejecting the Lab Order"
 * intent = #order
 * executionPeriod 1..1
 * lastModified 0..1
@@ -328,6 +334,7 @@ Description: "Assists with tracking the state of the lab order and its completio
 * note 0..1
 * output 0..*
 * output.type.coding.code from VSVLResultCode (required)
+* output.type.text = "Viral Load Result"
 * output.valueReference 1..1
 
 Profile: HIVDiagnosticReport
@@ -338,6 +345,7 @@ Description: "A report as a result of the lab task being completed."
 * basedOn only Reference(ServiceRequest)
 * status = #final
 * code from VSTestTypes (required)
+* code.text = "Test Type"
 * subject 1..1
 * encounter 1..1
 * performer 1..1

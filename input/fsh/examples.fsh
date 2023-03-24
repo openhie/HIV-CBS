@@ -96,11 +96,15 @@ Title: "Viral Load Suppression example"
 Description: "Viral Load Suppression example"
 * status = #final
 * code = $SCT#398579006
+* code.text = "Viral Load Result"
+* code.coding.display = "Human immunodeficiency virus-1 nucleic acid assay"
 * subject = Reference(HIVPatientExample)
 * encounter = Reference(TargetFacilityEncounterExample)
 * effectiveDateTime = "2022-11-30"
 * valueInteger = 1001
 * interpretation = $SCT#19032002
+* interpretation.text = "Viral Load Suppression Status"
+* interpretation.coding.display = "Uncontrolled"
 * note.text = "Viral load not suppressed"
 * note.authorReference = Reference(HIVOrganizationExample)
 * note.time = "2015-02-07T13:28:17-05:00"
@@ -208,6 +212,8 @@ Description: "Viral Load Specimen example"
 * identifier[USID].type.coding.code = #USID
 * identifier[USID].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
 * type = $SCT#119361006
+* type.text = "Specimen Type"
+* type.coding.display = "Plasma specimen (specimen)"
 * subject = Reference(HIVPatientExample)
 * collection.collectedDateTime = "2022-07-28"
 * note.authorReference = Reference(HIVOrganizationExample)
@@ -255,6 +261,8 @@ Description: "HIV Lab Order example"
 * status = #completed
 * intent = #order
 * code = $LNC#25836-8
+* code.text = "Test Type"
+* code.coding.display = "HIV 1 RNA [#/volume] (viral load) in Specimen by NAA with probe detection"
 * subject = Reference(HIVPatientExample)
 * encounter = Reference(TargetFacilityEncounterExample)
 * occurrenceDateTime = "2012-01-05"
@@ -262,6 +270,8 @@ Description: "HIV Lab Order example"
 * performer = Reference(HIVServiceRequestLocationExample)
 * doNotPerform = false
 * reasonCode = $SCT#428450006
+* reasonCode.text = "Reason"
+* reasonCode.coding.display = "Repeat laboratory specimen sent"
 * specimen = Reference(VLSpecimenExample)
 * note.authorReference = Reference(HIVOrganizationExample)
 * note.text = "additional notes here"
@@ -307,6 +317,8 @@ Description: "Lab Result Task example"
 * note.text = "additional notes here"
 * note.time = "2015-02-07T13:28:17-05:00"
 * output.type = $SCT#398579006
+* output.type.text = "Viral Load Result"
+* output.type.coding.display = "Human immunodeficiency virus-1 nucleic acid assay"
 * output.valueReference = Reference(HIVLabResultsDiagnosticReportExample)
 
 Instance: HIVLabOrderCancellationTaskExample
@@ -320,7 +332,9 @@ Description: "HIV Lab Order Cancellation Task example"
 * identifier[FILL].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
 * basedOn = Reference(HIVServiceRequestExample)
 * status = #cancelled
-* statusReason = $SCT#281264009 
+* statusReason = $SCT#281264009
+* statusReason.text = "Reason For Canceling/Rejecting the Lab Order"
+* statusReason.coding.display = "Inappropriate bottle or container for sample (finding)"
 * intent = #order
 * executionPeriod.end = "2022-07-30"
 * lastModified = "2022-07-30"
@@ -342,6 +356,8 @@ Description: "HIV Lab Order Rejection Task example"
 * basedOn = Reference(HIVServiceRequestExample)
 * status = #rejected
 * statusReason = $SCT#135839007 
+* statusReason.text = "Reason For Canceling/Rejecting the Lab Order"
+* statusReason.coding.display = "Sample rejected (finding)"
 * intent = #order
 * executionPeriod.end = "2022-07-30"
 * lastModified = "2022-07-30"
@@ -358,7 +374,9 @@ Title: "HIV Lab Results Diagnostic Report example"
 Description: "HIV Lab Results Diagnostic Report example"
 * basedOn = Reference(HIVServiceRequestExample)
 * status = #final
-* code = $LNC#25836-8 
+* code = $LNC#25836-8
+* code.text = "Test Type"
+* code.coding.display = "HIV 1 RNA [#/volume] (viral load) in Specimen by NAA with probe detection"
 * subject = Reference(HIVPatientExample)
 * encounter = Reference(TargetFacilityEncounterExample)
 * performer = Reference(PractitionerExample)
