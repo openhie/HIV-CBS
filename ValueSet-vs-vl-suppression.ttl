@@ -10,7 +10,7 @@
   fhir:id [ fhir:v "vs-vl-suppression"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/245780008\">245780008</a></td><td>Suppressed</td></tr><tr><td><a href=\"http://snomed.info/id/19032002\">19032002</a></td><td>Uncontrolled</td></tr><tr><td><a href=\"http://snomed.info/id/261665006\">261665006</a></td><td>Unknown</td></tr></table></li></ul></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/245780008\">245780008</a></td><td>Suppressed (qualifier value)</td></tr><tr><td><a href=\"http://snomed.info/id/19032002\">19032002</a></td><td>Uncontrolled (qualifier value)</td></tr><tr><td><a href=\"http://snomed.info/id/261665006\">261665006</a></td><td>Unknown (qualifier value)</td></tr></table></li></ul></div>"
   ] ; # 
   fhir:url [ fhir:v "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-vl-suppression"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.2.0"] ; # 
@@ -18,7 +18,7 @@
   fhir:title [ fhir:v "Viral Load Suppressions Status"] ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2023-03-24T12:30:50+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-04-04T10:44:56+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Jembi Health Systems"] ; # 
   fhir:contact ( [
      fhir:telecom ( [
@@ -41,13 +41,13 @@
        fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
        fhir:concept ( [
          fhir:code [ fhir:v "245780008" ] ;
-         fhir:display [ fhir:v "Suppressed" ]
+         fhir:display [ fhir:v "Suppressed (qualifier value)" ]
        ] [
          fhir:code [ fhir:v "19032002" ] ;
-         fhir:display [ fhir:v "Uncontrolled" ]
+         fhir:display [ fhir:v "Uncontrolled (qualifier value)" ]
        ] [
          fhir:code [ fhir:v "261665006" ] ;
-         fhir:display [ fhir:v "Unknown" ]
+         fhir:display [ fhir:v "Unknown (qualifier value)" ]
        ] )
      ] )
   ] . # 

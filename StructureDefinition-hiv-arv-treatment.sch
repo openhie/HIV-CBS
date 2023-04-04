@@ -25,10 +25,4 @@
       <sch:assert test="count(f:extension[@url = 'http://openhie.org/fhir/hiv-cbs/StructureDefinition/art-regimen-line']) &lt;= 1">extension with URL = 'http://openhie.org/fhir/hiv-cbs/StructureDefinition/art-regimen-line': maximum cardinality of 'extension' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
-  <sch:pattern>
-    <sch:title>f:CarePlan/f:activity/f:detail/f:product[x]/f:coding 1</sch:title>
-    <sch:rule context="f:CarePlan/f:activity/f:detail/f:product[x]/f:coding">
-      <sch:assert test="count(f:display) &gt;= 1">display: minimum cardinality of 'display' is 1</sch:assert>
-    </sch:rule>
-  </sch:pattern>
 </sch:schema>

@@ -58,7 +58,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Task</b><a name=\"HIVLabResultTaskExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Task &quot;HIVLabResultTaskExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-lab-task.html\">Lab Task</a></p></div><p><b>identifier</b>: Filler Identifier: ORDER12345</p><p><b>basedOn</b>: <a href=\"ServiceRequest-HIVServiceRequestExample.html\">ServiceRequest/HIVServiceRequestExample</a></p><p><b>status</b>: completed</p><p><b>intent</b>: order</p><p><b>executionPeriod</b>: ?? --&gt; 2022-07-30</p><p><b>lastModified</b>: 2022-07-30</p><p><b>requester</b>: <a href=\"Organization-HIVOrganizationExample.html\">Organization/HIVOrganizationExample</a> &quot;HIV Test Services Health Facility&quot;</p><p><b>owner</b>: <a href=\"Organization-HIVOrganizationExample.html\">Organization/HIVOrganizationExample</a> &quot;HIV Test Services Health Facility&quot;</p><p><b>note</b>: additional notes here (By Organization/HIVOrganizationExample @Feb 7, 2015, 6:28:17 PM)</p><h3>Outputs</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>Viral Load Result <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#398579006 &quot;Human immunodeficiency virus-1 nucleic acid assay&quot;)</span></td><td><a href=\"#DiagnosticReport_HIVLabResultsDiagnosticReportExample\">See above (DiagnosticReport/HIVLabResultsDiagnosticReportExample)</a></td></tr></table></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Task</b><a name=\"HIVLabResultTaskExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Task &quot;HIVLabResultTaskExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-lab-task.html\">Lab Task</a></p></div><p><b>identifier</b>: Filler Identifier: ORDER12345</p><p><b>basedOn</b>: <a href=\"ServiceRequest-HIVServiceRequestExample.html\">ServiceRequest/HIVServiceRequestExample</a></p><p><b>status</b>: completed</p><p><b>intent</b>: order</p><p><b>executionPeriod</b>: ?? --&gt; 2022-07-30</p><p><b>lastModified</b>: 2022-07-30</p><p><b>requester</b>: <a href=\"Organization-HIVOrganizationExample.html\">Organization/HIVOrganizationExample</a> &quot;HIV Test Services Health Facility&quot;</p><p><b>owner</b>: <a href=\"Organization-HIVOrganizationExample.html\">Organization/HIVOrganizationExample</a> &quot;HIV Test Services Health Facility&quot;</p><p><b>note</b>: additional notes here (By Organization/HIVOrganizationExample @Feb 7, 2015, 6:28:17 PM)</p><h3>Outputs</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>HIV 1 nucleic acid assay <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#398579006)</span></td><td><a href=\"#DiagnosticReport_HIVLabResultsDiagnosticReportExample\">See above (DiagnosticReport/HIVLabResultsDiagnosticReportExample)</a></td></tr></table></div>"
   ] ; # 
   fhir:identifier ( [
      fhir:type [
@@ -102,10 +102,8 @@
        fhir:coding ( [
          a sct:398579006 ;
          fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "398579006" ] ;
-         fhir:display [ fhir:v "Human immunodeficiency virus-1 nucleic acid assay" ]
-       ] ) ;
-       fhir:text [ fhir:v "Viral Load Result" ]
+         fhir:code [ fhir:v "398579006" ]
+       ] )
      ] ;
      fhir:value [
        a fhir:Reference ;
@@ -124,7 +122,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: DiagnosticReport</b><a name=\"HIVLabResultsDiagnosticReportExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource DiagnosticReport &quot;HIVLabResultsDiagnosticReportExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-diagnostic-report.html\">Diagnostic Report</a></p></div><p><b>basedOn</b>: <a href=\"ServiceRequest-HIVServiceRequestExample.html\">ServiceRequest/HIVServiceRequestExample</a></p><p><b>status</b>: final</p><p><b>code</b>: Test Type <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#25836-8 &quot;HIV 1 RNA [#/volume] (viral load) in Specimen by NAA with probe detection&quot;)</span></p><p><b>subject</b>: <a href=\"Patient-HIVPatientExample.html\">Patient/HIVPatientExample</a> &quot; SMITH&quot;</p><p><b>encounter</b>: <a href=\"Encounter-TargetFacilityEncounterExample.html\">Encounter/TargetFacilityEncounterExample</a></p><p><b>performer</b>: <a href=\"#Practitioner_PractitionerExample\">See above (Practitioner/PractitionerExample)</a></p><p><b>result</b>: <a href=\"#Observation_HIVTestResultExample\">See above (Observation/HIVTestResultExample)</a></p><p><b>conclusion</b>: Some conclusion text</p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: DiagnosticReport</b><a name=\"HIVLabResultsDiagnosticReportExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource DiagnosticReport &quot;HIVLabResultsDiagnosticReportExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-diagnostic-report.html\">Diagnostic Report</a></p></div><p><b>basedOn</b>: <a href=\"ServiceRequest-HIVServiceRequestExample.html\">ServiceRequest/HIVServiceRequestExample</a></p><p><b>status</b>: final</p><p><b>code</b>: HIV 1 RNA [#/volume] (viral load) in Specimen by NAA with probe detection <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#25836-8)</span></p><p><b>subject</b>: <a href=\"Patient-HIVPatientExample.html\">Patient/HIVPatientExample</a> &quot; SMITH&quot;</p><p><b>encounter</b>: <a href=\"Encounter-TargetFacilityEncounterExample.html\">Encounter/TargetFacilityEncounterExample</a></p><p><b>performer</b>: <a href=\"#Practitioner_PractitionerExample\">See above (Practitioner/PractitionerExample)</a></p><p><b>result</b>: <a href=\"#Observation_HIVTestResultExample\">See above (Observation/HIVTestResultExample)</a></p><p><b>conclusion</b>: Some conclusion text</p></div>"
   ] ; # 
   fhir:basedOn ( [
      fhir:link <http://openhie.org/fhir/hiv-cbs/ServiceRequest/HIVServiceRequestExample> ;
@@ -135,10 +133,8 @@
      fhir:coding ( [
        a loinc:25836-8 ;
        fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "25836-8" ] ;
-       fhir:display [ fhir:v "HIV 1 RNA [#/volume] (viral load) in Specimen by NAA with probe detection" ]
-     ] ) ;
-     fhir:text [ fhir:v "Test Type" ]
+       fhir:code [ fhir:v "25836-8" ]
+     ] )
   ] ; # 
   fhir:subject [
      fhir:link <http://openhie.org/fhir/hiv-cbs/Patient/HIVPatientExample> ;
@@ -189,7 +185,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Specimen</b><a name=\"VLSpecimenExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Specimen &quot;VLSpecimenExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-viral-load-specimen.html\">Viral Load Specimen</a></p></div><p><b>identifier</b>: Unique Specimen ID: abc123</p><p><b>type</b>: Specimen Type <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#119361006 &quot;Plasma specimen (specimen)&quot;)</span></p><p><b>subject</b>: <a href=\"Patient-HIVPatientExample.html\">Patient/HIVPatientExample</a> &quot; SMITH&quot;</p><h3>Collections</h3><table class=\"grid\"><tr><td>-</td><td><b>Collected[x]</b></td></tr><tr><td>*</td><td>2022-07-28</td></tr></table><p><b>note</b>: additional notes here (By Organization/HIVOrganizationExample @Feb 7, 2015, 6:28:17 PM)</p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Specimen</b><a name=\"VLSpecimenExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Specimen &quot;VLSpecimenExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-viral-load-specimen.html\">Viral Load Specimen</a></p></div><p><b>identifier</b>: Unique Specimen ID: abc123</p><p><b>type</b>: Plasma specimen <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#119361006)</span></p><p><b>subject</b>: <a href=\"Patient-HIVPatientExample.html\">Patient/HIVPatientExample</a> &quot; SMITH&quot;</p><h3>Collections</h3><table class=\"grid\"><tr><td>-</td><td><b>Collected[x]</b></td></tr><tr><td>*</td><td>2022-07-28</td></tr></table><p><b>note</b>: additional notes here (By Organization/HIVOrganizationExample @Feb 7, 2015, 6:28:17 PM)</p></div>"
   ] ; # 
   fhir:identifier ( [
      fhir:type [
@@ -205,10 +201,8 @@
      fhir:coding ( [
        a sct:119361006 ;
        fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "119361006" ] ;
-       fhir:display [ fhir:v "Plasma specimen (specimen)" ]
-     ] ) ;
-     fhir:text [ fhir:v "Specimen Type" ]
+       fhir:code [ fhir:v "119361006" ]
+     ] )
   ] ; # 
   fhir:subject [
      fhir:link <http://openhie.org/fhir/hiv-cbs/Patient/HIVPatientExample> ;
@@ -237,17 +231,15 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"HIVTestResultExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;HIVTestResultExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-test-results.html\">Lab Results</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Viral Load Result <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#398579006 &quot;Human immunodeficiency virus-1 nucleic acid assay&quot;)</span></p><p><b>subject</b>: <a href=\"Patient-HIVPatientExample.html\">Patient/HIVPatientExample</a> &quot; SMITH&quot;</p><p><b>encounter</b>: <a href=\"Encounter-TargetFacilityEncounterExample.html\">Encounter/TargetFacilityEncounterExample</a></p><p><b>effective</b>: 2022-11-30</p><p><b>performer</b>: <a href=\"Organization-HIVOrganizationExample.html\">Organization/HIVOrganizationExample</a> &quot;HIV Test Services Health Facility&quot;</p><p><b>value</b>: 1001</p><p><b>interpretation</b>: Viral Load Suppression Status <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#19032002 &quot;Uncontrolled&quot;)</span></p><p><b>note</b>: Viral load not suppressed (By Organization/HIVOrganizationExample @Feb 7, 2015, 6:28:17 PM)</p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"HIVTestResultExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;HIVTestResultExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-test-results.html\">Lab Results</a></p></div><p><b>status</b>: final</p><p><b>code</b>: HIV 1 nucleic acid assay <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#398579006)</span></p><p><b>subject</b>: <a href=\"Patient-HIVPatientExample.html\">Patient/HIVPatientExample</a> &quot; SMITH&quot;</p><p><b>encounter</b>: <a href=\"Encounter-TargetFacilityEncounterExample.html\">Encounter/TargetFacilityEncounterExample</a></p><p><b>effective</b>: 2022-11-30</p><p><b>performer</b>: <a href=\"Organization-HIVOrganizationExample.html\">Organization/HIVOrganizationExample</a> &quot;HIV Test Services Health Facility&quot;</p><p><b>value</b>: 1001</p><p><b>interpretation</b>: Uncontrolled <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#19032002)</span></p><p><b>note</b>: Viral load not suppressed (By Organization/HIVOrganizationExample @Feb 7, 2015, 6:28:17 PM)</p></div>"
   ] ; # 
   fhir:status [ fhir:v "final"] ; # 
   fhir:code [
      fhir:coding ( [
        a sct:398579006 ;
        fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "398579006" ] ;
-       fhir:display [ fhir:v "Human immunodeficiency virus-1 nucleic acid assay" ]
-     ] ) ;
-     fhir:text [ fhir:v "Viral Load Result" ]
+       fhir:code [ fhir:v "398579006" ]
+     ] )
   ] ; # 
   fhir:subject [
      fhir:link <http://openhie.org/fhir/hiv-cbs/Patient/HIVPatientExample> ;
@@ -267,10 +259,8 @@
      fhir:coding ( [
        a sct:19032002 ;
        fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "19032002" ] ;
-       fhir:display [ fhir:v "Uncontrolled" ]
-     ] ) ;
-     fhir:text [ fhir:v "Viral Load Suppression Status" ]
+       fhir:code [ fhir:v "19032002" ]
+     ] )
   ] ) ; # 
   fhir:note ( [
      fhir:author [

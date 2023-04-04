@@ -345,7 +345,7 @@
         
           Active
           
-            as of 2023-03-24
+            as of 2023-04-04
           
         
       </td>
@@ -419,8 +419,6 @@
  <tr><td>&nbsp;&nbsp;&nbsp;category</td><td>RF1-5</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;priority</td><td>TQ1.9, RF1-2</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;code</td><td>PR1-3 / OBR-4  (varies by domain)</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;coding</td><td>C*E.1-8, C*E.10-22</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text</td><td>C*E.9. But note many systems use C*E.2 for this</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;orderDetail</td><td>NTE</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;quantity[x]</td><td>NTE</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;subject</td><td>PID</td> </tr>
@@ -432,8 +430,6 @@
  <tr><td>&nbsp;&nbsp;&nbsp;performerType</td><td>PRT, RF!-3</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;performer</td><td>PRT, Practitioner: PRD-2/PRD-7 where PRD-3 = RT; Organization: PRD-10 where PRD-3 = RT</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;reasonCode</td><td>ORC.16, RF1-10</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;coding</td><td>C*E.1-8, C*E.10-22</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text</td><td>C*E.9. But note many systems use C*E.2 for this</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;reasonReference</td><td>ORC.16</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;insurance</td><td>IN1/IN2</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;supportingInfo</td><td>Accompanying segments</td> </tr>
@@ -482,10 +478,6 @@
  <tr><td>&nbsp;&nbsp;&nbsp;priority</td><td>.priorityCode</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;doNotPerform</td><td>.actionNegationInd</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;code</td><td>.code</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;coding</td><td>union(., ./translation)</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text</td><td>./originalText[mediaType/code=&quot;text/plain&quot;]/data</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;orderDetail</td><td>.code</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;quantity[x]</td><td>.quantity</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;subject</td><td>.participation[typeCode=SBJ].role</td> </tr>
@@ -500,10 +492,6 @@
  <tr><td>&nbsp;&nbsp;&nbsp;locationCode</td><td>.participation[typeCode=LOC].role[scoper.determinerCode=KIND].code</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;locationReference</td><td>.participation[typeCode=LOC].role[scoper.determinerCode=INSTANCE]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;reasonCode</td><td>.reasonCode</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;coding</td><td>union(., ./translation)</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text</td><td>./originalText[mediaType/code=&quot;text/plain&quot;]/data</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;reasonReference</td><td>.outboundRelationship[typeCode=RSON].target</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;insurance</td><td>.outboundRelationship[typeCode=COVBY].target</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;supportingInfo</td><td>.outboundRelationship[typeCode=PERT].target</td> </tr>
@@ -608,7 +596,7 @@
            
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2019+ <a style="color: #81BEF7" href="https://www.jembi.org">Jembi Health Systems</a>.  Package openhie.fhir.hiv.cbs#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Mar 24, 2023 12:30+0000">2023-03-24</span>
+          IG &#169; 2019+ <a style="color: #81BEF7" href="https://www.jembi.org">Jembi Health Systems</a>.  Package openhie.fhir.hiv.cbs#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Apr 4, 2023 10:44+0000">2023-04-04</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

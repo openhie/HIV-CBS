@@ -6,16 +6,14 @@
   },
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"HIVTestResultExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;HIVTestResultExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-test-results.html\">Lab Results</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Viral Load Result <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#398579006 &quot;Human immunodeficiency virus-1 nucleic acid assay&quot;)</span></p><p><b>subject</b>: <a href=\"Patient-HIVPatientExample.html\">Patient/HIVPatientExample</a> &quot; SMITH&quot;</p><p><b>encounter</b>: <a href=\"Encounter-TargetFacilityEncounterExample.html\">Encounter/TargetFacilityEncounterExample</a></p><p><b>effective</b>: 2022-11-30</p><p><b>performer</b>: <a href=\"Organization-HIVOrganizationExample.html\">Organization/HIVOrganizationExample</a> &quot;HIV Test Services Health Facility&quot;</p><p><b>value</b>: 1001</p><p><b>interpretation</b>: Viral Load Suppression Status <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#19032002 &quot;Uncontrolled&quot;)</span></p><p><b>note</b>: Viral load not suppressed (By Organization/HIVOrganizationExample @Feb 7, 2015, 6:28:17 PM)</p></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"HIVTestResultExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;HIVTestResultExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-test-results.html\">Lab Results</a></p></div><p><b>status</b>: final</p><p><b>code</b>: HIV 1 nucleic acid assay <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#398579006)</span></p><p><b>subject</b>: <a href=\"Patient-HIVPatientExample.html\">Patient/HIVPatientExample</a> &quot; SMITH&quot;</p><p><b>encounter</b>: <a href=\"Encounter-TargetFacilityEncounterExample.html\">Encounter/TargetFacilityEncounterExample</a></p><p><b>effective</b>: 2022-11-30</p><p><b>performer</b>: <a href=\"Organization-HIVOrganizationExample.html\">Organization/HIVOrganizationExample</a> &quot;HIV Test Services Health Facility&quot;</p><p><b>value</b>: 1001</p><p><b>interpretation</b>: Uncontrolled <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#19032002)</span></p><p><b>note</b>: Viral load not suppressed (By Organization/HIVOrganizationExample @Feb 7, 2015, 6:28:17 PM)</p></div>"
   },
   "status" : "final",
   "code" : {
     "coding" : [{
       "system" : "http://snomed.info/sct",
-      "code" : "398579006",
-      "display" : "Human immunodeficiency virus-1 nucleic acid assay"
-    }],
-    "text" : "Viral Load Result"
+      "code" : "398579006"
+    }]
   },
   "subject" : {
     "reference" : "Patient/HIVPatientExample"
@@ -31,10 +29,8 @@
   "interpretation" : [{
     "coding" : [{
       "system" : "http://snomed.info/sct",
-      "code" : "19032002",
-      "display" : "Uncontrolled"
-    }],
-    "text" : "Viral Load Suppression Status"
+      "code" : "19032002"
+    }]
   }],
   "note" : [{
     "authorReference" : {
