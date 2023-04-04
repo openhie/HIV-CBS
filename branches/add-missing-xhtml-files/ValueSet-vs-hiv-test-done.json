@@ -1,0 +1,42 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "vs-hiv-test-done",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/315124004\">315124004</a></td><td>Human immunodeficiency virus viral load (procedure)</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://openhie.org/fhir/hiv-cbs/ValueSet/vs-hiv-test-done",
+  "version" : "0.2.0",
+  "name" : "VSHIVTestDone",
+  "title" : "HIV Test Done",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2023-04-04T10:44:56+00:00",
+  "publisher" : "Jembi Health Systems",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.jembi.org"
+    },
+    {
+      "system" : "email",
+      "value" : "info@jembi.org"
+    }]
+  }],
+  "description" : "Used by the observation to indicate that a HIV test was performed.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "315124004",
+        "display" : "Human immunodeficiency virus viral load (procedure)"
+      }]
+    }]
+  }
+}
