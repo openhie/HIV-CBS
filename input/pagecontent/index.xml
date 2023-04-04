@@ -100,6 +100,26 @@
       <li><b>Healthcare IT analysts</b> who wish to design or integrate systems for case reporting, case surveillance.</li>
       <li><b>Technical designers</b> who must implement such case surveillance and reporting systems and their interfaces.</li>
     </ul>
+  
+  <h3>Cross Version Analysis</h3> <a name="cross-version-analysis"></a>
+  <div>
+    {% include cross-version-analysis.xhtml %}
+  </div>
+
+  <h3>Dependency Table</h3> <a name="dependency-table"></a>
+  <div>
+    {% include dependency-table.xhtml %}
+  </div>
+
+  <h3>Globals Table</h3> <a name="globals-table"></a>
+  <div>
+    {% include globals-table.xhtml %}
+  </div>
+
+  <h3>IP Statements</h3> <a name="ip-statements"></a>
+  <div>
+   {% include ip-statements.xhtml %}
+  </div>
 
   <h3>Intellectual Property Considerations</h3>  <a name="ip"> </a>
   <p>
